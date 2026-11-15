@@ -21,7 +21,7 @@ export function Handzettel({ id }: { id: string }) {
         )}
         <div>
           {seitenVon(krankheit)
-            .filter((seite) => seite.art !== 'bild')
+            .filter((seite) => seite.art !== 'bild' && !seite.manoever)
             .map((seite) => (
             <section key={seite.id}>
               <h4>{seite.titel}</h4>

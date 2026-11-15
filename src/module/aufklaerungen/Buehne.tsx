@@ -11,6 +11,8 @@ import {
 } from './daten';
 import { findeZeichnung } from './bilder';
 import { Aufnahmen } from '../../buehne/Aufnahmen';
+import { findeManoever, type Ohr } from './manoever';
+import { ManoeverKarten } from './ManoeverKarten';
 
 export function Buehne({ zustand }: BuehneProps<AufklaerungsZustand>) {
   const krankheit = findeKrankheit(zustand.thema);
@@ -25,12 +27,17 @@ export function Buehne({ zustand }: BuehneProps<AufklaerungsZustand>) {
 
   return (
     <div className="aufkbuehne">
-      <Blatt key={krankheit.id} krankheit={krankheit} seite={zustand.seite} />
+      <Blatt
+        key={krankheit.id}
+        krankheit={krankheit}
+        seite={zustand.seite}
+        ohr={zustand.ohr ?? 'rechts'}
+      />
     </div>
   );
 }
 
-function Blatt({ krankheit, seite }: { krankheit: Krankheit; seite: number }) {
+function Blatt({ krankheit, seite, ohr }: { krankheit: Krankheit; seite: number; ohr: Ohr }) {
   const seiten = seitenVon(krankheit);
   const nr = Math.min(Math.max(seite, 0), seiten.length - 1);
   const aktuell = seiten[nr];
@@ -39,6 +46,19 @@ function Blatt({ krankheit, seite }: { krankheit: Krankheit; seite: number }) {
   const Bild = gebung ? undefined : findeZeichnung(bildId);
   const saetze = aktuell.saetze;
   const letzte = nr === seiten.length - 1;
+  const manoever = findeManoever(aktuell.manoever);
+
+  if (manoever) {
+    return (
+      <article className="aufkblatt" data-art="manoever">
+        <div className="aufkblatt__manoever">
+          <p className="aufkblatt__oben">{krankheit.name}</p>
+          <ManoeverKarten manoever={manoever} ohr={ohr} />
+        </div>
+        <Weg seiten={seiten} nr={nr} />
+      </article>
+    );
+  }
 
   return (
     <article className="aufkblatt" data-bild={Boolean(Bild || gebung)} data-art={aktuell.art}>
@@ -86,17 +106,23 @@ function Blatt({ krankheit, seite }: { krankheit: Krankheit; seite: number }) {
         </div>
       </div>
 
-      <ol
-        className="aufkweg"
-        aria-label="Seiten dieser Erklärung"
-        style={{ gridTemplateColumns: `repeat(${seiten.length}, 1fr)` }}
-      >
-        {seiten.map((s, i) => (
-          <li key={s.id} data-lage={i === nr ? 'hier' : i < nr ? 'war' : 'kommt'}>
-            {s.kurz}
-          </li>
-        ))}
-      </ol>
+      <Weg seiten={seiten} nr={nr} />
     </article>
+  );
+}
+
+function Weg({ seiten, nr }: { seiten: { id: string; kurz: string }[]; nr: number }) {
+  return (
+    <ol
+      className="aufkweg"
+      aria-label="Seiten dieser Erklärung"
+      style={{ gridTemplateColumns: `repeat(${seiten.length}, 1fr)` }}
+    >
+      {seiten.map((s, i) => (
+        <li key={s.id} data-lage={i === nr ? 'hier' : i < nr ? 'war' : 'kommt'}>
+          {s.kurz}
+        </li>
+      ))}
+    </ol>
   );
 }

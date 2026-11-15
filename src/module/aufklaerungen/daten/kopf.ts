@@ -230,4 +230,87 @@ export const KOPF: Krankheit[] = [
     warnung:
       'Eine Wunde, Rötung oder Schwellung am Fuß: bitte gleich zu uns, nicht abwarten. Rasch zunehmende Schwäche in Armen oder Beinen: sofort ins Krankenhaus.',
   },
+  {
+    id: 'lagerungsschwindel',
+    name: 'Lagerungsschwindel',
+    zusatz: 'Gutartiger Drehschwindel, Befreiungsmanöver',
+    gebiet: 'kopf',
+    suche:
+      'bppv benigner paroxysmaler lagerungsschwindel otolithen kristalle bogengang canalolithiasis drehschwindel epley semont barbecue lempert brandt-daroff befreiungsmanoever lagerungsmanoever dix-hallpike lagerungstest uebungsblatt',
+    seiten: [
+      {
+        id: 'was',
+        titel: 'Was ist das?',
+        kurz: 'Die Krankheit',
+        saetze: [
+          'Die häufigste Ursache für Drehschwindel. Er kommt in kurzen, heftigen Anfällen beim Hinlegen, Umdrehen im Bett, Bücken oder Hochschauen.',
+          'Ein Anfall dauert unter einer Minute. Oft ist Ihnen dabei übel, danach fühlen Sie sich eine Weile benommen.',
+          'Gefährlich ist der Lagerungsschwindel nicht, aber unangenehm – und er lässt sich meist schnell beheben.',
+        ],
+      },
+      {
+        id: 'ursachen',
+        titel: 'Woher kommt das?',
+        kurz: 'Ursache',
+        saetze: [
+          'Im Gleichgewichtsorgan liegen winzige Kalkkristalle an ihrem festen Platz. Lösen sich einige, rutschen sie in einen der drei Bogengänge.',
+          'Bei jeder Kopfbewegung rollen sie dort hin und her. Das Organ meldet eine Drehung, die es gar nicht gibt.',
+          'Häufiger wird das mit dem Alter, nach einem Sturz auf den Kopf, nach langer Bettruhe oder einer Innenohrentzündung. Oft findet sich kein Anlass.',
+          'Bei etwa jedem Dritten kommt er nach Monaten oder Jahren wieder. Dann hilft dasselbe Manöver erneut.',
+        ],
+      },
+      {
+        id: 'test',
+        titel: 'Welches Ohr ist es?',
+        kurz: 'Lagerungstest',
+        saetze: [
+          'Mit einem Lagerungstest finden wir heraus, welches Ohr und welcher Bogengang betroffen ist: Wir legen Sie mit gedrehtem Kopf rasch zurück.',
+          'Löst das den Schwindel aus, zucken die Augen auf typische Weise. Daran erkennen wir die Seite.',
+          'Meist ist der hintere Bogengang betroffen, seltener der seitliche. Danach richtet sich das Manöver.',
+          'Röntgen, CT oder Medikamente gegen Schwindel braucht es dafür nicht.',
+        ],
+      },
+      {
+        id: 'epley',
+        titel: 'Epley-Manöver',
+        kurz: 'Epley',
+        saetze: [],
+        manoever: 'epley',
+      },
+      {
+        id: 'semont',
+        titel: 'Sémont-Manöver',
+        kurz: 'Sémont',
+        saetze: [],
+        manoever: 'semont',
+      },
+      {
+        id: 'barbecue',
+        titel: 'Barbecue-Rotation',
+        kurz: 'Barbecue',
+        saetze: [],
+        manoever: 'barbecue',
+      },
+      {
+        id: 'brandt-daroff',
+        titel: 'Brandt-Daroff-Übung',
+        kurz: 'Brandt-Daroff',
+        saetze: [],
+        manoever: 'brandt-daroff',
+      },
+      {
+        id: 'selbst',
+        titel: 'Danach und zu Hause',
+        kurz: 'Zu Hause',
+        saetze: [
+          'Nach dem Manöver ist der Schwindel oft sofort weg. Ein leichtes Schwanken kann noch ein paar Tage bleiben.',
+          'Besondere Schonung ist nicht nötig. Fahren Sie aber erst wieder Auto, wenn Sie sich sicher fühlen.',
+          'Kommt der Schwindel zurück, machen Sie die Übung von Ihrem Blatt zu Hause – so oft wie dort angegeben.',
+          'Hilft das nach einer Woche nicht, kommen Sie bitte wieder. Ein anderes Manöver oder eine andere Ursache ist dann möglich.',
+        ],
+      },
+    ],
+    warnung:
+      'Sofort 112 bei plötzlichem Schwindel mit Doppelbildern, Sprach- oder Schluckstörung, Lähmung, Taubheit, Gangunsicherheit oder heftigem Kopfschmerz. Bitte auch kommen, wenn der Schwindel ohne Kopfbewegung anhält oder Sie schlechter hören.',
+  },
 ];

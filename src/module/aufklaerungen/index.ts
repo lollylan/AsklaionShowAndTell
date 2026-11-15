@@ -4,12 +4,15 @@ import { Steuerung } from './Steuerung';
 import { Buehne } from './Buehne';
 import { Handzettel } from './Handzettel';
 import { GEBIETE, KRANKHEITEN } from './daten';
+import type { Ohr } from './manoever';
 
 export interface AufklaerungsZustand {
   /** Krankheit, die der Patient gerade sieht – oder null für die Startseite. */
   thema: string | null;
   /** Aufgeschlagene Seite, ab 0 (siehe seitenVon). */
   seite: number;
+  /** Betroffenes Ohr für die Befreiungsmanöver beim Lagerungsschwindel; Standard rechts. */
+  ohr?: Ohr;
 }
 
 export default definiereModul<AufklaerungsZustand>({

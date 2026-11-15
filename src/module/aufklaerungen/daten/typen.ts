@@ -50,6 +50,8 @@ export interface Blattseite {
   bild?: string;
   /** 'bild': Seite mit echten Bildern aus ../bildgebung.json statt Zeichnung. */
   art?: 'bild';
+  /** id eines Befreiungsmanövers aus ../manoever: die Seite zeigt dessen Schritte als Karten. */
+  manoever?: string;
 }
 
 interface Stamm {

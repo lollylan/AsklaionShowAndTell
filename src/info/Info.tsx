@@ -8,6 +8,7 @@ import { AUSBRUCH_QUELLEN, CRM_QUELLE } from '../module/reiseimpfung/ausbrueche'
 import { QUELLE, QUELLE_HRA } from '../module/anatomie/quellen';
 import aufklaerungen from '../module/aufklaerungen/bildgebung.json';
 import orthopaedie from '../module/orthopaedie/bildgebung.json';
+import { MANOEVER } from '../module/aufklaerungen/manoever';
 
 // Zweck, Quellen und Lizenzen (/info). Die Listen entstehen aus den Lizenzangaben, die ohnehin
 // bei den Daten stehen – wer ein Bild ergänzt, ergänzt damit auch diese Seite.
@@ -138,6 +139,27 @@ export function Info() {
             (Zuschnitt, Kontrast) stehen bei der Lizenz.
           </p>
           <Nachweisliste eintraege={BEFUNDBILDER} />
+
+          <h3>Befreiungsmanöver beim Lagerungsschwindel</h3>
+          <p>
+            Grafiken von Wikimedia Commons, in die Farben der App umgefärbt und für das andere Ohr
+            gespiegelt. Bearbeitungen stehen unter derselben Lizenz. Das Sémont-Manöver ist eine
+            eigene Zeichnung.
+          </p>
+          <Nachweisliste
+            eintraege={MANOEVER.flatMap((m) =>
+              m.grafik.quelle
+                ? [
+                    {
+                      titel: m.name,
+                      urheber: m.grafik.urheber,
+                      lizenz: m.grafik.lizenz,
+                      quelle: m.grafik.quelle,
+                    },
+                  ]
+                : [],
+            )}
+          />
 
           <h3>Fotos zu den Ländern</h3>
           <p>

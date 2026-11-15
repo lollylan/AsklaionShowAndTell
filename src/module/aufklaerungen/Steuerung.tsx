@@ -1,6 +1,6 @@
 import './steuerung.css';
 import { useEffect, useState } from 'react';
-import { ChevronLeft, ChevronRight, MonitorPlay, Search } from 'lucide-react';
+import { ChevronLeft, ChevronRight, MonitorPlay, Printer, Search } from 'lucide-react';
 import type { SteuerungProps } from '../../kern/typen';
 import type { AufklaerungsZustand } from './index';
 import {
@@ -13,6 +13,7 @@ import {
   sucheKrankheiten,
 } from './daten';
 import { seite as appSeite } from '../../kern/pfad';
+import { findeManoever, mitSeite, seitig, type Ohr } from './manoever';
 
 export function Steuerung({ zustand, aendern }: SteuerungProps<AufklaerungsZustand>) {
   const [frage, setFrage] = useState('');
@@ -21,6 +22,8 @@ export function Steuerung({ zustand, aendern }: SteuerungProps<AufklaerungsZusta
   const anzahl = seiten.length;
   const seite = Math.min(Math.max(zustand.seite, 0), Math.max(anzahl - 1, 0));
   const treffer = sucheKrankheiten(frage);
+  const ohr: Ohr = zustand.ohr ?? 'rechts';
+  const manoever = offen ? findeManoever(seiten[seite]?.manoever) : undefined;
 
   const waehle = (id: string) =>
     aendern(zustand.thema === id ? { thema: null, seite: 0 } : { thema: id, seite: 0 });
@@ -89,13 +92,59 @@ export function Steuerung({ zustand, aendern }: SteuerungProps<AufklaerungsZusta
             </button>
           </div>
 
+          {manoever && (
+            <div className="aufk__manoever">
+              {seitig(manoever) && (
+                <div className="aufk__ohr" role="group" aria-label="Betroffenes Ohr">
+                  <span>Betroffenes Ohr</span>
+                  {(['rechts', 'links'] as const).map((o) => (
+                    <button
+                      key={o}
+                      type="button"
+                      className="knopf"
+                      aria-pressed={ohr === o}
+                      onClick={() => aendern({ ohr: o })}
+                    >
+                      {o === 'rechts' ? 'Rechts' : 'Links'}
+                    </button>
+                  ))}
+                </div>
+              )}
+              <button
+                type="button"
+                className="knopf"
+                onClick={() =>
+                  window.open(
+                    `${appSeite('/lagerungsblatt')}?m=${manoever.id}&ohr=${ohr}`,
+                    '_blank',
+                    'noopener',
+                  )
+                }
+              >
+                <Printer size={18} strokeWidth={1.75} aria-hidden="true" />
+                Übungsblatt drucken
+              </button>
+            </div>
+          )}
+
           <div className="aufk__spickzettel">
             <h3>{seiten[seite].titel}</h3>
-            <ul>
-              {seiten[seite].saetze.map((satz) => (
-                <li key={satz}>{satz}</li>
-              ))}
-            </ul>
+            {manoever ? (
+              <ol>
+                {manoever.schritte.map((schritt) => (
+                  <li key={schritt.text}>
+                    {mitSeite(schritt.text, ohr)}
+                    {schritt.halten && ` (${schritt.halten})`}
+                  </li>
+                ))}
+              </ol>
+            ) : (
+              <ul>
+                {seiten[seite].saetze.map((satz) => (
+                  <li key={satz}>{satz}</li>
+                ))}
+              </ul>
+            )}
             {seiten[seite].art === 'bild' && (
               <p className="aufk__bildquellen">
                 {bildgebungVon(offen.id)?.aufnahmen.map((a) => (

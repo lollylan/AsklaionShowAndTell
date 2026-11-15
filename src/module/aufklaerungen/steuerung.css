@@ -70,6 +70,26 @@
   color: var(--kupfer-dunkel);
 }
 
+.aufk__manoever {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  margin-top: 12px;
+}
+
+.aufk__ohr {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aufk__ohr > span {
+  font-weight: 700;
+  color: var(--text-hell);
+}
+
+.aufk__spickzettel ol,
 .aufk__spickzettel ul {
   display: grid;
   gap: 6px;

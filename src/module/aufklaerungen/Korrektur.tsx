@@ -1,5 +1,6 @@
 import './korrektur.css';
 import { GEBIETE, KRANKHEITEN, bildgebungVon, hinweisTitel, seitenVon } from './daten';
+import { findeManoever, mitSeite } from './manoever';
 import { findeZeichnung } from './bilder';
 import { datei } from '../../kern/pfad';
 
@@ -73,6 +74,7 @@ export function Korrektur() {
                         <li key={satz}>{satz}</li>
                       ))}
                     </ul>
+                    {s.manoever && <ManoeverText id={s.manoever} />}
                     {i === seiten.length - 1 && k.warnung && (
                       <p className="korrektur__warnung">
                         <strong>{hinweisTitel(k)}</strong> {k.warnung}
@@ -87,5 +89,27 @@ export function Korrektur() {
         );
       })}
     </main>
+  );
+}
+
+/** Befreiungsmanöver zum Gegenlesen, für das rechte Ohr. */
+function ManoeverText({ id }: { id: string }) {
+  const m = findeManoever(id);
+  if (!m) return null;
+  return (
+    <>
+      <p>{m.wofuer} (Text für das rechte Ohr)</p>
+      <ol>
+        {m.schritte.map((schritt) => (
+          <li key={schritt.text}>
+            {mitSeite(schritt.text, 'rechts')}
+            {schritt.halten && ` – ${schritt.halten}`}
+          </li>
+        ))}
+      </ol>
+      <p>
+        <strong>Wie oft:</strong> {m.wiederholen} {m.hinweis}
+      </p>
+    </>
   );
 }

@@ -1,0 +1,121 @@
+/* Übungsblatt Lagerungsschwindel (/lagerungsblatt). Ergänzt handzettel.css. */
+
+.lagerleiste fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.lagerleiste legend {
+  margin-bottom: 4px;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-hell);
+}
+
+.lagerblatt__kopf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2mm 4mm;
+  margin-top: 3mm;
+}
+
+.lagerblatt__kopf h3 {
+  margin: 0;
+  color: var(--petrol);
+}
+
+.lagerblatt__ohr {
+  padding: 0.6mm 3mm;
+  border-radius: 10mm;
+  background: var(--kupfer-dunkel);
+  font-weight: 700;
+  color: #fff;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.lagerblatt__schritte {
+  margin: 4mm 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lagerschritt {
+  display: grid;
+  grid-template-columns: 44mm minmax(0, 1fr);
+  gap: 5mm;
+  align-items: center;
+  padding: 1.8mm 0;
+  border-top: 0.2mm solid var(--linie);
+  break-inside: avoid;
+}
+
+.lagerschritt__bild {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 19 / 13;
+  min-height: 0;
+  overflow: hidden;
+  border: 0.3mm solid var(--petrol-hauch);
+  border-radius: 2mm;
+  background: #fff;
+  font-family: var(--schrift-titel);
+  font-size: 24pt;
+  font-weight: 700;
+  color: #a9cbd3;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.lagerschritt__nr {
+  font-weight: 700;
+  color: var(--kupfer-dunkel);
+}
+
+.lagerschritt__halten {
+  display: inline-block;
+  margin-top: 1.5mm;
+  padding: 0.6mm 2.4mm;
+  border-radius: 1mm;
+  background: var(--petrol-hauch);
+  font-weight: 700;
+  color: var(--petrol);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.lagerblatt__wie {
+  display: grid;
+  gap: 1.5mm;
+  margin-top: 3mm;
+  padding-top: 3mm;
+  border-top: 0.2mm solid var(--linie);
+}
+
+.lagerblatt__gesamt {
+  width: 110mm;
+  aspect-ratio: 6 / 5;
+  margin: 4mm auto 0;
+}
+
+/* Bei einer Gesamtgrafik steht statt des Bildes nur die Nummer, klein. */
+.lagerblatt__schritte[data-ganz] .lagerschritt {
+  grid-template-columns: 10mm minmax(0, 1fr);
+  gap: 3mm;
+}
+
+.lagerblatt__schritte[data-ganz] .lagerschritt__bild {
+  aspect-ratio: 1;
+  border: 0;
+  border-radius: 50%;
+  background: var(--petrol-hauch);
+  font-size: 13pt;
+  color: var(--petrol);
+}
+
+.lagerblatt__schritte[data-ganz] .lagerschritt__nr {
+  display: none;
+}

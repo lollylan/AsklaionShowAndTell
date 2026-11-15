@@ -14,6 +14,7 @@ import { Korrektur } from './module/aufklaerungen/Korrektur';
 import { Korrektur as MedikamentenKorrektur } from './module/medikamente/Korrektur';
 import { Handzettel } from './handzettel/Handzettel';
 import { Uebungsblatt } from './module/orthopaedie/Uebungsblatt';
+import { Lagerungsblatt } from './module/aufklaerungen/Lagerungsblatt';
 
 // Eine App, zwei Gesichter:  /  = Steuerung (Arzt),  /buehne = Patientenbildschirm.
 // Dazu /korrektur und /korrektur-medikamente: alle Texte zum Gegenlesen, ohne Sitzung,
@@ -35,6 +36,14 @@ if (pfad === '/handzettel') {
   wurzel.render(
     <StrictMode>
       <Uebungsblatt />
+    </StrictMode>,
+  );
+} else if (pfad === '/lagerungsblatt') {
+  // Übungsblatt zum Lagerungsschwindel: ein Befreiungsmanöver für das betroffene Ohr.
+  document.title = `${MARKE.app} – Übungsblatt Lagerungsschwindel`;
+  wurzel.render(
+    <StrictMode>
+      <Lagerungsblatt />
     </StrictMode>,
   );
 } else if (pfad === '/info') {
