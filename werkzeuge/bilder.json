@@ -1,0 +1,40 @@
+{
+  "stil": "Painterly natural-history illustration with fine detail, in the manner of a modern museum plate. Single clear subject, calm composition, generous empty space. Deep dark teal background (#013D4B) that fades evenly to the edges, subject lit by soft warm light with subtle copper-orange highlights. Muted, elegant palette of teal, cream and copper. Full-bleed image: the dark teal background reaches all four edges, with no frame, no paper margin and no vignette border. No text, no letters, no labels, no watermark.",
+  "bilder": {
+    "malaria": "An Anopheles mosquito seen from the side resting on human skin, body tilted upward at its characteristic angle, long legs and spotted wings clearly visible.",
+    "hepatitis-a": "A plate of raw salad with tomato slices, a glass of water with ice cubes and an opened oyster on a simple table at a tropical street stall.",
+    "tollwut": "A stray street dog standing alert on a dusty tropical village road at dusk, seen from a respectful distance.",
+    "typhus": "Water running from an old brass tap into a simple drinking glass, next to a bowl of cooked rice at a market stall.",
+    "dengue": "An Aedes aegypti mosquito with clearly visible white bands on its black legs and white markings on its body, sitting on a green leaf in daylight.",
+    "chikungunya": "Two hands of an adult gently holding an aching wrist, joints softly highlighted in warm copper light, a tiny tiger mosquito in the background.",
+    "gelbfieber": "Dense tropical rainforest canopy along a wide river at sunrise, golden light through mist, a small mosquito silhouette in the foreground.",
+    "hepatitis-b": "A stylised anatomical human liver, rendered softly, floating in the centre, with a small droplet of blood beside it.",
+    "japanische-enzephalitis": "Flooded rice paddies at dusk with two pigs near a small farm hut and mosquitoes hovering above the water.",
+    "meningokokken": "A dense crowd of people standing close together at a busy outdoor gathering, seen from slightly above, faces not recognisable.",
+    "fsme": "A tick sitting on the tip of a grass blade with its front legs stretched out, macro view.",
+    "polio": "A small glass vaccine vial and a syringe lying beside a yellow international vaccination booklet without any writing on it.",
+    "cholera": "A hand water pump in a village with murky water flowing into a metal bucket.",
+    "standard": "A yellow vaccination booklet without any writing on it next to a stethoscope and a small adhesive plaster on a doctor's desk.",
+    "muecken": "A bed with a white mosquito net draped over it in a tropical room, a bottle of insect repellent on the bedside table.",
+    "durchfall": "A sealed bottle of drinking water, a peeled banana and a steaming bowl of freshly cooked food on a wooden table."
+  },
+  "impfungen_hinweis": "Bilder für src/module/impfungen, Ziel public/bilder/impfungen/<id>.jpg. Polio, Hepatitis B und FSME nutzen die Bilder aus public/bilder/krankheiten.",
+  "impfungen": {
+    "tetanus": "A rusty old garden rake and a few rusty nails lying in dark garden soil, a pair of worn leather gardening gloves beside them.",
+    "diphtherie": "A wooden tongue depressor and a small brass examination torch lying on a folded white cloth, suggesting a throat examination.",
+    "keuchhusten": "A newborn baby sleeping peacefully in a simple wooden crib, a parent's hand resting gently on the edge, face of the baby turned away.",
+    "hib": "A toddler's small hand holding a well-loved soft toy rabbit, resting on a knitted blanket.",
+    "pneumokokken": "A stylised anatomical pair of human lungs, rendered softly, floating in the centre.",
+    "rotaviren": "A baby bottle with water, a folded muslin cloth and a small spoon on a wooden changing table.",
+    "meningokokken": "A sleeping toddler held securely in the arms of a parent, seen from the side, faces not recognisable.",
+    "masern": "A child's forearm with a fine, faint red rash, held gently by an adult hand.",
+    "mumps": "Side profile of a young child's face in soft light with a gently swollen cheek below the ear, calm expression.",
+    "roeteln": "A pregnant woman in profile, hands resting on her belly, face not shown.",
+    "windpocken": "A child's back with a few small red chickenpox spots, a small bottle of soothing lotion beside, gentle and not alarming.",
+    "hpv": "A teenage girl and a teenage boy seen from behind walking side by side on a quiet path at dusk, their figures softly lit with warm copper light, surrounded directly by the deep dark teal background with no trees framing the scene.",
+    "grippe": "A steaming cup of tea, a glass thermometer and a crumpled tissue on a bedside table, autumn leaves visible through a window.",
+    "guertelrose": "An elderly person's hand resting on the side of their chest over a linen shirt, a faint band of warm copper light along the ribs.",
+    "covid-19": "A stylised coronavirus particle with its crown of spike proteins, floating in the centre.",
+    "rsv": "A sleeping infant wrapped in a blanket, held by the hands of an elderly grandparent, soft winter light from a window."
+  }
+}

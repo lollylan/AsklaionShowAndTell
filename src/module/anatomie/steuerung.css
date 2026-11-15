@@ -1,0 +1,285 @@
+.gel {
+  display: grid;
+  gap: 36px;
+  max-width: 1040px;
+}
+
+.gel h2 {
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.gel__hilfe {
+  max-width: 62ch;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.gel__bereich + .gel__bereich {
+  margin-top: 18px;
+}
+
+.gel__bereich h3 {
+  margin-bottom: 8px;
+  font-family: var(--schrift-text);
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.gel__regionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- Pult: links das Modell zum Drehen, rechts die Strukturen ---------- */
+
+.gel__pult {
+  display: grid;
+  grid-template-columns: minmax(300px, 420px) minmax(320px, 1fr);
+  align-items: start;
+  gap: 36px;
+}
+
+@media (max-width: 1180px) {
+  .gel__pult {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* Einspaltig würde das mitlaufende Modell die Liste überdecken. */
+  .gel__pult .gel__blick {
+    position: static;
+    max-width: 460px;
+  }
+}
+
+.gel__blick {
+  position: sticky;
+  top: 16px;
+}
+
+.gel__flaeche {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background: radial-gradient(120% 90% at 30% 20%, var(--petrol) 0%, var(--petrol-tief) 100%);
+  overflow: hidden;
+}
+
+.gel__flaeche .gelmodell:focus-visible {
+  outline: 3px solid var(--kupfer-hell);
+  outline-offset: -3px;
+}
+
+.gel__flaeche .gelmodell__hinweis {
+  font-size: 15px;
+}
+
+.gel__blicke,
+.gel__zoom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.gel__blicke .knopf {
+  flex: 1 1 calc(33% - 8px);
+  padding-inline: 8px;
+}
+
+.gel__zoom .knopf:last-child {
+  margin-left: auto;
+}
+
+/* ---------- Was läuft, mit Spickzettel ---------- */
+
+.gel__laeuft {
+  margin-bottom: 22px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+  overflow: hidden;
+}
+
+.gel__laeuft > p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 10px 10px 14px;
+  background: var(--kupfer);
+  color: #fff;
+}
+
+.gel__laeuft > p > span {
+  flex: 1;
+}
+
+.gel__laeuft svg {
+  flex: none;
+}
+
+.gel__laeuft .knopf {
+  border-color: #fff;
+  color: var(--kupfer-dunkel);
+}
+
+.gel__laeuft dl {
+  max-width: 68ch;
+  margin: 0;
+  padding: 14px 18px 16px;
+}
+
+.gel__laeuft dt {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--kupfer-dunkel);
+}
+
+.gel__laeuft dd {
+  margin: 0 0 10px;
+}
+
+.gel__laeuft dd:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Strukturen ---------- */
+
+.gel__gruppe + .gel__gruppe {
+  margin-top: 22px;
+}
+
+.gel__gruppenkopf {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.gel__gruppenkopf h3 {
+  font-family: var(--schrift-text);
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.gel__alle {
+  padding: 2px 4px;
+  border: 0;
+  border-radius: 4px;
+  background: none;
+  font-size: 13px;
+  color: var(--petrol);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.gel__alle:hover {
+  color: var(--petrol-hell);
+}
+
+.gel__gruppe ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gel__gruppe li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 44px;
+  gap: 6px;
+}
+
+.gel__struktur {
+  display: grid;
+  align-content: center;
+  gap: 1px;
+  min-height: 52px;
+  padding: 7px 14px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+  text-align: left;
+  transition:
+    background-color 160ms var(--raus),
+    border-color 160ms var(--raus),
+    opacity 160ms var(--raus);
+}
+
+.gel__struktur strong {
+  color: var(--petrol);
+}
+
+.gel__struktur span {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-hell);
+}
+
+.gel__struktur:hover {
+  border-color: var(--petrol);
+}
+
+.gel__struktur:active,
+.gel__auge:active {
+  translate: 0 1px;
+}
+
+.gel__struktur[aria-pressed='true'] {
+  border-color: var(--kupfer);
+  background: var(--kupfer);
+}
+
+.gel__struktur[aria-pressed='true'] strong {
+  color: #fff;
+}
+
+.gel__struktur[aria-pressed='true'] span {
+  color: #fbdcc8;
+}
+
+.gel__gruppe li[data-aus='true'] .gel__struktur {
+  border-style: dashed;
+  background: transparent;
+}
+
+.gel__gruppe li[data-aus='true'] .gel__struktur strong {
+  color: var(--text-hell);
+  font-weight: 400;
+}
+
+.gel__auge {
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+  color: var(--petrol);
+  transition:
+    background-color 160ms var(--raus),
+    border-color 160ms var(--raus);
+}
+
+.gel__auge:hover {
+  border-color: var(--petrol);
+  background: var(--petrol-hauch);
+}
+
+.gel__gruppe li[data-aus='true'] .gel__auge {
+  border-style: dashed;
+  background: transparent;
+  color: var(--text-hell);
+}
+
+.gel__quellen {
+  max-width: 78ch;
+  font-size: 12px;
+  color: var(--text-hell);
+}

@@ -1,0 +1,220 @@
+.aufk {
+  display: grid;
+  gap: 40px;
+  max-width: 860px;
+}
+
+.aufk h2 {
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.aufk__hilfe {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+/* ---------- Pult: was läuft, blättern, Spickzettel ---------- */
+
+.aufk__laeuft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 10px 10px 10px 14px;
+  border-radius: 8px;
+  background: var(--kupfer);
+  color: #fff;
+}
+
+.aufk__laeuft > span {
+  flex: 1;
+}
+
+.aufk__laeuft svg {
+  flex: none;
+}
+
+.aufk__laeuft .knopf {
+  border-color: #fff;
+  color: var(--kupfer-dunkel);
+}
+
+.aufk__seiten {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.aufk__pfeil {
+  padding-inline: 10px;
+}
+
+.aufk__seiten .knopf--haupt {
+  margin-left: auto;
+}
+
+.aufk__spickzettel {
+  margin-top: 16px;
+  padding: 16px 20px 18px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+}
+
+.aufk__spickzettel h3 {
+  margin-bottom: 8px;
+  font-family: var(--schrift-text);
+  font-size: 15px;
+  color: var(--kupfer-dunkel);
+}
+
+.aufk__spickzettel ul {
+  display: grid;
+  gap: 6px;
+  max-width: 72ch;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.aufk__spickzettel p {
+  max-width: 72ch;
+  margin-top: 10px;
+  color: var(--kupfer-dunkel);
+}
+
+/* ---------- Auswahl ---------- */
+
+.aufk__suche {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 420px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid #9aa7b1;
+  border-radius: 8px;
+  background: var(--flaeche);
+  color: var(--text-hell);
+  transition: border-color 160ms var(--raus);
+}
+
+.aufk__suche:focus-within {
+  border-color: var(--petrol);
+  outline: 2px solid var(--petrol-hell);
+  outline-offset: 2px;
+}
+
+.aufk__suche input {
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text);
+  caret-color: var(--petrol);
+}
+
+.aufk__suche input::placeholder {
+  color: var(--text-hell);
+  opacity: 1;
+}
+
+.aufk__leer {
+  max-width: 62ch;
+  margin-top: 16px;
+  color: var(--text-hell);
+}
+
+.aufk__gebiet {
+  margin-top: 26px;
+}
+
+.aufk__gebiet h3 {
+  margin-bottom: 8px;
+  font-family: var(--schrift-text);
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.aufk__gebiet ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.aufk__thema {
+  display: grid;
+  align-content: center;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  min-height: 56px;
+  padding: 9px 14px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+  text-align: left;
+  transition:
+    background-color 160ms var(--raus),
+    border-color 160ms var(--raus);
+}
+
+.aufk__thema strong {
+  color: var(--petrol);
+}
+
+.aufk__thema span {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.aufk__thema:hover {
+  border-color: var(--petrol);
+}
+
+.aufk__thema:active {
+  translate: 0 1px;
+}
+
+.aufk__thema[aria-pressed='true'] {
+  border-color: var(--petrol);
+  background: var(--petrol);
+}
+
+.aufk__thema[aria-pressed='true'] strong {
+  color: #fff;
+}
+
+.aufk__thema[aria-pressed='true'] span {
+  color: var(--auf-petrol-leise);
+}
+
+.aufk__quellen {
+  max-width: 78ch;
+  font-size: 12px;
+  color: var(--text-hell);
+}
+
+.aufk__quellen a {
+  color: var(--petrol);
+  text-underline-offset: 2px;
+}
+
+/* Urheber und Lizenz der echten Bilder auf der Seite „Im Bild“ */
+.aufk__bildquellen {
+  display: grid;
+  gap: 2px;
+  font-size: 13px;
+  color: var(--text-hell) !important;
+}
+
+.aufk__bildquellen a {
+  color: var(--petrol);
+  text-underline-offset: 2px;
+}

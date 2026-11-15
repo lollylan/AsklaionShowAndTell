@@ -1,0 +1,214 @@
+{
+  "GHA": [
+    { "art": "gesundheit", "text": "Tagsüber und abends Mückenschutz tragen: Auch Dengue wird von Mücken übertragen, die am Tag stechen." },
+    { "art": "gesundheit", "text": "Nicht in Süßwasser baden: Im ganzen Land besteht die Gefahr einer Bilharziose." },
+    { "art": "essen", "text": "Buschfleisch nur gut durchgegart essen. Sonst gilt: kochen, schälen oder weglassen." },
+    { "art": "gesetz", "text": "Regierungsgebäude, Militär und Brücken nicht fotografieren. Menschen vorher um Erlaubnis fragen." },
+    { "art": "kultur", "text": "Gegenstände, Essen und Geld mit der rechten Hand geben und annehmen." }
+  ],
+  "GIB": [
+    { "art": "tiere", "text": "Die Affen am Felsen nicht streicheln oder füttern: Sie beißen und schnappen sich Essen und Taschen." },
+    { "art": "tiere", "text": "Beim Affenfelsen kein Essen offen in der Hand tragen und Wertsachen gut verstauen." },
+    { "art": "verkehr", "text": "Das Auto besser in Spanien parken: In Gibraltar gibt es kaum Parkplätze, und Abschleppen ist teuer." },
+    { "art": "geld", "text": "Gibraltar-Pfund vor der Ausreise ausgeben: Außerhalb von Gibraltar werden sie nicht angenommen." }
+  ],
+  "GRD": [
+    { "art": "natur", "text": "Hurrikangefahr besonders von August bis Oktober. Wetterberichte verfolgen." },
+    { "art": "wasser", "text": "Leitungswasser ist meist trinkbar, aber stark gechlort. Wer empfindlich ist, nimmt Flaschenwasser." },
+    { "art": "kleidung", "text": "Nicht im Badezeug durch die Ortschaft zum Strand gehen: Dafür kann die Polizei Bußgeld verlangen." },
+    { "art": "verkehr", "text": "Linksverkehr, und Tempolimits werden kaum beachtet: Beim Straßenüberqueren besonders aufpassen." },
+    { "art": "geld", "text": "Bei Preisen nachfragen, ob US-Dollar oder Ostkaribische Dollar gemeint sind. Taxipreis vorher ausmachen." }
+  ],
+  "GRC": [
+    { "art": "sonne", "text": "Im Hochsommer die Mittagshitze meiden: Sightseeing morgens, nachmittags Schatten oder Strand." },
+    { "art": "verkehr", "text": "Verkehrsverstöße werden strenger geahndet als bei uns. Promillegrenze 0,5, für Motorradfahrer null." },
+    { "art": "meer", "text": "Beim Baden an Felsküsten Badeschuhe tragen: Seeigel-Stacheln sind schmerzhaft." },
+    { "art": "sicherheit", "text": "Beim Taxi vom Fährhafen den Preis vorher klären und nicht fremde Fahrgäste mitnehmen lassen." },
+    { "art": "natur", "text": "Im Sommer herrscht Waldbrandgefahr: Kein Feuer, keine Kippen im Gelände und Hinweisen der Behörden folgen." }
+  ],
+  "GRL": [
+    { "art": "tiere", "text": "Abstand zu Schlittenhunden halten: Sie sind angebunden, oft hungrig und keine Streicheltiere." },
+    { "art": "natur", "text": "Wetter ändert sich schnell: Flüge und Schiffe fallen oft aus. Puffer einplanen und Buchungen bestätigen lassen." },
+    { "art": "sonne", "text": "Sonnencreme mit hohem Lichtschutz mitnehmen, im Sommer auch ein Mückennetz." },
+    { "art": "natur", "text": "Beim Sturm Piteraq an der Ostküste bei Sirenen oder Warnlicht sofort in eine feste Unterkunft gehen." },
+    { "art": "gesundheit", "text": "Die Europäische Krankenkassenkarte gilt nicht: Eine Auslandskrankenversicherung abschließen." }
+  ],
+  "GLP": [
+    { "art": "gesundheit", "text": "Gegen Mücken schützen: Dengue kommt vor. Moskitonetz, Spray und lange Kleidung am Abend helfen." },
+    { "art": "tiere", "text": "An den Stränden stechen Sandfliegen, und die Stiche können lange jucken. Abends Mückenschutz auftragen." },
+    { "art": "meer", "text": "Beim Schnorcheln Badeschuhe tragen, Feuerkoralle und Seeigel nicht anfassen. Nachts nicht im Meer schwimmen." },
+    { "art": "gesundheit", "text": "Nicht in stehenden Süßgewässern baden: Dort kann Bilharziose lauern." },
+    { "art": "kultur", "text": "Viele Einheimische, besonders Marktleute, möchten nicht fotografiert werden. Vorher fragen." }
+  ],
+  "GUM": [
+    { "art": "natur", "text": "Auch bei schwachen Erdbeben droht ein Tsunami: Sofort auf höheres Gelände ab etwa 10 Metern." },
+    { "art": "gesundheit", "text": "Mückenschutz auch tagsüber, und in Pfützen oder stehendem Wasser nicht barfuß gehen: Leptospirose kommt vor." },
+    { "art": "gesetz", "text": "Keine frischen Lebensmittel wie Fleisch, Eier oder Milchprodukte einführen: Das ist verboten." },
+    { "art": "verkehr", "text": "Ohne Auto kommt man kaum voran: Busse fahren nur wenige Male am Tag. Alte Straßen sind bei Nässe rutschig." },
+    { "art": "essen", "text": "Portionen sind oft sehr groß: Ein Kinderteller reicht meist." }
+  ],
+  "GTM": [
+    { "art": "sicherheit", "text": "Unauffällig kleiden, keinen Schmuck und keine teure Uhr zeigen. Nach Einbruch der Dunkelheit nicht über Land reisen." },
+    { "art": "sicherheit", "text": "In der Hauptstadt abends ein Taxi nehmen statt zu Fuß zu gehen. Geldautomaten nur in Gebäuden nutzen." },
+    { "art": "wasser", "text": "Leitungswasser nicht trinken. Abgekochtes oder Flaschenwasser nehmen und Getränke ohne Eis bestellen." },
+    { "art": "sicherheit", "text": "Vulkane nur mit ortskundigem Führer besteigen und vor der Dunkelheit zurück sein." },
+    { "art": "verkehr", "text": "Wertsachen nie im Gepäck auf dem Busdach lassen: Die bunten Busse werden manchmal überfallen." }
+  ],
+  "GGY": [
+    { "art": "gesundheit", "text": "Die Europäische Krankenkassenkarte gilt nicht: Eine Auslandskrankenversicherung ist sinnvoll." },
+    { "art": "verkehr", "text": "Linksverkehr, innerorts nur 40 km/h und außerorts 56 km/h. Auf Sark sind Autos verboten." },
+    { "art": "gesetz", "text": "Bei Drogen und Schlägereien greift die Polizei hart durch. Rauchen ist fast überall in Räumen verboten." },
+    { "art": "geld", "text": "Guernsey-Pfund vor der Abreise ausgeben: Außerhalb der Kanalinseln lassen sie sich nicht umtauschen." }
+  ],
+  "GIN": [
+    { "art": "gesundheit", "text": "Rund um die Uhr Mückenschutz: Malaria und Dengue kommen vor. Lange Kleidung und Moskitonetz nutzen." },
+    { "art": "wasser", "text": "Nur gefiltertes oder abgekochtes Wasser trinken. Ein Taschenfilter ist hilfreich." },
+    { "art": "gesundheit", "text": "Nicht in Süßwasser baden: Überall besteht das Risiko einer Bilharziose." },
+    { "art": "sicherheit", "text": "Nachts nicht auf die Straße und nicht Auto fahren. Türen und Fenster im Wagen verschlossen halten." },
+    { "art": "gesetz", "text": "Militär und Polizeieinrichtungen nicht fotografieren. An Kontrollposten ruhig und höflich bleiben." }
+  ],
+  "GNB": [
+    { "art": "wasser", "text": "Wasser nur abgekocht verwenden: Es besteht Cholera-Gefahr." },
+    { "art": "gesundheit", "text": "Auch bei Hitze lange Kleidung tragen und Mückenschutz nutzen: Malaria und Dengue sind verbreitet." },
+    { "art": "gesundheit", "text": "Nicht in Süßwasser baden: Dort lauert Bilharziose." },
+    { "art": "verkehr", "text": "Nachts nicht fahren: Die Straßen sind schlecht, Schilder fehlen, und in der Regenzeit sind Pisten überflutet." },
+    { "art": "kultur", "text": "Das Land ist überwiegend muslimisch: Frauen nicht ungefragt fotografieren oder berühren." }
+  ],
+  "GUY": [
+    { "art": "wasser", "text": "Nur Flaschenwasser trinken. Leitungswasser allenfalls zum Zähneputzen, wenn es gechlort oder abgekocht ist." },
+    { "art": "sicherheit", "text": "Bargeld nicht zeigen und abends in armen Vierteln nicht zu Fuß gehen. Nachts ein Taxi nehmen." },
+    { "art": "gesundheit", "text": "Im Landesinneren ist der Malariaschutz wichtig. Es gibt keine Krankenwagen: Ein Taxi dient als Notfallfahrzeug." },
+    { "art": "geld", "text": "Kleine US-Dollar-Scheine mitnehmen: Geldautomaten und Kartenzahlung sind außerhalb der Hauptstadt selten." },
+    { "art": "sicherheit", "text": "Für Reisen ins Landesinnere einen zugelassenen Führer buchen." }
+  ],
+  "HTI": [
+    { "art": "sicherheit", "text": "Nachts nicht fahren und keine Überlandfahrten allein unternehmen: Straßen sind schlecht und unsicher." },
+    { "art": "natur", "text": "Erdbebengebiet: Nach einem Seebeben sofort von der Küste weg auf höheres Gelände." },
+    { "art": "essen", "text": "Proviant, Trinkwasser und Erste-Hilfe-Material mitnehmen: Unterwegs gibt es kaum Versorgung." },
+    { "art": "strom", "text": "Stromausfälle sind häufig: Taschenlampe und aufgeladene Powerbank bereithalten." },
+    { "art": "geld", "text": "Kleine US-Dollar-Scheine mitnehmen: Sie werden oft angenommen." }
+  ],
+  "HND": [
+    { "art": "sicherheit", "text": "Bei einem Überfall nichts verteidigen und herausgeben, was verlangt wird. Nachts keine Strände besuchen." },
+    { "art": "sicherheit", "text": "Dunkle, leere Gegenden meiden und nachts nicht Auto fahren. Im Club Bargeld in der vorderen Tasche tragen." },
+    { "art": "sicherheit", "text": "Den Ausweis immer dabeihaben: Polizeikontrollen auf den Straßen sind häufig." },
+    { "art": "tiere", "text": "In tiefen Wäldern auf Giftschlangen achten und festes Schuhwerk tragen." },
+    { "art": "natur", "text": "Im Herbst droht Hurrikangefahr, und das Land liegt in einem Erdbebengebiet." }
+  ],
+  "HKG": [
+    { "art": "gesetz", "text": "E-Zigaretten sind komplett verboten. In der U-Bahn sind Essen, Trinken und Rauchen untersagt." },
+    { "art": "gesetz", "text": "CBD und Pfefferspray sind verboten: Nichts davon einführen, auch nicht auf der Durchreise." },
+    { "art": "natur", "text": "Von Juli bis September ist Taifunzeit: Bei Sturmwarnungen drinnen bleiben und Anweisungen folgen." },
+    { "art": "verkehr", "text": "Für Bus, U-Bahn und Fähre die Octopus-Karte kaufen. Taxifahrern die Adresse auf Chinesisch zeigen." },
+    { "art": "sonne", "text": "Im Sommer ist es heiß und sehr feucht: Viel trinken und Sonnenschutz nutzen." }
+  ],
+  "IND": [
+    { "art": "wasser", "text": "Leitungswasser nicht trinken, auch nicht zum Zähneputzen. Nur Wasser aus verschlossenen Flaschen und keine Eiswürfel." },
+    { "art": "essen", "text": "Rohes meiden: Obst nur selbst schälen, kein Salat vom Straßenstand, Gerichte nur frisch und heiß essen." },
+    { "art": "sonne", "text": "Vor der Hitze schützen, besonders im Mai: Mittags im Schatten bleiben, viel trinken, Kopfbedeckung tragen." },
+    { "art": "tiere", "text": "Abstand zu Straßenhunden und Affen halten, nichts füttern: Bisse können gefährlich sein." },
+    { "art": "kultur", "text": "In Tempeln Schuhe ausziehen und Schultern und Knie bedecken. Mit der rechten Hand essen und geben." }
+  ],
+  "IDN": [
+    { "art": "gesetz", "text": "Drogen sind streng verboten: Selbst kleine Mengen können zu harten Strafen bis zur Todesstrafe führen." },
+    { "art": "natur", "text": "Das Land hat viele aktive Vulkane und häufig Erdbeben: Hinweise der Behörden beachten." },
+    { "art": "wasser", "text": "Nur Flaschen- oder abgekochtes Wasser trinken, auch zum Zähneputzen. Eiswürfel meiden." },
+    { "art": "kultur", "text": "Im Ramadan nicht öffentlich essen oder trinken, wo viele Muslime sind. Abfällig über Religion reden ist verboten." },
+    { "art": "verkehr", "text": "Der Verkehr ist dicht und chaotisch, besonders in Jakarta. Reisezeit großzügig planen." }
+  ],
+  "IMN": [
+    { "art": "verkehr", "text": "Auf Landstraßen gibt es kein Tempolimit, die Straßen sind aber eng und kurvig: Nicht zu schnell fahren." },
+    { "art": "natur", "text": "Windiges, kühles, feuchtes Wetter ist normal: Regenjacke und warme Kleidung einpacken." },
+    { "art": "meer", "text": "Das Meer ist ganzjährig zu kalt zum Baden, und die Strände bestehen oft aus Fels oder Kies." },
+    { "art": "geld", "text": "Mit der Handy-Karte aus Deutschland kann Telefonieren sehr teuer werden: Roaming-Kosten vorher klären." },
+    { "art": "geld", "text": "Manx-Pfund vor der Abreise ausgeben: Außerhalb der Insel gilt nur britisches Geld." }
+  ],
+  "IRQ": [
+    { "art": "sicherheit", "text": "Als Ausländer nicht auffallen und sich nicht an Fenster stellen. Ohne Schutz und Begleitung nicht auf die Straße gehen." },
+    { "art": "kultur", "text": "In Moscheen bedecken Frauen Haare und Körper. Auf züchtige Kleidung achten." },
+    { "art": "sicherheit", "text": "Besonders in Bagdad, Kirkuk und Mossul droht Gefahr: Reiseplan mit einem Sicherheitsdienst abstimmen." },
+    { "art": "geld", "text": "Ausländische SIM-Karten funktionieren oft nicht: Eine lokale SIM-Karte gibt es gegen Vorlage des Passes." }
+  ],
+  "IRN": [
+    { "art": "kleidung", "text": "Frauen tragen in der Öffentlichkeit Kopftuch und weiten Mantel, Männer lange Hosen und keine ärmellosen Hemden." },
+    { "art": "gesetz", "text": "Behörden, Militär, Flughäfen nicht fotografieren: Das kann als Spionage gelten und zur Festnahme führen." },
+    { "art": "geld", "text": "Karten funktionieren wegen Sanktionen nicht: Ausreichend Bargeld in Euro mitbringen." },
+    { "art": "gesetz", "text": "Alkohol ist verboten, und unverheiratete Paare sollten sich diskret verhalten. Politik nicht öffentlich diskutieren." },
+    { "art": "wasser", "text": "Leitungswasser ist in Städten meist trinkbar, bei empfindlichem Magen besser Flaschenwasser." }
+  ],
+  "IRL": [
+    { "art": "verkehr", "text": "Linksverkehr, Kreisverkehr im Uhrzeigersinn. Landstraßen sind oft schmal und kurvig." },
+    { "art": "natur", "text": "Das Wetter wechselt ständig: Regenjacke einpacken, auch im Sommer." },
+    { "art": "gesundheit", "text": "Eine Auslandskrankenversicherung abschließen: Ohne Überweisung kostet die Notaufnahme schnell etwa 100 Euro." },
+    { "art": "sicherheit", "text": "Taschen und Handtaschen im Blick behalten und nichts sichtbar im Auto lassen: Diebstähle kommen vor." },
+    { "art": "kultur", "text": "Zum Nordirlandkonflikt und zur Kirche höflich zurückhaltend bleiben, besonders gegenüber älteren Menschen." }
+  ],
+  "ISL": [
+    { "art": "verkehr", "text": "Im Hochland nur auf den Pisten fahren: Fahren abseits der Wege ist verboten und wird hart bestraft." },
+    { "art": "verkehr", "text": "Auf Schotter und bei Nebel langsam fahren. Einspurige Brücken und plötzlich endender Asphalt sind häufig." },
+    { "art": "kultur", "text": "Vor dem Schwimmbad nackt gründlich duschen: Das Personal achtet streng darauf." },
+    { "art": "natur", "text": "Moos und Pflanzen nicht betreten: Sie erholen sich erst nach Jahren. Absperrungen und Wege beachten." },
+    { "art": "geld", "text": "An unbedienten Tankstellen nur mit Kreditkarte und PIN zahlen. Den Tank nicht leer fahren." }
+  ],
+  "ISR": [
+    { "art": "kultur", "text": "Von Freitagnachmittag bis Samstagabend ist Schabbat: Fast keine Züge und Busse, Läden und Lokale oft geschlossen." },
+    { "art": "sonne", "text": "Im Sommer ist es sehr heiß, auch nachts an der Küste: Viel trinken, Sonnenschutz und klimatisierte Räume nutzen." },
+    { "art": "natur", "text": "Bei Regen im Winter nicht in Wüstentäler: Es drohen plötzliche Sturzfluten." },
+    { "art": "verkehr", "text": "Am Steuer gilt praktisch Alkoholverbot, und Mietwagen dürfen meist nicht ins Westjordanland." },
+    { "art": "kultur", "text": "Taxis haben ein Taxameter, nachts gilt ein Aufschlag. Am Schabbat fahren Sammeltaxis, aber teurer." }
+  ],
+  "ITA": [
+    { "art": "sicherheit", "text": "Auf Märkten und in Menschenmengen Tasche und Geldbeutel im Blick behalten. Wertsachen nicht offen zeigen." },
+    { "art": "verkehr", "text": "In Altstädten nicht in verkehrsberuhigte Zonen mit Kamera fahren: Das ist verboten und wird teuer." },
+    { "art": "essen", "text": "Im Restaurant fällt oft ein Gedeck an, Trinkgeld ist nicht üblich. Den Kassenbon aufbewahren." },
+    { "art": "kleidung", "text": "In Kirchen Schultern und Knie bedecken. Badekleidung abseits des Strandes ist mancherorts verboten." },
+    { "art": "gesetz", "text": "Keine gefälschte Markenware kaufen: Das kann auch für Käufer eine Strafe bedeuten." }
+  ],
+  "JAM": [
+    { "art": "gesetz", "text": "Ganja nicht in der Öffentlichkeit rauchen und keine größeren Mengen mitführen: Es drohen Strafen und Ausweisung." },
+    { "art": "kleidung", "text": "Keine Tarnkleidung tragen: Sie ist verboten, weil sie mit Uniformen verwechselt wird." },
+    { "art": "sicherheit", "text": "Nachts nicht Auto fahren: Straßen sind dunkel, mit Schlaglöchern und Tieren. Linksverkehr." },
+    { "art": "natur", "text": "Hurrikansaison ist etwa von Juli bis Oktober: Wetterberichte verfolgen." },
+    { "art": "sicherheit", "text": "Händler sind oft aufdringlich: Ein freundliches Nein genügt meist. Taxipreis vorher vereinbaren." }
+  ],
+  "JPN": [
+    { "art": "geld", "text": "Bargeld mitnehmen: Viele kleine Läden nehmen keine Karten, und manche Geldautomaten akzeptieren keine ausländischen Karten." },
+    { "art": "kultur", "text": "Im Bad zuerst gründlich duschen, dann ins Becken. Wer tätowiert ist, fragt am Eingang nach." },
+    { "art": "kultur", "text": "Stäbchen nie senkrecht in den Reis stecken und nichts von Stäbchen zu Stäbchen reichen." },
+    { "art": "kultur", "text": "Trinkgeld ist nicht üblich. In Zügen nicht telefonieren und möglichst leise sein." },
+    { "art": "natur", "text": "Das Land liegt in einem Erdbebengebiet: Hinweisen vor Ort folgen und Fluchtwege merken." }
+  ],
+  "YEM": [
+    { "art": "sicherheit", "text": "Die Lage ist sehr angespannt: Nicht im Dunkeln unterwegs sein und Entführungsgefahr ernst nehmen." },
+    { "art": "sicherheit", "text": "Für viele Orte braucht man Genehmigungen oder eine Begleitung. Vorher bei der örtlichen Polizei nachfragen." },
+    { "art": "kultur", "text": "Am Nachmittag wird Kath gekaut: Behördengänge und Buchungen vormittags erledigen." },
+    { "art": "gesetz", "text": "Traditionelle Dolche können bei der Rückreise beschlagnahmt werden: Waffenrecht zu Hause vorher prüfen." }
+  ],
+  "JEY": [
+    { "art": "gesundheit", "text": "Die Europäische Krankenkassenkarte gilt nicht: Eine Auslandskrankenversicherung abschließen." },
+    { "art": "verkehr", "text": "Linksverkehr auf engen Straßen zwischen Steinmauern: Das Tempolimit liegt bei 64 km/h, vorsichtig fahren." },
+    { "art": "gesetz", "text": "Rauchen ist in Räumen verboten und im Auto, wenn ein Kind unter 18 mitfährt. Hunde an Stränden im Sommer anleinen." },
+    { "art": "geld", "text": "Jersey-Pfund vor der Abreise ausgeben: Außerhalb der Kanalinseln lassen sie sich nicht umtauschen." }
+  ],
+  "JOR": [
+    { "art": "wasser", "text": "Leitungswasser und Eis daraus meiden: Flaschenwasser trinken. Rohen Salat und Kräuter vorsichtig essen." },
+    { "art": "kleidung", "text": "Dezent kleiden: Schultern, Arme und Knie bedecken, besonders Frauen." },
+    { "art": "verkehr", "text": "Außerhalb von Amman nicht im Dunkeln fahren. Auf Bodenschwellen achten." },
+    { "art": "geld", "text": "Kleine Scheine mitnehmen: Große Noten lassen sich schwer wechseln. Auf Märkten handeln, Petra ist besonders teuer." },
+    { "art": "sonne", "text": "Im Sommer ist es sehr heiß: Beste Reisezeit ist April, Mai sowie September bis November." }
+  ],
+  "CYM": [
+    { "art": "gesetz", "text": "Drogen sind komplett tabu: Besitz oder Konsum führen zu Haft und Ausweisung." },
+    { "art": "meer", "text": "Keine Korallen berühren und nicht auf Riffe treten. Speerfischen ist verboten." },
+    { "art": "natur", "text": "Zur Hurrikanzeit von Juli bis November Schutzräume merken und Warnungen folgen." },
+    { "art": "gesundheit", "text": "Eine Reisekrankenversicherung abschließen: Arzt und Klinik sind sehr teuer." },
+    { "art": "essen", "text": "Barrakuda besser meiden: Er kann Ciguatera-Gift enthalten." }
+  ],
+  "KHM": [
+    { "art": "sicherheit", "text": "Abseits der Wege nicht gehen: Außerhalb der Touristengebiete liegen noch viele Landminen. Auf markierten Wegen bleiben." },
+    { "art": "kleidung", "text": "Hosen und Röcke über dem Knie tragen. Frauen dürfen Mönche nicht berühren." },
+    { "art": "gesundheit", "text": "Lange, helle Kleidung, Mückenspray und Moskitonetz nutzen: In vielen Regionen gibt es Malaria." },
+    { "art": "verkehr", "text": "Als Fußgänger doppelt schauen: Mopeds biegen oft unerwartet links ab. Ausländer dürfen in Siem Reap keine Mopeds fahren." },
+    { "art": "kultur", "text": "Ruhig bleiben und nicht laut werden: Gesicht wahren ist wichtig. Zum Winken die Hand mit der Fläche nach unten bewegen." }
+  ]
+}

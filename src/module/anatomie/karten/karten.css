@@ -1,0 +1,166 @@
+/* Körperkarten (Dermatome, Hautnerven). Bühne in px auf 1920 × 1080. */
+
+.hautkarte {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hautkarte__titel {
+  font-family: var(--schrift-titel);
+  font-size: 30px;
+  font-weight: 700;
+  fill: var(--auf-petrol);
+}
+
+.hautkarte__seite {
+  font-size: 22px;
+  font-style: italic;
+  fill: var(--auf-petrol-leise);
+}
+
+.hautkarte__marke {
+  font-family: var(--schrift-text);
+  font-size: 15px;
+  font-weight: 700;
+  fill: #fff;
+  stroke: #012c37;
+  stroke-width: 3.5px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+.hautkarte__marke[data-stark='true'] {
+  font-size: 24px;
+  stroke-width: 5px;
+}
+
+.hautkarte__leine {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+.hautkarte__leine-punkt {
+  fill: #fff;
+  stroke: #012c37;
+  stroke-width: 1.5px;
+}
+
+.hautkarte__gebiet path {
+  transition:
+    fill 300ms var(--raus),
+    fill-opacity 300ms var(--raus);
+}
+
+.hautkarte[data-bedienbar='true'] .hautkarte__gebiet {
+  cursor: pointer;
+}
+
+.hautkarte[data-bedienbar='true'] .hautkarte__gebiet:hover path {
+  fill: #fff3ea;
+  fill-opacity: 0.55;
+}
+
+/* ---------- Bühne ---------- */
+
+.hautbuehne__bild {
+  padding: 10px 0 40px;
+}
+
+.hautbuehne__punkt {
+  display: inline-block;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  margin-right: 18px;
+  border-radius: 50%;
+  vertical-align: 0.05em;
+}
+
+.hautbuehne__seite {
+  margin-top: 30px;
+  font-size: 26px;
+  font-style: italic;
+  color: var(--auf-petrol-leise);
+  animation: gel-ein 700ms var(--raus) 320ms both;
+}
+
+.hautbuehne__liste {
+  display: grid;
+  gap: 26px;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hautbuehne__liste li {
+  display: flex;
+  align-items: flex-start;
+  animation: gel-ein 600ms var(--raus) both;
+}
+
+.hautbuehne__liste li .hautbuehne__punkt {
+  margin-top: 4px;
+}
+
+.hautbuehne__liste strong {
+  display: block;
+  font-size: 32px;
+  color: var(--auf-petrol);
+}
+
+.hautbuehne__liste span:not(.hautbuehne__punkt) {
+  display: block;
+  margin-top: 4px;
+  font-size: 25px;
+  line-height: 1.35;
+  color: var(--auf-petrol-leise);
+}
+
+.hautbuehne__liste[data-viele='true'] {
+  gap: 16px;
+}
+
+.hautbuehne__quelle {
+  max-width: 640px;
+  text-align: right;
+}
+
+/* ---------- Steuerung ---------- */
+
+.hautsteuerung__flaeche {
+  aspect-ratio: 1000 / 1120;
+}
+
+/* Bühne links ist 1180 × 1080 – die Vorschau zeigt denselben Ausschnitt. */
+.hautsteuerung__raum {
+  aspect-ratio: 1180 / 1080;
+  margin-top: 10px;
+}
+
+.hautsteuerung__darstellung .knopf,
+.hautsteuerung__richtung .knopf {
+  flex: 1 1 calc(50% - 8px);
+}
+
+.hautsteuerung__darstellung {
+  margin: 0 0 10px;
+}
+
+.hautsteuerung__gruppe li {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hautsteuerung__gruppe .gel__struktur {
+  min-height: 46px;
+}
+
+.hautsteuerung__punkt {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  vertical-align: -1px;
+}

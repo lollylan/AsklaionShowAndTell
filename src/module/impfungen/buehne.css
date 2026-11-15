@@ -1,0 +1,244 @@
+/* Bühne der Standardimpfungen. Maße in px auf 1920 × 1080. */
+
+.impfbuehne {
+  position: absolute;
+  inset: 0;
+}
+
+.impfbuehne__uebersicht {
+  position: absolute;
+  inset: 0;
+  transition:
+    opacity 600ms var(--raus),
+    filter 600ms var(--raus);
+}
+
+.impfbuehne[data-thema='true'] .impfbuehne__uebersicht {
+  opacity: 0;
+  filter: blur(12px);
+}
+
+@keyframes impf-ein {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(24px);
+  }
+}
+
+.impfbuehne__frage {
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  max-width: 980px;
+  font-family: var(--schrift-titel);
+  font-size: 104px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  translate: 0 -50%;
+  text-wrap: balance;
+  animation: impf-ein 900ms var(--raus) both;
+}
+
+/* ---------- Übersicht ---------- */
+
+.impfuebersicht {
+  position: absolute;
+  left: 120px;
+  right: 120px;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.impfuebersicht__titel {
+  margin-bottom: 40px;
+  font-family: var(--schrift-titel);
+  font-size: 76px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  animation: impf-ein 800ms var(--raus) both;
+}
+
+.impfliste {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.impfliste li {
+  display: grid;
+  grid-template-columns: 380px minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 32px;
+  padding: 14px 0;
+  border-top: 1px solid var(--auf-petrol-linie);
+  animation: impf-ein 700ms var(--raus) both;
+}
+
+.impfliste__name {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--auf-petrol);
+}
+
+.impfliste__kurz {
+  font-size: 27px;
+  line-height: 1.25;
+  color: var(--auf-petrol-leise);
+}
+
+.impfliste__wann {
+  font-size: 27px;
+  font-weight: 700;
+  color: #f3b48f;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Viele Einträge (Säuglinge): kompakter, damit alles auf eine Bühne passt. */
+.impfliste[data-viele='true'] li {
+  grid-template-columns: 330px minmax(0, 1fr) auto;
+  padding: 7px 0;
+}
+
+.impfliste[data-viele='true'] .impfliste__name {
+  font-size: 29px;
+}
+
+.impfliste[data-viele='true'] .impfliste__kurz,
+.impfliste[data-viele='true'] .impfliste__wann {
+  font-size: 23px;
+}
+
+.impfbuehne:has(.impfliste[data-viele='true']) .impfuebersicht__titel {
+  margin-bottom: 26px;
+  font-size: 60px;
+}
+
+/* ---------- Erklärkarte ---------- */
+
+.impfkarte {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 720px minmax(0, 1fr);
+  align-items: center;
+  gap: 84px;
+  padding: 0 110px;
+  animation: impf-ein 800ms var(--raus) 150ms both;
+}
+
+.impfkarte[data-bild='false'] {
+  grid-template-columns: minmax(0, 1200px);
+  justify-content: center;
+}
+
+.impfkarte__bild {
+  display: block;
+  width: 720px;
+  height: 720px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 40px 90px -30px rgb(0 15 20 / 0.95);
+}
+
+.impfkarte__text h2 {
+  margin-bottom: 26px;
+  font-family: var(--schrift-titel);
+  font-size: 72px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+}
+
+.impfkarte__zusatz {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--schrift-text);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--auf-petrol-leise);
+}
+
+.impfkarte__was {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 28px;
+  line-height: 1.34;
+  color: var(--auf-petrol);
+}
+
+.impfkarte__was li {
+  position: relative;
+  padding-left: 32px;
+}
+
+.impfkarte__was li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0.55em;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--auf-petrol-leise);
+}
+
+.impfkarte__text h3 {
+  margin: 34px 0 10px;
+  padding-top: 24px;
+  font-family: var(--schrift-text);
+  font-size: 28px;
+  color: #f3b48f;
+  background: linear-gradient(var(--kupfer-hell), var(--kupfer-hell)) left top / 96px 4px
+    no-repeat;
+}
+
+.impfschema {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.impfschema li {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 28px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--auf-petrol-linie);
+}
+
+.impfschema li:last-child {
+  border-bottom: 0;
+}
+
+.impfschema__wann {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--auf-petrol);
+}
+
+.impfschema__was {
+  font-size: 26px;
+  line-height: 1.3;
+  color: var(--auf-petrol-leise);
+}
+
+.impfkarte__hinweis {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 1.35;
+  color: var(--auf-petrol-leise);
+}

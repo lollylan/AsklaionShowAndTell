@@ -1,0 +1,101 @@
+[
+  {
+    "ziel": "plantarfasziitis-1.jpg",
+    "datei": "Ausgepraegter plantarer Fersensporn 67M - CR seitlich - 001.jpg"
+  },
+  {
+    "ziel": "hallux-valgus-1.jpg",
+    "datei": "Projectional radiograph of bunion.jpg",
+    "zuschnitt": [
+      0,
+      0,
+      1,
+      0.64
+    ]
+  },
+  {
+    "ziel": "gonarthrose-1.jpg",
+    "datei": "Knee plain X-ray weight bearing.jpg",
+    "zuschnitt": [
+      0.32,
+      0.2,
+      0.84,
+      0.72
+    ]
+  },
+  {
+    "ziel": "gonarthrose-2.jpg",
+    "datei": "Varus Knee Osteoarthritis Xray.jpg",
+    "zuschnitt": [
+      0.0,
+      0.16,
+      0.4,
+      0.72
+    ],
+    "autokontrast": true
+  },
+  {
+    "ziel": "coxarthrose-1.jpg",
+    "datei": "Roe-dyspl-coxarth.jpg",
+    "zuschnitt": [
+      0,
+      0.5032,
+      1,
+      0.965
+    ],
+    "spiegeln": true
+  },
+  {
+    "ziel": "coxarthrose-2.jpg",
+    "datei": "Severe (Tönnis grade 3) osteoarthritis of the hip.jpg"
+  },
+  {
+    "ziel": "rhizarthrose-1.jpg",
+    "datei": "Klassische Heberden-Arthrose und deformierende Rhizarthrose 77W - CR ap - 001.jpg",
+    "zuschnitt": [
+      0.2,
+      0.33,
+      1,
+      0.93
+    ]
+  },
+  {
+    "ziel": "rotatorenmanschette-1.jpg",
+    "datei": "Calcific tendinitis.jpg",
+    "zuschnitt": [
+      0,
+      0,
+      1,
+      0.62
+    ]
+  },
+  {
+    "ziel": "bandscheibenvorfall-1.jpg",
+    "datei": "Severe herniation of L4-L5 disc.png"
+  },
+  {
+    "ziel": "spinalkanalstenose-1.jpg",
+    "datei": "Kaudaredundanz bei Spinalkanalstenose 62M - MR T2 sagittal - 001.jpg"
+  },
+  {
+    "ziel": "tennisellenbogen-1.jpg",
+    "datei": "Epicondylitis lateralis des Ellenbogens 49W - MR PDW FS - 001.jpg",
+    "zuschnitt": [
+      0.08,
+      0.22,
+      0.88,
+      0.78
+    ]
+  },
+  {
+    "ziel": "achillessehne-1.jpg",
+    "datei": "Achilles tendon tendonitis.jpg",
+    "zuschnitt": [
+      0.598,
+      0.1,
+      0.995,
+      1.0
+    ],
+    "farbe": true
+  }
+]

@@ -1,0 +1,235 @@
+import type { Krankheit } from './typen';
+
+export const INFEKTE: Krankheit[] = [
+  {
+    id: 'halsschmerzen',
+    name: 'Halsschmerzen und Mandelentzündung',
+    zusatz: 'Pharyngitis, Tonsillitis, Angina',
+    gebiet: 'infekte',
+    suche: 'hals rachen mandeln tonsillitis pharyngitis angina streptokokken schluckbeschwerden',
+    was: [
+      'Halsschmerzen gehören zu den häufigsten Gründen für einen Arztbesuch. Meist ist der Rachen im Rahmen einer Erkältung entzündet.',
+      'Bei einer Mandelentzündung sind die Gaumenmandeln gerötet, geschwollen und oft mit weißlichen Belägen bedeckt.',
+      'Typisch sind Schmerzen beim Schlucken, Fieber und geschwollene Lymphknoten am Hals.',
+      'Auch ohne Behandlung klingen die Beschwerden meist innerhalb einer Woche ab.',
+    ],
+    ursachen: [
+      'In den meisten Fällen sind Viren die Ursache, seltener Bakterien wie Streptokokken.',
+      'Fieber, Beläge, geschwollene Halslymphknoten und fehlender Husten sprechen eher für Bakterien. Husten und Schnupfen sprechen für Viren.',
+      'Auch bei Bakterien verkürzt ein Antibiotikum die Beschwerden im Mittel nur um etwa einen Tag.',
+      'Ernste Folgen wie eine Eiteransammlung neben der Mandel sind selten, aber wichtig zu erkennen.',
+    ],
+    behandlung: [
+      'Im Vordergrund steht die Schmerzlinderung: Ibuprofen oder Paracetamol, dazu Lutschtabletten mit betäubendem oder entzündungshemmendem Wirkstoff.',
+      'Ein Antibiotikum kommt nur infrage, wenn vieles für Bakterien spricht und Sie stark beeinträchtigt sind. Das entscheiden wir gemeinsam.',
+      'Manchmal bekommen Sie ein Rezept für später. Lösen Sie es nur ein, wenn es nach zwei bis drei Tagen nicht besser wird.',
+      'Ein verordnetes Antibiotikum nehmen Sie bitte bis zum Ende der besprochenen Zeit, auch wenn es Ihnen früher besser geht.',
+    ],
+    selbst: [
+      'Trinken Sie viel, warm oder kühl – was Ihnen guttut. Weiche Kost und Speiseeis lindern den Schluckschmerz.',
+      'Lutschen von Bonbons und Gurgeln mit Salbeitee oder Salzwasser halten den Hals feucht.',
+      'Nehmen Sie Schmerzmittel regelmäßig, solange das Schlucken schwerfällt. So können Sie essen und trinken.',
+      'Schonen Sie Ihre Stimme und verzichten Sie aufs Rauchen.',
+    ],
+    warnung:
+      'Sie können kaum noch schlucken, den Mund schlecht öffnen oder die Stimme klingt kloßig: bitte am selben Tag kommen. Bei Atemnot sofort 112.',
+  },
+  {
+    id: 'nasennebenhoehlen',
+    name: 'Nasennebenhöhlenentzündung',
+    zusatz: 'Sinusitis',
+    gebiet: 'infekte',
+    suche: 'sinusitis rhinosinusitis stirnhöhle kieferhöhle nebenhöhlen gesichtsschmerz',
+    was: [
+      'Die Nasennebenhöhlen sind luftgefüllte Räume in Stirn und Wangenknochen. Über enge Gänge sind sie mit der Nase verbunden.',
+      'Bei einer Erkältung schwillt die Schleimhaut an. Die Höhlen werden nicht mehr belüftet, und Sekret staut sich.',
+      'Typisch sind Druck und Schmerz über Stirn, Wangen oder Oberkiefer, stärker beim Bücken, dazu eine verstopfte Nase.',
+      'Meist heilt die Entzündung innerhalb von ein bis zwei Wochen von selbst.',
+    ],
+    ursachen: [
+      'Fast immer beginnt es mit einem Erkältungsvirus. Bakterien kommen nur selten hinzu.',
+      'Gelber oder grüner Schleim ist auch hier kein Beweis für Bakterien.',
+      'Begünstigend wirken Allergien, eine schiefe Nasenscheidewand, Polypen und Rauchen.',
+      'Eine Ausbreitung der Entzündung auf Auge oder Gehirn ist sehr selten, muss dann aber sofort behandelt werden.',
+    ],
+    behandlung: [
+      'Abschwellendes Nasenspray öffnet die Zugänge zu den Höhlen – höchstens eine Woche lang.',
+      'Nasenspülungen mit Salzwasser lösen das Sekret. Gegen die Schmerzen helfen Ibuprofen oder Paracetamol.',
+      'Ein Kortison-Nasenspray kann die Schleimhaut zusätzlich abschwellen lassen, vor allem bei Allergie oder häufigen Entzündungen.',
+      'Ein Antibiotikum ist nur bei sehr starken Schmerzen und hohem Fieber nötig – oder wenn es nach einer Besserung wieder deutlich schlechter wird.',
+    ],
+    selbst: [
+      'Trinken Sie ausreichend. Wärme auf Stirn und Wangen und warme Dämpfe tun vielen gut.',
+      'Schlafen Sie mit leicht erhöhtem Oberkörper, dann fließt das Sekret besser ab.',
+      'Schnäuzen Sie sanft, ein Nasenloch nach dem anderen.',
+      'Verzichten Sie aufs Rauchen. Mit Fliegen und Tauchen warten Sie besser, bis die Nase wieder frei ist.',
+    ],
+    warnung:
+      'Schwellung oder Rötung um das Auge, Sehstörungen, Doppelbilder, sehr starke Kopfschmerzen, Nackensteife oder Benommenheit: sofort melden, nachts 112.',
+  },
+  {
+    id: 'bronchitis',
+    name: 'Akute Bronchitis',
+    zusatz: 'Entzündung der Bronchien',
+    gebiet: 'infekte',
+    suche: 'husten auswurf bronchien reizhusten bronchitis akut',
+    was: [
+      'Bei einer akuten Bronchitis sind die Atemwege in der Lunge entzündet, meist im Anschluss an eine Erkältung.',
+      'Leitbeschwerde ist der Husten: erst trocken und quälend, später oft mit Auswurf. Dazu kommt ein Brennen hinter dem Brustbein.',
+      'Der Husten hält oft drei Wochen an, manchmal länger. Das ist lästig, aber kein Grund zur Sorge.',
+      'Hohes Fieber, Atemnot und starkes Krankheitsgefühl passen eher zu einer Lungenentzündung. Dann untersuchen wir genauer.',
+    ],
+    ursachen: [
+      'In über neun von zehn Fällen sind Viren die Ursache.',
+      'Die entzündete Schleimhaut reagiert noch Wochen später empfindlich auf kalte Luft, Rauch oder Sprechen – daher der lange Husten.',
+      'Gelber oder grüner Auswurf entsteht durch Abwehrzellen und spricht nicht für Bakterien.',
+      'Menschen, die rauchen, Asthma oder COPD haben oder älter sind, erkranken oft schwerer.',
+    ],
+    behandlung: [
+      'Antibiotika helfen bei einer akuten Bronchitis in aller Regel nicht und verkürzen den Husten nicht.',
+      'Pflanzliche Mittel mit Efeu, Thymian oder Pelargonie können den Husten etwas lindern.',
+      'Raubt der Reizhusten den Schlaf, kann ein Hustenstiller für die Nacht sinnvoll sein – nicht zusammen mit einem Schleimlöser.',
+      'Gegen Fieber und Schmerzen helfen Paracetamol oder Ibuprofen.',
+    ],
+    selbst: [
+      'Trinken Sie ausreichend und gönnen Sie sich Ruhe. Honig in warmem Tee beruhigt den Hustenreiz.',
+      'Rauchen Sie nicht, und meiden Sie verrauchte Räume – Rauch hält die Entzündung in Gang.',
+      'Lüften Sie regelmäßig. Nicht zu warme, nicht zu trockene Raumluft tut den Atemwegen gut.',
+      'Husten Sie in die Armbeuge und waschen Sie oft die Hände.',
+    ],
+    warnung:
+      'Atemnot, Schmerzen beim Atmen, Fieber über 39 °C, Blut im Auswurf oder Husten länger als acht Wochen: bitte melden. Bei schwerer Atemnot 112.',
+  },
+  {
+    id: 'mittelohrentzuendung',
+    name: 'Mittelohrentzündung',
+    zusatz: 'Otitis media',
+    gebiet: 'infekte',
+    suche: 'otitis ohrenschmerzen ohr kind trommelfell paukenerguss mittelohr',
+    was: [
+      'Bei einer Mittelohrentzündung ist der kleine Raum hinter dem Trommelfell entzündet. Kinder trifft es besonders häufig.',
+      'Typisch sind plötzliche, oft heftige Ohrenschmerzen, Fieber und schlechteres Hören. Kleine Kinder greifen sich ans Ohr oder sind unruhig.',
+      'Manchmal reißt das Trommelfell ein, und Eiter läuft aus dem Ohr. Die Schmerzen lassen dann meist nach, das Loch heilt fast immer von selbst.',
+      'Bei den meisten bessern sich die Beschwerden innerhalb von zwei bis drei Tagen.',
+    ],
+    ursachen: [
+      'Meist geht eine Erkältung voraus. Die Ohrtrompete, die Nase und Mittelohr verbindet, schwillt zu.',
+      'Im abgeschlossenen Mittelohr sammelt sich Flüssigkeit, in der sich Viren oder Bakterien vermehren.',
+      'Bei Kindern ist die Ohrtrompete noch kurz und eng, deshalb sind sie häufiger betroffen. Passivrauchen erhöht das Risiko.',
+      'Nach der Entzündung bleibt oft einige Wochen Flüssigkeit im Ohr. So lange kann das Hören gedämpft sein.',
+    ],
+    behandlung: [
+      'Am wichtigsten ist ein ausreichend dosiertes Schmerzmittel: Ibuprofen oder Paracetamol, bei Kindern nach Körpergewicht.',
+      'Oft ist es sinnvoll, ein bis zwei Tage abzuwarten. Wird es dann nicht besser, kommt ein Antibiotikum dazu.',
+      'Gleich ein Antibiotikum bekommen Säuglinge, Kinder unter zwei Jahren mit Entzündung beider Ohren und alle mit Ausfluss aus dem Ohr oder schwerem Verlauf.',
+      'Ohrentropfen und abschwellende Nasentropfen helfen bei der Mittelohrentzündung kaum.',
+    ],
+    selbst: [
+      'Geben Sie das Schmerzmittel regelmäßig, vor allem auch zur Nacht.',
+      'Wärme oder Kühlung am Ohr ist erlaubt, wenn es guttut. Bitte nichts ins Ohr stecken oder träufeln, ohne es mit uns zu besprechen.',
+      'Rauchen Sie nicht in der Nähe von Kindern. Stillen und die empfohlenen Impfungen schützen kleine Kinder.',
+      'Hört Ihr Kind nach einigen Wochen immer noch schlechter, lassen Sie das Ohr bitte nachkontrollieren.',
+    ],
+    warnung:
+      'Schwellung oder Rötung hinter dem Ohr, abstehende Ohrmuschel, hängender Mundwinkel, starke Kopfschmerzen, Nackensteife oder auffällige Schläfrigkeit: sofort melden.',
+  },
+  {
+    id: 'grippe-covid',
+    name: 'Grippe und COVID-19',
+    zusatz: 'Influenza und Corona',
+    gebiet: 'infekte',
+    suche: 'influenza corona sars-cov-2 covid grippe virusgrippe paxlovid tamiflu oseltamivir impfung schnelltest',
+    was: [
+      'Grippe und COVID-19 sind Infektionen der Atemwege durch Viren. Sie machen meist kränker als eine Erkältung.',
+      'Die Grippe beginnt typischerweise schlagartig: hohes Fieber, starke Kopf- und Gliederschmerzen, trockener Husten, große Schwäche.',
+      'COVID-19 kann ähnlich verlaufen, aber auch wie eine leichte Erkältung. Ein Schnelltest gibt Hinweise, schließt die Krankheit aber nicht sicher aus.',
+      'Die meisten sind nach ein bis zwei Wochen wieder gesund. Müdigkeit und Husten können länger bleiben.',
+    ],
+    ursachen: [
+      'Die Viren werden über Tröpfchen und feine Teilchen in der Atemluft übertragen, besonders in geschlossenen Räumen.',
+      'Gefährdet für einen schweren Verlauf sind ältere Menschen, Schwangere und Menschen mit chronischen Krankheiten oder geschwächter Abwehr.',
+      'Mögliche Komplikationen sind Lungenentzündung, Herzmuskelentzündung und eine Verschlechterung bestehender Krankheiten.',
+      'Nach COVID-19 können Erschöpfung und andere Beschwerden über Wochen bis Monate anhalten.',
+    ],
+    behandlung: [
+      'Bei den meisten genügt es, die Beschwerden zu lindern: Ruhe, viel trinken, Paracetamol oder Ibuprofen gegen Fieber und Schmerzen.',
+      'Wer ein hohes Risiko hat, kann ein Mittel gegen die Viren bekommen. Es muss früh beginnen: bei Grippe in den ersten zwei, bei COVID-19 in den ersten fünf Tagen.',
+      'Das Corona-Mittel verträgt sich mit vielen anderen Medikamenten nicht. Wir prüfen Ihre Tabletten vorher genau.',
+      'Antibiotika helfen gegen Viren nicht. Wir setzen sie nur ein, wenn zusätzlich Bakterien im Spiel sind.',
+    ],
+    selbst: [
+      'Bleiben Sie zu Hause, bis Sie sich deutlich besser fühlen und mindestens einen Tag fieberfrei sind.',
+      'Müssen Sie doch unter Menschen, tragen Sie eine Maske, halten Sie Abstand und lüften Sie gut. Schützen Sie besonders ältere und kranke Menschen.',
+      'Den besten Schutz bietet die Impfung im Herbst – empfohlen ab 60 Jahren, bei chronischen Krankheiten, in der Schwangerschaft und für Pflege- und Praxispersonal.',
+      'Grippe- und Corona-Impfung können am selben Termin gegeben werden.',
+    ],
+    warnung:
+      'Atemnot, Schmerzen in der Brust, Verwirrtheit, bläuliche Lippen oder erneutes Fieber nach einer Besserung: bitte sofort melden. Bei schwerer Atemnot 112.',
+  },
+  {
+    id: 'heuschnupfen',
+    name: 'Heuschnupfen',
+    zusatz: 'Pollenallergie, allergischer Schnupfen',
+    gebiet: 'infekte',
+    suche: 'pollen allergie rhinitis allergica hyposensibilisierung immuntherapie antihistaminikum birke gräser hasel niesen',
+    was: [
+      'Beim Heuschnupfen reagiert die Abwehr überempfindlich auf eigentlich harmlose Pollen von Bäumen, Gräsern oder Kräutern.',
+      'Typisch sind Niesattacken, eine laufende oder verstopfte Nase und juckende, tränende Augen.',
+      'Die Beschwerden kommen jedes Jahr zur selben Zeit: Hasel und Erle oft schon ab Januar, Birke im April, Gräser von Mai bis Juli.',
+      'Viele fühlen sich in der Pollenzeit müde und weniger leistungsfähig.',
+    ],
+    ursachen: [
+      'Die Neigung zu Allergien liegt oft in der Familie.',
+      'Der Körper bildet Abwehrstoffe gegen die Pollen. Bei jedem neuen Kontakt setzen sie Botenstoffe wie Histamin frei – das löst die Beschwerden aus.',
+      'Manche reagieren zusätzlich auf rohes Obst oder Nüsse mit Kribbeln im Mund. Das nennt man Kreuzallergie.',
+      'Unbehandelt kann sich die Allergie auf die Bronchien ausweiten. Bei bis zu jedem Dritten entsteht so mit den Jahren ein Asthma.',
+    ],
+    behandlung: [
+      'Tabletten gegen Allergie, sogenannte Antihistaminika, wirken rasch gegen Niesen, Jucken und Fließschnupfen. Neuere Wirkstoffe machen kaum müde.',
+      'Am wirksamsten gegen die verstopfte Nase ist ein Kortison-Nasenspray. Es braucht einige Tage bis zur vollen Wirkung und wird täglich genommen.',
+      'Für die Augen gibt es eigene Tropfen gegen Allergie.',
+      'Die Hyposensibilisierung gewöhnt den Körper über drei Jahre an die Pollen, mit Spritzen oder Tabletten. Sie behandelt als Einzige die Ursache.',
+    ],
+    selbst: [
+      'Verfolgen Sie den Pollenflug, etwa mit einer App, und beginnen Sie die Behandlung schon kurz vor der Saison.',
+      'Waschen Sie abends die Haare und legen Sie getragene Kleidung nicht im Schlafzimmer ab.',
+      'Lüften Sie in der Stadt eher früh am Morgen, auf dem Land eher am Abend. Pollenschutzgitter am Fenster helfen.',
+      'Nasenspülungen mit Salzwasser waschen Pollen aus. Eine Sonnenbrille schützt die Augen.',
+    ],
+    warnung:
+      'Pfeifende Atmung, nächtlicher Husten oder Engegefühl in der Brust: bitte bald melden, das kann beginnendes Asthma sein. Bei Atemnot oder Schwellung im Hals 112.',
+  },
+  {
+    id: 'zeckenstich',
+    name: 'Zeckenstich und Borreliose',
+    zusatz: 'Lyme-Borreliose, FSME',
+    gebiet: 'infekte',
+    suche: 'zecke zeckenbiss borrelien borreliose wanderröte erythema migrans fsme frühsommer-meningoenzephalitis zeckenimpfung',
+    was: [
+      'Zecken leben im Gras und im Unterholz und saugen Blut. Dabei können sie Krankheitserreger übertragen.',
+      'Am häufigsten ist die Borreliose. Erstes Zeichen ist meist eine Rötung, die sich Tage bis Wochen nach dem Stich ringförmig ausbreitet: die Wanderröte.',
+      'Die Wanderröte schmerzt und juckt kaum und wird meist größer als fünf Zentimeter. Manchmal kommen Fieber und Gliederschmerzen dazu.',
+      'Unbehandelt können Borrelien Wochen bis Monate später Nerven, Gelenke oder selten das Herz befallen.',
+    ],
+    ursachen: [
+      'Nur ein Teil der Zecken trägt Borrelien. Nach einem Stich erkrankt nur etwa einer von hundert.',
+      'Borrelien gehen erst nach Stunden des Saugens über. Je früher die Zecke entfernt wird, desto geringer ist das Risiko.',
+      'Anders das FSME-Virus: Es wird sofort übertragen und kann eine Hirnhautentzündung auslösen. Würzburg und Unterfranken sind FSME-Risikogebiet.',
+      'Zeckenzeit ist vom Frühjahr bis in den Herbst, bei mildem Wetter auch im Winter.',
+    ],
+    behandlung: [
+      'Nach einem Stich ist vorsorglich kein Antibiotikum nötig. Auch ein Bluttest hilft zu diesem Zeitpunkt nicht weiter.',
+      'Zeigt sich eine Wanderröte, behandeln wir sie mit einem Antibiotikum über zehn bis vierzehn Tage.',
+      'Rechtzeitig behandelt heilt die Borreliose fast immer folgenlos aus.',
+      'Gegen FSME gibt es kein Medikament, aber eine gut verträgliche Impfung: drei Spritzen als Grundschutz, dann regelmäßig auffrischen.',
+    ],
+    selbst: [
+      'Entfernen Sie die Zecke bald mit Pinzette oder Zeckenkarte: hautnah fassen, langsam gerade herausziehen. Kein Öl, kein Klebstoff.',
+      'Desinfizieren Sie die Stelle, markieren Sie sie mit einem Stift und beobachten Sie sie sechs Wochen lang.',
+      'Lange, helle Kleidung und Zeckenmittel schützen. Suchen Sie sich nach dem Aufenthalt im Freien ab, auch Kniekehlen, Leiste und Haaransatz.',
+      'Lassen Sie Ihren FSME-Impfschutz prüfen. Hier ist die Impfung allen empfohlen, die oft in der Natur sind.',
+    ],
+    warnung:
+      'Wanderröte, Gesichtslähmung oder neue Nervenschmerzen nach einem Stich: bitte bald kommen. Fieber mit starken Kopfschmerzen und Nackensteife: sofort melden.',
+  },
+];

@@ -1,0 +1,207 @@
+{
+  "MLT": [
+    {"art": "sonne", "text": "Im Sommer wird es sehr heiß, die Sonne scheint bis zu elf Stunden: Sonnenschutz und Kopfbedeckung einplanen."},
+    {"art": "kultur", "text": "In Kirchen die Schultern bedecken. Nacktbaden und Oben-ohne-Baden sind nicht erlaubt."},
+    {"art": "diebstahl", "text": "Wertsachen im Blick behalten. Bei Taxis auf das Taxameter achten oder den Preis vorher vereinbaren."},
+    {"art": "verkehr", "text": "Es herrscht Linksverkehr mit engen Straßen und hektischen Kreisverkehren."},
+    {"art": "gesundheit", "text": "Europäische Krankenversicherungskarte mitnehmen, dazu eine Auslandskrankenversicherung mit Rücktransport."}
+  ],
+  "MAR": [
+    {"art": "wasser", "text": "Nur Wasser aus verschlossenen Flaschen trinken. Rohes, ungeschältes Obst und Gemüse meiden."},
+    {"art": "sicherheit", "text": "Vorsicht vor falschen Führern. Den Preis vorab festlegen, dunkle Gassen meiden."},
+    {"art": "kleidung", "text": "Abseits des Strandes Schultern und Knie bedecken. Oben ohne und Nacktbaden sind verboten."},
+    {"art": "kultur", "text": "Essen, Geld und Trinkgeld mit der rechten Hand geben, die linke gilt als unrein."},
+    {"art": "geld", "text": "Beim Handeln mit niedrigem Gebot starten. Kleine Scheine und Münzen für Taxis und Märkte bereithalten."}
+  ],
+  "MHL": [
+    {"art": "essen", "text": "Raubfische aus dem Riff nicht essen: Ciguatera-Vergiftung ist sehr unangenehm und kann jahrelang nachwirken."},
+    {"art": "natur", "text": "Die Atolle liegen sehr flach, Schutzräume vor Flutwellen gibt es nicht. Taifune sind möglich."},
+    {"art": "gesetz", "text": "Korallen und Schildpatt dürfen nicht ausgeführt werden. Viele kleine Inseln sind gesperrt."},
+    {"art": "gesundheit", "text": "Die Krankenversorgung ist dünn. Auslandskrankenversicherung abschließen, nötige Medikamente selbst mitbringen."}
+  ],
+  "MTQ": [
+    {"art": "meer", "text": "An der Nordostküste nicht baden, dort sind die Wellen lebensgefährlich. Zum Diamantfelsen nicht hinausschwimmen."},
+    {"art": "sonne", "text": "Sonnencreme mit hohem Lichtschutzfaktor nutzen, besonders auf Bootsausflügen."},
+    {"art": "natur", "text": "Die Insel liegt im Hurrikangebiet. Hochsaison der Stürme ist etwa Juli bis Dezember."},
+    {"art": "verkehr", "text": "Minibusse fahren meist nur bis zur Dämmerung: Rückfahrt früh planen."}
+  ],
+  "MRT": [
+    {"art": "sicherheit", "text": "Fahrten bei Dunkelheit meiden und abgelegene Gebiete nur mit Ortskundigen aufsuchen."},
+    {"art": "sonne", "text": "Es wird extrem heiß, bis etwa 50 Grad. Sehr viel trinken und die Mittagshitze meiden."},
+    {"art": "kultur", "text": "Konservativ kleiden, Schultern bedecken. Alkohol nicht in der Öffentlichkeit trinken, Menschen vor Fotos fragen."},
+    {"art": "geld", "text": "Bargeld mitbringen: Kreditkarten werden selten akzeptiert, Geldautomaten gibt es kaum."},
+    {"art": "gesundheit", "text": "Medizinische Versorgung ist knapp. Gut sortierte Reiseapotheke und Versicherung mit Rücktransport mitnehmen."}
+  ],
+  "MUS": [
+    {"art": "diebstahl", "text": "In der Hauptstadt Port Louis auf Taschendiebe achten und Wertsachen nah am Körper tragen."},
+    {"art": "gesundheit", "text": "Private Kliniken sind gut, verlangen aber Vorkasse. Eine Reisekrankenversicherung ist wichtig."},
+    {"art": "kultur", "text": "Im Landesinneren Knie und Schultern bedecken. Nacktbaden ist verboten."},
+    {"art": "verkehr", "text": "Es herrscht Linksverkehr. Taxis haben kein Taxameter: den Preis vor der Fahrt aushandeln."},
+    {"art": "natur", "text": "In der ersten Jahreshälfte sind Wirbelstürme möglich. Das Wetter wechselt je nach Inselseite stark."}
+  ],
+  "MYT": [
+    {"art": "diebstahl", "text": "Diebstahl und Raub kommen vor. Wertsachen nicht zeigen und aufmerksam bleiben."},
+    {"art": "kultur", "text": "Die Bevölkerung ist überwiegend muslimisch. Am Strand keine freizügige Kleidung, kein Oben-ohne."},
+    {"art": "tiere", "text": "Schildkröten und Makis sind streng geschützt. Nicht auf Nester von Schildkröten treten."},
+    {"art": "natur", "text": "Von November bis April ist Regenzeit mit Starkregen. Die Trockenzeit von Mai bis Oktober ist angenehmer."}
+  ],
+  "MEX": [
+    {"art": "wasser", "text": "Leitungswasser nicht trinken, Zähneputzen ist unproblematisch. Eiswürfel nur in Hotels und Restaurants."},
+    {"art": "hoehe", "text": "Im Hochland über 2000 Meter die ersten Tage ruhig angehen, viel trinken und Anstrengung meiden."},
+    {"art": "sonne", "text": "Die Sonne im kühlen Hochland wird unterschätzt: Sonnencreme und Kopfbedeckung nutzen."},
+    {"art": "sicherheit", "text": "Abends keine Geldautomaten nutzen, nachts nicht über Land fahren. In Städten Taxi vom Stand oder per App."},
+    {"art": "gesetz", "text": "Schon kleine Mengen Drogen können hart bestraft werden. Bei Polizeikontrollen kein Geld anbieten."}
+  ],
+  "FSM": [
+    {"art": "natur", "text": "Die Taifunzeit dauert etwa von Juni bis Dezember. Bei Wetterwarnungen den Anweisungen vor Ort folgen."},
+    {"art": "sonne", "text": "Tropische Sonne und hohe Luftfeuchte: Sonnenschutz, leichte Kleidung und viel trinken."},
+    {"art": "meer", "text": "Beim Baden und Schnorcheln nicht auf Korallen treten, Badeschuhe tragen."}
+  ],
+  "MDA": [
+    {"art": "diebstahl", "text": "Auf Taschendiebe achten, sie sollen es besonders auf westliche Besucher abgesehen haben."},
+    {"art": "gesetz", "text": "Drogendelikte werden hart bestraft. Auf Strecken nach Transnistrien muss man mit Kontrollen rechnen."},
+    {"art": "verkehr", "text": "Am Steuer gilt absolutes Alkoholverbot. Mit eigenem Auto ist eine Vignette und die grüne Versicherungskarte nötig."},
+    {"art": "essen", "text": "Probieren Sie Mămăligă, Krautwickel und die heimischen Weine und Cognacs."}
+  ],
+  "MCO": [
+    {"art": "gesundheit", "text": "Die europäische Krankenversicherungskarte gilt in Monaco nicht. Reisekrankenversicherung abschließen."},
+    {"art": "kleidung", "text": "In der Stadt keine Strandkleidung tragen, sonst droht eine Verwarnung. Im Casino gilt eine strenge Kleiderordnung."},
+    {"art": "verkehr", "text": "Taxis nicht auf der Straße heranwinken, sondern am Stand oder per Anruf nehmen. Zu Fuß ist man am schnellsten."},
+    {"art": "geld", "text": "Preise in Restaurants sind hoch: Speisekarte vor dem Hinsetzen prüfen. Abseits der Hafenpromenade ist es günstiger."}
+  ],
+  "MNG": [
+    {"art": "wasser", "text": "Leitungswasser nur abgekocht oder gefiltert trinken. Rohmilch und Rohkäse meiden."},
+    {"art": "essen", "text": "Fleisch gut durchgaren. Vergorene Stutenmilch kann Durchfall auslösen: Toilettenpapier mitnehmen."},
+    {"art": "tiere", "text": "Kranke Murmeltiere und andere Wildtiere nicht anfassen: In Teilen des Landes kommt die Pest vor."},
+    {"art": "natur", "text": "Die Temperaturen schwanken stark, nachts wird es kalt. Warmen Schlafsack und Jacke einpacken."},
+    {"art": "gesundheit", "text": "Spezielle Medikamente und Insulin unbedingt selbst mitbringen. Das Gesundheitswesen ist einfach."}
+  ],
+  "MNE": [
+    {"art": "wasser", "text": "Leitungswasser besser nicht trinken. Abgefülltes Wasser nutzen."},
+    {"art": "tiere", "text": "In Wäldern und Bergen auf Zecken und Giftschlangen achten: festes Schuhwerk und lange Hosen tragen."},
+    {"art": "sonne", "text": "An der Küste sind die Sommer heiß und sonnig: Sonnenschutz und Kopfbedeckung nicht vergessen."},
+    {"art": "verkehr", "text": "Die Bergstraßen sind kurvig und langsam. Für Strecken mehr Zeit einplanen als gedacht."},
+    {"art": "geld", "text": "An Geldautomaten das Kartenzeichen prüfen: Manche nehmen nur Visa. Etwas Bargeld in Euro mitführen."}
+  ],
+  "MSR": [
+    {"art": "natur", "text": "Der Vulkan ist aktiv. Sperrzonen im Süden strikt beachten, Plymouth ist für Besucher gesperrt."},
+    {"art": "natur", "text": "Hurrikansaison ist von Juli bis Oktober. Vor der Reise Wetterlage prüfen."},
+    {"art": "verkehr", "text": "Es herrscht Linksverkehr. Für Mietwagen braucht man eine örtliche Fahrerlaubnis."},
+    {"art": "sonne", "text": "Karibische Sonne ganzjährig: Sonnencreme, Hut und ausreichend Trinkwasser mitnehmen."}
+  ],
+  "MOZ": [
+    {"art": "gesundheit", "text": "Es gibt faktisch keinen Rettungsdienst. Bei Wanderungen und Ausflügen ist die nächste Klinik oft weit entfernt."},
+    {"art": "wasser", "text": "Nur gefiltertes oder abgekochtes Wasser trinken. Eiswürfel und Speiseeis meiden."},
+    {"art": "sicherheit", "text": "Nach Einbruch der Dunkelheit nicht fahren. Autos nie unbewacht abstellen, Wertsachen nicht offen zeigen."},
+    {"art": "tiere", "text": "Auf Schlangen achten, etwa auf die giftige Schwarze Mamba: festes Schuhwerk tragen."},
+    {"art": "verkehr", "text": "Es herrscht Linksverkehr. Minibusse fahren oft schon sehr früh am Morgen ab."}
+  ],
+  "MMR": [
+    {"art": "kultur", "text": "Vor Pagoden und Tempeln die Schuhe ausziehen. Knie und Schultern bedecken."},
+    {"art": "kultur", "text": "Den Kopf anderer Menschen, besonders von Kindern, nicht berühren. Ruhig auftreten, nicht laut werden."},
+    {"art": "geld", "text": "US-Dollar nur in makellosem, neuwertigem Zustand mitbringen: Geknickte oder beschriebene Scheine werden abgelehnt."},
+    {"art": "gesundheit", "text": "Mückenschutz auch tagsüber: Dengue kommt vor. Die medizinische Versorgung ist eingeschränkt."},
+    {"art": "verkehr", "text": "Taschenlampe mitnehmen: Straßenbeleuchtung fällt oft aus, Gehwege haben Löcher."}
+  ],
+  "NAM": [
+    {"art": "verkehr", "text": "Nachts nicht über Land fahren, vor allem nicht auf Schotterpisten: Wildwechsel und kaum Rettungsdienst."},
+    {"art": "verkehr", "text": "Es herrscht Linksverkehr. Tankstellen sind selten: Jede Gelegenheit zum Nachtanken nutzen."},
+    {"art": "tiere", "text": "Auf Schlangen achten, nicht in Gebüsch greifen. Gegenmittel gibt es nicht für alle Arten."},
+    {"art": "gesundheit", "text": "Im Norden: Kontakt mit stehenden Süßgewässern meiden wegen Bilharziose."},
+    {"art": "sicherheit", "text": "In Windhuk nachts nicht zu Fuß gehen, sondern ein Taxi nehmen. Wertsachen nicht offen zeigen."}
+  ],
+  "NRU": [
+    {"art": "natur", "text": "Von November bis April sind tropische Wirbelstürme möglich."},
+    {"art": "gesundheit", "text": "Bei schweren Verletzungen ist ein teurer Flug nach Australien nötig: Auslandskrankenversicherung mit Rücktransport."},
+    {"art": "kultur", "text": "Das Leben ist ländlich und konservativ. Zurückhaltend auftreten."},
+    {"art": "sicherheit", "text": "Landesinnere Baustellen nicht betreten."}
+  ],
+  "NPL": [
+    {"art": "hoehe", "text": "Beim Trekking über 3000 Meter höchstens etwa 400 Höhenmeter pro Tag aufsteigen, viel trinken, bei Unwohlsein absteigen."},
+    {"art": "wasser", "text": "Wasser nur aus verschlossenen Flaschen kaufen. Salate und Lassi meiden, sie sind oft mit Leitungswasser gemacht."},
+    {"art": "essen", "text": "Speisen gut durchgaren oder schälen. Auf Trekkingrouten einfache, vegetarische Gerichte wählen."},
+    {"art": "kultur", "text": "Mit der rechten Hand essen und bezahlen. Flaschen beim Teilen nicht mit den Lippen berühren."},
+    {"art": "gesundheit", "text": "In Kathmandu ist die Luft sehr schlecht. Bei Atemproblemen eine Maske tragen."}
+  ],
+  "NCL": [
+    {"art": "tiere", "text": "Angespülte blaue Quallen nicht anfassen. Es gibt giftige Schlangen, auch Seeschlangen in Buchten."},
+    {"art": "verkehr", "text": "Nach Einbruch der Dunkelheit nicht fahren: Die Landstraßen sind kurvig und unbeleuchtet."},
+    {"art": "kultur", "text": "Vor dem Betreten von Dörfern, Stränden und Privatland um Erlaubnis fragen. Nicht in Badekleidung ins Dorf."},
+    {"art": "gesundheit", "text": "Mückenschutz auch tagsüber, Dengue kommt vor. Die europäische Krankenversicherungskarte gilt nicht."},
+    {"art": "geld", "text": "Außerhalb von Nouméa Bargeld mitführen. Die Preise sind hoch, weil fast alles importiert wird."}
+  ],
+  "NZL": [
+    {"art": "sonne", "text": "Die UV-Strahlung ist sehr hoch, auch bei Wolken: Sonnencreme mit Lichtschutzfaktor 50, Hut und Sonnenbrille."},
+    {"art": "tiere", "text": "An der Westküste der Südinsel Mittel gegen Sandfliegen kaufen, sie stechen sehr lästig."},
+    {"art": "verkehr", "text": "Es herrscht Linksverkehr. Tempolimits werden streng kontrolliert, Kurventempo auf gelben Schildern ernst nehmen."},
+    {"art": "natur", "text": "Das Wetter wechselt schnell, in den Südalpen kann Schnee fallen. Wind- und regenfeste Jacke einpacken."},
+    {"art": "gesundheit", "text": "Benötigte Medikamente selbst mitbringen und bei der Einreise angeben. Nicht alle deutschen Mittel gibt es dort."}
+  ],
+  "NIC": [
+    {"art": "wasser", "text": "Leitungswasser nicht trinken, auch nicht im Kaffee. Getränke bei Zweifel ohne Eis bestellen."},
+    {"art": "gesundheit", "text": "Mückenschutz mit DEET nutzen, besonders tagsüber wegen Dengue. Moskitonetz mitnehmen, wenn die Unterkunft keins hat."},
+    {"art": "sicherheit", "text": "Managua gilt als gefährlich. Keinen auffälligen Schmuck tragen, über Politik nicht sprechen."},
+    {"art": "sonne", "text": "Sonnencreme aus Deutschland mitnehmen: Vor Ort ist sie oft teurer."},
+    {"art": "natur", "text": "Erdbeben und Vulkanaktivität kommen vor. Hurrikansaison ist etwa Juli bis Oktober, vor allem an der Karibikküste."}
+  ],
+  "NLD": [
+    {"art": "diebstahl", "text": "Fahrrad mit zwei verschiedenen Schlössern an einem festen Gegenstand sichern. Keine Räder von Straßenhändlern kaufen."},
+    {"art": "verkehr", "text": "Radwege nutzen und als Fußgänger gut aufpassen: Radfahrer sind schnell und zahlreich."},
+    {"art": "sicherheit", "text": "Ausweis immer dabeihaben, sonst droht ein Bußgeld. Nachts in Großstädten auf dem Heimweg aufmerksam sein."},
+    {"art": "natur", "text": "Das Wetter ist wechselhaft mit kurzen Regenschauern. Wetterfeste Kleidung einpacken."},
+    {"art": "geld", "text": "Mit Karte bezahlen ist üblich. Trinkgeld ist nicht üblich."}
+  ],
+  "NER": [
+    {"art": "sicherheit", "text": "Nach Einbruch der Dunkelheit nicht auf die Straße. Nichts Militärisches fotografieren, auch keine Uniformierten."},
+    {"art": "sicherheit", "text": "Im Norden liegen noch Landminen. Nur bekannte Routen mit ortskundigen Führern nutzen."},
+    {"art": "sonne", "text": "Extreme Hitze, bis etwa 45 Grad: Sonnenschutz, viel trinken, die Mittagszeit meiden."},
+    {"art": "essen", "text": "Streng auf Essens- und Trinkwasserhygiene achten, Durchfallerkrankungen sind verbreitet."},
+    {"art": "gesundheit", "text": "Im Süden nicht in Süßwasser baden: Bilharziose-Gefahr. Die Versorgung im Norden ist minimal."}
+  ],
+  "NGA": [
+    {"art": "sicherheit", "text": "Fahrten nach Einbruch der Dunkelheit unbedingt vermeiden. Nachts nicht allein unterwegs sein."},
+    {"art": "sicherheit", "text": "Polizeikontrollen können unecht sein. Ruhig bleiben und nur mit ortskundigen Begleitern über Land reisen."},
+    {"art": "wasser", "text": "Wasser nur abgekocht oder aufbereitet trinken."},
+    {"art": "gesetz", "text": "In einigen nördlichen Bundesstaaten gilt islamisches Recht mit strengen Strafen."},
+    {"art": "kleidung", "text": "Angemessen kleiden: lange Hosen, im Norden Arme und Beine bedecken. Mit der rechten Hand essen."}
+  ],
+  "NIU": [
+    {"art": "kultur", "text": "Sonntag ist Ruhetag. Außerhalb des Strandes nicht freizügig gekleidet unterwegs sein."},
+    {"art": "meer", "text": "Es gibt kaum Sandstrände. Zum Baden und Schnorcheln eignen sich die Felsbecken an der Küste."},
+    {"art": "tiere", "text": "Die giftige Plattschwanz-Seeschlange ist nicht aggressiv, aber nicht anfassen."},
+    {"art": "verkehr", "text": "Straßen mit vielen Schlaglöchern: auf Hühner, Hunde und Kinder achten. Es gibt keinen öffentlichen Nahverkehr."}
+  ],
+  "PRK": [
+    {"art": "kultur", "text": "Regeln der Reiseleiter strikt beachten, Hotels nur mit deren Zustimmung verlassen. Politik und Kritik meiden."},
+    {"art": "gesetz", "text": "Vor jedem Foto Reiseleiter fragen. Keine Baustellen, Militär und arbeitende Menschen fotografieren."},
+    {"art": "kultur", "text": "Zeitungen mit Bildern der Führer nicht falten oder wegwerfen. Bei Statuen den Anweisungen folgen."},
+    {"art": "geld", "text": "Bargeld in Euro, Yuan oder Dollar mitbringen: Keine Kreditkarten, keine Geldautomaten."},
+    {"art": "wasser", "text": "Leitungswasser nur abgekocht oder entkeimt nutzen. Eine Reisekrankenversicherung ist unbedingt nötig."}
+  ],
+  "MNP": [
+    {"art": "natur", "text": "Taifune sind selten, können aber großen Schaden anrichten. Bei Warnungen den Anweisungen folgen."},
+    {"art": "natur", "text": "Auf den nördlichen Inseln gab es vulkanisch bedingte Evakuierungen. Naturschutzinseln nur mit Genehmigung betreten."},
+    {"art": "sonne", "text": "Tropische Sonne: Sonnencreme, Hut und viel Trinkwasser."},
+    {"art": "meer", "text": "Beim Tauchen und Schnorcheln in Schutzgebieten Korallen und Tiere nicht berühren."}
+  ],
+  "MKD": [
+    {"art": "verkehr", "text": "Auf Zebrastreifen entschlossen losgehen, sonst halten Autos oft nicht an."},
+    {"art": "diebstahl", "text": "Auf Taschendiebe achten und Wertsachen im Hotelsafe lassen."},
+    {"art": "natur", "text": "In der Waldbrandsaison etwa Juli bis September kann ein Betretungsverbot für Wälder gelten. Erdbeben kommen vor."},
+    {"art": "verkehr", "text": "Taxipreis vorher aushandeln, besonders im Sommer in Ohrid. Bußgelder nie bar an Polizisten zahlen."},
+    {"art": "geld", "text": "Denar mitnehmen: Euro werden nicht überall genommen. Geld nur in Wechselstuben tauschen, nie auf der Straße."}
+  ],
+  "NFK": [
+    {"art": "gesetz", "text": "Frisches Obst, Gemüse und Blumen dürfen nicht mitgebracht werden. Auch Schweine- und Hühnerfleisch ist verboten."},
+    {"art": "gesundheit", "text": "Es gibt nur ein kleines Krankenhaus. Schwere Fälle werden ausgeflogen: Auslandskrankenversicherung mit Rücktransport."},
+    {"art": "natur", "text": "Tropische Stürme sind am ehesten von Mai bis Juli zu erwarten. Das Meer ist im Winter kühl."},
+    {"art": "geld", "text": "Preise werden in Australischen Dollar angegeben. Läden schließen oft mittags und mittwochs nachmittags."}
+  ],
+  "NOR": [
+    {"art": "natur", "text": "Warnschilder an Gletschern und Gletscherspalten ernst nehmen. Im Hochgebirge Wetterschutz mitnehmen."},
+    {"art": "natur", "text": "Vor Bergtouren Route und Rückkehr hinterlassen. Handyempfang im Hochgebirge ist unsicher."},
+    {"art": "verkehr", "text": "Geschwindigkeitskontrollen sind häufig, schon kleine Überschreitungen werden teuer. Abblendlicht ist immer Pflicht."},
+    {"art": "verkehr", "text": "Auf Landstraßen tauchen besonders im Herbst Schafe und Rinder auf."},
+    {"art": "geld", "text": "Alkohol ist sehr teuer, Wein und Schnaps gibt es nur in staatlichen Läden. Kartenzahlung ist überall üblich."}
+  ]
+}

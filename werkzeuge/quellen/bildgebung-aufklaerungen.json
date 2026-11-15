@@ -1,0 +1,373 @@
+[
+  {
+    "ziel": "gallensteine-1.jpg",
+    "datei": "Gallstone 0414092204515.jpg",
+    "zuschnitt": [
+      0.1,
+      0.12,
+      0.88,
+      0.85
+    ]
+  },
+  {
+    "ziel": "nierensteine-1.jpg",
+    "datei": "Ultrasonography of centrally-located stone with posterior shadowing.jpg",
+    "zuschnitt": [
+      0.04,
+      0.06,
+      0.93,
+      0.86
+    ]
+  },
+  {
+    "ziel": "fettleber-1.jpg",
+    "datei": "Abdominal Ultrasound Full Exam 05.jpg",
+    "zuschnitt": [
+      0.16,
+      0.19,
+      0.85,
+      0.84
+    ]
+  },
+  {
+    "ziel": "fettleber-2.jpg",
+    "datei": "Steatosis hepatis in der Sonografie 36M - US - 001.jpg",
+    "zuschnitt": [
+      0.12,
+      0.1,
+      0.98,
+      0.88
+    ]
+  },
+  {
+    "ziel": "schilddruesenknoten-1.jpg",
+    "datei": "Thyroid ultrasound 110322134324 1347140.jpg",
+    "zuschnitt": [
+      0.08,
+      0.15,
+      0.95,
+      0.92
+    ]
+  },
+  {
+    "ziel": "thrombose-1.jpg",
+    "datei": "Ultrasonography of deep vein thrombosis of the femoral vein.jpg",
+    "zuschnitt": [
+      0.18,
+      0,
+      1,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "ultraschall-1.jpg",
+    "datei": "Abdominal Ultrasound Full Exam 06.jpg",
+    "zuschnitt": [
+      0.16,
+      0.19,
+      0.85,
+      0.84
+    ]
+  },
+  {
+    "ziel": "guertelrose-1.jpg",
+    "datei": "Herpes zoster chest.png",
+    "zuschnitt": [
+      0.08,
+      0,
+      0.92,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "zeckenstich-1.jpg",
+    "datei": "Tick bite.jpg",
+    "zuschnitt": [
+      0,
+      0.08,
+      0.85,
+      0.93
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "zeckenstich-2.jpg",
+    "datei": "Erythema migrans - erythematous rash in Lyme disease - PHIL 9875.jpg",
+    "zuschnitt": [
+      0,
+      0.12,
+      1,
+      0.86
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "krampfadern-1.jpg",
+    "datei": "Leg Before 1.jpg",
+    "zuschnitt": [
+      0,
+      0.2,
+      0.78,
+      0.95
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "halsschmerzen-1.jpg",
+    "datei": "Tonsillitis Img.jpeg",
+    "zuschnitt": [
+      0.08,
+      0,
+      0.92,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "mittelohrentzuendung-1.jpg",
+    "datei": "TM RIGHT NORMAL.jpg",
+    "zuschnitt": [
+      0.05,
+      0.05,
+      0.95,
+      0.95
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "mittelohrentzuendung-2.jpg",
+    "datei": "Acute Otitis Media Stage of Resolution.jpg",
+    "zuschnitt": [
+      0.05,
+      0.05,
+      0.95,
+      0.95
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "heuschnupfen-1.jpg",
+    "datei": "Misc pollen colorized.jpg",
+    "farbe": true
+  },
+  {
+    "ziel": "eisenmangel-1.jpg",
+    "datei": "AnemiaFrote.jpg",
+    "farbe": true
+  },
+  {
+    "ziel": "diabetes-typ-2-1.jpg",
+    "datei": "Fundus photograph-normal retina EDA06.JPG",
+    "zuschnitt": [
+      0,
+      0,
+      0.92,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "diabetes-typ-2-2.jpg",
+    "datei": "Fundus - diabetic retinopathy.png",
+    "zuschnitt": [
+      0.02,
+      0.02,
+      0.86,
+      0.98
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "ekg-1.jpg",
+    "datei": "Normal Sinus Rhythm Unlabeled.jpg",
+    "farbe": true
+  },
+  {
+    "ziel": "vorhofflimmern-1.jpg",
+    "datei": "Nsr (CardioNetworks ECGpedia).jpg",
+    "zuschnitt": [
+      0.035,
+      0.09,
+      0.53,
+      0.255
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "vorhofflimmern-2.jpg",
+    "datei": "Afib ecg (CardioNetworks ECGpedia).jpg",
+    "zuschnitt": [
+      0.045,
+      0.63,
+      0.6,
+      0.81
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "schlafapnoe-1.jpg",
+    "datei": "ResMed CPAP machine and mask.jpg",
+    "farbe": true
+  },
+  {
+    "ziel": "langzeitmessung-1.jpg",
+    "datei": "3-Lead Holter monitor placement.jpg",
+    "zuschnitt": [
+      0.02,
+      0.04,
+      0.98,
+      0.78
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "lungenfunktion-1.jpg",
+    "datei": "DoingSpirometry.JPG",
+    "zuschnitt": [
+      0.12,
+      0.28,
+      0.9,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "copd-1.jpg",
+    "datei": "Normal posteroanterior (PA) chest radiograph (X-ray).jpg",
+    "zuschnitt": [
+      0.04,
+      0.08,
+      0.96,
+      0.92
+    ]
+  },
+  {
+    "ziel": "copd-2.jpg",
+    "datei": "Emphysema2008.jpg",
+    "zuschnitt": [
+      0.03,
+      0.05,
+      0.97,
+      1.0
+    ]
+  },
+  {
+    "ziel": "herzschwaeche-1.jpg",
+    "datei": "Normal posteroanterior (PA) chest radiograph (X-ray).jpg",
+    "zuschnitt": [
+      0.04,
+      0.08,
+      0.96,
+      0.92
+    ]
+  },
+  {
+    "ziel": "herzschwaeche-2.jpg",
+    "datei": "Cardiomegalia.JPG",
+    "zuschnitt": [
+      0.04,
+      0.13,
+      0.98,
+      0.85
+    ]
+  },
+  {
+    "ziel": "osteoporose-1.jpg",
+    "datei": "Balloon kyphoplasty for osteoporotic vertebral fracture.jpg",
+    "zuschnitt": [
+      0.095,
+      0.06,
+      0.46,
+      0.885
+    ]
+  },
+  {
+    "ziel": "arthrose-1.jpg",
+    "datei": "Bouchard-Arthrose rechts 88W - CR ap - 001.jpg",
+    "zuschnitt": [
+      0.3,
+      0.02,
+      0.98,
+      0.6
+    ]
+  },
+  {
+    "ziel": "gicht-1.jpg",
+    "datei": "Gicht im Roentgenbild Grosszehengrundgelenk 85M - CR schraeg - 001.jpg",
+    "zuschnitt": [
+      0.0,
+      0.15,
+      0.7,
+      0.7
+    ]
+  },
+  {
+    "ziel": "schlaganfall-1.jpg",
+    "datei": "CT Brain MCA Infarct.jpg",
+    "zuschnitt": [
+      0.02,
+      0.02,
+      0.98,
+      0.97
+    ]
+  },
+  {
+    "ziel": "demenz-1.jpg",
+    "datei": "Control MCI AD - T1.jpg",
+    "zuschnitt": [
+      0.02,
+      0.03,
+      0.33,
+      0.81
+    ]
+  },
+  {
+    "ziel": "demenz-2.jpg",
+    "datei": "Control MCI AD - T1.jpg",
+    "zuschnitt": [
+      0.69,
+      0.04,
+      0.983,
+      0.81
+    ]
+  },
+  {
+    "ziel": "khk-1.jpg",
+    "datei": "High degree stenosis in proximal LAD.jpg",
+    "zuschnitt": [
+      0.0,
+      0.0,
+      1.0,
+      0.8
+    ],
+    "autokontrast": true
+  },
+  {
+    "ziel": "khk-2.jpg",
+    "datei": "FInal result after angioplasty and stent placement.jpg",
+    "zuschnitt": [
+      0.0,
+      0.0,
+      1.0,
+      0.8
+    ],
+    "autokontrast": true
+  },
+  {
+    "ziel": "pavk-1.jpg",
+    "datei": "Multiple nearly occlusion of left superficial femoral artery and stented.jpg",
+    "zuschnitt": [
+      0.06,
+      0.2,
+      0.78,
+      1.0
+    ]
+  },
+  {
+    "ziel": "darmkrebsvorsorge-1.jpg",
+    "datei": "Colon-Polyp.jpg",
+    "farbe": true
+  }
+]

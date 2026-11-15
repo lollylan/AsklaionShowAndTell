@@ -1,0 +1,386 @@
+/* Bühne der Vorsorge. Maße in px auf 1920 × 1080. */
+
+.vorsbuehne {
+  position: absolute;
+  inset: 0;
+  /* Warmer Ton für Abstände und Altersangaben: Kupfer, zum hellen Text hin aufgehellt. */
+  --vors-warm: color-mix(in srgb, var(--kupfer-hell) 42%, var(--auf-petrol));
+}
+
+.vorsbuehne__uebersicht {
+  position: absolute;
+  inset: 0;
+  transition:
+    opacity 600ms var(--raus),
+    filter 600ms var(--raus);
+}
+
+.vorsbuehne[data-thema='true'] .vorsbuehne__uebersicht {
+  opacity: 0;
+  filter: blur(12px);
+}
+
+@keyframes vors-ein {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(24px);
+  }
+}
+
+@keyframes vors-weg {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes vors-hier {
+  from {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+}
+
+.vorsbuehne__frage {
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  max-width: 1100px;
+  font-family: var(--schrift-titel);
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  translate: 0 -50%;
+  text-wrap: balance;
+  animation: vors-ein 900ms var(--raus) both;
+}
+
+/* ---------- Übersicht ---------- */
+
+.vorsuebersicht {
+  position: absolute;
+  inset: 0;
+  padding: 68px 120px 0;
+}
+
+.vorsuebersicht__titel {
+  margin-bottom: 44px;
+  font-family: var(--schrift-titel);
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  animation: vors-ein 800ms var(--raus) both;
+}
+
+.vorsuebersicht__spalten {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 530px;
+  gap: 90px;
+}
+
+.vorsuebersicht h3 {
+  margin-bottom: 14px;
+  font-family: var(--schrift-titel);
+  font-size: 34px;
+  line-height: 1.2;
+  color: var(--auf-petrol);
+  animation: vors-ein 800ms var(--raus) 100ms both;
+}
+
+.vorsliste {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vorsliste li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 32px;
+  padding: 13px 0;
+  border-top: 1px solid var(--auf-petrol-linie);
+  animation: vors-ein 700ms var(--raus) both;
+}
+
+.vorsliste__name {
+  white-space: nowrap;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--auf-petrol);
+}
+
+.vorsliste__wann {
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--vors-warm);
+  text-align: right;
+}
+
+/* ---------- Später ---------- */
+
+.vorsspaeter {
+  animation: vors-ein 800ms var(--raus) 320ms both;
+}
+
+.vorsspaeter h3 {
+  animation: none;
+}
+
+.vorsspaeter dl {
+  display: grid;
+  margin: 0;
+  border-top: 1px solid var(--auf-petrol-linie);
+}
+
+.vorsspaeter dl > div {
+  display: grid;
+  grid-template-columns: 124px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 20px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--auf-petrol-linie);
+}
+
+.vorsspaeter dt {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--vors-warm);
+  font-variant-numeric: tabular-nums;
+}
+
+.vorsspaeter dd {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.3;
+  color: var(--auf-petrol);
+}
+
+.vorsspaeter__leer {
+  padding-top: 14px;
+  border-top: 1px solid var(--auf-petrol-linie);
+  font-size: 30px;
+  line-height: 1.35;
+  color: var(--auf-petrol);
+}
+
+.vorsspaeter__verweis {
+  margin-top: 22px;
+  font-size: 28px;
+  line-height: 1.35;
+  color: var(--auf-petrol-leise);
+}
+
+/* ---------- Zeitachse ---------- */
+
+.vorsachse {
+  position: absolute;
+  left: 120px;
+  right: 120px;
+  bottom: 58px;
+  height: 150px;
+  animation: vors-ein 800ms var(--raus) 420ms both;
+}
+
+.vorsachse__linie,
+.vorsachse__weg {
+  position: absolute;
+  left: 0;
+  top: 78px;
+  border-radius: 2px;
+}
+
+.vorsachse__linie {
+  right: 0;
+  height: 2px;
+  margin-top: 1px;
+  background: var(--auf-petrol-linie);
+}
+
+.vorsachse__weg {
+  width: var(--vors-ort);
+  height: 4px;
+  background: var(--auf-petrol);
+  transform-origin: left center;
+  animation: vors-weg 1300ms var(--raus) 650ms both;
+}
+
+.vorsachse__marke {
+  position: absolute;
+  top: 80px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--auf-petrol-leise);
+  border-radius: 50%;
+  background: var(--petrol-dunkel);
+  translate: -50% -50%;
+}
+
+.vorsachse__marke[data-erreicht='true'] {
+  border-color: var(--auf-petrol);
+  background: var(--auf-petrol);
+}
+
+.vorsachse__jahr {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  translate: -50% 0;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--auf-petrol-leise);
+  font-variant-numeric: tabular-nums;
+}
+
+.vorsachse__marke[data-erreicht='true'] .vorsachse__jahr {
+  color: var(--auf-petrol);
+}
+
+.vorsachse__hier {
+  position: absolute;
+  left: var(--vors-ort);
+  top: 80px;
+  width: 28px;
+  height: 28px;
+  border: 5px solid var(--auf-petrol);
+  border-radius: 50%;
+  background: var(--kupfer-hell);
+  translate: -50% -50%;
+  animation: vors-hier 700ms var(--raus) 1250ms both;
+}
+
+.vorsachse__hiertext {
+  position: absolute;
+  left: 50%;
+  bottom: 38px;
+  translate: -50% 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--auf-petrol);
+}
+
+.vorsachse__einheit {
+  position: absolute;
+  right: 0;
+  top: 106px;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--auf-petrol-leise);
+}
+
+/* ---------- Erklärkarte ---------- */
+
+.vorskarte {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1320px);
+  align-items: center;
+  justify-content: center;
+  padding: 0 120px;
+  animation: vors-ein 800ms var(--raus) 150ms both;
+}
+
+.vorskarte__text h2 {
+  margin-bottom: 30px;
+  font-family: var(--schrift-titel);
+  font-size: 72px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+}
+
+.vorskarte__zusatz {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--schrift-text);
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--auf-petrol-leise);
+}
+
+.vorskarte__was {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 31px;
+  line-height: 1.34;
+  color: var(--auf-petrol);
+}
+
+.vorskarte__was li {
+  position: relative;
+  padding-left: 34px;
+}
+
+.vorskarte__was li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0.55em;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--auf-petrol-leise);
+}
+
+.vorskarte__daten {
+  display: grid;
+  margin: 36px 0 0;
+  padding-top: 14px;
+  background: linear-gradient(var(--kupfer-hell), var(--kupfer-hell)) left top / 96px 4px
+    no-repeat;
+}
+
+.vorskarte__daten > div {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 28px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--auf-petrol-linie);
+}
+
+.vorskarte__daten > div:last-child {
+  border-bottom: 0;
+}
+
+.vorskarte__daten dt {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--auf-petrol-leise);
+}
+
+.vorskarte__daten dd {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.3;
+  color: var(--auf-petrol);
+}
+
+.vorskarte__daten > div[data-jetzt='true'] dt,
+.vorskarte__daten > div[data-jetzt='true'] dd {
+  font-weight: 700;
+  color: var(--vors-warm);
+}
+
+.vorskarte__hinweis {
+  margin-top: 18px;
+  font-size: 28px;
+  line-height: 1.35;
+  color: var(--auf-petrol-leise);
+}

@@ -1,0 +1,635 @@
+/* Länderseiten der Reiseimpfberatung: Steckbrief, Karte, Reisetipps, Klima.
+   Maße in px auf 1920 × 1080, Farben aus der Praxis-CI (Petrol trägt, Kupfer setzt Akzente). */
+
+.laenderseite {
+  --meer: #012a35;
+  --nachbar: #0e5b6c;
+  --nachbar-rand: #3a8595;
+  --land: #2f8a9b;
+  --land-rand: #cfe6ea;
+  --kupfer-licht: #f3b48f;
+
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  color: var(--auf-petrol);
+}
+
+@keyframes seite-ein {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(20px);
+  }
+}
+
+@keyframes karte-ein {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+}
+
+.seite__titel {
+  font-family: var(--schrift-titel);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  text-wrap: balance;
+  animation: seite-ein 800ms var(--raus) both;
+}
+
+.seite__titel span {
+  display: block;
+  font-size: 0.62em;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--auf-petrol-leise);
+}
+
+/* ---------- Karte (Hintergrund und eigene Seite) ---------- */
+
+.seite__karte {
+  position: absolute;
+  inset: 0;
+  animation: karte-ein 1400ms var(--raus) both;
+}
+
+.landkarte {
+  display: block;
+}
+
+.landkarte__netz {
+  fill: none;
+  stroke: rgb(169 203 211 / 0.08);
+  stroke-width: 1;
+}
+
+.landkarte__nachbar {
+  fill: var(--nachbar);
+  stroke: var(--nachbar-rand);
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+}
+
+.landkarte__land {
+  fill: var(--land);
+  stroke: var(--land-rand);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+
+.landkarte__punkt circle:first-child {
+  fill: rgb(212 113 63 / 0.18);
+  stroke: var(--kupfer-hell);
+  stroke-width: 3;
+}
+
+.landkarte__punkt circle:last-child {
+  fill: var(--kupfer-hell);
+}
+
+/* Im Hintergrund nur ein zarter Umriss, damit Text und Fotos davor ruhig lesbar bleiben. */
+.landkarte[data-art='hintergrund'] .landkarte__nachbar {
+  fill: rgb(169 203 211 / 0.045);
+  stroke: rgb(169 203 211 / 0.1);
+}
+
+.landkarte[data-art='hintergrund'] .landkarte__land {
+  fill: rgb(79 156 171 / 0.22);
+  stroke: rgb(207 230 234 / 0.32);
+  stroke-width: 2;
+}
+
+.landkarte__nachbarname {
+  fill: rgb(169 203 211 / 0.62);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.landkarte__ort circle {
+  fill: #fff;
+  stroke: var(--petrol-tief);
+  stroke-width: 3;
+}
+
+.landkarte__ort .landkarte__hauptring {
+  fill: var(--kupfer);
+  stroke: #fff;
+  stroke-width: 3;
+}
+
+.landkarte__ort[data-haupt='true'] circle:last-child {
+  fill: #fff;
+  stroke: none;
+}
+
+.landkarte__ort text {
+  fill: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: rgb(1 44 55 / 0.88);
+  stroke-width: 7px;
+  stroke-linejoin: round;
+}
+
+.landkarte__ort[data-haupt='true'] text {
+  font-size: 34px;
+}
+
+.landkarte__massstab line {
+  stroke: var(--auf-petrol-leise);
+  stroke-width: 3;
+}
+
+.landkarte__massstab text {
+  fill: var(--auf-petrol-leise);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Hält Text vor der Karte lesbar. */
+.seite__schleier {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.seite__schleier--links {
+  background: linear-gradient(to right, rgb(1 44 55 / 0.9) 0, rgb(1 44 55 / 0.55) 820px, rgb(1 44 55 / 0) 1100px);
+}
+
+.seite__schleier--oben {
+  background: linear-gradient(to bottom, rgb(1 44 55 / 0.92) 0, rgb(1 44 55 / 0) 260px);
+}
+
+.seite__schleier--voll {
+  background: rgb(1 44 55 / 0.55);
+}
+
+/* ---------- Steckbrief ---------- */
+
+.steckbrief {
+  position: absolute;
+  left: 120px;
+  top: 96px;
+  width: 760px;
+}
+
+.steckbrief__flagge {
+  display: block;
+  height: 104px;
+  max-width: 260px;
+  margin-bottom: 34px;
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px rgb(238 246 247 / 0.18),
+    0 18px 40px -16px rgb(0 15 20 / 0.9);
+  object-fit: contain;
+  animation: seite-ein 800ms var(--raus) both;
+}
+
+.fakten {
+  display: grid;
+  gap: 0;
+  margin: 44px 0 0;
+}
+
+.fakten > div {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 24px;
+  padding: 18px 0;
+  border-top: 1px solid var(--auf-petrol-linie);
+  animation: seite-ein 700ms var(--raus) both;
+}
+
+.fakten dt {
+  font-size: 26px;
+  color: var(--auf-petrol-leise);
+}
+
+.fakten dd {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.22;
+  text-wrap: balance;
+}
+
+.fakten__zusatz {
+  display: block;
+  margin-top: 4px;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--kupfer-licht);
+}
+
+.wahrzeichen {
+  position: absolute;
+  right: 110px;
+  top: 96px;
+  bottom: 70px;
+  display: grid;
+  grid-template-rows: repeat(var(--zeilen, 2), minmax(0, 1fr));
+  gap: 40px;
+  width: 820px;
+}
+
+.wahrzeichen[data-anzahl='1'] {
+  --zeilen: 1;
+  top: 150px;
+  bottom: 150px;
+}
+
+.foto {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 14px;
+  min-height: 0;
+  margin: 0;
+  animation: seite-ein 900ms var(--raus) both;
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  border-radius: 16px;
+  object-fit: cover;
+  /* Hochformate (Türme, Statuen) nicht in der Mitte anschneiden, sondern oben halten. */
+  object-position: 50% 28%;
+  box-shadow:
+    0 0 0 1px rgb(238 246 247 / 0.12),
+    0 34px 70px -30px rgb(0 15 20 / 0.95);
+}
+
+.foto figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.foto__name {
+  font-family: var(--schrift-titel);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.foto__rechte {
+  flex: none;
+  max-width: 50%;
+  overflow: hidden;
+  font-size: 17px;
+  color: var(--auf-petrol-leise);
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------- Karte mit Städten ---------- */
+
+.landkarte[data-art='staedte'] {
+  background: var(--meer);
+}
+
+.kartenkopf {
+  position: absolute;
+  left: 120px;
+  top: 70px;
+  right: 120px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.kartenkopf__legende {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 24px;
+  color: var(--auf-petrol-leise);
+  animation: seite-ein 800ms var(--raus) 200ms both;
+}
+
+.kartenkopf__haupt,
+.kartenkopf__stadt {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.kartenkopf__haupt {
+  width: 26px;
+  height: 26px;
+  background: radial-gradient(circle, #fff 0 5px, var(--kupfer) 6px);
+  box-shadow: 0 0 0 3px #fff;
+}
+
+.kartenkopf__stadt {
+  width: 16px;
+  height: 16px;
+  margin-left: 22px;
+  background: #fff;
+}
+
+/* ---------- Reisetipps ---------- */
+
+.tipps {
+  position: absolute;
+  left: 120px;
+  right: 120px;
+  top: 92px;
+}
+
+.tipps__titel {
+  font-size: 84px;
+}
+
+.tipps__liste {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 90px;
+  margin: 64px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tipps__liste li {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  align-items: start;
+  gap: 30px;
+  padding: 36px 0;
+  border-top: 1px solid var(--auf-petrol-linie);
+  animation: seite-ein 700ms var(--raus) both;
+}
+
+.tipps__liste[data-viele='false'] li {
+  padding: 40px 0;
+}
+
+.tipps__symbol {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: rgb(212 113 63 / 0.16);
+  color: var(--kupfer-licht);
+}
+
+.tipps__text {
+  font-size: 35px;
+  line-height: 1.36;
+  text-wrap: pretty;
+}
+
+/* ---------- Klima ---------- */
+
+.klimaseite {
+  position: absolute;
+  inset: 0;
+  padding: 92px 140px 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 30%, rgb(3 117 143 / 0.22), transparent 70%);
+}
+
+.klimaseite__titel {
+  font-size: 84px;
+}
+
+.klimaseite__titel span {
+  display: inline;
+  font-size: 1em;
+}
+
+.klimaseite__hinweis {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 48px;
+  margin-top: 14px;
+  font-size: 26px;
+  color: var(--auf-petrol-leise);
+  animation: seite-ein 800ms var(--raus) 100ms both;
+}
+
+.klimaseite__legende {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--auf-petrol);
+}
+
+.klimaseite__legende .klimaseite__marke--regen {
+  margin-left: 28px;
+}
+
+.klimagross {
+  display: block;
+  margin-top: 44px;
+  overflow: visible;
+  animation: seite-ein 900ms var(--raus) 200ms both;
+}
+
+.klimagross__regen {
+  fill: #4f9cab;
+  opacity: 0.8;
+}
+
+.klimagross__mm {
+  fill: var(--auf-petrol-leise);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.klimagross__temp {
+  fill: none;
+  stroke: var(--kupfer-hell);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.klimagross__punkt {
+  fill: var(--kupfer-hell);
+  stroke: var(--petrol-tief);
+  stroke-width: 4;
+}
+
+.klimagross__grad {
+  fill: var(--kupfer-licht);
+  font-size: 30px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: var(--petrol-tief);
+  stroke-width: 8px;
+  stroke-linejoin: round;
+}
+
+.klimagross__achse {
+  stroke: var(--auf-petrol-linie);
+  stroke-width: 2;
+}
+
+.klimagross__monat {
+  fill: var(--auf-petrol);
+  font-size: 28px;
+}
+
+.klimaseite__eckdaten {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  margin: 34px 0 0;
+  padding-top: 26px;
+  border-top: 1px solid var(--auf-petrol-linie);
+  animation: seite-ein 800ms var(--raus) 350ms both;
+}
+
+.klimaseite__eckdaten dt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  color: var(--auf-petrol-leise);
+}
+
+.klimaseite__eckdaten dd {
+  margin: 8px 0 0;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.klimaseite__marke {
+  display: inline-block;
+  flex: none;
+}
+
+.klimaseite__marke--temp {
+  width: 28px;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--kupfer-hell);
+}
+
+.klimaseite__marke--regen {
+  width: 16px;
+  height: 22px;
+  border-radius: 3px;
+  background: #4f9cab;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .laenderseite *,
+  .laenderseite {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+  }
+}
+
+/* ---------- Malariagebiete ---------- */
+
+.malariaseite {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 620px minmax(0, 1fr);
+  gap: 72px;
+  align-items: center;
+  padding: 80px 110px 80px 140px;
+  background:
+    radial-gradient(ellipse 70% 60% at 75% 50%, rgb(3 117 143 / 0.22), transparent 70%);
+}
+
+.malariaseite__titel {
+  font-size: 84px;
+}
+
+.malariaseite__titel span {
+  margin-top: 10px;
+  font-size: 0.5em;
+}
+
+.malariaseite__stufen {
+  display: grid;
+  gap: 22px;
+  margin: 56px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.malariaseite__stufen li {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  column-gap: 20px;
+  row-gap: 4px;
+  align-items: baseline;
+  animation: seite-ein 800ms var(--raus) both;
+}
+
+.malariaseite__farbe {
+  grid-row: span 2;
+  align-self: start;
+  width: 34px;
+  height: 34px;
+  margin-top: 4px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 0.25);
+}
+
+.malariaseite__stufen strong {
+  font-size: 36px;
+  color: var(--auf-petrol);
+}
+
+.malariaseite__stufen li > span:last-child {
+  font-size: 28px;
+  line-height: 1.35;
+  color: var(--auf-petrol-leise);
+}
+
+.malariaseite__hinweis {
+  max-width: 30ch;
+  margin-top: 56px;
+  font-size: 26px;
+  line-height: 1.45;
+  color: var(--auf-petrol-leise);
+  animation: seite-ein 800ms var(--raus) 500ms both;
+}
+
+.malariaseite__karte {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  min-width: 0;
+  height: 100%;
+  margin: 0;
+  animation: karte-ein 1200ms var(--raus) 150ms both;
+}
+
+.malariaseite__karte img {
+  display: block;
+  max-width: 100%;
+  max-height: 860px;
+  min-height: 0;
+  padding: 18px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgb(0 20 26 / 0.45);
+  object-fit: contain;
+}
+
+.malariaseite__karte figcaption {
+  font-size: 18px;
+  color: var(--auf-petrol-leise);
+}

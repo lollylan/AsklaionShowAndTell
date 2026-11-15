@@ -1,0 +1,83 @@
+/* Orthopädie auf Papier (Handzettel und Übungsblatt). Ergänzt handzettel.css. */
+
+.druckuebung {
+  display: grid;
+  grid-template-columns: 62mm minmax(0, 1fr);
+  gap: 5mm;
+  align-items: start;
+  padding: 3mm 0;
+  border-top: 0.2mm solid var(--linie);
+  break-inside: avoid;
+}
+
+.druckuebung h4 {
+  margin-top: 0 !important;
+  color: var(--petrol) !important;
+  font-size: 11pt !important;
+}
+
+/* Die Figuren sind für die dunkle Bühne gemacht – sie bekommen ihr Petrol mit aufs Papier. */
+.druckuebung__figur {
+  aspect-ratio: 8 / 5;
+  padding: 1.5mm;
+  border-radius: 2mm;
+  background: var(--petrol-dunkel);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.druckuebung__figur .uebungsbild {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.druckuebung ol {
+  display: grid;
+  gap: 0.6mm;
+  margin: 1.5mm 0;
+  padding-left: 5mm;
+}
+
+.druckuebung ol li::marker {
+  color: var(--kupfer-dunkel);
+  font-weight: 700;
+}
+
+.druckuebung__dosis {
+  display: inline-block;
+  padding: 0.6mm 2.4mm;
+  border-radius: 1mm;
+  background: var(--petrol-hauch);
+  font-weight: 700;
+  color: var(--petrol);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.druckhilft {
+  display: grid;
+  gap: 1.4mm;
+  margin: 1.5mm 0 0;
+}
+
+.druckhilft > div {
+  display: grid;
+  grid-template-columns: 30mm minmax(0, 1fr);
+  gap: 3mm;
+}
+
+.druckhilft dt {
+  font-weight: 700;
+  color: var(--petrol);
+}
+
+.druckhilft div[data-evidenz='abraten'] dt {
+  color: var(--kupfer-dunkel);
+}
+
+.druckhilft dd {
+  display: grid;
+  gap: 0.6mm;
+  margin: 0;
+}

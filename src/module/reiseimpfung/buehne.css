@@ -1,0 +1,349 @@
+/* Bühne der Reiseimpfberatung. Maße in px auf 1920 × 1080. */
+
+.reisebuehne {
+  position: absolute;
+  inset: 0;
+}
+
+.reisebuehne__welt {
+  position: absolute;
+  inset: 0;
+  transition:
+    opacity 600ms var(--raus),
+    filter 600ms var(--raus);
+}
+
+/* Solange eine Erklärkarte offen ist, tritt die Welt zurück. */
+.reisebuehne[data-thema='true'] .reisebuehne__welt {
+  opacity: 0;
+  filter: blur(12px);
+}
+
+.globus {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1400ms var(--raus);
+}
+
+.globus[data-bereit='true'] {
+  opacity: 1;
+}
+
+.globus canvas {
+  display: block;
+  width: 1920px;
+  height: 1080px;
+}
+
+/* Hält die Textspalte links lesbar, wenn der Globus nah herangefahren ist. */
+.reisebuehne__schleier {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    var(--petrol-tief) 0,
+    rgb(1 44 55 / 0.92) 620px,
+    rgb(1 44 55 / 0) 1010px
+  );
+  /* Oben und unten auslaufen lassen: Bei Bildschirmen, die nicht 16:9 sind,
+     gibt es sonst eine Kante zum Hintergrundverlauf der Ränder. */
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    #000 160px,
+    #000 calc(100% - 160px),
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.reisebuehne__frage {
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  max-width: 700px;
+  font-family: var(--schrift-titel);
+  font-size: 104px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  translate: 0 -50%;
+  text-wrap: balance;
+}
+
+@keyframes reise-ein {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(24px);
+  }
+}
+
+/* ---------- Liste „Schutz“ (Land und ganze Reise) ---------- */
+
+.schutzliste {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.schutzliste li {
+  display: grid;
+  grid-template-columns: 330px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 24px;
+  padding: 13px 0;
+  border-top: 1px solid var(--auf-petrol-linie);
+  animation: reise-ein 700ms var(--raus) both;
+}
+
+.schutzliste__name {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.schutzliste__grund {
+  font-size: 25px;
+  line-height: 1.25;
+  color: var(--auf-petrol-leise);
+}
+
+.schutzliste[data-viele='true'] li {
+  grid-template-columns: 300px minmax(0, 1fr);
+  padding: 8px 0;
+}
+
+.schutzliste[data-viele='true'] .schutzliste__name {
+  font-size: 29px;
+}
+
+.schutzliste[data-viele='true'] .schutzliste__grund {
+  font-size: 22px;
+}
+
+/* ---------- Ein Land im Fokus ---------- */
+
+.landansicht {
+  position: absolute;
+  left: 120px;
+  top: 84px;
+  width: 800px;
+}
+
+.landansicht__name {
+  margin-bottom: 30px;
+  font-family: var(--schrift-titel);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  text-wrap: balance;
+  animation: reise-ein 800ms var(--raus) both;
+}
+
+.landansicht__pflicht {
+  display: inline-block;
+  margin-bottom: 26px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: var(--kupfer);
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+  animation: reise-ein 800ms var(--raus) 100ms both;
+}
+
+.reisebuehne__route {
+  position: absolute;
+  left: 120px;
+  bottom: 62px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 36px;
+  width: 800px;
+  margin: 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--auf-petrol-linie);
+  list-style: none;
+  font-size: 26px;
+  color: var(--auf-petrol-leise);
+}
+
+.reisebuehne__route li[data-aktiv='true'] {
+  color: var(--auf-petrol);
+  font-weight: 700;
+}
+
+/* ---------- Ganze Reise ---------- */
+
+.reiseansicht {
+  position: absolute;
+  left: 120px;
+  top: 96px;
+  width: 800px;
+}
+
+.reiseansicht__ziele {
+  font-family: var(--schrift-titel);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  text-wrap: balance;
+  animation: reise-ein 800ms var(--raus) both;
+}
+
+.reiseansicht__ziele span {
+  white-space: nowrap;
+}
+
+.reiseansicht__titel {
+  margin: 46px 0 14px;
+  font-size: 30px;
+  color: var(--auf-petrol-leise);
+}
+
+/* ---------- Erklärkarte zu einer Krankheit ---------- */
+
+.erklaerung {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 820px minmax(0, 1fr);
+  align-items: center;
+  gap: 90px;
+  padding: 0 120px 0 110px;
+  animation: reise-ein 800ms var(--raus) 150ms both;
+}
+
+.erklaerung[data-bild='false'] {
+  grid-template-columns: minmax(0, 1100px);
+  justify-content: center;
+}
+
+.erklaerung__bild {
+  display: block;
+  width: 820px;
+  height: 615px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 40px 90px -30px rgb(0 15 20 / 0.95);
+}
+
+.erklaerung__text h2 {
+  margin-bottom: 30px;
+  font-family: var(--schrift-titel);
+  font-size: 76px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+}
+
+.erklaerung__text h3 {
+  margin: 34px 0 18px;
+  padding-top: 26px;
+  font-family: var(--schrift-text);
+  font-size: 30px;
+  color: #f3b48f;
+  background: linear-gradient(var(--kupfer-hell), var(--kupfer-hell)) left top / 96px 4px
+    no-repeat;
+}
+
+.erklaerung__text ul {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 31px;
+  line-height: 1.34;
+}
+
+.erklaerung__text li {
+  position: relative;
+  padding-left: 34px;
+}
+
+.erklaerung__text li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0.55em;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--auf-petrol-leise);
+}
+
+/* ---------- Malaria allgemein (öffentliche Fassung, ohne Länderbezug) ---------- */
+
+.malariaallgemein {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 560px minmax(0, 1fr);
+  align-items: center;
+  gap: 110px;
+  padding: 0 130px 0 120px;
+  animation: reise-ein 800ms var(--raus) 150ms both;
+}
+
+.malariaallgemein h2 {
+  font-family: var(--schrift-titel);
+  font-size: 112px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+}
+
+.malariaallgemein header p {
+  margin-top: 34px;
+  font-size: 32px;
+  line-height: 1.4;
+  color: var(--auf-petrol-leise);
+}
+
+.malariaallgemein dl {
+  display: grid;
+  margin: 0;
+}
+
+.malariaallgemein dl > div {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 36px;
+  align-items: baseline;
+  padding: 34px 0;
+  border-top: 1px solid var(--auf-petrol-linie);
+  animation: reise-ein 800ms var(--raus) both;
+}
+
+.malariaallgemein dl > div:first-child {
+  border-top: 0;
+}
+
+.malariaallgemein dt {
+  font-family: var(--schrift-titel);
+  font-size: 34px;
+  line-height: 1.2;
+  color: #f3b48f;
+}
+
+.malariaallgemein dd {
+  margin: 0;
+  font-size: 31px;
+  line-height: 1.36;
+  color: var(--auf-petrol);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .malariaallgemein,
+  .malariaallgemein dl > div {
+    animation-duration: 1ms;
+    animation-delay: 0ms !important;
+  }
+}

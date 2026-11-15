@@ -1,0 +1,805 @@
+{
+  "_hinweis": "Je Land bis zu zwei Wahrzeichen als Titel der deutschen Wikipedia. Bild und Bildrechte kommen über Wikidata (P18) von Wikimedia Commons. Fehlt ein Land, nimmt das Skript das bekannteste UNESCO-Welterbe.",
+  "AFG": [
+    "Blaue Moschee (Masar-e Scharif)",
+    "Band-e-Amir"
+  ],
+  "EGY": [
+    "Pyramiden von Gizeh",
+    "Abu Simbel"
+  ],
+  "ALB": [
+    "Berat",
+    "Butrint"
+  ],
+  "DZA": [
+    "Notre-Dame d’Afrique",
+    "Tassili n’Ajjer"
+  ],
+  "ASM": [
+    "Nationalpark Amerikanisch-Samoa"
+  ],
+  "VIR": [
+    "Saint John (Amerikanische Jungferninseln)"
+  ],
+  "AND": [
+    "Andorra la Vella"
+  ],
+  "AGO": [
+    "Kalandula-Fälle"
+  ],
+  "ATG": [
+    "Nelson’s Dockyard"
+  ],
+  "GNQ": [
+    "Malabo"
+  ],
+  "ARG": [
+    "Iguazú-Wasserfälle",
+    "Perito-Moreno-Gletscher"
+  ],
+  "ARM": [
+    "Kloster Chor Virap",
+    "Kloster Geghard"
+  ],
+  "ABW": [
+    "Oranjestad (Aruba)"
+  ],
+  "AZE": [
+    "Flame Towers"
+  ],
+  "ETH": [
+    "Felsenkirchen von Lalibela",
+    "Simien-Nationalpark"
+  ],
+  "AUS": [
+    "Sydney Opera House",
+    "Uluṟu"
+  ],
+  "BHS": [
+    "Nassau (Bahamas)"
+  ],
+  "BHR": [
+    "Qal’at al-Bahrain"
+  ],
+  "BGD": [
+    "Jatiyo Sangsad Bhaban",
+    "Sundarbans"
+  ],
+  "BRB": [
+    "Bridgetown"
+  ],
+  "BLR": [
+    "Schloss Mir",
+    "Schloss Njaswisch"
+  ],
+  "BEL": [
+    "Grand-Place (Brüssel)",
+    "Atomium"
+  ],
+  "BLZ": [
+    "Great Blue Hole",
+    "Xunantunich"
+  ],
+  "BEN": [
+    "Ganvié",
+    "Königspaläste von Abomey"
+  ],
+  "BMU": [
+    "Hamilton (Bermuda)"
+  ],
+  "BTN": [
+    "Taktshang",
+    "Punakha Dzong"
+  ],
+  "BOL": [
+    "Salar de Uyuni",
+    "Titicacasee"
+  ],
+  "BES": [
+    "Kralendijk"
+  ],
+  "BIH": [
+    "Stari most",
+    "Sarajevo"
+  ],
+  "BWA": [
+    "Okavangodelta"
+  ],
+  "BRA": [
+    "Cristo Redentor",
+    "Iguazú-Wasserfälle"
+  ],
+  "BRN": [
+    "Sultan-Omar-Ali-Saifuddin-Moschee"
+  ],
+  "BGR": [
+    "Rila-Kloster",
+    "Alexander-Newski-Kathedrale (Sofia)"
+  ],
+  "BFA": [
+    "Bobo-Dioulasso"
+  ],
+  "BDI": [
+    "Tanganjikasee"
+  ],
+  "CHL": [
+    "Torres del Paine",
+    "Moai"
+  ],
+  "CHN": [
+    "Chinesische Mauer",
+    "Verbotene Stadt"
+  ],
+  "COK": [
+    "Rarotonga"
+  ],
+  "CRI": [
+    "Arenal (Vulkan)",
+    "Nationalpark Manuel Antonio"
+  ],
+  "CUW": [
+    "Willemstad (Curaçao)"
+  ],
+  "DNK": [
+    "Nyhavn",
+    "Kleine Meerjungfrau"
+  ],
+  "DMA": [
+    "Nationalpark Morne Trois Pitons"
+  ],
+  "DOM": [
+    "Kathedrale von Santo Domingo",
+    "Punta Cana"
+  ],
+  "DJI": [
+    "Assalsee"
+  ],
+  "ECU": [
+    "Galápagos-Inseln",
+    "Cotopaxi"
+  ],
+  "SLV": [
+    "Joya de Cerén"
+  ],
+  "CIV": [
+    "Basilika Notre-Dame-de-la-Paix (Yamoussoukro)"
+  ],
+  "ERI": [
+    "Asmara"
+  ],
+  "EST": [
+    "Tallinner Altstadt"
+  ],
+  "SWZ": [
+    "Mlilwane Wildlife Sanctuary"
+  ],
+  "FLK": [
+    "Stanley (Falklandinseln)"
+  ],
+  "FRO": [
+    "Gásadalur"
+  ],
+  "FJI": [
+    "Mamanuca-Inseln"
+  ],
+  "FIN": [
+    "Suomenlinna",
+    "Dom von Helsinki"
+  ],
+  "FRA": [
+    "Eiffelturm",
+    "Mont-Saint-Michel"
+  ],
+  "GUF": [
+    "Raumfahrtzentrum Guayana"
+  ],
+  "PYF": [
+    "Bora Bora"
+  ],
+  "GAB": [
+    "Nationalpark Loango"
+  ],
+  "GMB": [
+    "Kunta Kinteh Island"
+  ],
+  "GEO": [
+    "Dreifaltigkeitskirche von Gergeti",
+    "Tiflis"
+  ],
+  "GHA": [
+    "Cape Coast Castle"
+  ],
+  "GIB": [
+    "Felsen von Gibraltar"
+  ],
+  "GRD": [
+    "Grand Anse Beach"
+  ],
+  "GRC": [
+    "Akropolis (Athen)",
+    "Santorin"
+  ],
+  "GRL": [
+    "Ilulissat-Eisfjord"
+  ],
+  "GLP": [
+    "La Soufrière (Guadeloupe)"
+  ],
+  "GUM": [
+    "Hagåtña"
+  ],
+  "GTM": [
+    "Tikal",
+    "Antigua Guatemala"
+  ],
+  "GGY": [
+    "Saint Peter Port"
+  ],
+  "GIN": [
+    "Conakry"
+  ],
+  "GNB": [
+    "Bissagos-Inseln"
+  ],
+  "GUY": [
+    "Kaieteur-Fall"
+  ],
+  "HTI": [
+    "Citadelle Laferrière"
+  ],
+  "HND": [
+    "Copán"
+  ],
+  "HKG": [
+    "Victoria Harbour"
+  ],
+  "IND": [
+    "Taj Mahal",
+    "Hawa Mahal"
+  ],
+  "IDN": [
+    "Borobudur",
+    "Pura Ulun Danu Bratan"
+  ],
+  "IMN": [
+    "Laxey Wheel"
+  ],
+  "IRQ": [
+    "Babylon"
+  ],
+  "IRN": [
+    "Naqsch-e Dschahan",
+    "Persepolis"
+  ],
+  "IRL": [
+    "Cliffs of Moher",
+    "Rock of Cashel"
+  ],
+  "ISL": [
+    "Gullfoss",
+    "Hallgrímskirkja"
+  ],
+  "ISR": [
+    "Klagemauer",
+    "Masada"
+  ],
+  "ITA": [
+    "Kolosseum",
+    "Schiefer Turm von Pisa"
+  ],
+  "JAM": [
+    "Dunn’s River Falls"
+  ],
+  "JPN": [
+    "Fuji (Vulkan)",
+    "Kinkaku-ji"
+  ],
+  "YEM": [
+    "Schibam",
+    "Sokotra"
+  ],
+  "JEY": [
+    "Mont Orgueil"
+  ],
+  "JOR": [
+    "Petra (Jordanien)",
+    "Wadi Rum"
+  ],
+  "CYM": [
+    "Seven Mile Beach (Grand Cayman)"
+  ],
+  "KHM": [
+    "Angkor Wat",
+    "Königspalast (Phnom Penh)"
+  ],
+  "CMR": [
+    "Mount Cameroon"
+  ],
+  "CAN": [
+    "Niagarafälle",
+    "CN Tower"
+  ],
+  "CPV": [
+    "Cidade Velha"
+  ],
+  "KAZ": [
+    "Bajterek",
+    "Scharyn-Canyon"
+  ],
+  "QAT": [
+    "Museum für Islamische Kunst (Doha)"
+  ],
+  "KEN": [
+    "Masai Mara",
+    "Kilimandscharo"
+  ],
+  "KGZ": [
+    "Yssykköl"
+  ],
+  "KIR": [
+    "Tarawa"
+  ],
+  "CCK": [
+    "Kokosinseln"
+  ],
+  "COL": [
+    "Cartagena (Kolumbien)"
+  ],
+  "COM": [
+    "Moroni"
+  ],
+  "COD": [
+    "Nyiragongo",
+    "Nationalpark Virunga"
+  ],
+  "HRV": [
+    "Dubrovnik",
+    "Nationalpark Plitvicer Seen"
+  ],
+  "CUB": [
+    "Altstadt von Havanna",
+    "Trinidad (Kuba)"
+  ],
+  "KWT": [
+    "Kuwait Towers"
+  ],
+  "LAO": [
+    "Pha That Luang",
+    "Luang Prabang"
+  ],
+  "LSO": [
+    "Maletsunyane-Fälle"
+  ],
+  "LVA": [
+    "Altstadt von Riga"
+  ],
+  "LBN": [
+    "Baalbek",
+    "Jeita-Grotte"
+  ],
+  "LBR": [
+    "Monrovia"
+  ],
+  "LBY": [
+    "Leptis Magna"
+  ],
+  "LIE": [
+    "Schloss Vaduz"
+  ],
+  "LTU": [
+    "Wasserburg Trakai",
+    "Kathedrale St. Stanislaus und St. Ladislaus (Vilnius)"
+  ],
+  "LUX": [
+    "Altstadt und Festung Luxemburg"
+  ],
+  "MDG": [
+    "Allee der Baobabs",
+    "Tsingy de Bemaraha"
+  ],
+  "MWI": [
+    "Malawisee"
+  ],
+  "MYS": [
+    "Petronas Towers",
+    "Batu Caves"
+  ],
+  "MDV": [
+    "Malé"
+  ],
+  "MLI": [
+    "Große Moschee von Djenné",
+    "Timbuktu"
+  ],
+  "MLT": [
+    "Valletta",
+    "Mdina"
+  ],
+  "MAR": [
+    "Hassan-II.-Moschee",
+    "Djemaa el Fna"
+  ],
+  "MHL": [
+    "Majuro"
+  ],
+  "MTQ": [
+    "Montagne Pelée"
+  ],
+  "MRT": [
+    "Chinguetti"
+  ],
+  "MUS": [
+    "Le Morne Brabant"
+  ],
+  "MYT": [
+    "Mamoudzou"
+  ],
+  "MEX": [
+    "Chichén Itzá",
+    "Teotihuacán"
+  ],
+  "FSM": [
+    "Nan Madol"
+  ],
+  "MDA": [
+    "Orheiul Vechi"
+  ],
+  "MCO": [
+    "Fürstenpalast von Monaco",
+    "Spielbank Monte-Carlo"
+  ],
+  "MNG": [
+    "Dschingis-Khan-Reiterstatue",
+    "Kloster Erdene Dsuu"
+  ],
+  "MNE": [
+    "Kotor",
+    "Sveti Stefan"
+  ],
+  "MSR": [
+    "Soufrière Hills"
+  ],
+  "MOZ": [
+    "Ilha de Moçambique"
+  ],
+  "MMR": [
+    "Shwedagon-Pagode",
+    "Bagan"
+  ],
+  "NAM": [
+    "Sossusvlei",
+    "Etosha-Nationalpark"
+  ],
+  "NRU": [
+    "Nauru"
+  ],
+  "NPL": [
+    "Mount Everest",
+    "Boudhanath"
+  ],
+  "NCL": [
+    "Kulturzentrum Jean-Marie Tjibaou"
+  ],
+  "NZL": [
+    "Milford Sound"
+  ],
+  "NIC": [
+    "Kathedrale von León (Nicaragua)",
+    "Granada (Nicaragua)"
+  ],
+  "NLD": [
+    "Windmühlen von Kinderdijk",
+    "Grachtengürtel von Amsterdam"
+  ],
+  "NER": [
+    "Große Moschee von Agadez"
+  ],
+  "NGA": [
+    "Zuma Rock",
+    "Nationalmoschee Abuja"
+  ],
+  "NIU": [
+    "Alofi"
+  ],
+  "PRK": [
+    "Juche-Turm"
+  ],
+  "MNP": [
+    "Saipan"
+  ],
+  "MKD": [
+    "Ohrid",
+    "Ohridsee"
+  ],
+  "NFK": [
+    "Kingston (Norfolkinsel)"
+  ],
+  "NOR": [
+    "Geirangerfjord",
+    "Preikestolen"
+  ],
+  "OMN": [
+    "Sultan-Qabus-Moschee",
+    "Festung Nizwa"
+  ],
+  "AUT": [
+    "Schloss Schönbrunn",
+    "Hallstatt"
+  ],
+  "TLS": [
+    "Cristo Rei (Dili)"
+  ],
+  "PAK": [
+    "Badshahi-Moschee",
+    "Faisal-Moschee"
+  ],
+  "PLW": [
+    "Rock Islands"
+  ],
+  "PAN": [
+    "Panamakanal",
+    "Casco Viejo (Panama)"
+  ],
+  "PNG": [
+    "Port Moresby"
+  ],
+  "PRY": [
+    "Jesuitenreduktionen La Santísima Trinidad de Paraná und Jesús de Tavarangue"
+  ],
+  "PER": [
+    "Machu Picchu",
+    "Titicacasee"
+  ],
+  "PHL": [
+    "Chocolate Hills",
+    "Reisterrassen von Banaue"
+  ],
+  "PCN": [
+    "Adamstown"
+  ],
+  "POL": [
+    "Marktplatz (Krakau)",
+    "Wawel"
+  ],
+  "PRT": [
+    "Torre de Belém",
+    "Ribeira (Porto)"
+  ],
+  "PRI": [
+    "Castillo San Felipe del Morro"
+  ],
+  "ROU": [
+    "Schloss Bran",
+    "Parlamentspalast (Bukarest)"
+  ],
+  "RUS": [
+    "Roter Platz",
+    "Basilius-Kathedrale"
+  ],
+  "REU": [
+    "Piton de la Fournaise"
+  ],
+  "BLM": [
+    "Gustavia"
+  ],
+  "MAF": [
+    "Marigot (Saint-Martin)"
+  ],
+  "SPM": [
+    "Saint-Pierre (Saint-Pierre und Miquelon)"
+  ],
+  "SLB": [
+    "Honiara"
+  ],
+  "ZMB": [
+    "Victoriafälle"
+  ],
+  "SAU": [
+    "Masdschid al-Haram"
+  ],
+  "SWE": [
+    "Gamla stan",
+    "Schloss Stockholm"
+  ],
+  "CHE": [
+    "Matterhorn",
+    "Kapellbrücke"
+  ],
+  "SEN": [
+    "Monument de la Renaissance africaine",
+    "Gorée"
+  ],
+  "SRB": [
+    "Belgrader Festung",
+    "Kloster Studenica"
+  ],
+  "SYC": [
+    "Anse Source d’Argent"
+  ],
+  "SLE": [
+    "Freetown"
+  ],
+  "ZWE": [
+    "Victoriafälle",
+    "Great Zimbabwe"
+  ],
+  "SGP": [
+    "Marina Bay Sands",
+    "Gardens by the Bay"
+  ],
+  "SXM": [
+    "Maho Beach"
+  ],
+  "SVK": [
+    "Burg Bratislava",
+    "Zipser Burg"
+  ],
+  "SVN": [
+    "Bleder See",
+    "Höhle von Postojna"
+  ],
+  "SOM": [
+    "Mogadischu"
+  ],
+  "ESP": [
+    "Sagrada Família",
+    "Alhambra"
+  ],
+  "LKA": [
+    "Sigiriya",
+    "Zahntempel"
+  ],
+  "SHN": [
+    "Jamestown (St. Helena)"
+  ],
+  "KNA": [
+    "Brimstone Hill Fortress"
+  ],
+  "LCA": [
+    "Pitons"
+  ],
+  "VCT": [
+    "Tobago Cays"
+  ],
+  "PSE": [
+    "Felsendom",
+    "Geburtskirche (Betlehem)"
+  ],
+  "ZAF": [
+    "Tafelberg",
+    "Kap der Guten Hoffnung"
+  ],
+  "SDN": [
+    "Pyramiden von Meroe"
+  ],
+  "KOR": [
+    "Gyeongbokgung",
+    "Bulguksa"
+  ],
+  "SSD": [
+    "Juba"
+  ],
+  "SUR": [
+    "Paramaribo"
+  ],
+  "SJM": [
+    "Longyearbyen"
+  ],
+  "SYR": [
+    "Umayyaden-Moschee",
+    "Krak des Chevaliers"
+  ],
+  "STP": [
+    "Pico Cão Grande"
+  ],
+  "TJK": [
+    "Pamir"
+  ],
+  "TWN": [
+    "Taipei 101",
+    "Sonne-Mond-See"
+  ],
+  "TZA": [
+    "Kilimandscharo",
+    "Serengeti"
+  ],
+  "THA": [
+    "Wat Arun",
+    "Großer Palast (Bangkok)"
+  ],
+  "TGO": [
+    "Koutammakou"
+  ],
+  "TKL": [
+    "Tokelau"
+  ],
+  "TON": [
+    "Haʻamonga ʻa Maui"
+  ],
+  "TCD": [
+    "Ennedi-Massiv"
+  ],
+  "CZE": [
+    "Karlsbrücke",
+    "Prager Burg"
+  ],
+  "TUN": [
+    "Sidi Bou Saïd",
+    "Amphitheater von El Djem"
+  ],
+  "TUR": [
+    "Hagia Sophia",
+    "Kappadokien"
+  ],
+  "TUV": [
+    "Funafuti"
+  ],
+  "UGA": [
+    "Murchison Falls",
+    "Bwindi-Impenetrable-Nationalpark"
+  ],
+  "UKR": [
+    "Kiewer Höhlenkloster",
+    "Sophienkathedrale (Kiew)"
+  ],
+  "HUN": [
+    "Parlamentsgebäude (Budapest)",
+    "Fischerbastei"
+  ],
+  "URY": [
+    "Colonia del Sacramento",
+    "Punta del Este"
+  ],
+  "UZB": [
+    "Registan",
+    "Itchan Kala"
+  ],
+  "VUT": [
+    "Yasur"
+  ],
+  "VAT": [
+    "Petersdom",
+    "Petersplatz"
+  ],
+  "VEN": [
+    "Salto Ángel",
+    "Roraima (Berg)"
+  ],
+  "ARE": [
+    "Burj Khalifa",
+    "Scheich-Zayid-Moschee"
+  ],
+  "USA": [
+    "Freiheitsstatue",
+    "Golden Gate Bridge"
+  ],
+  "GBR": [
+    "Tower Bridge",
+    "Stonehenge"
+  ],
+  "VNM": [
+    "Hạ-Long-Bucht",
+    "Hội An"
+  ],
+  "WLF": [
+    "Mata-Utu"
+  ],
+  "CXR": [
+    "Weihnachtsinsel"
+  ],
+  "CAF": [
+    "Bangui"
+  ],
+  "CYP": [
+    "Felsen der Aphrodite",
+    "Kloster Kykkos"
+  ],
+  "ALA": [
+    "Kastelholm"
+  ],
+  "KOS": [
+    "Kloster Visoki Dečani",
+    "Prizren"
+  ]
+}

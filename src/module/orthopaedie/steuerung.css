@@ -1,0 +1,241 @@
+/* Steuerung Orthopädie: ergänzt die Stile der Aufklärungen (.aufk…). */
+
+.ortho__vorab {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.ortho__verlauf {
+  margin: 0 0 10px !important;
+  color: var(--text) !important;
+}
+
+.ortho__quellen {
+  display: grid;
+  gap: 2px;
+  font-size: 13px;
+  color: var(--text-hell) !important;
+}
+
+.ortho__quellen a {
+  color: var(--petrol);
+  text-underline-offset: 2px;
+}
+
+/* Behandlungen mit Beleglage */
+.ortho__therapien {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.ortho__therapien li {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 12px;
+  padding: 6px 0;
+  border-top: 1px solid var(--linie);
+}
+
+.ortho__therapien li:first-child {
+  border-top: 0;
+}
+
+.ortho__stufe {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.ortho__therapien li[data-evidenz='abraten'] .ortho__stufe {
+  color: var(--kupfer-dunkel);
+}
+
+/* Das Maß von der Bühne, hier klein und auf hellem Grund */
+.ortho .belegmass i {
+  width: 6px;
+  height: 15px;
+  background: var(--linie);
+}
+
+.ortho .belegmass i:nth-child(1) {
+  height: 9px;
+}
+
+.ortho .belegmass i:nth-child(2) {
+  height: 12px;
+}
+
+.ortho .belegmass i[data-voll='true'] {
+  background: var(--petrol);
+}
+
+.ortho .belegmass[data-evidenz='moeglich'] i[data-voll='true'] {
+  background: #6f9eab;
+}
+
+.ortho .belegmass[data-evidenz='abraten']::after {
+  height: 2px;
+  background: var(--kupfer);
+}
+
+.ortho .belegmass {
+  gap: 3px;
+}
+
+/* 3D-Modell im Pult */
+.ortho__modellreihe {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.ortho__flaeche {
+  position: relative;
+  height: 320px;
+  border-radius: 8px;
+  background: var(--petrol-dunkel);
+  overflow: hidden;
+}
+
+.ortho__modellreihe ul {
+  margin-bottom: 10px;
+}
+
+/* Übungen: Name zum Großzeigen, daneben Vormerken */
+.ortho__katalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.ortho__katalog--eng {
+  grid-template-columns: minmax(0, 1fr);
+  margin-bottom: 12px;
+}
+
+.ortho__uebung {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: stretch;
+  height: 100%;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+  transition: border-color 160ms var(--raus);
+}
+
+.ortho__uebung:hover,
+.ortho__uebung[data-gross='true'] {
+  border-color: var(--petrol);
+}
+
+.ortho__uebungsname {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 8px;
+  align-items: baseline;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 8px 0 0 8px;
+  background: transparent;
+  text-align: left;
+}
+
+.ortho__uebungsname svg {
+  translate: 0 2px;
+  color: var(--text-hell);
+}
+
+.ortho__uebungsname strong {
+  color: var(--petrol);
+}
+
+.ortho__uebungsname span {
+  grid-column: 2;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.ortho__uebungsname[aria-pressed='true'] {
+  background: var(--petrol);
+}
+
+.ortho__uebungsname[aria-pressed='true'] strong,
+.ortho__uebungsname[aria-pressed='true'] svg {
+  color: #fff;
+}
+
+.ortho__uebungsname[aria-pressed='true'] span {
+  color: var(--auf-petrol-leise);
+}
+
+.ortho__merken {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 6px;
+  white-space: nowrap;
+}
+
+.ortho__merken[aria-pressed='true'] {
+  border-color: var(--petrol);
+  background: var(--petrol-hauch);
+  color: var(--petrol);
+}
+
+.ortho__schritte {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 4px 14px 12px 34px;
+  font-size: 14px;
+}
+
+.ortho__reihe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ortho__reihe .knopf {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ortho__modell .knopf {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Leiste fürs Übungsblatt */
+.ortho__blatt {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--petrol-hauch);
+  color: var(--petrol);
+}
+
+.ortho__blatt h2 {
+  margin: 0 !important;
+  font-size: 15px !important;
+}
+
+.ortho__blatt p {
+  font-size: 13px;
+  color: var(--text);
+}

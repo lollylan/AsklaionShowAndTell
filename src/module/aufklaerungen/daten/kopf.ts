@@ -1,0 +1,233 @@
+import type { Krankheit } from './typen';
+
+export const KOPF: Krankheit[] = [
+  {
+    id: 'depression',
+    name: 'Depression',
+    gebiet: 'kopf',
+    suche: 'depressiv antidepressiva burnout erschoepfung psychotherapie',
+    was: [
+      'Eine Depression ist eine Erkrankung – keine Schwäche und keine Frage des Willens.',
+      'Über mindestens zwei Wochen sind Stimmung, Antrieb und Freude deutlich gedrückt.',
+      'Dazu kommen oft Schlafstörungen, Grübeln, Konzentrationsprobleme, Appetitlosigkeit und Schuldgefühle.',
+      'Auch der Körper kann reagieren: mit Schmerzen, Druck auf der Brust oder Erschöpfung. Depressionen sind häufig und gut behandelbar.',
+    ],
+    ursachen: [
+      'Meist wirken mehrere Dinge zusammen: Veranlagung, belastende Erlebnisse, Dauerstress und körperliche Krankheiten.',
+      'Im Gehirn ist das Gleichgewicht der Botenstoffe verändert, mit denen Nervenzellen Signale weitergeben.',
+      'Manchmal gibt es einen klaren Auslöser wie einen Verlust, manchmal kommt sie scheinbar aus dem Nichts.',
+      'Unbehandelt kann eine Depression Monate dauern und wiederkehren. Sie belastet auch Herz und Stoffwechsel.',
+    ],
+    behandlung: [
+      'Bei einer leichten Depression helfen oft schon begleitende Gespräche, Tagesstruktur und Bewegung.',
+      'Psychotherapie und Medikamente sind beide wirksam – bei schweren Verläufen am besten gemeinsam.',
+      'Antidepressiva machen nicht abhängig und verändern nicht die Persönlichkeit. Sie wirken erst nach zwei bis vier Wochen.',
+      'Sie werden auch nach der Besserung noch mehrere Monate weitergenommen, um einen Rückfall zu verhindern.',
+    ],
+    selbst: [
+      'Bewegen Sie sich täglich, am besten draußen – das wirkt nachweislich gegen Depression.',
+      'Halten Sie einen festen Tagesablauf mit regelmäßigen Schlafenszeiten.',
+      'Planen Sie kleine angenehme Dinge ein, auch wenn die Lust fehlt. Sie kommt oft beim Tun.',
+      'Sprechen Sie mit Menschen, denen Sie vertrauen. Alkohol verschlimmert die Depression.',
+    ],
+    warnung:
+      'Wenn Sie daran denken, sich etwas anzutun: Bitte sprechen Sie uns sofort an. Rund um die Uhr hilft die Telefonseelsorge 0800 111 0 111, im Notfall die 112.',
+  },
+  {
+    id: 'migraene',
+    name: 'Migräne',
+    gebiet: 'kopf',
+    suche: 'kopfschmerz aura triptan',
+    was: [
+      'Migräne ist eine Erkrankung des Gehirns mit anfallsartigen, starken Kopfschmerzen.',
+      'Der Schmerz ist meist einseitig, pochend und wird bei Bewegung schlimmer.',
+      'Dazu kommen Übelkeit und eine Empfindlichkeit gegen Licht, Lärm und Gerüche. Ein Anfall dauert Stunden bis drei Tage.',
+      'Manche haben vorher eine Aura: Flimmern vor den Augen, Kribbeln oder Wortfindungsstörungen für bis zu einer Stunde.',
+    ],
+    ursachen: [
+      'Die Veranlagung ist angeboren – oft sind mehrere in der Familie betroffen.',
+      'Im Anfall sind Nervenzellen und Blutgefäße der Hirnhaut überaktiv und entzündlich gereizt.',
+      'Auslöser sind von Mensch zu Mensch verschieden: Stress und die Entspannung danach, zu wenig oder zu viel Schlaf, ausgelassene Mahlzeiten, Hormonschwankungen, Alkohol.',
+      'Migräne ist nicht gefährlich, kann den Alltag aber stark einschränken.',
+    ],
+    behandlung: [
+      'Im Anfall gilt: früh und ausreichend dosiert behandeln. Bei leichten Anfällen mit einem Schmerzmittel wie Ibuprofen oder ASS.',
+      'Bei stärkeren Anfällen helfen Triptane – Medikamente speziell gegen Migräne. Dazu bei Bedarf ein Mittel gegen Übelkeit.',
+      'Ruhe in einem abgedunkelten Raum und Schlaf unterstützen die Wirkung.',
+      'Bei häufigen Anfällen gibt es vorbeugende Medikamente, die die Zahl der Migränetage senken.',
+    ],
+    selbst: [
+      'Führen Sie einen Kopfschmerzkalender. So erkennen Sie Ihre Auslöser und wir sehen, ob die Behandlung wirkt.',
+      'Leben Sie regelmäßig: feste Schlafens- und Essenszeiten, auch am Wochenende.',
+      'Ausdauersport und Entspannungsverfahren beugen Anfällen nachweislich vor.',
+      'Nehmen Sie Schmerzmittel und Triptane an höchstens zehn Tagen im Monat – sonst können sie selbst Kopfschmerzen auslösen.',
+    ],
+    warnung:
+      'Schlagartig stärkster Kopfschmerz, Kopfschmerz mit Fieber und steifem Nacken, mit Lähmung oder Sprachstörung: sofort 112.',
+  },
+  {
+    id: 'demenz',
+    name: 'Demenz',
+    zusatz: 'Zum Beispiel Alzheimer',
+    gebiet: 'kopf',
+    suche: 'alzheimer vergesslichkeit gedaechtnis vaskulaere demenz',
+    was: [
+      'Bei einer Demenz lassen Gedächtnis und Denkvermögen so stark nach, dass der Alltag schwieriger wird.',
+      'Anfangs fallen vor allem neue Dinge schwer: Termine, Namen, gerade Gesagtes.',
+      'Später kommen Probleme mit der Orientierung, der Sprache und gewohnten Handgriffen hinzu. Auch das Wesen kann sich verändern.',
+      'Vergesslichkeit allein ist noch keine Demenz – im Alter ist etwas Nachlassen normal.',
+    ],
+    ursachen: [
+      'Am häufigsten ist die Alzheimer-Krankheit: Im Gehirn lagern sich Eiweiße ab, Nervenzellen gehen langsam verloren.',
+      'Die zweithäufigste Form entsteht durch Durchblutungsstörungen, oft nach kleinen Schlaganfällen.',
+      'Das Risiko steigt mit dem Alter. Bluthochdruck, Diabetes, Rauchen, Schwerhörigkeit und Einsamkeit erhöhen es.',
+      'Manche Ursachen sind behandelbar, etwa Vitaminmangel, Schilddrüsenstörungen oder eine Depression. Deshalb untersuchen wir gründlich.',
+    ],
+    behandlung: [
+      'Heilen lässt sich eine Demenz bisher nicht. Der Verlauf lässt sich aber günstig beeinflussen.',
+      'Medikamente können das Fortschreiten bei Alzheimer für einige Zeit verzögern.',
+      'Mindestens so wichtig sind Bewegung, geistige Anregung, Ergotherapie und ein geregelter Tag.',
+      'Wir behandeln Blutdruck, Zucker, Hören und Sehen mit – und sprechen früh über Vorsorgevollmacht und Unterstützung.',
+    ],
+    selbst: [
+      'Bleiben Sie aktiv: Bewegung, Gespräche, Musik, Hobbys. Was Freude macht, tut auch dem Gehirn gut.',
+      'Feste Abläufe, Kalender, Notizzettel und ein fester Platz für Schlüssel und Brille geben Sicherheit.',
+      'Für Angehörige: Bitte nicht korrigieren oder abfragen. Ruhe und Geduld helfen mehr.',
+      'Nehmen Sie Hilfe an – Pflegeberatung, Tagespflege und Angehörigengruppen entlasten.',
+    ],
+    warnung:
+      'Plötzliche Verwirrtheit innerhalb von Stunden oder Tagen ist keine Demenz, sondern ein Notfall: bitte sofort ärztlich abklären lassen.',
+  },
+  {
+    id: 'guertelrose',
+    name: 'Gürtelrose',
+    zusatz: 'Herpes zoster',
+    gebiet: 'kopf',
+    suche: 'herpes zoster windpocken nervenschmerzen neuralgie',
+    was: [
+      'Die Gürtelrose wird durch das Windpocken-Virus ausgelöst. Es bleibt nach den Windpocken lebenslang in Nervenknoten und kann wieder aufwachen.',
+      'Dann wandert es an einem Nerv entlang zur Haut.',
+      'Zuerst brennt oder schmerzt die Haut, dann erscheinen gerötete Stellen mit Bläschen – bandförmig und nur auf einer Körperseite.',
+      'Meist ist der Rumpf betroffen, manchmal das Gesicht. Nach zwei bis vier Wochen heilt der Ausschlag ab.',
+    ],
+    ursachen: [
+      'Das Virus wird aktiv, wenn die Abwehr nachlässt: im höheren Alter, bei Stress, bei Krankheiten oder durch manche Medikamente.',
+      'Jeder, der Windpocken hatte, kann eine Gürtelrose bekommen. Ab 50 Jahren steigt das Risiko deutlich.',
+      'Die wichtigste Folge sind Nervenschmerzen, die noch Monate nach dem Ausschlag anhalten können.',
+      'Der Inhalt der Bläschen ist ansteckend für Menschen, die noch keine Windpocken hatten und nicht geimpft sind.',
+    ],
+    behandlung: [
+      'Tabletten gegen das Virus verkürzen die Krankheit und senken das Risiko für bleibende Nervenschmerzen.',
+      'Sie wirken am besten, wenn Sie in den ersten drei Tagen nach Beginn des Ausschlags damit anfangen.',
+      'Die Schmerzen behandeln wir früh und ausreichend – das ist wichtig, damit sie nicht chronisch werden.',
+      'Die Bläschen werden trocken und sauber gehalten.',
+    ],
+    selbst: [
+      'Kommen Sie früh, wenn Sie einen einseitigen Ausschlag mit Schmerzen bemerken.',
+      'Kratzen Sie die Bläschen nicht auf, decken Sie sie locker ab und waschen Sie sich danach die Hände.',
+      'Meiden Sie Kontakt zu Schwangeren, Säuglingen und Abwehrgeschwächten, bis alles verkrustet ist.',
+      'Zur Vorbeugung gibt es eine Impfung: empfohlen ab 60 Jahren, bei Vorerkrankungen ab 50. Auch nach einer Gürtelrose ist sie sinnvoll.',
+    ],
+    warnung:
+      'Bläschen an Stirn, Auge, Nase oder Ohr: bitte am selben Tag kommen – Auge und Gehör können Schaden nehmen.',
+  },
+  {
+    id: 'angststoerung',
+    name: 'Angststörung',
+    zusatz: 'Panikattacken und ständige Sorgen',
+    gebiet: 'kopf',
+    suche: 'angst panik panikattacke panikstoerung phobie generalisierte angststoerung herzrasen',
+    was: [
+      'Angst ist eigentlich ein wichtiges Warnsignal. Bei einer Angststörung kommt sie zu oft, zu stark oder ohne echte Gefahr.',
+      'Bei einer Panikattacke kommen plötzlich Herzrasen, Atemnot, Zittern, Schwindel und Todesangst. Nach Minuten klingt sie von selbst ab.',
+      'Andere Menschen sorgen sich fast ständig um vieles und kommen nicht zur Ruhe. Manche fürchten bestimmte Orte oder Situationen.',
+      'Angststörungen sind häufig, gut behandelbar – und keine Einbildung.',
+    ],
+    ursachen: [
+      'Meist wirken Veranlagung, belastende Erfahrungen und Dauerstress zusammen.',
+      'Der Körper schlägt Alarm wie bei echter Gefahr. Das Herzrasen wirkt bedrohlich, und die Angst steigt weiter – ein Teufelskreis.',
+      'Wer aus Angst Situationen meidet, erlebt nicht mehr, dass nichts passiert. So wird die Angst mit der Zeit größer.',
+      'Körperliche Ursachen wie eine Schilddrüsenüberfunktion oder Herzrhythmusstörungen schließen wir vorher aus.',
+    ],
+    behandlung: [
+      'Am besten wirkt eine Psychotherapie, vor allem die Verhaltenstherapie. Sie lernen, die Angst zu verstehen und sich ihr Schritt für Schritt zu stellen.',
+      'Bei stärkeren Beschwerden helfen bestimmte Antidepressiva. Sie machen nicht abhängig und wirken nach zwei bis vier Wochen.',
+      'Beruhigungsmittel wie Lorazepam helfen nur kurz im akuten Notfall. Sie machen schnell abhängig.',
+      'Bis zum Therapieplatz helfen begleitende Gespräche, Selbsthilfebücher oder zugelassene Online-Programme auf Rezept.',
+    ],
+    selbst: [
+      'In der Panikattacke: Atmen Sie langsam aus und zählen Sie mit. Sagen Sie sich: Das ist Angst, sie geht vorbei.',
+      'Weichen Sie gefürchteten Situationen nicht aus – suchen Sie sie Schritt für Schritt wieder auf.',
+      'Ausdauersport baut Stresshormone ab und zeigt dem Körper: Herzklopfen ist harmlos. Auch Entspannungsverfahren helfen.',
+      'Meiden Sie viel Kaffee, Energydrinks und Alkohol – sie können die Angst verstärken.',
+    ],
+    warnung:
+      'Brustschmerz oder Atemnot, die anders sind als sonst: sofort 112. Wenn Sie daran denken, sich etwas anzutun: Telefonseelsorge 0800 111 0 111 oder 112.',
+  },
+  {
+    id: 'schlafstoerung',
+    name: 'Schlafstörung',
+    zusatz: 'Ein- und Durchschlafstörung, Insomnie',
+    gebiet: 'kopf',
+    suche: 'insomnie schlaflosigkeit einschlafstoerung durchschlafstoerung schlafmittel zopiclon zolpidem',
+    was: [
+      'Bei einer Schlafstörung schlafen Sie schlecht ein, wachen nachts oft auf oder viel zu früh am Morgen.',
+      'Behandeln sollte man sie, wenn das an mindestens drei Nächten pro Woche über Wochen so geht und Sie tagsüber müde oder gereizt sind.',
+      'Kurzes Aufwachen in der Nacht ist normal. Wie viel Schlaf man braucht, ist verschieden und nimmt im Alter ab.',
+      'Schlafstörungen sind sehr häufig, besonders bei Frauen und älteren Menschen.',
+    ],
+    ursachen: [
+      'Oft beginnt es mit Stress, Sorgen oder einer Krankheit. Dann grübelt man im Bett über den Schlaf – und wird dadurch erst recht wach.',
+      'Auch Schmerzen, nächtlicher Harndrang, Atemaussetzer, unruhige Beine, Depression oder Angst stören den Schlaf.',
+      'Kaffee, Alkohol, Nikotin, spätes schweres Essen und manche Medikamente können dahinterstecken.',
+      'Schlafstörungen sind lästig, aber selten gefährlich. Ein paar schlechte Nächte gleicht der Körper von selbst aus.',
+    ],
+    behandlung: [
+      'Zuerst suchen wir nach behandelbaren Ursachen wie Schmerzen, Depression oder Atemaussetzern im Schlaf.',
+      'Am besten und dauerhaft wirkt eine Verhaltenstherapie gegen Schlaflosigkeit. Es gibt sie auch als Online-Programm auf Rezept.',
+      'Schlafmittel wie Zopiclon nehmen wir nur kurz – höchstens vier Wochen, möglichst nicht jede Nacht.',
+      'Bei längerer Einnahme lässt die Wirkung nach, und sie machen abhängig. Im Alter erhöhen sie die Sturzgefahr.',
+    ],
+    selbst: [
+      'Stehen Sie jeden Tag zur gleichen Zeit auf, auch am Wochenende. Verzichten Sie auf den Mittagsschlaf.',
+      'Gehen Sie erst ins Bett, wenn Sie wirklich müde sind. Liegen Sie lange wach, stehen Sie auf und tun Sie etwas Ruhiges.',
+      'Nutzen Sie das Bett nur zum Schlafen, und schauen Sie nachts nicht auf die Uhr.',
+      'Kein Kaffee ab dem Nachmittag, wenig Alkohol am Abend. Bewegung am Tag hilft beim Schlafen.',
+    ],
+    warnung:
+      'Einschlafen am Steuer oder Atemaussetzer im Schlaf: nicht mehr fahren und bald zu uns kommen. Schlafmittel nach längerer Einnahme nicht plötzlich absetzen.',
+  },
+  {
+    id: 'polyneuropathie',
+    name: 'Nervenschmerzen und Polyneuropathie',
+    zusatz: 'Geschädigte Nerven an Füßen und Händen',
+    gebiet: 'kopf',
+    suche: 'polyneuropathie pnp neuropathie neuropathische schmerzen kribbeln taubheit brennen pregabalin diabetischer fuss',
+    was: [
+      'Bei einer Polyneuropathie sind viele lange Nerven geschädigt. Meist beginnt es an beiden Füßen und steigt langsam auf, später auch an den Händen.',
+      'Typisch sind Kribbeln, Brennen, Ameisenlaufen und ein Gefühl wie auf Watte. Kälte, Wärme und Schmerz spürt man schlechter.',
+      'Die Beschwerden sind oft nachts in Ruhe am stärksten. Manche gehen unsicherer, weil das Gefühl in den Füßen fehlt.',
+      'Geschädigte Nerven können auch selbst Schmerzen erzeugen – das sind Nervenschmerzen.',
+    ],
+    ursachen: [
+      'Die häufigsten Ursachen sind Diabetes und viel Alkohol über lange Zeit.',
+      'Auch Vitamin-B12-Mangel, Schilddrüsen- oder Nierenkrankheiten, manche Medikamente wie Chemotherapien und seltene Entzündungen kommen in Frage.',
+      'Bei manchen findet sich trotz gründlicher Suche keine Ursache.',
+      'Weil das Gefühl fehlt, bemerkt man kleine Wunden am Fuß nicht. Daraus können schlecht heilende Geschwüre werden.',
+    ],
+    behandlung: [
+      'Am wichtigsten ist, die Ursache zu behandeln: den Zucker gut einstellen, auf Alkohol verzichten, fehlende Vitamine ersetzen.',
+      'Gegen Nervenschmerzen helfen übliche Schmerzmittel wie Ibuprofen kaum. Besser wirken spezielle Mittel wie Pregabalin, Duloxetin oder Amitriptylin.',
+      'Sie werden niedrig begonnen und langsam gesteigert. Müdigkeit und Schwindel lassen oft nach einigen Tagen nach.',
+      'Ziel ist eine deutliche Linderung, völlig schmerzfrei wird man selten. Physiotherapie und Gleichgewichtstraining helfen beim sicheren Gehen.',
+    ],
+    selbst: [
+      'Schauen Sie sich jeden Tag die Füße an, auch zwischen den Zehen – bei Bedarf mit einem Spiegel.',
+      'Tragen Sie bequeme, weite Schuhe und laufen Sie nicht barfuß. Prüfen Sie Badewasser mit der Hand oder einem Thermometer.',
+      'Gehen Sie zur medizinischen Fußpflege, statt Hornhaut und Nägel selbst zu schneiden.',
+      'Bleiben Sie in Bewegung und verzichten Sie auf Alkohol. Mittel wie Pregabalin bitte nicht plötzlich absetzen.',
+    ],
+    warnung:
+      'Eine Wunde, Rötung oder Schwellung am Fuß: bitte gleich zu uns, nicht abwarten. Rasch zunehmende Schwäche in Armen oder Beinen: sofort ins Krankenhaus.',
+  },
+];

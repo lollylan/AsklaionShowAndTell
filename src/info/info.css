@@ -1,0 +1,177 @@
+/* Zweck, Quellen und Lizenzen (/info): ein ruhiges Leseblatt in den Farben der App. */
+
+.info {
+  height: 100%;
+  overflow-y: auto;
+  background: var(--grund);
+  color: var(--text);
+  scrollbar-color: var(--linie) transparent;
+}
+
+.info__blatt {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.info__kopf {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--petrol);
+}
+
+.info__kopf img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.info__kopf div {
+  flex: 1;
+  min-width: 0;
+}
+
+.info__kopf h1 {
+  font-family: var(--schrift-titel);
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--petrol);
+  text-wrap: balance;
+}
+
+.info__kopf p {
+  color: var(--text-hell);
+}
+
+.info__kopf .knopf {
+  text-decoration: none;
+}
+
+.info section {
+  margin-top: 56px;
+}
+
+.info h2 {
+  margin-bottom: 16px;
+  font-family: var(--schrift-titel);
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--petrol-dunkel);
+}
+
+.info h3 {
+  margin: 36px 0 8px;
+  font-size: 17px;
+  color: var(--petrol-dunkel);
+}
+
+.info p + p {
+  margin-top: 12px;
+}
+
+.info__zweck {
+  padding: 16px 20px;
+  border-radius: 10px;
+  background: var(--petrol-hauch);
+  font-weight: 700;
+  color: var(--petrol-dunkel);
+}
+
+.info a {
+  color: var(--petrol);
+  text-underline-offset: 3px;
+}
+
+.info a:hover {
+  color: var(--kupfer-dunkel);
+}
+
+.info__liste {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.info__nachweise {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.info__nachweise li {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--linie);
+}
+
+.info__nachweise span {
+  color: var(--text-hell);
+  overflow-wrap: anywhere;
+}
+
+.info__land {
+  border-bottom: 1px solid var(--linie);
+}
+
+.info__land summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 4px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.info__land summary::-webkit-details-marker {
+  display: none;
+}
+
+.info__land summary:hover {
+  color: var(--petrol);
+}
+
+.info__land summary span {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-hell);
+}
+
+.info__land[open] {
+  padding-bottom: 16px;
+}
+
+.info__land[open] summary {
+  font-weight: 700;
+  color: var(--petrol-dunkel);
+}
+
+.info address {
+  font-style: normal;
+}
+
+.info__extern {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 560px) {
+  .info__kopf {
+    flex-wrap: wrap;
+  }
+
+  .info__nachweise li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+}

@@ -1,0 +1,341 @@
+/* Bühne = Patientenbildschirm. Alle Maße in px beziehen sich auf die feste
+   1920 × 1080-Fläche (siehe Leinwand.tsx). */
+
+.leinwand {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Der Verlauf liegt auf dem ganzen Bildschirm, nicht nur auf der 16:9-Fläche.
+     So gehen die Ränder bei 16:10, 4:3 oder Ultrabreit nahtlos in die Bühne über. */
+  background: radial-gradient(120% 90% at 50% 40%, var(--petrol-dunkel), var(--petrol-tief));
+}
+
+.leinwand__flaeche {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  color: var(--auf-petrol);
+  font-family: var(--schrift-text);
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+.leinwand__flaeche ::selection {
+  background: var(--kupfer);
+  color: #fff;
+}
+
+/* Jede Szene (Modul oder Ruhebild) füllt die Fläche und blendet beim Wechsel ein. */
+.szene {
+  position: absolute;
+  inset: 0;
+  animation: szene-ein 900ms var(--raus) both;
+}
+
+@keyframes szene-ein {
+  from {
+    opacity: 0;
+    filter: blur(14px);
+    transform: scale(1.015);
+  }
+}
+
+/* ---------- Zeiger: Leuchtpunkt, den der Arzt in der Vorschau setzt ---------- */
+
+.zeiger {
+  position: absolute;
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  margin: -22px 0 0 -22px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background: var(--kupfer);
+  box-shadow:
+    0 0 0 10px rgb(212 113 63 / 0.3),
+    0 14px 30px -6px rgb(0 20 26 / 0.8);
+  pointer-events: none;
+  transition:
+    left 90ms linear,
+    top 90ms linear;
+  animation: zeiger-ein 420ms var(--raus) both;
+}
+
+.zeiger::after {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border: 4px solid var(--kupfer-hell);
+  border-radius: 50%;
+  animation: zeiger-ring 2200ms var(--raus) infinite;
+}
+
+@keyframes zeiger-ein {
+  from {
+    opacity: 0;
+    scale: 2.4;
+  }
+}
+
+@keyframes zeiger-ring {
+  from {
+    opacity: 0.9;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    scale: 2.6;
+  }
+}
+
+/* ---------- Ruhebild ---------- */
+
+.ruhebild {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+/* Drei weiche Lichtfelder wandern in Minuten durch die Bildmitte. Ihre Laufzeiten
+   haben keinen gemeinsamen Teiler, deshalb sieht das Bild nie zweimal gleich aus.
+   Sie bleiben ganz innerhalb der Fläche, damit an deren Rand keine Kante entsteht. */
+.ruhebild__licht {
+  position: absolute;
+  inset: 0;
+}
+
+.ruhebild__schein {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  will-change: transform, opacity;
+}
+
+.ruhebild__schein--a {
+  width: 1100px;
+  height: 760px;
+  margin: -380px 0 0 -550px;
+  background: radial-gradient(closest-side, rgb(3 117 143 / 0.5), transparent);
+  animation:
+    schein-a 97s ease-in-out infinite alternate,
+    schein-atem 61s ease-in-out infinite alternate;
+}
+
+.ruhebild__schein--b {
+  width: 900px;
+  height: 700px;
+  margin: -350px 0 0 -450px;
+  background: radial-gradient(closest-side, rgb(42 147 171 / 0.3), transparent);
+  animation:
+    schein-b 131s ease-in-out infinite alternate,
+    schein-atem 83s ease-in-out -30s infinite alternate;
+}
+
+.ruhebild__schein--c {
+  width: 700px;
+  height: 520px;
+  margin: -260px 0 0 -350px;
+  background: radial-gradient(closest-side, rgb(212 113 63 / 0.15), transparent);
+  animation:
+    schein-c 173s ease-in-out infinite alternate,
+    schein-atem 109s ease-in-out -50s infinite alternate;
+}
+
+@keyframes schein-a {
+  from {
+    transform: translate(-240px, -90px) scale(1);
+  }
+  to {
+    transform: translate(200px, 70px) scale(1.12);
+  }
+}
+
+@keyframes schein-b {
+  from {
+    transform: translate(260px, 110px) scale(0.9);
+  }
+  to {
+    transform: translate(-280px, -100px) scale(1.1);
+  }
+}
+
+@keyframes schein-c {
+  from {
+    transform: translate(-420px, 150px);
+  }
+  45% {
+    transform: translate(60px, -40px);
+  }
+  to {
+    transform: translate(430px, -170px);
+  }
+}
+
+@keyframes schein-atem {
+  from {
+    opacity: 0.45;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Die Wellenlinien (Ruhebild.tsx) laufen zu den Seiten hin aus und lösen sich
+   zur Mitte hin auf, damit hinter Logo und Schrift Ruhe ist. */
+.ruhebild__wellen {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  mask-image:
+    linear-gradient(90deg, transparent 2%, #000 20%, #000 80%, transparent 98%),
+    radial-gradient(ellipse 620px 520px at 50% 52%, transparent 62%, #000 100%);
+  mask-composite: intersect;
+}
+
+.ruhebild__welle {
+  fill: none;
+  stroke: var(--auf-petrol-leise);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ruhebild__welle--kupfer {
+  stroke: var(--kupfer-hell);
+}
+
+.ruhebild__kreise {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ruhebild__kreis {
+  fill: none;
+  stroke: var(--auf-petrol-leise);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  transform-origin: 960px 540px;
+  opacity: 0.22;
+}
+
+.ruhebild__kreis--a {
+  stroke-dasharray: 2100 853;
+  animation: kreisen 140s linear infinite;
+}
+
+.ruhebild__kreis--b {
+  stroke-dasharray: 1300 2721;
+  opacity: 0.16;
+  animation: kreisen 220s linear infinite reverse;
+}
+
+.ruhebild__kreis--c {
+  stroke: var(--kupfer-hell);
+  stroke-dasharray: 520 4758;
+  opacity: 0.4;
+  animation: kreisen 300s linear infinite;
+}
+
+@keyframes kreisen {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ruhebild__mitte {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.ruhebild__logo {
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--warmweiss);
+  box-shadow: 0 30px 80px -20px rgb(0 20 26 / 0.7);
+}
+
+.ruhebild__logo img {
+  width: 188px;
+  height: auto;
+}
+
+.ruhebild__name {
+  margin-top: 64px;
+  font-family: var(--schrift-titel);
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--auf-petrol);
+}
+
+.ruhebild__fach {
+  margin-top: 20px;
+  font-size: 34px;
+  color: var(--auf-petrol);
+}
+
+.ruhebild__weitere {
+  margin-top: 12px;
+  font-size: 26px;
+  color: var(--auf-petrol-leise);
+}
+
+.ruhebild__weitere span {
+  margin: 0 10px;
+  color: var(--kupfer-hell);
+}
+
+/* ---------- Eigenes Fenster für den Patienten ---------- */
+
+.buehnenfenster {
+  position: fixed;
+  inset: 0;
+  background: var(--petrol-tief);
+}
+
+.buehnenfenster--ruhig {
+  cursor: none;
+}
+
+.vollbild-hinweis {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border: 1px solid var(--auf-petrol-linie);
+  border-radius: 999px;
+  background: rgb(1 44 55 / 0.86);
+  color: var(--auf-petrol);
+  font-size: 14px;
+  translate: -50% 0;
+  transition:
+    opacity 400ms var(--raus),
+    translate 400ms var(--raus);
+}
+
+.vollbild-hinweis[data-sichtbar='false'] {
+  opacity: 0;
+  translate: -50% 8px;
+  pointer-events: none;
+}
+
+.vollbild-hinweis:focus-visible {
+  outline-color: var(--auf-petrol);
+}

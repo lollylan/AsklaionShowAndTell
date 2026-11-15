@@ -1,0 +1,166 @@
+import type { Uebung } from '../daten/typen';
+
+// Übungen für Schulter, Ellenbogen, Hand und Nacken. Bilder: ../figuren/<id>.tsx
+
+export const UEBUNGEN_ARM: Uebung[] = [
+  {
+    id: 'pendeln',
+    name: 'Arm pendeln lassen',
+    ziel: 'Lockert die steife oder schmerzende Schulter, ohne sie zu belasten.',
+    ausgang: 'Beugen Sie sich vor und stützen Sie sich mit der gesunden Hand auf einen Tisch.',
+    schritte: [
+      'Lassen Sie den kranken Arm locker nach unten hängen.',
+      'Wiegen Sie den Oberkörper leicht, sodass der Arm vor und zurück pendelt, dann zur Seite.',
+      'Lassen Sie ihn danach kleine Kreise ziehen, in beide Richtungen.',
+    ],
+    dosis: 'Je Richtung 10-mal, 3- bis 5-mal täglich',
+    achtung: 'Der Arm hängt schwer und locker – die Bewegung kommt aus dem Oberkörper.',
+  },
+  {
+    id: 'aussendrehen-band',
+    name: 'Arm nach außen drehen mit Band',
+    ziel: 'Kräftigt die Muskeln, die den Oberarmkopf in der Schulterpfanne halten.',
+    ausgang:
+      'Stehen oder sitzen Sie aufrecht, die Ellenbogen rechtwinklig gebeugt am Körper, das Übungsband zwischen beiden Händen.',
+    schritte: [
+      'Halten Sie die Ellenbogen fest an der Seite – ein eingerolltes Handtuch dazwischen hilft.',
+      'Drehen Sie die Unterarme langsam nach außen, gegen den Zug des Bandes.',
+      'Kurz halten und langsam zurückgehen.',
+    ],
+    dosis: '3 × 10–15-mal, täglich oder jeden zweiten Tag',
+    achtung: 'Die Schultern bleiben unten; nur so viel Zug, dass die letzte Wiederholung noch sauber gelingt.',
+  },
+  {
+    id: 'schulterblaetter-zusammen',
+    name: 'Schulterblätter zusammenziehen',
+    ziel: 'Richtet die Schultern auf und kräftigt die Muskeln zwischen den Schulterblättern.',
+    ausgang: 'Sitzen oder stehen Sie aufrecht, die Arme hängen locker.',
+    schritte: [
+      'Ziehen Sie die Schulterblätter nach hinten und unten zusammen – als wollten Sie sie in die Gesäßtaschen stecken.',
+      '5 Sekunden halten und ruhig weiteratmen.',
+      'Langsam lösen.',
+    ],
+    dosis: '10-mal, 3-mal täglich',
+    achtung: 'Die Schultern nicht zu den Ohren hochziehen und kein Hohlkreuz machen.',
+  },
+  {
+    id: 'wand-hochwandern',
+    name: 'Mit den Fingern die Wand hochwandern',
+    ziel: 'Macht die Schulter wieder beweglicher, wenn der Arm nicht mehr gut nach oben geht.',
+    ausgang: 'Stellen Sie sich mit dem Gesicht zur Wand, etwa eine Unterarmlänge entfernt.',
+    schritte: [
+      'Legen Sie die Fingerspitzen etwa in Brusthöhe an die Wand.',
+      'Lassen Sie die Finger langsam an der Wand hochkrabbeln, so weit es ohne starken Schmerz geht.',
+      'Kurz halten und die Finger wieder hinunterwandern lassen.',
+    ],
+    dosis: '10-mal, 2- bis 3-mal täglich',
+    achtung: 'Die Schulter bleibt unten; ein Ziehen ist in Ordnung, ein stechender Schmerz nicht.',
+  },
+  {
+    id: 'handgelenk-absenken',
+    name: 'Handgelenk langsam absenken',
+    ziel: 'Macht die gereizte Sehne am Ellenbogen (Tennisarm) wieder belastbar.',
+    ausgang:
+      'Legen Sie den Unterarm auf den Tisch, die Hand hängt mit dem Handrücken nach oben über die Kante – darin eine kleine Hantel oder volle Wasserflasche (0,5–1 kg).',
+    schritte: [
+      'Heben Sie die Hand mit Hilfe der anderen Hand nach oben.',
+      'Lassen Sie los und senken Sie die Hand allein ganz langsam ab, etwa 3–4 Sekunden lang.',
+      'Unten heben Sie die Hand wieder mit der anderen Hand an – nicht mit dem kranken Arm.',
+    ],
+    dosis: '3 × 15, täglich, über 6–12 Wochen',
+    achtung: 'Ein leichter Schmerz bei der Übung ist erlaubt, er soll bis zum nächsten Tag abklingen.',
+  },
+  {
+    id: 'unterarm-dehnen',
+    name: 'Unterarm-Streckmuskeln dehnen',
+    ziel: 'Dehnt die Muskeln, die außen am Ellenbogen ansetzen.',
+    ausgang: 'Strecken Sie den Arm vor sich aus, der Handrücken zeigt nach oben.',
+    schritte: [
+      'Beugen Sie das Handgelenk, sodass die Finger nach unten zeigen.',
+      'Drücken Sie mit der anderen Hand den Handrücken sanft weiter Richtung Körper.',
+      'Halten, bis es am Unterarm angenehm zieht.',
+    ],
+    dosis: '3 × 30 Sekunden halten, 2- bis 3-mal täglich',
+    achtung: 'Den Ellenbogen gestreckt lassen und nur bis zum Ziehen gehen, nicht bis zum Schmerz.',
+  },
+  {
+    id: 'daumen-o-form',
+    name: 'Daumen und Zeigefinger formen ein O',
+    ziel: 'Stabilisiert das Daumensattelgelenk bei Daumenarthrose.',
+    ausgang: 'Legen Sie Unterarm und Hand entspannt auf den Tisch, die Kleinfingerseite unten.',
+    schritte: [
+      'Führen Sie die Spitzen von Daumen und Zeigefinger zu einem runden O zusammen.',
+      'Der Daumen bleibt rund, sein vorderes Gelenk knickt nicht ein.',
+      'Drücken Sie die Spitzen sanft gegeneinander, 5 Sekunden halten, dann lösen.',
+    ],
+    dosis: '10-mal, 3-mal täglich',
+    achtung: 'Nur sanft drücken – wird das O flach, lassen Sie etwas nach.',
+  },
+  {
+    id: 'daumen-oeffnen',
+    name: 'Daumen gegen ein Gummiband öffnen',
+    ziel: 'Kräftigt die Muskeln, die den Daumen nach außen führen und das Sattelgelenk stützen.',
+    ausgang: 'Legen Sie ein Haushaltsgummi um die Finger und den Daumen.',
+    schritte: [
+      'Halten Sie die Finger locker gestreckt und geschlossen.',
+      'Führen Sie den Daumen langsam vom Zeigefinger weg nach außen, gegen den Zug des Gummis.',
+      'Kurz halten und langsam zurückgehen.',
+    ],
+    dosis: '10-mal, 2- bis 3-mal täglich',
+    achtung: 'Nur so viel Kraft, dass es an der Daumenwurzel nicht schmerzt.',
+  },
+  {
+    id: 'sehnengleiten',
+    name: 'Sehnengleiten: fünf Handstellungen',
+    ziel: 'Hält die Beugesehnen im Handgelenk geschmeidig und entlastet den Nerv im Karpaltunnel.',
+    ausgang: 'Halten Sie die Hand aufrecht vor sich, das Handgelenk gerade, die Finger gestreckt (1).',
+    schritte: [
+      'Haken (2): Die Finger einrollen, die Fingerknöchel bleiben gerade.',
+      'Faust (3): Alle Fingergelenke ganz beugen.',
+      'Tisch (4): Nur die Fingerknöchel beugen, die Finger bleiben gestreckt.',
+      'Gerade Faust (5): Die Fingerkuppen berühren den Handballen, die Endgelenke bleiben gerade.',
+    ],
+    dosis: 'Jede Stellung 3–5 Sekunden, die ganze Reihe 5- bis 10-mal, 3-mal täglich',
+    achtung: 'Langsam und ohne Kraft – es geht ums Gleiten, nicht ums Drücken.',
+  },
+  {
+    id: 'nervengleiten',
+    name: 'Mittelnerv gleiten lassen',
+    ziel: 'Lässt den Mittelnerv im Karpaltunnel wieder freier gleiten.',
+    ausgang: 'Stehen Sie aufrecht und strecken Sie den Arm seitlich auf Schulterhöhe aus.',
+    schritte: [
+      'Kippen Sie die Hand nach hinten, die Finger zeigen nach oben – wie ein Stoppzeichen.',
+      'Neigen Sie gleichzeitig den Kopf zum ausgestreckten Arm.',
+      'Dann die Hand locker hängen lassen und den Kopf zur anderen Seite neigen.',
+      'Ruhig im Wechsel hin und her.',
+    ],
+    dosis: '10-mal hin und her, 2- bis 3-mal täglich',
+    achtung: 'Kribbeln darf kurz kommen, soll aber gleich wieder gehen.',
+  },
+  {
+    id: 'kinn-zurueck',
+    name: 'Kinn nach hinten schieben',
+    ziel: 'Entlastet den Nacken und kräftigt die tiefen Halsmuskeln.',
+    ausgang: 'Sitzen Sie aufrecht, der Blick geht geradeaus.',
+    schritte: [
+      'Schieben Sie das Kinn waagrecht nach hinten, als wollten Sie ein Doppelkinn machen.',
+      'Der Blick bleibt geradeaus, der Kopf nickt nicht.',
+      '5 Sekunden halten, dann locker lassen.',
+    ],
+    dosis: '10-mal, 3- bis 5-mal täglich',
+    achtung: 'Strahlt Schmerz oder Kribbeln in den Arm aus, hören Sie auf und sagen Sie uns Bescheid.',
+  },
+  {
+    id: 'nacken-seitdehnen',
+    name: 'Nacken seitlich dehnen',
+    ziel: 'Dehnt die verspannten Muskeln an der Halsseite.',
+    ausgang: 'Sitzen Sie aufrecht und halten Sie sich mit einer Hand seitlich an der Sitzfläche fest.',
+    schritte: [
+      'Neigen Sie den Kopf langsam zur anderen Seite, das Ohr Richtung Schulter.',
+      'Die Schulter auf der Seite der festhaltenden Hand bleibt tief.',
+      'Halten, bis es an der Halsseite angenehm zieht, dann die Seite wechseln.',
+    ],
+    dosis: '3 × 20–30 Sekunden je Seite, 2- bis 3-mal täglich',
+    achtung: 'Den Kopf nur neigen, nicht drehen, und die Schulter nicht zum Ohr hochziehen.',
+  },
+];

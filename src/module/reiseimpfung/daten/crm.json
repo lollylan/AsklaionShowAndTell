@@ -1,0 +1,1057 @@
+{
+ "quelle": "CRM Handbuch Reisemedizin 2026, 62. Auflage (eRef, Thieme), Inhaltsverzeichnis vom 15.11.2026",
+ "basis": "https://eref.thieme.de/ebooks/cs_27716545#/ebook_cs_27716545_",
+ "laender": {
+  "ABW": {
+   "kapitel": "cs77",
+   "malaria": "cs143"
+  },
+  "AFG": {
+   "kapitel": "cs176",
+   "malaria": "cs232"
+  },
+  "AGO": {
+   "kapitel": "cs594",
+   "malaria": "cs659"
+  },
+  "AIA": {
+   "kapitel": "cs715",
+   "malaria": "cs754"
+  },
+  "ALB": {
+   "kapitel": "cs401",
+   "malaria": "cs464"
+  },
+  "AND": {
+   "kapitel": "cs592"
+  },
+  "ARE": {
+   "kapitel": "cs24937",
+   "malaria": "cs24983"
+  },
+  "ARG": {
+   "kapitel": "cs1048",
+   "malaria": "cs1103"
+  },
+  "ARM": {
+   "kapitel": "cs1198",
+   "malaria": "cs1243"
+  },
+  "ATG": {
+   "kapitel": "cs834",
+   "malaria": "cs888"
+  },
+  "AUS": {
+   "kapitel": "cs1503",
+   "malaria": "cs1562"
+  },
+  "AUT": {
+   "kapitel": "cs17139",
+   "malaria": "cs17176"
+  },
+  "AZE": {
+   "kapitel": "cs1276",
+   "malaria": "cs1320"
+  },
+  "BDI": {
+   "kapitel": "cs3818",
+   "malaria": "cs3875"
+  },
+  "BEL": {
+   "kapitel": "cs2047",
+   "malaria": "cs2084"
+  },
+  "BEN": {
+   "kapitel": "cs2192",
+   "malaria": "cs2255"
+  },
+  "BES": {
+   "kapitel": "cs77",
+   "malaria": "cs143"
+  },
+  "BFA": {
+   "kapitel": "cs3698",
+   "malaria": "cs3758"
+  },
+  "BGD": {
+   "kapitel": "cs1760",
+   "malaria": "cs1827",
+   "karte": "cs1852"
+  },
+  "BGR": {
+   "kapitel": "cs3623",
+   "malaria": "cs3665"
+  },
+  "BHR": {
+   "kapitel": "cs1684",
+   "malaria": "cs1731"
+  },
+  "BHS": {
+   "kapitel": "cs1605",
+   "malaria": "cs1654"
+  },
+  "BIH": {
+   "kapitel": "cs2587",
+   "malaria": "cs2627"
+  },
+  "BLM": {
+   "kapitel": "cs18838",
+   "malaria": "cs18892"
+  },
+  "BLR": {
+   "kapitel": "cs1972",
+   "malaria": "cs2017"
+  },
+  "BLZ": {
+   "kapitel": "cs2106",
+   "malaria": "cs2159"
+  },
+  "BMU": {
+   "kapitel": "cs2312",
+   "malaria": "cs2350"
+  },
+  "BOL": {
+   "kapitel": "cs2459",
+   "malaria": "cs2517",
+   "karte": "cs2545"
+  },
+  "BRA": {
+   "kapitel": "cs2795",
+   "malaria": "cs2857",
+   "karte": "cs2890",
+   "regionen": [
+    {
+     "name": "Norden",
+     "karte": "cs3028"
+    },
+    {
+     "name": "Nordosten",
+     "karte": "cs3141"
+    },
+    {
+     "name": "Mittelwesten",
+     "karte": "cs3273"
+    },
+    {
+     "name": "Südosten",
+     "karte": "cs3377"
+    },
+    {
+     "name": "Süden",
+     "karte": "cs3479"
+    }
+   ]
+  },
+  "BRB": {
+   "kapitel": "cs1891",
+   "malaria": "cs1942"
+  },
+  "BRN": {
+   "kapitel": "cs3522",
+   "malaria": "cs3588"
+  },
+  "BTN": {
+   "kapitel": "cs2378",
+   "malaria": "cs2429"
+  },
+  "BWA": {
+   "kapitel": "cs2657",
+   "malaria": "cs2726",
+   "karte": "cs2757"
+  },
+  "CAF": {
+   "kapitel": "cs25371",
+   "malaria": "cs25434"
+  },
+  "CAN": {
+   "kapitel": "cs11553",
+   "malaria": "cs11595"
+  },
+  "CHE": {
+   "kapitel": "cs19660",
+   "malaria": "cs19700"
+  },
+  "CHL": {
+   "kapitel": "cs3946",
+   "malaria": "cs3995"
+  },
+  "CHN": {
+   "kapitel": "cs4026",
+   "malaria": "cs4090",
+   "regionen": [
+    {
+     "name": "Nordosten",
+     "karte": "cs4217"
+    },
+    {
+     "name": "Zentrum",
+     "karte": "cs4330"
+    },
+    {
+     "name": "Südosten",
+     "karte": "cs4450"
+    },
+    {
+     "name": "Südwesten",
+     "karte": "cs4566"
+    },
+    {
+     "name": "Tibet",
+     "karte": "cs4674"
+    },
+    {
+     "name": "Nordwesten",
+     "karte": "cs4782"
+    }
+   ]
+  },
+  "CIV": {
+   "kapitel": "cs4997",
+   "malaria": "cs5057"
+  },
+  "CMR": {
+   "kapitel": "cs11413",
+   "malaria": "cs11479",
+   "karte": "cs11504"
+  },
+  "COD": {
+   "kapitel": "cs12441",
+   "malaria": "cs12504"
+  },
+  "COG": {
+   "kapitel": "cs12565",
+   "malaria": "cs12630"
+  },
+  "COK": {
+   "kapitel": "cs4832",
+   "malaria": "cs4874"
+  },
+  "COL": {
+   "kapitel": "cs12194",
+   "malaria": "cs12260",
+   "karte": "cs12287"
+  },
+  "COM": {
+   "kapitel": "cs12336",
+   "malaria": "cs12389"
+  },
+  "CPV": {
+   "kapitel": "cs11628",
+   "malaria": "cs11685"
+  },
+  "CRI": {
+   "kapitel": "cs4904",
+   "malaria": "cs4966"
+  },
+  "CUB": {
+   "kapitel": "cs13016",
+   "malaria": "cs13071"
+  },
+  "CUW": {
+   "kapitel": "cs77",
+   "malaria": "cs143"
+  },
+  "CYM": {
+   "kapitel": "cs11200",
+   "malaria": "cs11244"
+  },
+  "CYP": {
+   "kapitel": "cs25494",
+   "malaria": "cs25535"
+  },
+  "CZE": {
+   "kapitel": "cs23695",
+   "malaria": "cs23738"
+  },
+  "DJI": {
+   "kapitel": "cs5422",
+   "malaria": "cs5484"
+  },
+  "DMA": {
+   "kapitel": "cs5221",
+   "malaria": "cs5271"
+  },
+  "DNK": {
+   "kapitel": "cs5116",
+   "malaria": "cs5148"
+  },
+  "DOM": {
+   "kapitel": "cs5303",
+   "malaria": "cs5365",
+   "karte": "cs5383"
+  },
+  "DZA": {
+   "kapitel": "cs495",
+   "malaria": "cs557"
+  },
+  "ECU": {
+   "kapitel": "cs5544",
+   "malaria": "cs5611",
+   "karte": "cs5635"
+  },
+  "EGY": {
+   "kapitel": "cs289",
+   "malaria": "cs358"
+  },
+  "ERI": {
+   "kapitel": "cs5784",
+   "malaria": "cs5844"
+  },
+  "ESH": {
+   "kapitel": "cs25276",
+   "malaria": "cs25334"
+  },
+  "ESP": {
+   "kapitel": "cs20972",
+   "malaria": "cs21016"
+  },
+  "EST": {
+   "kapitel": "cs5902",
+   "malaria": "cs5942"
+  },
+  "ETH": {
+   "kapitel": "cs1357",
+   "malaria": "cs1421",
+   "karte": "cs1451"
+  },
+  "FIN": {
+   "kapitel": "cs6265",
+   "malaria": "cs6299"
+  },
+  "FJI": {
+   "kapitel": "cs6175",
+   "malaria": "cs6233"
+  },
+  "FLK": {
+   "kapitel": "cs6074",
+   "malaria": "cs6110"
+  },
+  "FRA": {
+   "kapitel": "cs6320",
+   "malaria": "cs6365"
+  },
+  "FRO": {
+   "kapitel": "cs6128",
+   "malaria": "cs6161"
+  },
+  "FSM": {
+   "kapitel": "cs15120",
+   "malaria": "cs15167"
+  },
+  "GAB": {
+   "kapitel": "cs6612",
+   "malaria": "cs6676"
+  },
+  "GBR": {
+   "kapitel": "cs7286",
+   "malaria": "cs7326"
+  },
+  "GEO": {
+   "kapitel": "cs6857",
+   "malaria": "cs6909"
+  },
+  "GHA": {
+   "kapitel": "cs6939",
+   "malaria": "cs7006"
+  },
+  "GIN": {
+   "kapitel": "cs7629",
+   "malaria": "cs7699"
+  },
+  "GLP": {
+   "kapitel": "cs7346",
+   "malaria": "cs7401"
+  },
+  "GMB": {
+   "kapitel": "cs6732",
+   "malaria": "cs6803"
+  },
+  "GNB": {
+   "kapitel": "cs7756",
+   "malaria": "cs7854"
+  },
+  "GNQ": {
+   "kapitel": "cs918",
+   "malaria": "cs993"
+  },
+  "GRC": {
+   "kapitel": "cs7149",
+   "malaria": "cs7195"
+  },
+  "GRD": {
+   "kapitel": "cs7063",
+   "malaria": "cs7117"
+  },
+  "GRL": {
+   "kapitel": "cs7230",
+   "malaria": "cs7269"
+  },
+  "GTM": {
+   "kapitel": "cs7505",
+   "malaria": "cs7570",
+   "karte": "cs7594"
+  },
+  "GUF": {
+   "kapitel": "cs6405",
+   "malaria": "cs6469"
+  },
+  "GUM": {
+   "kapitel": "cs7435",
+   "malaria": "cs7476"
+  },
+  "GUY": {
+   "kapitel": "cs7909",
+   "malaria": "cs7973"
+  },
+  "HND": {
+   "kapitel": "cs8228",
+   "malaria": "cs8294",
+   "karte": "cs8314"
+  },
+  "HRV": {
+   "kapitel": "cs12938",
+   "malaria": "cs12982"
+  },
+  "HTI": {
+   "kapitel": "cs8031",
+   "malaria": "cs8093"
+  },
+  "HUN": {
+   "kapitel": "cs24369",
+   "malaria": "cs24408"
+  },
+  "IDN": {
+   "kapitel": "cs9367",
+   "malaria": "cs9442",
+   "karte": "cs9475",
+   "regionen": [
+    {
+     "name": "Sumatra",
+     "karte": "cs9620"
+    },
+    {
+     "name": "Borneo (Kalimantan)",
+     "karte": "cs9762"
+    },
+    {
+     "name": "Sulawesi, Kl. Sunda-Inseln",
+     "karte": "cs10036"
+    },
+    {
+     "name": "West-Papua (West-Neuguinea)",
+     "karte": "cs10182"
+    }
+   ]
+  },
+  "IND": {
+   "kapitel": "cs8348",
+   "malaria": "cs8420",
+   "karte": "cs8454",
+   "regionen": [
+    {
+     "name": "Nördliches Zentrum",
+     "karte": "cs8607"
+    },
+    {
+     "name": "Mitte",
+     "karte": "cs8759"
+    },
+    {
+     "name": "Nordwesten",
+     "karte": "cs8903"
+    },
+    {
+     "name": "Süden",
+     "karte": "cs9047"
+    },
+    {
+     "name": "Nordosten",
+     "karte": "cs9204"
+    },
+    {
+     "name": "Westlicher Himalaya",
+     "karte": "cs9327"
+    }
+   ]
+  },
+  "IRL": {
+   "kapitel": "cs10449",
+   "malaria": "cs10486"
+  },
+  "IRN": {
+   "kapitel": "cs10321",
+   "malaria": "cs10387"
+  },
+  "IRQ": {
+   "kapitel": "cs10230",
+   "malaria": "cs10280"
+  },
+  "ISL": {
+   "kapitel": "cs10503",
+   "malaria": "cs10540"
+  },
+  "ISR": {
+   "kapitel": "cs10556",
+   "malaria": "cs10607"
+  },
+  "ITA": {
+   "kapitel": "cs10642",
+   "malaria": "cs10693"
+  },
+  "JAM": {
+   "kapitel": "cs10732",
+   "malaria": "cs10794"
+  },
+  "JOR": {
+   "kapitel": "cs11034",
+   "malaria": "cs11093"
+  },
+  "JPN": {
+   "kapitel": "cs10827",
+   "malaria": "cs10876"
+  },
+  "KAZ": {
+   "kapitel": "cs11718",
+   "malaria": "cs11772"
+  },
+  "KEN": {
+   "kapitel": "cs11885",
+   "malaria": "cs11950",
+   "karte": "cs11981"
+  },
+  "KGZ": {
+   "kapitel": "cs12036",
+   "malaria": "cs12084"
+  },
+  "KHM": {
+   "kapitel": "cs11277",
+   "malaria": "cs11343",
+   "karte": "cs11373"
+  },
+  "KIR": {
+   "kapitel": "cs12121",
+   "malaria": "cs12163"
+  },
+  "KNA": {
+   "kapitel": "cs21218",
+   "malaria": "cs21275"
+  },
+  "KOR": {
+   "kapitel": "cs12784",
+   "malaria": "cs12829"
+  },
+  "KOS": {
+   "kapitel": "cs12864",
+   "malaria": "cs12905"
+  },
+  "KWT": {
+   "kapitel": "cs13110",
+   "malaria": "cs13146"
+  },
+  "LAO": {
+   "kapitel": "cs13176",
+   "malaria": "cs13228",
+   "karte": "cs13247"
+  },
+  "LBN": {
+   "kapitel": "cs13421",
+   "malaria": "cs13463"
+  },
+  "LBR": {
+   "kapitel": "cs13495",
+   "malaria": "cs13560"
+  },
+  "LBY": {
+   "kapitel": "cs13613",
+   "malaria": "cs13655"
+  },
+  "LCA": {
+   "kapitel": "cs21308",
+   "malaria": "cs21361"
+  },
+  "LIE": {
+   "kapitel": "cs13687"
+  },
+  "LKA": {
+   "kapitel": "cs21056",
+   "malaria": "cs21116"
+  },
+  "LSO": {
+   "kapitel": "cs13287",
+   "malaria": "cs13329"
+  },
+  "LTU": {
+   "kapitel": "cs13689",
+   "malaria": "cs13726"
+  },
+  "LUX": {
+   "kapitel": "cs13754",
+   "malaria": "cs13788"
+  },
+  "LVA": {
+   "kapitel": "cs13358",
+   "malaria": "cs13395"
+  },
+  "MAF": {
+   "kapitel": "cs18925",
+   "malaria": "cs18980"
+  },
+  "MAR": {
+   "kapitel": "cs14478",
+   "malaria": "cs14532"
+  },
+  "MDA": {
+   "kapitel": "cs15198",
+   "malaria": "cs15240"
+  },
+  "MDG": {
+   "kapitel": "cs13807",
+   "malaria": "cs13873",
+   "karte": "cs13901"
+  },
+  "MDV": {
+   "kapitel": "cs14198",
+   "malaria": "cs14253"
+  },
+  "MEX": {
+   "kapitel": "cs15005",
+   "malaria": "cs15058",
+   "karte": "cs15077"
+  },
+  "MHL": {
+   "kapitel": "cs14570",
+   "malaria": "cs14611"
+  },
+  "MKD": {
+   "kapitel": "cs16845",
+   "malaria": "cs16885"
+  },
+  "MLI": {
+   "kapitel": "cs14286",
+   "malaria": "cs14348"
+  },
+  "MLT": {
+   "kapitel": "cs14406",
+   "malaria": "cs14448"
+  },
+  "MMR": {
+   "kapitel": "cs15635",
+   "malaria": "cs15699",
+   "karte": "cs15732"
+  },
+  "MNE": {
+   "kapitel": "cs15351",
+   "malaria": "cs15393"
+  },
+  "MNG": {
+   "kapitel": "cs15268",
+   "malaria": "cs15317"
+  },
+  "MNP": {
+   "kapitel": "cs16775",
+   "malaria": "cs16818"
+  },
+  "MOZ": {
+   "kapitel": "cs15511",
+   "malaria": "cs15582"
+  },
+  "MRT": {
+   "kapitel": "cs14729",
+   "malaria": "cs14785"
+  },
+  "MSR": {
+   "kapitel": "cs15428",
+   "malaria": "cs15479"
+  },
+  "MTQ": {
+   "kapitel": "cs14644",
+   "malaria": "cs14696"
+  },
+  "MUS": {
+   "kapitel": "cs14839",
+   "malaria": "cs14883"
+  },
+  "MWI": {
+   "kapitel": "cs13943",
+   "malaria": "cs14005",
+   "karte": "cs14024"
+  },
+  "MYS": {
+   "kapitel": "cs14064",
+   "malaria": "cs14130",
+   "karte": "cs14151"
+  },
+  "MYT": {
+   "kapitel": "cs14917",
+   "malaria": "cs14973"
+  },
+  "NAM": {
+   "kapitel": "cs15773",
+   "malaria": "cs15834",
+   "karte": "cs15864"
+  },
+  "NCL": {
+   "kapitel": "cs16093",
+   "malaria": "cs16149"
+  },
+  "NER": {
+   "kapitel": "cs16434",
+   "malaria": "cs16501"
+  },
+  "NGA": {
+   "kapitel": "cs16557",
+   "malaria": "cs16627"
+  },
+  "NIC": {
+   "kapitel": "cs16254",
+   "malaria": "cs16313",
+   "karte": "cs16336"
+  },
+  "NIU": {
+   "kapitel": "cs16693",
+   "malaria": "cs16745"
+  },
+  "NLD": {
+   "kapitel": "cs16371",
+   "malaria": "cs16410"
+  },
+  "NOR": {
+   "kapitel": "cs16992",
+   "malaria": "cs17026"
+  },
+  "NPL": {
+   "kapitel": "cs15970",
+   "malaria": "cs16036",
+   "karte": "cs16057"
+  },
+  "NRU": {
+   "kapitel": "cs15900",
+   "malaria": "cs15943"
+  },
+  "NZL": {
+   "kapitel": "cs16184",
+   "malaria": "cs16226"
+  },
+  "OMN": {
+   "kapitel": "cs17045",
+   "malaria": "cs17105"
+  },
+  "PAK": {
+   "kapitel": "cs17200",
+   "malaria": "cs17265"
+  },
+  "PAN": {
+   "kapitel": "cs17489",
+   "malaria": "cs17548",
+   "karte": "cs17568"
+  },
+  "PCN": {
+   "kapitel": "cs18087",
+   "malaria": "cs18132"
+  },
+  "PER": {
+   "kapitel": "cs17826",
+   "malaria": "cs17884",
+   "karte": "cs17911"
+  },
+  "PHL": {
+   "kapitel": "cs17961",
+   "malaria": "cs18026"
+  },
+  "PLW": {
+   "kapitel": "cs17414",
+   "malaria": "cs17459"
+  },
+  "PNG": {
+   "kapitel": "cs17604",
+   "malaria": "cs17664"
+  },
+  "POL": {
+   "kapitel": "cs18161",
+   "malaria": "cs18207"
+  },
+  "PRI": {
+   "kapitel": "cs18317",
+   "malaria": "cs18366"
+  },
+  "PRK": {
+   "kapitel": "cs12685",
+   "malaria": "cs12739"
+  },
+  "PRT": {
+   "kapitel": "cs18236",
+   "malaria": "cs18282"
+  },
+  "PRY": {
+   "kapitel": "cs17726",
+   "malaria": "cs17793"
+  },
+  "PSE": {
+   "kapitel": "cs17332",
+   "malaria": "cs17381"
+  },
+  "PYF": {
+   "kapitel": "cs6527",
+   "malaria": "cs6582"
+  },
+  "QAT": {
+   "kapitel": "cs11816",
+   "malaria": "cs11858"
+  },
+  "REU": {
+   "kapitel": "cs18401",
+   "malaria": "cs18444"
+  },
+  "ROU": {
+   "kapitel": "cs18596",
+   "malaria": "cs18639"
+  },
+  "RUS": {
+   "kapitel": "cs18669",
+   "malaria": "cs18722"
+  },
+  "RWA": {
+   "kapitel": "cs18473",
+   "malaria": "cs18537"
+  },
+  "SAU": {
+   "kapitel": "cs19478",
+   "malaria": "cs19543",
+   "karte": "cs19564"
+  },
+  "SDN": {
+   "kapitel": "cs22180",
+   "malaria": "cs22241"
+  },
+  "SEN": {
+   "kapitel": "cs19725",
+   "malaria": "cs19794",
+   "karte": "cs19819"
+  },
+  "SGP": {
+   "kapitel": "cs20321",
+   "malaria": "cs20383"
+  },
+  "SHN": {
+   "kapitel": "cs21151",
+   "malaria": "cs21194"
+  },
+  "SLB": {
+   "kapitel": "cs19011",
+   "malaria": "cs19064"
+  },
+  "SLE": {
+   "kapitel": "cs20065",
+   "malaria": "cs20130"
+  },
+  "SLV": {
+   "kapitel": "cs5682",
+   "malaria": "cs5747"
+  },
+  "SMR": {
+   "kapitel": "cs19356"
+  },
+  "SOM": {
+   "kapitel": "cs20731",
+   "malaria": "cs20790"
+  },
+  "SRB": {
+   "kapitel": "cs19864",
+   "malaria": "cs19910"
+  },
+  "SSD": {
+   "kapitel": "cs22318",
+   "malaria": "cs22383"
+  },
+  "STP": {
+   "kapitel": "cs19358",
+   "malaria": "cs19423"
+  },
+  "SUR": {
+   "kapitel": "cs22448",
+   "malaria": "cs22505"
+  },
+  "SVK": {
+   "kapitel": "cs20595",
+   "malaria": "cs20635"
+  },
+  "SVN": {
+   "kapitel": "cs20662",
+   "malaria": "cs20701"
+  },
+  "SWE": {
+   "kapitel": "cs19604",
+   "malaria": "cs19638"
+  },
+  "SWZ": {
+   "kapitel": "cs5966",
+   "malaria": "cs6024"
+  },
+  "SXM": {
+   "kapitel": "cs20508",
+   "malaria": "cs20563"
+  },
+  "SYC": {
+   "kapitel": "cs19942",
+   "malaria": "cs20005"
+  },
+  "SYR": {
+   "kapitel": "cs22559",
+   "malaria": "cs22603"
+  },
+  "TCA": {
+   "kapitel": "cs24007",
+   "malaria": "cs24050"
+  },
+  "TCD": {
+   "kapitel": "cs23567",
+   "malaria": "cs23637"
+  },
+  "TGO": {
+   "kapitel": "cs23215",
+   "malaria": "cs23275"
+  },
+  "THA": {
+   "kapitel": "cs22987",
+   "malaria": "cs23048",
+   "karte": "cs23067"
+  },
+  "TJK": {
+   "kapitel": "cs22658",
+   "malaria": "cs22710"
+  },
+  "TKM": {
+   "kapitel": "cs23929",
+   "malaria": "cs23973"
+  },
+  "TLS": {
+   "kapitel": "cs23111",
+   "malaria": "cs23162"
+  },
+  "TON": {
+   "kapitel": "cs23330",
+   "malaria": "cs23378"
+  },
+  "TTO": {
+   "kapitel": "cs23481",
+   "malaria": "cs23531"
+  },
+  "TUN": {
+   "kapitel": "cs23765",
+   "malaria": "cs23808"
+  },
+  "TUR": {
+   "kapitel": "cs23840",
+   "malaria": "cs23885"
+  },
+  "TUV": {
+   "kapitel": "cs24082",
+   "malaria": "cs24124"
+  },
+  "TWN": {
+   "kapitel": "cs22745",
+   "malaria": "cs22800"
+  },
+  "TZA": {
+   "kapitel": "cs22836",
+   "malaria": "cs22905",
+   "karte": "cs22935"
+  },
+  "UGA": {
+   "kapitel": "cs24154",
+   "malaria": "cs24218"
+  },
+  "UKR": {
+   "kapitel": "cs24285",
+   "malaria": "cs24333"
+  },
+  "URY": {
+   "kapitel": "cs24438",
+   "malaria": "cs24487"
+  },
+  "USA": {
+   "kapitel": "cs24517",
+   "malaria": "cs24569"
+  },
+  "UZB": {
+   "kapitel": "cs24615",
+   "malaria": "cs24661"
+  },
+  "VCT": {
+   "kapitel": "cs21394",
+   "malaria": "cs21447"
+  },
+  "VEN": {
+   "kapitel": "cs24802",
+   "malaria": "cs24865",
+   "karte": "cs24893"
+  },
+  "VGB": {
+   "kapitel": "cs11124",
+   "malaria": "cs11168"
+  },
+  "VIR": {
+   "kapitel": "cs11124",
+   "malaria": "cs11168"
+  },
+  "VNM": {
+   "kapitel": "cs25016",
+   "malaria": "cs25066",
+   "karte": "cs25085"
+  },
+  "VUT": {
+   "kapitel": "cs24698",
+   "malaria": "cs24746"
+  },
+  "WLF": {
+   "kapitel": "cs25202",
+   "malaria": "cs25247"
+  },
+  "WSM": {
+   "kapitel": "cs19260",
+   "malaria": "cs19325"
+  },
+  "YEM": {
+   "kapitel": "cs10909",
+   "malaria": "cs10966",
+   "karte": "cs10996"
+  },
+  "ZAF": {
+   "kapitel": "cs21480",
+   "malaria": "cs21546",
+   "karte": "cs21575",
+   "regionen": [
+    {
+     "name": "Osten",
+     "karte": "cs21705"
+    },
+    {
+     "name": "Zentrum",
+     "karte": "cs21806"
+    },
+    {
+     "name": "Nordosten",
+     "karte": "cs21936"
+    },
+    {
+     "name": "Nordwesten",
+     "karte": "cs22038"
+    },
+    {
+     "name": "Süden",
+     "karte": "cs22142"
+    }
+   ]
+  },
+  "ZMB": {
+   "kapitel": "cs19116",
+   "malaria": "cs19189",
+   "karte": "cs19214"
+  },
+  "ZWE": {
+   "kapitel": "cs20183",
+   "malaria": "cs20250",
+   "karte": "cs20279"
+  }
+ }
+}

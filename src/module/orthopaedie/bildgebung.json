@@ -1,0 +1,312 @@
+{
+  "plantarfasziitis": {
+    "aufnahmen": [
+      {
+        "datei": "plantarfasziitis-1.jpg",
+        "titel": "Ferse von der Seite",
+        "art": "Röntgen",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 4.0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Ausgepraegter_plantarer_Fersensporn_67M_-_CR_seitlich_-_001.jpg",
+        "marken": [
+          {
+            "x": 0.517,
+            "y": 0.867,
+            "text": "Fersensporn"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Unten am Fersenbein sieht man einen spitzen Knochensporn – dort setzt die Sehnenplatte der Fußsohle an.",
+      "Der Sporn ist eine Folge des ständigen Zugs, nicht die Ursache der Schmerzen: Viele Menschen haben einen Sporn und keine Beschwerden.",
+      "Für die Diagnose braucht man meist kein Röntgenbild; es hilft vor allem, wenn etwas anderes ausgeschlossen werden soll."
+    ]
+  },
+  "hallux-valgus": {
+    "aufnahmen": [
+      {
+        "datei": "hallux-valgus-1.jpg",
+        "titel": "Beide Vorfüße im Stehen",
+        "art": "Röntgen",
+        "urheber": "Michael Nebel",
+        "lizenz": "CC BY-SA 2.0 de, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Projectional_radiograph_of_bunion.jpg",
+        "marken": [
+          {
+            "x": 0.574,
+            "y": 0.458,
+            "text": "Ballen: Mittelfußknochen steht vor"
+          },
+          {
+            "x": 0.63,
+            "y": 0.32,
+            "text": "Großzehe zeigt nach außen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Der erste Mittelfußknochen weicht nach innen ab, die Großzehe knickt zu den anderen Zehen hin – innen entsteht der Ballen.",
+      "Wie schief die Zehe steht, sagt wenig darüber, wie stark sie schmerzt.",
+      "Das Röntgenbild im Stehen braucht man vor allem, wenn eine Operation geplant wird."
+    ]
+  },
+  "gonarthrose": {
+    "aufnahmen": [
+      {
+        "datei": "gonarthrose-1.jpg",
+        "titel": "Gesundes Knie",
+        "art": "Röntgen",
+        "urheber": "Ptrump16",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Knee_plain_X-ray_weight_bearing.jpg",
+        "marken": [
+          {
+            "x": 0.77,
+            "y": 0.535,
+            "text": "Breiter Gelenkspalt: dicker Knorpel"
+          }
+        ]
+      },
+      {
+        "datei": "gonarthrose-2.jpg",
+        "titel": "Kniearthrose",
+        "art": "Röntgen",
+        "urheber": "NP2025",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten, Kontrast angepasst",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Varus_Knee_Osteoarthritis_Xray.jpg",
+        "marken": [
+          {
+            "x": 0.7,
+            "y": 0.57,
+            "text": "Enger Gelenkspalt: Knorpel abgenutzt"
+          },
+          {
+            "x": 0.83,
+            "y": 0.5,
+            "text": "Knochenzacken"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Knorpel sieht man im Röntgenbild nicht – nur den Spalt zwischen den Knochen. Wird er schmal, ist der Knorpel dünner geworden; am Rand bilden sich Knochenzacken.",
+      "Bild und Beschwerden passen oft nicht zusammen: Manche haben ein schlimmes Bild und wenig Schmerzen, andere umgekehrt.",
+      "Für die Diagnose reichen meist Beschwerden und Untersuchung; das Röntgenbild braucht man vor allem vor einer Operation."
+    ]
+  },
+  "coxarthrose": {
+    "aufnahmen": [
+      {
+        "datei": "coxarthrose-1.jpg",
+        "titel": "Gesunde Hüfte",
+        "art": "Röntgen",
+        "urheber": "J. Lengerke",
+        "lizenz": "CC BY-SA 3.0 de, zugeschnitten, gespiegelt",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Roe-dyspl-coxarth.jpg",
+        "marken": [
+          {
+            "x": 0.38,
+            "y": 0.205,
+            "text": "Gleichmäßiger Gelenkspalt"
+          }
+        ]
+      },
+      {
+        "datei": "coxarthrose-2.jpg",
+        "titel": "Hüftarthrose",
+        "art": "Röntgen",
+        "urheber": "Mikael Häggström",
+        "lizenz": "CC0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Severe_%28T%C3%B6nnis_grade_3%29_osteoarthritis_of_the_hip.jpg",
+        "marken": [
+          {
+            "x": 0.55,
+            "y": 0.25,
+            "text": "Gelenkspalt fast verschwunden"
+          },
+          {
+            "x": 0.72,
+            "y": 0.22,
+            "text": "Knochenzacke am Pfannenrand"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "In der gesunden Hüfte liegt der runde Hüftkopf mit einem gleichmäßigen Spalt in der Pfanne. Bei der Arthrose wird der Spalt schmal, der Knochen darunter dichter, am Rand wachsen Knochenzacken.",
+      "Wie stark die Hüfte schmerzt und wie beweglich sie ist, zählt mehr als das Bild.",
+      "Ein Röntgenbild ist sinnvoll, wenn die Diagnose unklar ist oder über ein neues Gelenk gesprochen wird."
+    ]
+  },
+  "rhizarthrose": {
+    "aufnahmen": [
+      {
+        "datei": "rhizarthrose-1.jpg",
+        "titel": "Hand von oben",
+        "art": "Röntgen",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Klassische_Heberden-Arthrose_und_deformierende_Rhizarthrose_77W_-_CR_ap_-_001.jpg",
+        "marken": [
+          {
+            "x": 0.61,
+            "y": 0.73,
+            "text": "Abgenutztes Daumensattelgelenk"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Am Daumensattelgelenk, zwischen Daumen-Mittelhandknochen und Handwurzel, ist der Gelenkspalt verschwunden; der Daumen ist etwas aus dem Gelenk gerutscht.",
+      "Das Bild zeigt eine schwere Arthrose – die Beschwerden hängen aber nur lose davon ab.",
+      "Meist reicht die Untersuchung; ein Röntgenbild braucht man vor allem, wenn eine Operation überlegt wird."
+    ]
+  },
+  "rotatorenmanschette": {
+    "aufnahmen": [
+      {
+        "datei": "rotatorenmanschette-1.jpg",
+        "titel": "Kalkschulter",
+        "art": "Röntgen",
+        "urheber": "elmundo",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Calcific_tendinitis.jpg",
+        "marken": [
+          {
+            "x": 0.3,
+            "y": 0.38,
+            "text": "Kalkherd in der Sehne"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Über dem Oberarmkopf liegt ein heller Fleck: Kalk, der sich in der Sehne unter dem Schulterdach abgelagert hat.",
+      "Kalk findet man auch bei vielen Menschen ohne Beschwerden, und er löst sich oft von selbst wieder auf.",
+      "Sehnenrisse sieht man im Röntgenbild nicht – dafür braucht man Ultraschall oder MRT, und auch das nur, wenn sich daraus eine Behandlung ergibt."
+    ]
+  },
+  "bandscheibenvorfall": {
+    "aufnahmen": [
+      {
+        "datei": "bandscheibenvorfall-1.jpg",
+        "titel": "Lendenwirbelsäule von der Seite",
+        "art": "MRT",
+        "urheber": "Jay Moore",
+        "lizenz": "CC0, vergrößert",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Severe_herniation_of_L4-L5_disc.png",
+        "marken": [
+          {
+            "x": 0.44,
+            "y": 0.49,
+            "text": "Gesunde Bandscheibe"
+          },
+          {
+            "x": 0.52,
+            "y": 0.715,
+            "text": "Vorfall drückt auf die Nerven"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Die gesunden Bandscheiben leuchten hell zwischen den Wirbeln. Unten ist Gewebe aus einer Bandscheibe nach hinten in den Wirbelkanal gerutscht und drückt auf die Nerven.",
+      "Vorfälle findet man auch bei vielen Menschen ohne Schmerzen, und die meisten bilden sich in Wochen bis Monaten von selbst zurück.",
+      "Ein MRT braucht man nur bei Lähmungen, Taubheit im Schritt, Blasenstörungen oder wenn nach etwa sechs Wochen eine Operation in Frage kommt."
+    ]
+  },
+  "spinalkanalstenose": {
+    "aufnahmen": [
+      {
+        "datei": "spinalkanalstenose-1.jpg",
+        "titel": "Lendenwirbelsäule von der Seite",
+        "art": "MRT",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 4.0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Kaudaredundanz_bei_Spinalkanalstenose_62M_-_MR_T2_sagittal_-_001.jpg",
+        "marken": [
+          {
+            "x": 0.5,
+            "y": 0.47,
+            "text": "Engstelle im Wirbelkanal"
+          },
+          {
+            "x": 0.52,
+            "y": 0.36,
+            "text": "Nerven stauen sich und werden wellig"
+          },
+          {
+            "x": 0.49,
+            "y": 0.68,
+            "text": "Hier ist genug Platz"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Der helle Streifen ist der Wirbelkanal mit Nervenwasser und Nerven. An der Engstelle wird er von Bandscheibe, Gelenken und verdickten Bändern zusammengedrückt.",
+      "Wie eng der Kanal im Bild ist, sagt nur grob, wie weit man gehen kann – entscheidend sind die Beschwerden.",
+      "Ein MRT braucht man vor allem, wenn eine Operation oder Spritze geplant wird."
+    ]
+  },
+  "tennisellenbogen": {
+    "aufnahmen": [
+      {
+        "datei": "tennisellenbogen-1.jpg",
+        "titel": "Ellenbogen von vorn",
+        "art": "MRT",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Epicondylitis_lateralis_des_Ellenbogens_49W_-_MR_PDW_FS_-_001.jpg",
+        "marken": [
+          {
+            "x": 0.265,
+            "y": 0.275,
+            "text": "Gereizter Sehnenansatz"
+          },
+          {
+            "x": 0.42,
+            "y": 0.24,
+            "text": "Oberarmknochen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Außen am Oberarmknochen setzen die Sehnen der Streckmuskeln an. Dort ist das Gewebe heller als sonst: Die Sehne ist überlastet und hat sich umgebaut.",
+      "Genau diese Stelle tut beim Greifen und beim Draufdrücken weh – mit Tennis hat das meist nichts zu tun.",
+      "Für die Diagnose braucht man fast nie ein MRT; Beschwerden und Untersuchung reichen. Ein Bild ist nur sinnvoll, wenn es nach Monaten nicht besser wird oder etwas anderes vermutet wird."
+    ]
+  },
+  "achillessehne": {
+    "aufnahmen": [
+      {
+        "datei": "achillessehne-1.jpg",
+        "titel": "Beide Fersen von hinten",
+        "art": "Foto",
+        "urheber": "Harrygouvas (Δρ. Χαράλαμπος Γκούβας)",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Achilles_tendon_tendonitis.jpg",
+        "marken": [
+          {
+            "x": 0.356,
+            "y": 0.35,
+            "text": "Verdickte Sehne"
+          },
+          {
+            "x": 0.67,
+            "y": 0.31,
+            "text": "Gesunde Seite"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Im Bild links ist die Achillessehne einige Zentimeter über der Ferse spindelförmig verdickt, rechts ist sie schlank. Die Pfeile hat der Arzt auf die Haut gemalt.",
+      "Die Verdickung entsteht, weil sich die Sehne unter zu viel Last umbaut – eine echte Entzündung ist es meist nicht, und mit Training bildet sie sich oft zurück.",
+      "Meist reicht es, die Sehne anzuschauen und abzutasten; Ultraschall braucht man nur, wenn ein Riss oder etwas anderes ausgeschlossen werden soll."
+    ]
+  }
+}

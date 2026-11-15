@@ -1,0 +1,80 @@
+{
+  "_hinweis": "Von Hand: Wikidata-ids für Länder ohne ISO-Code in Wikidata (Kosovo), Korrekturen einzelner Felder mit Grund. Wahrzeichen stehen in wahrzeichen.json.",
+  "felder": {
+    "BIH": {
+      "sprachen": [
+        "Bosnisch",
+        "Serbisch",
+        "Kroatisch"
+      ],
+      "grund": "Infobox: de jure keine, de facto diese drei"
+    },
+    "GBR": {
+      "sprachen": [
+        "Englisch"
+      ],
+      "grund": "Infobox: de facto Englisch, weitere nur regional"
+    },
+    "NLD": {
+      "sprachen": [
+        "Niederländisch"
+      ],
+      "grund": "Infobox listet die Sprachen der Karibikgebiete mit; für die Niederlande selbst Niederländisch"
+    },
+    "GLP": {
+      "sprachen": [
+        "Französisch"
+      ],
+      "grund": "französisches Überseedépartement, Infobox ohne Amtssprache"
+    },
+    "MTQ": {
+      "sprachen": [
+        "Französisch"
+      ],
+      "grund": "französisches Überseedépartement, Infobox ohne Amtssprache"
+    },
+    "AUT": {
+      "sprachen": [
+        "Deutsch"
+      ],
+      "grund": "Grund: Infobox der deutschen Wikipedia nennt diese Sprache(n) als landesweite Amtssprache, der Rest gilt nur regional"
+    },
+    "ROU": {
+      "sprachen": [
+        "Rumänisch"
+      ],
+      "grund": "Grund: Infobox der deutschen Wikipedia nennt diese Sprache(n) als landesweite Amtssprache, der Rest gilt nur regional"
+    },
+    "AGO": {
+      "sprachen": [
+        "Portugiesisch"
+      ],
+      "grund": "Infobox: Portugiesisch, daneben Landessprachen ohne Amtsstatus"
+    },
+    "ERI": {
+      "sprachen": [
+        "Tigrinya",
+        "Arabisch",
+        "Englisch"
+      ],
+      "grund": "Infobox: neun gleichberechtigte Sprachen, im Alltag Tigrinya, Arabisch, Englisch – Satzrest im Parser"
+    },
+    "MUS": {
+      "sprachen": [
+        "Englisch",
+        "Französisch"
+      ],
+      "grund": "Infobox: Englisch, Französisch im Parlament"
+    },
+    "NOR": {
+      "sprachen": [
+        "Norwegisch"
+      ],
+      "grund": "Bokmål und Nynorsk sind Schriftformen des Norwegischen, Samisch regional"
+    }
+  },
+  "ohneLandbild": [],
+  "qid": {
+    "KOS": "Q1246"
+  }
+}

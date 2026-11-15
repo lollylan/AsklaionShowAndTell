@@ -1,0 +1,1997 @@
+{
+  "_hinweis": "Welche Objekte aus Z-Anatomy (Startup.blend) zu welcher Struktur gehören. Schlüssel = id der Struktur in src/module/anatomie/daten/. 'kontext' wird zu einem einzigen, blass gezeigten Netz verschmolzen.",
+  "schulter": {
+    "strukturen": {
+      "schulterblatt": [
+        "Scapula.r"
+      ],
+      "schluesselbein": [
+        "Clavicle.r"
+      ],
+      "oberarmknochen": [
+        "Humerus.r"
+      ],
+      "supraspinatus": [
+        "Supraspinatus muscle.r"
+      ],
+      "infraspinatus": [
+        "Infraspinatus muscle.r"
+      ],
+      "teres-minor": [
+        "Teres minor muscle.r"
+      ],
+      "subscapularis": [
+        "Subscapularis muscle.r"
+      ],
+      "deltamuskel": [
+        "Acromial part of deltoid muscle.r",
+        "Clavicular part of deltoid muscle.r",
+        "Scapular spinal part of deltoid muscle.r"
+      ],
+      "bizeps-lang": [
+        "Long head of biceps brachii.r"
+      ],
+      "bizeps-kurz": [
+        "Short head of biceps brachii.r"
+      ],
+      "trizeps": [
+        "Long head of triceps brachii.r",
+        "Lateral head of triceps brachii.r",
+        "Medial head of triceps brachii.r"
+      ],
+      "teres-major": [
+        "Teres major muscle.r"
+      ],
+      "brustmuskel": [
+        "Clavicular head of pectoralis major muscle.r",
+        "Sternocostal head of pectoralis major muscle.r",
+        "(Abdominal part of pectoralis major muscle).r"
+      ],
+      "trapezmuskel": [
+        "Descending part of trapezius muscle.r",
+        "Transverse part of trapezius muscle.r",
+        "Ascending part of trapezius muscle.r"
+      ],
+      "latissimus": [
+        "Latissimus dorsi muscle.r"
+      ],
+      "gelenkkapsel": [
+        "Articular capsule of glenohumeral joint.r"
+      ],
+      "gelenklippe": [
+        "Glenoid labrum.r"
+      ],
+      "schulterdach-band": [
+        "Coraco-acromial ligament.r"
+      ],
+      "schultereckgelenk": [
+        "Acromioclavicular ligament.r",
+        "Articular capsule of acromioclavicular joint.r"
+      ],
+      "rabenschnabel-baender": [
+        "Trapezoid ligament.r",
+        "Conoid ligament.r"
+      ],
+      "schleimbeutel": [
+        "Subacromial bursa.r",
+        "Subdeltoid bursa.r"
+      ]
+    },
+    "kontext": [
+      "First rib.r",
+      "Second rib.r",
+      "Third rib.r",
+      "Fourth rib.r",
+      "Fifth rib.r",
+      "Sixth rib.r",
+      "Seventh rib.r",
+      "Costal cartilage of first rib.r",
+      "Costal cartilage of second rib.r",
+      "Costal cartilage of third rib.r",
+      "Costal cartilage of fourth rib.r",
+      "Costal cartilage of fifth rib.r",
+      "Costal cartilage of sixth rib.r",
+      "Costal cartilage of seventh rib.r",
+      "Manubrium of sternum",
+      "Body of sternum",
+      "Vertebra C7",
+      "Vertebra T1",
+      "Vertebra T2",
+      "Vertebra T3",
+      "Vertebra T4",
+      "Vertebra T5",
+      "Vertebra T6",
+      "Vertebra T7",
+      "Vertebra T8"
+    ]
+  },
+  "ellenbogen": {
+    "schnitt": {
+      "zmin": 0.93,
+      "zmax": 1.27
+    },
+    "strukturen": {
+      "oberarmknochen": [
+        "Humerus.r"
+      ],
+      "elle": [
+        "Ulna.r"
+      ],
+      "speiche": [
+        "Radius.r"
+      ],
+      "bizeps": [
+        "Long head of biceps brachii.r",
+        "Short head of biceps brachii.r"
+      ],
+      "brachialis": [
+        "Brachialis muscle.r"
+      ],
+      "trizeps": [
+        "Long head of triceps brachii.r",
+        "Lateral head of triceps brachii.r",
+        "Medial head of triceps brachii.r"
+      ],
+      "brachioradialis": [
+        "Brachioradialis muscle.r"
+      ],
+      "strecker": [
+        "Extensor carpi radialis brevis.r",
+        "Extensor carpi radialis longus.r",
+        "Extensor digitorum.r",
+        "Extensor digiti minimi.r",
+        "Humeral head of extensor carpi ulnaris.r",
+        "Ulnar head of extensor carpi ulnaris.r"
+      ],
+      "beuger": [
+        "Flexor carpi radialis.r",
+        "Palmaris longus muscle.r",
+        "Humeral head of flexor carpi ulnaris.r",
+        "Ulnar head of flexor carpi ulnaris.r",
+        "Humero-ulnar head of flexor digitorum superficialis.r",
+        "Radial head of flexor digitorum superficialis.r",
+        "Superficial head of pronator teres.r",
+        "Deep head of pronator teres.r"
+      ],
+      "supinator": [
+        "Supinator.r"
+      ],
+      "gelenkkapsel": [
+        "Articular capsule of elbow joint.r"
+      ],
+      "ringband": [
+        "Annular ligament of radius.r"
+      ],
+      "innenband": [
+        "Ulnar collateral ligament.r"
+      ],
+      "aussenband": [
+        "Radial collateral ligament.r"
+      ],
+      "ellennerv": [
+        "Ulnar nerve.r"
+      ]
+    },
+    "kontext": []
+  },
+  "hand": {
+    "schnitt": {
+      "zmin": 0.5,
+      "zmax": 0.97
+    },
+    "strukturen": {
+      "speiche": [
+        "Radius.r"
+      ],
+      "elle": [
+        "Ulna.r"
+      ],
+      "kahnbein": [
+        "Scaphoid bone.r"
+      ],
+      "vieleckbein": [
+        "Trapezium bone.r"
+      ],
+      "handwurzel": [
+        "Lunate bone.r",
+        "Triquetrum bone.r",
+        "Pisiform bone.r",
+        "Trapezoid bone.r",
+        "Capitate bone.r",
+        "Hamate bone.r"
+      ],
+      "mittelhand": [
+        "First metacarpal bone.r",
+        "Second metacarpal bone.r",
+        "Third metacarpal bone.r",
+        "Fourth metacarpal bone.r",
+        "Fifth metacarpal bone.r"
+      ],
+      "finger": [
+        "Proximal phalanx of first finger of hand.r",
+        "Distal phalanx of first finger of hand.r",
+        "Proximal phalanx of second finger of hand.r",
+        "Middle phalanx of second finger of hand.r",
+        "Distal phalanx of second finger of hand.r",
+        "Proximal phalanx of third finger of hand.r",
+        "Middle phalanx of third finger of hand.r",
+        "Distal phalanx of third finger of hand.r",
+        "Proximal phalanx of fourth finger of hand.r",
+        "Middle phalanx of fourth finger of hand.r",
+        "Distal phalanx of fourth finger of hand.r",
+        "Proximal phalanx of fifth finger of hand.r",
+        "Middle phalanx of fifth finger of hand.r",
+        "Distal phalanx of fifth finger of hand.r"
+      ],
+      "fingerbeuger": [
+        "Flexor digitorum profundus.r",
+        "Humero-ulnar head of flexor digitorum superficialis.r",
+        "Radial head of flexor digitorum superficialis.r",
+        "Flexor pollicis longus.r"
+      ],
+      "fingerstrecker": [
+        "Extensor digitorum.r",
+        "Extensor indicis.r",
+        "Extensor digiti minimi.r"
+      ],
+      "daumensehnen": [
+        "Abductor pollicis longus.r",
+        "Extensor pollicis brevis.r"
+      ],
+      "daumenballen": [
+        "Abductor pollicis brevis.r",
+        "Opponens pollicis muscle.r",
+        "Superficial head of flexor pollicis brevis.r",
+        "Deep head of flexor pollicis brevis.r",
+        "Oblique head of adductor pollicis.r",
+        "Transverse head of adductor pollicis.r"
+      ],
+      "kleinfingerballen": [
+        "Abductor digiti minimi of hand.r",
+        "Flexor digiti minimi of hand.r",
+        "Opponens digiti minimi muscle of hand.r"
+      ],
+      "karpalband": [
+        "Flexor retinaculum of wrist.r"
+      ],
+      "hohlhandsehne": [
+        "Palmar aponeurosis.r"
+      ],
+      "gelenkkapsel": [
+        "Articular capsule of radiocarpal joint.r"
+      ],
+      "discus": [
+        "Articular disc of distal radio-ulnar joint.r"
+      ],
+      "sehnenscheiden": [
+        "Synovial sheaths of digits of hand.r",
+        "Common flexor tendon sheath.r"
+      ],
+      "daumensehnenfach": [
+        "Tendon sheath - abd. pollicis longus - ext. pollicis brevis.r"
+      ],
+      "mittelnerv": [
+        "Median nerve.r"
+      ],
+      "ellennerv": [
+        "Ulnar nerve.r"
+      ]
+    },
+    "kontext": []
+  },
+  "huefte": {
+    "schnitt": {
+      "zmin": 0.58,
+      "zmax": 1.07
+    },
+    "strukturen": {
+      "becken": [
+        "Hip bone.r"
+      ],
+      "kreuzbein": [
+        "Sacrum",
+        "Coccyx"
+      ],
+      "oberschenkel": [
+        "Femur.r"
+      ],
+      "gelenkkapsel": [
+        "Articular capsule of hip joint.r"
+      ],
+      "gelenklippe": [
+        "Acetabular labrum.r"
+      ],
+      "hueftbaender": [
+        "Descending part of iliofemoral ligament.r",
+        "Transverse part of iliofemoral ligament.r",
+        "Pubofemoral ligament.r",
+        "Ischiofemoral ligament.r"
+      ],
+      "isg": [
+        "Anterior sacro-iliac ligament.r",
+        "Posterior sacro-iliac ligament.r",
+        "Interosseous sacro-iliac ligament.r"
+      ],
+      "leistenband": [
+        "Inguinal ligament.r"
+      ],
+      "gesaessmuskel": [
+        "Gluteus maximus muscle.r"
+      ],
+      "abspreizer": [
+        "Gluteus medius muscle.r",
+        "Gluteus minimus muscle.r"
+      ],
+      "piriformis": [
+        "Piriformis muscle.r"
+      ],
+      "hueftbeuger": [
+        "Psoas major.r",
+        "Iliacus muscle.r"
+      ],
+      "adduktoren": [
+        "Adductor longus.r",
+        "Adductor brevis.r",
+        "Adductor magnus.r",
+        "Pectineus muscle.r",
+        "Gracilis muscle.r"
+      ],
+      "quadrizeps": [
+        "Rectus femoris muscle.r",
+        "Vastus lateralis muscle.r",
+        "Vastus medialis muscle.r",
+        "Vastus intermedius muscle.r"
+      ],
+      "ischiocrurale": [
+        "Long head of biceps femoris.r",
+        "Semitendinosus muscle.r",
+        "Semimembranosus muscle.r"
+      ],
+      "tractus": [
+        "Tensor fasciae latae.r",
+        "Iliotibial tract.r"
+      ],
+      "schleimbeutel": [
+        "Trochanteric bursa of gluteus maximus muscle.r",
+        "Subcutaneous trochanteric bursa.r"
+      ],
+      "ischiasnerv": [
+        "Sciatic nerve.r"
+      ]
+    },
+    "kontext": [
+      "Vertebra L4",
+      "Vertebra L5",
+      "Intervertebral disc L4-L5",
+      "Intervertebral disc L5-S1",
+      "Hip bone.l"
+    ]
+  },
+  "knie": {
+    "schnitt": {
+      "zmin": 0.25,
+      "zmax": 0.66
+    },
+    "strukturen": {
+      "oberschenkel": [
+        "Femur.r"
+      ],
+      "schienbein": [
+        "Tibia.r"
+      ],
+      "wadenbein": [
+        "Fibula.r"
+      ],
+      "kniescheibe": [
+        "Patella.r"
+      ],
+      "innenmeniskus": [
+        "Medial meniscus.r"
+      ],
+      "aussenmeniskus": [
+        "Lateral meniscus.r"
+      ],
+      "kreuzband-vorn": [
+        "Anterior cruciate ligament.r"
+      ],
+      "kreuzband-hinten": [
+        "Posterior cruciate ligament.r"
+      ],
+      "innenband": [
+        "Superficial part of tibial collateral ligament.r",
+        "Deep part of tibial collateral ligament.r"
+      ],
+      "aussenband": [
+        "Fibular collateral ligament.r"
+      ],
+      "gelenkkapsel": [
+        "Articular capsule of knee joint.r"
+      ],
+      "quadrizeps": [
+        "Rectus femoris muscle.r",
+        "Vastus lateralis muscle.r",
+        "Vastus medialis muscle.r",
+        "Vastus intermedius muscle.r"
+      ],
+      "ischiocrurale": [
+        "Long head of biceps femoris.r",
+        "Short head of biceps femoris.r",
+        "Semitendinosus muscle.r",
+        "Semimembranosus muscle.r"
+      ],
+      "wadenmuskel": [
+        "Lateral head of gastrocnemius.r",
+        "Medial head of gastrocnemius.r"
+      ],
+      "gaensefuss": [
+        "Sartorius muscle.r",
+        "Gracilis muscle.r"
+      ],
+      "tractus": [
+        "Iliotibial tract.r"
+      ],
+      "beutel-vorn": [
+        "Subcutaneous prepatellar bursa.r",
+        "Subcutaneous infrapatellar bursa.r",
+        "Deep infrapatellar bursa.r"
+      ],
+      "beutel-innen": [
+        "Anserine bursa.r"
+      ],
+      "beutel-kniekehle": [
+        "Semimembranosus bursa.r",
+        "Medial subtendinous bursa of gastrocnemius muscle.r"
+      ],
+      "wadenbeinnerv": [
+        "Common fibular nerve.r"
+      ]
+    },
+    "kontext": []
+  },
+  "fuss": {
+    "schnitt": {
+      "zmin": -0.2,
+      "zmax": 0.34
+    },
+    "strukturen": {
+      "schienbein": [
+        "Tibia.r"
+      ],
+      "wadenbein": [
+        "Fibula.r"
+      ],
+      "sprungbein": [
+        "Talus.r"
+      ],
+      "fersenbein": [
+        "Calcaneus.r"
+      ],
+      "fusswurzel": [
+        "Navicular bone.r",
+        "Cuboid bone.r",
+        "Medial cuneiform bone.r",
+        "Intermediate cuneiform bone.r",
+        "Lateral cuneiform bone.r"
+      ],
+      "mittelfuss": [
+        "First metatarsal bone.r",
+        "Second metatarsal bone.r",
+        "Third metatarsal bone.r",
+        "Fourth metatarsal bone.r",
+        "Fifth metatarsal bone.r",
+        "Sesamoid bones of foot.r"
+      ],
+      "zehen": [
+        "Proximal phalanx of first finger of foot.r",
+        "Distal phalanx of first finger of foot.r",
+        "Proximal phalanx of second finger of foot.r",
+        "Middle phalanx of second finger of foot.r",
+        "Distal phalanx of second finger of foot.r",
+        "Proximal phalanx of third finger of foot.r",
+        "Middle phalanx of third finger of foot.r",
+        "Distal phalanx of third finger of foot.r",
+        "Proximal phalanx of fourth finger of foot.r",
+        "Middle phalanx of fourth finger of foot.r",
+        "Distal phalanx of fourth finger of foot.r",
+        "Proximal phalanx of fifth finger of foot.r",
+        "Middle phalanx of fifth finger of foot.r",
+        "Distal phalanx of fifth finger of foot.r"
+      ],
+      "aussenbaender": [
+        "Anterior talofibular ligament.r",
+        "Calcaneofibular ligament.r",
+        "Posterior talofibular ligament.r"
+      ],
+      "innenband": [
+        "Posterior tibiotalar ligament.r",
+        "Tibiocalcaneal ligament.r",
+        "Tibionavicular ligament.r"
+      ],
+      "syndesmose": [
+        "Anterior tibiofibular ligament.r",
+        "Posterior tibiofibular ligament.r"
+      ],
+      "plantarfaszie": [
+        "Plantar aponeurosis.r"
+      ],
+      "achillessehne": [
+        "Calcaneal tendon.r"
+      ],
+      "wadenmuskel": [
+        "Soleus muscle.r",
+        "Lateral head of gastrocnemius.r",
+        "Medial head of gastrocnemius.r"
+      ],
+      "tibialis-posterior": [
+        "Tibialis posterior muscle.r"
+      ],
+      "tibialis-anterior": [
+        "Tibialis anterior muscle.r"
+      ],
+      "peroneus": [
+        "Fibularis longus muscle.r",
+        "Fibularis brevis muscle.r"
+      ],
+      "zehenstrecker": [
+        "Extensor digitorum longus.r",
+        "Tendon of extensor digitorum longus.r",
+        "Extensor hallucis longus.r"
+      ],
+      "zehenbeuger": [
+        "Flexor digitorum longus.r",
+        "Flexor hallucis longus.r"
+      ],
+      "fusssohle": [
+        "Flexor digitorum brevis.r",
+        "Abductor hallucis.r",
+        "Abductor digiti minimi of foot.r",
+        "Quadratus plantae muscle.r"
+      ],
+      "schleimbeutel": [
+        "Subtendinous calcaneal bursa.r",
+        "Subcutaneous calcaneal bursa.r"
+      ]
+    },
+    "kontext": []
+  },
+  "lws": {
+    "schnitt": {
+      "zmin": 0.8,
+      "zmax": 1.2
+    },
+    "strukturen": {
+      "lendenwirbel": [
+        "Vertebra L1",
+        "Vertebra L2",
+        "Vertebra L3",
+        "Vertebra L4",
+        "Vertebra L5"
+      ],
+      "kreuzbein": [
+        "Sacrum",
+        "Coccyx"
+      ],
+      "becken": [
+        "Hip bone.r",
+        "Hip bone.l"
+      ],
+      "bandscheiben": [
+        "Intervertebral disc L1-L2",
+        "Intervertebral disc L2-L3",
+        "Intervertebral disc L3-L4",
+        "Intervertebral disc L4-L5",
+        "Intervertebral disc L5-S1"
+      ],
+      "gallertkern": [
+        "Nucleus pulposus L1-L2",
+        "Nucleus pulposus L2-L3",
+        "Nucleus pulposus L3-L4",
+        "Nucleus pulposus L4-L5",
+        "Nucleus pulposus L5-S1"
+      ],
+      "laengsband-vorn": [
+        "Anterior longitudinal ligament"
+      ],
+      "laengsband-hinten": [
+        "Posterior longitudinal ligament"
+      ],
+      "gelbe-baender": [
+        "Ligamenta flava"
+      ],
+      "dornfortsatzbaender": [
+        "Interspinous ligaments",
+        "Supraspinous ligament"
+      ],
+      "isg": [
+        "Anterior sacro-iliac ligament.r",
+        "Anterior sacro-iliac ligament.l",
+        "Posterior sacro-iliac ligament.r",
+        "Posterior sacro-iliac ligament.l"
+      ],
+      "nervenfasern": [
+        "Cauda equina"
+      ],
+      "ischiasnerv": [
+        "Sciatic nerve.r"
+      ],
+      "rueckenstrecker": [
+        "Iliocostalis lumborum muscle.r",
+        "Longissimus thoracis muscle.r",
+        "Multifidus lumborum muscle.r"
+      ],
+      "quadratus": [
+        "Quadratus lumborum muscle.r"
+      ],
+      "psoas": [
+        "Psoas major.r"
+      ]
+    },
+    "kontext": [
+      "Vertebra T11",
+      "Vertebra T12",
+      "Intervertebral disc T11-T12",
+      "Intervertebral disc T12-L1",
+      "Twelfth rib.r",
+      "Twelfth rib.l",
+      "Eleventh rib.r",
+      "Eleventh rib.l"
+    ]
+  },
+  "bws": {
+    "schnitt": {
+      "zmin": 1.1,
+      "zmax": 1.5
+    },
+    "strukturen": {
+      "brustwirbel": [
+        "Vertebra T1",
+        "Vertebra T2",
+        "Vertebra T3",
+        "Vertebra T4",
+        "Vertebra T5",
+        "Vertebra T6",
+        "Vertebra T7",
+        "Vertebra T8",
+        "Vertebra T9",
+        "Vertebra T10",
+        "Vertebra T11",
+        "Vertebra T12"
+      ],
+      "rippen": [
+        "First rib.r",
+        "First rib.l",
+        "Second rib.r",
+        "Second rib.l",
+        "Third rib.r",
+        "Third rib.l",
+        "Fourth rib.r",
+        "Fourth rib.l",
+        "Fifth rib.r",
+        "Fifth rib.l",
+        "Sixth rib.r",
+        "Sixth rib.l",
+        "Seventh rib.r",
+        "Seventh rib.l",
+        "Eighth rib.r",
+        "Eighth rib.l",
+        "Ninth rib.r",
+        "Ninth rib.l",
+        "Tenth rib.r",
+        "Tenth rib.l",
+        "Eleventh rib.r",
+        "Eleventh rib.l",
+        "Twelfth rib.r",
+        "Twelfth rib.l"
+      ],
+      "rippenknorpel": [
+        "Costal cartilage of first rib.r",
+        "Costal cartilage of first rib.l",
+        "Costal cartilage of second rib.r",
+        "Costal cartilage of second rib.l",
+        "Costal cartilage of third rib.r",
+        "Costal cartilage of third rib.l",
+        "Costal cartilage of fourth rib.r",
+        "Costal cartilage of fourth rib.l",
+        "Costal cartilage of fifth rib.r",
+        "Costal cartilage of fifth rib.l",
+        "Costal cartilage of sixth rib.r",
+        "Costal cartilage of sixth rib.l",
+        "Costal cartilage of seventh rib.r",
+        "Costal cartilage of seventh rib.l",
+        "Costal cartilage of eighth rib.r",
+        "Costal cartilage of eighth rib.l",
+        "Costal cartilage of ninth rib.r",
+        "Costal cartilage of ninth rib.l",
+        "Costal cartilage of tenth rib.r",
+        "Costal cartilage of tenth rib.l"
+      ],
+      "brustbein": [
+        "Manubrium of sternum",
+        "Body of sternum",
+        "Xiphoid process"
+      ],
+      "schulterblatt": [
+        "Scapula.r"
+      ],
+      "bandscheiben": [
+        "Intervertebral disc T1-T2",
+        "Intervertebral disc T2-T3",
+        "Intervertebral disc T3-T4",
+        "Intervertebral disc T4-T5",
+        "Intervertebral disc T5-T6",
+        "Intervertebral disc T6-T7",
+        "Intervertebral disc T7-T8",
+        "Intervertebral disc T8-T9",
+        "Intervertebral disc T9-T10",
+        "Intervertebral disc T10-T11",
+        "Intervertebral disc T11-T12",
+        "Intervertebral disc T12-L1"
+      ],
+      "rippengelenke": [
+        "Radiate ligament of head of rib.r",
+        "Costotransverse ligament.r"
+      ],
+      "laengsband-vorn": [
+        "Anterior longitudinal ligament"
+      ],
+      "rueckenmark": [
+        "Spinal dura"
+      ],
+      "rueckenstrecker": [
+        "Iliocostalis thoracis muscle.r",
+        "Longissimus thoracis muscle.r",
+        "Spinalis thoracis muscle.r",
+        "Multifidus thoracis muscle.r",
+        "Semispinalis thoracis muscle.r"
+      ],
+      "rautenmuskeln": [
+        "Rhomboid major muscle.r",
+        "Rhomboid minor muscle.r"
+      ],
+      "trapezmuskel": [
+        "Descending part of trapezius muscle.r",
+        "Transverse part of trapezius muscle.r",
+        "Ascending part of trapezius muscle.r"
+      ],
+      "zwischenrippenmuskeln": [
+        "External intercostal muscles.r"
+      ]
+    },
+    "kontext": [
+      "Vertebra C7",
+      "Vertebra L1"
+    ]
+  },
+  "hws": {
+    "schnitt": {
+      "zmin": 1.37
+    },
+    "strukturen": {
+      "atlas": [
+        "Atlas (C1)"
+      ],
+      "axis": [
+        "Axis (C2)"
+      ],
+      "halswirbel": [
+        "Vertebra C3",
+        "Vertebra C4",
+        "Vertebra C5",
+        "Vertebra C6",
+        "Vertebra C7"
+      ],
+      "bandscheiben": [
+        "Intervertebral disc C2-C3",
+        "Intervertebral disc C3-C4",
+        "Intervertebral disc C4-C5",
+        "Intervertebral disc C5-C6",
+        "Intervertebral disc C6-C7",
+        "Intervertebral disc C7-T1"
+      ],
+      "nackenband": [
+        "Nuchal ligament"
+      ],
+      "rueckenmark": [
+        "Spinal dura"
+      ],
+      "armnerven": [
+        "Roots of brachial plexus.r",
+        "Superior trunk of brachial plexus.r",
+        "Middle trunk of brachial plexus.r",
+        "Inferior trunk of brachial plexus.r"
+      ],
+      "wirbelarterie": [
+        "Vertebral artery.r"
+      ],
+      "kopfwender": [
+        "Sternocleidomastoid muscle.r"
+      ],
+      "treppenmuskeln": [
+        "Scalenus anterior muscle.r",
+        "Scalenus medius muscle.r",
+        "Scalenus posterior muscle.r"
+      ],
+      "kurze-nackenmuskeln": [
+        "Rectus posterior major capitis muscle.r",
+        "Rectus posterior minor capitis muscle.r",
+        "Obliquus inferior capitis muscle.r",
+        "Obliquus superior capitis muscle.r"
+      ],
+      "nackenstrecker": [
+        "Splenius capitis muscle.r",
+        "Splenius colli muscle.r",
+        "Semispinalis colli muscle.r",
+        "Longissimus capitis muscle.r"
+      ],
+      "trapezmuskel": [
+        "Descending part of trapezius muscle.r"
+      ],
+      "schulterblattheber": [
+        "Levator scapulae.r"
+      ]
+    },
+    "kontext": [
+      "Occipital bone",
+      "Frontal bone",
+      "Sphenoid bone",
+      "Mandible",
+      "Temporal bone.r",
+      "Temporal bone.l",
+      "Parietal bone.r",
+      "Parietal bone.l",
+      "Maxilla.r",
+      "Maxilla.l",
+      "Zygomatic bone.r",
+      "Zygomatic bone.l",
+      "Vertebra T1",
+      "Vertebra T2",
+      "First rib.r",
+      "First rib.l"
+    ]
+  },
+  "schaedel": {
+    "strukturen": {
+      "stirnbein": [
+        "Frontal bone"
+      ],
+      "scheitelbein": [
+        "Parietal bone.r",
+        "Parietal bone.l"
+      ],
+      "schlaefenbein": [
+        "Temporal bone.r",
+        "Temporal bone.l"
+      ],
+      "hinterhauptbein": [
+        "Occipital bone"
+      ],
+      "keilbein": [
+        "Sphenoid bone"
+      ],
+      "jochbein": [
+        "Zygomatic bone.r",
+        "Zygomatic bone.l"
+      ],
+      "oberkiefer": [
+        "Maxilla.r",
+        "Maxilla.l",
+        "Palatine bone.r",
+        "Palatine bone.l"
+      ],
+      "nase": [
+        "Nasal bone.r",
+        "Nasal bone.l",
+        "Lacrimal bone.r",
+        "Lacrimal bone.l",
+        "Inferior nasal concha bone.r",
+        "Inferior nasal concha bone.l",
+        "Vomer",
+        "Ethmoid bone"
+      ],
+      "unterkiefer": [
+        "Mandible"
+      ],
+      "zaehne": [
+        "Upper medial incisor.r",
+        "Upper medial incisor.l",
+        "Upper lateral incisor.r",
+        "Upper lateral incisor.l",
+        "Upper canine.r",
+        "Upper canine.l",
+        "Upper first premolar.r",
+        "Upper first premolar.l",
+        "Upper second premolar.r",
+        "Upper second premolar.l",
+        "Upper first molar tooth.r",
+        "Upper first molar tooth.l",
+        "Upper second molar tooth.r",
+        "Upper second molar tooth.l",
+        "Lower medial incisor.r",
+        "Lower medial incisor.l",
+        "Lower lateral incisor.r",
+        "Lower lateral incisor.l",
+        "Lower canine.r",
+        "Lower canine.l",
+        "Lower first premolar.r",
+        "Lower first premolar.l",
+        "Lower second premolar.r",
+        "Lower second premolar.l",
+        "Lower first molar tooth.r",
+        "Lower first molar tooth.l",
+        "Lower second molar tooth.r",
+        "Lower second molar tooth.l"
+      ],
+      "stirnhoehle": [
+        "Sinus of frontal bone"
+      ],
+      "kiefergelenk": [
+        "Articular capsule of temporomandibular joint.r",
+        "Lateral temporomandibular ligament.r"
+      ],
+      "gelenkscheibe": [
+        "Articular disc of temporomandibular joint.r"
+      ],
+      "kaumuskel": [
+        "Superficial part of masseter.r",
+        "Deep part of masseter.r"
+      ],
+      "schlaefenmuskel": [
+        "Temporalis muscle.r"
+      ],
+      "fluegelmuskeln": [
+        "Medial pterygoid muscle.r",
+        "Inferior head of lateral pterygoid muscle.r",
+        "Superior head of lateral pterygoid muscle.r"
+      ]
+    },
+    "kontext": [
+      "Atlas (C1)",
+      "Axis (C2)",
+      "Vertebra C3",
+      "Vertebra C4",
+      "Hyoid bone"
+    ]
+  },
+  "brustkorb": {
+    "schnitt": {
+      "zmin": 1.08,
+      "zmax": 1.5
+    },
+    "strukturen": {
+      "brustbein-griff": [
+        "Manubrium of sternum"
+      ],
+      "brustbein-koerper": [
+        "Body of sternum"
+      ],
+      "schwertfortsatz": [
+        "Xiphoid process"
+      ],
+      "echte-rippen": [
+        "First rib.r",
+        "First rib.l",
+        "Second rib.r",
+        "Second rib.l",
+        "Third rib.r",
+        "Third rib.l",
+        "Fourth rib.r",
+        "Fourth rib.l",
+        "Fifth rib.r",
+        "Fifth rib.l",
+        "Sixth rib.r",
+        "Sixth rib.l",
+        "Seventh rib.r",
+        "Seventh rib.l"
+      ],
+      "falsche-rippen": [
+        "Eighth rib.r",
+        "Eighth rib.l",
+        "Ninth rib.r",
+        "Ninth rib.l",
+        "Tenth rib.r",
+        "Tenth rib.l"
+      ],
+      "freie-rippen": [
+        "Eleventh rib.r",
+        "Eleventh rib.l",
+        "Twelfth rib.r",
+        "Twelfth rib.l"
+      ],
+      "rippenknorpel": [
+        "Costal cartilage of first rib.r",
+        "Costal cartilage of first rib.l",
+        "Costal cartilage of second rib.r",
+        "Costal cartilage of second rib.l",
+        "Costal cartilage of third rib.r",
+        "Costal cartilage of third rib.l",
+        "Costal cartilage of fourth rib.r",
+        "Costal cartilage of fourth rib.l",
+        "Costal cartilage of fifth rib.r",
+        "Costal cartilage of fifth rib.l",
+        "Costal cartilage of sixth rib.r",
+        "Costal cartilage of sixth rib.l",
+        "Costal cartilage of seventh rib.r",
+        "Costal cartilage of seventh rib.l",
+        "Costal cartilage of eighth rib.r",
+        "Costal cartilage of eighth rib.l",
+        "Costal cartilage of ninth rib.r",
+        "Costal cartilage of ninth rib.l",
+        "Costal cartilage of tenth rib.r",
+        "Costal cartilage of tenth rib.l"
+      ],
+      "schluesselbein": [
+        "Clavicle.r",
+        "Clavicle.l"
+      ],
+      "brust-schluesselbein-gelenk": [
+        "Anterior sternoclavicular ligament.r",
+        "Anterior sternoclavicular ligament.l",
+        "Articular capsule of sternoclavicular joint.r",
+        "Articular capsule of sternoclavicular joint.l"
+      ],
+      "brustwirbel": [
+        "Vertebra T1",
+        "Vertebra T2",
+        "Vertebra T3",
+        "Vertebra T4",
+        "Vertebra T5",
+        "Vertebra T6",
+        "Vertebra T7",
+        "Vertebra T8",
+        "Vertebra T9",
+        "Vertebra T10",
+        "Vertebra T11",
+        "Vertebra T12"
+      ],
+      "zwischenrippenmuskeln": [
+        "External intercostal muscles.r",
+        "Internal intercostal muscles.r"
+      ],
+      "zwischenrippennerven": [
+        "Intercostal nerves.r"
+      ],
+      "zwerchfell": [
+        "Diaphragm"
+      ],
+      "brustmuskel": [
+        "Clavicular head of pectoralis major muscle.r",
+        "Sternocostal head of pectoralis major muscle.r",
+        "(Abdominal part of pectoralis major muscle).r"
+      ],
+      "kleiner-brustmuskel": [
+        "Pectoralis minor muscle.r"
+      ],
+      "saegemuskel": [
+        "Serratus anterior muscle.r"
+      ]
+    },
+    "kontext": [
+      "Vertebra C7",
+      "Vertebra L1"
+    ]
+  },
+  "becken": {
+    "schnitt": {
+      "zmin": 0.7,
+      "zmax": 1.06
+    },
+    "strukturen": {
+      "hueftbein": [
+        "Hip bone.r",
+        "Hip bone.l"
+      ],
+      "kreuzbein": [
+        "Sacrum"
+      ],
+      "steissbein": [
+        "Coccyx"
+      ],
+      "oberschenkel": [
+        "Femur.r",
+        "Femur.l"
+      ],
+      "schambeinfuge": [
+        "Interpubic disc",
+        "Superior pubic ligament",
+        "Inferior pubic ligament"
+      ],
+      "isg": [
+        "Anterior sacro-iliac ligament.r",
+        "Anterior sacro-iliac ligament.l",
+        "Posterior sacro-iliac ligament.r",
+        "Posterior sacro-iliac ligament.l",
+        "Interosseous sacro-iliac ligament.r",
+        "Interosseous sacro-iliac ligament.l"
+      ],
+      "sitzbeinbaender": [
+        "Sacrotuberous ligament.r",
+        "Sacrotuberous ligament.l",
+        "Sacrospinous ligament.r",
+        "Sacrospinous ligament.l"
+      ],
+      "leistenband": [
+        "Inguinal ligament.r",
+        "Inguinal ligament.l"
+      ],
+      "hueftkapsel": [
+        "Articular capsule of hip joint.r",
+        "Articular capsule of hip joint.l"
+      ],
+      "beckenboden": [
+        "Iliococcygeus muscle.r",
+        "Iliococcygeus muscle.l",
+        "Pubococcygeus muscle.r",
+        "Pubococcygeus muscle.l",
+        "Pubo-analis muscle.r",
+        "Pubo-analis muscle.l",
+        "Coccygeus muscle.r",
+        "Coccygeus muscle.l"
+      ],
+      "piriformis": [
+        "Piriformis muscle.r",
+        "Piriformis muscle.l"
+      ],
+      "obturator": [
+        "Obturator internus.r",
+        "Obturator internus.l"
+      ],
+      "hueftbeuger": [
+        "Psoas major.r",
+        "Iliacus muscle.r"
+      ],
+      "gesaessmuskel": [
+        "Gluteus maximus muscle.r"
+      ],
+      "abspreizer": [
+        "Gluteus medius muscle.r",
+        "Gluteus minimus muscle.r"
+      ],
+      "ischiasnerv": [
+        "Sciatic nerve.r",
+        "Sciatic nerve.l"
+      ],
+      "schamnerv": [
+        "Pudendal nerve.r",
+        "Pudendal nerve.l"
+      ]
+    },
+    "kontext": [
+      "Vertebra L4",
+      "Vertebra L5",
+      "Intervertebral disc L4-L5",
+      "Intervertebral disc L5-S1"
+    ]
+  },
+  "gehirn": {
+    "schnitt": {
+      "zmin": 1.53
+    },
+    "strukturen": {
+      "stirnlappen": [
+        "Lat_Fis-ant-Horizont.r",
+        "Lat_Fis-ant-Vertical.r",
+        "Middle frontal gyrus.r",
+        "Orbital gyri (Frontomarginal gyrus and sulcus*).r",
+        "Orbital gyri.r",
+        "Orbital part of  inferior frontal gyrus.r",
+        "Orbital sulci (H-shaped orbital sulci*).r",
+        "Orbital sulci (Lateral Orbital sulcus*).r",
+        "Paracentral gyrus and sulcus*.r",
+        "Precentral gyrus.r",
+        "Inferior frontal sulcus.r",
+        "Olfactory sulcus.r",
+        "Opercular part of inferior frontal gyrus.r",
+        "Paracentral sulcus.r",
+        "Precentral sulcus (inferior part)*.r",
+        "Precentral sulcus (Superior part)*.r",
+        "Straight gyrus (Gyrus rectus).r",
+        "Superior frontal gyrus.r",
+        "Superior frontal sulcus.r",
+        "Transverse frontopolar gyrus and sulcus*.r",
+        "Triangular part of inferior frontal gyrus.r"
+      ],
+      "scheitellappen": [
+        "Angular gyrus.r",
+        "Postcentral gyrus.r",
+        "Precuneus.r",
+        "Intraparietal sulcus.r",
+        "Postcentral sulcus.r",
+        "Superior parietal lobule.r",
+        "Supramarginal gyrus.r",
+        "Central sulcus.r",
+        "Subparietal sulcus.r",
+        "Sulcus interm_prim-Jensen.r"
+      ],
+      "schlaefenlappen": [
+        "Inferior temporal gyrus.r",
+        "Lateral occipitotemporal gyrus.r",
+        "Medial occipitotemporal gyrus (Parahippocampal*).r",
+        "Middle temporal gyrus.r",
+        "Occipitotemporal sulcus (Lateral part*).r",
+        "Inferior temporal sulcus.r",
+        "Superior temporal gyrus (Lateral part).r",
+        "Superior temporal sulcus.r",
+        "Temporal plane.r",
+        "Temporal pole.r",
+        "Transverse temporal gyri.r",
+        "Lat_Fis-post.r",
+        "Collateral sulcus.r"
+      ],
+      "hinterhauptlappen": [
+        "Calcarine sulcus.r",
+        "Cuneus.r",
+        "Inferior occipital gyrus and sulcus*.r",
+        "Lateral occipital gyrus (Middle occipital gyrus*).r",
+        "Lingual gyrus.r",
+        "Lunate sulcus.r",
+        "Occipital pole.r",
+        "Superior occipital gyri.r",
+        "Transverse occipital sulcus.r",
+        "Parieto-occipital sulcus.r",
+        "Anterior occipital sulcus*.r",
+        " Posterior transverse collateral sulcus.r"
+      ],
+      "marklager": [
+        "White matter of telencephalon.r",
+        "Insula (Subcentral gyrus and ant. and post. sulci*).r",
+        "Circular sulcus of insula.r",
+        "Cingulate gyrus (Posteroventral part*).r",
+        "Cingulate gyrus and sulcus (Middle anterior part).r",
+        "Cingulate gyrus and sulcus (Middle posterior part).r",
+        "Cingulate gyrus and sulcus (Posterior dorsal part).r",
+        "Cingulate sulcus (Marginal part*).r"
+      ],
+      "linke-hirnhaelfte": [
+        " Posterior transverse collateral sulcus.l",
+        "Angular gyrus.l",
+        "Anterior occipital sulcus*.l",
+        "Calcarine sulcus.l",
+        "Central sulcus.l",
+        "Cingulate gyrus (Posteroventral part*).l",
+        "Cingulate gyrus and sulcus (Middle anterior part).l",
+        "Cingulate gyrus and sulcus (Middle posterior part).l",
+        "Cingulate gyrus and sulcus (Posterior dorsal part).l",
+        "Cingulate sulcus (Marginal part*).l",
+        "Circular sulcus of insula.l",
+        "Collateral sulcus.l",
+        "Cuneus.l",
+        "Inferior occipital gyrus and sulcus*.l",
+        "Inferior temporal gyrus.l",
+        "Insula (Subcentral gyrus and ant. and post. sulci*).l",
+        "Lat_Fis-ant-Horizont.l",
+        "Lat_Fis-ant-Vertical.l",
+        "Lat_Fis-post.l",
+        "Lateral occipital gyrus (Middle occipital gyrus*).l",
+        "Lateral occipitotemporal gyrus.l",
+        "Lingual gyrus.l",
+        "Lunate sulcus.l",
+        "Medial occipitotemporal gyrus (Parahippocampal*).l",
+        "Middle frontal gyrus.l",
+        "Middle temporal gyrus.l",
+        "Occipital pole.l",
+        "Occipitotemporal sulcus (Lateral part*).l",
+        "Orbital gyri (Frontomarginal gyrus and sulcus*).l",
+        "Orbital gyri.l",
+        "Orbital part of  inferior frontal gyrus.l",
+        "Orbital sulci (H-shaped orbital sulci*).l",
+        "Orbital sulci (Lateral Orbital sulcus*).l",
+        "Paracentral gyrus and sulcus*.l",
+        "Postcentral gyrus.l",
+        "Precentral gyrus.l",
+        "Precuneus.l",
+        "Inferior frontal sulcus.l",
+        "Inferior temporal sulcus.l",
+        "Intraparietal sulcus.l",
+        "Olfactory sulcus.l",
+        "Opercular part of inferior frontal gyrus.l",
+        "Paracentral sulcus.l",
+        "Parieto-occipital sulcus.l",
+        "Postcentral sulcus.l",
+        "Precentral sulcus (inferior part)*.l",
+        "Precentral sulcus (Superior part)*.l",
+        "Straight gyrus (Gyrus rectus).l",
+        "Subparietal sulcus.l",
+        "Sulcus interm_prim-Jensen.l",
+        "Superior frontal gyrus.l",
+        "Superior frontal sulcus.l",
+        "Superior occipital gyri.l",
+        "Superior parietal lobule.l",
+        "Superior temporal gyrus (Lateral part).l",
+        "Superior temporal sulcus.l",
+        "Supramarginal gyrus.l",
+        "Temporal plane.l",
+        "Temporal pole.l",
+        "Transverse frontopolar gyrus and sulcus*.l",
+        "Transverse occipital sulcus.l",
+        "Transverse temporal gyri.l",
+        "Triangular part of inferior frontal gyrus.l",
+        "White matter of telencephalon.l"
+      ],
+      "kleinhirn": [
+        "Anterior quadrangular lobule.l",
+        "Anterior quadrangular lobule.r",
+        "Biventral lobule.l",
+        "Biventral lobule.r",
+        "Central lobule",
+        "Culmen",
+        "Declive",
+        "Flocculus.l",
+        "Flocculus.r",
+        "Folium of vermis",
+        "Gracile lobule.l",
+        "Gracile lobule.r",
+        "Inferior semilunar lobule.l",
+        "Inferior semilunar lobule.r",
+        "Lingula of cerebellum",
+        "Nodule of vermis",
+        "Peduncle of flocculus.l",
+        "Peduncle of flocculus.r",
+        "Posterior quadrangular lobule.l",
+        "Posterior quadrangular lobule.r",
+        "Pyramis of vermis",
+        "Superior cerebellar peduncle.l",
+        "Superior cerebellar peduncle.r",
+        "Superior semilunar lobule.l",
+        "Superior semilunar lobule.r",
+        "Tonsil of cerebellum.l",
+        "Tonsil of cerebellum.r",
+        "Tuber of vermis",
+        "Uvula of vermis",
+        "Wing of central lobule.l",
+        "Wing of central lobule.r"
+      ],
+      "hirnstamm": [
+        "Midbrain.r",
+        "Midbrain.l",
+        "Pons.r",
+        "Pons.l",
+        "Medulla oblongata.r",
+        "Medulla oblongata.l",
+        "Base of peduncle.r",
+        "Base of peduncle.l"
+      ],
+      "balken": [
+        "Corpus callosum"
+      ],
+      "thalamus": [
+        "Thalamus.r",
+        "Thalamus.l"
+      ],
+      "hirnanhangdruese": [
+        "Adenohypophysis",
+        "Neurohypophysis"
+      ],
+      "basalganglien": [
+        "Caudate nucleus.r",
+        "Caudate nucleus.l",
+        "Putamen.r",
+        "Putamen.l",
+        "Globus pallidus.r",
+        "Globus pallidus.l",
+        "Lentiform nucleus.r",
+        "Lentiform nucleus.l"
+      ],
+      "hippocampus": [
+        "Hippocampus.r",
+        "Hippocampus.l",
+        "Amygdaloid body.r",
+        "Amygdaloid body.l",
+        "Fornix.r",
+        "Fornix.l"
+      ],
+      "hirnkammern": [
+        "Lateral ventricle.r",
+        "Lateral ventricle.l",
+        "Third ventricle",
+        "Fourth ventricle",
+        "Aqueduct of midbrain"
+      ],
+      "sehnerv": [
+        "Optic nerve (II).r",
+        "Optic nerve (II).l",
+        "Optic chiasm.r",
+        "Optic chiasm.l",
+        "Optic tract.r",
+        "Optic tract.l"
+      ],
+      "hirnschlagadern": [
+        "Internal carotid artery.r",
+        "Internal carotid artery.l",
+        "Anterior cerebral artery.r",
+        "Anterior cerebral artery.l",
+        "Middle cerebral artery (M1-segment).r",
+        "Middle cerebral artery (M1-segment).l",
+        "Posterior cerebral artery.r",
+        "Posterior cerebral artery.l",
+        "Vertebral artery.r",
+        "Vertebral artery.l",
+        "Parietal branches of middle cerebral artery.r",
+        "Parietal branches of middle cerebral artery.l",
+        "Temporal branches of middle cerebral artery.r",
+        "Temporal branches of middle cerebral artery.l",
+        "Basilar artery",
+        "Middle cerebral artery (M3 segment).l",
+        "Middle cerebral artery (M3-segment).r",
+        "Insular branches of middle cerebral artery (M2).r",
+        "Insular branches of middle cerebral artery (M2-segment).l"
+      ]
+    }
+  },
+  "ohr": {
+    "strukturen": {
+      "ohrmuschel": [
+        "Anterior notch of auricle.r",
+        "Antihelix.r",
+        "Antitragus.r",
+        "Apex of auricle.r",
+        "Auricular region.r",
+        "Auricular tubercle.r",
+        "Cavity of concha.r",
+        "Concha of auricle.r",
+        "Crura of antihelix.r",
+        "Cymba conchae.r",
+        "Eminentia conchae.r",
+        "Eminentia fossae triangularis.r",
+        "Eminentia scaphae.r",
+        "Fossa antihelica.r",
+        "Helix.r",
+        "Intertragic incisure.r",
+        "Lobule of auricle.r",
+        "Posterior auricular groove.r",
+        "Scapha.r",
+        "Tragus.r",
+        "Triangular fossa.r"
+      ],
+      "gehoergang": [
+        {
+          "rohr": [
+            "Cavity of concha.r",
+            "Tympanic membrane.r"
+          ],
+          "radius": 0.0048,
+          "radius2": 0.0036
+        }
+      ],
+      "trommelfell": [
+        "Tympanic membrane.r"
+      ],
+      "paukenhoehle": [
+        {
+          "blase": [
+            "Malleus.r",
+            "Incus.r",
+            "Stapes.r"
+          ],
+          "rand": 0.0022
+        }
+      ],
+      "gehoerknoechelchen": [
+        "Malleus.r",
+        "Incus.r",
+        "Stapes.r"
+      ],
+      "ohrtrompete": [
+        {
+          "rohr": [
+            "Incus.r",
+            "Nasopharynx"
+          ],
+          "radius": 0.0013,
+          "radius2": 0.003
+        }
+      ],
+      "nasenrachen": [
+        "Nasopharynx"
+      ],
+      "nasenhoehle": [
+        "Mucosa of nasal cavity"
+      ],
+      "schnecke": [
+        "Cochlea.r"
+      ],
+      "gleichgewichtsorgan": [
+        "Vestibule.r"
+      ],
+      "hoernerv": [
+        "Cochlear nerve",
+        "Vestibular nerve.r",
+        "Vestibulocochlear nerve (VIII).r"
+      ],
+      "schlaefenbein": [
+        "Temporal bone.r"
+      ]
+    }
+  },
+  "brustorgane": {
+    "schnitt": {
+      "zmin": 1.03,
+      "zmax": 1.47
+    },
+    "strukturen": {
+      "lunge-rechts-oben": [
+        "Superior lobe of right lung"
+      ],
+      "lunge-rechts-mitte": [
+        "Middle lobe of right lung"
+      ],
+      "lunge-rechts-unten": [
+        "Inferior lobe of right lung"
+      ],
+      "lunge-links-oben": [
+        "Superior lobe of left lung"
+      ],
+      "lunge-links-unten": [
+        "Inferior lobe of left lung"
+      ],
+      "luftroehre": [
+        "Trachea",
+        "Left main bronchus",
+        "Right main bronchus"
+      ],
+      "bronchien": [
+        "(Anteromedial basal segmental bronchus of left lung)",
+        "Anterior basal segmental bronchus of left lung (BVIII)",
+        "Anterior basal segmental bronchus of right lung (BVIII)",
+        "Anterior segmental bronchus of left lung (BIII)",
+        "Anterior segmental bronchus of right lung (BIII)",
+        "Apical segmental bronchus of right lung (BI)",
+        "Apicoposterior segmental bronchus of left lung (BI+BII)",
+        "Inferior lingular segmental bronchus of left lung (BV)",
+        "Intermediate bronchus.r",
+        "Lateral basal segmental bronchus of left lung (BIX)",
+        "Lateral basal segmental bronchus of right lung (BIX)",
+        "Lateral segmental bronchus of right lung (BIV)",
+        "Left inferior lobar bronchus",
+        "Left superior lobar bronchus",
+        "Medial basal segmental bronchus of left lung (BVII)",
+        "Medial basal segmental bronchus of right lung (BVII)",
+        "Medial segmental bronchus of right lung (BV)",
+        "Middle lobar bronchus.r",
+        "Posterior basal segmental bronchus of left lung (BX)",
+        "Posterior basal segmental bronchus of right lung (BX)",
+        "Posterior segmental bronchus of right lung (BII)",
+        "Right inferior lobar bronchus",
+        "Right superior lobar bronchus",
+        "Superior lingular segmental bronchus of left lung (BIV)",
+        "Superior segmental bronchus of left lung (BVI)",
+        "Superior segmental bronchus of right lung (BVI)"
+      ],
+      "rippenfell": [
+        "Pleura"
+      ],
+      "herz": [
+        "Right atrium",
+        "Right ventricle",
+        "Left atrium",
+        "Left ventricle"
+      ],
+      "aorta": [
+        "Ascending aorta",
+        "Aortic arch",
+        "Thoracic aorta",
+        "Brachiocephalic trunk",
+        "Left common carotid artery",
+        "Left subclavian artery"
+      ],
+      "lungenschlagadern": [
+        "Pulmonary trunk",
+        "Bifurcation of pulmonary trunk",
+        "Left pulmonary artery",
+        "Right pulmonary artery"
+      ],
+      "lungenvenen": [
+        "Left inferior pulmonary vein",
+        "Left superior pulmonary vein",
+        "Right inferior pulmonary vein",
+        "Right superior pulmonary vein"
+      ],
+      "hohlvenen": [
+        "Superior vena cava",
+        "Inferior vena cava (thoracic part)",
+        "Left brachiocephalic vein",
+        "Right brachiocephalic vein"
+      ],
+      "speiseroehre": [
+        "Oesophagus"
+      ],
+      "zwerchfell": [
+        "Diaphragm"
+      ],
+      "rippen": [
+        "First rib.r",
+        "First rib.l",
+        "Second rib.r",
+        "Second rib.l",
+        "Third rib.r",
+        "Third rib.l",
+        "Fourth rib.r",
+        "Fourth rib.l",
+        "Fifth rib.r",
+        "Fifth rib.l",
+        "Sixth rib.r",
+        "Sixth rib.l",
+        "Seventh rib.r",
+        "Seventh rib.l",
+        "Eighth rib.r",
+        "Eighth rib.l",
+        "Ninth rib.r",
+        "Ninth rib.l",
+        "Tenth rib.r",
+        "Tenth rib.l",
+        "Eleventh rib.r",
+        "Eleventh rib.l",
+        "Twelfth rib.r",
+        "Twelfth rib.l",
+        "Costal cartilage of first rib.r",
+        "Costal cartilage of first rib.l",
+        "Costal cartilage of second rib.r",
+        "Costal cartilage of second rib.l",
+        "Costal cartilage of third rib.r",
+        "Costal cartilage of third rib.l",
+        "Costal cartilage of fourth rib.r",
+        "Costal cartilage of fourth rib.l",
+        "Costal cartilage of fifth rib.r",
+        "Costal cartilage of fifth rib.l",
+        "Costal cartilage of sixth rib.r",
+        "Costal cartilage of sixth rib.l",
+        "Costal cartilage of seventh rib.r",
+        "Costal cartilage of seventh rib.l",
+        "Costal cartilage of eighth rib.r",
+        "Costal cartilage of eighth rib.l",
+        "Costal cartilage of ninth rib.r",
+        "Costal cartilage of ninth rib.l",
+        "Costal cartilage of tenth rib.r",
+        "Costal cartilage of tenth rib.l",
+        "Manubrium of sternum",
+        "Body of sternum",
+        "Xiphoid process"
+      ],
+      "wirbelsaeule": [
+        "Vertebra T1",
+        "Vertebra T2",
+        "Vertebra T3",
+        "Vertebra T4",
+        "Vertebra T5",
+        "Vertebra T6",
+        "Vertebra T7",
+        "Vertebra T8",
+        "Vertebra T9",
+        "Vertebra T10",
+        "Vertebra T11",
+        "Vertebra T12"
+      ]
+    }
+  },
+  "herz": {
+    "schnitt": {
+      "zmin": 1.2,
+      "zmax": 1.4
+    },
+    "strukturen": {
+      "rechter-vorhof": [
+        "Right atrium"
+      ],
+      "rechte-kammer": [
+        "Right ventricle"
+      ],
+      "linker-vorhof": [
+        "Left atrium"
+      ],
+      "linke-kammer": [
+        "Left ventricle"
+      ],
+      "aorta": [
+        "Ascending aorta",
+        "Aortic arch"
+      ],
+      "lungenschlagader": [
+        "Pulmonary trunk",
+        "Bifurcation of pulmonary trunk"
+      ],
+      "hohlvenen": [
+        "Superior vena cava",
+        "Inferior vena cava (thoracic part)"
+      ],
+      "lungenvenen": [
+        "Left inferior pulmonary vein",
+        "Left superior pulmonary vein",
+        "Right inferior pulmonary vein",
+        "Right superior pulmonary vein"
+      ],
+      "linke-kranzarterie": [
+        "Left coronary artery"
+      ],
+      "vorderwandast": [
+        "Anterior interventricular artery",
+        "Septal branches of anterior interventricular artery"
+      ],
+      "seitenwandast": [
+        "Circumflex artery of heart"
+      ],
+      "rechte-kranzarterie": [
+        "Right coronary artery",
+        "Right inferolateral branch of right coronary artery"
+      ],
+      "herzvenen": [
+        "Great cardiac vein",
+        "Middle cardiac vein",
+        "Coronary sinus",
+        "Inferior vein of left ventricle"
+      ],
+      "aortenklappe": [
+        "Left coronary leaflet",
+        "Right coronary leaflet",
+        "Non-coronary leaflet"
+      ],
+      "pulmonalklappe": [
+        "Anterior semilunar leaflet of pulmonary valve",
+        "Left semilunar leaflet of pulmonary valve",
+        "Right semilunar leaflet of pulmonary valve"
+      ],
+      "mitralklappe": [
+        "Posterior leaflet of left atrioventricular valve",
+        "Inferior papillary muscle of left ventricle"
+      ],
+      "trikuspidalklappe": [
+        "Inferior leaflet of right atrioventricular valve",
+        "Septal leaflet of right atrioventricular valve",
+        "Anterior papillary muscle of right ventricle",
+        "Inferior papillary muscle of right ventricle",
+        "Septal papillary muscle of right ventricle"
+      ]
+    }
+  },
+  "bauchorgane": {
+    "schnitt": {
+      "zmin": 0.78,
+      "zmax": 1.28
+    },
+    "strukturen": {
+      "leber": [
+        "Liver"
+      ],
+      "gallenblase": [
+        "Gallbladder",
+        "Bile duct"
+      ],
+      "magen": [
+        "Stomach"
+      ],
+      "zwoelffingerdarm": [
+        "Duodenum"
+      ],
+      "duenndarm": [
+        "Jejunum"
+      ],
+      "dickdarm": [
+        "Ascending colon",
+        "Transverse colon",
+        "Descending colon",
+        "Sigmoid colon"
+      ],
+      "wurmfortsatz": [
+        "Vermiform appendix"
+      ],
+      "bauchspeicheldruese": [
+        "Pancreas",
+        "Pancreatic duct"
+      ],
+      "milz": [
+        "Spleen"
+      ],
+      "nieren": [
+        "Kidney.r",
+        "Kidney.l",
+        "Renal pelvis.r",
+        "Renal pelvis.l"
+      ],
+      "nebennieren": [
+        "Suprarenal gland.r",
+        "Suprarenal gland.l"
+      ],
+      "harnleiter": [
+        "Ureter.r",
+        "Ureter.l"
+      ],
+      "harnblase": [
+        "Urinary bladder"
+      ],
+      "bauchschlagader": [
+        "Abdominal aorta",
+        "Coeliac trunk",
+        "Superior mesenteric artery",
+        "Left renal artery",
+        "Right renal artery",
+        "Common iliac artery.r",
+        "Common iliac artery.l"
+      ],
+      "hohlvene": [
+        "Inferior vena cava (abdominal part)",
+        "Left renal vein",
+        "Right renal vein",
+        "Common iliac vein.r",
+        "Common iliac vein.l"
+      ],
+      "pfortader": [
+        "Hepatic portal vein",
+        "Splenic vein",
+        "Superior mesenteric vein"
+      ],
+      "grosses-netz": [
+        "Greater omentum"
+      ],
+      "skelett": [
+        "Vertebra T12",
+        "Vertebra L1",
+        "Vertebra L2",
+        "Vertebra L3",
+        "Vertebra L4",
+        "Vertebra L5",
+        "Sacrum",
+        "Coccyx",
+        "Hip bone.r",
+        "Hip bone.l"
+      ]
+    }
+  },
+  "maennlich": {
+    "schnitt": {
+      "zmin": 0.7,
+      "zmax": 1.06
+    },
+    "strukturen": {
+      "hoden": [
+        "Testis.r",
+        "Testis.l"
+      ],
+      "nebenhoden": [
+        "Epididymis.r",
+        "Epididymis.l"
+      ],
+      "samenleiter": [
+        "Ductus deferens.r",
+        "Ductus deferens.l",
+        "Ejaculatory duct.r",
+        "Ejaculatory duct.l"
+      ],
+      "samenblaeschen": [
+        "Seminal gland.r",
+        "Seminal gland.l"
+      ],
+      "prostata": [
+        "Prostate"
+      ],
+      "harnblase": [
+        "Urinary bladder"
+      ],
+      "harnleiter": [
+        "Ureter.r",
+        "Ureter.l"
+      ],
+      "harnroehre": [
+        "Urethra"
+      ],
+      "schwellkoerper": [
+        "Corpus cavernosum of penis"
+      ],
+      "harnroehrenschwellkoerper": [
+        "Corpus spongiosum of penis"
+      ],
+      "eichel": [
+        "Glans penis"
+      ],
+      "becken": [
+        "Hip bone.r",
+        "Hip bone.l",
+        "Sacrum",
+        "Coccyx"
+      ]
+    }
+  },
+  "weiblich": {
+    "import": [
+      "werkzeuge/quellen/hra/3d-vh-f-fallopian-tube-l.glb",
+      "werkzeuge/quellen/hra/3d-vh-f-fallopian-tube-r.glb",
+      "werkzeuge/quellen/hra/3d-vh-f-ovary-l.glb",
+      "werkzeuge/quellen/hra/3d-vh-f-ovary-r.glb",
+      "werkzeuge/quellen/hra/3d-vh-f-pelvis.glb",
+      "werkzeuge/quellen/hra/3d-vh-f-urinary-bladder.glb",
+      "werkzeuge/quellen/hra/3d-vh-f-uterus.glb"
+    ],
+    "strukturen": {
+      "gebaermutter": [
+        "VH_F_body_of_uterus",
+        "VH_F_fundus_of_uterus",
+        "VH_F_anterior_wall_of_uterus",
+        "VH_F_posterior_wall_of_uterus",
+        "VH_F_cornua",
+        "VH_F_lower_uterine_segment"
+      ],
+      "gebaermutterhals": [
+        "VH_F_cervix",
+        "VH_F_external_cervical_os",
+        "VH_F_internal_cervical_os"
+      ],
+      "eileiter": [
+        "VH_F_ampulla_of_uterine_tube_R",
+        "VH_F_ampulla_of_uterine_tube_L",
+        "VH_F_isthmus_of_fallopian_tube_R",
+        "VH_F_isthmus_of_fallopian_tube_L",
+        "VH_F_uterine_tube_infundibulum_R",
+        "VH_F_uterine_tube_infundibulum_L",
+        "VH_F_fibria_of_uterine_tube_R",
+        "VH_F_fibria_of_uterine_tube_L",
+        "VH_F_abdominal_ostium_of_uterine_tube"
+      ],
+      "eierstoecke": [
+        "VH_F_right_ovary",
+        "VH_F_left_ovary"
+      ],
+      "scheide": [
+        "VH_F_cervicovaginal_junction",
+        {
+          "schlauch": [
+            [
+              -0.0123,
+              0.0736,
+              0.0075,
+              0.0178,
+              0.0078
+            ],
+            [
+              -0.0123,
+              0.0732,
+              0.001,
+              0.0182,
+              0.008
+            ],
+            [
+              -0.0123,
+              0.0718,
+              -0.01,
+              0.017,
+              0.0074
+            ],
+            [
+              -0.0123,
+              0.069,
+              -0.024,
+              0.0155,
+              0.0068
+            ],
+            [
+              -0.0123,
+              0.0645,
+              -0.038,
+              0.0138,
+              0.0062
+            ],
+            [
+              -0.0123,
+              0.06,
+              -0.048,
+              0.012,
+              0.0056
+            ]
+          ]
+        }
+      ],
+      "harnblase": [
+        "VH_F_fundus_of_urinary_bladder_base",
+        "VH_F_fundus_of_urinary_bladder_dome",
+        "VH_F_trigone_of_urinary_bladder",
+        "VH_F_urinary_bladder_neck_smooth_muscle"
+      ],
+      "becken": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_R",
+        "VH_F_pubis_compact_bone_L",
+        "VH_F_sacrum",
+        "VH_F_coccyx"
+      ]
+    }
+  }
+}

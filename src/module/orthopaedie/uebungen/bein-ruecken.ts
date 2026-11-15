@@ -1,0 +1,247 @@
+import type { Uebung } from '../daten/typen';
+
+// Heimübungen für Fuß, Knie, Hüfte und Rücken. Die Figur zu jeder Übung liegt unter
+// ../figuren/<id>.tsx.
+
+export const UEBUNGEN_BEIN: Uebung[] = [
+  // ---------- Fuß und Ferse ----------
+  {
+    id: 'wade-dehnen-wand',
+    name: 'Wade dehnen an der Wand',
+    ziel: 'Dehnt die Wade und entlastet Achillessehne und Ferse.',
+    ausgang: 'Stellen Sie sich vor eine Wand und stützen Sie die Hände in Schulterhöhe ab.',
+    schritte: [
+      'Setzen Sie ein Bein weit nach hinten, die Fußspitzen zeigen zur Wand.',
+      'Die hintere Ferse bleibt am Boden, das hintere Knie ist gestreckt.',
+      'Schieben Sie das Becken langsam zur Wand, bis es in der Wade zieht.',
+    ],
+    dosis: '3 × 30 Sekunden je Seite, 2-mal täglich',
+    achtung: 'Leichtes Ziehen ist gut, stechender Schmerz nicht.',
+  },
+  {
+    id: 'fusssohle-dehnen',
+    name: 'Fußsohle dehnen',
+    ziel: 'Dehnt die Sehnenplatte der Fußsohle – hilft besonders gegen den Anlaufschmerz am Morgen.',
+    ausgang: 'Setzen Sie sich und legen Sie die Ferse auf einen Hocker oder über das andere Knie.',
+    schritte: [
+      'Greifen Sie mit der Hand die Zehen.',
+      'Ziehen Sie die Zehen langsam zum Schienbein, bis es in der Fußsohle zieht.',
+      'Halten Sie die Spannung und atmen Sie ruhig weiter.',
+    ],
+    dosis: '3 × 30 Sekunden, 3-mal täglich – am besten vor den ersten Schritten am Morgen',
+    achtung: 'Leichtes Ziehen in der Fußsohle ist gut, stechender Schmerz nicht.',
+  },
+  {
+    id: 'fuss-rollen',
+    name: 'Fußsohle über einen Ball rollen',
+    ziel: 'Lockert die Fußsohle und lindert Fersenschmerz.',
+    ausgang: 'Setzen Sie sich auf einen Stuhl und legen Sie einen Ball unter die Fußsohle.',
+    schritte: [
+      'Rollen Sie den Fuß langsam von der Ferse bis zu den Zehen vor und zurück.',
+      'Drücken Sie nur so fest, dass es angenehm bleibt.',
+      'Statt des Balls geht auch eine Flasche – gekühlt tut sie bei Reizung gut.',
+    ],
+    dosis: '2 Minuten je Fuß, 2- bis 3-mal täglich',
+    achtung: 'Nicht direkt auf der schmerzhaften Stelle am Fersenknochen pressen.',
+  },
+  {
+    id: 'zehen-greifen',
+    name: 'Handtuch mit den Zehen greifen',
+    ziel: 'Kräftigt die kleinen Muskeln der Fußsohle und stützt das Fußgewölbe.',
+    ausgang: 'Setzen Sie sich und stellen Sie den nackten Fuß auf ein flach ausgelegtes Handtuch.',
+    schritte: [
+      'Krallen Sie die Zehen ein und ziehen Sie das Handtuch ein Stück heran.',
+      'Lösen Sie die Zehen, strecken Sie sie und greifen Sie erneut.',
+      'Die Ferse bleibt dabei am Boden.',
+    ],
+    dosis: '3 × bis das Handtuch ganz herangezogen ist, je Fuß, 1-mal täglich',
+    achtung: 'Bei Krampf in der Fußsohle kurz ausschütteln und dann weitermachen.',
+  },
+  {
+    id: 'fersen-heben-stufe',
+    name: 'Fersen langsam absenken auf der Stufe',
+    ziel: 'Macht die Achillessehne wieder belastbar – die wirksamste Übung bei Achillessehnenschmerz.',
+    ausgang: 'Stellen Sie sich mit dem Vorfuß auf eine Treppenstufe und halten Sie sich am Geländer oder an der Wand fest.',
+    schritte: [
+      'Gehen Sie mit beiden Beinen auf die Zehenspitzen.',
+      'Verlagern Sie das Gewicht auf das betroffene Bein.',
+      'Senken Sie die Ferse auf diesem Bein langsam (3 Sekunden) unter die Stufenkante ab.',
+      'Zurück nach oben mit beiden Beinen. Die Übung gestreckt und mit leicht gebeugtem Knie machen.',
+    ],
+    dosis: '3 × 15 Wiederholungen, gestreckt und gebeugt, 1- bis 2-mal täglich, über 12 Wochen',
+    achtung: 'Leichter Schmerz bis 5 von 10 ist erlaubt, wenn er bis zum nächsten Morgen abklingt.',
+  },
+  {
+    id: 'grosszehe-spreizen',
+    name: 'Großzehe nach innen ziehen',
+    ziel: 'Kräftigt den Muskel, der die Großzehe gerade hält – gut beim Ballenzeh.',
+    ausgang: 'Setzen Sie sich und stellen Sie den nackten Fuß flach auf den Boden.',
+    schritte: [
+      'Bewegen Sie die Großzehe von den anderen Zehen weg nach innen.',
+      'Spreizen Sie dabei alle Zehen so weit wie möglich auseinander.',
+      'Halten Sie 5 Sekunden, dann locker lassen. Anfangs dürfen Sie mit der Hand nachhelfen.',
+    ],
+    dosis: '10 Wiederholungen, 2- bis 3-mal täglich',
+    achtung: 'Die Ferse und der Ballen bleiben am Boden.',
+  },
+
+  // ---------- Knie und Hüfte ----------
+  {
+    id: 'quadrizeps-anspannen',
+    name: 'Oberschenkel anspannen',
+    ziel: 'Kräftigt den vorderen Oberschenkel, der das Knie stützt.',
+    ausgang: 'Setzen Sie sich mit gestreckten Beinen hin und legen Sie eine Handtuchrolle unter das Knie.',
+    schritte: [
+      'Drücken Sie die Kniekehle fest in die Rolle.',
+      'Ziehen Sie dabei die Zehen zu sich, die Ferse hebt leicht ab.',
+      'Halten Sie 5 Sekunden, dann locker lassen.',
+    ],
+    dosis: '10 Wiederholungen, 3-mal täglich',
+    achtung: 'Ruhig weiteratmen, nicht die Luft anhalten.',
+  },
+  {
+    id: 'bein-strecken-sitz',
+    name: 'Bein strecken im Sitzen',
+    ziel: 'Kräftigt den vorderen Oberschenkel und entlastet so das Knie.',
+    ausgang: 'Setzen Sie sich aufrecht auf einen Stuhl, die Füße stehen am Boden.',
+    schritte: [
+      'Strecken Sie ein Bein langsam ganz aus.',
+      'Ziehen Sie die Zehen an und halten Sie 5 Sekunden.',
+      'Senken Sie das Bein langsam wieder ab.',
+    ],
+    dosis: '3 × 10 Wiederholungen je Bein, 1-mal täglich',
+    achtung: 'Wenn es leicht geht, eine Gewichtsmanschette oder Wasserflasche an den Knöchel hängen.',
+  },
+  {
+    id: 'aufstehen-stuhl',
+    name: 'Aufstehen vom Stuhl ohne Hände',
+    ziel: 'Kräftigt Beine und Gesäß für den Alltag.',
+    ausgang: 'Setzen Sie sich vorn auf einen stabilen Stuhl, die Füße hüftbreit unter den Knien.',
+    schritte: [
+      'Strecken Sie die Arme nach vorn oder kreuzen Sie sie vor der Brust.',
+      'Neigen Sie den Oberkörper etwas nach vorn und stehen Sie auf, ohne die Hände zu benutzen.',
+      'Setzen Sie sich langsam und kontrolliert wieder hin.',
+    ],
+    dosis: '3 × 10 Wiederholungen, 1-mal täglich',
+    achtung: 'Die Knie zeigen in Richtung der Fußspitzen und knicken nicht nach innen.',
+  },
+  {
+    id: 'bruecke',
+    name: 'Beckenbrücke',
+    ziel: 'Kräftigt Gesäß und Rücken und stabilisiert Becken und Knie.',
+    ausgang: 'Legen Sie sich auf den Rücken, stellen Sie die Beine auf, die Arme liegen neben dem Körper.',
+    schritte: [
+      'Spannen Sie das Gesäß an.',
+      'Heben Sie das Becken, bis Schultern, Hüfte und Knie eine Linie bilden.',
+      'Halten Sie 5 Sekunden und senken Sie das Becken langsam wieder ab.',
+    ],
+    dosis: '3 × 10 Wiederholungen, 1-mal täglich',
+    achtung: 'Kein Hohlkreuz – nur so hoch, wie das Gesäß die Spannung hält.',
+  },
+  {
+    id: 'seitlage-abspreizen',
+    name: 'Bein in Seitlage anheben',
+    ziel: 'Kräftigt die seitlichen Hüftmuskeln, die das Becken beim Gehen stabil halten.',
+    ausgang: 'Legen Sie sich auf die Seite, der Kopf liegt auf dem unteren Arm, das untere Knie darf leicht gebeugt sein.',
+    schritte: [
+      'Heben Sie das obere Bein gestreckt langsam an, die Zehen zeigen nach vorn.',
+      'Halten Sie kurz oben.',
+      'Senken Sie das Bein langsam wieder ab.',
+    ],
+    dosis: '3 × 10–15 Wiederholungen je Seite, 1-mal täglich',
+    achtung: 'Das Becken kippt nicht nach hinten, das Bein geht nicht nach vorn.',
+  },
+  {
+    id: 'hueftbeuger-dehnen',
+    name: 'Hüftbeuger dehnen',
+    ziel: 'Dehnt die Muskeln vorn an der Hüfte, die bei viel Sitzen verkürzen.',
+    ausgang: 'Knien Sie sich auf ein Bein (Kissen unter das Knie), der andere Fuß steht vorn flach am Boden.',
+    schritte: [
+      'Richten Sie den Oberkörper auf, die Hände liegen an der Hüfte.',
+      'Schieben Sie das Becken langsam nach vorn, bis es vorn an der Hüfte des hinteren Beins zieht.',
+      'Spannen Sie dabei das Gesäß an, kein Hohlkreuz.',
+    ],
+    dosis: '3 × 30 Sekunden je Seite, 1- bis 2-mal täglich',
+    achtung: 'Das vordere Knie bleibt über dem Fuß. Leichtes Ziehen ist gut, Schmerz nicht.',
+  },
+
+  // ---------- Rücken ----------
+  {
+    id: 'knie-zur-brust',
+    name: 'Knie zur Brust ziehen',
+    ziel: 'Dehnt den unteren Rücken und das Gesäß sanft.',
+    ausgang: 'Legen Sie sich auf den Rücken, die Beine liegen ausgestreckt oder aufgestellt.',
+    schritte: [
+      'Ziehen Sie ein Knie mit beiden Händen langsam zur Brust.',
+      'Halten Sie die Dehnung und atmen Sie ruhig.',
+      'Legen Sie das Bein ab und wechseln Sie die Seite. Später auch beide Knie zusammen.',
+    ],
+    dosis: '3 × 30 Sekunden je Seite, 1- bis 2-mal täglich',
+    achtung: 'Der Kopf bleibt auf der Unterlage. Leichtes Ziehen ist gut, stechender Schmerz nicht.',
+  },
+  {
+    id: 'katze-kuh',
+    name: 'Katzenbuckel und Pferderücken',
+    ziel: 'Macht die Wirbelsäule beweglich und lockert verspannte Rückenmuskeln.',
+    ausgang: 'Gehen Sie in den Vierfüßlerstand: Hände unter den Schultern, Knie unter den Hüften.',
+    schritte: [
+      'Machen Sie den Rücken rund wie eine Katze, der Kopf sinkt nach unten.',
+      'Lassen Sie den Rücken dann sanft durchhängen, der Blick geht nach vorn.',
+      'Wechseln Sie langsam und im Rhythmus Ihres Atems.',
+    ],
+    dosis: '10 Wiederholungen, 2-mal täglich',
+    achtung: 'Nur so weit bewegen, wie es angenehm ist.',
+  },
+  {
+    id: 'bauchlage-aufstuetzen',
+    name: 'In Bauchlage auf die Unterarme stützen',
+    ziel: 'Streckt den unteren Rücken sanft – hilft oft bei Schmerz, der ins Bein ausstrahlt.',
+    ausgang: 'Legen Sie sich auf den Bauch, die Arme liegen neben dem Körper.',
+    schritte: [
+      'Stützen Sie sich auf die Unterarme, die Ellenbogen stehen unter den Schultern.',
+      'Das Becken bleibt auf der Unterlage, der Rücken ist locker.',
+      'Halten Sie die Stellung und atmen Sie ruhig, dann wieder ablegen.',
+    ],
+    dosis: '5–10 × 30 Sekunden, mehrmals täglich',
+    achtung: 'Wird der Beinschmerz stärker oder wandert er weiter ins Bein, die Übung abbrechen.',
+  },
+  {
+    id: 'piriformis-dehnen',
+    name: 'Gesäß dehnen in Rückenlage',
+    ziel: 'Dehnt die tiefen Gesäßmuskeln und entlastet den Ischiasnerv.',
+    ausgang: 'Legen Sie sich auf den Rücken und stellen Sie beide Beine auf.',
+    schritte: [
+      'Legen Sie den Knöchel des einen Beins über das Knie des anderen.',
+      'Fassen Sie hinter den Oberschenkel des unteren Beins.',
+      'Ziehen Sie dieses Bein sanft zur Brust, bis es im Gesäß zieht.',
+    ],
+    dosis: '3 × 30 Sekunden je Seite, 2-mal täglich',
+    achtung: 'Leichtes Ziehen im Gesäß ist gut, Schmerz im Knie oder Kribbeln im Bein nicht.',
+  },
+  {
+    id: 'becken-kippen',
+    name: 'Becken kippen in Rückenlage',
+    ziel: 'Lockert den unteren Rücken und schult die tiefe Bauchmuskulatur.',
+    ausgang: 'Legen Sie sich auf den Rücken und stellen Sie die Beine hüftbreit auf.',
+    schritte: [
+      'Drücken Sie den unteren Rücken flach auf die Unterlage, das Becken kippt dabei leicht nach hinten.',
+      'Halten Sie 5 Sekunden und atmen Sie weiter.',
+      'Lassen Sie wieder locker.',
+    ],
+    dosis: '10–15 Wiederholungen, 2-mal täglich',
+    achtung: 'Die Bewegung ist klein – das Gesäß bleibt auf der Unterlage.',
+  },
+  {
+    id: 'vierfuessler-diagonal',
+    name: 'Arm und Bein diagonal strecken',
+    ziel: 'Kräftigt Rücken, Bauch und Gesäß und verbessert das Gleichgewicht.',
+    ausgang: 'Gehen Sie in den Vierfüßlerstand: Hände unter den Schultern, Knie unter den Hüften.',
+    schritte: [
+      'Strecken Sie einen Arm nach vorn und das gegenüberliegende Bein nach hinten.',
+      'Der Rücken bleibt gerade, der Blick geht zum Boden.',
+      'Halten Sie 5 Sekunden, dann wechseln Sie die Seite.',
+    ],
+    dosis: '2 × 10 Wiederholungen je Seite, 1-mal täglich',
+    achtung: 'Kein Hohlkreuz – Arm und Bein nur bis auf Rumpfhöhe heben.',
+  },
+];

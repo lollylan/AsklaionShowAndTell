@@ -1,0 +1,154 @@
+/* Echte Bilder mit Markierungen (Komponente Aufnahmen). Maße in px auf 1920 × 1080. */
+
+@keyframes aufnahme-ein {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(24px);
+  }
+}
+
+@keyframes aufnahme-auf {
+  from {
+    opacity: 0;
+    scale: 0.6;
+  }
+}
+
+.aufnahmen {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+  min-width: 0;
+}
+
+.aufnahme {
+  display: grid;
+  justify-items: start;
+  min-width: 0;
+  margin: 0;
+  animation: aufnahme-ein 800ms var(--raus) both;
+}
+
+.aufnahme figcaption {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 14px;
+  font-family: var(--schrift-titel);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--auf-petrol);
+}
+
+.aufnahme figcaption[data-krank='true'] {
+  color: #f3b48f;
+}
+
+.aufnahme figcaption span {
+  font-family: var(--schrift-text);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--auf-petrol-leise);
+}
+
+.aufnahme__rahmen {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  border-radius: 12px;
+  background: #000;
+  box-shadow: 0 24px 60px -24px rgb(0 0 0 / 0.7);
+}
+
+.aufnahme__rahmen img {
+  display: block;
+  max-width: 100%;
+  max-height: 640px;
+  border-radius: 12px;
+}
+
+.aufnahmen[data-zwei='true'] .aufnahme__rahmen img {
+  max-height: 600px;
+}
+
+/* Markierung: kupferner Ring an der Stelle, Beschriftung daneben. */
+.bildmarke {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  translate: -50% -50%;
+  border: 4px solid var(--kupfer-hell);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgb(0 0 0 / 0.55);
+  animation: aufnahme-auf 600ms var(--raus) both;
+}
+
+.bildmarke > span {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  translate: -50% 0;
+  width: max-content;
+  max-width: 260px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgb(1 44 55 / 0.9);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-wrap: balance;
+  color: #fbdcc8;
+}
+
+/* Nahe am Bildrand wächst die Beschriftung nach innen, ganz unten über den Ring. */
+.bildmarke[data-lage='links'] > span {
+  left: -8px;
+  translate: 0 0;
+}
+
+.bildmarke[data-lage='rechts'] > span {
+  left: auto;
+  right: -8px;
+  translate: 0 0;
+}
+
+.bildmarke[data-oben='true'] > span {
+  top: auto;
+  bottom: calc(100% + 10px);
+}
+
+.aufnahme__quelle {
+  margin-top: 14px;
+  font-size: 17px;
+  color: var(--auf-petrol-leise);
+  opacity: 0.85;
+}
+
+/* Zwei sehr breite Bilder (EKG-Streifen): untereinander, volle Breite. */
+.aufnahmen[data-quer='true'] {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 56px;
+}
+
+.aufnahmen[data-quer='true'] .aufnahme__rahmen,
+.aufnahmen[data-quer='true'] .aufnahme__rahmen img {
+  width: 100%;
+}
+
+/* Auf flachen Streifen ist über und unter dem Ring kein Platz: Beschriftung daneben. */
+.aufnahmen[data-quer='true'] .bildmarke > span,
+.aufnahmen[data-quer='true'] .bildmarke[data-oben='true'] > span {
+  top: 50%;
+  bottom: auto;
+  left: calc(100% + 12px);
+  right: auto;
+  translate: 0 -50%;
+}
+
+.aufnahmen[data-quer='true'] .bildmarke[data-lage='rechts'] > span {
+  left: auto;
+  right: calc(100% + 12px);
+}

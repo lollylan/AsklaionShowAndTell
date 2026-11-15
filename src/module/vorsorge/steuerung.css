@@ -1,0 +1,202 @@
+.vors {
+  display: grid;
+  gap: 44px;
+  max-width: 820px;
+}
+
+.vors h2 {
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.vors__hilfe {
+  max-width: 62ch;
+  margin: 10px 0 12px;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.vors__hilfe[data-fehler='true'] {
+  color: var(--kupfer-dunkel);
+}
+
+/* ---------- Patient ---------- */
+
+.vors__feld {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 12px;
+  margin-bottom: 14px;
+}
+
+.vors__feld .vors__hilfe {
+  grid-column: 2;
+  margin-bottom: 0;
+}
+
+.vors__marke {
+  padding-top: 10px;
+  font-weight: 700;
+  color: var(--petrol);
+}
+
+.vors__wahl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.vors__wahlknopf {
+  min-width: 96px;
+}
+
+.vors__alterknopf {
+  min-width: 52px;
+  padding-inline: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.vors__genau {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 8px;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.vors__genau input {
+  width: 76px;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  caret-color: var(--petrol);
+  transition: border-color 160ms var(--raus);
+}
+
+.vors__genau input:hover {
+  border-color: var(--petrol);
+}
+
+.vors__genau input[aria-invalid='true'] {
+  border-color: var(--kupfer);
+}
+
+.vors__haken {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  margin-left: 108px;
+  cursor: pointer;
+}
+
+.vors__haken input {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.vors__haken small {
+  display: block;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.vors .meldung {
+  margin: 12px 0 0 108px;
+}
+
+/* ---------- Liste ---------- */
+
+.vors__laeuft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 10px 10px 10px 14px;
+  border-radius: 8px;
+  background: var(--kupfer);
+  color: #fff;
+}
+
+.vors__laeuft > span {
+  flex: 1;
+}
+
+.vors__laeuft svg {
+  flex: none;
+}
+
+.vors__laeuft .knopf {
+  border-color: #fff;
+  color: var(--kupfer-dunkel);
+}
+
+.vors__schritte {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.vors__liste {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--linie);
+  list-style: none;
+}
+
+.vors__zeile {
+  display: grid;
+  grid-template-columns: minmax(190px, 1fr) minmax(0, 1.3fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 6px 0 6px 4px;
+  border-bottom: 1px solid var(--linie);
+}
+
+.vors__name {
+  color: var(--text-hell);
+}
+
+.vors__zeile[data-an='true'] .vors__name {
+  font-weight: 700;
+  color: var(--petrol);
+}
+
+.vors__wann {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.vors__zeile[data-an='true'] .vors__wann {
+  color: var(--text);
+}
+
+.vors__wer {
+  display: block;
+  color: var(--text-hell);
+}
+
+.vors__knopf {
+  min-height: 36px;
+  min-width: 112px;
+  padding: 4px 12px;
+}
+
+.vors__quellen {
+  max-width: 78ch;
+  font-size: 12px;
+  color: var(--text-hell);
+}

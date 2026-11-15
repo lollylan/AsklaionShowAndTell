@@ -1,0 +1,1049 @@
+{
+  "gallensteine": {
+    "aufnahmen": [
+      {
+        "datei": "gallensteine-1.jpg",
+        "titel": "Gallenblase mit Stein",
+        "art": "Ultraschall",
+        "urheber": "Nevit Dilmen",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Gallstone_0414092204515.jpg",
+        "marken": [
+          {
+            "x": 0.62,
+            "y": 0.4,
+            "text": "Gallenblase"
+          },
+          {
+            "x": 0.46,
+            "y": 0.58,
+            "text": "Gallenstein"
+          },
+          {
+            "x": 0.44,
+            "y": 0.86,
+            "text": "Schallschatten dahinter"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Die Gallenblase ist mit Galle gefüllt und erscheint deshalb schwarz. Unten darin liegt ein heller Stein.",
+      "Der Stein lässt keinen Schall durch – dahinter entsteht ein dunkler Streifen, der Schallschatten. Daran erkennt man Steine sicher.",
+      "Ob ein Stein Beschwerden macht, zeigt das Bild nicht: Viele Steine bleiben ein Leben lang stumm."
+    ]
+  },
+  "nierensteine": {
+    "aufnahmen": [
+      {
+        "datei": "nierensteine-1.jpg",
+        "titel": "Niere mit Stein",
+        "art": "Ultraschall",
+        "urheber": "Kristoffer Lindskov Hansen, Michael Bachmann Nielsen, Caroline Ewertsen",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Ultrasonography_of_centrally-located_stone_with_posterior_shadowing.jpg",
+        "marken": [
+          {
+            "x": 0.476,
+            "y": 0.35,
+            "text": "Nierenstein"
+          },
+          {
+            "x": 0.476,
+            "y": 0.72,
+            "text": "Schallschatten dahinter"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "In der Mitte der Niere liegt ein heller Stein. Darunter zieht ein dunkler Streifen nach unten: Der Stein schluckt den Schall.",
+      "Steine in der Niere selbst machen oft keine Schmerzen. Eine Kolik entsteht erst, wenn ein Stein in den Harnleiter rutscht und den Urin staut.",
+      "Mit Ultraschall sieht man ohne Strahlung, ob sich Urin in der Niere staut und wie groß ein Stein ist."
+    ]
+  },
+  "fettleber": {
+    "aufnahmen": [
+      {
+        "datei": "fettleber-1.jpg",
+        "titel": "Gesunde Leber",
+        "art": "Ultraschall",
+        "urheber": "Ptrump16",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Abdominal_Ultrasound_Full_Exam_05.jpg",
+        "marken": [
+          {
+            "x": 0.64,
+            "y": 0.27,
+            "text": "Leber"
+          },
+          {
+            "x": 0.335,
+            "y": 0.6,
+            "text": "Niere"
+          }
+        ]
+      },
+      {
+        "datei": "fettleber-2.jpg",
+        "titel": "Fettleber",
+        "art": "Ultraschall",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Steatosis_hepatis_in_der_Sonografie_36M_-_US_-_001.jpg",
+        "marken": [
+          {
+            "x": 0.49,
+            "y": 0.27,
+            "text": "Leber: auffallend hell"
+          },
+          {
+            "x": 0.32,
+            "y": 0.66,
+            "text": "Niere: dunkel"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Eine gesunde Leber ist im Ultraschall etwa so grau wie die Niere darunter.",
+      "Fett in den Leberzellen wirft mehr Schall zurück: Die Leber wird heller als die Niere und wirkt wie mit Milch übergossen.",
+      "Wie viel Fett eingelagert ist, lässt sich so gut abschätzen. Ob die Leber schon vernarbt, zeigen Blutwerte und eine Messung der Lebersteifigkeit."
+    ]
+  },
+  "schilddruesenknoten": {
+    "aufnahmen": [
+      {
+        "datei": "schilddruesenknoten-1.jpg",
+        "titel": "Schilddrüse mit Knoten",
+        "art": "Ultraschall",
+        "urheber": "Nevit Dilmen",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Thyroid_ultrasound_110322134324_1347140.jpg",
+        "marken": [
+          {
+            "x": 0.52,
+            "y": 0.43,
+            "text": "Knoten"
+          },
+          {
+            "x": 0.87,
+            "y": 0.43,
+            "text": "Halsgefäß"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Im Schilddrüsenlappen liegt ein großer, ovaler Knoten mit glattem Rand.",
+      "Im Ultraschall sieht man Größe, Form, Rand und Inhalt eines Knotens. Glatte, gleichmäßige Knoten wie dieser sind meist gutartig.",
+      "Ob ein Knoten genauer untersucht werden muss, entscheiden wir nach diesen Merkmalen – oft genügt eine Kontrolle nach einiger Zeit."
+    ]
+  },
+  "thrombose": {
+    "aufnahmen": [
+      {
+        "datei": "thrombose-1.jpg",
+        "titel": "Oberschenkel mit Farb-Doppler",
+        "art": "Ultraschall",
+        "urheber": "Mikael Häggström",
+        "lizenz": "CC0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Ultrasonography_of_deep_vein_thrombosis_of_the_femoral_vein.jpg",
+        "marken": [
+          {
+            "x": 0.22,
+            "y": 0.24,
+            "text": "Schlagader: Blut fließt"
+          },
+          {
+            "x": 0.68,
+            "y": 0.45,
+            "text": "Vene mit Gerinnsel"
+          },
+          {
+            "x": 0.83,
+            "y": 0.73,
+            "text": "Tiefe Vene: frei"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Farbe zeigt fließendes Blut: Schlagader und tiefe Vene sind voll Farbe.",
+      "Die Vene dazwischen bleibt grau – sie ist durch ein Blutgerinnsel verstopft, dort fließt kein Blut mehr.",
+      "Mit Ultraschall lässt sich eine Beinvenenthrombose schnell und ohne Strahlung nachweisen oder ausschließen."
+    ]
+  },
+  "ultraschall": {
+    "aufnahmen": [
+      {
+        "datei": "ultraschall-1.jpg",
+        "titel": "Rechter Oberbauch",
+        "art": "Ultraschall",
+        "urheber": "Ptrump16",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Abdominal_Ultrasound_Full_Exam_06.jpg",
+        "marken": [
+          {
+            "x": 0.46,
+            "y": 0.32,
+            "text": "Leber"
+          },
+          {
+            "x": 0.31,
+            "y": 0.6,
+            "text": "Niere"
+          },
+          {
+            "x": 0.64,
+            "y": 0.36,
+            "text": "Gallenblase"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "So sieht ein normaler Ultraschall des rechten Oberbauchs aus: oben die Leber, darunter die Niere, rechts die Gallenblase.",
+      "Flüssigkeit wie Galle erscheint schwarz, festes Gewebe grau, Knochen, Steine und Luft hell mit Schatten dahinter.",
+      "Der Schallkopf wird bewegt, so entstehen laufend neue Schnittbilder – das Bild ist immer nur eine Momentaufnahme."
+    ]
+  },
+  "guertelrose": {
+    "aufnahmen": [
+      {
+        "datei": "guertelrose-1.jpg",
+        "titel": "Gürtelrose an Brust und Achsel",
+        "art": "Foto",
+        "urheber": "Fisle",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Herpes_zoster_chest.png",
+        "marken": [
+          {
+            "x": 0.62,
+            "y": 0.64,
+            "text": "Bläschen in Gruppen"
+          },
+          {
+            "x": 0.14,
+            "y": 0.24,
+            "text": "Streifen bis zur Achsel"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Man sieht gerötete Haut mit vielen kleinen, dicht gruppierten Bläschen – in einem Band, das nur auf einer Körperseite von der Brust zur Achsel zieht.",
+      "Das Band folgt genau dem Hautgebiet eines einzelnen Nervs, in dem das Windpocken-Virus wieder aktiv geworden ist. Deshalb brennt und schmerzt es oft schon, bevor man etwas sieht.",
+      "Meist erkennen wir die Gürtelrose auf einen Blick; eine Laboruntersuchung braucht es nur selten."
+    ]
+  },
+  "zeckenstich": {
+    "aufnahmen": [
+      {
+        "datei": "zeckenstich-1.jpg",
+        "titel": "Zecke in der Haut",
+        "art": "Foto",
+        "urheber": "Tomfy",
+        "lizenz": "CC BY 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Tick_bite.jpg",
+        "marken": [
+          {
+            "x": 0.72,
+            "y": 0.55,
+            "text": "Festgesaugte Zecke"
+          },
+          {
+            "x": 0.06,
+            "y": 0.4,
+            "text": "Lineal in Millimetern"
+          }
+        ]
+      },
+      {
+        "datei": "zeckenstich-2.jpg",
+        "titel": "Wanderröte nach Zeckenstich",
+        "art": "Foto",
+        "urheber": "James Gathany, CDC",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Erythema_migrans_-_erythematous_rash_in_Lyme_disease_-_PHIL_9875.jpg",
+        "marken": [
+          {
+            "x": 0.6,
+            "y": 0.56,
+            "text": "Stichstelle"
+          },
+          {
+            "x": 0.2,
+            "y": 0.45,
+            "text": "Roter Ring wandert"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Junge Zecken sind nur ein bis zwei Millimeter groß – kaum größer als ein Mohnkorn. Deshalb fallen sie oft erst beim gründlichen Absuchen auf.",
+      "Die Wanderröte zeigt sich Tage bis Wochen nach dem Stich: ein roter Fleck, der sich langsam nach außen ausbreitet, oft mit blasserer Mitte. Sie ist das typische Zeichen einer Borreliose.",
+      "Eine Wanderröte erkennen wir am Aussehen – ein Bluttest ist dafür nicht nötig. Bitte zeigen Sie sie uns, sie wird mit einem Antibiotikum behandelt."
+    ]
+  },
+  "krampfadern": {
+    "aufnahmen": [
+      {
+        "datei": "krampfadern-1.jpg",
+        "titel": "Krampfadern am Unterschenkel",
+        "art": "Foto",
+        "urheber": "Lakeland1999",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Leg_Before_1.jpg",
+        "marken": [
+          {
+            "x": 0.73,
+            "y": 0.6,
+            "text": "Krampfader tritt hervor"
+          },
+          {
+            "x": 0.86,
+            "y": 0.68,
+            "text": "Bläuliche Venen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Am Unterschenkel und am Knöchel treten geschlängelte, knotig erweiterte Venen unter der Haut hervor.",
+      "In diesen Venen schließen die Klappen nicht mehr richtig. Das Blut sackt nach unten, die Venen weiten sich – daher kommen schwere, müde Beine am Abend.",
+      "Wie die Klappen arbeiten, sehen wir mit einem Ultraschall der Beinvenen. Er ist schmerzlos und zeigt, ob und wie behandelt werden sollte."
+    ]
+  },
+  "halsschmerzen": {
+    "aufnahmen": [
+      {
+        "datei": "halsschmerzen-1.jpg",
+        "titel": "Eitrige Mandelentzündung",
+        "art": "Foto",
+        "urheber": "Nick Berman",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Tonsillitis_Img.jpeg",
+        "marken": [
+          {
+            "x": 0.25,
+            "y": 0.62,
+            "text": "Weißliche Beläge"
+          },
+          {
+            "x": 0.76,
+            "y": 0.68,
+            "text": "Geschwollene Mandel"
+          },
+          {
+            "x": 0.49,
+            "y": 0.37,
+            "text": "Zäpfchen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links und rechts vom Zäpfchen sind die Mandeln gerötet, geschwollen und mit weißlich-gelben Belägen bedeckt.",
+      "So sieht eine eitrige Mandelentzündung aus. Die Schwellung erklärt die Schmerzen beim Schlucken.",
+      "Beläge allein sagen nicht sicher, ob Bakterien oder Viren dahinterstecken. Zusammen mit Fieber, Lymphknoten am Hals und Husten entscheiden wir, ob ein Antibiotikum hilft."
+    ]
+  },
+  "mittelohrentzuendung": {
+    "aufnahmen": [
+      {
+        "datei": "mittelohrentzuendung-1.jpg",
+        "titel": "Gesundes Trommelfell",
+        "art": "Endoskopie",
+        "urheber": "Michael Hawke MD",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:TM_RIGHT_NORMAL.jpg",
+        "marken": [
+          {
+            "x": 0.42,
+            "y": 0.58,
+            "text": "Dünn und durchscheinend"
+          },
+          {
+            "x": 0.685,
+            "y": 0.33,
+            "text": "Gehörknöchelchen schimmert durch"
+          }
+        ]
+      },
+      {
+        "datei": "mittelohrentzuendung-2.jpg",
+        "titel": "Mittelohrentzündung",
+        "art": "Endoskopie",
+        "urheber": "Michael Hawke MD",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Acute_Otitis_Media_Stage_of_Resolution.jpg",
+        "marken": [
+          {
+            "x": 0.6,
+            "y": 0.66,
+            "text": "Eiter wölbt Trommelfell vor"
+          },
+          {
+            "x": 0.18,
+            "y": 0.63,
+            "text": "Nur Ohrenschmalz"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Ein gesundes Trommelfell ist dünn, grau und glänzend – man kann fast hindurchsehen. Bei der Entzündung ist es gerötet, trüb und nach außen gewölbt.",
+      "Dahinter hat sich eitrige Flüssigkeit gesammelt. Sie drückt von innen gegen das Trommelfell – das macht die starken Ohrenschmerzen und das gedämpfte Hören.",
+      "Mit dem Ohrenspiegel sehen wir das in wenigen Sekunden, und es tut nicht weh."
+    ]
+  },
+  "heuschnupfen": {
+    "aufnahmen": [
+      {
+        "datei": "heuschnupfen-1.jpg",
+        "titel": "Blütenpollen, stark vergrößert",
+        "art": "Mikroskop",
+        "urheber": "Dartmouth Electron Microscope Facility, Dartmouth College",
+        "lizenz": "Public Domain",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Misc_pollen_colorized.jpg",
+        "marken": [
+          {
+            "x": 0.49,
+            "y": 0.31,
+            "text": "Ein einzelnes Pollenkorn"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Das sind Blütenpollen verschiedener Pflanzen unter dem Elektronenmikroskop, nachträglich eingefärbt. Jedes Korn ist kleiner als ein Zehntel Millimeter.",
+      "Mit bloßem Auge sieht man sie nicht – sie fliegen mit dem Wind und landen auf Augen und Nasenschleimhaut. Bei Heuschnupfen hält das Abwehrsystem sie fälschlich für gefährlich.",
+      "Welche Pollen Sie stören, finden wir mit einem Haut- oder Bluttest heraus."
+    ]
+  },
+  "eisenmangel": {
+    "aufnahmen": [
+      {
+        "datei": "eisenmangel-1.jpg",
+        "titel": "Blut bei Eisenmangel",
+        "art": "Mikroskop",
+        "urheber": "Roberto J. Galindo",
+        "lizenz": "CC BY-SA 3.0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:AnemiaFrote.jpg",
+        "marken": [
+          {
+            "x": 0.35,
+            "y": 0.39,
+            "text": "Blass: nur ein Ring"
+          },
+          {
+            "x": 0.55,
+            "y": 0.27,
+            "text": "Abwehrzelle zum Vergleich"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Man sieht rote Blutkörperchen unter dem Mikroskop. Normal sind sie kräftig rot gefärbt; hier sind viele klein und in der Mitte blass – nur ein dünner Ring ist noch rot.",
+      "Ohne Eisen kann der Körper zu wenig roten Blutfarbstoff bilden. Die Zellen transportieren dann weniger Sauerstoff – daher kommen Müdigkeit und Luftnot bei Belastung.",
+      "Meist reichen uns das Blutbild und der Eisenspeicherwert (Ferritin); den Blick durchs Mikroskop braucht man nur selten."
+    ]
+  },
+  "diabetes-typ-2": {
+    "aufnahmen": [
+      {
+        "datei": "diabetes-typ-2-1.jpg",
+        "titel": "Gesunder Augenhintergrund",
+        "art": "Foto",
+        "urheber": "National Eye Institute (NIH)",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Fundus_photograph-normal_retina_EDA06.JPG",
+        "marken": [
+          {
+            "x": 0.11,
+            "y": 0.42,
+            "text": "Sehnerv"
+          },
+          {
+            "x": 0.51,
+            "y": 0.5,
+            "text": "Stelle des schärfsten Sehens"
+          }
+        ]
+      },
+      {
+        "datei": "diabetes-typ-2-2.jpg",
+        "titel": "Netzhautschaden durch Diabetes",
+        "art": "Foto",
+        "urheber": "Shaofeng Hao, Changyan Liu, Na Li u. a.",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Fundus_-_diabetic_retinopathy.png",
+        "marken": [
+          {
+            "x": 0.3,
+            "y": 0.4,
+            "text": "Sehnerv"
+          },
+          {
+            "x": 0.71,
+            "y": 0.2,
+            "text": "Gelbliche Ablagerungen"
+          },
+          {
+            "x": 0.72,
+            "y": 0.5,
+            "text": "Stelle des schärfsten Sehens"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Zuerst ein gesunder Augenhintergrund: gleichmäßig orange Netzhaut, feine Blutgefäße. Beim Diabetes sieht man kleine gelbliche Flecken – Ablagerungen aus undichten, geschädigten Äderchen.",
+      "Zu viel Zucker im Blut schädigt über Jahre die kleinsten Blutgefäße. Lange merkt man davon nichts; erst wenn die Schäden die Stelle des schärfsten Sehens erreichen, wird das Sehen schlechter.",
+      "Deshalb gehören Menschen mit Diabetes regelmäßig zur Augenärztin oder zum Augenarzt – früh erkannt, lässt sich das Sehen meist erhalten."
+    ]
+  },
+  "ekg": {
+    "aufnahmen": [
+      {
+        "datei": "ekg-1.jpg",
+        "titel": "Normaler Herzrhythmus",
+        "art": "EKG",
+        "urheber": "Andrewmeyerson",
+        "lizenz": "CC BY-SA 3.0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Normal_Sinus_Rhythm_Unlabeled.jpg",
+        "marken": [
+          {
+            "x": 0.256,
+            "y": 0.62,
+            "text": "P-Welle: Vorhöfe"
+          },
+          {
+            "x": 0.504,
+            "y": 0.42,
+            "text": "Zacke: Herzschlag der Kammern"
+          },
+          {
+            "x": 0.768,
+            "y": 0.58,
+            "text": "T-Welle: Erholung"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "So sieht ein normales EKG aus: Jeder Herzschlag ergibt dieselbe Form, in gleichmäßigen Abständen.",
+      "Erst kommt die kleine P-Welle, wenn sich die Vorhöfe zusammenziehen. Dann die hohe Zacke, wenn die Herzkammern das Blut auswerfen. Danach die T-Welle, wenn sie sich erholen.",
+      "An Abständen und Form erkennen wir, ob das Herz regelmäßig schlägt und der Strom ungestört durch den Herzmuskel läuft."
+    ]
+  },
+  "vorhofflimmern": {
+    "aufnahmen": [
+      {
+        "datei": "vorhofflimmern-1.jpg",
+        "titel": "Normaler Rhythmus",
+        "art": "EKG",
+        "urheber": "CardioNetworks (ECGpedia), Drj",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Nsr_(CardioNetworks_ECGpedia).jpg",
+        "marken": [
+          {
+            "x": 0.195,
+            "y": 0.76,
+            "text": "P-Welle vor jedem Schlag"
+          },
+          {
+            "x": 0.46,
+            "y": 0.4,
+            "text": "Gleichmäßige Abstände"
+          }
+        ]
+      },
+      {
+        "datei": "vorhofflimmern-2.jpg",
+        "titel": "Vorhofflimmern",
+        "art": "EKG",
+        "urheber": "CardioNetworks (ECGpedia)",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Afib_ecg_(CardioNetworks_ECGpedia).jpg",
+        "marken": [
+          {
+            "x": 0.82,
+            "y": 0.6,
+            "text": "Unregelmäßige Abstände"
+          },
+          {
+            "x": 0.185,
+            "y": 0.69,
+            "text": "Keine P-Welle"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Beim normalen Rhythmus steht vor jedem Herzschlag eine kleine P-Welle, und die Abstände sind gleich. Bei Vorhofflimmern fehlt die P-Welle, und die Schläge kommen völlig unregelmäßig.",
+      "Die Vorhöfe ziehen sich nicht mehr geordnet zusammen, sondern flimmern nur. Deshalb ist der Puls unregelmäßig – manche spüren das als Herzstolpern, viele gar nicht.",
+      "Ein EKG genügt, um Vorhofflimmern sicher festzustellen. Tritt es nur ab und zu auf, hilft ein Langzeit-EKG."
+    ]
+  },
+  "schlafapnoe": {
+    "aufnahmen": [
+      {
+        "datei": "schlafapnoe-1.jpg",
+        "titel": "Atemtherapie-Gerät mit Maske",
+        "art": "Foto",
+        "urheber": "Infrogmation",
+        "lizenz": "CC BY-SA 4.0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:ResMed_CPAP_machine_and_mask.jpg",
+        "marken": [
+          {
+            "x": 0.38,
+            "y": 0.53,
+            "text": "Maske über Nase und Mund"
+          },
+          {
+            "x": 0.6,
+            "y": 0.25,
+            "text": "Gerät: sanfter Luftdruck"
+          },
+          {
+            "x": 0.78,
+            "y": 0.65,
+            "text": "Wasser zum Befeuchten"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Das ist ein CPAP-Gerät mit Schlauch und Maske. Die Maske wird nachts mit Bändern am Kopf gehalten.",
+      "Das Gerät bläst Luft mit leichtem Überdruck in die Atemwege. So bleibt der Rachen im Schlaf offen, Atemaussetzer und Schnarchen hören auf.",
+      "Viele schlafen damit schon nach kurzer Eingewöhnung deutlich erholter."
+    ]
+  },
+  "langzeitmessung": {
+    "aufnahmen": [
+      {
+        "datei": "langzeitmessung-1.jpg",
+        "titel": "Langzeit-EKG angelegt",
+        "art": "Foto",
+        "urheber": "K6ka",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:3-Lead_Holter_monitor_placement.jpg",
+        "marken": [
+          {
+            "x": 0.385,
+            "y": 0.27,
+            "text": "Klebe-Elektrode"
+          },
+          {
+            "x": 0.5,
+            "y": 0.79,
+            "text": "Kleiner Rekorder"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "So sieht ein angelegtes Langzeit-EKG aus: wenige Klebe-Elektroden auf der Brust, dünne Kabel und ein kleiner Rekorder am Gürtel.",
+      "Der Rekorder zeichnet jeden Herzschlag über 24 Stunden auf – auch nachts. So finden wir Rhythmusstörungen, die nur ab und zu auftreten.",
+      "Das Gerät ist leicht und stört im Alltag kaum. Nur duschen sollten Sie in dieser Zeit nicht."
+    ]
+  },
+  "lungenfunktion": {
+    "aufnahmen": [
+      {
+        "datei": "lungenfunktion-1.jpg",
+        "titel": "Lungenfunktion im Sitzen",
+        "art": "Foto",
+        "urheber": "Jmarchn",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:DoingSpirometry.JPG",
+        "marken": [
+          {
+            "x": 0.26,
+            "y": 0.1,
+            "text": "Mundstück, Nase zu"
+          },
+          {
+            "x": 0.77,
+            "y": 0.55,
+            "text": "Gerät zeichnet die Kurve"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Bei der Lungenfunktion sitzen Sie aufrecht, eine Klammer verschließt die Nase, und Sie atmen nur durch das Mundstück.",
+      "Das Gerät misst, wie viel Luft Sie ausatmen und wie schnell. Daraus entsteht eine Kurve, an der wir enge Atemwege wie bei Asthma oder COPD erkennen.",
+      "Wichtig ist kräftiges Mitmachen: tief einatmen, dann mit aller Kraft und bis zum Schluss auspusten."
+    ]
+  },
+  "copd": {
+    "aufnahmen": [
+      {
+        "datei": "copd-1.jpg",
+        "titel": "Gesunde Lunge",
+        "art": "Röntgen",
+        "urheber": "Mikael Häggström",
+        "lizenz": "CC0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Normal_posteroanterior_(PA)_chest_radiograph_(X-ray).jpg",
+        "marken": [
+          {
+            "x": 0.22,
+            "y": 0.42,
+            "text": "Gesunde Lunge"
+          },
+          {
+            "x": 0.24,
+            "y": 0.85,
+            "text": "Gewölbtes Zwerchfell"
+          },
+          {
+            "x": 0.57,
+            "y": 0.55,
+            "text": "Herz"
+          }
+        ]
+      },
+      {
+        "datei": "copd-2.jpg",
+        "titel": "Lunge bei COPD",
+        "art": "Röntgen",
+        "urheber": "James Heilman, MD",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Emphysema2008.jpg",
+        "marken": [
+          {
+            "x": 0.22,
+            "y": 0.42,
+            "text": "Überblähte Lunge"
+          },
+          {
+            "x": 0.26,
+            "y": 0.84,
+            "text": "Flaches Zwerchfell"
+          },
+          {
+            "x": 0.52,
+            "y": 0.53,
+            "text": "Schmales Herz"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links eine gesunde Lunge, rechts eine Lunge bei COPD: Sie ist überbläht, wirkt dunkler und drückt das Zwerchfell flach nach unten.",
+      "Durch die verengten Bronchien kommt die Luft schlecht wieder heraus und bleibt in der Lunge gefangen – deshalb fällt vor allem das Ausatmen schwer.",
+      "Das Röntgenbild hilft vor allem, andere Ursachen der Luftnot auszuschließen. Ob eine COPD vorliegt und wie stark, zeigt die Lungenfunktionsprüfung."
+    ]
+  },
+  "herzschwaeche": {
+    "aufnahmen": [
+      {
+        "datei": "herzschwaeche-1.jpg",
+        "titel": "Gesundes Herz",
+        "art": "Röntgen",
+        "urheber": "Mikael Häggström",
+        "lizenz": "CC0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Normal_posteroanterior_(PA)_chest_radiograph_(X-ray).jpg",
+        "marken": [
+          {
+            "x": 0.55,
+            "y": 0.65,
+            "text": "Herz normal groß"
+          }
+        ]
+      },
+      {
+        "datei": "herzschwaeche-2.jpg",
+        "titel": "Vergrößertes Herz",
+        "art": "Röntgen",
+        "urheber": "SCiardullo",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Cardiomegalia.JPG",
+        "marken": [
+          {
+            "x": 0.6,
+            "y": 0.63,
+            "text": "Stark vergrößertes Herz"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Gesund nimmt das Herz im Röntgenbild weniger als die Hälfte der Brustbreite ein. Ein geschwächtes Herz weitet sich oft aus und wird deutlich größer.",
+      "Wie gut das Herz pumpt, sieht man im Röntgenbild nicht – das zeigt der Herzultraschall.",
+      "Geröntgt wird vor allem bei zunehmender Luftnot: Das Bild zeigt, ob sich Wasser in der Lunge gestaut hat."
+    ]
+  },
+  "osteoporose": {
+    "aufnahmen": [
+      {
+        "datei": "osteoporose-1.jpg",
+        "titel": "Lendenwirbelsäule von der Seite",
+        "art": "Röntgen",
+        "urheber": "REI MOMOMURA",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Balloon_kyphoplasty_for_osteoporotic_vertebral_fracture.jpg",
+        "marken": [
+          {
+            "x": 0.42,
+            "y": 0.17,
+            "text": "Gesunder Wirbel"
+          },
+          {
+            "x": 0.4,
+            "y": 0.47,
+            "text": "Eingebrochener Wirbel"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Die Wirbel darüber und darunter sind kastenförmig. Der mittlere Wirbel ist eingesunken und vorne niedriger – ein typischer Bruch bei Osteoporose.",
+      "Solche Brüche entstehen oft ohne Sturz, etwa beim Heben oder Bücken. Manche schmerzen plötzlich stark, andere bleiben unbemerkt und machen den Rücken mit der Zeit runder.",
+      "Das Röntgenbild zeigt den Bruch. Wie fest der Knochen ist, misst die Knochendichtemessung."
+    ]
+  },
+  "arthrose": {
+    "aufnahmen": [
+      {
+        "datei": "arthrose-1.jpg",
+        "titel": "Fingergelenke",
+        "art": "Röntgen",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Bouchard-Arthrose_rechts_88W_-_CR_ap_-_001.jpg",
+        "marken": [
+          {
+            "x": 0.454,
+            "y": 0.31,
+            "text": "Knochenzacken am Gelenk"
+          },
+          {
+            "x": 0.865,
+            "y": 0.6,
+            "text": "Verformtes Mittelgelenk"
+          },
+          {
+            "x": 0.41,
+            "y": 0.665,
+            "text": "Gesundes Grundgelenk"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "An den Mittelgelenken der Finger ist der Gelenkspalt schmal, am Rand haben sich Knochenzacken gebildet – man tastet sie als harte Knoten. Die Grundgelenke darunter sind noch unauffällig.",
+      "Den Knorpel selbst zeigt das Röntgenbild nicht. Seinen Verlust erkennt man daran, dass die Knochen enger zusammenrücken.",
+      "Wie stark die Beschwerden sind, lässt sich am Bild kaum ablesen. Für die Behandlung zählt, wie es Ihnen im Alltag geht."
+    ]
+  },
+  "gicht": {
+    "aufnahmen": [
+      {
+        "datei": "gicht-1.jpg",
+        "titel": "Großzehe von oben",
+        "art": "Röntgen",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Gicht_im_Roentgenbild_Grosszehengrundgelenk_85M_-_CR_schraeg_-_001.jpg",
+        "marken": [
+          {
+            "x": 0.09,
+            "y": 0.55,
+            "text": "Gichtknoten"
+          },
+          {
+            "x": 0.33,
+            "y": 0.58,
+            "text": "Knochen angegriffen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Am Grundgelenk der großen Zehe wölbt sich ein Gichtknoten aus abgelagerten Harnsäurekristallen vor. Daneben ist der Knochen wie angenagt.",
+      "Solche Schäden entstehen erst nach Jahren mit wiederholten Anfällen und dauerhaft zu hoher Harnsäure – eine gute Senkung der Harnsäure beugt ihnen vor.",
+      "Für den akuten Anfall braucht man meist kein Röntgenbild. Es zeigt, ob das Gelenk schon Schaden genommen hat."
+    ]
+  },
+  "schlaganfall": {
+    "aufnahmen": [
+      {
+        "datei": "schlaganfall-1.jpg",
+        "titel": "Kopf-CT nach einem Hirninfarkt",
+        "art": "CT",
+        "urheber": "Lucien Monfils",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:CT_Brain_MCA_Infarct.jpg",
+        "marken": [
+          {
+            "x": 0.26,
+            "y": 0.47,
+            "text": "Nicht durchblutetes Gebiet"
+          },
+          {
+            "x": 0.77,
+            "y": 0.47,
+            "text": "Gesunde Seite"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Der dunklere, keilförmige Bereich auf einer Seite des Gehirns wurde nicht mehr durchblutet – dort sind Nervenzellen zugrunde gegangen.",
+      "Ein so großes Gebiet führt zu einer Lähmung der anderen Körperhälfte und oft zu weiteren Ausfällen.",
+      "In den ersten Stunden sieht das CT oft noch normal aus. Es wird trotzdem sofort gemacht, um eine Blutung auszuschließen, bevor das Gerinnsel aufgelöst wird."
+    ]
+  },
+  "demenz": {
+    "aufnahmen": [
+      {
+        "datei": "demenz-1.jpg",
+        "titel": "Gesundes Gehirn",
+        "art": "MRT",
+        "urheber": "Avinash Chandra, George Dervenoulas & Marios Politis for the Alzheimer's Disease Neuroimaging Initiative",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Control_MCI_AD_-_T1.jpg",
+        "marken": [
+          {
+            "x": 0.49,
+            "y": 0.44,
+            "text": "Schmale Hirnkammern"
+          }
+        ]
+      },
+      {
+        "datei": "demenz-2.jpg",
+        "titel": "Gehirn bei Alzheimer",
+        "art": "MRT",
+        "urheber": "Avinash Chandra, George Dervenoulas & Marios Politis for the Alzheimer's Disease Neuroimaging Initiative",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Control_MCI_AD_-_T1.jpg",
+        "marken": [
+          {
+            "x": 0.53,
+            "y": 0.63,
+            "text": "Erweiterte Hirnkammern"
+          },
+          {
+            "x": 0.22,
+            "y": 0.42,
+            "text": "Weite Hirnfurchen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Bei Alzheimer gehen Nervenzellen verloren, das Gehirn schrumpft: Die Furchen werden weiter, die mit Wasser gefüllten Kammern in der Mitte größer.",
+      "Etwas Schrumpfen ist im Alter normal – das Bild allein stellt keine Demenz fest.",
+      "Die Bildgebung dient vor allem dazu, andere, teils behandelbare Ursachen zu erkennen, etwa Durchblutungsstörungen, einen Tumor oder einen Wasserstau im Gehirn."
+    ]
+  },
+  "khk": {
+    "aufnahmen": [
+      {
+        "datei": "khk-1.jpg",
+        "titel": "Engstelle im Herzkranzgefäß",
+        "art": "Angiografie",
+        "urheber": "6129bm",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten, Kontrast angepasst",
+        "quelle": "https://commons.wikimedia.org/wiki/File:High_degree_stenosis_in_proximal_LAD.jpg",
+        "marken": [
+          {
+            "x": 0.42,
+            "y": 0.25,
+            "text": "Engstelle"
+          }
+        ]
+      },
+      {
+        "datei": "khk-2.jpg",
+        "titel": "Nach Aufdehnen und Stent",
+        "art": "Angiografie",
+        "urheber": "6129bm",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten, Kontrast angepasst",
+        "quelle": "https://commons.wikimedia.org/wiki/File:FInal_result_after_angioplasty_and_stent_placement.jpg",
+        "marken": [
+          {
+            "x": 0.42,
+            "y": 0.24,
+            "text": "Gefäß wieder offen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Kontrastmittel macht die Herzkranzgefäße sichtbar. Im ersten Bild ist ein großes Gefäß kurz nach seinem Abgang stark verengt, dahinter kommt nur wenig Blut an.",
+      "Ein kleiner Ballon dehnt die Engstelle auf, ein Stent – ein feines Metallgitter – hält sie offen. Im zweiten Bild ist das Gefäß wieder gut durchgängig.",
+      "Die Herzkatheter-Untersuchung macht man, wenn Beschwerden oder Tests auf eine bedeutsame Engstelle hinweisen."
+    ]
+  },
+  "pavk": {
+    "aufnahmen": [
+      {
+        "datei": "pavk-1.jpg",
+        "titel": "Beinschlagader am Oberschenkel",
+        "art": "Angiografie",
+        "urheber": "Drquochoai",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Multiple_nearly_occlusion_of_left_superficial_femoral_artery_and_stented.jpg",
+        "marken": [
+          {
+            "x": 0.372,
+            "y": 0.24,
+            "text": "Engstelle"
+          },
+          {
+            "x": 0.54,
+            "y": 0.71,
+            "text": "Engstelle"
+          },
+          {
+            "x": 0.22,
+            "y": 0.56,
+            "text": "Umgehungsgefäße"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Die Schlagader im Oberschenkel ist mit Kontrastmittel hell dargestellt. An zwei Stellen ist sie fast verschlossen.",
+      "Rundherum sind viele feine Umgehungsgefäße gewachsen – genau diese fördert das tägliche Gehtraining.",
+      "Diese Untersuchung braucht man erst, wenn eine Aufdehnung oder Operation geplant ist. Zur Diagnose reichen meist Blutdruckmessung an den Beinen und Ultraschall."
+    ]
+  },
+  "darmkrebsvorsorge": {
+    "nach": "ablauf",
+    "aufnahmen": [
+      {
+        "datei": "darmkrebsvorsorge-1.jpg",
+        "titel": "Polyp im Dickdarm",
+        "art": "Endoskopie",
+        "urheber": "邱鈺鋒",
+        "lizenz": "CC BY-SA 4.0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Colon-Polyp.jpg",
+        "marken": [
+          {
+            "x": 0.71,
+            "y": 0.42,
+            "text": "Polyp"
+          },
+          {
+            "x": 0.17,
+            "y": 0.36,
+            "text": "Gesunde Darmschleimhaut"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Bei der Darmspiegelung sieht man hier einen rundlichen Polyp, der aus der sonst glatten Darmschleimhaut wächst.",
+      "Aus solchen Polypen kann über viele Jahre Darmkrebs entstehen.",
+      "Meist wird der Polyp gleich bei der Spiegelung mit einer kleinen Schlinge entfernt – das spüren Sie nicht, und aus ihm kann dann kein Krebs mehr werden."
+    ]
+  }
+}

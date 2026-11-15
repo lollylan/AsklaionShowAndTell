@@ -1,0 +1,591 @@
+.reise {
+  display: grid;
+  gap: 44px;
+  max-width: 820px;
+}
+
+.reise h2 {
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.reise__bezug {
+  font-family: var(--schrift-text);
+  font-weight: 400;
+  color: var(--text-hell);
+}
+
+.reise__leer,
+.reise__hilfe {
+  max-width: 62ch;
+  color: var(--text-hell);
+}
+
+.reise__hilfe {
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.reise__zwischen {
+  margin: 28px 0 10px;
+  font-family: var(--schrift-text);
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+/* ---------- Reiseart ---------- */
+
+.stile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stil {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+  text-align: left;
+  transition:
+    background-color 160ms var(--raus),
+    border-color 160ms var(--raus),
+    color 160ms var(--raus);
+}
+
+.stil strong {
+  color: var(--petrol);
+}
+
+.stil span {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.stil:hover {
+  border-color: var(--petrol);
+}
+
+.stil[aria-pressed='true'] {
+  border-color: var(--petrol);
+  background: var(--petrol);
+}
+
+.stil[aria-pressed='true'] strong {
+  color: #fff;
+}
+
+.stil[aria-pressed='true'] span {
+  color: var(--auf-petrol-leise);
+}
+
+/* ---------- Route ---------- */
+
+.route {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--linie);
+  list-style: none;
+}
+
+.route__zeile {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--linie);
+  transition: background-color 160ms var(--raus);
+}
+
+.route__zeile[data-aktiv='true'] {
+  background: var(--petrol);
+}
+
+.route__land {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto auto;
+  align-items: baseline;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+  min-height: 46px;
+  padding: 10px 8px 10px 12px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+}
+
+.route__zeile:not([data-aktiv='true']) .route__land:hover {
+  background: var(--petrol-hauch);
+}
+
+.route__nr {
+  color: var(--text-hell);
+  font-variant-numeric: tabular-nums;
+}
+
+.route__name {
+  overflow: hidden;
+  font-weight: 700;
+  color: var(--petrol);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.route__info {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.route__zeile[data-aktiv='true'] :is(.route__nr, .route__info) {
+  color: var(--auf-petrol-leise);
+}
+
+.route__zeile[data-aktiv='true'] .route__name {
+  color: #fff;
+}
+
+.route__weg {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 46px;
+  border: 0;
+  background: transparent;
+  color: var(--text-hell);
+}
+
+.route__weg:hover {
+  color: var(--kupfer-dunkel);
+  background: var(--warmweiss);
+}
+
+.route__zeile[data-aktiv='true'] .route__weg {
+  color: var(--auf-petrol-leise);
+}
+
+.route__zeile[data-aktiv='true'] .route__weg:hover {
+  background: var(--petrol-dunkel);
+  color: #fff;
+}
+
+.route__zeile[data-aktiv='true'] :focus-visible {
+  outline-color: #fff;
+  outline-offset: -3px;
+}
+
+.reise__schritte {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 28px;
+}
+
+/* ---------- Länderauswahl ---------- */
+
+.suchfeld {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 380px;
+  min-height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--petrol);
+  border-radius: 8px;
+  background: var(--flaeche);
+  color: var(--petrol);
+}
+
+.suchfeld:focus-within {
+  outline: 2px solid var(--petrol-hell);
+  outline-offset: 2px;
+}
+
+.suchfeld input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text);
+  caret-color: var(--kupfer);
+}
+
+.suchfeld input::placeholder {
+  color: var(--text-hell);
+  opacity: 1;
+}
+
+.laenderliste {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 6px;
+  max-height: 196px;
+  margin: 12px 0 0;
+  padding: 12px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+  overflow-y: auto;
+  list-style: none;
+}
+
+.landknopf {
+  min-height: 34px;
+  padding: 5px 13px;
+  border: 1px solid var(--linie);
+  border-radius: 999px;
+  background: var(--flaeche);
+  color: var(--text);
+  transition:
+    background-color 160ms var(--raus),
+    border-color 160ms var(--raus),
+    color 160ms var(--raus);
+}
+
+.landknopf:hover {
+  border-color: var(--petrol);
+  color: var(--petrol);
+}
+
+.landknopf[aria-pressed='true'] {
+  border-color: var(--petrol);
+  background: var(--petrol);
+  color: #fff;
+}
+
+.landknopf[aria-pressed='true']:hover {
+  border-color: var(--petrol-hell);
+  background: var(--petrol-hell);
+  color: #fff;
+}
+
+/* ---------- Schutz und Impfungen ---------- */
+
+.laeuft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 10px 10px 10px 14px;
+  border-radius: 8px;
+  background: var(--kupfer);
+  color: #fff;
+}
+
+.laeuft > span {
+  flex: 1;
+}
+
+.laeuft svg {
+  flex: none;
+}
+
+.laeuft .knopf {
+  border-color: #fff;
+  color: var(--kupfer-dunkel);
+}
+
+.schutz {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--linie);
+  list-style: none;
+}
+
+.schutz__zeile {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.1fr) 130px minmax(0, 1.4fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 6px 0 6px 4px;
+  border-bottom: 1px solid var(--linie);
+}
+
+.schutz__haken {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.schutz__haken input {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.schutz__name {
+  font-weight: 700;
+  color: var(--petrol);
+}
+
+.schutz__zeile[data-zeigen='false'] .schutz__name {
+  font-weight: 400;
+  color: var(--text-hell);
+}
+
+.schutz__stufe {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.schutz__zeile[data-stufe='reiseart'] .schutz__stufe {
+  color: var(--kupfer-dunkel);
+  font-weight: 700;
+}
+
+.schutz__grund {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.schutz__knopf {
+  min-height: 36px;
+  min-width: 112px;
+  padding: 4px 12px;
+}
+
+.themen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ---------- Fachhinweise ---------- */
+
+.fach {
+  padding: 20px 22px 22px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--warmweiss);
+}
+
+.fach h2 {
+  margin-bottom: 2px;
+}
+
+.fach h3 {
+  margin: 18px 0 6px;
+  font-family: var(--schrift-text);
+  font-size: 14px;
+  color: var(--text);
+}
+
+.fach ul {
+  display: grid;
+  gap: 6px;
+  max-width: 78ch;
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+.fach p {
+  font-size: 14px;
+}
+
+.malaria {
+  border-collapse: collapse;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.malaria th,
+.malaria td {
+  padding: 6px 22px 6px 0;
+  border-bottom: 1px solid var(--linie);
+  text-align: left;
+}
+
+.malaria th {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.malaria td:last-child {
+  font-weight: 700;
+  color: var(--petrol);
+}
+
+.legende {
+  display: grid;
+  gap: 2px;
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.legende div {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+}
+
+.legende dt {
+  font-weight: 700;
+}
+
+.legende dd {
+  margin: 0;
+}
+
+.reise__quellen {
+  display: grid;
+  gap: 6px;
+  max-width: 78ch;
+  font-size: 12px;
+  color: var(--text-hell);
+}
+
+@media (max-width: 1280px) {
+  .schutz__zeile {
+    grid-template-columns: minmax(160px, 1fr) minmax(0, 1fr) auto;
+  }
+
+  .schutz__stufe {
+    display: none;
+  }
+}
+
+/* ---------- Seiten zum gezeigten Land ---------- */
+
+.reise__seiten {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.reise__tastenhinweis {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.reise__tastenhinweis kbd {
+  padding: 1px 7px;
+  border: 1px solid var(--linie);
+  border-radius: 5px;
+  font: inherit;
+  font-size: 12px;
+}
+
+/* ---------- Ausbrüche und CRM-Links ---------- */
+
+.route__ausbruch {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--kupfer-dunkel);
+  white-space: nowrap;
+}
+
+.route__zeile[data-aktiv='true'] .route__ausbruch {
+  color: #fff;
+}
+
+.ausbrueche {
+  display: grid;
+  gap: 0;
+  max-width: 78ch;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ausbruch {
+  padding: 10px 0 12px;
+  border-bottom: 1px solid var(--linie);
+}
+
+.ausbruch:first-child {
+  padding-top: 4px;
+}
+
+.ausbruch p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ausbruch__kopf {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  align-items: baseline;
+  margin-bottom: 4px !important;
+}
+
+.ausbruch__kopf span {
+  font-size: 12px;
+  color: var(--text-hell);
+}
+
+.ausbruch[data-ernst='hoch'] .ausbruch__kopf :is(strong, span) {
+  color: var(--kupfer-dunkel);
+}
+
+.ausbruch[data-ernst='hoch'] .ausbruch__kopf span {
+  font-weight: 700;
+}
+
+.ausbruch__quelle,
+.crm__link {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--petrol);
+  text-underline-offset: 3px;
+}
+
+.crm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  align-items: baseline;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--linie);
+}
+
+.crm__titel {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.kartenwahl {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  margin-top: 16px;
+}
+
+.kartenwahl__bild {
+  display: block;
+  width: 220px;
+  height: auto;
+  border: 1px solid var(--linie);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.kartenwahl__knoepfe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

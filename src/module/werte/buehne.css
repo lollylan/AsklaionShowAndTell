@@ -1,0 +1,361 @@
+/* Bühne „Werte einordnen“. Maße in px auf 1920 × 1080. */
+
+.wertebuehne {
+  position: absolute;
+  inset: 0;
+
+  /* Töne der Bereiche: Petrol für „in Ordnung“, Sand für die Grenze, Kupfer für zu hoch. */
+  --ton-niedrig: #8fbccb;
+  --ton-gut: #2a93ab;
+  --ton-grenze: #dcbd85;
+  --ton-hoch: #d4713f;
+  --ton-sehrhoch: #a93a1f;
+}
+
+@keyframes werte-ein {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(24px);
+  }
+}
+
+.wertebuehne__frage {
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  max-width: 1100px;
+  font-family: var(--schrift-titel);
+  font-size: 104px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  translate: 0 -50%;
+  text-wrap: balance;
+  animation: werte-ein 900ms var(--raus) both;
+}
+
+.werteblatt {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  padding: 76px 120px 70px;
+  animation: werte-ein 800ms var(--raus) both;
+}
+
+/* ---------- Kopf: Titel links, der Wert groß rechts ---------- */
+
+.werteblatt__kopf {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 60px;
+  min-height: 190px;
+}
+
+.werteblatt__kopf h2 {
+  font-family: var(--schrift-titel);
+  font-size: 68px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+}
+
+.werteblatt__kopf h2 span {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--schrift-text);
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--auf-petrol-leise);
+}
+
+.werteblatt__wert {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: baseline;
+  justify-content: end;
+  column-gap: 18px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.werteblatt__wert strong {
+  font-family: var(--schrift-titel);
+  font-size: 132px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums lining-nums;
+  color: #fff;
+}
+
+.werteblatt__einheit {
+  font-size: 36px;
+  color: var(--auf-petrol-leise);
+}
+
+.werteblatt__urteil {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.werteblatt__wert[data-ton='gut'] .werteblatt__urteil {
+  color: #86d3e4;
+}
+
+.werteblatt__wert[data-ton='niedrig'] .werteblatt__urteil {
+  color: #b9dbe6;
+}
+
+.werteblatt__wert[data-ton='grenze'] .werteblatt__urteil {
+  color: #ecd3a3;
+}
+
+.werteblatt__wert[data-ton='hoch'] .werteblatt__urteil,
+.werteblatt__wert[data-ton='sehrhoch'] .werteblatt__urteil {
+  color: var(--kupfer-hell);
+}
+
+/* ---------- Skalen ---------- */
+
+.werteblatt__skalen {
+  display: grid;
+  align-content: center;
+  gap: 54px;
+}
+
+.werteskala__name {
+  margin-bottom: 64px;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--auf-petrol-leise);
+}
+
+.werteskala[data-mehrere='false'] .werteskala__bahn {
+  margin-top: 70px;
+}
+
+.werteskala__bahn {
+  position: relative;
+}
+
+.werteskala__bereiche {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.werteskala__bereiche li {
+  position: relative;
+  display: grid;
+  gap: 14px;
+}
+
+.werteskala__balken {
+  height: 44px;
+  background: var(--ton);
+  opacity: 0.58;
+  transition: opacity 500ms var(--raus);
+}
+
+.werteskala__bereiche li:first-child .werteskala__balken {
+  border-radius: 22px 0 0 22px;
+}
+
+.werteskala__bereiche li:last-child .werteskala__balken {
+  border-radius: 0 22px 22px 0;
+}
+
+.werteskala__bereiche li[data-hier='true'] .werteskala__balken {
+  opacity: 1;
+}
+
+.werteskala__bereiche [data-ton='niedrig'] {
+  --ton: var(--ton-niedrig);
+}
+
+.werteskala__bereiche [data-ton='gut'] {
+  --ton: var(--ton-gut);
+}
+
+.werteskala__bereiche [data-ton='grenze'] {
+  --ton: var(--ton-grenze);
+}
+
+.werteskala__bereiche [data-ton='hoch'] {
+  --ton: var(--ton-hoch);
+}
+
+.werteskala__bereiche [data-ton='sehrhoch'] {
+  --ton: var(--ton-sehrhoch);
+}
+
+.werteskala__bereich {
+  padding: 0 34px;
+  font-size: 26px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--auf-petrol-leise);
+  text-wrap: balance;
+}
+
+.werteskala__bereiche li[data-hier='true'] .werteskala__bereich {
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Die Grenze steht unter dem Spalt zum nächsten Bereich. */
+.werteskala__grenze {
+  position: absolute;
+  right: -3px;
+  top: 58px;
+  font-size: 24px;
+  font-variant-numeric: tabular-nums;
+  color: var(--auf-petrol);
+  translate: 50% 0;
+}
+
+/* Marke für den Wert des Patienten: Zahl im Schild, darunter ein Strich durch den Balken. */
+.werteskala__marke,
+.werteskala__ziel {
+  position: absolute;
+  left: calc(var(--lage) * 100%);
+  top: 0;
+  translate: -50% 0;
+}
+
+.werteskala__marke {
+  width: 6px;
+  height: 44px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 0 4px var(--petrol-tief);
+  animation: werte-fahrt 1100ms var(--raus) both;
+}
+
+@keyframes werte-fahrt {
+  from {
+    left: 0;
+    opacity: 0;
+  }
+}
+
+.werteskala__zahl {
+  position: absolute;
+  left: 50%;
+  bottom: 56px;
+  padding: 4px 18px 6px;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--petrol-tief);
+  font-family: var(--schrift-titel);
+  font-size: 34px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums lining-nums;
+  white-space: nowrap;
+  translate: -50% 0;
+  box-shadow: 0 12px 26px -10px rgb(0 20 26 / 0.7);
+}
+
+.werteskala__zahl::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  border: 9px solid transparent;
+  border-top-color: #fff;
+  translate: -50% -1px;
+}
+
+.werteskala__ziel {
+  width: 0;
+  height: 60px;
+  top: -8px;
+  border-left: 4px dashed var(--kupfer-hell);
+}
+
+.werteskala__ziel span {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-top: 36px;
+  padding: 0 10px;
+  background: var(--petrol-dunkel);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--kupfer-hell);
+  translate: -50% 0;
+}
+
+/* ---------- Ziel und Erklärung ---------- */
+
+.werteblatt__ziel {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: var(--auf-petrol);
+}
+
+.werteblatt__ziel svg {
+  flex: none;
+  color: var(--kupfer-hell);
+}
+
+.werteblatt__ziel strong {
+  color: #fff;
+}
+
+.werteblatt__saetze {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 56px;
+  margin: 0;
+  padding: 30px 0 0;
+  border-top: 2px solid var(--auf-petrol-linie);
+  list-style: none;
+  font-size: 28px;
+  line-height: 1.38;
+  color: var(--auf-petrol);
+}
+
+/* Zwei Skalen (Blutdruck) brauchen mehr Höhe: Kopf und Abstände etwas knapper. */
+.werteblatt[data-teile='2'] {
+  padding-top: 60px;
+  padding-bottom: 56px;
+}
+
+.werteblatt[data-teile='2'] .werteblatt__kopf {
+  min-height: 150px;
+}
+
+.werteblatt[data-teile='2'] .werteblatt__skalen {
+  gap: 22px;
+}
+
+.werteblatt[data-teile='2'] .werteskala__name {
+  margin-bottom: 54px;
+}
+
+.werteblatt[data-teile='2'] .werteblatt__ziel {
+  margin-bottom: 22px;
+}
+
+.werteblatt[data-teile='2'] .werteblatt__saetze {
+  padding-top: 22px;
+}
+
+.werteblatt[data-teile='2'] .werteblatt__saetze {
+  font-size: 26px;
+}

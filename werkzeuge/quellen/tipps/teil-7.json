@@ -1,0 +1,215 @@
+{
+  "SYC": [
+    {"art": "sonne", "text": "Hohen Sonnenschutz verwenden: Die Sonne ist stark und die Luftfeuchtigkeit ganzjährig hoch."},
+    {"art": "natur", "text": "In der Regenzeit nicht durch Schlamm und Pfützen waten: Dort können Leptospiren lauern."},
+    {"art": "kultur", "text": "Abseits des Strandes nicht nur in Badekleidung herumlaufen; die Gesellschaft ist eher konservativ."},
+    {"art": "diebstahl", "text": "Taschen nicht unbeaufsichtigt am Strand oder am offenen Bungalowfenster liegen lassen."},
+    {"art": "meer", "text": "Wenn Einheimische vom Schwimmen abraten, etwa wegen Quallen, darauf hören."}
+  ],
+  "SLE": [
+    {"art": "wasser", "text": "Leitungswasser nicht trinken, nur Wasser aus verschlossenen Flaschen."},
+    {"art": "sicherheit", "text": "Nach Einbruch der Dunkelheit nicht unterwegs sein; nachts fahren keine öffentlichen Verkehrsmittel."},
+    {"art": "diebstahl", "text": "Nur wenig Wertsachen mitführen, Raubüberfälle kommen vor."},
+    {"art": "gesundheit", "text": "Bei Fieber Paracetamol statt Aspirin nehmen und rasch ärztlich abklären lassen."},
+    {"art": "kultur", "text": "Am letzten Samstag im Monat ruht vormittags der Verkehr (Cleaning Day); Wege entsprechend planen."}
+  ],
+  "ZWE": [
+    {"art": "geld", "text": "Genug Bargeld in US-Dollar mitnehmen, möglichst fast neue Scheine; Kartenzahlung klappt oft nicht."},
+    {"art": "verkehr", "text": "Nach Einbruch der Dunkelheit nicht über Land fahren und auf den Hauptstraßen bleiben."},
+    {"art": "gesetz", "text": "Militär, Soldaten und Regierungsgebäude nicht fotografieren; am Präsidentenpalast Abstand halten."},
+    {"art": "diebstahl", "text": "Reifenpanne in Harare nur an einer Tankstelle beheben: Diebe stechen Reifen an, um Taschen zu stehlen."},
+    {"art": "gesundheit", "text": "Die Versorgung ist schlecht. Eine Auslandskrankenversicherung mit Rücktransport abschließen."}
+  ],
+  "SGP": [
+    {"art": "gesetz", "text": "Kaugummi und E-Zigaretten nicht mitbringen: Die Einfuhr ist verboten."},
+    {"art": "gesetz", "text": "In Bus und Bahn weder essen noch trinken; das kostet schnell 500 Singapur-Dollar Strafe."},
+    {"art": "gesetz", "text": "Persönliche Medikamente vorab prüfen: Manche Wirkstoffe sind verboten. Drogen werden sehr streng bestraft."},
+    {"art": "geld", "text": "Im Bus gibt es kein Wechselgeld. Eine aufgeladene Fahrkarte oder passendes Geld bereithalten."},
+    {"art": "kultur", "text": "Trinkgeld ist nicht üblich."}
+  ],
+  "SXM": [
+    {"art": "gesundheit", "text": "Die europäische Krankenversicherungskarte gilt hier nicht. Eine Auslandskrankenversicherung abschließen."},
+    {"art": "natur", "text": "Beim Wandern lange Hosen, feste Schuhe und genug Wasser mitnehmen; Wege sind oft zugewachsen."},
+    {"art": "tiere", "text": "Vor wilden Hunden und Meerkatzen in Acht nehmen."},
+    {"art": "gesetz", "text": "Korallen, Muscheln und geschützte Tiere oder Pflanzen nicht als Souvenir mitnehmen."},
+    {"art": "natur", "text": "Von August bis Dezember ist Regenzeit, mit Wirbelsturmgefahr rechnen."}
+  ],
+  "SVK": [
+    {"art": "verkehr", "text": "Nicht fahren, wenn Sie Alkohol getrunken haben: Es gilt 0,0 Promille, nachts wird scharf kontrolliert."},
+    {"art": "verkehr", "text": "Für Autobahnen brauchen Sie eine elektronische Vignette; Abblendlicht ist auch tagsüber Pflicht."},
+    {"art": "diebstahl", "text": "Auf Taschendiebe achten und keine Wertsachen im Auto lassen, besonders bei Autos mit deutschem Kennzeichen."},
+    {"art": "geld", "text": "Mit Karte zahlen ist fast überall möglich; Kurtaxe von etwa 3 Euro pro Nacht einplanen."},
+    {"art": "natur", "text": "Wildcampen und offenes Feuer im Gelände sind verboten."}
+  ],
+  "SVN": [
+    {"art": "sonne", "text": "Die Sonne wird besonders in den Bergen unterschätzt. Sonnencreme und Kopfbedeckung einpacken."},
+    {"art": "meer", "text": "An felsigen Küsten Badeschuhe tragen: Seeigel sind häufig, ein Tritt ist sehr schmerzhaft."},
+    {"art": "diebstahl", "text": "Keine Wertsachen im Auto lassen und am Strand nicht unbeaufsichtigt liegen lassen."},
+    {"art": "verkehr", "text": "Abblendlicht ist auch tagsüber Pflicht, eine Warnweste muss im Auto liegen."},
+    {"art": "essen", "text": "Kürbiskernöl: auf die Angabe 100 Prozent achten, es gibt viele verdünnte Produkte."}
+  ],
+  "SOM": [
+    {"art": "sicherheit", "text": "Das Auswärtige Amt warnt vor Reisen nach Somalia; die Sicherheitslage ist im ganzen Land äußerst kritisch."},
+    {"art": "natur", "text": "Im ganzen Land besteht Minengefahr. Nie abseits der bekannten Wege gehen."},
+    {"art": "meer", "text": "Vor der Küste besteht hohe Entführungsgefahr; von der Anreise per Schiff wird abgeraten."},
+    {"art": "kultur", "text": "Islam, Clans und Traditionen prägen das Land. Sich respektvoll und zurückhaltend verhalten."}
+  ],
+  "ESP": [
+    {"art": "diebstahl", "text": "In großen Städten auf Taschendiebe achten, besonders in Menschenmengen und im Nahverkehr."},
+    {"art": "verkehr", "text": "Auf der Autobahn nicht anhalten, wenn jemand angeblich einen Schaden am Auto zeigt; nur auf Parkplätzen halten."},
+    {"art": "sonne", "text": "Im Sommer sind über 40 Grad möglich. Mittags im Schatten bleiben, viel trinken, Sonnenschutz nutzen."},
+    {"art": "gesundheit", "text": "Private Ärzte in Urlaubsorten verlangen oft Vorkasse; Rechnungen mit genauer Diagnose aufbewahren."},
+    {"art": "kultur", "text": "Mittags und nachmittags schließen viele Geschäfte; gegessen wird abends spät."}
+  ],
+  "LKA": [
+    {"art": "kultur", "text": "In Tempeln Schultern und Knie bedecken, Schuhe und Kopfbedeckung ausziehen."},
+    {"art": "kultur", "text": "Mönche nicht berühren. Fußsohlen nie auf Buddhastatuen richten und sich nicht für ein Foto vor sie stellen."},
+    {"art": "tiere", "text": "Auf Schlangen achten, besonders nachts; bei einem Biss sofort ins Krankenhaus."},
+    {"art": "essen", "text": "Das Essen ist sehr scharf. Weniger scharf bestellen und langsam an die Schärfe gewöhnen."},
+    {"art": "gesundheit", "text": "Mückenschutz auch ohne Malaria nutzen: Dengue und Japanische Enzephalitis kommen vor."}
+  ],
+  "SHN": [
+    {"art": "meer", "text": "Im Meer nicht schwimmen, es gilt als gefährlich. Die Naturbecken bei Sandy Bay sind sicherer."},
+    {"art": "gesundheit", "text": "Die medizinische Versorgung ist sehr begrenzt; ein Krankenversicherungsnachweis wird bei der Einreise verlangt."},
+    {"art": "verkehr", "text": "Es herrscht Linksverkehr. Taxipreise vor der Fahrt vereinbaren, es gibt keinen Taxameter."},
+    {"art": "geld", "text": "Es gibt keinen Geldautomaten. Genug Bargeld in britischen Pfund mitbringen."}
+  ],
+  "KNA": [
+    {"art": "natur", "text": "In der Hurrikan-Saison Wetterberichte beachten und Anweisungen der Behörden folgen."},
+    {"art": "kultur", "text": "In Orten, Geschäften und am Flughafen Hemd und Schuhe tragen; Strandkleidung gilt dort als unpassend."},
+    {"art": "gesundheit", "text": "Ausländische Krankenversicherungen werden nicht anerkannt, Ärzte verlangen Barzahlung in US-Dollar."},
+    {"art": "verkehr", "text": "Es herrscht Linksverkehr. Beim Überqueren der Straße zuerst nach rechts schauen."}
+  ],
+  "LCA": [
+    {"art": "sonne", "text": "Sonnenmilch mit hohem Lichtschutzfaktor verwenden."},
+    {"art": "sicherheit", "text": "Nach Einbruch der Dunkelheit ein Taxi nehmen; die Dämmerung ist kurz."},
+    {"art": "diebstahl", "text": "Schmuck und Handy nicht unbeaufsichtigt am Strand liegen lassen und Wertsachen nicht offen tragen."},
+    {"art": "tiere", "text": "Im Regenwald gibt es giftige Lanzenottern; auf Wegen bleiben und feste Schuhe tragen."},
+    {"art": "natur", "text": "Wirbelstürme kommen vor, vor allem in der Hurrikan-Saison."}
+  ],
+  "VCT": [
+    {"art": "natur", "text": "Der Vulkan La Soufrière ist aktiv. Hinweise der Behörden zu Wanderungen und Sperrungen beachten."},
+    {"art": "natur", "text": "In der Hurrikan-Saison Wetterberichte verfolgen; Wirbelstürme haben die Inseln mehrfach getroffen."},
+    {"art": "sonne", "text": "Mit Hitze und hoher Luftfeuchtigkeit rechnen: viel trinken und Sonnenschutz nutzen."},
+    {"art": "meer", "text": "Zum Segeln und Tauchen die Tobago Cays besuchen; Boote nur über seriöse Anbieter buchen."}
+  ],
+  "PSE": [
+    {"art": "wasser", "text": "Leitungswasser nicht trinken, auch keine Eiswürfel; nur Wasser aus Flaschen."},
+    {"art": "kultur", "text": "Frauen kleiden sich zurückhaltend, Männer tragen keine kurzen Hosen. In Moscheen Schuhe ausziehen."},
+    {"art": "sicherheit", "text": "An Kontrollpunkten Reisepass und Papiere griffbereit haben; Wartezeiten einplanen."},
+    {"art": "gesetz", "text": "Nicht fotografieren, was Soldaten oder Kontrollpunkte zeigt; Handy und Kamera können kontrolliert werden."},
+    {"art": "sicherheit", "text": "Von Demonstrationen Abstand halten und nachts in Städten vorsichtig sein."}
+  ],
+  "ZAF": [
+    {"art": "sicherheit", "text": "Nach Einbruch der Dunkelheit die Innenstädte meiden und Townships nicht auf eigene Faust besuchen."},
+    {"art": "verkehr", "text": "Nachts nicht über Land fahren: Fußgänger und Vieh sind kaum zu sehen. Es herrscht Linksverkehr."},
+    {"art": "diebstahl", "text": "Wertsachen nie sichtbar im Auto lassen; Auto möglichst auf bewachten Parkplätzen abstellen."},
+    {"art": "geld", "text": "Beim Geldabheben aufpassen und sich nicht helfen lassen; Pin immer selbst eintippen."},
+    {"art": "tiere", "text": "In Nationalparks im Auto bleiben und Wildtiere nicht füttern oder bedrängen."}
+  ],
+  "SDN": [
+    {"art": "sicherheit", "text": "Seit dem Bürgerkrieg ist die Lage im ganzen Land unsicher; das Auswärtige Amt warnt vor Reisen."},
+    {"art": "gesetz", "text": "Fotografieren braucht eine Genehmigung; Militär, Brücken und Behördengebäude nie ablichten."},
+    {"art": "kultur", "text": "Zurückhaltend kleiden: keine kurzen Hosen, Frauen nichts Knappes; Religion ernst nehmen."},
+    {"art": "geld", "text": "Ausländische Bank- und Kreditkarten funktionieren nicht. Bargeld in US-Dollar mitbringen."},
+    {"art": "natur", "text": "Von April bis Juli sind Sandstürme und Hitze bis 45 Grad möglich."}
+  ],
+  "KOR": [
+    {"art": "geld", "text": "Ausländische Karten werden oft nicht akzeptiert. Etwas Bargeld und eine Visa- oder Mastercard dabeihaben."},
+    {"art": "kultur", "text": "Geschenke und Geld mit beiden Händen geben und annehmen; älteren Menschen den Sitzplatz überlassen."},
+    {"art": "kultur", "text": "In Wohnungen, traditionellen Unterkünften und manchen Hotels die Schuhe ausziehen."},
+    {"art": "wasser", "text": "Leitungswasser ist stark gechlort und schmeckt schlecht; zum Zähneputzen ist es in Ordnung."},
+    {"art": "essen", "text": "Viele Gerichte sind sehr scharf. Kimchi enthält oft Fisch oder Meeresfrüchte, auch bei vegetarischen Gerichten nachfragen."}
+  ],
+  "SSD": [
+    {"art": "sicherheit", "text": "Das Auswärtige Amt warnt vor Reisen; im ganzen Land bestehen Minengefahr und bewaffnete Konflikte."},
+    {"art": "gesetz", "text": "Fotografieren im öffentlichen Raum nur mit Erlaubnis; Uniformierte nie fotografieren."},
+    {"art": "sicherheit", "text": "An Kontrollen werden Ausländer oft angehalten und zu Zahlungen gedrängt. Ruhig bleiben, Papiere dabeihaben."},
+    {"art": "geld", "text": "Genug aktuelle US-Dollar-Scheine mitnehmen; ausländische Bankkarten werden nicht angenommen."},
+    {"art": "gesundheit", "text": "Eine Versicherung mit Rettungsflug abschließen; die medizinische Versorgung ist kaum vorhanden."}
+  ],
+  "SUR": [
+    {"art": "diebstahl", "text": "Wertsachen nicht offen tragen und wenig Bargeld mitführen; Raubüberfälle haben zugenommen."},
+    {"art": "gesetz", "text": "Nie Päckchen oder Geschenke mit unbekanntem Inhalt mitnehmen: Drogenstrafen sind sehr streng."},
+    {"art": "sicherheit", "text": "Getränke nicht aus den Augen lassen; manchmal werden sie mit Betäubungsmitteln versetzt."},
+    {"art": "gesundheit", "text": "Auch in der Hauptstadt Mückenschutz tragen; Dengue und Malaria kommen vor, vor allem im Landesinneren."},
+    {"art": "geld", "text": "Beim Geldtausch werden US-Dollar bevorzugt; Tageskurs vorher vergleichen."}
+  ],
+  "SJM": [
+    {"art": "tiere", "text": "Eisbären sind die größte Gefahr. Außerhalb der Orte nur mit Führer oder mit Waffe und Erfahrung unterwegs sein."},
+    {"art": "gesundheit", "text": "Die europäische Krankenversicherungskarte gilt nicht. Eine Reiseversicherung mit Bergungskosten abschließen."},
+    {"art": "wasser", "text": "Leitungswasser ist gut. Wasser aus Bächen und Seen abkochen, es kann Fuchsbandwurm-Eier enthalten."},
+    {"art": "kultur", "text": "In Hotels und Geschäften die Straßenschuhe ausziehen."},
+    {"art": "sicherheit", "text": "Vor Touren in der Wildnis Route und Rückkehrzeit bei der Verwaltung melden."}
+  ],
+  "SYR": [
+    {"art": "sicherheit", "text": "Das Auswärtige Amt warnt vor Reisen nach Syrien; Sicherheitslage und Angaben vor Ort prüfen."},
+    {"art": "kultur", "text": "Frauen kleiden sich dezent, ohne Waden zu zeigen, und setzen sich im Bus möglichst neben Frauen."},
+    {"art": "gesetz", "text": "Militärische Anlagen nie fotografieren; Menschen nur mit Erlaubnis ablichten."},
+    {"art": "essen", "text": "Obst nur geschält, Gemüse nur gekocht, Fleisch gut durchgebraten essen; Magen-Darm-Infekte sind häufig."},
+    {"art": "geld", "text": "Kreditkarten funktionieren nicht. Bargeld mitbringen und Taxi- sowie Hotelpreise vorher klären."}
+  ],
+  "STP": [
+    {"art": "wasser", "text": "Leitungswasser nicht trinken, nur abgefülltes Wasser aus dem Supermarkt."},
+    {"art": "gesundheit", "text": "Die medizinische Versorgung ist schlecht. Eine Auslandskrankenversicherung mit Rücktransport ist dringend nötig."},
+    {"art": "gesundheit", "text": "Malariaschutz und Mückenschutz ernst nehmen; Moskitonetz benutzen."},
+    {"art": "meer", "text": "Nahe der Stadt ist das Wasser teils verschmutzt; Strände liegen oft in abgelegenen Buchten."},
+    {"art": "geld", "text": "Euro-Bargeld mitnehmen und vor Ort wechseln; auf Príncipe ist alles deutlich teurer."}
+  ],
+  "TJK": [
+    {"art": "hoehe", "text": "Höhenkrankheit droht ab etwa 2800 Metern. Langsam aufsteigen und bei Beschwerden mindestens 500 Meter absteigen."},
+    {"art": "wasser", "text": "Leitungswasser nicht trinken; abgefülltes Wasser oder abgekochten Tee nehmen."},
+    {"art": "gesundheit", "text": "Wichtige Medikamente von zu Hause mitnehmen, auch Mittel gegen Durchfall; die Versorgung ist dünn."},
+    {"art": "natur", "text": "An der Grenze zu Afghanistan sind Gebiete vermint. Immer auf den Wegen bleiben."},
+    {"art": "gesetz", "text": "Über Politik nicht diskutieren; Alkohol in der Öffentlichkeit ist verboten."}
+  ],
+  "TWN": [
+    {"art": "natur", "text": "Erdbeben und Taifune sind möglich. In den Bergen auf Steinschlag und Erdrutsche achten."},
+    {"art": "sonne", "text": "Auch bei Bewölkung kräftigen Sonnenschutz verwenden."},
+    {"art": "kultur", "text": "Essstäbchen nie senkrecht in den Reis stecken: Das erinnert an Totenrituale."},
+    {"art": "kultur", "text": "Vor Wohnungen und in manchen Tempeln die Schuhe ausziehen."},
+    {"art": "verkehr", "text": "Zielorte in chinesischen Schriftzeichen bereithalten; viele Taxifahrer sprechen kein Englisch."}
+  ],
+  "TZA": [
+    {"art": "wasser", "text": "Leitungswasser nicht trinken, nur abgefülltes oder abgekochtes Wasser."},
+    {"art": "sicherheit", "text": "In Städten wie Dar es Salaam nach Einbruch der Dunkelheit nicht im Freien unterwegs sein."},
+    {"art": "hoehe", "text": "Am Kilimandscharo langsam aufsteigen, damit sich der Körper an die Höhe gewöhnt."},
+    {"art": "sonne", "text": "Sonnencreme mit hohem Lichtschutzfaktor, Hut und luftige, lange Kleidung nutzen."},
+    {"art": "verkehr", "text": "Es herrscht Linksverkehr; in Nationalparks sind Motorräder verboten."}
+  ],
+  "THA": [
+    {"art": "sonne", "text": "Sonnencreme aus Deutschland mitnehmen: Viele Cremes vor Ort enthalten Bleichmittel."},
+    {"art": "verkehr", "text": "Bei Motorradtaxis auf einen Helm bestehen; die Fahrweise ist oft riskant."},
+    {"art": "kultur", "text": "In Tempeln Schultern und Knie bedecken. Mönche behandelt man mit Respekt; Frauen berühren sie nicht."},
+    {"art": "gesetz", "text": "Den König nie kritisieren oder verspotten: Das kann hart bestraft werden."},
+    {"art": "geld", "text": "Im Taxi auf das Taxameter achten, sonst den Preis vorher vereinbaren."}
+  ],
+  "TGO": [
+    {"art": "wasser", "text": "Nur Wasser aus verschlossenen Originalflaschen trinken."},
+    {"art": "diebstahl", "text": "Am Strand von Lomé kommt es zu Diebstahl und Überfällen. Wertsachen im Hotel lassen."},
+    {"art": "sicherheit", "text": "Nachts nicht allein unterwegs sein. Auf Märkten und in Taxis auf Taschendiebe achten."},
+    {"art": "gesetz", "text": "Behörden, Uniformierte und öffentliche Gebäude nicht fotografieren; Drogen werden streng bestraft."},
+    {"art": "verkehr", "text": "Bei Motorradtaxis auf den Zustand des Motorrads achten; Sammeltaxis sind sicherer."}
+  ],
+  "TKL": [
+    {"art": "wasser", "text": "Es gibt keine Süßwasserquellen: Getrunken wird Regenwasser. Mit Wasser sparsam umgehen."},
+    {"art": "essen", "text": "Eigene Verpflegung mitbringen, vor allem für die Fahrt auf dem Frachtschiff."},
+    {"art": "geld", "text": "Es gibt keine Banken. Neuseeländische Dollar in bar mitbringen."},
+    {"art": "natur", "text": "Die Inseln sind kaum zwei Meter hoch. Bei Taifun und Tsunami gibt es nur wenig Fluchtmöglichkeiten."},
+    {"art": "gesundheit", "text": "Fachärzte gibt es nur in Samoa; eine Reiseversicherung mit Rücktransport abschließen."}
+  ],
+  "TON": [
+    {"art": "kultur", "text": "Sonntag ist Ruhetag: Viele Orte sind geschlossen, und Schwimmen gilt als unangemessen."},
+    {"art": "kultur", "text": "Frauen bedecken die Beine bis zu den Knöcheln; in der Öffentlichkeit keine Berührungen."},
+    {"art": "tiere", "text": "Streunende Hunde sind in Dörfern oft aggressiv; ein Stock hilft, sie fernzuhalten."},
+    {"art": "meer", "text": "Vorsicht im Riff vor Steinfischen, Feuerfischen und Korallen; Kratzer sofort desinfizieren."},
+    {"art": "gesundheit", "text": "Mücken sind tagsüber aktiv und übertragen Dengue und Chikungunya; Mückenschutz den ganzen Tag nutzen."}
+  ],
+  "TTO": [
+    {"art": "sicherheit", "text": "Die Kriminalität ist auf Trinidad hoch. Die Stadtteile um Port of Spain nach Rat der Unterkunft meiden."},
+    {"art": "gesetz", "text": "Drogen, auch Marihuana, sind verboten. Waffen sind es ebenso, auch Messer und Pfefferspray."},
+    {"art": "gesetz", "text": "Tarnkleidung im Militärstil nicht tragen: Das ist gesetzlich dem Militär vorbehalten."},
+    {"art": "gesundheit", "text": "Mückenschutz tragen wegen Dengue; eine private Auslandskrankenversicherung ist ratsam."},
+    {"art": "meer", "text": "Bei Chacachacare gilt die Meeresströmung als stark und gefährlich; dort nicht schwimmen."}
+  ]
+}

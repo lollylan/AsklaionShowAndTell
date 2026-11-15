@@ -1,0 +1,54 @@
+/* Ergänzungen zur Korrekturansicht der Aufklärungen (../aufklaerungen/korrektur.css). */
+
+.medikorrektur article {
+  grid-template-columns: 260px minmax(0, 1fr);
+}
+
+.medikorrektur__bild {
+  align-self: start;
+}
+
+.medikorrektur__bild img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 12px;
+  border: 1px solid var(--linie);
+  border-radius: 12px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.medikorrektur__bild p {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.medikorrektur__namen {
+  margin-top: 6px;
+  color: var(--petrol);
+}
+
+.medikorrektur__zeichen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  color: var(--kupfer-dunkel);
+}
+
+.medikorrektur .korrektur__seiten p {
+  margin-top: 10px;
+  color: var(--kupfer-dunkel);
+}
+
+@media (max-width: 900px) {
+  .medikorrektur article {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .medikorrektur__bild {
+    max-width: 260px;
+  }
+}

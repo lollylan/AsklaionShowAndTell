@@ -1,0 +1,138 @@
+.impf {
+  display: grid;
+  gap: 44px;
+  max-width: 820px;
+}
+
+.impf h2 {
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.impf__hilfe {
+  max-width: 62ch;
+  margin: 12px 0;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+/* ---------- Gruppen ---------- */
+
+.impf__gruppen {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.impf__gruppe {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+  text-align: left;
+  transition:
+    background-color 160ms var(--raus),
+    border-color 160ms var(--raus);
+}
+
+.impf__gruppe strong {
+  color: var(--petrol);
+}
+
+.impf__gruppe span {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.impf__gruppe:hover {
+  border-color: var(--petrol);
+}
+
+.impf__gruppe[aria-pressed='true'] {
+  border-color: var(--petrol);
+  background: var(--petrol);
+}
+
+.impf__gruppe[aria-pressed='true'] strong {
+  color: #fff;
+}
+
+.impf__gruppe[aria-pressed='true'] span {
+  color: var(--auf-petrol-leise);
+}
+
+/* ---------- Liste ---------- */
+
+.impf__schritte {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.impf__liste {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--linie);
+  list-style: none;
+}
+
+.impf__zeile {
+  display: grid;
+  grid-template-columns: minmax(170px, 1fr) minmax(0, 1.3fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 6px 0 6px 4px;
+  border-bottom: 1px solid var(--linie);
+}
+
+.impf__haken {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.impf__haken input {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.impf__name {
+  font-weight: 700;
+  color: var(--petrol);
+}
+
+.impf__zeile[data-an='false'] .impf__name {
+  font-weight: 400;
+  color: var(--text-hell);
+}
+
+.impf__wann {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.impf__knopf {
+  min-height: 36px;
+  min-width: 112px;
+  padding: 4px 12px;
+}
+
+.impf__quellen {
+  max-width: 78ch;
+  font-size: 12px;
+  color: var(--text-hell);
+}

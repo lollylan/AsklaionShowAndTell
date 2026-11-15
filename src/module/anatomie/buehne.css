@@ -1,0 +1,278 @@
+/* Bühne der Anatomie. Maße in px auf 1920 × 1080. */
+
+.gelbuehne {
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes gel-ein {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(24px);
+  }
+}
+
+.gelbuehne__frage {
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  max-width: 1100px;
+  font-family: var(--schrift-titel);
+  font-size: 104px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  translate: 0 -50%;
+  text-wrap: balance;
+  animation: gel-ein 900ms var(--raus) both;
+}
+
+/* ---------- Links das Modell, rechts die Erklärung ---------- */
+
+.gelbuehne__modell {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1180px;
+  height: 1080px;
+}
+
+.gelbuehne__text {
+  position: absolute;
+  left: 1170px;
+  right: 90px;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.gelbuehne__text h2 {
+  font-family: var(--schrift-titel);
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  text-wrap: balance;
+  hyphens: auto;
+  animation: gel-ein 700ms var(--raus) both;
+}
+
+.gelbuehne__fach {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--schrift-text);
+  font-size: 27px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: var(--auf-petrol-leise);
+}
+
+.gelbuehne__antworten {
+  display: grid;
+  gap: 30px;
+  margin: 44px 0 0;
+}
+
+.gelbuehne__antworten > div {
+  animation: gel-ein 700ms var(--raus) both;
+}
+
+.gelbuehne__antworten dt {
+  margin-bottom: 6px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #f3b48f;
+}
+
+.gelbuehne__antworten dd {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.36;
+  color: var(--auf-petrol);
+  text-wrap: pretty;
+}
+
+.gelbuehne__einleitung {
+  margin-top: 36px;
+  font-size: 32px;
+  line-height: 1.38;
+  color: var(--auf-petrol);
+  text-wrap: pretty;
+  animation: gel-ein 700ms var(--raus) 140ms both;
+}
+
+.gelbuehne__legende {
+  display: grid;
+  gap: 14px;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 27px;
+  color: var(--auf-petrol);
+}
+
+.gelbuehne__legende li {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  animation: gel-ein 600ms var(--raus) both;
+}
+
+.gelbuehne__legende li::before {
+  content: '';
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--farbe);
+}
+
+.gelbuehne__legende [data-art='knochen'] {
+  --farbe: #e8dfc9;
+}
+.gelbuehne__legende [data-art='knorpel'] {
+  --farbe: #8fc4d0;
+}
+.gelbuehne__legende [data-art='nerv'] {
+  --farbe: #edc95a;
+}
+.gelbuehne__legende [data-art='gefaess'] {
+  --farbe: #d0463c;
+}
+.gelbuehne__legende [data-art='vene'] {
+  --farbe: #4f79b8;
+}
+.gelbuehne__legende [data-art='raum'] {
+  --farbe: #8fd0de;
+}
+.gelbuehne__legende [data-art='muskel'] {
+  --farbe: #b35a48;
+}
+.gelbuehne__legende [data-art='sehne'] {
+  --farbe: #d5dde2;
+}
+.gelbuehne__legende [data-art='band'] {
+  --farbe: #a6d2bc;
+}
+.gelbuehne__legende [data-art='schleimbeutel'] {
+  --farbe: #5fb3c4;
+}
+
+.gelbuehne__quelle {
+  position: absolute;
+  right: 100px;
+  bottom: 34px;
+  font-size: 17px;
+  color: var(--auf-petrol-leise);
+}
+
+/* ---------- Das Modell selbst (auch in der Steuerung benutzt) ---------- */
+
+.gelmodell {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.gelmodell canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 700ms var(--raus);
+}
+
+.gelmodell[data-lage='bereit'] canvas {
+  opacity: 1;
+}
+
+.gelmodell[data-bedienbar='true'] {
+  cursor: grab;
+  touch-action: none;
+}
+
+.gelmodell[data-bedienbar='true']:active {
+  cursor: grabbing;
+}
+
+.gelmodell__hinweis {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 0 12%;
+  font-size: 28px;
+  text-align: center;
+  color: var(--auf-petrol-leise);
+}
+
+/* Beschriftung: ein Ring auf der Struktur, daran eine kurze Linie zum Namen. */
+
+.gelmodell__marke {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms var(--raus);
+}
+
+.gelmodell__marke[data-sichtbar='true'] {
+  opacity: 1;
+}
+
+.gelmodell__marke::before {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: -11px;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #fff3ea;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgb(1 44 55 / 0.6);
+}
+
+.gelmodell__marke::after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: -1.5px;
+  width: 92px;
+  height: 3px;
+  background: #fff3ea;
+  transform-origin: left center;
+  rotate: -38deg;
+}
+
+.gelmodell__marke span {
+  position: absolute;
+  left: 88px;
+  bottom: 50px;
+  padding: 10px 20px 12px;
+  border-radius: 10px;
+  background: #fff3ea;
+  box-shadow: 0 10px 28px rgb(1 44 55 / 0.45);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.15;
+  white-space: nowrap;
+  color: var(--kupfer-dunkel);
+}
+
+.gelmodell__marke[data-seite='links']::after {
+  left: auto;
+  right: 9px;
+  transform-origin: right center;
+  rotate: 38deg;
+}
+
+.gelmodell__marke[data-seite='links'] span {
+  left: auto;
+  right: 88px;
+}

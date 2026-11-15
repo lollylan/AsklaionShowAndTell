@@ -1,0 +1,267 @@
+import type { Krankheit } from './typen';
+
+export const HERZ: Krankheit[] = [
+  {
+    id: 'bluthochdruck',
+    name: 'Bluthochdruck',
+    zusatz: 'Arterielle Hypertonie',
+    gebiet: 'herz',
+    suche: 'hypertonie blutdruck rr',
+    was: [
+      'Das Herz pumpt das Blut mit Druck durch die Adern. Bei Bluthochdruck ist dieser Druck dauerhaft zu hoch.',
+      'Von Bluthochdruck sprechen wir ab 140 zu 90 in der Praxis – zu Hause gemessen schon ab 135 zu 85.',
+      'Die meisten Menschen spüren davon nichts. Gerade deshalb bleibt er oft lange unentdeckt.',
+      'Etwa jeder dritte Erwachsene ist betroffen.',
+    ],
+    ursachen: [
+      'Meist kommen mehrere Dinge zusammen: Veranlagung, Alter, Übergewicht, wenig Bewegung, viel Salz, Alkohol und Dauerstress.',
+      'Seltener steckt eine andere Krankheit dahinter, etwa der Nieren oder der Hormone, oder ein Medikament.',
+      'Der hohe Druck schädigt über Jahre die Gefäße – unbemerkt.',
+      'Die Folgen können Schlaganfall, Herzinfarkt, Herzschwäche, Nierenschäden und Sehstörungen sein.',
+    ],
+    behandlung: [
+      'Ziel ist bei den meisten ein Blutdruck unter 140 zu 90, wenn Sie es gut vertragen auch etwas niedriger.',
+      'Grundlage ist immer der Lebensstil. Reicht das nicht, kommen Medikamente dazu.',
+      'Oft wirken zwei Wirkstoffe in niedriger Dosis besser und verträglicher als einer in hoher – häufig in einer einzigen Tablette.',
+      'Die Tabletten wirken nur, solange Sie sie nehmen. Bitte nicht eigenmächtig absetzen, auch wenn die Werte gut sind.',
+    ],
+    selbst: [
+      'Messen Sie zu Hause: morgens und abends in Ruhe im Sitzen, und schreiben Sie die Werte auf.',
+      'Bewegen Sie sich regelmäßig – schon 30 Minuten zügiges Gehen an den meisten Tagen senken den Druck.',
+      'Sparen Sie Salz, vor allem bei Fertiggerichten, Wurst, Käse und Brot. Trinken Sie wenig Alkohol.',
+      'Jedes Kilo weniger hilft. Und: nicht rauchen.',
+    ],
+    warnung:
+      'Sehr hohe Werte zusammen mit Brustschmerz, Luftnot, Lähmungen, Sprach- oder Sehstörungen: sofort 112.',
+  },
+  {
+    id: 'khk',
+    name: 'Koronare Herzkrankheit',
+    zusatz: 'Verengte Herzkranzgefäße, KHK',
+    gebiet: 'herz',
+    suche: 'herzinfarkt angina pectoris stent bypass',
+    was: [
+      'Die Herzkranzgefäße versorgen den Herzmuskel mit Blut. Bei der KHK sind sie durch Ablagerungen verengt.',
+      'Unter Belastung bekommt das Herz dann zu wenig Sauerstoff. Das spüren Sie als Druck oder Enge in der Brust, oft mit Luftnot.',
+      'In Ruhe lassen die Beschwerden meist nach wenigen Minuten nach.',
+      'Verschließt sich ein Gefäß plötzlich ganz, kommt es zum Herzinfarkt.',
+    ],
+    ursachen: [
+      'Die Ablagerungen entstehen über Jahrzehnte – der Fachbegriff ist Arteriosklerose.',
+      'Sie werden gefördert durch Rauchen, Bluthochdruck, hohes Cholesterin, Diabetes, Übergewicht und Bewegungsmangel.',
+      'Auch das Alter und Herzkrankheiten in der Familie spielen eine Rolle.',
+      'Je mehr Risiken zusammenkommen, desto höher ist die Gefahr für Herzinfarkt und Herzschwäche.',
+    ],
+    behandlung: [
+      'Medikamente schützen das Herz: ein Blutverdünner wie ASS und ein Cholesterinsenker gehören fast immer dazu.',
+      'Weitere Mittel entlasten das Herz und lindern die Beschwerden. Für den Anfall gibt es ein Nitro-Spray.',
+      'Bei starken Engstellen kann das Gefäß mit einem Katheter geweitet und mit einem Stent gestützt werden.',
+      'Sind mehrere Gefäße betroffen, kommt eine Bypass-Operation in Frage.',
+    ],
+    selbst: [
+      'Hören Sie mit dem Rauchen auf – das senkt Ihr Risiko stärker als jedes Medikament.',
+      'Bewegen Sie sich regelmäßig, am besten in einer Herzsportgruppe.',
+      'Essen Sie mediterran: viel Gemüse, Obst, Vollkorn, Fisch, Nüsse und Olivenöl.',
+      'Nehmen Sie Ihre Medikamente zuverlässig und haben Sie Ihr Nitro-Spray dabei.',
+    ],
+    warnung:
+      'Brustschmerz, der länger als fünf Minuten anhält oder in Ruhe auftritt, mit Luftnot, Übelkeit oder kaltem Schweiß: sofort 112 – nicht selbst fahren.',
+  },
+  {
+    id: 'vorhofflimmern',
+    name: 'Vorhofflimmern',
+    gebiet: 'herz',
+    suche: 'herzrhythmusstoerung herzstolpern absolute arrhythmie blutverduenner antikoagulation',
+    was: [
+      'Vorhofflimmern ist die häufigste Herzrhythmusstörung. Die Vorhöfe des Herzens schlagen nicht mehr geordnet, sondern flimmern.',
+      'Der Puls wird dadurch unregelmäßig und oft zu schnell.',
+      'Manche spüren Herzstolpern, Herzrasen, Luftnot oder Schwäche – viele merken gar nichts.',
+      'Es kann anfallsweise auftreten oder dauerhaft bestehen.',
+    ],
+    ursachen: [
+      'Das Risiko steigt mit dem Alter. Häufige Auslöser sind Bluthochdruck, Herzschwäche und Herzklappenfehler.',
+      'Auch Übergewicht, Schlafapnoe, Alkohol und eine Überfunktion der Schilddrüse können es auslösen.',
+      'Das Flimmern selbst ist selten gefährlich. Aber in den Vorhöfen fließt das Blut langsamer, und es können sich Gerinnsel bilden.',
+      'Wird ein Gerinnsel ins Gehirn geschwemmt, entsteht ein Schlaganfall. Das ist das wichtigste Risiko.',
+    ],
+    behandlung: [
+      'Am wichtigsten ist der Schutz vor dem Schlaganfall: Die meisten Betroffenen brauchen dauerhaft einen Gerinnungshemmer.',
+      'Zusätzlich bremsen Medikamente den zu schnellen Puls.',
+      'Bei Beschwerden kann der normale Rhythmus wiederhergestellt werden – mit Medikamenten, einem kurzen Stromstoß in Narkose oder einer Katheterbehandlung.',
+      'Welcher Weg passt, hängt von Ihren Beschwerden und Ihrem Herzen ab.',
+    ],
+    selbst: [
+      'Nehmen Sie den Gerinnungshemmer jeden Tag – auch wenn Sie das Flimmern nicht spüren.',
+      'Sagen Sie vor Operationen und beim Zahnarzt Bescheid und tragen Sie Ihren Ausweis bei sich.',
+      'Wenig Alkohol, Normalgewicht und ein gut eingestellter Blutdruck beruhigen den Rhythmus.',
+      'Fühlen Sie gelegentlich Ihren Puls: Ist er regelmäßig?',
+    ],
+    warnung:
+      'Plötzlich hängender Mundwinkel, Lähmung, Sprach- oder Sehstörung: sofort 112. Jede Minute zählt.',
+  },
+  {
+    id: 'herzschwaeche',
+    name: 'Herzschwäche',
+    zusatz: 'Herzinsuffizienz',
+    gebiet: 'herz',
+    suche: 'herzinsuffizienz wasser oedeme',
+    was: [
+      'Bei einer Herzschwäche pumpt das Herz nicht mehr kräftig genug, um den Körper gut zu versorgen.',
+      'Sie merken das an Luftnot – erst beim Treppensteigen, später schon bei kleinen Wegen – und an rascher Erschöpfung.',
+      'Das Blut staut sich zurück: Die Beine schwellen an, und in der Lunge kann sich Wasser sammeln.',
+      'Viele müssen nachts häufiger zur Toilette oder brauchen mehr Kissen zum Schlafen.',
+    ],
+    ursachen: [
+      'Am häufigsten sind verengte Herzkranzgefäße, ein früherer Herzinfarkt oder langjähriger Bluthochdruck die Ursache.',
+      'Auch Herzklappenfehler, Rhythmusstörungen, Herzmuskelentzündungen und Alkohol können das Herz schwächen.',
+      'Infekte, zu viel Salz oder vergessene Tabletten können den Zustand plötzlich verschlechtern.',
+      'Unbehandelt schreitet die Schwäche fort. Mit guter Behandlung leben viele lange und gut damit.',
+    ],
+    behandlung: [
+      'Mehrere Medikamente zusammen entlasten das Herz und verlängern nachweislich das Leben.',
+      'Sie werden langsam gesteigert. Anfangs fühlen Sie sich vielleicht matter – das gibt sich meist.',
+      'Wassertabletten schwemmen überschüssige Flüssigkeit aus und lindern die Luftnot.',
+      'Wir behandeln die Ursache mit. Manchmal hilft zusätzlich ein spezieller Schrittmacher.',
+    ],
+    selbst: [
+      'Wiegen Sie sich jeden Morgen und schreiben Sie das Gewicht auf.',
+      'Bleiben Sie in Bewegung – angepasstes Training stärkt Herz und Muskeln.',
+      'Essen Sie salzarm und trinken Sie etwa die Menge, die wir besprochen haben.',
+      'Lassen Sie sich gegen Grippe, Pneumokokken und Corona impfen. Vorsicht mit Schmerzmitteln wie Ibuprofen oder Diclofenac.',
+    ],
+    warnung:
+      'Mehr als zwei Kilo Zunahme in drei Tagen, dickere Beine oder zunehmende Luftnot: bitte gleich melden. Atemnot in Ruhe: 112.',
+  },
+  {
+    id: 'pavk',
+    name: 'Durchblutungsstörung der Beine',
+    zusatz: 'Schaufensterkrankheit, pAVK',
+    gebiet: 'herz',
+    suche: 'pavk schaufensterkrankheit arterielle verschlusskrankheit raucherbein',
+    was: [
+      'Die Schlagadern der Beine sind durch Ablagerungen verengt. Die Muskeln bekommen bei Belastung zu wenig Blut.',
+      'Typisch sind Schmerzen in der Wade beim Gehen, die nach kurzem Stehenbleiben nachlassen.',
+      'Daher der Name Schaufensterkrankheit: Man bleibt immer wieder stehen.',
+      'In späten Stadien schmerzen die Füße auch in Ruhe, und Wunden heilen schlecht.',
+    ],
+    ursachen: [
+      'Dahinter steckt dieselbe Gefäßverkalkung wie bei Herzinfarkt und Schlaganfall.',
+      'Der wichtigste Risikofaktor ist das Rauchen, gefolgt von Diabetes, Bluthochdruck und hohem Cholesterin.',
+      'Wer verengte Beingefäße hat, hat oft auch verengte Gefäße am Herzen und am Hals.',
+      'Deshalb schützen wir mit der Behandlung immer auch Herz und Gehirn.',
+    ],
+    behandlung: [
+      'Gehtraining ist die wirksamste Behandlung: Es lässt neue Umgehungsgefäße wachsen.',
+      'Dazu kommen ein Blutverdünner und ein Cholesterinsenker, um die Gefäße zu schützen.',
+      'Blutdruck und Blutzucker stellen wir gut ein.',
+      'Bei starken Beschwerden kann die Engstelle mit einem Katheter geweitet oder mit einem Bypass überbrückt werden.',
+    ],
+    selbst: [
+      'Hören Sie mit dem Rauchen auf – nichts hilft Ihren Gefäßen mehr.',
+      'Gehen Sie täglich, bis der Schmerz kommt, machen Sie eine kurze Pause und gehen Sie weiter.',
+      'Schauen Sie täglich Ihre Füße an und pflegen Sie sie gut. Tragen Sie bequeme Schuhe.',
+      'Zeigen Sie uns jede Wunde am Fuß, die nicht heilt.',
+    ],
+    warnung:
+      'Wird ein Bein plötzlich kalt, blass und schmerzhaft, ist das ein Notfall: sofort 112.',
+  },
+  {
+    id: 'thrombose',
+    name: 'Beinvenenthrombose',
+    zusatz: 'Blutgerinnsel in einer Beinvene',
+    gebiet: 'herz',
+    suche: 'tvt lungenembolie gerinnsel',
+    was: [
+      'Bei einer Thrombose verstopft ein Blutgerinnsel eine tiefe Vene, meist im Bein.',
+      'Das Blut kann nicht mehr richtig zum Herzen zurückfließen und staut sich.',
+      'Typisch: Ein Bein schwillt an, schmerzt oder spannt, ist wärmer und manchmal bläulich verfärbt.',
+      'Gefährlich wird es, wenn sich ein Teil löst und in die Lunge wandert – das nennt man Lungenembolie.',
+    ],
+    ursachen: [
+      'Das Risiko steigt, wenn das Blut langsam fließt: nach Operationen, bei Bettruhe, Gips oder auf langen Reisen.',
+      'Auch die Pille und andere Hormone, Schwangerschaft, Krebserkrankungen, Übergewicht und Rauchen erhöhen es.',
+      'Manche Menschen haben eine angeborene Neigung zu Gerinnseln.',
+      'Wer schon einmal eine Thrombose hatte, bekommt leichter wieder eine.',
+    ],
+    behandlung: [
+      'Sie erhalten sofort einen Gerinnungshemmer. Er verhindert, dass das Gerinnsel wächst oder in die Lunge wandert.',
+      'Den Rest baut der Körper nach und nach selbst ab.',
+      'Die Behandlung dauert mindestens drei Monate, je nach Ursache auch länger.',
+      'Ein Kompressionsstrumpf lindert Schwellung und Schmerz.',
+    ],
+    selbst: [
+      'Bewegen Sie sich ganz normal – Bettruhe ist nicht nötig.',
+      'Nehmen Sie den Gerinnungshemmer zuverlässig und lassen Sie keine Dosis aus.',
+      'Achten Sie auf Blutungen und sagen Sie bei jeder Behandlung, dass Sie einen Gerinnungshemmer nehmen.',
+      'Auf langen Reisen: aufstehen, Füße bewegen, genug trinken.',
+    ],
+    warnung:
+      'Plötzliche Luftnot, Schmerzen beim Atmen, Herzrasen oder Bluthusten: sofort 112.',
+  },
+  {
+    id: 'schlaganfall',
+    name: 'Schlaganfall',
+    zusatz: 'Hirninfarkt, Hirnblutung und TIA',
+    gebiet: 'herz',
+    suche: 'apoplex insult tia hirninfarkt hirnblutung fast laehmung stroke unit',
+    was: [
+      'Bei einem Schlaganfall wird ein Teil des Gehirns plötzlich nicht mehr durchblutet. Ohne Sauerstoff gehen dort schnell Nervenzellen zugrunde.',
+      'Typisch sind eine plötzliche Lähmung oder Taubheit einer Körperseite, ein hängender Mundwinkel, Sprach- oder Sehstörungen und Schwindel.',
+      'Gehen die Zeichen nach Minuten von selbst zurück, ist das eine TIA – ein Warnschuss. Auch das ist ein Notfall.',
+      'Der FAST-Test hilft beim Erkennen: Gesicht, Arme und Sprache prüfen – und keine Zeit verlieren.',
+    ],
+    ursachen: [
+      'Meist verstopft ein Blutgerinnsel ein Gefäß im Gehirn. Seltener platzt ein Gefäß, und es blutet ins Gehirn.',
+      'Das Gerinnsel entsteht an verkalkten Gefäßen, etwa an der Halsschlagader, oder bei Vorhofflimmern im Herzen.',
+      'Der wichtigste Risikofaktor ist Bluthochdruck. Dazu kommen Rauchen, Diabetes, hohes Cholesterin, Bewegungsmangel und viel Alkohol.',
+      'Nach einer TIA ist das Risiko für einen richtigen Schlaganfall in den folgenden Tagen besonders hoch.',
+    ],
+    behandlung: [
+      'Im Krankenhaus kann das Gerinnsel oft mit einem Medikament aufgelöst oder mit einem Katheter entfernt werden – aber nur in den ersten Stunden.',
+      'Das geschieht auf speziellen Schlaganfall-Stationen, den Stroke Units. Je früher, desto mehr Gehirn lässt sich retten.',
+      'Zum Schutz vor einem weiteren Schlaganfall gibt es meist ASS und einen Cholesterinsenker, bei Vorhofflimmern einen Gerinnungshemmer.',
+      'Der Blutdruck wird gut eingestellt. In der Reha helfen Physio-, Ergo- und Sprachtherapie, Verlorenes wieder zu lernen.',
+    ],
+    selbst: [
+      'Lassen Sie Ihren Blutdruck regelmäßig messen und gut einstellen – das ist der wirksamste Schutz.',
+      'Hören Sie mit dem Rauchen auf, bewegen Sie sich regelmäßig und trinken Sie wenig Alkohol.',
+      'Nehmen Sie Ihre Medikamente zuverlässig, auch wenn Sie sich gesund fühlen.',
+      'Üben Sie den FAST-Test mit Ihren Angehörigen: lächeln lassen, beide Arme heben lassen, einen Satz nachsprechen lassen.',
+    ],
+    warnung:
+      'Hängender Mundwinkel, Lähmung oder Taubheit an Arm oder Bein, Sprach- oder Sehstörung – auch wenn es wieder vergeht: sofort 112. Uhrzeit merken.',
+  },
+  {
+    id: 'krampfadern',
+    name: 'Krampfadern und Venenschwäche',
+    zusatz: 'Varizen, chronische Veneninsuffizienz',
+    gebiet: 'herz',
+    suche: 'varizen varikose venenschwaeche besenreiser veneninsuffizienz kompressionsstruempfe schwere beine',
+    was: [
+      'Krampfadern sind erweiterte, geschlängelte Venen direkt unter der Haut, meist an den Beinen.',
+      'Die Venen bringen das Blut zurück zum Herzen. Kleine Klappen in den Venen sorgen dafür, dass es nicht zurücksackt.',
+      'Schließen die Klappen nicht mehr richtig, staut sich das Blut. Die Beine werden schwer und müde und schwellen abends an.',
+      'Krampfadern sind sehr häufig. Viele haben außer dem Aussehen keine Beschwerden.',
+    ],
+    ursachen: [
+      'Die Neigung zu schwachen Venenwänden und Klappen wird oft vererbt. Frauen sind häufiger betroffen.',
+      'Langes Stehen und Sitzen, Übergewicht, Schwangerschaften und das Alter fördern Krampfadern.',
+      'Über Jahre kann die Haut am Knöchel braun und hart werden. Im schlimmsten Fall entsteht eine offene Wunde, ein „offenes Bein“.',
+      'In Krampfadern können sich Gerinnsel bilden, dann entzündet sich die Vene schmerzhaft.',
+    ],
+    behandlung: [
+      'Mit Ultraschall sehen wir, welche Venen und Klappen betroffen sind.',
+      'Kompressionsstrümpfe drücken die Venen zusammen und lindern Schwellung und Schwere. Sie wirken nur, solange Sie sie tragen.',
+      'Stören die Krampfadern stark, können sie verödet, von innen mit Wärme verschlossen oder operativ entfernt werden.',
+      'Pflanzliche Mittel wie Rosskastanie lindern Schwellungen etwas, ersetzen aber Bewegung und Kompression nicht.',
+    ],
+    selbst: [
+      'Bewegen Sie sich viel: Gehen, Radfahren und Schwimmen bringen die Wadenmuskeln in Schwung – sie pumpen das Blut nach oben.',
+      'Legen Sie die Beine öfter hoch. Wippen Sie bei langem Sitzen oder Stehen mit den Füßen.',
+      'Meiden Sie viel Wärme wie heiße Bäder. Kaltes Abduschen der Beine tut gut.',
+      'Ziehen Sie die Kompressionsstrümpfe gleich morgens an. Jedes Kilo weniger entlastet die Venen.',
+    ],
+    warnung:
+      'Ein Bein schwillt plötzlich an, schmerzt und ist warm: bitte am selben Tag kommen, bei Luftnot sofort 112. Blutet eine Krampfader: Bein hoch, fest draufdrücken.',
+  },
+];

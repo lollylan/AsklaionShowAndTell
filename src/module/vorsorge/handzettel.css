@@ -1,0 +1,10 @@
+/* Nur Abstände – Schrift, Farben und Rahmen bestimmt der Handzettel. */
+
+.vorsorge-zettel p {
+  margin: 0.25em 0;
+}
+
+.vorsorge-zettel ul {
+  margin: 0.5em 0;
+  padding-left: 1.2em;
+}

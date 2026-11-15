@@ -1,0 +1,30 @@
+# Was nicht in die öffentliche Demo (Asklaion Show and Tell) darf.
+#
+# Gelesen von vite.config.ts (Build-Filter bei VITE_DEMO=1) und von den Prüfungen vor einer
+# Veröffentlichung. Im öffentlichen Quelltext fehlen diese Pfade von vornherein.
+# Eine Zeile je Pfad, relativ zur Projektwurzel, Ordner mit „/“ am Ende.
+#
+#   src/…     Quelltext: Jede Datei darunter wird im Demo-Build durch ein leeres Modul ersetzt.
+#             Öffentlicher Code darf solche Dateien nur über import.meta.glob einbinden
+#             (siehe src/kern/register.ts) und muss ohne sie auskommen.
+#   public/…  Dateien: werden nach dem Build aus dist/ gelöscht; die App fragt mit
+#             gibtEs() aus src/kern/pfad.ts, ob ein Bild vorhanden ist. Fehlt ein Ordner auf
+#             dem Rechner, gilt er auch außerhalb der Demo als nicht vorhanden.
+
+# Praxis-eigene und nicht veröffentlichbare Logik und Daten
+src/privat/
+
+# Malariakarten aus dem CRM Handbuch Reisemedizin (Thieme)
+public/bilder/malaria/
+
+# Packungsfotos (Rechte bei Herstellern und Händler)
+public/bilder/medikamente/
+
+# Bildschirmfotos der Praxis-Website
+public/bilder/ablaeufe/
+
+# Praxislogo
+public/logo.png
+
+# Die mit kie.ai erzeugten Bilder (bilder/impfungen, bilder/krankheiten,
+# bilder/orthopaedie/uebungen) sind seit 15.11.2026 freigegeben (Entscheidung Florian).

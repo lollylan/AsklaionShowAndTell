@@ -1,0 +1,31 @@
+.merkblaetter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 4px;
+  padding-left: 28px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-hell);
+}
+
+.merkblaetter svg {
+  flex: none;
+  color: var(--petrol);
+}
+
+.merkblaetter a {
+  color: var(--petrol);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.merkblaetter a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.merkblaetter a:focus-visible {
+  outline: 2px solid var(--petrol);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

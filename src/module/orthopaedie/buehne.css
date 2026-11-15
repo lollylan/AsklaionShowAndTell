@@ -1,0 +1,537 @@
+/* Bühne des Moduls Orthopädie. Maße in px auf 1920 × 1080, dunkles Petrol kommt von der Bühne. */
+
+.orthobuehne {
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes ortho-ein {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(24px);
+  }
+}
+
+@keyframes ortho-auf {
+  from {
+    opacity: 0;
+    scale: 0.6;
+  }
+}
+
+.orthobuehne__frage {
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  max-width: 1100px;
+  font-family: var(--schrift-titel);
+  font-size: 104px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+  translate: 0 -50%;
+  text-wrap: balance;
+  animation: ortho-ein 900ms var(--raus) both;
+}
+
+/* ---------- Blatt: Kopf, Inhalt der Seite, Weg durch die Seiten ---------- */
+
+.orthoblatt {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  row-gap: 30px;
+  padding: 58px 110px 56px 100px;
+  animation: ortho-ein 800ms var(--raus) both;
+}
+
+.orthoblatt__kopf {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 28px;
+}
+
+.orthoblatt__kopf h2 {
+  font-family: var(--schrift-titel);
+  font-size: 62px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--auf-petrol);
+}
+
+.orthoblatt__kopf h2[data-lang='true'] {
+  font-size: 52px;
+}
+
+.orthoblatt__zusatz {
+  font-size: 28px;
+  color: var(--auf-petrol-leise);
+}
+
+.orthoblatt__inhalt {
+  min-height: 0;
+  animation: ortho-ein 700ms var(--raus) both;
+}
+
+/* ---------- Text mit Aufzählung (wie in den Aufklärungen) ---------- */
+
+.orthotext h3,
+.orthohilft__kopf h3,
+.orthouebungen__kopf h3 {
+  margin: 0 0 22px;
+  padding-top: 26px;
+  font-family: var(--schrift-text);
+  font-size: 34px;
+  color: #f3b48f;
+  background: linear-gradient(var(--kupfer-hell), var(--kupfer-hell)) left top / 96px 4px no-repeat;
+}
+
+.orthotext__saetze {
+  display: grid;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 31px;
+  line-height: 1.36;
+  color: var(--auf-petrol);
+}
+
+.orthotext__saetze[data-viele='true'] {
+  gap: 14px;
+  font-size: 28px;
+}
+
+.orthotext__saetze li {
+  position: relative;
+  padding-left: 36px;
+  text-wrap: pretty;
+  animation: ortho-ein 700ms var(--raus) both;
+}
+
+.orthotext__saetze li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0.52em;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--auf-petrol-leise);
+}
+
+.orthoquelle {
+  margin-top: 14px;
+  font-size: 17px;
+  color: var(--auf-petrol-leise);
+  opacity: 0.85;
+}
+
+/* ---------- Was ist das? / Ursachen: Zeichnung links, Text rechts ---------- */
+
+.orthozwei {
+  display: grid;
+  grid-template-columns: 680px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 90px;
+  height: 100%;
+}
+
+.orthozwei[data-bild='false'] {
+  grid-template-columns: minmax(0, 1240px);
+}
+
+.orthozwei__zeichnung {
+  width: 680px;
+  height: 680px;
+  align-self: center;
+}
+
+.orthozwei__zeichnung .zeichnung {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  font-family: var(--schrift-text);
+}
+
+/* ---------- Im Modell ---------- */
+
+.orthomodell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 600px;
+  align-items: center;
+  column-gap: 60px;
+  height: 100%;
+}
+
+.orthomodell__flaeche {
+  position: relative;
+  height: 100%;
+  min-height: 600px;
+}
+
+/* ---------- Im Bild: Aufnahmen mit Markierungen ---------- */
+
+.orthobild {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 560px;
+  align-items: center;
+  column-gap: 80px;
+  height: 100%;
+}
+
+/* ---------- Was hilft? ---------- */
+
+.orthohilft {
+  display: grid;
+  grid-template-columns: 440px minmax(0, 1fr);
+  column-gap: 90px;
+  align-items: center;
+  height: 100%;
+}
+
+.orthohilft__kopf p {
+  font-size: 31px;
+  line-height: 1.36;
+  color: var(--auf-petrol);
+  text-wrap: pretty;
+  animation: ortho-ein 700ms var(--raus) both;
+}
+
+.orthohilft__gruppen {
+  display: grid;
+  gap: 0;
+}
+
+.orthohilft__gruppe {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  column-gap: 30px;
+  padding: 14px 0;
+  border-top: 2px solid var(--auf-petrol-linie);
+}
+
+.orthohilft__gruppe:first-child {
+  border-top: 0;
+}
+
+.orthohilft__gruppe h4 {
+  align-self: start;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 4px 0 0;
+  font-size: 26px;
+  color: var(--auf-petrol);
+}
+
+.orthohilft__gruppe[data-evidenz='abraten'] h4 {
+  color: #f3b48f;
+}
+
+.orthohilft__gruppe ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 12px 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.orthohilft__gruppe li {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  animation: ortho-ein 700ms var(--raus) both;
+}
+
+.orthohilft__gruppe li strong {
+  font-size: 26px;
+  line-height: 1.25;
+  color: var(--auf-petrol);
+}
+
+.orthohilft__gruppe li span {
+  font-size: 21px;
+  line-height: 1.35;
+  color: var(--auf-petrol-leise);
+  text-wrap: pretty;
+}
+
+.orthohilft__gruppe[data-evidenz='abraten'] li strong {
+  color: #fbdcc8;
+}
+
+.belegmass {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  gap: 5px;
+}
+
+.belegmass i {
+  width: 12px;
+  height: 30px;
+  border-radius: 3px;
+  background: var(--auf-petrol-linie);
+}
+
+.belegmass i:nth-child(1) {
+  height: 18px;
+  align-self: end;
+}
+
+.belegmass i:nth-child(2) {
+  height: 24px;
+  align-self: end;
+}
+
+.belegmass i[data-voll='true'] {
+  background: var(--auf-petrol);
+}
+
+.belegmass[data-evidenz='moeglich'] i[data-voll='true'] {
+  background: var(--auf-petrol-leise);
+}
+
+.belegmass[data-evidenz='abraten']::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: 50%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--kupfer-hell);
+  rotate: -28deg;
+}
+
+/* ---------- Übungen ---------- */
+
+.orthouebungen {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-content: center;
+  row-gap: 30px;
+  height: 100%;
+}
+
+.orthouebungen__kopf {
+  display: grid;
+  gap: 8px;
+}
+
+.orthouebungen__kopf h3 {
+  margin-bottom: 10px;
+}
+
+.orthouebungen__kopf p {
+  max-width: 1500px;
+  font-size: 28px;
+  line-height: 1.36;
+  color: var(--auf-petrol);
+  animation: ortho-ein 700ms var(--raus) both;
+}
+
+.orthouebungen__liste {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 34px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.orthouebungen__liste[data-anzahl='2'] {
+  grid-template-columns: repeat(2, minmax(0, 560px));
+}
+
+.orthouebungen__liste[data-anzahl='3'] {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.orthouebungen__liste li {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  animation: ortho-ein 700ms var(--raus) both;
+}
+
+.orthouebungen__figur {
+  aspect-ratio: 8 / 5;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  background: rgb(1 44 55 / 0.45);
+}
+
+.orthouebungen__liste strong {
+  font-size: 27px;
+  line-height: 1.25;
+  color: var(--auf-petrol);
+  text-wrap: balance;
+}
+
+.orthouebungen__liste span {
+  font-size: 22px;
+  line-height: 1.35;
+  color: var(--auf-petrol-leise);
+}
+
+.uebungsbild {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.orthowarnung {
+  display: flex;
+  gap: 18px;
+  max-width: 1500px;
+  padding: 20px 24px;
+  border-radius: 14px;
+  background: rgb(212 113 63 / 0.16);
+  font-size: 26px;
+  line-height: 1.34;
+  color: #fbdcc8;
+  animation: ortho-ein 700ms var(--raus) both;
+}
+
+.orthowarnung svg {
+  flex: none;
+  margin-top: 1px;
+  color: #f3b48f;
+}
+
+/* ---------- Eine Übung groß ---------- */
+
+.orthobuehne > .orthoeinzel {
+  position: absolute;
+  inset: 90px 110px 90px 100px;
+  animation: ortho-ein 800ms var(--raus) both;
+}
+
+.orthoeinzel {
+  display: grid;
+  grid-template-columns: 940px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 70px;
+  height: 100%;
+}
+
+.orthoeinzel__figur {
+  aspect-ratio: 8 / 5;
+  border-radius: 18px;
+  background: rgb(1 44 55 / 0.45);
+}
+
+.orthoeinzel__text h3 {
+  font-family: var(--schrift-titel);
+  font-size: 46px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--auf-petrol);
+}
+
+.orthoeinzel__ziel {
+  margin-top: 12px;
+  font-size: 27px;
+  line-height: 1.35;
+  color: var(--auf-petrol-leise);
+}
+
+.orthoeinzel__ausgang {
+  margin-top: 24px;
+  font-size: 25px;
+  line-height: 1.35;
+  color: var(--auf-petrol);
+}
+
+.orthoeinzel ol {
+  display: grid;
+  gap: 14px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: schritt;
+}
+
+.orthoeinzel li {
+  position: relative;
+  padding-left: 56px;
+  font-size: 26px;
+  line-height: 1.36;
+  color: var(--auf-petrol);
+  text-wrap: pretty;
+  counter-increment: schritt;
+  animation: ortho-ein 700ms var(--raus) both;
+}
+
+.orthoeinzel li::before {
+  content: counter(schritt);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--kupfer-hell);
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.orthoeinzel__dosis {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: rgb(169 203 211 / 0.16);
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--auf-petrol);
+}
+
+.orthoeinzel__achtung {
+  margin-top: 18px;
+  font-size: 25px;
+  line-height: 1.35;
+  color: #f3b48f;
+}
+
+/* ---------- Weg durch die Seiten ---------- */
+
+.orthoweg {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.orthoweg li {
+  padding-top: 16px;
+  border-top: 4px solid var(--auf-petrol-linie);
+  font-size: 24px;
+  color: var(--auf-petrol-leise);
+  transition:
+    border-color 500ms var(--raus),
+    color 500ms var(--raus);
+}
+
+.orthoweg li[data-lage='war'] {
+  border-top-color: var(--auf-petrol-leise);
+}
+
+.orthoweg li[data-lage='hier'] {
+  border-top-color: var(--kupfer-hell);
+  font-weight: 700;
+  color: var(--auf-petrol);
+}

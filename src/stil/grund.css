@@ -1,0 +1,119 @@
+/* Praxis-CI Dr. Rasche: Petrolblau trägt die Struktur, Kupfer setzt sparsam Akzente.
+   Überschriften Merriweather, Fließtext Arial. */
+
+:root {
+  --petrol: #025669;
+  --petrol-hell: #03758f;
+  --petrol-dunkel: #013d4b;
+  --petrol-tief: #012c37;
+  --kupfer: #bb4e26;
+  --kupfer-hell: #d4713f;
+  --kupfer-dunkel: #8e3a1b;
+
+  --text: #1c2833;
+  --text-hell: #566573;
+  --grund: #fafbfc;
+  --flaeche: #ffffff;
+  --warmweiss: #fdf8f5;
+  --linie: #d5d8dc;
+  --petrol-hauch: #e6f0f2;
+
+  /* Helle Töne auf Petrol, aus dem Petrol heraus getönt statt grau */
+  --auf-petrol: #eef6f7;
+  --auf-petrol-leise: #a9cbd3;
+  --auf-petrol-linie: rgb(169 203 211 / 0.28);
+
+  --schrift-titel: 'Merriweather', Georgia, serif;
+  --schrift-text: Arial, Helvetica, sans-serif;
+
+  --raus: cubic-bezier(0.16, 1, 0.3, 1);
+
+  font-family: var(--schrift-text);
+  color: var(--text);
+  background: var(--grund);
+  accent-color: var(--petrol);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--schrift-titel);
+  font-weight: 700;
+  color: var(--petrol);
+  text-wrap: balance;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: var(--petrol);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--petrol-hell);
+  outline-offset: 2px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #b4c6ca transparent;
+}
+
+.nur-vorlesen {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

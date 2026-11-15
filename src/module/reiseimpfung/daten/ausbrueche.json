@@ -1,0 +1,189 @@
+{
+ "stand": "15.11.2026",
+ "quellen": "WHO Disease Outbreak News (bis DON626, 13.11.2026) und ECDC Public health events (14.11.2026); von Hand gekürzt und übersetzt. Neu zusammenstellen: siehe README, Abschnitt Reiseimpfberatung.",
+ "meldungen": [
+  {
+   "id": "ebola-bdbv-cod",
+   "krankheit": "Ebola (Bundibugyo-Virus)",
+   "ernst": "hoch",
+   "laender": [
+    "COD"
+   ],
+   "text": "Größter Ebola-Ausbruch, der je im Land gemeldet wurde: 11 197 bestätigte Fälle und 5471 Todesfälle (Stand 12.11.2026), acht Provinzen vor allem im Osten (Ituri, Nord- und Süd-Kivu, Haut- und Bas-Uélé, Tshopo), seit September auch Sud-Ubangi im Nordwesten. Weiter steigend. Seit 17.05.2026 gesundheitliche Notlage internationaler Tragweite. Gegen das Bundibugyo-Virus gibt es keinen zugelassenen Impfstoff.",
+   "datum": "2026-11-12",
+   "quelle": "ECDC",
+   "url": "https://www.ecdc.europa.eu/en/public-health-events"
+  },
+  {
+   "id": "ebola-bdbv-import",
+   "krankheit": "Ebola (Bundibugyo-Virus)",
+   "ernst": "mittel",
+   "laender": [
+    "KEN",
+    "NGA"
+   ],
+   "text": "Im Oktober 2026 eingeschleppte Einzelfälle aus dem Kongo-Ausbruch. Seit dem 23.10.2026 keine neuen Fälle gemeldet. Die WHO rät nicht von Reisen ab.",
+   "datum": "2026-11-06",
+   "quelle": "WHO",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625"
+  },
+  {
+   "id": "ebola-bdbv-uga",
+   "krankheit": "Ebola (Bundibugyo-Virus)",
+   "ernst": "info",
+   "laender": [
+    "UGA",
+    "SSD"
+   ],
+   "text": "Uganda hatte im Mai und Juni 2026 20 bestätigte Fälle, eingeschleppt aus dem Kongo; seit dem 21.06.2026 keine neuen Fälle. Südsudan grenzt an die betroffene kongolesische Provinz Haut-Uélé.",
+   "datum": "2026-07-17",
+   "quelle": "WHO",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON613"
+  },
+  {
+   "id": "gelbfieber-afrika",
+   "krankheit": "Gelbfieber",
+   "ernst": "hoch",
+   "laender": [
+    "BFA",
+    "CIV",
+    "GHA",
+    "LBR",
+    "CMR",
+    "CAF",
+    "GIN",
+    "NGA",
+    "TGO"
+   ],
+   "text": "67 bestätigte Fälle und 18 Todesfälle in neun Ländern (01.01.–12.10.2026). Zuletzt vor allem in Burkina Faso, Elfenbeinküste, Ghana und Liberia, auch nahe den Grenzen. Risiko besonders bei Arbeit oder Aufenthalt in Wald- und Bergbaugebieten. Impfschutz prüfen.",
+   "datum": "2026-11-06",
+   "quelle": "WHO",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON624"
+  },
+  {
+   "id": "gelbfieber-amerika",
+   "krankheit": "Gelbfieber",
+   "ernst": "hoch",
+   "laender": [
+    "COL",
+    "BOL",
+    "BRA",
+    "ECU",
+    "PER",
+    "VEN"
+   ],
+   "text": "79 bestätigte Fälle von Januar bis Mai 2026 in sechs Ländern, am stärksten betroffen Kolumbien – dort auch bei ungeimpften Reisenden. Die Übertragung hat sich seit 2025 in Gebiete ausgeweitet, die jahrzehntelang frei waren. Impfschutz prüfen.",
+   "datum": "2026-06-24",
+   "quelle": "WHO",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON610"
+  },
+  {
+   "id": "mers-sau",
+   "krankheit": "MERS",
+   "ernst": "info",
+   "laender": [
+    "SAU"
+   ],
+   "text": "Acht Fälle 2026, davon ein Todesfall; seit Oktober keine neuen Fälle. Kontakt zu Dromedaren und Rohmilch meiden.",
+   "datum": "2026-11-10",
+   "quelle": "ECDC",
+   "url": "https://www.ecdc.europa.eu/en/public-health-events"
+  },
+  {
+   "id": "mers-qat",
+   "krankheit": "MERS",
+   "ernst": "info",
+   "laender": [
+    "QAT"
+   ],
+   "text": "Zwei Fälle im August 2026, die ersten seit 2022, beide mit beruflichem Kontakt zu Dromedaren. Keine Folgefälle.",
+   "datum": "2026-11-13",
+   "quelle": "WHO",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON626"
+  },
+  {
+   "id": "masern-bgd",
+   "krankheit": "Masern",
+   "ernst": "mittel",
+   "laender": [
+    "BGD"
+   ],
+   "text": "Landesweiter Ausbruch seit März 2026 in 58 von 64 Distrikten, im ersten Monat über 19 000 Verdachtsfälle und 166 Todesfälle, meist Kinder unter fünf Jahren. Masernschutz prüfen.",
+   "datum": "2026-04-23",
+   "quelle": "WHO",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON598"
+  },
+  {
+   "id": "nipah-ind",
+   "krankheit": "Nipah-Virus",
+   "ernst": "info",
+   "laender": [
+    "IND"
+   ],
+   "text": "Einzelfälle 2026 in Westbengalen (Januar) und Kerala (Juni), keine Folgefälle. Für Reisende sehr geringes Risiko; rohen Palmsaft und angebissenes Obst meiden.",
+   "datum": "2026-06-25",
+   "quelle": "WHO",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON609"
+  },
+  {
+   "id": "nipah-bgd",
+   "krankheit": "Nipah-Virus",
+   "ernst": "info",
+   "laender": [
+    "BGD"
+   ],
+   "text": "Kleine Ausbrüche fast jedes Jahr, meist Dezember bis April zur Palmsaft-Ernte; Einzelfall im Januar 2026. Rohen Dattelpalmsaft meiden.",
+   "datum": "2026-02-06",
+   "quelle": "WHO",
+   "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON594"
+  },
+  {
+   "id": "chikungunya-fra",
+   "krankheit": "Chikungunya (vor Ort übertragen)",
+   "ernst": "info",
+   "laender": [
+    "FRA"
+   ],
+   "text": "213 vor Ort übertragene Fälle 2026 (Stand 11.11.2026). Die Mückensaison endet im Herbst.",
+   "datum": "2026-11-13",
+   "quelle": "ECDC",
+   "url": "https://www.ecdc.europa.eu/en/public-health-events"
+  },
+  {
+   "id": "dengue-ita",
+   "krankheit": "Dengue (vor Ort übertragen)",
+   "ernst": "info",
+   "laender": [
+    "ITA"
+   ],
+   "text": "76 vor Ort übertragene Dengue-Fälle 2026, dazu ein Chikungunya-Fall (Stand 11.11.2026). Die Mückensaison endet im Herbst.",
+   "datum": "2026-11-13",
+   "quelle": "ECDC",
+   "url": "https://www.ecdc.europa.eu/en/public-health-events"
+  },
+  {
+   "id": "h5n1-usa",
+   "krankheit": "Vogelgrippe A(H5N1)",
+   "ernst": "info",
+   "laender": [
+    "USA"
+   ],
+   "text": "Weitere Einzelfälle bei Beschäftigten in Milchviehbetrieben (Washington, November 2026). Für Reisende ohne Tierkontakt kein erhöhtes Risiko; Rohmilch meiden.",
+   "datum": "2026-11-09",
+   "quelle": "ECDC",
+   "url": "https://www.ecdc.europa.eu/en/public-health-events"
+  },
+  {
+   "id": "h9n2-chn",
+   "krankheit": "Vogelgrippe A(H9N2)",
+   "ernst": "info",
+   "laender": [
+    "CHN"
+   ],
+   "text": "Vier neue menschliche Einzelfälle im Oktober 2026. Für Reisende geringes Risiko; Geflügelmärkte meiden.",
+   "datum": "2026-11-04",
+   "quelle": "ECDC",
+   "url": "https://www.ecdc.europa.eu/en/public-health-events"
+  }
+ ]
+}

@@ -1,0 +1,398 @@
+/* Handzettel: am Bildschirm ein A4-Blatt neben einer Leiste, im Druck nur das Blatt.
+   Die Druckfassungen der Module liefern schlichtes HTML (h3, h4, p, ul); hier steht,
+   wie es aussieht. */
+
+.zettelseite {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  align-items: start;
+  gap: 32px;
+  min-height: 100%;
+  padding: 32px;
+  background: #e9eef0;
+}
+
+/* ---------- Leiste (nur Bildschirm) ---------- */
+
+.zettelleiste {
+  position: sticky;
+  top: 32px;
+  display: grid;
+  gap: 14px;
+}
+
+.zettelleiste h1 {
+  font-size: 24px;
+}
+
+.zettelleiste ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--linie);
+  list-style: none;
+}
+
+.zettelleiste li label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px 4px;
+  border-bottom: 1px solid var(--linie);
+  cursor: pointer;
+}
+
+.zettelleiste li input {
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+}
+
+.zettelleiste li small {
+  display: block;
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.zettelleiste__leer,
+.zettelleiste__hinweis {
+  font-size: 13px;
+  color: var(--text-hell);
+}
+
+.zettelleiste__notiz {
+  display: grid;
+  gap: 6px;
+  font-weight: 700;
+}
+
+.zettelleiste__notiz textarea {
+  padding: 10px 12px;
+  border: 1px solid #9aa7b1;
+  border-radius: 8px;
+  background: var(--flaeche);
+  color: var(--text);
+  font: inherit;
+  font-weight: 400;
+  resize: vertical;
+  caret-color: var(--petrol);
+}
+
+.zettelleiste__notiz textarea::placeholder {
+  color: var(--text-hell);
+  opacity: 1;
+}
+
+.zettelleiste__drucken {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  border: 1px solid var(--petrol);
+  border-radius: 8px;
+  background: var(--petrol);
+  color: #fff;
+  font-weight: 700;
+  transition: background-color 160ms var(--raus);
+}
+
+.zettelleiste__drucken:hover:not(:disabled) {
+  background: var(--petrol-hell);
+}
+
+.zettelleiste__drucken:disabled {
+  border-color: var(--linie);
+  background: var(--flaeche);
+  color: #8a97a3;
+}
+
+/* Speichern und Versenden: gleiche Höhe wie Drucken, aber zurückhaltend. */
+.zettelleiste__weitere {
+  display: grid;
+  gap: 8px;
+  margin-top: -6px;
+}
+
+.zettelleiste__weitere button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  border: 1px solid var(--petrol);
+  border-radius: 8px;
+  background: var(--flaeche);
+  color: var(--petrol);
+  font-weight: 700;
+  transition:
+    background-color 160ms var(--raus),
+    color 160ms var(--raus);
+}
+
+.zettelleiste__weitere button:hover:not(:disabled) {
+  background: var(--petrol-hauch);
+}
+
+.zettelleiste__weitere button:disabled {
+  border-color: var(--linie);
+  color: #6b7884;
+  cursor: default;
+}
+
+.zettelleiste__weitere button[aria-busy='true'] {
+  border-color: var(--petrol);
+  color: var(--petrol);
+  cursor: progress;
+}
+
+.zettelleiste__drucken:focus-visible,
+.zettelleiste__weitere button:focus-visible {
+  outline: 2px solid var(--kupfer);
+  outline-offset: 2px;
+}
+
+.zettelleiste__dreht {
+  animation: zettel-dreht 900ms linear infinite;
+}
+
+@keyframes zettel-dreht {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zettelleiste__dreht {
+    animation-duration: 2400ms;
+  }
+}
+
+.zettelleiste__meldung {
+  min-height: 1lh;
+  font-size: 13px;
+  color: var(--petrol);
+}
+
+.zettelleiste__meldung:empty {
+  display: none;
+}
+
+.zettelleiste__meldung[data-fehler='true'] {
+  color: var(--kupfer-dunkel);
+}
+
+/* ---------- Das Blatt ---------- */
+
+.zettel {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 16mm 18mm 14mm;
+  background: #fff;
+  box-shadow: 0 18px 44px -20px rgb(1 44 55 / 0.45);
+  color: #1c2833;
+  font-size: 10.5pt;
+  line-height: 1.42;
+}
+
+.zettel__kopf {
+  display: flex;
+  align-items: center;
+  gap: 5mm;
+  padding-bottom: 5mm;
+  border-bottom: 0.6mm solid var(--petrol);
+}
+
+.zettel__kopf img {
+  width: 15mm;
+  height: 15mm;
+  object-fit: contain;
+}
+
+.zettel__praxis {
+  font-family: var(--schrift-titel);
+  font-size: 14pt;
+  font-weight: 700;
+  color: var(--petrol);
+}
+
+.zettel__datum {
+  margin-left: auto;
+  color: var(--text-hell);
+}
+
+.zettel__titel {
+  margin: 7mm 0 2mm;
+  font-size: 17pt;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.zettel__notiz,
+.zettel__eintrag {
+  padding: 5mm 0 4mm;
+  border-bottom: 0.2mm solid var(--linie);
+}
+
+.zettel__notiz p {
+  white-space: pre-wrap;
+}
+
+.zettel h3 {
+  margin-bottom: 1.5mm;
+  font-size: 13pt;
+  line-height: 1.25;
+  break-after: avoid;
+}
+
+.zettel h3 small {
+  margin-left: 3mm;
+  font-family: var(--schrift-text);
+  font-size: 10pt;
+  font-weight: 400;
+  color: var(--text-hell);
+}
+
+.zettel h4 {
+  margin: 3mm 0 1mm;
+  font-family: var(--schrift-text);
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: var(--kupfer-dunkel);
+  break-after: avoid;
+}
+
+.zettel section {
+  break-inside: avoid;
+}
+
+.zettel ul {
+  display: grid;
+  gap: 0.8mm;
+  margin: 0;
+  padding-left: 4.5mm;
+}
+
+.zettel li::marker {
+  color: var(--petrol);
+}
+
+.zettel__leise {
+  color: var(--text-hell);
+}
+
+.zettel__wert {
+  font-size: 12pt;
+}
+
+.zettel__wert strong {
+  color: var(--petrol);
+  font-variant-numeric: tabular-nums;
+}
+
+.zettel__bereiche {
+  padding-left: 0 !important;
+  list-style: none;
+}
+
+.zettel__bereiche span {
+  display: inline-block;
+  min-width: 34mm;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-hell);
+}
+
+.zettel__bereiche li[data-hier] {
+  font-weight: 700;
+}
+
+.zettel__bereiche li[data-hier] span {
+  color: inherit;
+}
+
+.zettel__spalten[data-bild='true'] {
+  display: grid;
+  grid-template-columns: 48mm minmax(0, 1fr);
+  align-items: start;
+  gap: 6mm;
+}
+
+.zettel__spalten section:first-child h4 {
+  margin-top: 0;
+}
+
+/* Die Zeichnungen sind für die dunkle Bühne gemacht – sie bekommen ihr Petrol mit aufs Papier. */
+.zettel__bild {
+  aspect-ratio: 1;
+  padding: 2mm;
+  border-radius: 2mm;
+  background: var(--petrol-dunkel);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.zettel__warnung {
+  margin-top: 3mm;
+  padding: 2.5mm 3.5mm;
+  border: 0.3mm solid #e3c4b6;
+  border-radius: 1.5mm;
+  background: var(--warmweiss);
+  color: var(--kupfer-dunkel);
+  break-inside: avoid;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.zettel__fuss {
+  margin-top: 6mm;
+  font-size: 9pt;
+  color: var(--text-hell);
+}
+
+@media (max-width: 1180px) {
+  .zettelseite {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .zettelleiste {
+    position: static;
+    max-width: 210mm;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 14mm 16mm;
+}
+
+@media print {
+  html,
+  body,
+  #app {
+    height: auto;
+    background: #fff;
+  }
+
+  .zettelseite {
+    display: block;
+    padding: 0;
+    background: none;
+  }
+
+  .zettelleiste {
+    display: none;
+  }
+
+  .zettel {
+    width: auto;
+    min-height: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+/* Zweckbestimmung der öffentlichen Fassung, eigene Zeile unter dem Schlusssatz. */
+.zettel__zweck {
+  display: block;
+  margin-top: 2mm;
+}
