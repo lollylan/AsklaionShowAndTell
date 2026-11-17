@@ -82,10 +82,12 @@ export default function GehstockTreppe() {
         d="M380 640 L380 512 L450 512 L450 548 L530 548 L530 584 L610 584 L610 620 L700 620 L700 640 Z"
         kante="M380 512 L450 512 L450 548 L530 548 L530 584 L610 584 L610 620 L700 620"
       />
-      <Figur h={[474, 392]} gesund={[470, 537]} krank={[514, 534]} krankVorn spitze={[574, 584]} />
-      <Pfeil d="M528 554 L528 574" farbe={F.kupferHell} breite={4} />
-      <Nummer x={652} y={556} n={1} />
-      <Nummer x={414} y={474} n={2} />
+      {/* Gesundes Bein bleibt oben und trägt (leicht gebeugt), Stock und krankes Bein stehen schon
+          eine Stufe tiefer. */}
+      <Figur h={[500, 440]} gesund={[500, 545]} krank={[536, 581]} krankVorn spitze={[592, 584]} />
+      <Pfeil d="M640 470 C650 500 640 530 618 548" farbe={F.kupferHell} breite={4} />
+      <Nummer x={652} y={448} n={1} />
+      <Nummer x={462} y={486} n={2} />
       <Etikett x={540} y={684} anker="middle">
         Treppab
       </Etikett>

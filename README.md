@@ -5,6 +5,15 @@ was der Patient auf seinem Bildschirm sieht – Zeichnungen, 3D-Modelle, Erklär
 
 **Demo:** https://lollylan.github.io/AsklaionShowAndTell/
 
+> **Wichtiger Hinweis:** Alle Inhalte – Texte, Zeichnungen, Zahlen und Empfehlungen – sind nach
+> bestem Wissen und Gewissen erstellt, aber nicht in jedem Punkt fachlich geprüft und können
+> Fehler enthalten. Sie dienen **nur zu Demonstrationszwecken**: um zu zeigen, wie die App
+> funktioniert. Sie sind nicht zum Nachschlagen, zur Recherche oder als Grundlage für
+> Behandlungsentscheidungen gedacht.
+>
+> **Wenn Ihnen ein Fehler auffällt, schreiben Sie mir bitte unbedingt:**
+> [florian.rasche+asklaion@googlemail.com](mailto:florian.rasche+asklaion@googlemail.com)
+
 ## Zweck
 
 Information und Aufklärung, keine Diagnose- oder Therapieempfehlung. Ersetzt nicht die ärztliche

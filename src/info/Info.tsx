@@ -98,6 +98,18 @@ export function Info() {
               miteinander. Bitte keine echten Patientendaten eingeben.
             </p>
           )}
+          {IST_DEMO && (
+            <p className="info__zweck">
+              Alle Inhalte sind nach bestem Wissen und Gewissen erstellt, aber nicht in jedem Punkt
+              fachlich geprüft. Die Demo dient nur dazu, die App vorzuführen – nicht zum
+              Nachschlagen, zur Recherche oder als Grundlage für Behandlungsentscheidungen. Wenn
+              Ihnen ein Fehler auffällt, schreiben Sie mir bitte unbedingt:{' '}
+              <a href="mailto:florian.rasche+asklaion@googlemail.com">
+                florian.rasche+asklaion@googlemail.com
+              </a>
+              .
+            </p>
+          )}
         </section>
 
         <section aria-labelledby="info-quellen">
