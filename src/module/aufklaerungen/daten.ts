@@ -16,6 +16,11 @@ import { BESCHWERDEN_WEITERE } from './daten/beschwerden-weitere';
 import { INFEKTE } from './daten/infekte';
 import { UNTERSUCHUNGEN } from './daten/untersuchungen';
 import { VERFUEGUNGEN } from './daten/verfuegungen';
+import { HAUT } from './daten/haut';
+import { AFTER } from './daten/after';
+import { LABOR } from './daten/labor';
+import { VERLETZUNGEN } from './daten/verletzungen';
+import { ARBEIT } from './daten/arbeit';
 
 export { GEBIETE, SEITEN } from './daten/typen';
 export type { Blattseite, GebietId, Krankheit, SeiteId } from './daten/typen';
@@ -27,10 +32,15 @@ const gruppen: Krankheit[][] = [
   INFEKTE,
   BEWEGUNG,
   BAUCH,
+  AFTER,
   KOPF,
+  VERLETZUNGEN,
+  HAUT,
   BESCHWERDEN,
   BESCHWERDEN_WEITERE,
+  ARBEIT,
   UNTERSUCHUNGEN,
+  LABOR,
   VERFUEGUNGEN,
 ];
 
@@ -70,7 +80,9 @@ export function sucheKrankheiten(frage: string): Krankheit[] {
  * Beschwerden sind es Warnzeichen, bei Untersuchungen und Vorsorgedokumenten ein Merksatz.
  */
 export function hinweisTitel(krankheit: Krankheit): string {
-  return krankheit.gebiet === 'untersuchungen' || krankheit.gebiet === 'verfuegungen'
+  return krankheit.gebiet === 'untersuchungen' ||
+    krankheit.gebiet === 'verfuegungen' ||
+    krankheit.gebiet === 'arbeit'
     ? 'Wichtig.'
     : 'Warnzeichen.';
 }

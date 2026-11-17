@@ -1045,5 +1045,168 @@
       "Aus solchen Polypen kann über viele Jahre Darmkrebs entstehen.",
       "Meist wird der Polyp gleich bei der Spiegelung mit einer kleinen Schlinge entfernt – das spüren Sie nicht, und aus ihm kann dann kein Krebs mehr werden."
     ]
+  },
+  "melanom": {
+    "nach": "abcde",
+    "aufnahmen": [
+      {
+        "datei": "melanom-1.jpg",
+        "titel": "A und B: ungleiche Form, zackiger Rand",
+        "urheber": "National Cancer Institute (NCI Visuals Online)",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Melanoma_vs_normal_mole_ABCD_rule_NCI_Visuals_Online.jpg",
+        "art": "Foto",
+        "marken": [
+          {
+            "x": 0.21,
+            "y": 0.22,
+            "text": "Melanom"
+          },
+          {
+            "x": 0.76,
+            "y": 0.22,
+            "text": "Muttermal"
+          }
+        ]
+      },
+      {
+        "datei": "melanom-2.jpg",
+        "titel": "C und D: mehrere Farben, groß",
+        "urheber": "National Cancer Institute (NCI Visuals Online)",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Melanoma_vs_normal_mole_ABCD_rule_NCI_Visuals_Online.jpg",
+        "art": "Foto",
+        "marken": [
+          {
+            "x": 0.25,
+            "y": 0.28,
+            "text": "Melanom"
+          },
+          {
+            "x": 0.74,
+            "y": 0.28,
+            "text": "Muttermal"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links jeweils ein Melanom, rechts ein harmloses Muttermal zum Vergleich.",
+      "Melanome sind oft ungleichmäßig geformt, unscharf oder zackig begrenzt, mehrfarbig und größer als ein Muttermal.",
+      "Nicht jedes Melanom zeigt alle Zeichen. Wenn Ihnen ein Fleck auffällt, zeigen Sie ihn uns lieber einmal zu viel."
+    ]
+  },
+  "fusspilz": {
+    "nach": "hautpilz",
+    "aufnahmen": [
+      {
+        "datei": "fusspilz-1.jpg",
+        "titel": "Fußpilz zwischen den Zehen",
+        "art": "Foto",
+        "urheber": "Falloonb (englische Wikipedia)",
+        "lizenz": "Public Domain",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Tinea_pedis_interdigitalis.jpg",
+        "marken": [
+          {
+            "x": 0.5,
+            "y": 0.3,
+            "text": "aufgeweichte, weißliche Haut"
+          },
+          {
+            "x": 0.22,
+            "y": 0.8,
+            "text": "kleiner Einriss"
+          }
+        ]
+      },
+      {
+        "datei": "fusspilz-2.jpg",
+        "titel": "Hautpilz am Bauch",
+        "art": "Foto",
+        "urheber": "Mohammad3021",
+        "lizenz": "CC0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Tinea_corporis.jpg",
+        "marken": [
+          {
+            "x": 0.69,
+            "y": 0.6,
+            "text": "roter, schuppender Rand"
+          },
+          {
+            "x": 0.5,
+            "y": 0.69,
+            "text": "Mitte heller"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Typisch für Fußpilz: Die Haut zwischen den Zehen ist weißlich aufgeweicht, schuppt und reißt ein.",
+      "Die kleinen Risse sind eine Eintrittspforte für Bakterien – deshalb Fußpilz auch dann behandeln, wenn er kaum juckt.",
+      "Am Körper bildet der Pilz runde Flecken: Der Rand ist rot und schuppt, die Mitte wird heller. Mehrere Ringe können zusammenfließen."
+    ]
+  },
+  "subduralhaematom": {
+    "aufnahmen": [
+      {
+        "datei": "subduralhaematom-1.jpg",
+        "titel": "Kopf im CT, von unten gesehen",
+        "art": "CT",
+        "urheber": "James Heilman, MD",
+        "lizenz": "CC BY-SA 3.0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Subduralandherniation.PNG",
+        "marken": [
+          {
+            "x": 0.84,
+            "y": 0.34,
+            "text": "Blutung (hell, sichelförmig)"
+          },
+          {
+            "x": 0.44,
+            "y": 0.33,
+            "text": "Hirnkammer zur Seite gedrückt"
+          },
+          {
+            "x": 0.5,
+            "y": 0.9,
+            "text": "Schädelknochen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Im CT erscheint frisches Blut hell. Es liegt als Sichel zwischen Schädel und Gehirn.",
+      "Die Blutung drückt das Gehirn zur Seite – die Mitte mit den dunklen Hirnkammern ist verschoben.",
+      "Im CT ist die linke Kopfseite rechts im Bild, als würde man von den Füßen her schauen. Ältere Blutungen sind dunkler als diese frische."
+    ]
+  },
+  "milzruptur": {
+    "aufnahmen": [
+      {
+        "datei": "milzruptur-1.jpg",
+        "titel": "Oberbauch im CT, von unten gesehen",
+        "art": "CT",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 4.0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:CT_Spleen_Rupture.jpg",
+        "marken": [
+          {
+            "x": 0.81,
+            "y": 0.67,
+            "text": "Milz mit Riss (dunkler Streifen)"
+          },
+          {
+            "x": 0.22,
+            "y": 0.55,
+            "text": "Leber"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Das CT zeigt den Oberbauch wie in Scheiben, von den Füßen her gesehen – die linke Körperseite ist rechts im Bild.",
+      "In der Milz zieht ein dunkler, unregelmäßiger Streifen: Hier ist das Gewebe eingerissen.",
+      "Mit dem CT sehen wir, wie groß der Riss ist und ob Blut in den Bauch läuft – davon hängt die Behandlung ab."
+    ]
   }
 }

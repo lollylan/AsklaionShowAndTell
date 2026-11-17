@@ -12,7 +12,9 @@ export type GebietId =
   | 'bewegung'
   | 'bauch'
   | 'kopf'
+  | 'haut'
   | 'beschwerden'
+  | 'arbeit'
   | 'untersuchungen'
   | 'verfuegungen';
 
@@ -24,7 +26,9 @@ export const GEBIETE: { id: GebietId; name: string }[] = [
   { id: 'bewegung', name: 'Knochen und Gelenke' },
   { id: 'bauch', name: 'Magen, Darm, Niere und Blase' },
   { id: 'kopf', name: 'Kopf, Nerven und Seele' },
+  { id: 'haut', name: 'Haut' },
   { id: 'beschwerden', name: 'Beschwerden abklären' },
+  { id: 'arbeit', name: 'Arbeit und Krankschreibung' },
   { id: 'untersuchungen', name: 'Untersuchungen und Befunde' },
   { id: 'verfuegungen', name: 'Vorsorgedokumente und Palliativversorgung' },
 ];

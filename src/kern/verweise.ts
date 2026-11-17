@@ -83,6 +83,25 @@ const GRUPPEN: string[][] = [
   [A + 'migraene', A + 'kopfschmerz', M + 'ibuprofen'],
   [A + 'demenz', A + 'vergesslichkeit', K + 'gehirn', A + 'vorsorgevollmacht', A + 'pflegegrad'],
   [A + 'schwindel', K + 'ohr', A + 'bluthochdruck'],
+  [A + 'vertebragener-schwindel', A + 'schwindel', A + 'lagerungsschwindel', K + 'hws', O + 'hws-syndrom'],
+  [A + 'subduralhaematom', K + 'gehirn', A + 'vergesslichkeit', A + 'demenz', M + 'apixaban', M + 'ass', P + 'notfall'],
+  [A + 'milzruptur', K + 'bauchorgane', A + 'ultraschall', P + 'notfall'],
+
+  // Haut und After
+  [A + 'fusspilz', A + 'diabetes-typ-2', K + 'fuss'],
+  [A + 'melanom', V + 'hautkrebs'],
+  [A + 'after-vergleich', A + 'haemorrhoiden', A + 'analvenenthrombose', A + 'analekzem', A + 'darmkrebsvorsorge'],
+  [A + 'haemorrhoiden', A + 'analvenenthrombose', A + 'after-vergleich', M + 'macrogol', A + 'darmkrebsvorsorge'],
+  [A + 'analvenenthrombose', A + 'haemorrhoiden', A + 'after-vergleich', M + 'ibuprofen'],
+  [A + 'analekzem', A + 'haemorrhoiden', A + 'after-vergleich'],
+
+  // Arbeit
+  [A + 'wiedereingliederung', P + 'wiedereingliederung', P + 'reha-antrag', A + 'depression'],
+
+  // Laborwerte im Einzelnen
+  [A + 'leberwerte', A + 'blutwerte', A + 'fettleber', A + 'gallensteine', A + 'ultraschall', K + 'bauchorgane'],
+  [A + 'nierenwerte', A + 'blutwerte', A + 'nierenschwaeche', W + 'egfr', M + 'ibuprofen', M + 'empagliflozin'],
+  [A + 'blutfette', A + 'blutwerte', A + 'cholesterin', W + 'ldl', M + 'atorvastatin', M + 'simvastatin', A + 'khk'],
 
   // Vorsorgedokumente und Palliativ
   [A + 'patientenverfuegung', A + 'vorsorgevollmacht', A + 'palliativversorgung'],

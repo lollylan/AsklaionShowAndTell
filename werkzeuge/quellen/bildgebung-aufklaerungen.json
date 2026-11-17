@@ -369,5 +369,52 @@
     "ziel": "darmkrebsvorsorge-1.jpg",
     "datei": "Colon-Polyp.jpg",
     "farbe": true
+  },
+  {
+    "ziel": "melanom-1.jpg",
+    "datei": "Melanoma vs normal mole ABCD rule NCI Visuals Online.jpg",
+    "zuschnitt": [
+      0,
+      0,
+      1,
+      0.5
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "melanom-2.jpg",
+    "datei": "Melanoma vs normal mole ABCD rule NCI Visuals Online.jpg",
+    "zuschnitt": [
+      0,
+      0.5,
+      1,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "fusspilz-1.jpg",
+    "datei": "Tinea pedis interdigitalis.jpg",
+    "farbe": true
+  },
+  {
+    "ziel": "fusspilz-2.jpg",
+    "datei": "Tinea corporis.jpg",
+    "zuschnitt": [
+      0.04,
+      0.08,
+      0.86,
+      0.86
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "subduralhaematom-1.jpg",
+    "datei": "Subduralandherniation.PNG",
+    "farbe": true
+  },
+  {
+    "ziel": "milzruptur-1.jpg",
+    "datei": "CT Spleen Rupture.jpg"
   }
 ]
