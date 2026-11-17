@@ -108,7 +108,7 @@
 
 .orthotext__saetze li {
   position: relative;
-  padding-left: 36px;
+  padding-inline-start: 36px;
   text-wrap: pretty;
   animation: ortho-ein 700ms var(--raus) both;
 }
@@ -116,7 +116,7 @@
 .orthotext__saetze li::before {
   content: '';
   position: absolute;
-  left: 2px;
+  inset-inline-start: 2px;
   top: 0.52em;
   width: 12px;
   height: 12px;
@@ -463,7 +463,7 @@
 
 .orthoeinzel li {
   position: relative;
-  padding-left: 56px;
+  padding-inline-start: 56px;
   font-size: 26px;
   line-height: 1.36;
   color: var(--auf-petrol);
@@ -475,7 +475,7 @@
 .orthoeinzel li::before {
   content: counter(schritt);
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   top: 0;
   display: grid;
   place-items: center;

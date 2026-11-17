@@ -396,3 +396,10 @@
   display: block;
   margin-top: 2mm;
 }
+
+.zettelleiste__sprachluecke {
+  margin: -4px 0 0;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--kupfer-dunkel);
+}

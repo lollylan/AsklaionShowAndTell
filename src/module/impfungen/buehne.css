@@ -179,13 +179,13 @@
 
 .impfkarte__was li {
   position: relative;
-  padding-left: 32px;
+  padding-inline-start: 32px;
 }
 
 .impfkarte__was li::before {
   content: '';
   position: absolute;
-  left: 2px;
+  inset-inline-start: 2px;
   top: 0.55em;
   width: 11px;
   height: 11px;

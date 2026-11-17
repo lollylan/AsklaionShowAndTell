@@ -136,7 +136,7 @@
 
 .aufkblatt__saetze li {
   position: relative;
-  padding-left: 36px;
+  padding-inline-start: 36px;
   text-wrap: pretty;
   animation: aufk-ein 700ms var(--raus) both;
 }
@@ -144,7 +144,7 @@
 .aufkblatt__saetze li::before {
   content: '';
   position: absolute;
-  left: 2px;
+  inset-inline-start: 2px;
   top: 0.52em;
   width: 12px;
   height: 12px;

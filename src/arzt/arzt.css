@@ -766,3 +766,19 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Hinweis unter der Vorschau, wenn die gewählte Sprache Lücken hat. */
+.monitor__sprachluecke {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: -6px;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--kupfer-dunkel);
+}
+
+.monitor__sprachluecke svg {
+  flex: none;
+  margin-top: 1px;
+}

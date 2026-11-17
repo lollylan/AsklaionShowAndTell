@@ -323,13 +323,13 @@
 
 .vorskarte__was li {
   position: relative;
-  padding-left: 34px;
+  padding-inline-start: 34px;
 }
 
 .vorskarte__was li::before {
   content: '';
   position: absolute;
-  left: 2px;
+  inset-inline-start: 2px;
   top: 0.55em;
   width: 11px;
   height: 11px;

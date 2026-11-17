@@ -58,7 +58,9 @@ function demoFilter(): Plugin {
     },
     load(id) {
       const pfad = id.split('?')[0].replace(/\\/g, '/').toLowerCase();
-      if (quelltext.some((q) => pfad.startsWith(q))) return 'export default null;';
+      // JSON-Dateien laufen danach noch durch den JSON-Lader, brauchen also gültiges JSON.
+      if (quelltext.some((q) => pfad.startsWith(q)))
+        return pfad.endsWith('.json') ? 'null' : 'export default null;';
       return null;
     },
     closeBundle() {

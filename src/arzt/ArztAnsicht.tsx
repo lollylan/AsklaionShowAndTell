@@ -1,6 +1,6 @@
 import './arzt.css';
 import { useCallback, useEffect, useRef, useState, type PointerEvent } from 'react';
-import { Eye, EyeOff, Home, Info, MonitorUp, MousePointerClick, RotateCcw, TriangleAlert } from 'lucide-react';
+import { Eye, EyeOff, Home, Info, Languages, MonitorUp, MousePointerClick, RotateCcw, TriangleAlert } from 'lucide-react';
 import { LEERE_SITZUNG, useSitzung, type Schnappschuss, type Sitzung } from '../kern/sitzung';
 import { alleModule, findeModul, modulZustand } from '../kern/register';
 import { Fehlergrenze } from '../kern/Fehlergrenze';
@@ -14,6 +14,8 @@ import { Suche } from './Suche';
 import { Verlauf, handzettelSpeicher } from './Verlauf';
 import { LOGO, MARKE, ZWECK } from '../kern/marke';
 import { IST_DEMO, seite } from '../kern/pfad';
+import { Sprachwahl } from '../sprachen/Sprachwahl';
+import { findeSprache, sprachSpeicher } from '../sprachen/sprachen';
 
 /** Das Arztfenster: Module wählen, steuern, sehen was der Patient sieht. */
 export function ArztAnsicht({ sitzung }: { sitzung: Sitzung }) {
@@ -57,6 +59,16 @@ export function ArztAnsicht({ sitzung }: { sitzung: Sitzung }) {
       // Ohne Speicher gibt es keinen Handzettel; die Aufklärung selbst läuft weiter.
     }
   }, [zustand.gezeigt, sitzung.raum]);
+
+  // Auch die Sprache: Der Handzettel erscheint in der Sprache, die der Patient gerade liest.
+  const sprache = zustand.sprache ?? 'de';
+  useEffect(() => {
+    try {
+      localStorage.setItem(sprachSpeicher(sitzung.raum), sprache);
+    } catch {
+      // Ohne Speicher startet der Handzettel auf Deutsch und lässt sich dort umstellen.
+    }
+  }, [sprache, sitzung.raum]);
 
   // Der Zeiger gehört zu dem Bild, auf das gezeigt wurde: Ändert sich das Bild, verschwindet er.
   const modulStand = zustand.aktivesModul ? zustand.module[zustand.aktivesModul] : undefined;
@@ -145,6 +157,9 @@ export function ArztAnsicht({ sitzung }: { sitzung: Sitzung }) {
         stand={stand}
         raum={sitzung.raum}
         beiVerdecken={schalteVerdeckt}
+        beiSprache={(code) =>
+          sitzung.aendere((alt) => ((alt.sprache ?? 'de') === code ? alt : { ...alt, sprache: code }))
+        }
         beiZeiger={(zeiger) =>
           sitzung.aendere((alt) =>
             alt.zeiger === zeiger || (!alt.zeiger && !zeiger) ? alt : { ...alt, zeiger },
@@ -262,6 +277,7 @@ function Monitor({
   stand,
   raum,
   beiVerdecken,
+  beiSprache,
   beiZeiger,
   beiSprung,
   beiEntfernen,
@@ -269,12 +285,15 @@ function Monitor({
   stand: Schnappschuss;
   raum: string;
   beiVerdecken: () => void;
+  beiSprache: (code: string) => void;
   beiZeiger: (zeiger: { x: number; y: number } | null) => void;
   beiSprung: (schluessel: string) => void;
   beiEntfernen: (schluessel: string) => void;
 }) {
   const { zustand, praesenz, verbindung } = stand;
   const [blockiert, setBlockiert] = useState(false);
+  const sprache = findeSprache(zustand.sprache);
+  const [fehlend, setFehlend] = useState<string[]>([]);
 
   // Zeigen: In der Vorschau klicken oder ziehen setzt beim Patienten einen Leuchtpunkt.
   const zeigbar = !zustand.verdeckt && zustand.aktivesModul !== null;
@@ -324,6 +343,12 @@ function Monitor({
 
       <RaumWahl raum={raum} />
 
+      <Sprachwahl
+        code={sprache.code}
+        beiWahl={beiSprache}
+        beschriftung="Sprache für Bildschirm und Handzettel"
+      />
+
       <div
         className="monitor__bild"
         data-verdeckt={zustand.verdeckt}
@@ -344,7 +369,7 @@ function Monitor({
           zieht.current = false;
         }}
       >
-        <BuehnenInhalt zustand={zustand} vorschau />
+        <BuehnenInhalt zustand={zustand} vorschau beiFehlend={setFehlend} />
       </div>
       <p className="monitor__unterzeile">
         {zustand.verdeckt
@@ -353,6 +378,16 @@ function Monitor({
             ? 'So sieht es der Patient gerade. Ins Bild klicken oder ziehen, um auf etwas zu zeigen.'
             : 'So sieht es der Patient gerade.'}
       </p>
+      {sprache.code !== 'de' && !zustand.verdeckt && fehlend.length > 0 && (
+        <p className="monitor__sprachluecke" role="status">
+          <Languages size={16} strokeWidth={1.75} aria-hidden="true" />
+          <span>
+            {fehlend.length === 1
+              ? `Ein Text auf diesem Bild fehlt noch auf ${sprache.name} und erscheint auf Deutsch.`
+              : `${fehlend.length} Texte auf diesem Bild fehlen noch auf ${sprache.name} und erscheinen auf Deutsch.`}
+          </span>
+        </p>
+      )}
       {zustand.zeiger && (
         <button type="button" className="monitor__zeiger-weg" onClick={() => beiZeiger(null)}>
           <MousePointerClick size={16} strokeWidth={1.75} aria-hidden="true" />

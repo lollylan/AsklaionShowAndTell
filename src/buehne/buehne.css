@@ -339,3 +339,8 @@
 .vollbild-hinweis:focus-visible {
   outline-color: var(--auf-petrol);
 }
+
+/* Träger für Sprache und Schreibrichtung (src/sprachen): ohne eigene Box. */
+.sprachraum {
+  display: contents;
+}

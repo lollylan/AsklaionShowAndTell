@@ -1,0 +1,209 @@
+/* Sprachwahl in der Steuerung und auf dem Handzettel – im Stil der übrigen Knöpfe. */
+
+.sprachwahl {
+  position: relative;
+  display: grid;
+  gap: 6px;
+}
+
+.sprachwahl__beschriftung {
+  font-size: 14px;
+  color: var(--text-hell);
+}
+
+.sprachwahl__knopf {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 12px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--flaeche);
+  color: var(--text);
+  font: inherit;
+  font-size: 15px;
+  text-align: start;
+  cursor: pointer;
+  transition:
+    border-color 160ms var(--raus),
+    background-color 160ms var(--raus);
+}
+
+.sprachwahl__knopf:hover {
+  border-color: var(--petrol);
+}
+
+.sprachwahl__knopf[aria-expanded='true'] {
+  border-color: var(--petrol);
+  background: var(--petrol-hauch);
+}
+
+/* Fremdsprache aktiv: deutlich, damit niemand vergisst, dass der Patient etwas anderes liest. */
+.sprachwahl__knopf[data-fremd='true'] {
+  border-color: var(--kupfer);
+}
+
+.sprachwahl__name {
+  font-weight: 700;
+}
+
+.sprachwahl__eigen {
+  color: var(--text-hell);
+}
+
+.sprachwahl__pfeil {
+  margin-inline-start: auto;
+  color: var(--text-hell);
+  transition: rotate 160ms var(--raus);
+}
+
+.sprachwahl__knopf[aria-expanded='true'] .sprachwahl__pfeil {
+  rotate: 180deg;
+}
+
+.flagge {
+  flex: none;
+  display: block;
+}
+
+.sprachwahl__liste {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  inset-inline: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px;
+  padding: 6px;
+  border: 1px solid var(--linie);
+  border-radius: 10px;
+  background: var(--flaeche);
+  box-shadow: 0 12px 32px rgb(1 44 55 / 0.16), 0 2px 6px rgb(1 44 55 / 0.08);
+  animation: sprachwahl-ein 180ms var(--raus) both;
+}
+
+@keyframes sprachwahl-ein {
+  from {
+    opacity: 0;
+    translate: 0 -4px;
+  }
+}
+
+.sprachwahl__eintrag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.sprachwahl__eintrag:hover {
+  background: var(--petrol-hauch);
+}
+
+.sprachwahl__eintrag[aria-checked='true'] {
+  background: var(--petrol-hauch);
+  color: var(--petrol-dunkel);
+}
+
+.sprachwahl__eintrag:focus-visible {
+  outline: 2px solid var(--petrol-hell);
+  outline-offset: -2px;
+}
+
+.sprachwahl__texte {
+  display: grid;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.sprachwahl__eintrag-eigen {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.sprachwahl__eintrag-name {
+  font-size: 12.5px;
+  color: var(--text-hell);
+}
+
+.sprachwahl__haken {
+  margin-inline-start: auto;
+  color: var(--petrol);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sprachwahl__liste {
+    animation: none;
+  }
+}
+
+/* ---------- Sprachraum: Bühne und Handzettel in der gewählten Sprache ---------- */
+
+/* Schriften je Schrift-System. Merriweather und Arial decken Latein und Kyrillisch ab;
+   für Arabisch, Persisch und Ostasiatisch nehmen wir die Windows-Systemschriften. */
+[data-sprachraum]:lang(ar),
+[data-sprachraum]:lang(fa) {
+  --schrift-titel: 'Segoe UI', Tahoma, 'Noto Naskh Arabic', sans-serif;
+  --schrift-text: 'Segoe UI', Tahoma, 'Noto Naskh Arabic', sans-serif;
+}
+
+[data-sprachraum]:lang(zh) {
+  --schrift-titel: 'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif;
+  --schrift-text: 'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif;
+}
+
+[data-sprachraum]:lang(ja) {
+  --schrift-titel: 'Yu Gothic UI', 'Yu Gothic', Meiryo, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+  --schrift-text: 'Yu Gothic UI', 'Yu Gothic', Meiryo, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+}
+
+[data-sprachraum]:lang(ko) {
+  --schrift-titel: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  --schrift-text: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+}
+
+/* Die Schriftvariablen greifen nur, wo sie verwendet werden – Elemente mit eigener
+   font-family erben sie so mit. */
+[data-sprachraum]:is(:lang(ar), :lang(fa), :lang(zh), :lang(ja), :lang(ko)) * {
+  font-family: var(--schrift-text);
+}
+
+[data-sprachraum]:is(:lang(ar), :lang(fa), :lang(zh), :lang(ja), :lang(ko))
+  :is(h1, h2, h3, h4) {
+  font-family: var(--schrift-titel);
+}
+
+/* Rechts-nach-links: Das Layout der Bühne bleibt, wie es gezeichnet ist (Bild und Text
+   behalten ihren Platz), aber jeder Absatz läuft und steht rechts. Die SVG-Zeichnungen
+   behalten ihre Ausrichtung, sonst verrutschen die Beschriftungen. */
+[data-sprachraum][data-richtung='rtl'] :is(p, li, h1, h2, h3, h4, figcaption, dt, dd, td, th, blockquote, span) {
+  unicode-bidi: plaintext;
+  text-align: start;
+}
+
+[data-sprachraum][data-richtung='rtl'] :is(ul, ol) {
+  direction: rtl;
+}
+
+[data-sprachraum][data-richtung='rtl'] svg {
+  direction: ltr;
+}
+
+[data-sprachraum][data-richtung='rtl'] svg text {
+  unicode-bidi: plaintext;
+}
+
+/* CJK braucht etwas mehr Zeilenabstand und keinen engen Buchstabenabstand. */
+[data-sprachraum]:is(:lang(zh), :lang(ja), :lang(ko)) * {
+  letter-spacing: 0;
+}

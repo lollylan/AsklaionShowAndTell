@@ -34,6 +34,7 @@ export const LEERE_SITZUNG: SitzungsZustand = {
   verdeckt: false,
   gezeigt: [],
   zeiger: null,
+  sprache: 'de',
 };
 
 /**

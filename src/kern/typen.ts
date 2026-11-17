@@ -20,6 +20,11 @@ export interface SitzungsZustand {
   gezeigt: string[];
   /** Leuchtpunkt auf der Bühne, als Anteile der 1920 × 1080-Fläche (0 bis 1) – oder null. */
   zeiger: { x: number; y: number } | null;
+  /**
+   * Sprache für Bühne und Handzettel (Code aus src/sprachen/sprachen.ts). Fehlt bei älteren
+   * Ständen; dann gilt Deutsch. Die Steuerung bleibt immer deutsch.
+   */
+  sprache?: string;
 }
 
 /** Was die Steuerung eines Moduls (Arztseite) bekommt. */

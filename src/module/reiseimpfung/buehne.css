@@ -265,13 +265,13 @@
 
 .erklaerung__text li {
   position: relative;
-  padding-left: 34px;
+  padding-inline-start: 34px;
 }
 
 .erklaerung__text li::before {
   content: '';
   position: absolute;
-  left: 2px;
+  inset-inline-start: 2px;
   top: 0.55em;
   width: 12px;
   height: 12px;
