@@ -21,6 +21,8 @@ import { AFTER } from './daten/after';
 import { LABOR } from './daten/labor';
 import { VERLETZUNGEN } from './daten/verletzungen';
 import { ARBEIT } from './daten/arbeit';
+import { KUR } from './daten/kur';
+import { MAGEN_BAUCHWAND } from './daten/magen-bauchwand';
 
 export { GEBIETE, SEITEN } from './daten/typen';
 export type { Blattseite, GebietId, Krankheit, SeiteId } from './daten/typen';
@@ -32,6 +34,7 @@ const gruppen: Krankheit[][] = [
   INFEKTE,
   BEWEGUNG,
   BAUCH,
+  MAGEN_BAUCHWAND,
   AFTER,
   KOPF,
   VERLETZUNGEN,
@@ -39,6 +42,7 @@ const gruppen: Krankheit[][] = [
   BESCHWERDEN,
   BESCHWERDEN_WEITERE,
   ARBEIT,
+  KUR,
   UNTERSUCHUNGEN,
   LABOR,
   VERFUEGUNGEN,
@@ -82,8 +86,9 @@ export function sucheKrankheiten(frage: string): Krankheit[] {
 export function hinweisTitel(krankheit: Krankheit): string {
   return krankheit.gebiet === 'untersuchungen' ||
     krankheit.gebiet === 'verfuegungen' ||
-    krankheit.gebiet === 'arbeit'
-    ? 'Wichtig.'
+    krankheit.gebiet === 'arbeit' ||
+    krankheit.gebiet === 'kur'
+    ?'Wichtig.'
     : 'Warnzeichen.';
 }
 

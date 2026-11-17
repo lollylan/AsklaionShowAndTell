@@ -479,5 +479,134 @@ export const UNTERSUCHUNGEN: Krankheit[] = [
       },
     ],
     warnung: 'Blut im Stuhl nie auf Hämorrhoiden schieben – immer abklären lassen. Ebenso einen Stuhlgang, der sich über Wochen verändert.',
+  },  {
+    id: 'blutdruck-messen',
+    name: 'Blutdruck zu Hause messen',
+    zusatz: 'Selbstmessung',
+    gebiet: 'untersuchungen',
+    suche:
+      'blutdruck messen selbstmessung blutdruckmessgeraet oberarm handgelenk manschette blutdrucktagebuch blutdruckpass hausmessung bluthochdruck hypertonie 135 85 messwerte protokoll',
+    seiten: [
+      {
+        id: 'warum',
+        titel: 'Warum zu Hause messen?',
+        kurz: 'Warum?',
+        bild: 'blutdruck-messen',
+        saetze: [
+          'In der Praxis ist der Blutdruck oft höher als im Alltag – allein durch die Aufregung.',
+          'Messungen zu Hause zeigen besser, wie Ihr Blutdruck wirklich ist, und ob die Tabletten wirken.',
+          'Am genauesten sind Geräte für den Oberarm. Achten Sie auf ein geprüftes Gerät, etwa mit dem Siegel der Hochdruckliga.',
+          'Die Manschette muss zum Arm passen. Bei sehr kräftigem Oberarm gibt es größere.',
+        ],
+      },
+      {
+        id: 'richtig',
+        titel: 'So messen Sie richtig',
+        kurz: 'Richtig messen',
+        bild: 'blutdruck-messen',
+        saetze: [
+          'Setzen Sie sich bequem an einen Tisch, Rücken angelehnt, Füße flach auf dem Boden, Beine nicht übereinander.',
+          'Fünf Minuten ruhig sitzen, nicht sprechen. Davor eine halbe Stunde kein Kaffee, keine Zigarette, kein Sport.',
+          'Die Manschette sitzt auf der nackten Haut, zwei Finger breit über der Ellenbeuge, auf Höhe des Herzens. Der Arm liegt locker auf dem Tisch.',
+          'Zweimal messen, mit einer Minute Pause dazwischen, und beide Werte aufschreiben.',
+        ],
+      },
+      {
+        id: 'wann',
+        titel: 'Wann und wie oft?',
+        kurz: 'Wann?',
+        bild: 'blutdruck-plan',
+        saetze: [
+          'Morgens vor dem Frühstück und vor den Tabletten, abends vor dem Abendessen.',
+          'Vor einem Termin bei uns messen Sie so eine Woche lang, jeden Tag morgens und abends.',
+          'Ist der Blutdruck gut eingestellt, reichen danach einige Messungen pro Woche oder Monat.',
+          'Schreiben Sie die Werte in ein Tagebuch oder nutzen Sie den Speicher des Geräts, und bringen Sie beides mit.',
+        ],
+      },
+      {
+        id: 'werte',
+        titel: 'Was die Werte bedeuten',
+        kurz: 'Werte',
+        bild: 'blutdruck-plan',
+        saetze: [
+          'Zu Hause gilt ein Blutdruck ab 135 zu 85 als erhöht – die Grenze liegt etwas niedriger als in der Praxis.',
+          'Entscheidend ist der Durchschnitt über mehrere Tage, nicht ein einzelner Ausreißer.',
+          'Ihr persönliches Ziel besprechen wir gemeinsam.',
+          'Messen Sie nicht ständig. Häufiges Messen bei jeder Unruhe treibt den Druck eher hoch.',
+        ],
+      },
+    ],
+    warnung:
+      'Über 180 zu 110 mit Brustschmerz, Atemnot, Lähmung, Sprach- oder Sehstörung: sofort 112. Ohne Beschwerden: eine halbe Stunde ruhen, erneut messen und uns anrufen.',
+  },
+  {
+    id: 'blutzucker-messen',
+    name: 'Blutzucker selbst messen',
+    zusatz: 'Messgerät und Sensor',
+    gebiet: 'untersuchungen',
+    suche:
+      'blutzucker messen blutzuckermessgeraet teststreifen lanzette stechhilfe fingerkuppe zucker glukose diabetes insulin unterzucker hypoglykaemie ueberzucker sensor cgm libre dexcom tagebuch mg/dl',
+    seiten: [
+      {
+        id: 'wann',
+        titel: 'Wann ist Messen sinnvoll?',
+        kurz: 'Wann?',
+        bild: 'blutzucker-messen',
+        saetze: [
+          'Wer Insulin spritzt, misst regelmäßig – vor allem vor den Mahlzeiten und vor dem Schlafen. Danach richtet sich die Dosis.',
+          'Mit Tabletten, die keinen Unterzucker machen, ist tägliches Messen meist nicht nötig. Dort zeigt der HbA1c-Wert alle paar Monate, wie es läuft.',
+          'Zusätzlich messen Sie, wenn Sie sich unwohl fühlen, bei Infekten und vor dem Autofahren, wenn Sie Insulin nehmen.',
+        ],
+      },
+      {
+        id: 'messen',
+        titel: 'So messen Sie',
+        kurz: 'Messen',
+        bild: 'blutzucker-messen',
+        saetze: [
+          'Hände mit warmem Wasser waschen und gut abtrocknen. Zuckerreste an den Fingern verfälschen den Wert.',
+          'Seitlich in die Fingerkuppe stechen, nicht in die Mitte. Daumen und Zeigefinger besser schonen.',
+          'Den Tropfen sanft herausmassieren, nicht fest quetschen, und an den Teststreifen halten.',
+          'Wert aufschreiben oder im Gerät speichern, Stechstelle wechseln.',
+        ],
+      },
+      {
+        id: 'werte',
+        titel: 'Was die Werte bedeuten',
+        kurz: 'Werte',
+        bild: 'blutzucker-werte',
+        saetze: [
+          'Vor dem Essen liegt ein guter Wert für viele bei etwa 80 bis 130 mg/dl, zwei Stunden nach dem Essen unter 180.',
+          'Unter 70 mg/dl ist ein Unterzucker. Dann sofort handeln.',
+          'Liegen die Werte mehrmals über 250, melden Sie sich bei uns.',
+          'Ihre persönlichen Zielwerte legen wir gemeinsam fest – im Alter oft etwas höher.',
+        ],
+      },
+      {
+        id: 'unterzucker',
+        titel: 'Bei Unterzucker',
+        kurz: 'Unterzucker',
+        bild: 'unterzucker',
+        saetze: [
+          'Zeichen sind Zittern, Schwitzen, Herzklopfen, Heißhunger, Unruhe oder Verwirrtheit.',
+          'Essen oder trinken Sie sofort schnellen Zucker: vier Plättchen Traubenzucker oder ein Glas Saft oder Cola, nicht light.',
+          'Nach 15 Minuten nachmessen. Ist der Wert noch unter 70, das Gleiche noch einmal.',
+          'Danach etwas Langsames essen, etwa ein Brot. Tragen Sie immer Traubenzucker bei sich.',
+        ],
+      },
+      {
+        id: 'sensor',
+        titel: 'Messen mit Sensor',
+        kurz: 'Sensor',
+        bild: 'blutzucker-sensor',
+        saetze: [
+          'Ein Sensor am Oberarm misst den Zucker rund um die Uhr. Sie lesen ihn mit dem Handy oder einem Lesegerät ab – ohne Stechen.',
+          'Er zeigt auch, ob der Zucker gerade steigt oder fällt, und kann bei Unterzucker warnen.',
+          'Die Kasse zahlt ihn meist, wenn Sie mehrmals täglich Insulin spritzen. Er wird alle ein bis zwei Wochen gewechselt.',
+        ],
+      },
+    ],
+    warnung:
+      'Ist jemand mit Unterzucker nicht mehr ansprechbar, nichts in den Mund geben, in die stabile Seitenlage bringen und 112 rufen.',
   },
 ];

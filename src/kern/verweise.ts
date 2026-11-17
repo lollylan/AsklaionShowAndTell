@@ -27,7 +27,7 @@ const GRUPPEN: string[][] = [
   [A + 'pavk', M + 'ass', M + 'clopidogrel', M + 'atorvastatin', A + 'rauchstopp'],
 
   // Stoffwechsel
-  [A + 'diabetes-typ-2', W + 'hba1c', W + 'nuechternzucker', M + 'metformin', M + 'empagliflozin', M + 'sitagliptin', M + 'semaglutid', M + 'insulin-glargin', P + 'dmp'],
+  [A + 'diabetes-typ-2', W + 'hba1c', W + 'nuechternzucker', M + 'metformin', M + 'empagliflozin', M + 'sitagliptin', M + 'semaglutid', M + 'insulin-glargin', P + 'dmp', A + 'blutzucker-messen', A + 'insulin-spritzen'],
   [A + 'adipositas', W + 'bmi', M + 'semaglutid', M + 'wegovy-tablette', A + 'fettleber', A + 'schlafapnoe'],
   [A + 'schilddruesenunterfunktion', A + 'hashimoto', A + 'schilddruesenknoten', W + 'tsh', M + 'l-thyroxin', A + 'ultraschall'],
   [A + 'gicht', M + 'allopurinol', K + 'fuss'],
@@ -51,7 +51,10 @@ const GRUPPEN: string[][] = [
   [A + 'schlafapnoe', A + 'muedigkeit', A + 'adipositas'],
 
   // Bauch
-  [A + 'reflux', M + 'pantoprazol', M + 'omeprazol', K + 'bauchorgane'],
+  [A + 'reflux', M + 'pantoprazol', M + 'omeprazol', K + 'bauchorgane', A + 'gleithernie'],
+  [A + 'gastritis', M + 'pantoprazol', M + 'omeprazol', M + 'ibuprofen', M + 'diclofenac', A + 'reflux', K + 'bauchorgane'],
+  [A + 'gleithernie', A + 'reflux', M + 'pantoprazol', K + 'bauchorgane'],
+  [A + 'hernie', K + 'bauchorgane', P + 'notfall'],
   [A + 'reizdarm', A + 'unvertraeglichkeiten', M + 'macrogol'],
   [A + 'gallensteine', A + 'ultraschall', K + 'bauchorgane'],
   [A + 'nierensteine', A + 'ultraschall', M + 'metamizol', M + 'tamsulosin'],
@@ -97,6 +100,22 @@ const GRUPPEN: string[][] = [
 
   // Arbeit
   [A + 'wiedereingliederung', P + 'wiedereingliederung', P + 'reha-antrag', A + 'depression'],
+
+  // Kur, Reha und Hilfsmittel
+  [A + 'kur-oder-reha', A + 'kurantrag', P + 'reha-antrag', A + 'wiedereingliederung'],
+  [A + 'kurantrag', A + 'kur-oder-reha', P + 'reha-antrag'],
+  [A + 'tens', A + 'rueckenschmerzen', A + 'arthrose', O + 'gonarthrose', O + 'hws-syndrom', O + 'tennisellenbogen', P + 'hilfsmittel'],
+  [A + 'iontophorese', P + 'hilfsmittel'],
+  [A + 'kompression', A + 'krampfadern', A + 'thrombose', A + 'geschwollene-beine', P + 'hilfsmittel'],
+  [A + 'inhalieren', A + 'asthma', A + 'copd', M + 'salbutamol', M + 'budesonid-formoterol', A + 'lungenfunktion'],
+  [A + 'gehhilfen', A + 'arthrose', O + 'gonarthrose', O + 'coxarthrose', O + 'spinalkanalstenose', P + 'hilfsmittel'],
+  [A + 'blutdruck-messen', A + 'bluthochdruck', W + 'blutdruck', A + 'langzeitmessung'],
+  [P + 'hilfsmittel', A + 'kompression', A + 'gehhilfen', A + 'tens', A + 'iontophorese', A + 'bandagen', A + 'einlagen', A + 'inkontinenz'],
+  [A + 'bandagen', O + 'karpaltunnel', O + 'gonarthrose', A + 'arthrose', P + 'hilfsmittel'],
+  [A + 'einlagen', O + 'plantarfasziitis', O + 'hallux-valgus', A + 'diabetes-typ-2', A + 'polyneuropathie', K + 'fuss', P + 'hilfsmittel'],
+  [A + 'inkontinenz', A + 'harnwegsinfekt', A + 'prostatavergroesserung', P + 'hilfsmittel'],
+  [A + 'blutzucker-messen', A + 'insulin-spritzen', A + 'diabetes-typ-2', W + 'hba1c', W + 'nuechternzucker'],
+  [A + 'insulin-spritzen', A + 'blutzucker-messen', A + 'diabetes-typ-2', M + 'insulin-glargin', P + 'dmp'],
 
   // Laborwerte im Einzelnen
   [A + 'leberwerte', A + 'blutwerte', A + 'fettleber', A + 'gallensteine', A + 'ultraschall', K + 'bauchorgane'],

@@ -294,4 +294,76 @@ export const STOFFWECHSEL: Krankheit[] = [
     warnung:
       'Eine Blutung nach der letzten Regel – also nach einem Jahr ohne Blutung – bitte immer frauenärztlich abklären lassen.',
   },
+  {
+    id: 'insulin-spritzen',
+    name: 'Insulin spritzen',
+    zusatz: 'Mit dem Pen',
+    gebiet: 'stoffwechsel',
+    suche:
+      'insulin spritzen insulinpen pen spritze nadel pen-nadel spritzstelle bauch oberschenkel spritzstellen wechseln knubbel lipohypertrophie mischinsulin basalinsulin langzeitinsulin mahlzeiteninsulin aufbewahren kuehlschrank unterzucker diabetes',
+    seiten: [
+      {
+        id: 'pen',
+        titel: 'Der Insulin-Pen',
+        kurz: 'Der Pen',
+        bild: 'insulin-pen',
+        saetze: [
+          'Der Pen sieht aus wie ein dicker Stift. Darin steckt eine Patrone mit Insulin; oben stellen Sie die Dosis ein.',
+          'Langzeitinsulin spritzen Sie meist einmal am Tag zur selben Zeit. Mahlzeiteninsulin kurz vor dem Essen.',
+          'Nehmen Sie für jede Spritze eine neue Nadel. Benutzte Nadeln werden stumpf und tun mehr weh.',
+          'Trübes Mischinsulin vor dem Spritzen etwa 20-mal langsam kippen, bis es gleichmäßig milchig ist. Nicht schütteln.',
+        ],
+      },
+      {
+        id: 'spritzen',
+        titel: 'So spritzen Sie',
+        kurz: 'Spritzen',
+        bild: 'insulin-spritzen',
+        saetze: [
+          'Neue Nadel aufschrauben, zwei Einheiten einstellen und mit der Nadel nach oben in die Luft drücken, bis ein Tropfen kommt. So wissen Sie, dass der Pen funktioniert.',
+          'Dann Ihre Dosis einstellen.',
+          'Die Nadel senkrecht ganz in die Haut stechen und den Knopf ganz durchdrücken.',
+          'Zehn Sekunden zählen, erst dann herausziehen. Sonst läuft Insulin wieder heraus.',
+        ],
+      },
+      {
+        id: 'stellen',
+        titel: 'Wohin spritzen?',
+        kurz: 'Spritzstellen',
+        bild: 'insulin-stellen',
+        saetze: [
+          'Gut geeignet ist der Bauch, mindestens zwei Finger breit neben dem Nabel, und die Vorder- und Außenseite der Oberschenkel.',
+          'Am Bauch wirkt Insulin schneller, am Oberschenkel langsamer. Bleiben Sie für dieselbe Insulinart bei derselben Gegend.',
+          'Wechseln Sie die Stelle jedes Mal, mindestens eine Fingerbreite weiter. Spritzen Sie immer an dieselbe Stelle, entstehen weiche Knubbel unter der Haut.',
+          'In solche Knubbel nicht spritzen: Dort wirkt das Insulin unzuverlässig.',
+        ],
+      },
+      {
+        id: 'lagern',
+        titel: 'Insulin aufbewahren',
+        kurz: 'Aufbewahren',
+        bild: 'insulin-lagern',
+        saetze: [
+          'Den Vorrat lagern Sie im Kühlschrank bei 2 bis 8 Grad, nicht im Gefrierfach und nicht direkt an der Rückwand.',
+          'Den Pen, den Sie gerade benutzen, bei Zimmertemperatur. Er hält so etwa vier Wochen.',
+          'Insulin verträgt keine Hitze und keinen Frost: nicht im Auto liegen lassen, im Urlaub in einer Kühltasche transportieren.',
+          'Gebrauchte Nadeln in einem festen Behälter sammeln, etwa einer leeren Plastikflasche, und mit dem Restmüll entsorgen.',
+        ],
+      },
+      {
+        id: 'unterzucker',
+        titel: 'Unterzucker erkennen',
+        kurz: 'Unterzucker',
+        bild: 'unterzucker',
+        saetze: [
+          'Zittern, Schwitzen, Herzklopfen, Heißhunger oder Verwirrtheit können Unterzucker bedeuten. Messen Sie dann sofort.',
+          'Unter 70 mg/dl: schnellen Zucker essen oder trinken, nach 15 Minuten nachmessen.',
+          'Haben Sie mehrmals Unterzucker, passen wir die Dosis an. Bitte nicht einfach selbst weglassen.',
+          'Vor dem Autofahren messen. Unter 90 mg/dl erst etwas essen und nicht losfahren.',
+        ],
+      },
+    ],
+    warnung:
+      'Ist jemand mit Unterzucker nicht mehr ansprechbar, nichts in den Mund geben, in die stabile Seitenlage bringen und 112 rufen.',
+  },
 ];
