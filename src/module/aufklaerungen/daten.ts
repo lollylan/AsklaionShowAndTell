@@ -23,22 +23,37 @@ import { VERLETZUNGEN } from './daten/verletzungen';
 import { ARBEIT } from './daten/arbeit';
 import { KUR } from './daten/kur';
 import { MAGEN_BAUCHWAND } from './daten/magen-bauchwand';
+import { HAUT_ENTZUENDLICH } from './daten/haut-entzuendlich';
+import { HAUT_WEITERE } from './daten/haut-weitere';
+import { INFEKTE_WEITERE } from './daten/infekte-weitere';
+import { KREISLAUF } from './daten/kreislauf';
+import { RHEUMA } from './daten/rheuma';
+import { SEELE_ALTER } from './daten/seele-alter';
+import { STOFFWECHSEL_WEITERE } from './daten/stoffwechsel-weitere';
+import { VERSORGUNG } from './daten/versorgung';
 
 export { GEBIETE, SEITEN } from './daten/typen';
 export type { Blattseite, GebietId, Krankheit, SeiteId } from './daten/typen';
 
 const gruppen: Krankheit[][] = [
   HERZ,
+  KREISLAUF,
   STOFFWECHSEL,
+  STOFFWECHSEL_WEITERE,
   LUNGE,
   INFEKTE,
+  INFEKTE_WEITERE,
   BEWEGUNG,
+  RHEUMA,
   BAUCH,
   MAGEN_BAUCHWAND,
   AFTER,
   KOPF,
+  SEELE_ALTER,
   VERLETZUNGEN,
   HAUT,
+  HAUT_ENTZUENDLICH,
+  HAUT_WEITERE,
   BESCHWERDEN,
   BESCHWERDEN_WEITERE,
   ARBEIT,
@@ -46,6 +61,7 @@ const gruppen: Krankheit[][] = [
   UNTERSUCHUNGEN,
   LABOR,
   VERFUEGUNGEN,
+  VERSORGUNG,
 ];
 
 const rang = new Map(GEBIETE.map((g, i) => [g.id, i]));
@@ -87,8 +103,9 @@ export function hinweisTitel(krankheit: Krankheit): string {
   return krankheit.gebiet === 'untersuchungen' ||
     krankheit.gebiet === 'verfuegungen' ||
     krankheit.gebiet === 'arbeit' ||
-    krankheit.gebiet === 'kur'
-    ?'Wichtig.'
+    krankheit.gebiet === 'kur' ||
+    krankheit.gebiet === 'versorgung'
+    ? 'Wichtig.'
     : 'Warnzeichen.';
 }
 

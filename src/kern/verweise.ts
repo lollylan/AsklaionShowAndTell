@@ -126,6 +126,57 @@ const GRUPPEN: string[][] = [
   [A + 'patientenverfuegung', A + 'vorsorgevollmacht', A + 'palliativversorgung'],
   [A + 'palliativversorgung', A + 'symptomlinderung', A + 'pflegegrad', M + 'tilidin', M + 'metamizol'],
 
+  // Neu am 17.11.2026: Herz und Kreislauf
+  [A + 'ohnmacht', A + 'schwindel', A + 'bluthochdruck', A + 'ekg', A + 'langzeitmessung', A + 'kompression', K + 'herz'],
+  [A + 'brustschmerz', A + 'khk', K + 'herz', K + 'brustorgane', M + 'ass', A + 'ekg', A + 'thrombose', A + 'reflux', A + 'angststoerung', A + 'luftnot', P + 'notfall'],
+  [A + 'gerinnungshemmer', M + 'apixaban', M + 'rivaroxaban', M + 'edoxaban', M + 'phenprocoumon', M + 'ibuprofen', M + 'diclofenac', M + 'paracetamol', M + 'metamizol', M + 'pantoprazol', A + 'vorhofflimmern', A + 'thrombose', A + 'subduralhaematom'],
+
+  // Neu: Stoffwechsel
+  [A + 'praediabetes', A + 'diabetes-typ-2', W + 'hba1c', W + 'nuechternzucker', A + 'adipositas', W + 'bmi'],
+  [A + 'diabetischer-fuss', A + 'diabetes-typ-2', A + 'polyneuropathie', A + 'pavk', A + 'einlagen', K + 'fuss', P + 'dmp', P + 'hilfsmittel'],
+  [A + 'schilddruesenueberfunktion', A + 'schilddruesenknoten', A + 'schilddruesenunterfunktion', W + 'tsh', M + 'bisoprolol', A + 'vorhofflimmern', A + 'ultraschall'],
+  [A + 'vitamin-d-mangel', M + 'vitamin-d', A + 'osteoporose', A + 'nierenschwaeche'],
+  [A + 'vitamin-b12-mangel', M + 'metformin', M + 'pantoprazol', M + 'omeprazol', A + 'gastritis', A + 'polyneuropathie', A + 'vergesslichkeit', A + 'muedigkeit', A + 'blutwerte'],
+
+  // Neu: Infekte
+  [A + 'antibiotika', M + 'amoxicillin', M + 'cefuroxim', M + 'fosfomycin', A + 'halsschmerzen', A + 'bronchitis', A + 'harnwegsinfekt'],
+  [A + 'lungenentzuendung', K + 'brustorgane', M + 'amoxicillin', I + 'pneumokokken', I + 'grippe', I + 'covid-19', I + 'rsv', A + 'bronchitis', A + 'antibiotika'],
+  [A + 'bindehautentzuendung', A + 'heuschnupfen', A + 'erkaeltung'],
+  [A + 'scharlach', A + 'halsschmerzen', M + 'amoxicillin', M + 'ibuprofen', M + 'paracetamol', A + 'antibiotika'],
+
+  // Neu: Rheuma
+  [A + 'rheumatoide-arthritis', K + 'hand', M + 'prednisolon', M + 'ibuprofen', M + 'pantoprazol', A + 'rauchstopp', A + 'arthrose', A + 'osteoporose'],
+  [A + 'polymyalgia-rheumatica', M + 'prednisolon', M + 'vitamin-d', M + 'alendronsaeure', A + 'osteoporose', K + 'huefte', A + 'kopfschmerz'],
+  [A + 'fibromyalgie', A + 'schlafstoerung', A + 'muedigkeit', A + 'depression', A + 'rueckenschmerzen', A + 'tens'],
+
+  // Neu: Seele und Älter werden
+  [A + 'burnout', A + 'depression', A + 'muedigkeit', A + 'schlafstoerung', M + 'sertralin', P + 'wiedereingliederung'],
+  [A + 'alkohol', A + 'fettleber', A + 'leberwerte', A + 'depression', A + 'schlafstoerung', A + 'rauchstopp'],
+  [A + 'trauer', A + 'depression', A + 'schlafstoerung', M + 'mirtazapin', A + 'palliativversorgung'],
+  [A + 'stuerze', A + 'osteoporose', A + 'gehhilfen', A + 'schwindel', A + 'viele-medikamente', M + 'vitamin-d', M + 'zopiclon'],
+  [A + 'viele-medikamente', A + 'stuerze', A + 'nierenschwaeche', M + 'ibuprofen', M + 'zopiclon', A + 'demenz'],
+  [A + 'schwerhoerigkeit', K + 'ohr', A + 'demenz', A + 'mittelohrentzuendung', A + 'schwindel'],
+
+  // Neu: Haut
+  [A + 'neurodermitis', A + 'heuschnupfen', A + 'asthma', A + 'kontaktekzem', M + 'prednisolon'],
+  [A + 'schuppenflechte', A + 'rheumatoide-arthritis', A + 'bluthochdruck', A + 'adipositas', A + 'depression', A + 'rauchstopp'],
+  [A + 'akne', A + 'rosazea'],
+  [A + 'rosazea', A + 'akne'],
+  [A + 'nesselsucht', A + 'heuschnupfen', M + 'prednisolon', M + 'ramipril', P + 'notfall'],
+  [A + 'kontaktekzem', A + 'neurodermitis', M + 'prednisolon', K + 'hand'],
+  [A + 'weisser-hautkrebs', A + 'melanom', V + 'hautkrebs'],
+  [A + 'warzen', A + 'fusspilz', A + 'diabetes-typ-2', K + 'fuss'],
+  [A + 'lippenherpes', A + 'guertelrose'],
+  [A + 'wunden', I + 'tetanus', P + 'notfall', M + 'ibuprofen', M + 'paracetamol'],
+
+  // Neu: Blase, Arbeit, Gesundheitswesen
+  [A + 'erektionsstoerung', K + 'maennlich', A + 'khk', A + 'bluthochdruck', A + 'diabetes-typ-2', A + 'rauchstopp'],
+  [A + 'harninkontinenz', A + 'inkontinenz', K + 'becken', K + 'weiblich', K + 'maennlich', A + 'prostatavergroesserung', A + 'harnwegsinfekt'],
+  [A + 'krankschreibung', A + 'wiedereingliederung', P + 'wiedereingliederung'],
+  [A + 'notruf-oder-bereitschaftsdienst', P + 'notfall', A + 'brustschmerz', A + 'schlaganfall', A + 'khk'],
+  [A + 'ueberweisung', P + 'hausarztmodell'],
+  [A + 'igel', A + 'psa', V + 'prostata'],
+
   // Abläufe
   [P + 'check-up', A + 'blutwerte', V + 'check-up', W + 'blutdruck', W + 'ldl'],
   [P + 'e-rezept', P + 'rezeptbestellung', P + 'epa'],
