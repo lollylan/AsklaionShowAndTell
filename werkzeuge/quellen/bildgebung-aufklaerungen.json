@@ -416,5 +416,60 @@
   {
     "ziel": "milzruptur-1.jpg",
     "datei": "CT Spleen Rupture.jpg"
+  },
+  {
+    "ziel": "gerstenkorn-1.jpg",
+    "datei": "External hordeolum.jpg",
+    "zuschnitt": [
+      0.04,
+      0.12,
+      0.9,
+      1.0
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "gerstenkorn-2.jpg",
+    "datei": "Stye02.jpg",
+    "zuschnitt": [
+      0.06,
+      0.12,
+      0.94,
+      0.92
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "hagelkorn-1.jpg",
+    "datei": "ChalazionR.jpg",
+    "zuschnitt": [
+      0.08,
+      0.06,
+      0.94,
+      0.82
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "altersflecken-1.jpg",
+    "datei": "Liver spot on left forearm.JPG",
+    "zuschnitt": [
+      0.18,
+      0.38,
+      0.82,
+      0.98
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "altersflecken-2.jpg",
+    "datei": "Liver spots, light-skinned Caucasian man, age 63.jpg",
+    "zuschnitt": [
+      0.04,
+      0.14,
+      0.96,
+      0.96
+    ],
+    "farbe": true
   }
 ]

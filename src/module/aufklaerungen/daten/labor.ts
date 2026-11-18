@@ -242,4 +242,84 @@ export const LABOR: Krankheit[] = [
     warnung:
       'Entscheidend ist Ihr Gesamtrisiko, nicht ein einzelner Wert. Ein Cholesterinsenker wirkt nur, solange Sie ihn nehmen.',
   },
+  {
+    id: 'vitaminwerte',
+    name: 'Vitamin D und B12 im Blut',
+    zusatz: '25-OH-Vitamin D, B12, Holo-TC, MMA',
+    gebiet: 'untersuchungen',
+    suche:
+      'vitaminwerte vitamine vitamin d vitamin d3 25-oh-vitamin-d 25-oh-d calcidiol ng/ml nmol/l vitamin b12 b-12 cobalamin holo-tc holotranscobalamin aktives b12 methylmalonsaeure mma pg/ml pmol/l spiegel mangel ergaenzen labor blutwerte',
+    seiten: [
+      {
+        id: 'ueberblick',
+        titel: 'Zwei Vitamine, die wir oft messen',
+        kurz: 'Überblick',
+        saetze: [
+          'Nach Vitamin D und Vitamin B12 wird bei den Blutwerten besonders oft gefragt.',
+          'Vitamin D braucht der Körper für feste Knochen und Muskeln. Er bildet es vor allem selbst in der Haut, wenn Sonne darauf scheint.',
+          'Vitamin B12 braucht er für das Blut und die Nerven. Es steckt fast nur in tierischen Lebensmitteln.',
+          'Für beide gilt: Ein Wert knapp unter der Grenze heißt noch nicht, dass Ihnen etwas fehlt. Wichtig ist, ob Beschwerden und Risiken dazu passen.',
+        ],
+      },
+      {
+        id: 'vitamin-d',
+        titel: 'Vitamin D: der Wert',
+        kurz: 'Vitamin D',
+        bild: 'vitamin-d-stufen',
+        saetze: [
+          'Gemessen wird die Speicherform, das 25-OH-Vitamin D. Es zeigt den Vorrat der letzten Wochen.',
+          'Unter 12 ng/ml (30 nmol/l) liegt ein Mangel vor. Von 12 bis 20 ng/ml (30 bis 50 nmol/l) ist die Versorgung knapp.',
+          'Ab 20 ng/ml (50 nmol/l) reicht es für die Knochen. Mehr als 50 ng/ml (125 nmol/l) bringt keinen Vorteil, und Werte über 100 ng/ml (250 nmol/l) sollten vermieden werden.',
+          'Labore verwenden zwei Einheiten: Die Zahl in nmol/l ist etwa zweieinhalbmal so groß wie in ng/ml.',
+        ],
+      },
+      {
+        id: 'vitamin-d-messen',
+        titel: 'Vitamin D: messen und ergänzen',
+        kurz: 'D ergänzen',
+        saetze: [
+          'Bei Gesunden ohne Beschwerden ist ein Test meist nicht nötig. Die Krankenkasse zahlt ihn nur mit Grund, etwa bei Osteoporose, Nierenschwäche oder Darmkrankheiten.',
+          'Im Spätwinter ist der Wert bei vielen Menschen niedriger als im Herbst – das ist normal.',
+          'Bei einem Mangel oder hohem Risiko ergänzen wir meist 800 bis 1000 Einheiten am Tag. Bei einem deutlichen Mangel kann es anfangs mehr sein.',
+          'Ohne ärztlichen Rat nicht mehr als 4000 Einheiten am Tag nehmen. Zu viel Vitamin D erhöht das Kalzium im Blut und kann Nieren und Herz schaden.',
+        ],
+      },
+      {
+        id: 'b12',
+        titel: 'Vitamin B12: der Wert',
+        kurz: 'B12',
+        bild: 'b12-werte',
+        saetze: [
+          'Das Gesamt-B12 im Blut ist ein grober Suchwert. Unter 200 pg/ml (150 pmol/l) ist ein Mangel wahrscheinlich, über 300 pg/ml (220 pmol/l) reicht es meist – je nach Labor.',
+          'Dazwischen liegt eine Grauzone. Dort hilft das Holo-Transcobalamin (Holo-TC), das „aktive B12“, das die Zellen wirklich aufnehmen können.',
+          'Fehlt B12 in den Zellen, staut sich die Methylmalonsäure (MMA). Ist sie im Blut erhöht, bestätigt das den Mangel.',
+          'Ein hoher B12-Wert durch Tabletten oder Spritzen ist harmlos. Ist er ohne Ergänzung sehr hoch, sehen wir genauer nach.',
+        ],
+      },
+      {
+        id: 'b12-risiko',
+        titel: 'Vitamin B12: wer ist gefährdet?',
+        kurz: 'B12 Risiko',
+        saetze: [
+          'Ein Mangel entwickelt sich langsam über Jahre, denn die Leber hat einen großen Vorrat. Er zeigt sich durch Blutarmut, Müdigkeit, Kribbeln in Händen und Füßen, einen unsicheren Gang oder Vergesslichkeit.',
+          'Gefährdet sind Menschen, die vegan leben, ältere Menschen und alle, die lange Metformin oder Magenschutz-Tabletten nehmen.',
+          'Auch eine bestimmte Magenschleimhautentzündung, eine Magen- oder Darmoperation und Darmkrankheiten verhindern, dass B12 aufgenommen wird.',
+          'Dann messen wir den Wert in Abständen, auch ohne Beschwerden.',
+        ],
+      },
+      {
+        id: 'b12-ergaenzen',
+        titel: 'Wenn B12 fehlt',
+        kurz: 'B12 ergänzen',
+        saetze: [
+          'Meist reichen hoch dosierte Tabletten – auch wenn der Magen B12 schlecht aufnimmt, denn ein kleiner Teil gelangt immer ins Blut.',
+          'Bei Nervenbeschwerden oder sehr niedrigen Werten geben wir B12 anfangs als Spritze, später etwa alle ein bis drei Monate.',
+          'Die Blutwerte bessern sich in Wochen, die Nerven brauchen Monate.',
+          'Wer vegan lebt, ergänzt B12 dauerhaft.',
+        ],
+      },
+    ],
+    warnung:
+      'Neues Kribbeln, Taubheit oder ein unsicherer Gang bitte bald abklären lassen. Hoch dosiertes Vitamin D nur nach Rücksprache.',
+  },
 ];

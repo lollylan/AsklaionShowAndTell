@@ -1208,5 +1208,144 @@
       "In der Milz zieht ein dunkler, unregelmäßiger Streifen: Hier ist das Gewebe eingerissen.",
       "Mit dem CT sehen wir, wie groß der Riss ist und ob Blut in den Bauch läuft – davon hängt die Behandlung ab."
     ]
+  },
+  "gerstenkorn": {
+    "aufnahmen": [
+      {
+        "datei": "gerstenkorn-1.jpg",
+        "titel": "Gerstenkorn am Unterlid",
+        "art": "Foto",
+        "urheber": "Imrankabirhossain",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:External_hordeolum.jpg",
+        "marken": [
+          {
+            "x": 0.42,
+            "y": 0.66,
+            "text": "rot und geschwollen am Lidrand"
+          }
+        ]
+      },
+      {
+        "datei": "gerstenkorn-2.jpg",
+        "titel": "Gerstenkorn am Oberlid",
+        "art": "Foto",
+        "urheber": "Andre Riemann",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Stye02.jpg",
+        "marken": [
+          {
+            "x": 0.47,
+            "y": 0.38,
+            "text": "gerötete Schwellung"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Typisch für das Gerstenkorn: eine rote, geschwollene Stelle direkt am Lidrand, die weh tut.",
+      "Oft bildet sich nach einigen Tagen ein gelber Eiterpunkt. Nicht ausdrücken – er öffnet sich meist von selbst."
+    ]
+  },
+  "hagelkorn": {
+    "aufnahmen": [
+      {
+        "datei": "hagelkorn-1.jpg",
+        "titel": "Hagelkorn im Oberlid",
+        "art": "Foto",
+        "urheber": "Poupig",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:ChalazionR.jpg",
+        "marken": [
+          {
+            "x": 0.5,
+            "y": 0.55,
+            "text": "runder, fester Knoten"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Das Hagelkorn ist ein runder Knoten im Lid, etwas vom Rand entfernt. Er tut kaum weh.",
+      "Die Haut darüber ist oft kaum gerötet. Unter der Haut fühlt man ein festes Kügelchen."
+    ]
+  },
+  "lidknoten": {
+    "nach": "unterschiede",
+    "aufnahmen": [
+      {
+        "datei": "gerstenkorn-1.jpg",
+        "titel": "Gerstenkorn",
+        "art": "Foto",
+        "urheber": "Imrankabirhossain",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:External_hordeolum.jpg",
+        "marken": [
+          {
+            "x": 0.42,
+            "y": 0.66,
+            "text": "am Lidrand, rot"
+          }
+        ]
+      },
+      {
+        "datei": "hagelkorn-1.jpg",
+        "titel": "Hagelkorn",
+        "art": "Foto",
+        "urheber": "Poupig",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:ChalazionR.jpg",
+        "marken": [
+          {
+            "x": 0.5,
+            "y": 0.55,
+            "text": "im Lid, fest"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links ein Gerstenkorn: gerötet, geschwollen und schmerzhaft direkt am Lidrand.",
+      "Rechts ein Hagelkorn: ein runder, fester Knoten im Lid, der kaum weh tut."
+    ]
+  },
+  "altersflecken": {
+    "aufnahmen": [
+      {
+        "datei": "altersflecken-1.jpg",
+        "titel": "Einzelner Altersfleck am Unterarm",
+        "art": "Foto",
+        "urheber": "Invertzoo",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Liver_spot_on_left_forearm.JPG",
+        "marken": [
+          {
+            "x": 0.5,
+            "y": 0.26,
+            "text": "flach, gleichmäßig braun"
+          }
+        ]
+      },
+      {
+        "datei": "altersflecken-2.jpg",
+        "titel": "Viele Altersflecken am Handrücken",
+        "art": "Foto",
+        "urheber": "Beyond My Ken",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Liver_spots,_light-skinned_Caucasian_man,_age_63.jpg",
+        "marken": [
+          {
+            "x": 0.62,
+            "y": 0.37,
+            "text": "kleine hellbraune Flecken"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Altersflecken sind flach, haben eine gleichmäßige Farbe und einen glatten Rand.",
+      "Sie sitzen dort, wo viel Sonne hinkommt – am häufigsten auf dem Handrücken.",
+      "Sieht ein Fleck anders aus als die übrigen, bitte zeigen."
+    ]
   }
 }

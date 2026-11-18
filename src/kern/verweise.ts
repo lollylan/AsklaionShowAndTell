@@ -51,8 +51,8 @@ const GRUPPEN: string[][] = [
   [A + 'schlafapnoe', A + 'muedigkeit', A + 'adipositas'],
 
   // Bauch
-  [A + 'reflux', M + 'pantoprazol', M + 'omeprazol', K + 'bauchorgane', A + 'gleithernie'],
-  [A + 'gastritis', M + 'pantoprazol', M + 'omeprazol', M + 'ibuprofen', M + 'diclofenac', A + 'reflux', K + 'bauchorgane'],
+  [A + 'reflux', M + 'pantoprazol', M + 'omeprazol', M + 'magaldrat', K + 'bauchorgane', A + 'gleithernie'],
+  [A + 'gastritis', M + 'pantoprazol', M + 'omeprazol', M + 'magaldrat', M + 'ibuprofen', M + 'diclofenac', A + 'reflux', K + 'bauchorgane'],
   [A + 'gleithernie', A + 'reflux', M + 'pantoprazol', K + 'bauchorgane'],
   [A + 'hernie', K + 'bauchorgane', P + 'notfall'],
   [A + 'reizdarm', A + 'unvertraeglichkeiten', M + 'macrogol'],
@@ -165,6 +165,10 @@ const GRUPPEN: string[][] = [
   [A + 'nesselsucht', A + 'heuschnupfen', M + 'prednisolon', M + 'ramipril', P + 'notfall'],
   [A + 'kontaktekzem', A + 'neurodermitis', M + 'prednisolon', K + 'hand'],
   [A + 'weisser-hautkrebs', A + 'melanom', V + 'hautkrebs'],
+  [A + 'gerstenkorn', A + 'lidknoten', A + 'hagelkorn', A + 'bindehautentzuendung', A + 'rosazea'],
+  [A + 'hagelkorn', A + 'lidknoten', A + 'gerstenkorn', A + 'rosazea'],
+  [A + 'altersflecken', A + 'melanom', A + 'weisser-hautkrebs', V + 'hautkrebs'],
+  [A + 'vitaminwerte', A + 'vitamin-d-mangel', A + 'vitamin-b12-mangel', A + 'blutwerte', M + 'vitamin-d', A + 'osteoporose', M + 'metformin', A + 'polyneuropathie'],
   [A + 'warzen', A + 'fusspilz', A + 'diabetes-typ-2', K + 'fuss'],
   [A + 'lippenherpes', A + 'guertelrose'],
   [A + 'wunden', I + 'tetanus', P + 'notfall', M + 'ibuprofen', M + 'paracetamol'],

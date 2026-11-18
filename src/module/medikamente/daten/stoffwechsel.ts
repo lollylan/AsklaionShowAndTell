@@ -410,6 +410,40 @@ export const MAGEN: Medikament[] = [
     warnung: 'Schluckbeschwerden, ungewollte Gewichtsabnahme, Bluterbrechen oder schwarzer Stuhl: bitte rasch abklären lassen.',
   },
   {
+    id: 'magaldrat',
+    name: 'Magaldrat',
+    zusatz: 'Säurebinder bei Sodbrennen (Antazidum)',
+    gebiet: 'magen',
+    handelsnamen: ['Riopan Magen Tabletten', 'Riopan Magen Gel', 'Magaldrat-ratiopharm'],
+    form: 'Kautablette oder Gel im Beutel',
+    suche: 'riopan antazidum antacidum saeurebinder sodbrennen magenschmerzen saures aufstossen reflux gastritis aluminium magnesium kautablette gel',
+    wofuer: [
+      'Magaldrat bindet die Säure, die schon im Magen ist. Sodbrennen und Magendrücken lassen nach wenigen Minuten nach.',
+      'Es wirkt rasch, aber nur einige Stunden. Es ist für gelegentliche Beschwerden gedacht, nicht für die Dauer.',
+      'Anders als Säureblocker wie Pantoprazol verhindert es nicht, dass neue Säure entsteht.',
+    ],
+    merker: [
+      { symbol: 'bedarf', titel: 'Bei Beschwerden', text: 'etwa eine Stunde nach dem Essen und vor dem Schlafen' },
+      { symbol: 'uhr', titel: 'Zwei Stunden Abstand', text: 'zu anderen Medikamenten' },
+    ],
+    einnahme: [
+      'Die Kautablette gut zerkauen oder lutschen. Das Gel direkt aus dem Beutel nehmen; vorher den Beutel durchkneten.',
+      'Nicht zusammen mit Fruchtsaft, Wein oder anderen sauren Getränken nehmen – sie lassen mehr Aluminium ins Blut.',
+      'Ohne ärztlichen Rat nicht länger als zwei Wochen nehmen. Die Höchstmenge am Tag steht im Beipackzettel.',
+    ],
+    nebenwirkungen: [
+      { symbol: 'durchfall', name: 'Weicher Stuhl', text: 'Häufig, besonders bei höherer Dosis.' },
+      { symbol: 'darm', name: 'Verstopfung', text: 'Seltener.' },
+      { symbol: 'haut', name: 'Allergie', text: 'Sehr selten, etwa Ausschlag.' },
+    ],
+    achtung: [
+      'Magaldrat bindet auch andere Medikamente, etwa L-Thyroxin, Eisen und manche Antibiotika. Deshalb zwei Stunden Abstand halten.',
+      'Bei schwacher Niere bitte nur nach Rücksprache: Aluminium und Magnesium können sich dann im Körper anreichern.',
+      'Brauchen Sie es oft, sprechen Sie uns an. Dann suchen wir nach der Ursache und behandeln gezielter.',
+    ],
+    warnung: 'Beschwerden länger als zwei Wochen, Schluckbeschwerden, ungewollte Gewichtsabnahme, Bluterbrechen oder schwarzer Stuhl: bitte abklären lassen.',
+  },
+  {
     id: 'macrogol',
     name: 'Macrogol',
     zusatz: 'Abführmittel zum Trinken',

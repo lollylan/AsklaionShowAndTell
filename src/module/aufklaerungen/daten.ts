@@ -31,6 +31,7 @@ import { RHEUMA } from './daten/rheuma';
 import { SEELE_ALTER } from './daten/seele-alter';
 import { STOFFWECHSEL_WEITERE } from './daten/stoffwechsel-weitere';
 import { VERSORGUNG } from './daten/versorgung';
+import { LID_HAUT } from './daten/lid-haut';
 
 export { GEBIETE, SEITEN } from './daten/typen';
 export type { Blattseite, GebietId, Krankheit, SeiteId } from './daten/typen';
@@ -54,6 +55,7 @@ const gruppen: Krankheit[][] = [
   HAUT,
   HAUT_ENTZUENDLICH,
   HAUT_WEITERE,
+  LID_HAUT,
   BESCHWERDEN,
   BESCHWERDEN_WEITERE,
   ARBEIT,
