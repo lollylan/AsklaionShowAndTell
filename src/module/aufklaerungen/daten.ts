@@ -32,6 +32,7 @@ import { SEELE_ALTER } from './daten/seele-alter';
 import { STOFFWECHSEL_WEITERE } from './daten/stoffwechsel-weitere';
 import { VERSORGUNG } from './daten/versorgung';
 import { LID_HAUT } from './daten/lid-haut';
+import { GESCHLECHTSKRANKHEITEN } from './daten/geschlechtskrankheiten';
 
 export { GEBIETE, SEITEN } from './daten/typen';
 export type { Blattseite, GebietId, Krankheit, SeiteId } from './daten/typen';
@@ -44,6 +45,7 @@ const gruppen: Krankheit[][] = [
   LUNGE,
   INFEKTE,
   INFEKTE_WEITERE,
+  GESCHLECHTSKRANKHEITEN,
   BEWEGUNG,
   RHEUMA,
   BAUCH,
