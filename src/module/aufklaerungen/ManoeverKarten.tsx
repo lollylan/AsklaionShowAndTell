@@ -59,7 +59,9 @@ export function ManoeverBild({
 /** Überschrift für die Seite: „für das rechte Ohr“ oder nichts, wenn es beidseitig ist. */
 export function ohrZeile(m: Manoever, ohr: Ohr): string | null {
   return seitig(m)
-    ? `Betroffen: ${ohr === "rechts" ? "rechtes" : "linkes"} Ohr`
+    ? ohr === "rechts"
+      ? "Betroffen: rechtes Ohr"
+      : "Betroffen: linkes Ohr"
     : null;
 }
 

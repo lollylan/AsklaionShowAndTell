@@ -7,6 +7,7 @@ import { dateiname, erzeugePdf, speichere } from '../../handzettel/pdf';
 import { GEBIETE, KRANKHEITSBILDER, UEBUNGEN, findeUebung, type Uebung } from './daten';
 import { DruckUebung } from './Handzettel';
 import { LOGO, MARKE } from '../../kern/marke';
+import { BlattSprachwahl, useBlattSprache } from '../../sprachen/BlattSprache';
 
 function ausAdresse(): string[] {
   const roh = new URLSearchParams(location.search).get('u') ?? '';
@@ -42,19 +43,15 @@ function gruppiert(): { name: string; liste: Uebung[] }[] {
  * Schritten und Dosierung. Links auswählen und eine Notiz ergänzen, rechts das A4-Blatt.
  * Gespeichert wird nichts.
  */
-export function Uebungsblatt() {
+export function Uebungsblatt({ raum }: { raum: string }) {
   const [gewaehlt, setGewaehlt] = useState<string[]>(ausAdresse);
   const [notiz, setNotiz] = useState('');
   const [arbeit, setArbeit] = useState(false);
   const [meldung, setMeldung] = useState<{ text: string; fehler?: boolean } | null>(null);
   const blatt = useRef<HTMLElement>(null);
+  const { sprache, waehle, fehlend, heute } = useBlattSprache(raum, blatt);
   const gruppen = gruppiert();
   const liste = gewaehlt.map(findeUebung).filter((u): u is Uebung => Boolean(u));
-  const heute = new Date().toLocaleDateString('de-DE', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
 
   const schalte = (id: string, an: boolean) =>
     setGewaehlt((alt) => (an ? [...alt, id] : alt.filter((g) => g !== id)));
@@ -100,8 +97,12 @@ export function Uebungsblatt() {
           </fieldset>
         ))}
 
+        <BlattSprachwahl sprache={sprache} waehle={waehle} fehlend={fehlend} />
+
         <label className="zettelleiste__notiz">
-          <span>Persönliche Notiz (wird mitgedruckt)</span>
+          <span>
+            Persönliche Notiz (wird mitgedruckt{sprache !== 'de' ? ', so wie geschrieben' : ''})
+          </span>
           <textarea
             rows={4}
             value={notiz}
@@ -146,14 +147,14 @@ export function Uebungsblatt() {
         </p>
       </aside>
 
-      <main className="zettel" ref={blatt}>
+      <main className="zettel" ref={blatt} data-sprachraum="">
         <header className="zettel__kopf">
           <img src={LOGO} alt="" />
           <div>
             <p className="zettel__praxis">{MARKE.name}</p>
             <p>{MARKE.zusatz}</p>
           </div>
-          <p className="zettel__datum">{heute}</p>
+          <p className="zettel__datum" data-nicht-uebersetzen="">{heute}</p>
         </header>
 
         <h2 className="zettel__titel">Ihre Übungen für zu Hause</h2>
@@ -166,7 +167,7 @@ export function Uebungsblatt() {
         {notiz.trim() !== '' && (
           <section className="zettel__notiz">
             <h3>Für Sie notiert</h3>
-            <p>{notiz}</p>
+            <p data-nicht-uebersetzen="">{notiz}</p>
           </section>
         )}
 

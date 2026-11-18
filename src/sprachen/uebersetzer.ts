@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useState, type RefObject } from 'react';
 import { findeSprache } from './sprachen';
+import { seitenSaetze } from './seiten';
 
 // Übersetzt einen fertig gezeichneten Bereich (Bühne, Handzettel) über das Wörterbuch der
 // gewählten Sprache. Gearbeitet wird am DOM: Jeder Textknoten, dessen Text (ohne Rand-
@@ -32,7 +33,11 @@ export function ladeWoerterbuch(code: string): Promise<Woerterbuch> {
       const wb: Woerterbuch = new Map();
       for (const teil of alle)
         for (const [de, ueb] of Object.entries(teil ?? {}))
-          if (typeof ueb === 'string' && ueb.trim()) wb.set(glaette(de), ueb);
+          if (typeof ueb === 'string' && ueb.trim()) {
+            wb.set(glaette(de), ueb);
+            // Schablonen mit Seite (Lagerungsmanöver): fertige Sätze für beide Ohren dazu.
+            for (const [satz, fertig] of seitenSaetze(code, de, ueb)) wb.set(glaette(satz), fertig);
+          }
       return wb;
     });
     geladen.set(code, auftrag);

@@ -7,6 +7,7 @@ import { LOGO, MARKE } from '../../kern/marke';
 import { MANOEVER, findeManoever, mitSeite, seitig, type Ohr } from './manoever';
 import { ManoeverBild, ohrZeile, quellenzeile } from './ManoeverKarten';
 import { findeKrankheit } from './daten';
+import { BlattSprachwahl, useBlattSprache } from '../../sprachen/BlattSprache';
 
 function ausAdresse(): { m: string; ohr: Ohr } {
   const p = new URLSearchParams(location.search);
@@ -18,7 +19,7 @@ function ausAdresse(): { m: string; ohr: Ohr } {
  * Übungsblatt zum Lagerungsschwindel (/lagerungsblatt?m=epley&ohr=rechts): ein Befreiungsmanöver
  * Schritt für Schritt mit Bild, für das betroffene Ohr. Gespeichert wird nichts.
  */
-export function Lagerungsblatt() {
+export function Lagerungsblatt({ raum }: { raum: string }) {
   const start = ausAdresse();
   const [id, setId] = useState(start.m);
   const [ohr, setOhr] = useState<Ohr>(start.ohr);
@@ -26,14 +27,10 @@ export function Lagerungsblatt() {
   const [arbeit, setArbeit] = useState(false);
   const [meldung, setMeldung] = useState<{ text: string; fehler?: boolean } | null>(null);
   const blatt = useRef<HTMLElement>(null);
+  const { sprache, waehle, fehlend, heute } = useBlattSprache(raum, blatt);
   const m = findeManoever(id) ?? MANOEVER[0];
   const zeile = ohrZeile(m, ohr);
   const warnung = findeKrankheit('lagerungsschwindel')?.warnung;
-  const heute = new Date().toLocaleDateString('de-DE', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
 
   const alsPdf = async () => {
     if (!blatt.current || arbeit) return;
@@ -96,8 +93,12 @@ export function Lagerungsblatt() {
           </fieldset>
         )}
 
+        <BlattSprachwahl sprache={sprache} waehle={waehle} fehlend={fehlend} />
+
         <label className="zettelleiste__notiz">
-          <span>Persönliche Notiz (wird mitgedruckt)</span>
+          <span>
+            Persönliche Notiz (wird mitgedruckt{sprache !== 'de' ? ', so wie geschrieben' : ''})
+          </span>
           <textarea
             rows={4}
             value={notiz}
@@ -132,14 +133,14 @@ export function Lagerungsblatt() {
         </p>
       </aside>
 
-      <main className="zettel" ref={blatt}>
+      <main className="zettel" ref={blatt} data-sprachraum="">
         <header className="zettel__kopf">
           <img src={LOGO} alt="" />
           <div>
             <p className="zettel__praxis">{MARKE.name}</p>
             <p>{MARKE.zusatz}</p>
           </div>
-          <p className="zettel__datum">{heute}</p>
+          <p className="zettel__datum" data-nicht-uebersetzen="">{heute}</p>
         </header>
 
         <h2 className="zettel__titel">Ihre Übung gegen Lagerungsschwindel</h2>
@@ -152,7 +153,7 @@ export function Lagerungsblatt() {
         {notiz.trim() !== '' && (
           <section className="zettel__notiz">
             <h3>Für Sie notiert</h3>
-            <p>{notiz}</p>
+            <p data-nicht-uebersetzen="">{notiz}</p>
           </section>
         )}
 

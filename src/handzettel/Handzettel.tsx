@@ -6,18 +6,7 @@ import { handzettelSpeicher } from '../arzt/Verlauf';
 import { dateiname, erzeugePdf, speichere, versende } from './pdf';
 import { LOGO, MARKE, ZWECK } from '../kern/marke';
 import { IST_DEMO } from '../kern/pfad';
-import { Sprachwahl } from '../sprachen/Sprachwahl';
-import { findeSprache, sprachSpeicher } from '../sprachen/sprachen';
-import { useUebersetzung } from '../sprachen/uebersetzer';
-import '../sprachen/sprachwahl.css';
-
-function liesSprache(raum: string): string {
-  try {
-    return findeSprache(localStorage.getItem(sprachSpeicher(raum))).code;
-  } catch {
-    return 'de';
-  }
-}
+import { BlattSprachwahl, useBlattSprache } from '../sprachen/BlattSprache';
 
 function liesListe(raum: string): string[] {
   try {
@@ -40,10 +29,7 @@ export function Handzettel({ raum }: { raum: string }) {
   const blatt = useRef<HTMLElement>(null);
   const [arbeit, setArbeit] = useState<'pdf' | 'mail' | null>(null);
   const [meldung, setMeldung] = useState<{ text: string; fehler?: boolean } | null>(null);
-  // Startet in der Sprache des Patientenbildschirms und folgt ihr, bis hier umgestellt wird.
-  const [sprache, setSprache] = useState(() => liesSprache(raum));
-  const [eigeneWahl, setEigeneWahl] = useState(false);
-  const fehlend = useUebersetzung(blatt, sprache);
+  const { sprache, waehle, fehlend, heute } = useBlattSprache(raum, blatt);
 
   const alsPdf = async (wohin: 'pdf' | 'mail') => {
     if (!blatt.current || arbeit) return;
@@ -73,22 +59,16 @@ export function Handzettel({ raum }: { raum: string }) {
   useEffect(() => {
     const beiAenderung = (e: StorageEvent) => {
       if (e.key === handzettelSpeicher(raum)) setListe(liesListe(raum));
-      if (e.key === sprachSpeicher(raum) && !eigeneWahl) setSprache(liesSprache(raum));
     };
     window.addEventListener('storage', beiAenderung);
     return () => window.removeEventListener('storage', beiAenderung);
-  }, [raum, eigeneWahl]);
+  }, [raum]);
 
   const eintraege = liste
     .map((schluessel) => ({ schluessel, fund: findeFundstelle(schluessel) }))
     .filter((e) => e.fund?.modul.verzeichnis?.Handzettel);
   const gewaehlt = eintraege.filter((e) => !aus.includes(e.schluessel));
   const leer = gewaehlt.length === 0 && notiz.trim() === '';
-  const heute = new Date().toLocaleDateString(sprache === 'de' ? 'de-DE' : sprache, {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
 
   return (
     <div className="zettelseite">
@@ -128,21 +108,7 @@ export function Handzettel({ raum }: { raum: string }) {
           </>
         )}
 
-        <Sprachwahl
-          code={sprache}
-          beschriftung="Sprache des Blatts"
-          beiWahl={(code) => {
-            setSprache(code);
-            setEigeneWahl(true);
-          }}
-        />
-        {sprache !== 'de' && fehlend.length > 0 && (
-          <p className="zettelleiste__sprachluecke">
-            {fehlend.length === 1
-              ? `Ein Text fehlt noch auf ${findeSprache(sprache).name} und steht auf Deutsch.`
-              : `${fehlend.length} Texte fehlen noch auf ${findeSprache(sprache).name} und stehen auf Deutsch.`}
-          </p>
-        )}
+        <BlattSprachwahl sprache={sprache} waehle={waehle} fehlend={fehlend} />
 
         <label className="zettelleiste__notiz">
           <span>
@@ -212,7 +178,7 @@ export function Handzettel({ raum }: { raum: string }) {
             <p className="zettel__praxis">{MARKE.name}</p>
             <p>{MARKE.zusatz}</p>
           </div>
-          <p className="zettel__datum">{heute}</p>
+          <p className="zettel__datum" data-nicht-uebersetzen="">{heute}</p>
         </header>
 
         <h2 className="zettel__titel">Zum Nachlesen: Das haben wir heute besprochen</h2>

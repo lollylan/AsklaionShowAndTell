@@ -35,7 +35,7 @@ if (pfad === '/handzettel') {
   document.title = `${MARKE.app} – Übungsblatt`;
   wurzel.render(
     <StrictMode>
-      <Uebungsblatt />
+      <Uebungsblatt raum={bestimmeRaum()} />
     </StrictMode>,
   );
 } else if (pfad === '/lagerungsblatt') {
@@ -43,7 +43,7 @@ if (pfad === '/handzettel') {
   document.title = `${MARKE.app} – Übungsblatt Lagerungsschwindel`;
   wurzel.render(
     <StrictMode>
-      <Lagerungsblatt />
+      <Lagerungsblatt raum={bestimmeRaum()} />
     </StrictMode>,
   );
 } else if (pfad === '/info') {
