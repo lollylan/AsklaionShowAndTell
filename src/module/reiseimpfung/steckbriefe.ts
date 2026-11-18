@@ -134,6 +134,8 @@ export function sprachenText(sprachen: string[]): string {
   // Englisch zuerst nennen – für Reisende die wichtigste Auskunft.
   const sauber = sprachen
     .map((s) => s.replace(/^britisches /, ''))
+    // „offiziell“ ist ein Rest aus Wikidata (Qualifikator), keine Sprache.
+    .filter((s) => s !== 'offiziell')
     .sort((a, b) => Number(b === 'Englisch') - Number(a === 'Englisch'));
   if (sauber.length <= 3) return sauber.join(', ');
   return `${sauber.length} Amtssprachen, u. a. ${sauber.slice(0, 3).join(', ')}`;

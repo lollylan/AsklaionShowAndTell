@@ -110,6 +110,14 @@ export function Info() {
               .
             </p>
           )}
+          {IST_DEMO && (
+            <p className="info__zweck">
+              Patientenbildschirm und Handzettel lassen sich in zwölf weitere Sprachen umschalten.
+              Diese Übersetzungen sind automatisiert mit KI erstellt und nicht muttersprachlich
+              gegengelesen; Fachbegriffe, Ortsnamen und Feinheiten können falsch sein. Wenn Ihnen
+              ein Fehler auffällt, freue ich mich über eine Nachricht an dieselbe Adresse.
+            </p>
+          )}
         </section>
 
         <section aria-labelledby="info-quellen">

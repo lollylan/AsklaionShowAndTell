@@ -388,6 +388,18 @@ function Monitor({
           </span>
         </p>
       )}
+      {IST_DEMO && sprache.code !== 'de' && (
+        <p className="monitor__sprachluecke">
+          <Languages size={16} strokeWidth={1.75} aria-hidden="true" />
+          <span>
+            Die Übersetzungen sind maschinell erstellt und nicht gegengelesen. Fehler bitte an{' '}
+            <a href="mailto:florian.rasche+asklaion@googlemail.com">
+              florian.rasche+asklaion@googlemail.com
+            </a>
+            .
+          </span>
+        </p>
+      )}
       {zustand.zeiger && (
         <button type="button" className="monitor__zeiger-weg" onClick={() => beiZeiger(null)}>
           <MousePointerClick size={16} strokeWidth={1.75} aria-hidden="true" />

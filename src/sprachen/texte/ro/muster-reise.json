@@ -1,0 +1,18 @@
+{
+ "{0} Milliarden": "{0} [0:one=miliard;few=miliarde;other=de miliarde]",
+ "{0} Millionen": "{0} [0:one=milion;few=milioane;other=de milioane]",
+ "{0} km²": "{0} km²",
+ "etwa so groß wie {0}": "cam cât {0}",
+ "etwa {0}-mal so groß wie {1}": "de circa {0} [0:one=ori;few=ori;other=de ori] mai mare decât {1}",
+ "{0} Amtssprachen, u. a. {1}": "{0} [0:one=limbă oficială;few=limbi oficiale;other=de limbi oficiale], printre care {1}",
+ "Deutsche Stecker passen meist nicht (Steckdosen Typ {0}). Einen Reiseadapter mitnehmen.": "Ștecherele germane de obicei nu se potrivesc (prize de tip {0}). Luați cu dumneavoastră un adaptor de călătorie.",
+ "Deutsche Stecker passen meist nicht. Einen Reiseadapter mitnehmen.": "Ștecherele germane de obicei nu se potrivesc. Luați cu dumneavoastră un adaptor de călătorie.",
+ "Flagge von {0}": "Steag: {0}",
+ "{0} – {1}": "{0} – {1}",
+ "Malariakarte {0}": "Harta malariei: {0}",
+ "Malaria-Verbreitungskarte {0}": "Harta răspândirii malariei: {0}",
+ "Temperatur zwischen {0} und {1} Grad, am meisten Regen im {2}": "Temperatura între {0} și {1} grade, cele mai multe ploi: {2}",
+ "siSwati": "swati",
+ "isiXhosa": "xhosa",
+ "isiZulu": "zulu"
+}

@@ -13,6 +13,11 @@ was der Patient auf seinem Bildschirm sieht – Zeichnungen, 3D-Modelle, Erklär
 >
 > **Wenn Ihnen ein Fehler auffällt, schreiben Sie mir bitte unbedingt:**
 > [florian.rasche+asklaion@googlemail.com](mailto:florian.rasche+asklaion@googlemail.com)
+>
+> **Übersetzungen:** Patientenbildschirm und Handzettel gibt es in zwölf weiteren Sprachen. Diese
+> Übersetzungen sind automatisiert mit KI erstellt und nicht muttersprachlich gegengelesen;
+> Fachbegriffe, Ortsnamen und Feinheiten können falsch sein. Fehler bitte ebenfalls an die
+> Adresse oben melden.
 
 ## Zweck
 

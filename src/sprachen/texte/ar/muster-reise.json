@@ -1,0 +1,18 @@
+{
+ "{0} Milliarden": "{0} مليار",
+ "{0} Millionen": "{0} مليون",
+ "{0} km²": "{0} كم²",
+ "etwa so groß wie {0}": "تقريبًا بحجم {0}",
+ "etwa {0}-mal so groß wie {1}": "أكبر من {1} بنحو {0} [0:few=مرات;other=مرة]",
+ "{0} Amtssprachen, u. a. {1}": "{0} [0:few=لغات رسمية;many=لغة رسمية;other=لغة رسمية]، منها {1}",
+ "Deutsche Stecker passen meist nicht (Steckdosen Typ {0}). Einen Reiseadapter mitnehmen.": "القوابس الألمانية لا تناسب غالبًا (مقابس من النوع {0}). يُرجى أخذ محوّل سفر.",
+ "Deutsche Stecker passen meist nicht. Einen Reiseadapter mitnehmen.": "القوابس الألمانية لا تناسب غالبًا. يُرجى أخذ محوّل سفر.",
+ "Flagge von {0}": "علم {0}",
+ "{0} – {1}": "{0} – {1}",
+ "Malariakarte {0}": "خريطة الملاريا: {0}",
+ "Malaria-Verbreitungskarte {0}": "خريطة انتشار الملاريا: {0}",
+ "Temperatur zwischen {0} und {1} Grad, am meisten Regen im {2}": "درجة الحرارة بين {0} و{1} درجة، وأكثر الأمطار في {2}",
+ "siSwati": "السواتية",
+ "isiXhosa": "الخوسية",
+ "isiZulu": "الزولوية"
+}

@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useState, type RefObject } from 'react';
 import { findeSprache } from './sprachen';
 import { seitenSaetze } from './seiten';
+import { baueMuster, fuelleMuster, istMuster, liste, type Muster } from './muster';
 
 // Übersetzt einen fertig gezeichneten Bereich (Bühne, Handzettel) über das Wörterbuch der
 // gewählten Sprache. Gearbeitet wird am DOM: Jeder Textknoten, dessen Text (ohne Rand-
@@ -21,6 +22,8 @@ const dateien = {
 };
 const sprachVon = (pfad: string) => pfad.split('/').at(-2);
 const geladen = new Map<string, Promise<Woerterbuch>>();
+/** Schablonen mit {0} … je Wörterbuch (siehe muster.ts). */
+const musterVon = new WeakMap<Woerterbuch, { code: string; muster: Muster[] }>();
 
 /** Lädt alle Wörterbuchteile einer Sprache (texte/<code>/*.json) und führt sie zusammen. */
 export function ladeWoerterbuch(code: string): Promise<Woerterbuch> {
@@ -31,18 +34,39 @@ export function ladeWoerterbuch(code: string): Promise<Woerterbuch> {
       .sort(([a], [b]) => a.localeCompare(b));
     auftrag = Promise.all(teile.map(([, lade]) => lade())).then((alle) => {
       const wb: Woerterbuch = new Map();
+      const muster: [string, Muster][] = [];
       for (const teil of alle)
         for (const [de, ueb] of Object.entries(teil ?? {}))
           if (typeof ueb === 'string' && ueb.trim()) {
+            if (istMuster(de)) {
+              muster.push([de, baueMuster(glaette(de), ueb)]);
+              continue;
+            }
             wb.set(glaette(de), ueb);
             // Schablonen mit Seite (Lagerungsmanöver): fertige Sätze für beide Ohren dazu.
             for (const [satz, fertig] of seitenSaetze(code, de, ueb)) wb.set(glaette(satz), fertig);
           }
+      // Längere Schablonen zuerst: „etwa so groß wie {0}“ vor „{0} – {1}“.
+      muster.sort(([a], [b]) => b.replace(/\{\d\}/g, '').length - a.replace(/\{\d\}/g, '').length);
+      musterVon.set(wb, { code, muster: muster.map(([, m]) => m) });
       return wb;
     });
     geladen.set(code, auftrag);
   }
   return auftrag;
+}
+
+/**
+ * Schlägt einen (geglätteten) Text nach: wörtlich, sonst als Liste mit Komma, sonst über die
+ * Schablonen. undefined, wenn nichts passt.
+ */
+export function schlageNach(wb: Woerterbuch, kern: string): string | undefined {
+  const direkt = wb.get(kern);
+  if (direkt !== undefined) return direkt;
+  const m = musterVon.get(wb);
+  if (!m) return undefined;
+  const schlage = (t: string) => wb.get(glaette(t));
+  return liste(kern, m.code, schlage) ?? fuelleMuster(kern, m.code, m.muster, schlage);
 }
 
 /** Schlüsselform: Leerraum zusammengezogen, ohne Rand – so wie React JSX-Text ausgibt. */
@@ -112,7 +136,7 @@ export function useUebersetzung(ref: RefObject<HTMLElement>, code: string): stri
       if (!wb) return original;
       const kern = glaette(original);
       if (!kern) return original;
-      const ueb = wb.get(kern);
+      const ueb = schlageNach(wb, kern);
       if (ueb === undefined) {
         if (IST_TEXT.test(kern)) luecken.add(kern);
         return original;

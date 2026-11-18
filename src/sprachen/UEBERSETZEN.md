@@ -44,3 +44,14 @@ Steuerung zeigt unter der Vorschau an, wie viele Texte des aktuellen Bilds noch 
   Persisch: westliche Ziffern 0–9 behalten, damit Werte mit den Befunden übereinstimmen).
 - **Ausgabe:** gültiges JSON, UTF-8, dieselben Schlüssel in derselben Reihenfolge, jeder Wert
   gefüllt. Prüfen mit `node -e "JSON.parse(require('fs').readFileSync('<datei>','utf8'))"`.
+
+## Schablonen für zusammengesetzte Texte
+
+Texte, die die App erst beim Zeichnen zusammensetzt („71,6 Millionen“, „etwa 3-mal so groß wie
+Bayern“, „Paschto, Dari“), stehen nicht wörtlich im Wörterbuch. Dafür gibt es Schablonen mit
+`{0}`, `{1}` (Reisemodul: `texte/<code>/muster-reise.json`, Logik in `src/sprachen/muster.ts`).
+Die Lücken werden gefüllt: deutsche Zahlen in Landesschreibweise, Wörter über das Wörterbuch,
+Listen mit Komma Glied für Glied. Geht ein Teil nicht auf, bleibt der ganze Text deutsch.
+In der Zielschablone zusätzlich: `{0*100}` (Zahl mal 100, für 万/億/만) und
+`[0:one=…;few=…;many=…;other=…]` (Wort nach der Pluralregel der Sprache für Lücke 0).
+Listen mit Komma aus lauter bekannten Gliedern werden auch ohne Schablone übersetzt.

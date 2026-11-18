@@ -221,7 +221,7 @@ function TippSeite({ land }: { land: Land }) {
       <div className="seite__schleier seite__schleier--voll" />
       <div className="tipps">
         <h2 className="seite__titel tipps__titel">
-          Gut zu wissen <span>für {land.name}</span>
+          Gut zu wissen <span>{land.name}</span>
         </h2>
         <ul className="tipps__liste" data-viele={tipps.length > 4}>
           {tipps.map((t, i) => {
@@ -278,7 +278,7 @@ function KlimaSeite({ land }: { land: Land }) {
   return (
     <div className="klimaseite">
       <h2 className="seite__titel klimaseite__titel">
-        Klima <span>in {land.name}</span>
+        Klima <span>{land.name}</span>
       </h2>
       <p className="klimaseite__hinweis">
         Monatsmittel im Durchschnitt des ganzen Landes, 1991–2020

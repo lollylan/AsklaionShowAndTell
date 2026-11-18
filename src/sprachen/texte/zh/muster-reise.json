@@ -1,0 +1,18 @@
+{
+ "{0} Milliarden": "{0*10}亿",
+ "{0} Millionen": "{0*100}万",
+ "{0} km²": "{0} 平方公里",
+ "etwa so groß wie {0}": "与{0}面积相当",
+ "etwa {0}-mal so groß wie {1}": "约为{1}的{0}倍",
+ "{0} Amtssprachen, u. a. {1}": "{0} 种官方语言，包括{1}",
+ "Deutsche Stecker passen meist nicht (Steckdosen Typ {0}). Einen Reiseadapter mitnehmen.": "德国插头通常无法使用（插座类型 {0}）。请携带旅行转换插头。",
+ "Deutsche Stecker passen meist nicht. Einen Reiseadapter mitnehmen.": "德国插头通常无法使用。请携带旅行转换插头。",
+ "Flagge von {0}": "{0}国旗",
+ "{0} – {1}": "{0} – {1}",
+ "Malariakarte {0}": "疟疾地图：{0}",
+ "Malaria-Verbreitungskarte {0}": "疟疾分布图：{0}",
+ "Temperatur zwischen {0} und {1} Grad, am meisten Regen im {2}": "气温在 {0} 至 {1} 度之间，{2}降雨最多",
+ "siSwati": "斯瓦蒂语",
+ "isiXhosa": "科萨语",
+ "isiZulu": "祖鲁语"
+}
