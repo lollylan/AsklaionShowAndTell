@@ -3,7 +3,10 @@ import { Maximize } from 'lucide-react';
 import { useSitzung, type Sitzung } from '../kern/sitzung';
 import { BuehnenInhalt } from './BuehnenInhalt';
 
-/** Der Patientenbildschirm: zeigt nur an, nimmt keine Eingaben entgegen. */
+/**
+ * Der Patientenbildschirm: zeigt nur an. Einzige Eingabe sind die Pfeiltasten, die an die
+ * Steuerung weitergemeldet werden – so lässt sich auch mit nur einem Bildschirm blättern.
+ */
 export function BuehnenAnsicht({ sitzung }: { sitzung: Sitzung }) {
   const { zustand } = useSitzung(sitzung);
   const [vollbild, setVollbild] = useState(Boolean(document.fullscreenElement));
@@ -32,13 +35,19 @@ export function BuehnenAnsicht({ sitzung }: { sitzung: Sitzung }) {
 
   useEffect(() => {
     const beiTaste = (e: KeyboardEvent) => {
-      if (e.key.toLowerCase() !== 'f' || e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+        e.preventDefault();
+        sitzung.meldeTaste(e.key);
+        return;
+      }
+      if (e.key.toLowerCase() !== 'f') return;
       if (document.fullscreenElement) void document.exitFullscreen();
       else void document.documentElement.requestFullscreen().catch(() => {});
     };
     window.addEventListener('keydown', beiTaste);
     return () => window.removeEventListener('keydown', beiTaste);
-  }, []);
+  }, [sitzung]);
 
   const insVollbild = () => {
     if (!document.fullscreenElement) {

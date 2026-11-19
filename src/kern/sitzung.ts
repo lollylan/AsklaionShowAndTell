@@ -26,6 +26,24 @@ export interface Sitzung {
   lies: () => Schnappschuss;
   /** Nur im Arztfenster wirksam. */
   aendere: (aenderung: (alt: SitzungsZustand) => SitzungsZustand) => void;
+  /**
+   * Nur im Patientenfenster wirksam: meldet eine Pfeiltaste an die Steuerung, damit man
+   * auch blättern kann, während das Patientenfenster den Tastaturfokus hat.
+   */
+  meldeTaste: (taste: Blaettertaste) => void;
+}
+
+export type Blaettertaste = 'ArrowLeft' | 'ArrowRight';
+
+const BLAETTERTASTEN: readonly string[] = ['ArrowLeft', 'ArrowRight'];
+
+/**
+ * Im Arztfenster: eine vom Patientenfenster gemeldete Taste so auslösen, als wäre sie hier
+ * gedrückt worden. Die Module blättern dann mit ihren eigenen Tastenhandlern.
+ */
+function loeseTasteAus(taste: unknown) {
+  if (typeof taste !== 'string' || !BLAETTERTASTEN.includes(taste)) return;
+  window.dispatchEvent(new KeyboardEvent('keydown', { key: taste }));
 }
 
 export const LEERE_SITZUNG: SitzungsZustand = {
@@ -87,13 +105,16 @@ function starteMitRelay(rolle: Rolle, raum: string): Sitzung {
     };
 
     ws.onmessage = (ereignis) => {
-      let nachricht: { t?: string; rev?: number; zustand?: SitzungsZustand } & Partial<Praesenz>;
+      let nachricht: { t?: string; rev?: number; zustand?: SitzungsZustand; taste?: string } &
+        Partial<Praesenz>;
       try {
         nachricht = JSON.parse(String(ereignis.data));
       } catch {
         return;
       }
-      if (nachricht.t === 'praesenz') {
+      if (nachricht.t === 'taste') {
+        if (rolle === 'arzt') loeseTasteAus(nachricht.taste);
+      } else if (nachricht.t === 'praesenz') {
         setze({ praesenz: { arzt: nachricht.arzt ?? 0, buehne: nachricht.buehne ?? 0 } });
       } else if (nachricht.t === 'zustand' && nachricht.zustand) {
         const rev = nachricht.rev ?? 0;
@@ -133,16 +154,24 @@ function starteMitRelay(rolle: Rolle, raum: string): Sitzung {
       setze({ zustand: neu, rev: stand.rev + 1 });
       sendeZustand();
     },
+    meldeTaste: (taste) => {
+      if (rolle !== 'buehne' || socket?.readyState !== WebSocket.OPEN) return;
+      socket.send(JSON.stringify({ t: 'taste', taste }));
+    },
   };
 }
 
 interface Funkspruch {
-  /** hallo = neues Fenster, da = Antwort darauf, weg = Fenster schließt, zustand = neuer Stand. */
-  t: 'hallo' | 'da' | 'weg' | 'zustand';
+  /**
+   * hallo = neues Fenster, da = Antwort darauf, weg = Fenster schließt, zustand = neuer Stand,
+   * taste = Pfeiltaste aus dem Patientenfenster.
+   */
+  t: 'hallo' | 'da' | 'weg' | 'zustand' | 'taste';
   von: string;
   rolle: Rolle;
   rev?: number;
   zustand?: SitzungsZustand;
+  taste?: Blaettertaste;
 }
 
 /**
@@ -198,6 +227,10 @@ function starteOhneServer(rolle: Rolle, raum: string): Sitzung {
     // Ein neues Fenster erfährt, wer da ist und wie der Stand ist. So übersteht die Sitzung
     // auch ein Neuladen der Steuerung, solange das Patientenfenster offen bleibt.
     if (spruch.t === 'hallo') sende('da', stand.rev > 0);
+    if (spruch.t === 'taste') {
+      if (rolle === 'arzt' && spruch.rolle === 'buehne') loeseTasteAus(spruch.taste);
+      return;
+    }
 
     if (spruch.zustand) {
       const rev = spruch.rev ?? 0;
@@ -226,6 +259,11 @@ function starteOhneServer(rolle: Rolle, raum: string): Sitzung {
       if (neu === stand.zustand) return;
       setze({ zustand: neu, rev: stand.rev + 1 });
       sende('zustand', true);
+    },
+    meldeTaste: (taste) => {
+      if (rolle !== 'buehne') return;
+      const spruch: Funkspruch = { t: 'taste', von: ich, rolle, taste };
+      kanal.postMessage(spruch);
     },
   };
 }

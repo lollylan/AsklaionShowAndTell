@@ -105,6 +105,17 @@ export function haengeRelayAn(httpServer) {
         return;
       }
 
+      // Pfeiltaste aus dem Patientenfenster: nur an die Steuerung weiterreichen. Ob und wie
+      // geblättert wird, entscheidet weiterhin das Arztfenster.
+      if (nachricht.t === 'taste' && raum.rollen.get(ws) === 'buehne') {
+        if (nachricht.taste !== 'ArrowLeft' && nachricht.taste !== 'ArrowRight') return;
+        const weiter = JSON.stringify({ t: 'taste', taste: nachricht.taste });
+        for (const [anderer, rolle] of raum.rollen) {
+          if (rolle === 'arzt' && anderer.readyState === anderer.OPEN) anderer.send(weiter);
+        }
+        return;
+      }
+
       if (nachricht.t === 'zustand' && raum.rollen.get(ws) === 'arzt') {
         // Ältere Stände verwerfen (z. B. zweites Steuerfenster, das hinterherhinkt).
         const rev = Number(nachricht.rev) || 0;
