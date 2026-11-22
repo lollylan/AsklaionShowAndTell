@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Fluss, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 /** Kopf im Profil, Blick nach links (wie in schlafapnoe.tsx). */
 const KOPF =
@@ -33,6 +33,7 @@ export default function SchlafapnoeMaske() {
           strokeLinejoin="round"
         />
         <Pfeil d="M44 204 L66 198 C115 184 170 180 195 205 C212 225 205 300 205 392" farbe={F.kupferHell} />
+        <Fluss d="M30 206 L66 198 C115 184 170 180 195 205 C212 225 205 300 205 410" farbe={F.kupferHell} breite={6} dauer={1.2} />
         {/* Nasenmaske */}
         <path
           d="M58 160 C30 170 10 196 14 222 C18 236 40 240 62 236 Z"
@@ -47,6 +48,8 @@ export default function SchlafapnoeMaske() {
       {/* Schlauch zum Gerät */}
       <path d="M350 408 C290 420 200 430 180 520" fill="none" stroke={F.linie} strokeWidth="22" strokeLinecap="round" />
       <path d="M350 408 C290 420 200 430 180 520" fill="none" stroke={F.petrolHell} strokeWidth="14" strokeLinecap="round" />
+      {/* Luft strömt vom Gerät durch den Schlauch zur Maske. */}
+      <Fluss d="M180 520 C200 430 290 420 350 408" farbe={F.kupferHell} breite={6} dauer={1.2} />
       <rect x="90" y="520" width="180" height="90" rx="20" {...KONTUR} fill={F.petrol} />
       <circle cx="140" cy="565" r="18" fill="none" stroke={F.leise} strokeWidth="4" />
       <path d="M180 552 L240 552 M180 578 L224 578" stroke={F.leise} strokeWidth="4" strokeLinecap="round" />

@@ -1,4 +1,4 @@
-import { Etikett, F, Unterzeile, Zeichnung } from './bausteine';
+import { Etikett, F, Folge, Unterzeile, Wachsen, Zeichnung } from './bausteine';
 
 const START = 120;
 const ENDE = 660;
@@ -25,6 +25,9 @@ export default function HarninkontinenzBlasentraining() {
       {ZEILEN.map((z, i) => {
         const gaenge: number[] = [];
         for (let h = 0; h <= 6.001; h += z.abstand) gaenge.push(h);
+        // Zeile für Zeile springt es von Toilettengang zu Toilettengang; die Sprünge werden länger.
+        const start = 0.5 + i * 2.2;
+        const schritt = 1.6 / (gaenge.length - 1);
         return (
           <g key={z.titel}>
             <Etikett x={START} y={z.y - 44} farbe={i === 2 ? F.kupferHell : F.linie}>
@@ -35,17 +38,19 @@ export default function HarninkontinenzBlasentraining() {
             </Unterzeile>
             <line x1={START} y1={z.y} x2={ENDE} y2={z.y} stroke={F.leise} strokeWidth="4" strokeLinecap="round" />
             {gaenge.slice(1).map((h, k) => (
-              <path
+              <Wachsen
                 key={h}
                 d={`M${hx(gaenge[k]) + 16} ${z.y} Q${(hx(gaenge[k]) + hx(h)) / 2} ${z.y - 30} ${hx(h) - 16} ${z.y}`}
-                fill="none"
-                stroke={F.petrolHell}
-                strokeWidth="4"
-                strokeLinecap="round"
+                farbe={F.petrolHell}
+                breite={4}
+                ab={start + k * schritt}
+                dauer={schritt}
               />
             ))}
-            {gaenge.map((h) => (
-              <circle key={h} cx={hx(h)} cy={z.y} r="12" fill={F.kupfer} stroke={F.linie} strokeWidth="3" />
+            {gaenge.map((h, k) => (
+              <Folge key={h} ab={start + k * schritt - 0.1} von={0} dauer={0.3}>
+                <circle cx={hx(h)} cy={z.y} r="12" fill={F.kupfer} stroke={F.linie} strokeWidth="3" />
+              </Folge>
             ))}
           </g>
         );

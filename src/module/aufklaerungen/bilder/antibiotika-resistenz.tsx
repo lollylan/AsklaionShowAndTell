@@ -1,4 +1,4 @@
-import { Etikett, F, Pfeil, Unterzeile, Zeichnung } from './bausteine';
+import { Etikett, F, Folge, Pfeil, Unterzeile, Zeichnung } from './bausteine';
 
 /** Lage der Bakterien in einer Schale, bezogen auf deren Mitte: [x, y, Drehwinkel]. */
 const LAGE: [number, number, number][] = [
@@ -39,12 +39,29 @@ function Schale({ x, art }: { x: number; art: 'vorher' | 'danach' | 'spaeter' })
       <circle cx="0" cy="0" r="92" fill={F.petrolDunkel} stroke={F.linie} strokeWidth="4" />
       {LAGE.map(([dx, dy, w], i) => {
         const resistent = art === 'spaeter' || RESISTENT.has(i);
-        if (art === 'danach' && !resistent) return null;
-        return (
-          <g key={`${dx}-${dy}`} transform={`translate(${dx} ${dy}) rotate(${w})`}>
+        const keim = (
+          <g transform={`translate(${dx} ${dy}) rotate(${w})`}>
             <Keim resistent={resistent} />
           </g>
         );
+        // Danach: Die empfindlichen sind ruhend weg; in Bewegung sind sie erst da und vergehen.
+        if (art === 'danach' && !resistent) {
+          return (
+            <g key={`${dx}-${dy}`} className="antibiotika-resistenz-weg" opacity="0">
+              {keim}
+            </g>
+          );
+        }
+        // Später: Die Resistenten vermehren sich, ein Keim nach dem anderen kommt dazu.
+        if (art === 'spaeter') {
+          const rang = RESISTENT.has(i) ? 0 : 1 + i * 0.5;
+          return (
+            <Folge key={`${dx}-${dy}`} ab={3.4 + rang * 0.3} von={0} dauer={0.5}>
+              {keim}
+            </Folge>
+          );
+        }
+        return <g key={`${dx}-${dy}`}>{keim}</g>;
       })}
     </g>
   );
@@ -72,7 +89,9 @@ export default function AntibiotikaResistenz() {
       <Schale x={360} art="danach" />
       <Schale x={600} art="spaeter" />
 
-      <Tablette x={240} />
+      <Folge ab={0.6} von={0} dauer={0.7}>
+        <Tablette x={240} />
+      </Folge>
       <Pfeil d="M218 330 L258 330" farbe={F.leise} />
       <Pfeil d="M458 330 L498 330" farbe={F.leise} />
 

@@ -16,7 +16,14 @@
 
   .aufkblatt__bild .zb-fluss {
     stroke-dasharray: 0.1 34;
-    animation: zb-fluss var(--zb-dauer, 1.4s) linear var(--zb-ab, 0s) infinite both;
+    /* ohne Füllmodus: bis `ab` bleiben die Punkte unsichtbar statt still zu stehen */
+    animation: zb-fluss var(--zb-dauer, 1.4s) linear var(--zb-ab, 0s) infinite;
+  }
+
+  /* Ein Strich zeichnet sich vom Anfang zum Ende (Pfad braucht pathLength="1"). */
+  .aufkblatt__bild .zb-wachsen {
+    stroke-dasharray: 1 1;
+    animation: zb-wachsen var(--zb-dauer, 1.4s) cubic-bezier(0.65, 0, 0.35, 1) var(--zb-ab, 0s) both;
   }
 
   /* Gruppen, die skaliert oder verschoben werden, um ihre eigene Mitte. */
@@ -93,6 +100,15 @@
 @keyframes zb-folge {
   from {
     opacity: var(--zb-von, 0.18);
+  }
+}
+
+@keyframes zb-wachsen {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
@@ -616,5 +632,624 @@
 @keyframes harnwegsinfekt-wand {
   from {
     stroke: #a9cbd3;
+  }
+}
+
+/* ---------- Runde vom 22.11.2026: Diabetes, Schlafapnoe, Venen, Resistenz, Druck, Viren, Ohnmacht ---------- */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* diabetes-typ-2: Insulin kommt, links öffnet sich die Tür, rechts klemmt das Schloss. */
+  .aufkblatt__bild .diabetes-typ-2-schluessel {
+    animation: diabetes-typ-2-schluessel 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+  }
+  .aufkblatt__bild .diabetes-typ-2-tuer {
+    transform-box: fill-box;
+    transform-origin: left bottom;
+    animation: diabetes-typ-2-tuer 0.9s cubic-bezier(0.65, 0, 0.35, 1) 1.8s both;
+  }
+  .aufkblatt__bild .diabetes-typ-2-ruetteln-form {
+    animation: diabetes-typ-2-ruetteln 1.6s ease-in-out 1.8s both;
+  }
+
+  /* schlafapnoe: Zunge sinkt zurück, die Luft bleibt stehen, mit dem Schnarcher geht er wieder auf. */
+  .aufkblatt__bild .schlafapnoe-zunge-form {
+    transform-origin: left center;
+    animation: schlafapnoe-zunge 8s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .schlafapnoe-luft {
+    animation: schlafapnoe-luft 8s ease-in-out 0.6s infinite;
+  }
+
+  /* bluthochdruck: mit jedem Herzschlag drückt das Blut gegen die Wand, unten deutlich kräftiger. */
+  .aufkblatt__bild .bluthochdruck-normal-auf {
+    animation: bluthochdruck-normal-auf 1.2s ease-in-out 0.4s infinite;
+  }
+  .aufkblatt__bild .bluthochdruck-normal-ab {
+    animation: bluthochdruck-normal-ab 1.2s ease-in-out 0.4s infinite;
+  }
+  .aufkblatt__bild .bluthochdruck-hoch-auf {
+    animation: bluthochdruck-hoch-auf 1.2s ease-in-out 0.4s infinite;
+  }
+  .aufkblatt__bild .bluthochdruck-hoch-ab {
+    animation: bluthochdruck-hoch-ab 1.2s ease-in-out 0.4s infinite;
+  }
+
+  /* antibiotika-resistenz: nach der Tablette vergehen die empfindlichen Keime. */
+  .aufkblatt__bild .antibiotika-resistenz-weg {
+    animation: antibiotika-resistenz-weg 1.4s ease-in 1.6s both;
+  }
+
+  /* lippenherpes-nervenknoten: das ruhende Virus wird wach. */
+  .aufkblatt__bild .lippenherpes-nervenknoten-virus-form {
+    animation: zb-wecken 0.8s ease-in-out 0.8s 2 both;
+  }
+
+  /* guertelrose-ursachen: das Virus glimmt über die Jahre, dann wacht es auf. */
+  .aufkblatt__bild .guertelrose-ursachen-virus {
+    animation: guertelrose-ursachen-virus 3.2s ease-in-out 1.9s both;
+  }
+
+  /* ohnmacht: links fehlt dem Kopf Blut, rechts gehen die Beine hoch. */
+  .aufkblatt__bild .ohnmacht-mangel {
+    animation: ohnmacht-mangel 2.4s ease-in-out 0.4s infinite;
+  }
+  .aufkblatt__bild .ohnmacht-bein {
+    transform-box: view-box;
+    transform-origin: 575px 478px;
+    animation: ohnmacht-bein 1.4s cubic-bezier(0.65, 0, 0.35, 1) 1.1s both;
+  }
+}
+
+@keyframes zb-wecken {
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes diabetes-typ-2-schluessel {
+  from {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+}
+@keyframes diabetes-typ-2-tuer {
+  from {
+    transform: rotate(-135deg);
+  }
+}
+@keyframes diabetes-typ-2-ruetteln {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20%,
+  60% {
+    transform: rotate(-7deg);
+  }
+  40%,
+  80% {
+    transform: rotate(7deg);
+  }
+}
+
+/* 0–10 %: zu; 12–45 %: offen, Luft fließt; 55–100 %: Zunge fällt zurück, Luft steht. */
+@keyframes schlafapnoe-zunge {
+  0%,
+  6%,
+  55%,
+  100% {
+    transform: scale(1);
+  }
+  14%,
+  45% {
+    transform: scale(0.78, 0.92);
+  }
+}
+@keyframes schlafapnoe-luft {
+  0%,
+  10%,
+  52%,
+  100% {
+    opacity: 0;
+  }
+  16%,
+  46% {
+    opacity: 1;
+  }
+}
+
+@keyframes bluthochdruck-normal-auf {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-3px);
+  }
+}
+@keyframes bluthochdruck-normal-ab {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(3px);
+  }
+}
+@keyframes bluthochdruck-hoch-auf {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-9px);
+  }
+}
+@keyframes bluthochdruck-hoch-ab {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(9px);
+  }
+}
+
+@keyframes antibiotika-resistenz-weg {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Schlafen: zweimal leise glimmen; zuletzt leuchtet es voll auf (Endzustand). */
+@keyframes guertelrose-ursachen-virus {
+  0%,
+  30%,
+  60% {
+    stroke-opacity: 0.25;
+  }
+  15%,
+  45% {
+    stroke-opacity: 0.6;
+  }
+}
+
+@keyframes ohnmacht-mangel {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+@keyframes ohnmacht-bein {
+  from {
+    transform: rotate(28deg);
+  }
+}
+
+/* ---------- Runde 2: Handlungen zum Mitmachen ---------- */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* inhalieren-spacer: Sprühstoß, dann vier ruhige Atemzüge; die Wolke wird dünner, die Lunge voller. */
+  .aufkblatt__bild .inhalieren-spacer-druck {
+    animation: inhalieren-spacer-druck 14s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .inhalieren-spacer-wolke {
+    animation: inhalieren-spacer-wolke 14s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .inhalieren-spacer-lunge {
+    animation: inhalieren-spacer-lunge 14s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .inhalieren-spacer-atem {
+    animation: inhalieren-spacer-atem 14s ease-in-out 0.6s infinite;
+  }
+
+  /* nasennebenhoehlen-spuelung: Flasche drücken, Wasser läuft unten heraus. */
+  .aufkblatt__bild .nasennebenhoehlen-spuelung-flasche {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: nasennebenhoehlen-spuelung-flasche 3s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .nasennebenhoehlen-spuelung-abfluss {
+    animation: nasennebenhoehlen-spuelung-abfluss 0.8s linear infinite;
+  }
+
+  /* ohnmacht-gegenmanoever: 6 s im Wechsel, anspannen und halten, dann lösen. */
+  .aufkblatt__bild .ohnmacht-gegenmanoever-beine-form {
+    animation: ohnmacht-gegenmanoever-beine 6s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .ohnmacht-gegenmanoever-rein-links {
+    animation: ohnmacht-gegenmanoever-rein-links 6s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .ohnmacht-gegenmanoever-rein-rechts {
+    animation: ohnmacht-gegenmanoever-rein-rechts 6s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .ohnmacht-gegenmanoever-zug-links,
+  .aufkblatt__bild .ohnmacht-gegenmanoever-raus-links {
+    animation: ohnmacht-gegenmanoever-zug-links 6s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .ohnmacht-gegenmanoever-zug-rechts,
+  .aufkblatt__bild .ohnmacht-gegenmanoever-raus-rechts {
+    animation: ohnmacht-gegenmanoever-zug-rechts 6s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .ohnmacht-gegenmanoever-blut {
+    animation: ohnmacht-gegenmanoever-blut 6s ease-in-out 0.6s infinite;
+  }
+
+  /* insulin-spritzen: Tropfen, Drehknopf, Einstechen, dann laufen echte 10 Sekunden ab. */
+  .aufkblatt__bild .insulin-spritzen-tropfen-form {
+    transform-origin: center bottom;
+    animation: insulin-spritzen-tropfen 0.9s cubic-bezier(0.16, 1, 0.3, 1) 1.2s both;
+  }
+  .aufkblatt__bild .insulin-spritzen-drehen-form {
+    animation: insulin-spritzen-drehen 1.2s ease-in-out 2.6s 2;
+  }
+  .aufkblatt__bild .insulin-spritzen-stechen {
+    animation: insulin-spritzen-stechen 1s cubic-bezier(0.65, 0, 0.35, 1) 4s both;
+  }
+  .aufkblatt__bild .insulin-spritzen-sekunden {
+    stroke-dasharray: 1 1;
+    animation: zb-wachsen 10s linear 6s both;
+  }
+  .aufkblatt__bild .insulin-spritzen-zeiger {
+    transform-box: view-box;
+    transform-origin: 540px 512px;
+    animation: insulin-spritzen-zeiger 10s linear 6s both;
+  }
+}
+
+/* 0–6 %: drücken; vier Atemzüge zu je 2 s ab 1,5 s; ab 80 % voll, dann neu. */
+@keyframes inhalieren-spacer-druck {
+  0%,
+  6%,
+  100% {
+    transform: translateX(0);
+  }
+  3% {
+    transform: translateY(6px);
+  }
+}
+@keyframes inhalieren-spacer-wolke {
+  0% {
+    opacity: 0;
+  }
+  5%,
+  12% {
+    opacity: 1;
+  }
+  24%,
+  27% {
+    opacity: 0.7;
+  }
+  39%,
+  42% {
+    opacity: 0.45;
+  }
+  54%,
+  57% {
+    opacity: 0.2;
+  }
+  69%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes inhalieren-spacer-lunge {
+  0%,
+  12% {
+    opacity: 0;
+  }
+  24%,
+  27% {
+    opacity: 0.3;
+  }
+  39%,
+  42% {
+    opacity: 0.55;
+  }
+  54%,
+  57% {
+    opacity: 0.8;
+  }
+  69%,
+  94% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes inhalieren-spacer-atem {
+  0%,
+  12%,
+  25%,
+  27%,
+  40%,
+  42%,
+  55%,
+  57%,
+  70%,
+  100% {
+    opacity: 0;
+  }
+  16%,
+  21%,
+  31%,
+  36%,
+  46%,
+  51%,
+  61%,
+  66% {
+    opacity: 1;
+  }
+}
+
+@keyframes nasennebenhoehlen-spuelung-flasche {
+  0%,
+  60%,
+  100% {
+    transform: scaleX(1);
+  }
+  25%,
+  40% {
+    transform: scaleX(0.86);
+  }
+}
+@keyframes nasennebenhoehlen-spuelung-abfluss {
+  from {
+    stroke-dashoffset: 24;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ohnmacht-gegenmanoever-beine {
+  0%,
+  65%,
+  100% {
+    transform: scaleX(1);
+  }
+  12%,
+  50% {
+    transform: scaleX(0.94);
+  }
+}
+@keyframes ohnmacht-gegenmanoever-rein-links {
+  0%,
+  65%,
+  100% {
+    transform: translateX(-10px);
+  }
+  12%,
+  50% {
+    transform: translateX(0);
+  }
+}
+@keyframes ohnmacht-gegenmanoever-rein-rechts {
+  0%,
+  65%,
+  100% {
+    transform: translateX(10px);
+  }
+  12%,
+  50% {
+    transform: translateX(0);
+  }
+}
+@keyframes ohnmacht-gegenmanoever-zug-links {
+  0%,
+  65%,
+  100% {
+    transform: translateX(6px);
+  }
+  12%,
+  50% {
+    transform: translateX(0);
+  }
+}
+@keyframes ohnmacht-gegenmanoever-zug-rechts {
+  0%,
+  65%,
+  100% {
+    transform: translateX(-6px);
+  }
+  12%,
+  50% {
+    transform: translateX(0);
+  }
+}
+@keyframes ohnmacht-gegenmanoever-blut {
+  0%,
+  8%,
+  60%,
+  100% {
+    opacity: 0;
+  }
+  16%,
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes insulin-spritzen-tropfen {
+  from {
+    transform: scale(0);
+  }
+}
+@keyframes insulin-spritzen-drehen {
+  50% {
+    transform: rotate(14deg);
+  }
+}
+@keyframes insulin-spritzen-stechen {
+  from {
+    transform: translateY(-46px);
+  }
+}
+@keyframes insulin-spritzen-zeiger {
+  from {
+    transform: rotate(-60deg);
+  }
+}
+
+/* ---------- Runde 3: kleine Akzente ---------- */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* khk: die Ablagerung wächst, die Lichtung wird eng. */
+  .aufkblatt__bild .khk-lichtung-form {
+    animation: khk-lichtung 3s cubic-bezier(0.65, 0, 0.35, 1) 0.8s both;
+  }
+
+  /* gallensteine: die Gallenblase zieht sich gegen den eingeklemmten Stein zusammen. */
+  .aufkblatt__bild .gallensteine-blase-form {
+    animation: gallensteine-blase 2.4s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .gallensteine-stein-form {
+    animation: gallensteine-stein 2.4s ease-in-out 0.6s infinite;
+  }
+
+  /* prostatavergroesserung: rechts tröpfelt es nur. */
+  .aufkblatt__bild .prostatavergroesserung-tropfen {
+    animation: prostatavergroesserung-tropfen 1.8s ease-in 0.6s infinite;
+  }
+
+  /* gicht-ursachen: der Spiegel steigt über die Grenze. */
+  .aufkblatt__bild .gicht-ursachen-pegel {
+    transform-box: fill-box;
+    transform-origin: center bottom;
+    animation: gicht-ursachen-pegel 4.4s cubic-bezier(0.33, 0, 0.67, 1) 0.6s both;
+  }
+
+  /* ekg: der vergrößerte Schlag zeichnet sich in gleichmäßigem Tempo. */
+  .aufkblatt__bild .ekg-schlag {
+    stroke-dasharray: 1 1;
+    animation: zb-wachsen 3.4s linear 2.2s both;
+  }
+
+  /* mittelohrentzuendung-ohrtrompete: beim Kind schwillt das Mittelohr an. */
+  .aufkblatt__bild .mittelohrentzuendung-ohrtrompete-ohr-form {
+    animation: zb-wecken 1.6s ease-in-out 1.6s infinite;
+  }
+
+  /* hernie-einklemmung: die Lücke drückt, die Schlinge pocht. */
+  .aufkblatt__bild .hernie-einklemmung-schlinge-form {
+    animation: hernie-einklemmung-schlinge 1.6s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .hernie-einklemmung-druck-links {
+    animation: hernie-einklemmung-druck-links 1.6s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .hernie-einklemmung-druck-rechts {
+    animation: hernie-einklemmung-druck-rechts 1.6s ease-in-out 0.6s infinite;
+  }
+
+  /* haarzyklus: wachsen, die Wurzel steigt auf, das neue Haar kommt; dann ruhen nach Belastung viele. */
+  .aufkblatt__bild .haarzyklus-wurzel {
+    animation: haarzyklus-wurzel 1.4s cubic-bezier(0.65, 0, 0.35, 1) 2.6s both;
+  }
+  .aufkblatt__bild .haarzyklus-belastung {
+    transform-box: fill-box;
+    transform-origin: right center;
+    animation: haarzyklus-belastung 1.6s cubic-bezier(0.65, 0, 0.35, 1) 6s both;
+  }
+}
+
+@keyframes khk-lichtung {
+  from {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes gallensteine-blase {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  40% {
+    transform: scale(0.96);
+  }
+}
+@keyframes gallensteine-stein {
+  0%,
+  60%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25%,
+  40% {
+    transform: translate(3px, -3px);
+  }
+}
+
+@keyframes prostatavergroesserung-tropfen {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+@keyframes gicht-ursachen-pegel {
+  from {
+    transform: scaleY(0.4);
+  }
+}
+
+@keyframes hernie-einklemmung-schlinge {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.04);
+  }
+}
+@keyframes hernie-einklemmung-druck-links {
+  0%,
+  100% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+}
+@keyframes hernie-einklemmung-druck-rechts {
+  0%,
+  100% {
+    transform: translateX(6px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes haarzyklus-wurzel {
+  from {
+    transform: translateY(54px);
+  }
+}
+@keyframes haarzyklus-belastung {
+  from {
+    transform: scaleX(0.24);
   }
 }

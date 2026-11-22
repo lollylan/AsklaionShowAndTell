@@ -1,4 +1,4 @@
-import { Etikett, F, Unterzeile, Zeichnung } from './bausteine';
+import { Etikett, F, Folge, Unterzeile, Wachsen, Zeichnung } from './bausteine';
 
 const NUMMER_X = 70;
 const BILD_X = 190;
@@ -27,7 +27,15 @@ function Uhr({ cy }: { cy: number }) {
   return (
     <g>
       <circle cx={BILD_X} cy={cy} r={r} fill={F.petrol} stroke={F.linie} strokeWidth="4" />
-      <path d={`M${BILD_X} ${cy} L${BILD_X} ${cy - r + 8} A${r - 8} ${r - 8} 0 0 1 ${BILD_X + r - 8} ${cy} Z`} fill={F.petrolHell} />
+      {/* Viertelkreis als breiter Bogen: in Bewegung läuft die Viertelstunde ab. */}
+      <Wachsen
+        d={`M${BILD_X} ${cy - (r - 8) / 2} A${(r - 8) / 2} ${(r - 8) / 2} 0 0 1 ${BILD_X + (r - 8) / 2} ${cy}`}
+        farbe={F.petrolHell}
+        breite={r - 8}
+        kappe="butt"
+        ab={2.4}
+        dauer={3}
+      />
       {[0, 90, 180, 270].map((w) => (
         <line key={w} x1={BILD_X} y1={cy - r + 6} x2={BILD_X} y2={cy - r + 16} stroke={F.linie} strokeWidth="4" strokeLinecap="round" transform={`rotate(${w} ${BILD_X} ${cy})`} />
       ))}
@@ -71,7 +79,7 @@ export default function Unterzucker() {
       {schritte.map((s, i) => {
         const y = REIHEN[i];
         return (
-          <g key={s.titel}>
+          <Folge key={s.titel} ab={[0.4, 1.6, 5.6][i]}>
             <circle cx={NUMMER_X} cy={y} r="30" fill={F.petrol} stroke={F.linie} strokeWidth="4" />
             <text x={NUMMER_X} y={y + 11} textAnchor="middle" fontSize="30" fontWeight="700" fill={F.linie}>
               {i + 1}
@@ -80,11 +88,12 @@ export default function Unterzucker() {
             <Etikett x={TEXT_X} y={y + 9}>
               {s.titel}
             </Etikett>
-          </g>
+          </Folge>
         );
       })}
 
       {/* Schleife zurück zu Schritt 1 */}
+      <Folge ab={6.6} von={0}>
       <path
         d={`M450 ${REIHEN[2]} L650 ${REIHEN[2]} L650 ${REIHEN[0]} L556 ${REIHEN[0]}`}
         fill="none"
@@ -97,6 +106,7 @@ export default function Unterzucker() {
       <Etikett x={TEXT_X} y={REIHEN[2] + 60} farbe={F.kupferHell}>
         unter 70? wiederholen
       </Etikett>
+      </Folge>
 
       <Unterzeile x={NUMMER_X - 30} y={690}>
         danach etwas Langsames essen, z. B. ein Brot

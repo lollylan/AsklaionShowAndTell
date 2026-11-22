@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Fluss, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 const KOPF =
   'M150 420 L150 348 C130 338 120 334 104 332 C76 334 58 318 60 292 C56 284 50 276 52 268 ' +
@@ -7,6 +7,9 @@ const KOPF =
 
 /** Atemweg von der Nase durch den Rachen in den Hals. */
 const ATEMWEG = 'M66 198 C115 184 170 180 195 205 C212 225 205 300 205 420';
+
+/** Weg der Luft für die bewegten Punkte, von der Nase bis in den Hals. */
+const LUFTWEG = 'M30 204 L66 198 C115 184 170 180 195 205 C212 225 205 300 205 410';
 
 /** Kopf im Profil (Blick nach links) mit Atemweg, Gaumen und Zunge. */
 function Kopf({ verschlossen }: { verschlossen: boolean }) {
@@ -25,7 +28,9 @@ function Kopf({ verschlossen }: { verschlossen: boolean }) {
 
       {verschlossen ? (
         <>
+          {/* Zunge sinkt im Rhythmus zurück und verschließt den Rachen; ruhend: verschlossen. */}
           <path
+            className="schlafapnoe-zunge-form"
             d="M82 270 C105 250 170 246 205 262 C232 274 232 312 205 320 C170 330 100 322 82 270 Z"
             fill={F.kupfer}
             stroke={F.linie}
@@ -40,6 +45,7 @@ function Kopf({ verschlossen }: { verschlossen: boolean }) {
             strokeLinecap="round"
           />
           <Pfeil d="M6 208 L66 198 C115 184 170 180 195 205 C200 211 203 218 204 228" />
+          <Fluss d={LUFTWEG} klasse="schlafapnoe-luft" dauer={1.1} />
         </>
       ) : (
         <>
@@ -58,6 +64,7 @@ function Kopf({ verschlossen }: { verschlossen: boolean }) {
             strokeLinecap="round"
           />
           <Pfeil d="M6 208 L66 198 C115 184 170 180 195 205 C212 225 205 300 205 392" />
+          <Fluss d={LUFTWEG} dauer={1.1} />
         </>
       )}
     </g>

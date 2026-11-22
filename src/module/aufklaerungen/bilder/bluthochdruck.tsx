@@ -1,4 +1,4 @@
-import { Etikett, F, Pfeil, Unterzeile, Zeichnung } from './bausteine';
+import { Etikett, F, Fluss, Pfeil, Unterzeile, Zeichnung } from './bausteine';
 
 /** Längsschnitt durch ein Blutgefäß: oben normaler Druck, unten hoher Druck. */
 export default function Bluthochdruck() {
@@ -12,10 +12,15 @@ export default function Bluthochdruck() {
         <line key={y} x1="40" y1={y} x2="680" y2={y} stroke={F.linie} strokeWidth="4" strokeLinecap="round" />
       ))}
       <Pfeil d="M64 203 L140 203" farbe={F.leise} breite={5} />
+      <Fluss d="M160 203 L680 203" farbe={F.leise} breite={6} dauer={1.2} />
       {[250, 400, 550].map((x) => (
         <g key={x}>
-          <Pfeil d={`M${x} 190 L${x} 162`} breite={4} />
-          <Pfeil d={`M${x} 216 L${x} 244`} breite={4} />
+          <g className="bluthochdruck-normal-auf">
+            <Pfeil d={`M${x} 190 L${x} 162`} breite={4} />
+          </g>
+          <g className="bluthochdruck-normal-ab">
+            <Pfeil d={`M${x} 216 L${x} 244`} breite={4} />
+          </g>
         </g>
       ))}
 
@@ -27,10 +32,15 @@ export default function Bluthochdruck() {
         <line key={y} x1="40" y1={y} x2="680" y2={y} stroke={F.linie} strokeWidth="4" strokeLinecap="round" />
       ))}
       <Pfeil d="M64 502 L140 502" farbe={F.leise} breite={5} />
+      <Fluss d="M160 502 L680 502" farbe={F.leise} breite={6} dauer={1.2} />
       {[220, 320, 420, 520, 620].map((x) => (
         <g key={x}>
-          <Pfeil d={`M${x} 491 L${x} 458`} farbe={F.kupferHell} breite={7} />
-          <Pfeil d={`M${x} 513 L${x} 546`} farbe={F.kupferHell} breite={7} />
+          <g className="bluthochdruck-hoch-auf">
+            <Pfeil d={`M${x} 491 L${x} 458`} farbe={F.kupferHell} breite={7} />
+          </g>
+          <g className="bluthochdruck-hoch-ab">
+            <Pfeil d={`M${x} 513 L${x} 546`} farbe={F.kupferHell} breite={7} />
+          </g>
         </g>
       ))}
 

@@ -23,7 +23,17 @@ export default function NasennebenhoehlenSpuelung() {
 
       {/* Spülflasche von unten rechts ins obere Nasenloch */}
       <g transform="translate(-22 -44) rotate(-38 430 470)">
-        <rect x="400" y="430" width="70" height="130" rx="22" {...KONTUR} fill={F.creme} />
+        {/* Die Flasche wird sanft gedrückt */}
+        <rect
+          className="nasennebenhoehlen-spuelung-flasche"
+          x="400"
+          y="430"
+          width="70"
+          height="130"
+          rx="22"
+          {...KONTUR}
+          fill={F.creme}
+        />
         <path d="M420 430 L428 360 L442 360 L450 430" {...KONTUR} fill={F.creme} />
       </g>
 
@@ -35,6 +45,7 @@ export default function NasennebenhoehlenSpuelung() {
         strokeWidth="6"
         strokeLinecap="round"
         strokeDasharray="14 10"
+        className="nasennebenhoehlen-spuelung-abfluss"
       />
       {/* Waschbecken */}
       <path d="M150 560 L520 560 C510 640 430 670 335 670 C240 670 160 640 150 560 Z" {...KONTUR} fill={F.petrolDunkel} />

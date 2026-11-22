@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Pfeil, Unterzeile, Zeichnung } from './bausteine';
+import { Etikett, F, Fluss, KONTUR, Pfeil, Unterzeile, Zeichnung } from './bausteine';
 
 /** Zwei Beinvenen im Längsschnitt: gesund mit dicht schließenden Klappen, ausgeleiert mit undichten Klappen. */
 export default function Venenschwaeche() {
@@ -11,6 +11,8 @@ export default function Venenschwaeche() {
       <path d="M130 470 C145 450 170 432 187 425 M250 470 C235 450 210 432 193 425" {...KONTUR} />
       <Pfeil d="M190 410 L190 318" />
       <Pfeil d="M190 236 L190 186" />
+      {/* Blut steigt durch die dichten Klappen nach oben. */}
+      <Fluss d="M190 548 L190 176" dauer={1.6} />
 
       {/* Ausgeleierte Vene */}
       <path
@@ -22,6 +24,8 @@ export default function Venenschwaeche() {
       <path d="M437 421 C450 401 480 386 498 379 M603 421 C590 401 560 386 542 379" {...KONTUR} />
       <Pfeil d="M520 196 L520 300" farbe={F.kupferHell} />
       <Pfeil d="M520 330 L520 470" farbe={F.kupferHell} />
+      {/* Durch die undichten Klappen sackt das Blut nach unten. */}
+      <Fluss d="M520 182 L520 548" farbe={F.kupferHell} dauer={1.6} />
 
       <Etikett x={190} y={80} anker="middle">
         Gesunde Vene

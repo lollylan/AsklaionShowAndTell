@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Fluss, Folge, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 /** Ein Zuckerteilchen als kleines Sechseck. */
 function Zucker({ x, y, farbe }: { x: number; y: number; farbe: string }) {
@@ -70,24 +70,41 @@ function Szene({ x, krank }: { x: number; krank: boolean }) {
       {krank ? (
         <>
           <path d="M190 310 L240 310" {...KONTUR} stroke={F.kupfer} strokeWidth="8" />
-          <Schluessel transform="translate(124 250) rotate(-30)" />
-          {BLUT_KRANK.map(([zx, zy]) => (
-            <Zucker key={`${zx}-${zy}`} x={zx} y={zy} farbe={zucker} />
-          ))}
+          <g className="diabetes-typ-2-schluessel">
+            <g className="diabetes-typ-2-ruetteln-form">
+              <Schluessel transform="translate(124 250) rotate(-30)" />
+            </g>
+          </g>
+          {/* Der Zucker staut sich: nach dem vergeblichen Schlüssel kommen immer mehr Teilchen dazu. */}
+          {BLUT_KRANK.map(([zx, zy], i) =>
+            i < 4 ? (
+              <Zucker key={`${zx}-${zy}`} x={zx} y={zy} farbe={zucker} />
+            ) : (
+              <Folge key={`${zx}-${zy}`} ab={3.6 + (i - 4) * 0.35} von={0} dauer={0.6}>
+                <Zucker x={zx} y={zy} farbe={zucker} />
+              </Folge>
+            ),
+          )}
           <Zucker x={215} y={270} farbe={zucker} />
           <Zucker x={150} y={450} farbe={zucker} />
         </>
       ) : (
         <>
-          <path d="M240 310 L266 284" {...KONTUR} strokeWidth="6" />
-          <Schluessel transform="translate(165 256)" />
+          <path className="diabetes-typ-2-tuer" d="M240 310 L266 284" {...KONTUR} strokeWidth="6" />
+          <g className="diabetes-typ-2-schluessel">
+            <Schluessel transform="translate(165 256)" />
+          </g>
           {BLUT_GESUND.map(([zx, zy]) => (
             <Zucker key={`${zx}-${zy}`} x={zx} y={zy} farbe={zucker} />
           ))}
-          {ZELLE_GESUND.map(([zx, zy]) => (
-            <Zucker key={`${zx}-${zy}`} x={zx} y={zy} farbe={zucker} />
+          {/* Durch die offene Tür wandert der Zucker Stück für Stück in die Zelle. */}
+          {ZELLE_GESUND.map(([zx, zy], i) => (
+            <Folge key={`${zx}-${zy}`} ab={2.6 + i * 0.35} von={0} dauer={0.6}>
+              <Zucker x={zx} y={zy} farbe={zucker} />
+            </Folge>
           ))}
           <Pfeil d="M215 200 L215 366" />
+          <Fluss d="M215 150 L215 420" farbe={F.kupferHell} breite={9} ab={2.4} dauer={1.2} />
         </>
       )}
     </g>

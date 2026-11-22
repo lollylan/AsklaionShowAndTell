@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Fluss, KONTUR, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 /** Herz mit Herzkranzgefäßen, eine Engstelle vergrößert als Gefäßquerschnitt. */
 export default function Khk() {
@@ -23,6 +23,12 @@ export default function Khk() {
         <path d="M275 240 C320 232 375 245 400 282" />
       </g>
 
+      {/* Blut fließt durch die Herzkranzgefäße; hinter der Engstelle nur noch dünn und langsam. */}
+      <Fluss d="M245 240 C200 250 150 280 130 340 C120 380 140 420 170 445" farbe={F.kupfer} breite={7} dauer={1.2} />
+      <Fluss d="M275 240 C320 232 375 245 400 282" farbe={F.kupfer} breite={7} dauer={1.2} />
+      <Fluss d="M262 240 C272 258 280 278 285 302" farbe={F.kupfer} breite={7} dauer={1.2} />
+      <Fluss d="M289 334 C296 380 293 430 285 480" farbe={F.kupfer} breite={4} dauer={2.6} />
+
       {/* Engstelle */}
       <line x1="284" y1="302" x2="289" y2="334" stroke={F.kupfer} strokeWidth="12" strokeLinecap="round" />
       <circle cx="287" cy="318" r="30" fill="none" stroke={F.kupferHell} strokeWidth="4" />
@@ -31,7 +37,8 @@ export default function Khk() {
       {/* Vergrößerter Querschnitt */}
       <circle cx="570" cy="330" r="100" fill={F.petrolHell} stroke={F.linie} strokeWidth="4" />
       <circle cx="570" cy="330" r="82" fill={F.kupfer} stroke={F.linie} strokeWidth="4" />
-      <circle cx="598" cy="356" r="32" fill={F.tief} stroke={F.linie} strokeWidth="4" />
+      {/* Die Ablagerung wächst, die Lichtung wird enger. */}
+      <circle className="khk-lichtung-form" cx="598" cy="356" r="32" fill={F.tief} stroke={F.linie} strokeWidth="4" />
 
       <Etikett x={570} y={178} anker="middle" farbe={F.kupferHell}>
         Engstelle

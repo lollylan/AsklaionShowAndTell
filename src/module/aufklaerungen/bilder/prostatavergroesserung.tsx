@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Fluss, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 /** Blase mit Prostata und Harnröhre im Schnitt; cx ist die Mitte der Hälfte. */
 function Blasenbild({ cx, gross }: { cx: number; gross: boolean }) {
@@ -26,13 +26,19 @@ function Blasenbild({ cx, gross }: { cx: number; gross: boolean }) {
 
       {/* Harnstrahl */}
       {gross ? (
-        <g fill={F.leise}>
+        <g fill={F.leise} className="prostatavergroesserung-tropfen">
           <circle cx={cx} cy={584} r="5" />
           <circle cx={cx + 2} cy={606} r="4" />
           <circle cx={cx + 5} cy={626} r="4" />
         </g>
       ) : (
         <Pfeil d={`M${cx} 576 L${cx} 636`} farbe={F.petrolHell} breite={8} />
+      )}
+      {/* Harn fließt: links kräftig und schnell, rechts dünn und zäh */}
+      {gross ? (
+        <Fluss d={`M${cx} 310 L${cx} 566`} farbe={F.petrolHell} breite={4} dauer={2.6} />
+      ) : (
+        <Fluss d={`M${cx} 310 L${cx} 640`} farbe={F.petrolHell} breite={8} dauer={0.7} />
       )}
     </g>
   );

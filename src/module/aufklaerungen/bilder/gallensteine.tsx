@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Fluss, KONTUR, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 /** Gallensteine in der Gallenblase [x, y, r]; der letzte klemmt im Ausgang. */
 const STEINE: [number, number, number][] = [
@@ -42,6 +42,7 @@ export default function Gallensteine() {
       {/* Gallengang und Gang aus der Gallenblase */}
       <Gang d="M382 240 C388 330 402 430 428 530" breite={10} />
       <Gang d="M318 318 C340 330 362 318 386 300" breite={8} />
+      <Fluss d="M382 240 C388 330 402 430 428 530" farbe={F.creme} breite={5} dauer={1.4} />
 
       {/* Leber */}
       <path
@@ -50,16 +51,22 @@ export default function Gallensteine() {
         fill={F.petrol}
       />
 
-      {/* Gallenblase */}
+      {/* Gallenblase: zieht sich gegen den Stein zusammen (Kolik) */}
+      <g className="gallensteine-blase-form">
       <path
         d="M304 300 C334 302 344 332 332 362 C320 420 300 470 250 470 C200 470 186 420 200 382 C214 342 262 298 304 300 Z"
         {...KONTUR}
         fill={F.petrolHell}
       />
       <g fill={F.kupfer} stroke={F.kupferHell} strokeWidth="3">
-        {STEINE.map(([x, y, r]) => (
-          <circle key={`${x}-${y}`} cx={x} cy={y} r={r} />
-        ))}
+        {STEINE.map(([x, y, r], i) =>
+          i === STEINE.length - 1 ? (
+            <circle key={`${x}-${y}`} className="gallensteine-stein-form" cx={x} cy={y} r={r} />
+          ) : (
+            <circle key={`${x}-${y}`} cx={x} cy={y} r={r} />
+          ),
+        )}
+      </g>
       </g>
 
       <Etikett x={420} y={160} anker="middle">

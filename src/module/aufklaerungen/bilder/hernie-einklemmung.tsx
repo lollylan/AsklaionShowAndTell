@@ -32,15 +32,22 @@ export default function HernieEinklemmung() {
         bauchfell={LEISTE_BAUCHFELL}
         sack={<Bruchsack d={LEISTE_SACK} />}
       >
-        <path d={SCHLINGE} fill={F.kupfer} stroke={F.linie} strokeWidth="4" strokeLinejoin="round" />
-        <path d={FALTE} fill="none" stroke={F.kupferHell} strokeWidth="3" strokeLinecap="round" />
+        {/* Die abgeschnürte Schlinge pocht und schwillt */}
+        <g className="hernie-einklemmung-schlinge-form">
+          <path d={SCHLINGE} fill={F.kupfer} stroke={F.linie} strokeWidth="4" strokeLinejoin="round" />
+          <path d={FALTE} fill="none" stroke={F.kupferHell} strokeWidth="3" strokeLinecap="round" />
+        </g>
         <Darm d={HALS} farbe={F.kupfer} dicke={14} />
         <Darm d={DARM_LINKS} dicke={DARM_DICKE} />
         <Darm d={DARM_RECHTS} dicke={DARM_DICKE} />
 
         {/* Die Ränder der Lücke drücken zu */}
-        <Pfeil d="M246 290 L290 290" farbe={F.kupferHell} breite={5} />
-        <Pfeil d="M474 290 L430 290" farbe={F.kupferHell} breite={5} />
+        <g className="hernie-einklemmung-druck-links">
+          <Pfeil d="M246 290 L290 290" farbe={F.kupferHell} breite={5} />
+        </g>
+        <g className="hernie-einklemmung-druck-rechts">
+          <Pfeil d="M474 290 L430 290" farbe={F.kupferHell} breite={5} />
+        </g>
       </Wandschnitt>
 
       <Etikett x={30} y={56} farbe={F.kupferHell}>

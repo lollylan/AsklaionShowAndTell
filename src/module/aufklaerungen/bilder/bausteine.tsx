@@ -201,6 +201,41 @@ export function Fluss({
 }
 
 /**
+ * Ein Strich, der sich in Bewegung vom Anfang zum Ende zeichnet – der Weg eines Virus, eine
+ * wachsende Umgehung. Ruhend steht er vollständig da.
+ */
+export function Wachsen({
+  d,
+  farbe = F.linie,
+  breite = 5,
+  dauer = 1.4,
+  ab = 0,
+  kappe = 'round',
+}: {
+  d: string;
+  farbe?: string;
+  breite?: number;
+  dauer?: number;
+  ab?: number;
+  /** 'butt' für breite Bögen, die eine Tortenstück-Fläche füllen (Uhr). */
+  kappe?: 'round' | 'butt';
+}) {
+  const stil = { '--zb-dauer': `${dauer}s`, '--zb-ab': `${ab}s` } as CSSProperties;
+  return (
+    <path
+      className="zb-wachsen"
+      d={d}
+      pathLength={1}
+      fill="none"
+      stroke={farbe}
+      strokeWidth={breite}
+      strokeLinecap={kappe}
+      style={stil}
+    />
+  );
+}
+
+/**
  * Kopf von oben, Nase zeigt nach oben im Bild. Mittelpunkt ist (0, 0), 190 breit und 215 hoch –
  * mit transform an die gewünschte Stelle schieben. `children` liegen auf der Kopfhaut und werden
  * auf die behaarte Fläche beschnitten (Haare, kahle Stellen).

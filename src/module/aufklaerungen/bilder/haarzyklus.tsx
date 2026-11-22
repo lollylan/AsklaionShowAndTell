@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Pfeil, Unterzeile, Zeichnung } from './bausteine';
+import { Etikett, F, Folge, KONTUR, Pfeil, Unterzeile, Wachsen, Zeichnung } from './bausteine';
 
 const HAUT = 236;
 
@@ -15,7 +15,7 @@ function Balg({ x, bis }: { x: number; bis: number }) {
 }
 
 /** Balken: Anteil der wachsenden (Petrol) und der ruhenden Haare (Kupfer). */
-function Anteil({ y, ruhend }: { y: number; ruhend: number }) {
+function Anteil({ y, ruhend, klasse }: { y: number; ruhend: number; klasse?: string }) {
   const breite = 640;
   const grenze = breite * (1 - ruhend);
   return (
@@ -24,6 +24,7 @@ function Anteil({ y, ruhend }: { y: number; ruhend: number }) {
       <path
         d={`M${40 + grenze} ${y} L${40 + breite - 14} ${y} A14 14 0 0 1 ${40 + breite - 14} ${y + 28} L${40 + grenze} ${y + 28} Z`}
         fill={F.kupfer}
+        className={klasse}
       />
     </g>
   );
@@ -58,24 +59,32 @@ export default function Haarzyklus() {
 
       {/* Wachsen: tiefe, aktive Wurzel */}
       <Balg x={130} bis={384} />
-      <path d={`M130 112 L130 384`} stroke={F.petrolHell} strokeWidth="11" strokeLinecap="round" />
+      <Wachsen d="M130 384 L130 112" farbe={F.petrolHell} breite={11} ab={0.4} dauer={1.6} />
       <circle cx="130" cy="384" r="17" fill={F.petrolHell} stroke={F.linie} strokeWidth="3" />
 
       {/* Umbau: Die Wurzel löst sich und wandert nach oben */}
+      <Folge ab={2.2}>
       <Balg x={360} bis={384} />
       <path d={`M360 112 L360 326`} stroke={F.petrolHell} strokeWidth="11" strokeLinecap="round" />
-      <circle cx="360" cy="330" r="12" fill={F.leise} stroke={F.linie} strokeWidth="3" />
+      <circle className="haarzyklus-wurzel" cx="360" cy="330" r="12" fill={F.leise} stroke={F.linie} strokeWidth="3" />
       <path d="M360 348 L360 384" stroke={F.leise} strokeWidth="3" strokeDasharray="3 7" strokeLinecap="round" />
+      </Folge>
 
       {/* Ruhen: Das alte Haar sitzt locker, darunter wächst das neue */}
+      <Folge ab={4}>
       <Balg x={590} bis={384} />
       <path d={`M604 122 L590 288`} stroke={F.kupferHell} strokeWidth="11" strokeLinecap="round" />
       <circle cx="590" cy="292" r="10" fill={F.kupferHell} stroke={F.linie} strokeWidth="3" />
-      <path d="M590 384 L590 342" stroke={F.petrolHell} strokeWidth="8" strokeLinecap="round" />
       <circle cx="590" cy="384" r="13" fill={F.petrolHell} stroke={F.linie} strokeWidth="3" />
+      </Folge>
+      <Wachsen d="M590 370 L590 342" farbe={F.petrolHell} breite={8} ab={4.6} dauer={1} />
 
-      <Pfeil d="M190 160 L296 160" farbe={F.leise} />
-      <Pfeil d="M424 160 L530 160" farbe={F.leise} />
+      <Folge ab={1.8} von={0}>
+        <Pfeil d="M190 160 L296 160" farbe={F.leise} />
+      </Folge>
+      <Folge ab={3.6} von={0}>
+        <Pfeil d="M424 160 L530 160" farbe={F.leise} />
+      </Folge>
 
       {/* Was sich nach einer Belastung verschiebt */}
       <Etikett x={40} y={480}>
@@ -85,7 +94,7 @@ export default function Haarzyklus() {
       <Etikett x={40} y={582} farbe={F.kupferHell}>
         Nach Belastung: viele ruhen zugleich
       </Etikett>
-      <Anteil y={596} ruhend={0.42} />
+      <Anteil y={596} ruhend={0.42} klasse="haarzyklus-belastung" />
       <Unterzeile x={40} y={664}>
         Zwei bis vier Monate später fallen sie gemeinsam aus
       </Unterzeile>

@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Unterzeile, Zeichnung } from './bausteine';
+import { Etikett, F, Fluss, KONTUR, Unterzeile, Zeichnung } from './bausteine';
 
 /** Kopf im Profil, Blick nach links (wie in schlafapnoe.tsx). */
 const KOPF =
@@ -8,14 +8,34 @@ const KOPF =
 const ATEMWEG = 'M66 198 C115 184 170 180 195 205 C212 225 205 300 205 420';
 
 /** Kopf mit Ohr, Atemweg und Ohrtrompete vom Mittelohr zum Rachen. */
-function Kopf({ ohr }: { ohr: [number, number] }) {
+function Kopf({ ohr, kind = false }: { ohr: [number, number]; kind?: boolean }) {
   return (
     <g>
       <path d={KOPF} {...KONTUR} fill={F.petrolDunkel} />
       <path d={ATEMWEG} fill="none" stroke={F.tief} strokeWidth="18" strokeLinecap="round" />
       <ellipse cx="236" cy="188" rx="16" ry="28" {...KONTUR} fill={F.petrol} />
       <path d={`M${ohr[0]} ${ohr[1]} L192 206`} stroke={F.kupferHell} strokeWidth="12" strokeLinecap="round" />
-      <circle cx={ohr[0]} cy={ohr[1]} r="11" fill={F.kupfer} stroke={F.linie} strokeWidth="3" />
+      {kind ? (
+        <>
+          {/* Kurz und flach: Keime steigen aus dem Rachen leicht ins Mittelohr, es entzündet sich. */}
+          <Fluss d={`M192 206 L${ohr[0]} ${ohr[1]}`} farbe={F.tief} breite={6} dauer={1.6} />
+          <circle
+            className="mittelohrentzuendung-ohrtrompete-ohr-form"
+            cx={ohr[0]}
+            cy={ohr[1]}
+            r="11"
+            fill={F.kupfer}
+            stroke={F.linie}
+            strokeWidth="3"
+          />
+        </>
+      ) : (
+        <>
+          {/* Lang und steil: Sekret läuft gut zum Rachen ab. */}
+          <Fluss d={`M${ohr[0]} ${ohr[1]} L192 206`} farbe={F.tief} breite={6} dauer={1.4} />
+          <circle cx={ohr[0]} cy={ohr[1]} r="11" fill={F.kupfer} stroke={F.linie} strokeWidth="3" />
+        </>
+      )}
     </g>
   );
 }
@@ -29,7 +49,7 @@ export default function MittelohrentzuendungOhrtrompete() {
       </Etikett>
 
       <g transform="translate(40 280)">
-        <Kopf ohr={[232, 200]} />
+        <Kopf ohr={[232, 200]} kind />
       </g>
       <Etikett x={190} y={220} anker="middle">
         Kind

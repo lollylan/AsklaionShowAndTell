@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Fluss, Folge, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 const NADELN: [number, number, number][] = [
   [268, 470, 30],
@@ -17,6 +17,7 @@ export default function GichtUrsachen() {
     <Zeichnung titel="Ein Becken steht für die Harnsäure im Blut. Von oben fließt Harnsäure aus Fleisch, Innereien, Bier und süßen Getränken zu. Unten fließt über die Nieren zu wenig ab. Das Becken steht über der Grenze, am Boden bilden sich nadelförmige Kristalle">
       {/* Zufluss */}
       <Pfeil d="M90 170 Q220 170 262 268" farbe={F.linie} breite={8} />
+      <Fluss d="M90 170 Q220 170 262 268 L270 300" farbe={F.linie} breite={8} dauer={0.8} />
       <Etikett x={40} y={86}>
         Aus dem Essen
       </Etikett>
@@ -25,9 +26,12 @@ export default function GichtUrsachen() {
       </Unterzeile>
 
       {/* Becken mit Harnsäure */}
-      <path d="M232 320 L240 512 Q360 536 480 512 L488 320 Z" fill={F.petrol} />
+      {/* Der Spiegel steigt, weil mehr zu- als abfließt. */}
+      <g className="gicht-ursachen-pegel">
+        <path d="M232 320 L240 512 Q360 536 480 512 L488 320 Z" fill={F.petrol} />
+        <path d="M232 320 L488 320" stroke={F.petrolHell} strokeWidth="4" />
+      </g>
       <path d="M226 232 L240 512 Q360 536 480 512 L494 232" {...KONTUR} />
-      <path d="M232 320 L488 320" stroke={F.petrolHell} strokeWidth="4" />
       <path d="M236 390 L484 390" stroke={F.linie} strokeWidth="3" strokeDasharray="10 8" />
       <Unterzeile x={296} y={380} farbe={F.linie}>
         Grenze
@@ -37,19 +41,22 @@ export default function GichtUrsachen() {
       </Etikett>
 
       {/* Kristalle am Boden */}
-      {NADELN.map(([x, y, w]) => (
-        <path
-          key={`${x}-${y}`}
-          d={`M${x - 14} ${y} L${x + 14} ${y}`}
-          transform={`rotate(${w} ${x} ${y})`}
-          stroke={F.kupferHell}
-          strokeWidth="4"
-          strokeLinecap="round"
-        />
+      {/* Erst über der Grenze fallen Kristalle aus. */}
+      {NADELN.map(([x, y, w], i) => (
+        <Folge key={`${x}-${y}`} ab={3.2 + i * 0.25} von={0} dauer={0.5}>
+          <path
+            d={`M${x - 14} ${y} L${x + 14} ${y}`}
+            transform={`rotate(${w} ${x} ${y})`}
+            stroke={F.kupferHell}
+            strokeWidth="4"
+            strokeLinecap="round"
+          />
+        </Folge>
       ))}
 
       {/* Abfluss über die Niere, zu schwach */}
       <path d="M470 500 Q540 520 574 560" stroke={F.leise} strokeWidth="3" fill="none" strokeLinecap="round" />
+      <Fluss d="M470 500 Q540 520 574 560" farbe={F.leise} breite={4} dauer={2.8} />
       <path
         d="M610 546 C580 540 560 566 564 596 C568 626 600 640 622 624 C632 616 628 604 618 598 C608 592 608 578 620 572 C634 564 632 550 610 546 Z"
         {...KONTUR}

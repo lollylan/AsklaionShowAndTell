@@ -1,4 +1,4 @@
-import { Etikett, F, Pfeil, Unterzeile, Zeichnung } from './bausteine';
+import { Etikett, F, Fluss, Pfeil, Unterzeile, Zeichnung } from './bausteine';
 import { InhalierKopf, MUND, Spray, Wirkstoff } from './inhalieren';
 
 const KOPF_X = 440;
@@ -31,14 +31,24 @@ export default function InhalierenSpacer() {
       <g transform={`translate(${KOPF_X} ${KOPF_Y}) scale(${S})`}>
         <InhalierKopf rumpf>
           <Pfeil d="M96 222 C140 214 172 218 184 238 C194 256 184 300 181 380" farbe={F.kupferHell} breite={7} />
-          <Wirkstoff punkte={LUNGE} />
+          <Fluss d="M70 224 L96 222 C140 214 172 218 184 238 C194 256 184 300 181 400" farbe={F.kupfer} breite={8} dauer={0.9} klasse="inhalieren-spacer-atem" />
+          {/* Mit jedem Atemzug kommt mehr Wirkstoff in der Lunge an. */}
+          <g className="inhalieren-spacer-lunge">
+            <Wirkstoff punkte={LUNGE} />
+          </g>
         </InhalierKopf>
       </g>
 
       <g transform="translate(20 0)">
         <path d={KAMMER} fill={F.tief} stroke={F.linie} strokeWidth="4" strokeLinejoin="round" />
-        <Wirkstoff punkte={WOLKE} r={8} />
-        <Spray x={150} y={MUND_Y} />
+        {/* Ein Sprühstoß füllt die Kammer, mit jedem Atemzug wird die Wolke dünner. */}
+        <g className="inhalieren-spacer-wolke">
+          <Wirkstoff punkte={WOLKE} r={8} />
+        </g>
+        <Fluss d={`M190 ${MUND_Y} L${MUND_X - 20} ${MUND_Y}`} farbe={F.kupfer} breite={8} dauer={0.9} klasse="inhalieren-spacer-atem" />
+        <g className="inhalieren-spacer-druck">
+          <Spray x={150} y={MUND_Y} />
+        </g>
       </g>
 
       <Etikett x={98} y={MUND_Y - 200} anker="middle">
