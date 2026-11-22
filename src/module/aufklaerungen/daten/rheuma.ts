@@ -13,6 +13,11 @@ export const RHEUMA: Krankheit[] = [
     gebiet: 'bewegung',
     suche:
       'rheuma rheumatoide arthritis ra gelenkrheuma chronische polyarthritis cp polyarthritis autoimmun gelenkentzuendung synovitis fingergelenke handgelenk morgensteifigkeit rheumafaktor anti-ccp ccp-antikoerper acpa crp bsg blutsenkung rheumatologe methotrexat mtx folsaeure basistherapie dmards biologika jak-hemmer kortison prednisolon remission',
+    bilder: {
+      ursachen: 'rheumatoide-arthritis-ursachen',
+      behandlung: 'rheumatoide-arthritis-behandlung',
+      selbst: 'rheumatoide-arthritis-selbst',
+    },
     was: [
       'Bei der rheumatoiden Arthritis richtet sich die eigene Abwehr gegen die Gelenke. Die dünne Haut, die das Gelenk von innen auskleidet, entzündet sich und schwillt an.',
       'Meist beginnt es an den kleinen Gelenken: an den Fingergrund- und Fingermittelgelenken, am Handgelenk oder an den Zehen – typischerweise auf beiden Seiten gleich.',
@@ -47,6 +52,7 @@ export const RHEUMA: Krankheit[] = [
     gebiet: 'bewegung',
     suche:
       'polymyalgia rheumatica pmr polymyalgie muskelrheuma schulterguertel beckenguertel morgensteifigkeit crp bsg blutsenkung entzuendungswerte riesenzellarteriitis rza arteriitis temporalis horton schlaefenarterie kopfschmerz sehstoerung erblindung kortison prednisolon glukokortikoid methotrexat mtx tocilizumab',
+    bilder: { behandlung: 'polymyalgia-rheumatica-behandlung' },
     was: [
       'Die Polymyalgia rheumatica ist eine entzündliche Rheumaerkrankung älterer Menschen. Sie beginnt fast nur nach dem 50. Lebensjahr, meist um das 70.',
       'Innerhalb von Tagen bis wenigen Wochen kommen starke Schmerzen und Steifigkeit in Schultern, Oberarmen und Nacken, oft auch an Hüften und Oberschenkeln – auf beiden Seiten.',
@@ -81,6 +87,7 @@ export const RHEUMA: Krankheit[] = [
     gebiet: 'bewegung',
     suche:
       'fibromyalgie fibromyalgiesyndrom fms weichteilrheuma ganzkoerperschmerz chronische schmerzen schmerzen ueberall tender points schmerzverarbeitung erschoepfung nicht erholsamer schlaf konzentration fibro fog amitriptylin duloxetin ausdauertraining funktionstraining verhaltenstherapie multimodale schmerztherapie',
+    bilder: { selbst: 'fibromyalgie-selbst' },
     was: [
       'Bei der Fibromyalgie bestehen seit mindestens drei Monaten Schmerzen in vielen Bereichen des Körpers: links und rechts, oben und unten und am Rücken.',
       'Dazu kommen fast immer große Müdigkeit, ein Schlaf, der nicht erholt, und oft Probleme mit Konzentration und Gedächtnis.',

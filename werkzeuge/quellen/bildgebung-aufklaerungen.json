@@ -471,5 +471,407 @@
       0.96
     ],
     "farbe": true
+  },
+  {
+    "ziel": "neurodermitis-1.jpg",
+    "datei": "Atopic dermatitis child 2.jpg",
+    "zuschnitt": [
+      0.05,
+      0.15,
+      1.0,
+      0.92
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "neurodermitis-2.jpg",
+    "datei": "Dermatite o eczema atopico avambraccio 2015.jpg",
+    "zuschnitt": [
+      0.1,
+      0.05,
+      0.9,
+      0.95
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "schuppenflechte-1.jpg",
+    "datei": "Psoriasis in elbow.jpg",
+    "zuschnitt": [
+      0.2,
+      0.0,
+      1.0,
+      0.85
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "schuppenflechte-2.jpg",
+    "datei": "Luszczyca paznokcia.jpg",
+    "zuschnitt": [
+      0.15,
+      0.0,
+      0.9,
+      0.75
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "akne-1.jpg",
+    "datei": "Backacne.JPG",
+    "zuschnitt": [
+      0.0,
+      0.12,
+      1.0,
+      1.0
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "akne-2.jpg",
+    "datei": "Acne vulgaris on a very oily skin.jpg",
+    "zuschnitt": [
+      0.0,
+      0.0,
+      1.0,
+      0.72
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "rosazea-1.jpg",
+    "datei": "Rosacea 01.jpg",
+    "zuschnitt": [
+      0.1,
+      0.22,
+      0.95,
+      0.92
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "nesselsucht-1.jpg",
+    "datei": "Hives2022.jpg",
+    "zuschnitt": [
+      0.05,
+      0.1,
+      0.95,
+      0.95
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "nesselsucht-2.jpg",
+    "datei": "Dermatographia.JPG",
+    "zuschnitt": [
+      0.1,
+      0.36,
+      0.95,
+      0.78
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "warzen-1.jpg",
+    "datei": "Verruca.jpg",
+    "zuschnitt": [
+      0.05,
+      0.1,
+      1.0,
+      0.85
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "lippenherpes-1.jpg",
+    "datei": "Herpes labialis - opryszczka wargowa.jpg",
+    "zuschnitt": [
+      0.1,
+      0.0,
+      0.9,
+      0.75
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "lippenherpes-2.jpg",
+    "datei": "Cold sore.jpg",
+    "zuschnitt": [
+      0.15,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "kontaktekzem-1.jpg",
+    "datei": "Transtec allergy few days old.jpg",
+    "zuschnitt": [
+      0.12,
+      0.12,
+      0.92,
+      0.88
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "kontaktekzem-2.jpg",
+    "datei": "Contact dermatitis from dishwashing 2.jpg",
+    "zuschnitt": [
+      0.22,
+      0.25,
+      1.0,
+      0.85
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "weisser-hautkrebs-1.jpg",
+    "datei": "Aktinische Keratosen am Handrücken, sog. Feldkanzerisierung, ©WIKIDERM.jpg",
+    "zuschnitt": [
+      0.0,
+      0.0,
+      1.0,
+      0.95
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "weisser-hautkrebs-2.jpg",
+    "datei": "Noduläres Basalzellkarzinom, WIKIDERM®.jpg",
+    "zuschnitt": [
+      0.15,
+      0.05,
+      0.85,
+      0.9
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "warzen-2.jpg",
+    "datei": "Dornwarze.jpg",
+    "zuschnitt": [
+      0.25,
+      0.15,
+      0.85,
+      0.6
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "guertelrose-2.jpg",
+    "datei": "Herpes zoster 3days passed.jpg",
+    "zuschnitt": [
+      0.08,
+      0.1,
+      1.0,
+      0.92
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "wunden-1.jpg",
+    "datei": "Schürfwunde Ellbogen.jpg",
+    "zuschnitt": [
+      0.05,
+      0.0,
+      0.85,
+      0.72
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "scharlach-1.jpg",
+    "datei": "Strep throat with white strawberry tongue.jpg",
+    "zuschnitt": [
+      0.08,
+      0.31,
+      0.9,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "scharlach-2.jpg",
+    "datei": "Scharlach.JPG",
+    "zuschnitt": [
+      0.02,
+      0.03,
+      0.98,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "bindehautentzuendung-1.jpg",
+    "datei": "Swollen eye with conjunctivitis.jpg",
+    "zuschnitt": [
+      0.04,
+      0.04,
+      0.96,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "lungenentzuendung-1.jpg",
+    "datei": "Normal posteroanterior (PA) chest radiograph (X-ray).jpg",
+    "zuschnitt": [
+      0.04,
+      0.08,
+      0.96,
+      0.92
+    ]
+  },
+  {
+    "ziel": "lungenentzuendung-2.jpg",
+    "datei": "X-ray of lobar pneumonia.jpg",
+    "zuschnitt": [
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "ziel": "nasennebenhoehlen-1.jpg",
+    "datei": "Sinusitis maxillaris Roe 001.jpg",
+    "zuschnitt": [
+      0.04,
+      0.08,
+      0.96,
+      0.96
+    ],
+    "autokontrast": true
+  },
+  {
+    "ziel": "rheumatoide-arthritis-1.jpg",
+    "datei": "Rheumatoid Arthritis.JPG",
+    "zuschnitt": [
+      0.08,
+      0.1,
+      1,
+      0.95
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "diabetischer-fuss-1.jpg",
+    "datei": "Diabetic Foot Ulcer.jpg",
+    "zuschnitt": [
+      0,
+      0,
+      1,
+      0.78
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "schwerhoerigkeit-1.jpg",
+    "datei": "Hearing aid 20080620.jpg",
+    "zuschnitt": [
+      0.04,
+      0.02,
+      1,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "cholesterin-1.jpg",
+    "datei": "Xanthelasma.jpg",
+    "zuschnitt": [
+      0,
+      0.22,
+      1,
+      0.92
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "gleithernie-1.jpg",
+    "datei": "Sliding hernia(esophagus).jpg",
+    "zuschnitt": [
+      0,
+      0.08,
+      0.9,
+      1
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "harnwegsinfekt-1.jpg",
+    "datei": "Urine trouble - BU sang nitrite leucocyte (cropped).jpg",
+    "zuschnitt": [
+      0.1,
+      0,
+      0.95,
+      0.8
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "nierenschwaeche-1.jpg",
+    "datei": "Normal adult kidney.jpg",
+    "zuschnitt": [
+      0,
+      0,
+      1,
+      0.88
+    ]
+  },
+  {
+    "ziel": "nierenschwaeche-2.jpg",
+    "datei": "Ultrasonography of end-stage chronic kidney disease.jpg",
+    "zuschnitt": [
+      0.03,
+      0,
+      0.85,
+      1
+    ]
+  },
+  {
+    "ziel": "gastritis-1.jpg",
+    "datei": "Stomach endoscopy 1.jpg",
+    "zuschnitt": [
+      0.18,
+      0.03,
+      0.97,
+      0.86
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "gastritis-2.jpg",
+    "datei": "Gastric erosion.jpg",
+    "farbe": true
+  },
+  {
+    "ziel": "reflux-1.jpg",
+    "datei": "Peptic stricture.png",
+    "zuschnitt": [
+      0,
+      0,
+      1,
+      0.95
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "schilddruesenueberfunktion-1.jpg",
+    "datei": "Proptosis and lid retraction from Graves' Disease.jpg",
+    "zuschnitt": [
+      0,
+      0,
+      1,
+      0.72
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "polyneuropathie-1.jpg",
+    "datei": "Monofilament bei DFS.jpg",
+    "farbe": true
   }
 ]

@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Fluss, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 /** Speiseröhre (oben) und Magen als eine Form, Magenausgang nach links. */
 const MAGEN =
@@ -17,16 +17,17 @@ export default function Reflux() {
       <path d={MAGEN} fill={F.petrol} />
       {/* Magensäure am Boden des Magens und gereizter unterer Teil der Speiseröhre */}
       <g clipPath="url(#reflux-magen)">
-        <rect x="100" y="455" width="540" height="180" fill={F.kupfer} />
+        <rect className="reflux-saeure" x="100" y="455" width="540" height="180" fill={F.kupfer} />
         <path d="M285 150 L285 300 M355 150 L355 300" fill="none" stroke={F.kupfer} strokeWidth="28" />
       </g>
       <path d={MAGEN} {...KONTUR} />
 
       {/* Schließmuskel: zwei Wülste, dazwischen bleibt eine Lücke */}
-      <ellipse cx="297" cy="292" rx="13" ry="19" fill={F.petrolHell} stroke={F.linie} strokeWidth="4" />
-      <ellipse cx="343" cy="292" rx="13" ry="19" fill={F.petrolHell} stroke={F.linie} strokeWidth="4" />
+      <ellipse className="reflux-muskel-links" cx="297" cy="292" rx="13" ry="19" fill={F.petrolHell} stroke={F.linie} strokeWidth="4" />
+      <ellipse className="reflux-muskel-rechts" cx="343" cy="292" rx="13" ry="19" fill={F.petrolHell} stroke={F.linie} strokeWidth="4" />
 
       <Pfeil d="M420 500 C350 420 314 370 320 170" farbe={F.kupferHell} breite={7} />
+      <Fluss d="M420 500 C350 420 314 370 320 186" farbe={F.kupfer} breite={13} dauer={1.1} />
 
       <Zeiger von={[212, 102]} nach={[300, 102]} />
       <Etikett x={40} y={110}>

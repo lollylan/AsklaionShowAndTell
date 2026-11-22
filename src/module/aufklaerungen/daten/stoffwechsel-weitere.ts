@@ -10,6 +10,7 @@ export const STOFFWECHSEL_WEITERE: Krankheit[] = [
     name: 'Prädiabetes',
     zusatz: 'Vorstufe des Diabetes',
     gebiet: 'stoffwechsel',
+    bilder: { behandlung: 'praediabetes-risiko' },
     suche:
       'praediabetes vorstufe diabetes grenzwertig zucker blutzucker hba1c langzeitzucker nuechternzucker gestoerte glukosetoleranz igt ifg zuckerbelastungstest ogtt insulinresistenz lebensstil abnehmen bewegung check-up',
     was: [
@@ -124,6 +125,7 @@ export const STOFFWECHSEL_WEITERE: Krankheit[] = [
     name: 'Schilddrüsenüberfunktion',
     zusatz: 'Hyperthyreose, oft durch Morbus Basedow',
     gebiet: 'stoffwechsel',
+    bilder: { behandlung: 'schilddruesenueberfunktion-wege' },
     suche:
       'hyperthyreose ueberfunktion schilddruese morbus basedow graves autoimmun trak antikoerper autonomie heisser knoten tsh ft3 ft4 thyreostatika thiamazol carbimazol betablocker propranolol radiojod radiojodtherapie operation thyreoidektomie endokrine orbitopathie augen herzrasen vorhofflimmern kontrastmittel jod',
     was: [
@@ -158,6 +160,7 @@ export const STOFFWECHSEL_WEITERE: Krankheit[] = [
     name: 'Vitamin-D-Mangel',
     zusatz: 'Wann testen, wann ergänzen?',
     gebiet: 'stoffwechsel',
+    bilder: { behandlung: 'vitamin-d-mangel-dosis' },
     suche:
       'vitamin d vitamin d3 colecalciferol cholecalciferol 25-oh-vitamin-d calcidiol spiegel bluttest mangel sonne winter knochen osteoporose osteomalazie rachitis nahrungsergaenzung tropfen tabletten ueberdosierung kalzium hyperkalzaemie',
     was: [
@@ -192,6 +195,7 @@ export const STOFFWECHSEL_WEITERE: Krankheit[] = [
     name: 'Vitamin-B12-Mangel',
     zusatz: 'Cobalamin-Mangel',
     gebiet: 'stoffwechsel',
+    bilder: { behandlung: 'vitamin-b12-mangel-wege' },
     suche:
       'vitamin b12 b-12 cobalamin cyanocobalamin hydroxocobalamin mangel holo-tc holotranscobalamin methylmalonsaeure mma perniziose anaemie perniziosa intrinsic factor autoimmungastritis typ a blutarmut makrozytaer metformin pantoprazol omeprazol ppi saeureblocker magenschutz vegan vegetarisch kribbeln taubheit gangunsicherheit spritze tabletten',
     was: [

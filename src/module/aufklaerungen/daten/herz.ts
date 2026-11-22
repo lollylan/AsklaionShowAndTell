@@ -3,6 +3,7 @@ import type { Krankheit } from './typen';
 export const HERZ: Krankheit[] = [
   {
     id: 'bluthochdruck',
+    bilder: { ursachen: 'bluthochdruck-folgen', selbst: 'bluthochdruck-senken' },
     name: 'Bluthochdruck',
     zusatz: 'Arterielle Hypertonie',
     gebiet: 'herz',
@@ -36,6 +37,7 @@ export const HERZ: Krankheit[] = [
   },
   {
     id: 'khk',
+    bilder: { ursachen: 'khk-risiken', behandlung: 'khk-stent' },
     name: 'Koronare Herzkrankheit',
     zusatz: 'Verengte Herzkranzgefäße, KHK',
     gebiet: 'herz',
@@ -69,6 +71,7 @@ export const HERZ: Krankheit[] = [
   },
   {
     id: 'vorhofflimmern',
+    bilder: { ursachen: 'vorhofflimmern-schlaganfall', selbst: 'vorhofflimmern-puls' },
     name: 'Vorhofflimmern',
     gebiet: 'herz',
     suche: 'herzrhythmusstoerung herzstolpern absolute arrhythmie blutverduenner antikoagulation',
@@ -101,6 +104,7 @@ export const HERZ: Krankheit[] = [
   },
   {
     id: 'herzschwaeche',
+    bilder: { behandlung: 'herzschwaeche-medikamente', selbst: 'herzschwaeche-gewicht' },
     name: 'Herzschwäche',
     zusatz: 'Herzinsuffizienz',
     gebiet: 'herz',
@@ -134,6 +138,7 @@ export const HERZ: Krankheit[] = [
   },
   {
     id: 'pavk',
+    bilder: { behandlung: 'pavk-umgehung', selbst: 'pavk-gehtraining' },
     name: 'Durchblutungsstörung der Beine',
     zusatz: 'Schaufensterkrankheit, pAVK',
     gebiet: 'herz',
@@ -167,6 +172,7 @@ export const HERZ: Krankheit[] = [
   },
   {
     id: 'thrombose',
+    bilder: { behandlung: 'thrombose-behandlung', selbst: 'thrombose-fuesse' },
     name: 'Beinvenenthrombose',
     zusatz: 'Blutgerinnsel in einer Beinvene',
     gebiet: 'herz',
@@ -200,6 +206,7 @@ export const HERZ: Krankheit[] = [
   },
   {
     id: 'schlaganfall',
+    bilder: { behandlung: 'schlaganfall-zeit', selbst: 'schlaganfall-fast' },
     name: 'Schlaganfall',
     zusatz: 'Hirninfarkt, Hirnblutung und TIA',
     gebiet: 'herz',
@@ -233,6 +240,7 @@ export const HERZ: Krankheit[] = [
   },
   {
     id: 'krampfadern',
+    bilder: { ursachen: 'krampfadern-stadien', selbst: 'krampfadern-wadenpumpe' },
     name: 'Krampfadern und Venenschwäche',
     zusatz: 'Varizen, chronische Veneninsuffizienz',
     gebiet: 'herz',

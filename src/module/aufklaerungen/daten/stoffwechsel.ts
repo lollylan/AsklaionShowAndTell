@@ -6,6 +6,7 @@ export const STOFFWECHSEL: Krankheit[] = [
     name: 'Diabetes Typ 2',
     zusatz: 'Zuckerkrankheit',
     gebiet: 'stoffwechsel',
+    bilder: { ursachen: 'diabetes-typ-2-folgen', behandlung: 'diabetes-typ-2-behandlung' },
     suche: 'zucker diabetes mellitus blutzucker hba1c metformin insulin',
     was: [
       'Bei Diabetes ist der Zucker im Blut dauerhaft zu hoch.',
@@ -39,6 +40,7 @@ export const STOFFWECHSEL: Krankheit[] = [
     name: 'Erhöhtes Cholesterin',
     zusatz: 'Fettstoffwechselstörung',
     gebiet: 'stoffwechsel',
+    bilder: { ursachen: 'cholesterin-gerinnsel', behandlung: 'cholesterin-statin' },
     suche: 'ldl hdl blutfette hypercholesterinaemie statin lipide',
     was: [
       'Cholesterin ist ein Fett, das der Körper braucht – er stellt den größten Teil selbst her.',
@@ -70,6 +72,7 @@ export const STOFFWECHSEL: Krankheit[] = [
     name: 'Schilddrüsenunterfunktion',
     zusatz: 'Hypothyreose, oft durch Hashimoto',
     gebiet: 'stoffwechsel',
+    bilder: { behandlung: 'schilddruesenunterfunktion-tsh', selbst: 'schilddruesenunterfunktion-einnahme' },
     suche: 'hypothyreose hashimoto tsh l-thyroxin thyroxin',
     was: [
       'Die Schilddrüse sitzt vorn am Hals und bildet Hormone, die den Stoffwechsel antreiben.',
@@ -101,6 +104,7 @@ export const STOFFWECHSEL: Krankheit[] = [
     name: 'Gicht',
     zusatz: 'Zu viel Harnsäure',
     gebiet: 'stoffwechsel',
+    bilder: { ursachen: 'gicht-ursachen', behandlung: 'gicht-behandlung' },
     suche: 'harnsaeure hyperurikaemie podagra allopurinol',
     was: [
       'Bei Gicht ist zu viel Harnsäure im Blut. Sie bildet nadelspitze Kristalle, die sich in Gelenken ablagern.',
@@ -134,6 +138,7 @@ export const STOFFWECHSEL: Krankheit[] = [
     name: 'Eisenmangel',
     zusatz: 'Mit oder ohne Blutarmut',
     gebiet: 'stoffwechsel',
+    bilder: { ursachen: 'eisenmangel-waage', selbst: 'eisenmangel-einnahme' },
     suche: 'anaemie blutarmut ferritin haemoglobin',
     was: [
       'Eisen braucht der Körper für den roten Blutfarbstoff. Er bringt den Sauerstoff zu allen Organen.',
@@ -167,6 +172,7 @@ export const STOFFWECHSEL: Krankheit[] = [
     name: 'Starkes Übergewicht',
     zusatz: 'Adipositas',
     gebiet: 'stoffwechsel',
+    bilder: { ursachen: 'adipositas-jojo', behandlung: 'adipositas-behandlung' },
     suche: 'adipositas uebergewicht bmi abnehmen gewicht bauchumfang semaglutid wegovy tirzepatid mounjaro abnehmspritze magenbypass schlauchmagen',
     was: [
       'Von Adipositas spricht man ab einem Body-Mass-Index, kurz BMI, von 30. Er wird aus Gewicht und Körpergröße berechnet.',
@@ -200,6 +206,7 @@ export const STOFFWECHSEL: Krankheit[] = [
     name: 'Schilddrüsenknoten',
     zusatz: 'Knoten in der Schilddrüse',
     gebiet: 'stoffwechsel',
+    bilder: { behandlung: 'schilddruesenknoten-abklaerung' },
     suche: 'knoten schilddruese struma kropf heisser kalter knoten szintigrafie ultraschall punktion feinnadel tsh',
     was: [
       'Schilddrüsenknoten sind abgegrenzte Veränderungen im Gewebe der Schilddrüse. Sie sind sehr häufig – etwa jeder dritte Erwachsene hat welche.',
@@ -233,6 +240,7 @@ export const STOFFWECHSEL: Krankheit[] = [
     name: 'Hashimoto-Thyreoiditis',
     zusatz: 'Chronische Schilddrüsenentzündung',
     gebiet: 'stoffwechsel',
+    bilder: { behandlung: 'hashimoto-verlauf' },
     suche: 'hashimoto thyreoiditis autoimmun tpo antikoerper schilddruesenentzuendung tsh l-thyroxin selen',
     was: [
       'Hashimoto ist eine langsame, dauerhafte Entzündung der Schilddrüse. Das Abwehrsystem richtet sich irrtümlich gegen das eigene Organ.',
@@ -266,6 +274,7 @@ export const STOFFWECHSEL: Krankheit[] = [
     name: 'Wechseljahre',
     zusatz: 'Klimakterium',
     gebiet: 'stoffwechsel',
+    bilder: { behandlung: 'wechseljahre-hormone' },
     suche: 'klimakterium menopause hitzewallungen schwitzen oestrogen hormonersatz hormontherapie trockene scheide perimenopause',
     was: [
       'In den Wechseljahren stellen die Eierstöcke ihre Arbeit langsam ein. Sie bilden immer weniger der Hormone Östrogen und Gestagen.',

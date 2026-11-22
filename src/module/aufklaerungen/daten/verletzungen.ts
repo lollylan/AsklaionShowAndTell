@@ -8,6 +8,7 @@ export const VERLETZUNGEN: Krankheit[] = [
     name: 'Schwindel von der Halswirbelsäule',
     zusatz: 'Vertebragener oder zervikogener Schwindel',
     gebiet: 'kopf',
+    bilder: { selbst: 'vertebragener-schwindel-bildschirm' },
     suche:
       'zervikogener schwindel vertebragener schwindel hws halswirbelsaeule nacken nackenschmerz verspannung schleudertrauma propriozeption schwankschwindel benommenheit bildschirmarbeit',
     was: [
@@ -42,6 +43,7 @@ export const VERLETZUNGEN: Krankheit[] = [
     name: 'Zweizeitige Milzruptur',
     zusatz: 'Milzriss, der sich erst später zeigt',
     gebiet: 'bauch',
+    bilder: { selbst: 'milzruptur-warnzeichen' },
     suche:
       'milzriss milzruptur milz bauchtrauma stumpfes bauchtrauma innere blutung kapselhaematom splenektomie milzentfernung kehr zeichen schulterschmerz pfeiffersches druesenfieber mononukleose sportpause',
     was: [

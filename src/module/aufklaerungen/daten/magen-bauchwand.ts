@@ -9,6 +9,7 @@ export const MAGEN_BAUCHWAND: Krankheit[] = [
     name: 'Magenschleimhautentzündung',
     zusatz: 'Gastritis',
     gebiet: 'bauch',
+    bilder: { behandlung: 'gastritis-behandlung' },
     suche:
       'gastritis magen magenschmerzen oberbauch oberbauchschmerzen voellegefuehl uebelkeit helicobacter pylori eradikation atemtest magenspiegelung gastroskopie schmerzmittel nsar ibuprofen diclofenac ass magenschutz pantoprazol vitamin b12 typ a typ b typ c reizmagen dyspepsie',
     was: [
@@ -43,6 +44,7 @@ export const MAGEN_BAUCHWAND: Krankheit[] = [
     name: 'Zwerchfellbruch',
     zusatz: 'Axiale Gleithernie',
     gebiet: 'bauch',
+    bilder: { ursachen: 'gleithernie-ursachen' },
     suche:
       'gleithernie axiale hiatushernie hiatus hernie zwerchfellbruch zwerchfell zwerchfellluecke mageneingang kardia sodbrennen reflux magenspiegelung paraoesophageal fundoplicatio',
     was: [

@@ -7,6 +7,7 @@ import type { Krankheit } from './typen';
 export const KREISLAUF: Krankheit[] = [
   {
     id: 'ohnmacht',
+    bilder: { behandlung: 'ohnmacht-stehtest', selbst: 'ohnmacht-gegenmanoever' },
     name: 'Ohnmacht und niedriger Blutdruck',
     zusatz: 'Synkope, Kreislaufkollaps',
     gebiet: 'herz',

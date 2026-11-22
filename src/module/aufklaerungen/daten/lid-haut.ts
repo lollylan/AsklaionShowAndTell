@@ -10,6 +10,7 @@ export const LID_HAUT: Krankheit[] = [
     name: 'Gerstenkorn',
     zusatz: 'Hordeolum',
     gebiet: 'haut',
+    bilder: { selbst: 'gerstenkorn-waerme' },
     suche:
       'gerstenkorn hordeolum hordeolum externum internum stye lid augenlid lidrand wimpern knoten beule eiter entzuendung staphylokokken lidranddruese zeis moll blepharitis augensalbe waerme auge',
     was: [
@@ -43,6 +44,7 @@ export const LID_HAUT: Krankheit[] = [
     name: 'Hagelkorn',
     zusatz: 'Chalazion',
     gebiet: 'haut',
+    bilder: { ursachen: 'hagelkorn-druese' },
     suche:
       'hagelkorn chalazion chalazium meibom meibomdruese talgdruese lid augenlid knoten kugel fettstau lidplatte tarsus blepharitis lidrandpflege waerme massage ausschaben operation kortison auge',
     was: [
@@ -134,6 +136,7 @@ export const LID_HAUT: Krankheit[] = [
     name: 'Altersflecken',
     zusatz: 'Lentigo solaris',
     gebiet: 'haut',
+    bilder: { selbst: 'altersflecken-sonnenschutz' },
     suche:
       'altersflecken pigmentflecken sonnenflecken leberflecken lentigo solaris senilis lentigines hautflecken braune flecken handruecken seborrhoische keratose alterswarze hautalterung uv sonne hautkrebs melanom lentigo maligna laser vereisen kryotherapie bleichcreme sonnenschutz',
     was: [

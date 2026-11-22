@@ -24,6 +24,12 @@
 // Steuerung (src/arzt, *Steuerung*.tsx), Korrekturseiten, Suchbegriffe und technische Werte
 // (ids, Klassen, Farben, Pfade). Texte mit ${…} lassen sich nicht nachschlagen und werden nur
 // gemeldet. Lieber ein Text zu viel als zu wenig: Überzählige stören nicht.
+//
+// In Schemazeichnungen (…/bilder/*.tsx) gilt eine lockerere Regel: JSX-Text, Beschriftungs-Props
+// (titel, zeile, text, name …) an Hilfsbausteinen, angezeigte Ausdrücke ({x ? 'jetzt' : …}) und
+// Achsen-Wertepaare ([14.5, 'mittags']) werden auch als kleingeschriebene Einzelwörter gesammelt.
+// <Zeichnung titel> ist nur die Beschreibung für Vorleseprogramme und bleibt draußen. Beschriftungen
+// aus Vorlagen (`Tag ${n}`, `${h} Uhr`) gehören von Hand ins Wörterbuch (z. B. 029-zeichnungen.json).
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -64,6 +70,11 @@ const JSON_TECHNISCH = new Set([
   'einwohnerQuelle',
 ]);
 const JSX_TEXT_ATTRIBUTE = new Set(['title', 'alt', 'aria-label', 'placeholder']);
+/** Schemazeichnungen: Hier sind auch kleingeschriebene Einzelwörter („harmlos“, „links“) und
+ *  Uhrzeiten („8 Uhr“) Beschriftungen, und Hilfsbausteine bekommen ihre Texte als Props. */
+const ZEICHNUNG = /\/bilder\/[^/]+\.tsx$/;
+/** Props und Felder, deren Wert in Zeichnungen als Beschriftung erscheint. */
+const ZEICHNUNG_TEXT = new Set(['titel', 'zeile', 'text', 'name', 'beschriftung', 'etikett', 'label']);
 
 const args = process.argv.slice(2);
 const wert = (name, standard) => {
@@ -80,12 +91,41 @@ const glaette = (s) => s.replace(/\s+/g, ' ').trim();
 
 function istText(t) {
   if (t.length < 2 || !/[A-Za-zÄÖÜäöüß]/.test(t)) return false;
-  if (/^(#|\.|\/|https?:|data:|var\(|rgb|hsl|M\d|m\d)/.test(t)) return false;
+  if (/^(#|\.|\/|https?:|data:|var\(|rgb|hsl|translate\(|rotate\(|scale\(|[Mm]-?\d)/.test(t)) return false;
+  if (/^[a-zäöüß]{3,}[,.]$/.test(t)) return true; // Wort mit Komma/Punkt: Bruchstück einer Zeile
+  if (/^[\d.,–-]+ [A-ZÄÖÜ][a-zäöüß]{2,}$/.test(t)) return true; // Zahl mit Wort: „1 Tag“, „8 Uhr“
   if (/^[a-z0-9_.-]+$/.test(t)) return false; // ids, Klassen, Dateinamen
   if (/^[a-z]+[A-Z][A-Za-z]*$/.test(t)) return false; // camelCase-Bezeichner
   if (/^[\d\s.,:;%×x+\-–/()]+[a-zA-Z]{0,3}$/.test(t)) return false; // Zahlen und Einheiten
   if (/\s/.test(t) || /[ÄÖÜäöüß]/.test(t) || /^[A-ZÄÖÜ]/.test(t)) return true;
   return false;
+}
+
+/** Lockerere Regel für Text, der sicher sichtbar ist (JSX-Text, Beschriftungs-Props in
+ *  Zeichnungen): auch kleingeschriebene Einzelwörter und Zahl + Wort („8 Uhr“, „Tag 3“). */
+function istBeschriftung(t) {
+  if (istText(t)) return true;
+  if (!/[A-Za-zÄÖÜäöüß]{2}/.test(t)) return false;
+  if (/^(#|\.|\/|https?:|data:|var\(|url\(|rgb|hsl|translate\(|rotate\(|scale\(|[Mm]-?\d)/.test(t)) return false;
+  if (/^[a-z0-9]+(-[a-z0-9]+)+$/.test(t)) return false; // ids mit Bindestrich
+  if (/^(start|middle|end|round|butt|square|miter|bevel|none|auto|evenodd|nonzero)$/.test(t)) return false; // SVG
+  if (/^[a-zA-Zµ]+\/[a-zA-Z]+$/.test(t)) return false; // mg/dl
+  if (/^[\d\s.,:;%×x+\-–/()]+(mg|ml|kg|g|cm|mm|mA|µg|IE|l)?$/.test(t)) return false; // Maße
+  return true;
+}
+
+/** Steht der Ausdruck (über ?:, ||, ?? und Klammern) als Kind eines JSX-Elements, wird er angezeigt. */
+function alsJsxKind(k) {
+  let p = k.parent;
+  while (
+    ts.isParenthesizedExpression(p) ||
+    (ts.isConditionalExpression(p) && p.condition !== k) ||
+    (ts.isBinaryExpression(p) && /^(\|\||\?\?|&&)$/.test(p.operatorToken.getText()) && p.right === k)
+  ) {
+    k = p;
+    p = p.parent;
+  }
+  return ts.isJsxExpression(p) && (ts.isJsxElement(p.parent) || ts.isJsxFragment(p.parent));
 }
 
 function dateienUnter(ordner) {
@@ -114,9 +154,10 @@ function sammle() {
     const art = rel.endsWith('x') ? ts.ScriptKind.TSX : ts.ScriptKind.TS;
     const datei = ts.createSourceFile(rel, quelltext, ts.ScriptTarget.Latest, true, art);
     const texte = [];
-    const nimm = (roh) => {
+    const zeichnung = ZEICHNUNG.test(rel);
+    const nimm = (roh, locker = false) => {
       const t = glaette(roh);
-      if (!istText(t) || gesehen.has(t)) return;
+      if (!(locker ? istBeschriftung(t) : istText(t)) || gesehen.has(t)) return;
       gesehen.add(t);
       texte.push(t);
     };
@@ -129,12 +170,25 @@ function sammle() {
         if (ts.isPropertyAssignment(eltern) && eltern.initializer === k) {
           const name = eltern.name && (eltern.name.text ?? eltern.name.escapedText);
           if (TECHNISCH.has(name)) return;
+          if (zeichnung && ZEICHNUNG_TEXT.has(name)) return nimm(k.text, true);
         }
         if (ts.isPropertyAssignment(eltern) && eltern.name === k) return; // Schlüssel
         if (ts.isJsxAttribute(eltern)) {
-          if (JSX_TEXT_ATTRIBUTE.has(eltern.name.getText(datei))) nimm(k.text);
+          const name = eltern.name.getText(datei);
+          const baustein = eltern.parent.parent.tagName.getText(datei);
+          // <Zeichnung titel="…"> ist nur die Beschreibung für Vorleseprogramme (aria-label).
+          if (baustein === 'Zeichnung') return;
+          if (JSX_TEXT_ATTRIBUTE.has(name)) nimm(k.text);
+          // Hilfsbausteine in Zeichnungen: <Zeile titel="Salz sparen" zeile="…" />
+          else if (zeichnung && ZEICHNUNG_TEXT.has(name)) nimm(k.text, true);
+          // Sonstige Props an eigenen Bausteinen (großgeschrieben): nach der üblichen Regel
+          else if (zeichnung && /^[A-Z]/.test(baustein) && !TECHNISCH.has(name)) nimm(k.text);
           return;
         }
+        if (zeichnung && alsJsxKind(k)) return nimm(k.text, true); // {m === 0 ? 'jetzt' : …}
+        // Wertepaare für Achsen: [14.5, 'mittags'], [24, '1 Tag']
+        if (zeichnung && ts.isArrayLiteralExpression(eltern) && eltern.elements.some(ts.isNumericLiteral))
+          return nimm(k.text, true);
         if (ts.isCallExpression(eltern) && /^(import|require|querySelector|getElementById|addEventListener|removeEventListener|getItem|setItem|setAttribute|getAttribute|createElement|startsWith|endsWith|includes|split|join|replace|test|match)$/.test(eltern.expression.name?.text ?? eltern.expression.getText?.(datei) ?? '')) return;
         if (ts.isElementAccessExpression(eltern)) return;
         if (ts.isBinaryExpression(eltern) && /===|!==|==|!=/.test(eltern.operatorToken.getText(datei))) return;
@@ -146,7 +200,7 @@ function sammle() {
         const teile = [k.head.text, ...k.templateSpans.map((s) => s.literal.text)].join(' … ');
         if (istText(glaette(teile))) vorlagen.push(`${rel}: ${glaette(teile)}`);
       }
-      if (ts.isJsxText(k)) nimm(k.text);
+      if (ts.isJsxText(k)) nimm(k.text, zeichnung);
       ts.forEachChild(k, besuche);
     };
     besuche(datei);

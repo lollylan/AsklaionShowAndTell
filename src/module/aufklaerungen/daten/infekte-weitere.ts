@@ -87,6 +87,7 @@ export const INFEKTE_WEITERE: Krankheit[] = [
     name: 'Lungenentzündung',
     zusatz: 'Ambulant erworbene Pneumonie',
     gebiet: 'lunge',
+    bilder: { behandlung: 'lungenentzuendung-verlauf' },
     suche:
       'pneumonie cap ambulant erworbene pneumonie lungenentzündung pneumokokken crb-65 röntgen thorax husten fieber atemnot auswurf',
     was: [
@@ -121,6 +122,7 @@ export const INFEKTE_WEITERE: Krankheit[] = [
     name: 'Bindehautentzündung',
     zusatz: 'Konjunktivitis',
     gebiet: 'infekte',
+    bilder: { ursachen: 'bindehautentzuendung-arten' },
     suche:
       'konjunktivitis rotes auge augenentzündung bindehaut adenoviren keratokonjunktivitis allergisch augentropfen verklebte augen pinkeye',
     was: [
@@ -155,6 +157,7 @@ export const INFEKTE_WEITERE: Krankheit[] = [
     name: 'Scharlach',
     zusatz: 'Streptokokken-Angina mit Ausschlag',
     gebiet: 'infekte',
+    bilder: { selbst: 'scharlach-kita' },
     suche:
       'scharlach streptokokken gruppe a gas himbeerzunge erdbeerzunge ausschlag angina tonsillitis penicillin kita schule wiederzulassung infektionsschutzgesetz ifsg',
     was: [

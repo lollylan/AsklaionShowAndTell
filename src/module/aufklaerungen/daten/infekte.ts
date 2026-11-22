@@ -6,6 +6,7 @@ export const INFEKTE: Krankheit[] = [
     name: 'Halsschmerzen und Mandelentzündung',
     zusatz: 'Pharyngitis, Tonsillitis, Angina',
     gebiet: 'infekte',
+    bilder: { ursachen: 'halsschmerzen-ursache', behandlung: 'halsschmerzen-rezept' },
     suche: 'hals rachen mandeln tonsillitis pharyngitis angina streptokokken schluckbeschwerden',
     was: [
       'Halsschmerzen gehören zu den häufigsten Gründen für einen Arztbesuch. Meist ist der Rachen im Rahmen einer Erkältung entzündet.',
@@ -39,6 +40,7 @@ export const INFEKTE: Krankheit[] = [
     name: 'Nasennebenhöhlenentzündung',
     zusatz: 'Sinusitis',
     gebiet: 'infekte',
+    bilder: { behandlung: 'nasennebenhoehlen-spuelung' },
     suche: 'sinusitis rhinosinusitis stirnhöhle kieferhöhle nebenhöhlen gesichtsschmerz',
     was: [
       'Die Nasennebenhöhlen sind luftgefüllte Räume in Stirn und Wangenknochen. Über enge Gänge sind sie mit der Nase verbunden.',
@@ -72,6 +74,7 @@ export const INFEKTE: Krankheit[] = [
     name: 'Akute Bronchitis',
     zusatz: 'Entzündung der Bronchien',
     gebiet: 'infekte',
+    bilder: { ursachen: 'bronchitis-schleimhaut', behandlung: 'bronchitis-nacht' },
     suche: 'husten auswurf bronchien reizhusten bronchitis akut',
     was: [
       'Bei einer akuten Bronchitis sind die Atemwege in der Lunge entzündet, meist im Anschluss an eine Erkältung.',
@@ -105,6 +108,7 @@ export const INFEKTE: Krankheit[] = [
     name: 'Mittelohrentzündung',
     zusatz: 'Otitis media',
     gebiet: 'infekte',
+    bilder: { ursachen: 'mittelohrentzuendung-ohrtrompete', behandlung: 'mittelohrentzuendung-abwarten' },
     suche: 'otitis ohrenschmerzen ohr kind trommelfell paukenerguss mittelohr',
     was: [
       'Bei einer Mittelohrentzündung ist der kleine Raum hinter dem Trommelfell entzündet. Kinder trifft es besonders häufig.',
@@ -138,6 +142,7 @@ export const INFEKTE: Krankheit[] = [
     name: 'Grippe und COVID-19',
     zusatz: 'Influenza und Corona',
     gebiet: 'infekte',
+    bilder: { selbst: 'grippe-covid-impfung' },
     suche: 'influenza corona sars-cov-2 covid grippe virusgrippe paxlovid tamiflu oseltamivir impfung schnelltest',
     was: [
       'Grippe und COVID-19 sind Infektionen der Atemwege durch Viren. Sie machen meist kränker als eine Erkältung.',
@@ -171,6 +176,7 @@ export const INFEKTE: Krankheit[] = [
     name: 'Heuschnupfen',
     zusatz: 'Pollenallergie, allergischer Schnupfen',
     gebiet: 'infekte',
+    bilder: { ursachen: 'heuschnupfen-allergie', behandlung: 'heuschnupfen-hypo' },
     suche: 'pollen allergie rhinitis allergica hyposensibilisierung immuntherapie antihistaminikum birke gräser hasel niesen',
     was: [
       'Beim Heuschnupfen reagiert die Abwehr überempfindlich auf eigentlich harmlose Pollen von Bäumen, Gräsern oder Kräutern.',
@@ -204,6 +210,7 @@ export const INFEKTE: Krankheit[] = [
     name: 'Zeckenstich und Borreliose',
     zusatz: 'Lyme-Borreliose, FSME',
     gebiet: 'infekte',
+    bilder: { ursachen: 'zeckenstich-zeit' },
     suche: 'zecke zeckenbiss borrelien borreliose wanderröte erythema migrans fsme frühsommer-meningoenzephalitis zeckenimpfung',
     was: [
       'Zecken leben im Gras und im Unterholz und saugen Blut. Dabei können sie Krankheitserreger übertragen.',

@@ -8,6 +8,7 @@ export const AFTER: Krankheit[] = [
     name: 'Hämorrhoiden',
     zusatz: 'Hämorrhoidalleiden',
     gebiet: 'bauch',
+    bilder: { behandlung: 'haemorrhoiden-behandlung' },
     suche:
       'hämorrhoidalleiden hamorrhoiden haemorrhoiden hämorrhoidalpolster after enddarm blut am papier blutung juckreiz nässen vorfall prolaps gummibandligatur ligatur verödung sklerosierung proktologe proktologie',
     was: [
@@ -42,6 +43,7 @@ export const AFTER: Krankheit[] = [
     name: 'Analvenenthrombose',
     zusatz: 'Blutgerinnsel am After',
     gebiet: 'bauch',
+    bilder: { behandlung: 'analvenenthrombose-behandlung' },
     suche:
       'perianalthrombose perianalvenenthrombose analthrombose äußere hämorrhoide aeussere haemorrhoide knoten am after blauer knoten blutgerinnsel stichinzision inzision',
     was: [
@@ -76,6 +78,7 @@ export const AFTER: Krankheit[] = [
     name: 'Analekzem',
     zusatz: 'Entzündete, juckende Haut am After',
     gebiet: 'bauch',
+    bilder: { behandlung: 'analekzem-behandlung' },
     suche:
       'pruritus ani juckreiz after jucken am po analjucken perianal dermatitis ekzem nässen kontaktallergie feuchttücher duftstoffe zinkpaste epikutantest',
     was: [

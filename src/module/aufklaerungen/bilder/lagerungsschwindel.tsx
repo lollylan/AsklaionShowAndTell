@@ -45,7 +45,7 @@ export default function Lagerungsschwindel() {
       </g>
 
       {/* Gelöste Kristalle im unteren Bogengang */}
-      <g fill={F.kupfer} stroke={F.kupferHell} strokeWidth="2">
+      <g className="lagerungsschwindel-kristalle" fill={F.kupfer} stroke={F.kupferHell} strokeWidth="2">
         <circle cx="483" cy="572" r="6" />
         <circle cx="498" cy="578" r="5" />
         <circle cx="512" cy="574" r="6" />

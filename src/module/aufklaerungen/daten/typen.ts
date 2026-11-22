@@ -88,6 +88,11 @@ export interface Standardkrankheit extends Stamm {
   behandlung: string[];
   /** Was Patientinnen und Patienten selbst beitragen können. */
   selbst: string[];
+  /**
+   * Eigene Zeichnung für einzelne Seiten (id aus ../bilder), z. B. { behandlung: 'gicht-behandlung' }.
+   * Seiten ohne Eintrag zeigen die Hauptzeichnung (Datei wie die id der Krankheit).
+   */
+  bilder?: Partial<Record<SeiteId, string>>;
 }
 
 /** Eine Beschwerde mit frei benannten Seiten, meist eine je möglicher Ursache. */
@@ -100,5 +105,5 @@ export type Krankheit = Standardkrankheit | Leitsymptom;
 /** Die geschriebenen Seiten einer Krankheit, ohne die Bildseite (siehe seitenVon in ../daten). */
 export function textseitenVon(krankheit: Krankheit): Blattseite[] {
   if (krankheit.seiten) return krankheit.seiten;
-  return SEITEN.map((s) => ({ ...s, saetze: krankheit[s.id] }));
+  return SEITEN.map((s) => ({ ...s, saetze: krankheit[s.id], bild: krankheit.bilder?.[s.id] }));
 }

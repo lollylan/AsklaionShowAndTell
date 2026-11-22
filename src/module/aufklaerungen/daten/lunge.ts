@@ -6,6 +6,7 @@ export const LUNGE: Krankheit[] = [
     name: 'Asthma',
     zusatz: 'Asthma bronchiale',
     gebiet: 'lunge',
+    bilder: { ursachen: 'asthma-ausloeser', behandlung: 'asthma-sprays', selbst: 'inhalieren' },
     was: [
       'Bei Asthma sind die Atemwege dauerhaft entzündet und reagieren überempfindlich.',
       'Auf bestimmte Reize hin verengen sie sich: Die Muskeln verkrampfen, die Schleimhaut schwillt an, zäher Schleim bildet sich.',
@@ -38,6 +39,7 @@ export const LUNGE: Krankheit[] = [
     name: 'COPD',
     zusatz: 'Chronisch verengte Atemwege, „Raucherlunge“',
     gebiet: 'lunge',
+    bilder: { behandlung: 'copd-stufen', selbst: 'copd-lippenbremse' },
     suche: 'raucherlunge emphysem chronische bronchitis',
     was: [
       'COPD ist eine dauerhafte Erkrankung der Lunge: Die Bronchien sind entzündet und verengt.',
@@ -71,6 +73,7 @@ export const LUNGE: Krankheit[] = [
     name: 'Schlafapnoe',
     zusatz: 'Atemaussetzer im Schlaf',
     gebiet: 'lunge',
+    bilder: { ursachen: 'schlafapnoe-folgen', behandlung: 'schlafapnoe-maske' },
     suche: 'schnarchen osas cpap',
     was: [
       'Bei der Schlafapnoe setzt die Atmung im Schlaf immer wieder für Sekunden aus.',
@@ -104,6 +107,7 @@ export const LUNGE: Krankheit[] = [
     name: 'Erkältung',
     zusatz: 'grippaler Infekt',
     gebiet: 'lunge',
+    bilder: { ursachen: 'antibiotika', selbst: 'erkaeltung-schutz' },
     suche: 'schnupfen husten halsschmerzen infekt atemwege viren grippal rhinitis bronchitis symptomatisch',
     was: [
       'Eine Erkältung ist eine Infektion der oberen Atemwege durch Viren – es gibt über 200 verschiedene.',
@@ -137,6 +141,7 @@ export const LUNGE: Krankheit[] = [
     name: 'Rauchstopp',
     zusatz: 'Mit dem Rauchen aufhören',
     gebiet: 'lunge',
+    bilder: { behandlung: 'rauchstopp-nikotinersatz', selbst: 'rauchstopp-verlangen' },
     suche: 'rauchen nichtraucher aufhoeren tabak zigarette nikotin entwoehnung nikotinersatz nikotinpflaster kaugummi vareniclin e-zigarette rauchfrei',
     was: [
       'Tabakrauch enthält Tausende Schadstoffe, darunter viele, die Krebs auslösen.',

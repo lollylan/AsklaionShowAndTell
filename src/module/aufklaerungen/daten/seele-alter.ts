@@ -11,6 +11,7 @@ export const SEELE_ALTER: Krankheit[] = [
     name: 'Burnout und Erschöpfung',
     zusatz: 'Erschöpfungssyndrom',
     gebiet: 'kopf',
+    bilder: { behandlung: 'burnout-wege' },
     suche: 'burn-out ausgebrannt erschoepfung erschoepft ueberlastung stress arbeit pflege angehoerige',
     was: [
       'Burnout beschreibt einen Zustand tiefer Erschöpfung nach langer Überlastung – oft im Beruf, aber auch bei der Pflege von Angehörigen.',
@@ -44,6 +45,7 @@ export const SEELE_ALTER: Krankheit[] = [
     name: 'Alkohol: Wie viel ist zu viel?',
     zusatz: 'Riskanter Konsum und Abhängigkeit',
     gebiet: 'kopf',
+    bilder: { ursachen: 'alkohol-organe', selbst: 'alkohol-woche' },
     suche: 'alkohol trinken alkoholkonsum sucht abhaengigkeit alkoholismus entzug standardglas bier wein',
     was: [
       'Alkohol gehört für viele Menschen zum Alltag. Ein Maß ganz ohne Risiko gibt es aber nicht – je weniger, desto besser.',
@@ -77,6 +79,7 @@ export const SEELE_ALTER: Krankheit[] = [
     name: 'Trauer',
     zusatz: 'Wenn ein Mensch fehlt',
     gebiet: 'kopf',
+    bilder: { behandlung: 'trauer-halt' },
     suche: 'trauer trauern verlust tod todesfall verstorben witwe witwer trauerstoerung anhaltende trauer',
     was: [
       'Trauer ist die natürliche Antwort auf einen Verlust – meist auf den Tod eines nahestehenden Menschen, manchmal auch auf eine Trennung oder den Verlust der Gesundheit.',
@@ -110,6 +113,7 @@ export const SEELE_ALTER: Krankheit[] = [
     name: 'Stürze vermeiden',
     zusatz: 'Sturzvorbeugung im Alter',
     gebiet: 'alter',
+    bilder: { was: 'stuerze-kreislauf', behandlung: 'stuerze-training' },
     suche: 'sturz stuerzen sturzgefahr sturzprophylaxe gleichgewicht hueftprotektor hausnotruf stolperfallen',
     was: [
       'Mit dem Alter werden Stürze häufiger: Etwa jeder Dritte über 65 stürzt mindestens einmal im Jahr.',
@@ -143,6 +147,7 @@ export const SEELE_ALTER: Krankheit[] = [
     name: 'Viele Medikamente gleichzeitig',
     zusatz: 'Multimedikation',
     gebiet: 'alter',
+    bilder: { ursachen: 'viele-medikamente-ursachen' },
     suche: 'polypharmazie multimedikation medikationsplan wechselwirkungen nebenwirkungen tabletten brown bag tablettenbox',
     was: [
       'Wer mehrere Krankheiten hat, nimmt oft viele Medikamente. Ab etwa fünf dauerhaft eingenommenen Mitteln spricht man von Multimedikation.',
@@ -176,6 +181,7 @@ export const SEELE_ALTER: Krankheit[] = [
     name: 'Schwerhörigkeit',
     zusatz: 'Altersschwerhörigkeit',
     gebiet: 'alter',
+    bilder: { was: 'schwerhoerigkeit-toene' },
     suche: 'schwerhoerig hoeren hoerverlust hoergeraet hoertest presbyakusis ohrenschmalz cerumen tinnitus',
     was: [
       'Bei vielen Menschen lässt das Hören mit dem Alter langsam nach, meist auf beiden Ohren.',

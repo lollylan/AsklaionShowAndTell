@@ -1,4 +1,5 @@
 /* Bühne der Aufklärungen. Maße in px auf 1920 × 1080. */
+@import './bilder/bewegung.css';
 
 .aufkbuehne {
   position: absolute;

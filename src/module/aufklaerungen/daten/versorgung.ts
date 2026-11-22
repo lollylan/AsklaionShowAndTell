@@ -11,6 +11,7 @@ export const VERSORGUNG: Krankheit[] = [
     name: 'Erektionsstörung',
     zusatz: 'Erektile Dysfunktion',
     gebiet: 'bauch',
+    bilder: { behandlung: 'erektionsstoerung-tabletten' },
     suche:
       'erektionsstoerung erektile dysfunktion ed impotenz potenzstoerung potenz potenzmittel erektion steif glied penis sex sildenafil viagra tadalafil cialis vardenafil avanafil pde5 pde-5 hemmer testosteron nitrat nitro poppers gefaesse arteriosklerose herzinfarkt warnzeichen',
     was: [
@@ -47,6 +48,7 @@ export const VERSORGUNG: Krankheit[] = [
     name: 'Harninkontinenz',
     zusatz: 'Blasenschwäche',
     gebiet: 'bauch',
+    bilder: { was: 'inkontinenz-arten', behandlung: 'harninkontinenz-blasentraining' },
     suche:
       'harninkontinenz inkontinenz blasenschwaeche urinverlust ungewollter urinabgang tropfen belastungsinkontinenz stressinkontinenz dranginkontinenz ueberaktive blase reizblase oab mischinkontinenz beckenboden beckenbodentraining blasentraining blasentagebuch restharn trospium solifenacin mirabegron oestrogen band schlinge botox',
     was: [

@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Fluss, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 /** Querschnitt durch einen Bronchus: links gesund, rechts im Asthmaanfall. */
 export default function Asthma() {
@@ -10,8 +10,11 @@ export default function Asthma() {
       <circle cx="185" cy="300" r="128" fill={F.petrol} stroke={F.linie} strokeWidth="4" />
       <circle cx="185" cy="300" r="106" fill={F.tief} stroke={F.linie} strokeWidth="4" />
       <Pfeil d="M185 360 L185 250" farbe={F.linie} breite={7} />
+      <Fluss d="M150 380 L150 220" farbe={F.petrolHell} breite={8} dauer={0.9} />
+      <Fluss d="M220 380 L220 220" farbe={F.petrolHell} breite={8} dauer={0.9} ab={0.45} />
 
       {/* Asthma */}
+      <g className="asthma-krampf-form">
       <circle cx="535" cy="300" r="150" fill="none" stroke={F.kupfer} strokeWidth="34" />
       <circle cx="535" cy="300" r="131" fill={F.petrol} stroke={F.linie} strokeWidth="4" />
       <path
@@ -28,6 +31,7 @@ export default function Asthma() {
         strokeWidth="9"
         strokeLinecap="round"
       />
+      </g>
 
       </g>
 

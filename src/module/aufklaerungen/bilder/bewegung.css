@@ -1,0 +1,620 @@
+/*
+ * Bewegte Schemazeichnungen (siehe „Bewegung“ in bausteine.tsx).
+ *
+ * Alles hier wirkt nur auf dem Bildschirm, nur in der Bühne (.aufkblatt__bild) und nur ohne
+ * „Bewegung reduzieren“. Ruhend zeigt jede Zeichnung ihren Endzustand: Keyframes beschreiben
+ * den Weg dorthin, der letzte Stand ist das normale SVG. Klassen und Keyframes einer einzelnen
+ * Zeichnung tragen ihren Dateinamen als Präfix, gemeinsame beginnen mit zb-.
+ */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* ---------- gemeinsame Bausteine ---------- */
+
+  .aufkblatt__bild .zb-folge {
+    animation: zb-folge var(--zb-dauer, 0.8s) cubic-bezier(0.16, 1, 0.3, 1) var(--zb-ab, 0s) both;
+  }
+
+  .aufkblatt__bild .zb-fluss {
+    stroke-dasharray: 0.1 34;
+    animation: zb-fluss var(--zb-dauer, 1.4s) linear var(--zb-ab, 0s) infinite both;
+  }
+
+  /* Gruppen, die skaliert oder verschoben werden, um ihre eigene Mitte. */
+  .aufkblatt__bild [class*='-form'] {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  /* ---------- krampfadern-wadenpumpe: locker füllen, anspannen und pumpen, im Wechsel ---------- */
+
+  .aufkblatt__bild .krampfadern-wadenpumpe-links {
+    animation: krampfadern-wadenpumpe-links 6s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .krampfadern-wadenpumpe-rechts {
+    animation: krampfadern-wadenpumpe-rechts 6s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .krampfadern-wadenpumpe-fuellen {
+    animation: krampfadern-wadenpumpe-fuellen 6s ease-in-out 0.6s infinite both;
+  }
+  .aufkblatt__bild .krampfadern-wadenpumpe-muskel-form {
+    animation: krampfadern-wadenpumpe-muskel 6s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .krampfadern-wadenpumpe-pumpen {
+    animation: krampfadern-wadenpumpe-pumpen 6s ease-in-out 0.6s infinite both;
+  }
+
+  /* ---------- khk-stent: Katheter einführen, Ballon weiten, Stent bleibt ---------- */
+
+  .aufkblatt__bild .khk-stent-katheter-form {
+    transform-origin: left center;
+    animation: khk-stent-katheter 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s both;
+  }
+  .aufkblatt__bild .khk-stent-spitze {
+    animation: khk-stent-spitze 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s both;
+  }
+  .aufkblatt__bild .khk-stent-ballon-form {
+    animation: khk-stent-ballon 1.6s cubic-bezier(0.16, 1, 0.3, 1) 3.3s both;
+  }
+  .aufkblatt__bild .khk-stent-gitter-oben {
+    animation: khk-stent-gitter-oben 1.6s cubic-bezier(0.16, 1, 0.3, 1) 3.3s both;
+  }
+  .aufkblatt__bild .khk-stent-gitter-unten {
+    animation: khk-stent-gitter-unten 1.6s cubic-bezier(0.16, 1, 0.3, 1) 3.3s both;
+  }
+
+  /* ---------- vorhofflimmern-schlaganfall: Gerinnsel entsteht, wandert, verstopft ---------- */
+
+  .aufkblatt__bild .vorhofflimmern-schlaganfall-gerinnsel-form {
+    animation: vorhofflimmern-schlaganfall-weg 7s ease-in-out 0.8s both;
+  }
+  .aufkblatt__bild .vorhofflimmern-schlaganfall-gehirn {
+    animation: vorhofflimmern-schlaganfall-gehirn 7s ease-out 0.8s both;
+  }
+
+  /* ---------- copd-lippenbremse: 2 s ein, 4 s aus, zum Mitatmen ---------- */
+
+  .aufkblatt__bild .copd-lippenbremse-ein {
+    animation: copd-lippenbremse-ein 6s ease-in-out 0.8s infinite;
+  }
+  .aufkblatt__bild .copd-lippenbremse-aus {
+    animation: copd-lippenbremse-aus 6s ease-in-out 0.8s infinite;
+  }
+  .aufkblatt__bild .copd-lippenbremse-lippen-form {
+    animation: copd-lippenbremse-lippen 6s ease-in-out 0.8s infinite;
+  }
+
+  /* ---------- rauchstopp-verlangen: die Welle läuft über die Zeitachse ---------- */
+
+  .aufkblatt__bild .rauchstopp-verlangen-welle {
+    animation: rauchstopp-verlangen-welle 7s linear 0.8s both;
+  }
+}
+
+@keyframes zb-folge {
+  from {
+    opacity: var(--zb-von, 0.18);
+  }
+}
+
+@keyframes zb-fluss {
+  from {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+  to {
+    opacity: 1;
+    stroke-dashoffset: -34;
+  }
+}
+
+/* Wadenpumpe: 0–45 % links (Füllen), 50–95 % rechts (Pumpen). */
+@keyframes krampfadern-wadenpumpe-links {
+  0%,
+  44% {
+    opacity: 1;
+  }
+  52%,
+  94% {
+    opacity: 0.4;
+  }
+}
+@keyframes krampfadern-wadenpumpe-rechts {
+  0%,
+  44% {
+    opacity: 0.4;
+  }
+  52%,
+  94% {
+    opacity: 1;
+  }
+}
+@keyframes krampfadern-wadenpumpe-fuellen {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  8% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-282px);
+  }
+  50%,
+  100% {
+    opacity: 0;
+    transform: translateY(-282px);
+  }
+}
+/* Locker: Muskelbauch schmal und lang (46 × 130), angespannt dick und kurz (62 × 112). */
+@keyframes krampfadern-wadenpumpe-muskel {
+  0%,
+  48%,
+  100% {
+    transform: scale(0.742, 1.161);
+  }
+  58%,
+  90% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes krampfadern-wadenpumpe-pumpen {
+  0%,
+  52% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  58% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  84% {
+    opacity: 1;
+    transform: translateY(-330px);
+  }
+  92%,
+  100% {
+    opacity: 0;
+    transform: translateY(-360px);
+  }
+}
+
+@keyframes khk-stent-katheter {
+  from {
+    transform: scaleX(0.04);
+  }
+}
+@keyframes khk-stent-spitze {
+  from {
+    transform: translateX(-250px);
+  }
+}
+/* Leerer Ballon ist 16 hoch, aufgedehnt 68. */
+@keyframes khk-stent-ballon {
+  from {
+    transform: scaleY(0.24);
+  }
+}
+@keyframes khk-stent-gitter-oben {
+  from {
+    transform: translateY(24px);
+  }
+}
+@keyframes khk-stent-gitter-unten {
+  from {
+    transform: translateY(-24px);
+  }
+}
+
+/* Weg entlang der Halsschlagader (Punkte auf der Kurve des Pfeils), dann zurück in den Vorhof. */
+@keyframes vorhofflimmern-schlaganfall-weg {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.3);
+  }
+  14%,
+  22% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  30% {
+    transform: translate(5px, -79px);
+  }
+  38% {
+    transform: translate(-1px, -136px);
+  }
+  46% {
+    transform: translate(-8px, -202px);
+  }
+  54% {
+    opacity: 1;
+    transform: translate(-6px, -286px);
+  }
+  60% {
+    opacity: 0;
+    transform: translate(0, -322px);
+  }
+  61%,
+  80% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+@keyframes vorhofflimmern-schlaganfall-gehirn {
+  0%,
+  56% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+}
+
+/* Lippenbremse: 0–33 % einatmen, 33–100 % ausatmen. */
+@keyframes copd-lippenbremse-ein {
+  0%,
+  30% {
+    opacity: 1;
+  }
+  37%,
+  94% {
+    opacity: 0.35;
+  }
+}
+@keyframes copd-lippenbremse-aus {
+  0%,
+  30% {
+    opacity: 0.35;
+  }
+  37%,
+  94% {
+    opacity: 1;
+  }
+}
+@keyframes copd-lippenbremse-lippen {
+  0%,
+  30%,
+  100% {
+    transform: scale(1);
+  }
+  40%,
+  90% {
+    transform: scale(1.18, 1.1);
+  }
+}
+
+@keyframes rauchstopp-verlangen-welle {
+  from {
+    clip-path: inset(-20px 100% -20px -20px);
+  }
+  to {
+    clip-path: inset(-20px -20px -20px -20px);
+  }
+}
+
+/* Lippenbremse: Luftstrom nur in seiner Phase. */
+@media screen and (prefers-reduced-motion: no-preference) {
+  .aufkblatt__bild .copd-lippenbremse-fluss-ein {
+    animation: copd-lippenbremse-fluss-ein 6s ease-in-out 0.8s infinite both;
+  }
+  .aufkblatt__bild .copd-lippenbremse-fluss-aus {
+    animation: copd-lippenbremse-fluss-aus 6s ease-in-out 0.8s infinite both;
+  }
+}
+@keyframes copd-lippenbremse-fluss-ein {
+  0%,
+  28% {
+    opacity: 1;
+  }
+  34%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes copd-lippenbremse-fluss-aus {
+  0%,
+  33% {
+    opacity: 0;
+  }
+  40%,
+  92% {
+    opacity: 1;
+  }
+  98%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ---------- zweite Runde ---------- */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* thrombose-fuesse: Fuß wippt um das Sprunggelenk, die Wade pumpt mit. */
+  .aufkblatt__bild .thrombose-fuesse-fuss {
+    transform-box: view-box;
+    transform-origin: 384px 580px;
+    animation: thrombose-fuesse-wippen 2.4s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .thrombose-fuesse-wade-form {
+    animation: thrombose-fuesse-wade 2.4s ease-in-out 0.6s infinite;
+  }
+
+  /* heuschnupfen-allergie: Pollen fliegt an, die Zelle schüttet Histamin aus. */
+  .aufkblatt__bild .heuschnupfen-allergie-pollen-form {
+    animation: heuschnupfen-allergie-pollen 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
+  }
+  .aufkblatt__bild .heuschnupfen-allergie-frei {
+    animation: heuschnupfen-allergie-frei 1.2s cubic-bezier(0.16, 1, 0.3, 1) 2.2s both;
+  }
+
+  /* cholesterin-gerinnsel: unten reißt die Ablagerung, das Gerinnsel wächst zu. */
+  .aufkblatt__bild .cholesterin-gerinnsel-pfropf-form {
+    transform-origin: center bottom;
+    animation: cholesterin-gerinnsel-pfropf 1.6s cubic-bezier(0.16, 1, 0.3, 1) 2s both;
+  }
+
+  /* lagerungsschwindel: lose Kristalle rollen im unteren Bogengang hin und her. */
+  .aufkblatt__bild .lagerungsschwindel-kristalle {
+    animation: lagerungsschwindel-rollen 7s ease-in-out 0.8s infinite;
+  }
+
+  /* reflux: Säure schwappt, der Schließmuskel gibt nach, Tropfen steigen auf. */
+  .aufkblatt__bild .reflux-saeure {
+    animation: reflux-schwappen 3.2s ease-in-out 0.4s infinite;
+  }
+  .aufkblatt__bild .reflux-muskel-links {
+    animation: reflux-muskel-links 3.2s ease-in-out 0.4s infinite;
+  }
+  .aufkblatt__bild .reflux-muskel-rechts {
+    animation: reflux-muskel-rechts 3.2s ease-in-out 0.4s infinite;
+  }
+}
+
+@keyframes thrombose-fuesse-wippen {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes thrombose-fuesse-wade {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.4, 0.9);
+  }
+}
+
+@keyframes heuschnupfen-allergie-pollen {
+  from {
+    opacity: 0;
+    transform: translateX(-150px) rotate(-120deg);
+  }
+  30% {
+    opacity: 1;
+  }
+}
+@keyframes heuschnupfen-allergie-frei {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  25% {
+    opacity: 1;
+  }
+}
+
+@keyframes cholesterin-gerinnsel-pfropf {
+  from {
+    opacity: 0;
+    transform: scale(0.2, 0.1);
+  }
+  20% {
+    opacity: 1;
+  }
+}
+
+/* Punkte auf dem Bogengang, bezogen auf die Ruhelage der Kristalle. */
+@keyframes lagerungsschwindel-rollen {
+  0%,
+  12%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(33px, -2px);
+  }
+  27% {
+    transform: translate(58px, -40px);
+  }
+  34%,
+  44% {
+    transform: translate(43px, -72px);
+  }
+  52% {
+    transform: translate(58px, -40px);
+  }
+  58% {
+    transform: translate(33px, -2px);
+  }
+  64% {
+    transform: translate(0, 0);
+  }
+  71% {
+    transform: translate(-40px, -9px);
+  }
+  78%,
+  82% {
+    transform: translate(-62px, -25px);
+  }
+  90% {
+    transform: translate(-30px, -3px);
+  }
+}
+
+@keyframes reflux-schwappen {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-14px);
+  }
+}
+@keyframes reflux-muskel-links {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(-4px);
+  }
+}
+@keyframes reflux-muskel-rechts {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(4px);
+  }
+}
+
+/* ---------- dritte Runde ---------- */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* herzschwaeche: das gesunde Herz schlägt kräftig, das schwache kaum. */
+  .aufkblatt__bild .herzschwaeche-gesund-form {
+    animation: herzschwaeche-gesund 1.1s ease-in-out 0.4s infinite;
+  }
+  .aufkblatt__bild .herzschwaeche-schwach-form {
+    animation: herzschwaeche-schwach 1.1s ease-in-out 0.4s infinite;
+  }
+
+  /* asthma: der Muskel um den kranken Atemweg zieht sich zusammen. */
+  .aufkblatt__bild .asthma-krampf-form {
+    animation: asthma-krampf 3.2s ease-in-out 0.6s infinite;
+  }
+
+  /* pavk-umgehung: die Umgehungen wachsen, danach fließt rechts Blut auch unterhalb. */
+  .aufkblatt__bild .pavk-umgehung-wachsen path {
+    stroke-dasharray: 1 1;
+    animation: pavk-umgehung-wachsen 2.4s cubic-bezier(0.16, 1, 0.3, 1) 1s both;
+  }
+  .aufkblatt__bild .pavk-umgehung-umgehungsfluss {
+    animation: pavk-umgehung-erscheinen 0.8s ease-out 2.8s both;
+  }
+
+  /* nierensteine: Urin drückt gegen den Stein, der Stein ruckelt, der Schmerz pocht. */
+  .aufkblatt__bild .nierensteine-stein-form {
+    animation: nierensteine-stein 1.8s ease-in-out 0.6s infinite;
+  }
+  .aufkblatt__bild .nierensteine-schmerz {
+    animation: nierensteine-schmerz 1.8s ease-in-out 0.6s infinite;
+  }
+
+  /* harnwegsinfekt: Bakterien steigen auf, die Blase entzündet sich. */
+  .aufkblatt__bild .harnwegsinfekt-aufsteigen {
+    animation: harnwegsinfekt-aufsteigen 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+  }
+  .aufkblatt__bild .harnwegsinfekt-wand {
+    animation: harnwegsinfekt-wand 1.4s ease-out 2.2s both;
+  }
+}
+
+@keyframes herzschwaeche-gesund {
+  0%,
+  45%,
+  100% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(0.86);
+  }
+}
+@keyframes herzschwaeche-schwach {
+  0%,
+  45%,
+  100% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(0.97);
+  }
+}
+
+@keyframes asthma-krampf {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  40%,
+  60% {
+    transform: scale(0.95);
+  }
+}
+
+@keyframes pavk-umgehung-wachsen {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes pavk-umgehung-erscheinen {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes nierensteine-stein {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(6deg);
+  }
+  55% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes nierensteine-schmerz {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes harnwegsinfekt-aufsteigen {
+  from {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  30% {
+    opacity: 1;
+  }
+}
+@keyframes harnwegsinfekt-wand {
+  from {
+    stroke: #a9cbd3;
+  }
+}

@@ -21,7 +21,7 @@ export function Gerinnsel({ schmerz = true }: { schmerz?: boolean }) {
           [486, 622, 494, 638],
         ].map(([x1, y1, x2, y2]) => (
           <line
-            key={x1 + y1}
+            key={`${x1}-${y1}`}
             x1={x1}
             y1={y1}
             x2={x2}

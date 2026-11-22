@@ -6,6 +6,7 @@ export const BAUCH: Krankheit[] = [
     name: 'Sodbrennen und Reflux',
     zusatz: 'Refluxkrankheit',
     gebiet: 'bauch',
+    bilder: { behandlung: 'reflux-behandlung', selbst: 'reflux-selbst' },
     suche: 'gerd sodbrennen magensaeure ppi pantoprazol omeprazol speiseroehre',
     was: [
       'Zwischen Speiseröhre und Magen sitzt ein Schließmuskel. Er lässt das Essen hinein und hält die Magensäure zurück.',
@@ -39,6 +40,7 @@ export const BAUCH: Krankheit[] = [
     name: 'Reizdarm',
     zusatz: 'Reizdarmsyndrom',
     gebiet: 'bauch',
+    bilder: { selbst: 'reizdarm-selbst' },
     suche: 'rds blaehungen durchfall verstopfung bauchschmerzen fodmap',
     was: [
       'Beim Reizdarm ist der Darm überempfindlich und arbeitet unregelmäßig – obwohl er gesund aussieht.',
@@ -72,6 +74,7 @@ export const BAUCH: Krankheit[] = [
     name: 'Blasenentzündung',
     zusatz: 'Harnwegsinfekt',
     gebiet: 'bauch',
+    bilder: { ursachen: 'harnwegsinfekt-ursachen', selbst: 'harnwegsinfekt-selbst' },
     suche: 'hwi zystitis blase brennen wasserlassen nierenbeckenentzuendung',
     was: [
       'Bei einer Blasenentzündung haben Bakterien die Blase besiedelt und reizen die Schleimhaut.',
@@ -105,6 +108,7 @@ export const BAUCH: Krankheit[] = [
     name: 'Nierenschwäche',
     zusatz: 'Chronische Nierenkrankheit',
     gebiet: 'bauch',
+    bilder: { ursachen: 'nierenschwaeche-ursachen', selbst: 'nierenschwaeche-selbst' },
     suche: 'niereninsuffizienz gfr kreatinin eiweiss urin dialyse ckd',
     was: [
       'Die Nieren filtern das Blut: Sie scheiden Abfallstoffe und überschüssiges Wasser mit dem Urin aus.',
@@ -138,6 +142,7 @@ export const BAUCH: Krankheit[] = [
     name: 'Magen-Darm-Infekt',
     zusatz: 'Brechdurchfall, Gastroenteritis',
     gebiet: 'bauch',
+    bilder: { ursachen: 'magen-darm-infekt-ursachen', selbst: 'magen-darm-infekt-selbst' },
     suche: 'durchfall erbrechen uebelkeit brechdurchfall norovirus rotavirus gastroenteritis diarrhoe austrocknung trinkloesung',
     was: [
       'Viren oder Bakterien entzünden die Schleimhaut von Magen und Darm.',
@@ -171,6 +176,7 @@ export const BAUCH: Krankheit[] = [
     name: 'Fettleber',
     zusatz: 'Steatosis hepatis, MASLD',
     gebiet: 'bauch',
+    bilder: { ursachen: 'fettleber-ursachen', behandlung: 'fettleber-behandlung' },
     suche: 'fettleber steatose masld nafld nash mash leberwerte gamma-gt leberzirrhose fib-4 elastografie',
     was: [
       'Bei einer Fettleber lagert sich Fett in den Leberzellen ein. Sie ist sehr häufig – etwa jeder vierte Erwachsene ist betroffen.',
@@ -204,6 +210,7 @@ export const BAUCH: Krankheit[] = [
     name: 'Gallensteine',
     zusatz: 'Cholezystolithiasis',
     gebiet: 'bauch',
+    bilder: { behandlung: 'gallensteine-behandlung' },
     suche: 'galle gallenblase gallenkolik gallenstein cholezystitis cholezystektomie oberbauchschmerzen gelbsucht',
     was: [
       'Die Gallenblase sitzt unter der Leber. Sie sammelt die Galle, die bei der Verdauung von Fett hilft.',
@@ -237,6 +244,7 @@ export const BAUCH: Krankheit[] = [
     name: 'Nierensteine',
     zusatz: 'Urolithiasis, Nierenkolik',
     gebiet: 'bauch',
+    bilder: { behandlung: 'nierensteine-behandlung', selbst: 'nierensteine-selbst' },
     suche: 'nierenstein harnleiterstein nierenkolik kolik flankenschmerz urolithiasis harnstein stosswelle',
     was: [
       'Nierensteine sind feste Kristalle, die sich aus Salzen im Urin bilden.',
@@ -270,6 +278,7 @@ export const BAUCH: Krankheit[] = [
     name: 'Gutartige Prostatavergrößerung',
     zusatz: 'Benigne Prostatahyperplasie, BPH',
     gebiet: 'bauch',
+    bilder: { behandlung: 'prostatavergroesserung-behandlung' },
     suche: 'prostata bph benigne prostatahyperplasie wasserlassen harnstrahl nykturie restharn tamsulosin finasterid harnverhalt',
     was: [
       'Die Prostata sitzt unter der Blase und umschließt die Harnröhre wie ein Ring.',

@@ -15,7 +15,7 @@
 //   - Vergleich „gesund / erkrankt“ nebeneinander oder übereinander, gleiche
 //     Größe, gleiche Blickrichtung.
 
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 
 export const F = {
   linie: '#eef6f7',
@@ -127,6 +127,76 @@ export function Pfeil({
       strokeLinejoin="round"
       markerEnd="url(#pfeilspitze)"
     />
+  );
+}
+
+// ---------- Bewegung ----------
+//
+// Einige Zeichnungen bewegen sich auf dem Patientenbildschirm (CSS in bewegung.css).
+// Grundregel: Das ruhende SVG ist der Endzustand. Die Bewegung läuft nur unter
+// .aufkblatt__bild am Bildschirm und ohne „Bewegung reduzieren“; Druck, Handzettel,
+// /korrektur und zeige_svg.mjs zeigen dasselbe Bild ohne Bewegung. Bewegt werden nur
+// Formen und Gruppen, nie Textinhalte (sonst greift die Übersetzung nicht).
+// Eigene Keyframes und Klassen einer Zeichnung tragen ihren Dateinamen als Präfix.
+
+/**
+ * Blendet eine Gruppe nach `ab` Sekunden ein (von `von` auf volle Deckkraft) und lässt sie
+ * stehen. Für Abläufe in Reihenfolge: Stationen eines Kreislaufs, Schritte, der Ausweg zuletzt.
+ */
+export function Folge({
+  ab,
+  von = 0.18,
+  dauer = 0.8,
+  children,
+}: {
+  ab: number;
+  von?: number;
+  dauer?: number;
+  children: ReactNode;
+}) {
+  const stil = { '--zb-ab': `${ab}s`, '--zb-von': von, '--zb-dauer': `${dauer}s` } as CSSProperties;
+  return (
+    <g className="zb-folge" style={stil}>
+      {children}
+    </g>
+  );
+}
+
+/**
+ * Kleine Punkte, die entlang eines Pfades wandern – Blut, Luft. Nur in Bewegung sichtbar;
+ * ruhend bleibt der gezeichnete Pfeil darunter allein stehen. `klasse` legt eine Gruppe
+ * darum, etwa um den Fluss nur in einer Phase zu zeigen.
+ */
+export function Fluss({
+  d,
+  farbe = F.linie,
+  breite = 7,
+  dauer = 1.4,
+  ab = 0,
+  klasse,
+}: {
+  d: string;
+  farbe?: string;
+  breite?: number;
+  /** Sekunden, bis ein Punkt seinen Abstand zum nächsten zurückgelegt hat. */
+  dauer?: number;
+  ab?: number;
+  klasse?: string;
+}) {
+  const stil = { '--zb-dauer': `${dauer}s`, '--zb-ab': `${ab}s` } as CSSProperties;
+  return (
+    <g className={klasse}>
+      <path
+        className="zb-fluss"
+        d={d}
+        fill="none"
+        stroke={farbe}
+        strokeWidth={breite}
+        strokeLinecap="round"
+        opacity="0"
+        style={stil}
+      />
+    </g>
   );
 }
 

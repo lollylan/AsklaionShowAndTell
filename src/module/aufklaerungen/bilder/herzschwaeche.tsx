@@ -1,4 +1,4 @@
-import { Etikett, F, Pfeil, Unterzeile, Zeichnung } from './bausteine';
+import { Etikett, F, Fluss, Pfeil, Unterzeile, Zeichnung } from './bausteine';
 
 // Herzform um den Nullpunkt, etwa 226 breit und 220 hoch.
 const HERZ =
@@ -9,18 +9,24 @@ export default function Herzschwaeche() {
   return (
     <Zeichnung titel="Zwei Herzen im Vergleich: das gesunde Herz mit dickem Muskel pumpt kräftig, das schwache Herz ist vergrößert, dünnwandig und pumpt nur wenig Blut weiter">
       {/* Gesundes Herz: dicker Muskel, kleine Kammer, kräftiger Pfeil */}
-      <g transform="translate(185 390)" strokeLinejoin="round">
-        <path d={HERZ} fill={F.petrol} stroke={F.linie} strokeWidth="4" />
-        <path d={HERZ} transform="translate(0 8) scale(0.5)" fill={F.tief} stroke={F.linie} strokeWidth="8" />
+      <g className="herzschwaeche-gesund-form">
+        <g transform="translate(185 390)" strokeLinejoin="round">
+          <path d={HERZ} fill={F.petrol} stroke={F.linie} strokeWidth="4" />
+          <path d={HERZ} transform="translate(0 8) scale(0.5)" fill={F.tief} stroke={F.linie} strokeWidth="8" />
+        </g>
       </g>
       <Pfeil d="M185 322 L185 165" breite={12} />
+      <Fluss d="M185 318 L185 178" farbe={F.petrolHell} breite={10} dauer={0.6} />
 
       {/* Schwaches Herz: vergrößert, dünne Wand, dünner Pfeil */}
-      <g transform="translate(535 380) scale(1.3)" strokeLinejoin="round">
-        <path d={HERZ} fill={F.kupfer} stroke={F.linie} strokeWidth="3.1" />
-        <path d={HERZ} transform="translate(0 6) scale(0.86)" fill={F.tief} stroke={F.linie} strokeWidth="3.6" />
+      <g className="herzschwaeche-schwach-form">
+        <g transform="translate(535 380) scale(1.3)" strokeLinejoin="round">
+          <path d={HERZ} fill={F.kupfer} stroke={F.linie} strokeWidth="3.1" />
+          <path d={HERZ} transform="translate(0 6) scale(0.86)" fill={F.tief} stroke={F.linie} strokeWidth="3.6" />
+        </g>
       </g>
       <Pfeil d="M535 296 L535 206" farbe={F.kupferHell} breite={4} />
+      <Fluss d="M535 294 L535 216" farbe={F.kupfer} breite={8} dauer={2.4} />
 
       <Etikett x={185} y={62} anker="middle">
         Gesundes Herz

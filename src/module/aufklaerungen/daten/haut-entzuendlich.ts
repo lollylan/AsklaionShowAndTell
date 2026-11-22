@@ -9,6 +9,7 @@ export const HAUT_ENTZUENDLICH: Krankheit[] = [
     name: 'Neurodermitis',
     zusatz: 'Atopische Dermatitis, atopisches Ekzem',
     gebiet: 'haut',
+    bilder: { behandlung: 'neurodermitis-stufen', selbst: 'neurodermitis-kreislauf' },
     suche:
       'neurodermitis atopische dermatitis atopisches ekzem endogenes ekzem ekzem juckreiz trockene haut hautbarriere atopie heuschnupfen asthma allergie basispflege rückfettung rueckfettung kortison kortisoncreme glukokortikoid tacrolimus pimecrolimus calcineurin proaktiv lichttherapie uv biologika dupilumab tralokinumab lebrikizumab jak-hemmer ciclosporin staphylokokken ekzema herpeticatum milchschorf beugen kniekehle ellenbeuge',
     was: [
@@ -43,6 +44,7 @@ export const HAUT_ENTZUENDLICH: Krankheit[] = [
     name: 'Schuppenflechte',
     zusatz: 'Psoriasis',
     gebiet: 'haut',
+    bilder: { was: 'schuppenflechte-stellen', behandlung: 'schuppenflechte-stufen' },
     suche:
       'schuppenflechte psoriasis psoriasis vulgaris plaque plaques schuppen silbrig ellenbogen knie kopfhaut nagel tüpfelnägel tuepfelnaegel psoriasis-arthritis psoriasisarthritis gelenke autoimmun calcipotriol vitamin d kortison salicylsäure salicylsaeure lichttherapie uvb methotrexat mtx fumarsäure fumarsaeure apremilast biologika köbner koebner',
     was: [
@@ -77,6 +79,7 @@ export const HAUT_ENTZUENDLICH: Krankheit[] = [
     name: 'Akne',
     zusatz: 'Acne vulgaris',
     gebiet: 'haut',
+    bilder: { behandlung: 'akne-zeitplan' },
     suche:
       'akne acne vulgaris pickel mitesser komedonen pusteln papeln knoten talg talgdrüse talgdruese pubertät pubertaet narben benzoylperoxid adapalen tretinoin retinoid azelainsäure azelainsaeure clindamycin doxycyclin minocyclin isotretinoin antibabypille pille hormone spätakne spaetakne',
     was: [
@@ -111,6 +114,7 @@ export const HAUT_ENTZUENDLICH: Krankheit[] = [
     name: 'Rosazea',
     zusatz: 'Kupferfinne, Couperose',
     gebiet: 'haut',
+    bilder: { ursachen: 'rosazea-ausloeser' },
     suche:
       'rosazea rosacea kupferfinne couperose gesichtsrötung gesichtsroetung rotes gesicht flush erröten erroeten äderchen aederchen teleangiektasien papeln pusteln rhinophym knollennase augen okuläre rosazea demodex milben metronidazol azelainsäure azelainsaeure ivermectin brimonidin oxymetazolin doxycyclin isotretinoin laser',
     was: [
@@ -145,6 +149,7 @@ export const HAUT_ENTZUENDLICH: Krankheit[] = [
     name: 'Nesselsucht',
     zusatz: 'Urtikaria',
     gebiet: 'haut',
+    bilder: { behandlung: 'nesselsucht-stufen' },
     suche:
       'nesselsucht urtikaria urticaria nesselausschlag quaddeln quaddel juckreiz histamin mastzellen angioödem angiooedem quincke-ödem quincke schwellung lippen augenlider akut chronisch spontan induzierbar kälte druck wärme dermographismus antihistaminikum antihistaminika cetirizin loratadin desloratadin fexofenadin bilastin omalizumab ciclosporin kortison allergie anaphylaxie adrenalin ace-hemmer',
     was: [

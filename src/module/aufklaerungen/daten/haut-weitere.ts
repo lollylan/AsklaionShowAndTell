@@ -9,6 +9,7 @@ export const HAUT_WEITERE: Krankheit[] = [
     name: 'Kontaktekzem',
     zusatz: 'Allergisch und irritativ, Handekzem',
     gebiet: 'haut',
+    bilder: { behandlung: 'kontaktekzem-pflastertest' },
     suche:
       'kontaktekzem kontaktdermatitis kontaktallergie ekzem handekzem abnutzungsekzem irritativ toxisch allergisch nickel nickelallergie modeschmuck jeansknopf duftstoffe konservierungsstoffe gummi latex handschuhe chromat zement haarfarbe ppd feuchtarbeit epikutantest pflastertest allergietest hautschutz hautpflege kortison kortisoncreme berufskrankheit hautarztverfahren hautarztbericht',
     was: [
@@ -43,6 +44,7 @@ export const HAUT_WEITERE: Krankheit[] = [
     name: 'Weißer Hautkrebs',
     zusatz: 'Basalzellkrebs, Stachelzellkrebs, aktinische Keratose',
     gebiet: 'haut',
+    bilder: { behandlung: 'weisser-hautkrebs-behandlung' },
     suche:
       'weisser hautkrebs weißer hautkrebs heller hautkrebs basalzellkarzinom basaliom bzk basalzellkrebs plattenepithelkarzinom spinaliom spinozelluläres karzinom pek stachelzellkrebs aktinische keratose ak lichtschwiele vorstufe sonnenschaden sonnenterrassen glatze kopfhaut unterlippe cheilitis actinica uv berufskrankheit 5103 kryotherapie vereisung photodynamische therapie pdt imiquimod fluorouracil 5-fu mohs operation hautkrebsscreening früherkennung organtransplantation',
     was: [
@@ -77,6 +79,7 @@ export const HAUT_WEITERE: Krankheit[] = [
     name: 'Warzen',
     zusatz: 'Gewöhnliche Warzen, Dornwarzen, Dellwarzen',
     gebiet: 'haut',
+    bilder: { selbst: 'warzen-selbst' },
     suche:
       'warzen warze verrucae verruca vulgaris gewöhnliche warze stachelwarze dornwarze verruca plantaris fußsohle hühnerauge clavus dellwarzen molluscum contagiosum hpv humane papillomviren viren salicylsäure warzenpflaster vereisung kryotherapie stickstoff ameisensäure fluorouracil kürettage laser schwimmbad kinder',
     was: [
@@ -111,6 +114,7 @@ export const HAUT_WEITERE: Krankheit[] = [
     name: 'Lippenherpes',
     zusatz: 'Herpes labialis',
     gebiet: 'haut',
+    bilder: { ursachen: 'lippenherpes-nervenknoten' },
     suche:
       'lippenherpes herpes labialis herpes simplex hsv hsv-1 fieberbläschen fieberblasen bläschen lippe mundwinkel kalte wunde aciclovir penciclovir valaciclovir herpescreme herpespflaster zinkpaste mundfäule stomatitis aphthosa rückfall ansteckend küssen neugeborene säugling eczema herpeticatum neurodermitis herpes auge keratitis',
     was: [

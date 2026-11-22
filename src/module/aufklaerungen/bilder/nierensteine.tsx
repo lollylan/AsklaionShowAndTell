@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Fluss, KONTUR, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 /** Harnleiter als Röhre: helle Kontur, darin der Urin. */
 function Harnleiter({ d, breite }: { d: string; breite: number }) {
@@ -17,6 +17,7 @@ export default function Nierensteine() {
       {/* Harnleiter: oberhalb des Steins gestaut und weit, darunter schmal */}
       <Harnleiter d="M292 232 C340 260 360 330 368 404" breite={24} />
       <Harnleiter d="M374 436 C384 490 400 520 424 540" breite={10} />
+      <Fluss d="M300 238 C340 260 358 320 364 396" farbe={F.linie} breite={8} dauer={1.6} />
 
       {/* Niere, Einbuchtung nach rechts zum Harnleiter */}
       <g transform="translate(250 220)">
@@ -36,6 +37,7 @@ export default function Nierensteine() {
       </g>
 
       {/* Stein */}
+      <g className="nierensteine-stein-form">
       <path
         d="M354 404 L374 398 L390 410 L392 428 L378 442 L360 438 L350 422 Z"
         fill={F.kupfer}
@@ -43,12 +45,13 @@ export default function Nierensteine() {
         strokeWidth="4"
         strokeLinejoin="round"
       />
+      </g>
 
       {/* Blase */}
       <ellipse cx="440" cy="600" rx="120" ry="72" {...KONTUR} fill={F.petrol} />
 
       {/* Schmerz in der Flanke */}
-      <g stroke={F.kupferHell} strokeWidth="5" strokeLinecap="round">
+      <g className="nierensteine-schmerz" stroke={F.kupferHell} strokeWidth="5" strokeLinecap="round">
         <path d="M150 160 L110 140" />
         <path d="M144 214 L100 214" />
         <path d="M150 268 L110 288" />

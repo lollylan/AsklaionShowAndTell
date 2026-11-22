@@ -1,4 +1,4 @@
-import { Etikett, F, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
+import { Etikett, F, Folge, KONTUR, Pfeil, Unterzeile, Zeichnung, Zeiger } from './bausteine';
 
 /** Bakterien als kleine Stäbchen: [x, y, Drehwinkel]. */
 const STAEBCHEN_BLASE: [number, number, number][] = [
@@ -67,13 +67,18 @@ export default function Harnwegsinfekt() {
       {/* Blase mit entzündeter Wand */}
       <path
         d="M360 400 C440 400 470 450 465 500 C460 550 410 575 360 575 C310 575 260 550 255 500 C250 450 280 400 360 400 Z"
+        className="harnwegsinfekt-wand"
         fill={F.tief}
         stroke={F.kupfer}
         strokeWidth="18"
         strokeLinejoin="round"
       />
-      <Staebchen liste={STAEBCHEN_BLASE} />
-      <Staebchen liste={STAEBCHEN_ROEHRE} />
+      <Folge ab={1.9} von={0} dauer={1}>
+        <Staebchen liste={STAEBCHEN_BLASE} />
+      </Folge>
+      <g className="harnwegsinfekt-aufsteigen">
+        <Staebchen liste={STAEBCHEN_ROEHRE} />
+      </g>
 
       <Pfeil d="M398 664 L398 602" farbe={F.kupfer} breite={6} />
 
@@ -86,12 +91,14 @@ export default function Harnwegsinfekt() {
         Harnleiter
       </Etikett>
 
-      <Etikett x={492} y={482} farbe={F.kupferHell}>
-        Blase
-      </Etikett>
-      <Etikett x={492} y={514} farbe={F.kupferHell}>
-        entzündet
-      </Etikett>
+      <Folge ab={2.8} von={0.18}>
+        <Etikett x={492} y={482} farbe={F.kupferHell}>
+          Blase
+        </Etikett>
+        <Etikett x={492} y={514} farbe={F.kupferHell}>
+          entzündet
+        </Etikett>
+      </Folge>
 
       <Unterzeile x={334} y={634} anker="end">
         Harnröhre

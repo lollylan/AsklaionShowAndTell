@@ -6,6 +6,7 @@ export const KOPF: Krankheit[] = [
     name: 'Depression',
     gebiet: 'kopf',
     suche: 'depressiv antidepressiva burnout erschoepfung psychotherapie',
+    bilder: { behandlung: 'depression-behandlung', selbst: 'depression-selbst' },
     was: [
       'Eine Depression ist eine Erkrankung – keine Schwäche und keine Frage des Willens.',
       'Über mindestens zwei Wochen sind Stimmung, Antrieb und Freude deutlich gedrückt.',
@@ -38,6 +39,7 @@ export const KOPF: Krankheit[] = [
     name: 'Migräne',
     gebiet: 'kopf',
     suche: 'kopfschmerz aura triptan',
+    bilder: { behandlung: 'migraene-behandlung', selbst: 'migraene-selbst' },
     was: [
       'Migräne ist eine Erkrankung des Gehirns mit anfallsartigen, starken Kopfschmerzen.',
       'Der Schmerz ist meist einseitig, pochend und wird bei Bewegung schlimmer.',
@@ -71,6 +73,7 @@ export const KOPF: Krankheit[] = [
     zusatz: 'Zum Beispiel Alzheimer',
     gebiet: 'kopf',
     suche: 'alzheimer vergesslichkeit gedaechtnis vaskulaere demenz',
+    bilder: { ursachen: 'demenz-ursachen' },
     was: [
       'Bei einer Demenz lassen Gedächtnis und Denkvermögen so stark nach, dass der Alltag schwieriger wird.',
       'Anfangs fallen vor allem neue Dinge schwer: Termine, Namen, gerade Gesagtes.',
@@ -104,6 +107,7 @@ export const KOPF: Krankheit[] = [
     zusatz: 'Herpes zoster',
     gebiet: 'kopf',
     suche: 'herpes zoster windpocken nervenschmerzen neuralgie',
+    bilder: { ursachen: 'guertelrose-ursachen', behandlung: 'guertelrose-behandlung' },
     was: [
       'Die Gürtelrose wird durch das Windpocken-Virus ausgelöst. Es bleibt nach den Windpocken lebenslang in Nervenknoten und kann wieder aufwachen.',
       'Dann wandert es an einem Nerv entlang zur Haut.',
@@ -137,6 +141,7 @@ export const KOPF: Krankheit[] = [
     zusatz: 'Panikattacken und ständige Sorgen',
     gebiet: 'kopf',
     suche: 'angst panik panikattacke panikstoerung phobie generalisierte angststoerung herzrasen',
+    bilder: { selbst: 'angststoerung-selbst' },
     was: [
       'Angst ist eigentlich ein wichtiges Warnsignal. Bei einer Angststörung kommt sie zu oft, zu stark oder ohne echte Gefahr.',
       'Bei einer Panikattacke kommen plötzlich Herzrasen, Atemnot, Zittern, Schwindel und Todesangst. Nach Minuten klingt sie von selbst ab.',
@@ -170,6 +175,7 @@ export const KOPF: Krankheit[] = [
     zusatz: 'Ein- und Durchschlafstörung, Insomnie',
     gebiet: 'kopf',
     suche: 'insomnie schlaflosigkeit einschlafstoerung durchschlafstoerung schlafmittel zopiclon zolpidem',
+    bilder: { ursachen: 'schlafstoerung-ursachen', selbst: 'schlafstoerung-selbst' },
     was: [
       'Bei einer Schlafstörung schlafen Sie schlecht ein, wachen nachts oft auf oder viel zu früh am Morgen.',
       'Behandeln sollte man sie, wenn das an mindestens drei Nächten pro Woche über Wochen so geht und Sie tagsüber müde oder gereizt sind.',
@@ -203,6 +209,7 @@ export const KOPF: Krankheit[] = [
     zusatz: 'Geschädigte Nerven an Füßen und Händen',
     gebiet: 'kopf',
     suche: 'polyneuropathie pnp neuropathie neuropathische schmerzen kribbeln taubheit brennen pregabalin diabetischer fuss',
+    bilder: { behandlung: 'polyneuropathie-behandlung', selbst: 'polyneuropathie-selbst' },
     was: [
       'Bei einer Polyneuropathie sind viele lange Nerven geschädigt. Meist beginnt es an beiden Füßen und steigt langsam auf, später auch an den Händen.',
       'Typisch sind Kribbeln, Brennen, Ameisenlaufen und ein Gefühl wie auf Watte. Kälte, Wärme und Schmerz spürt man schlechter.',

@@ -229,11 +229,26 @@
             "text": "Streifen bis zur Achsel"
           }
         ]
+      },
+      {
+        "datei": "guertelrose-2.jpg",
+        "titel": "Bläschenband an der Flanke",
+        "art": "Foto",
+        "urheber": "melvil",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Herpes_zoster_3days_passed.jpg",
+        "marken": [
+          {
+            "x": 0.5,
+            "y": 0.35,
+            "text": "Band aus Bläschen und Krusten"
+          }
+        ]
       }
     ],
     "saetze": [
-      "Man sieht gerötete Haut mit vielen kleinen, dicht gruppierten Bläschen – in einem Band, das nur auf einer Körperseite von der Brust zur Achsel zieht.",
-      "Das Band folgt genau dem Hautgebiet eines einzelnen Nervs, in dem das Windpocken-Virus wieder aktiv geworden ist. Deshalb brennt und schmerzt es oft schon, bevor man etwas sieht.",
+      "Man sieht gerötete Haut mit vielen kleinen, dicht gruppierten Bläschen – immer in einem Band auf nur einer Körperseite.",
+      "Das Band folgt genau dem Hautgebiet eines einzelnen Nervs, in dem das Windpocken-Virus wieder aktiv geworden ist. Rechts zieht es wie ein halber Gürtel um die Flanke.",
       "Meist erkennen wir die Gürtelrose auf einen Blick; eine Laboruntersuchung braucht es nur selten."
     ]
   },
@@ -1346,6 +1361,910 @@
       "Altersflecken sind flach, haben eine gleichmäßige Farbe und einen glatten Rand.",
       "Sie sitzen dort, wo viel Sonne hinkommt – am häufigsten auf dem Handrücken.",
       "Sieht ein Fleck anders aus als die übrigen, bitte zeigen."
+    ]
+  },
+  "neurodermitis": {
+    "aufnahmen": [
+      {
+        "datei": "neurodermitis-1.jpg",
+        "titel": "Säugling: Neurodermitis am Knöchel",
+        "art": "Foto",
+        "urheber": "Gzzz",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Atopic_dermatitis_child_2.jpg",
+        "marken": [
+          {
+            "x": 0.6,
+            "y": 0.8,
+            "text": "rot, trocken, schuppig"
+          }
+        ]
+      },
+      {
+        "datei": "neurodermitis-2.jpg",
+        "titel": "Erwachsener: verdickte Haut am Arm",
+        "art": "Foto",
+        "urheber": "G.steph.rocket",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Dermatite_o_eczema_atopico_avambraccio_2015.jpg",
+        "marken": [
+          {
+            "x": 0.45,
+            "y": 0.55,
+            "text": "vergröberte, raue Haut"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links ein zwei Monate altes Baby: Die Haut in der Beugefalte am Knöchel ist gerötet, trocken und schuppt.",
+      "Rechts der Arm eines Erwachsenen: Nach langem Kratzen wird die Haut dicker, die Hautfelder treten grob hervor.",
+      "Nässt die Haut, bilden sich gelbe Krusten oder viele kleine Bläschen, bitte rasch kommen."
+    ]
+  },
+  "schuppenflechte": {
+    "aufnahmen": [
+      {
+        "datei": "schuppenflechte-1.jpg",
+        "titel": "Herd am Ellenbogen",
+        "art": "Foto",
+        "urheber": "Alborz Fallah",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Psoriasis_in_elbow.jpg",
+        "marken": [
+          {
+            "x": 0.58,
+            "y": 0.57,
+            "text": "silbrig-weiße Schuppen"
+          },
+          {
+            "x": 0.33,
+            "y": 0.55,
+            "text": "scharfer Rand"
+          }
+        ]
+      },
+      {
+        "datei": "schuppenflechte-2.jpg",
+        "titel": "Tüpfel im Fingernagel",
+        "art": "Foto",
+        "urheber": "Seenms",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Luszczyca_paznokcia.jpg",
+        "marken": [
+          {
+            "x": 0.55,
+            "y": 0.62,
+            "text": "kleine Dellen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Am Ellenbogen sitzt ein scharf begrenzter, roter Herd, bedeckt mit silbrig-weißen Schuppen.",
+      "Auch die Nägel können beteiligt sein: Typisch sind kleine Dellen, wie mit einer Nadel gestochen.",
+      "Schmerzen dazu Gelenke oder sind sie morgens steif, sagen Sie es uns – das zeigt kein Hautfoto."
+    ]
+  },
+  "akne": {
+    "aufnahmen": [
+      {
+        "datei": "akne-2.jpg",
+        "titel": "Mitesser auf der Stirn",
+        "art": "Foto",
+        "urheber": "Roshu Bangal",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Acne_vulgaris_on_a_very_oily_skin.jpg",
+        "marken": [
+          {
+            "x": 0.36,
+            "y": 0.2,
+            "text": "geschlossene Mitesser"
+          },
+          {
+            "x": 0.55,
+            "y": 0.75,
+            "text": "fettig glänzende Haut"
+          }
+        ]
+      },
+      {
+        "datei": "akne-1.jpg",
+        "titel": "Entzündete Akne am Rücken",
+        "art": "Foto",
+        "urheber": "James Heilman, MD",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Backacne.JPG",
+        "marken": [
+          {
+            "x": 0.81,
+            "y": 0.24,
+            "text": "tiefer Knoten"
+          },
+          {
+            "x": 0.5,
+            "y": 0.23,
+            "text": "entzündeter Pickel"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links eine leichtere Akne: viele kleine helle Knötchen – verstopfte Poren – auf fettiger Haut.",
+      "Rechts eine stärkere Akne am Rücken mit roten Pickeln und tiefen Knoten. Diese können Narben hinterlassen.",
+      "Gerade bei Knoten lohnt eine frühe Behandlung. Bitte nicht ausdrücken."
+    ]
+  },
+  "rosazea": {
+    "aufnahmen": [
+      {
+        "datei": "rosazea-1.jpg",
+        "titel": "Rosazea an Nase und Wange",
+        "art": "Foto",
+        "urheber": "M. Sand, D. Sand, C. Thrandorf, V. Paech, P. Altmeyer, F. G. Bechara",
+        "lizenz": "CC BY 2.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Rosacea_01.jpg",
+        "marken": [
+          {
+            "x": 0.25,
+            "y": 0.5,
+            "text": "gerötete Nase mit Knötchen"
+          },
+          {
+            "x": 0.6,
+            "y": 0.35,
+            "text": "Rötung der Wange"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Nase und Wange sind flächig gerötet, darin liegen kleine rote Knötchen und einzelne Eiterpickel.",
+      "Anders als bei Akne sieht man keine Mitesser. Typisch ist die Mitte des Gesichts.",
+      "Werden die Augen rot, brennen sie oder sehen Sie schlechter, bitte am selben Tag zum Augenarzt."
+    ]
+  },
+  "nesselsucht": {
+    "aufnahmen": [
+      {
+        "datei": "nesselsucht-1.jpg",
+        "titel": "Quaddeln am Bein",
+        "art": "Foto",
+        "urheber": "Doc James",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Hives2022.jpg",
+        "marken": [
+          {
+            "x": 0.45,
+            "y": 0.3,
+            "text": "erhabene Quaddeln"
+          },
+          {
+            "x": 0.42,
+            "y": 0.62,
+            "text": "dazwischen normale Haut"
+          }
+        ]
+      },
+      {
+        "datei": "nesselsucht-2.jpg",
+        "titel": "Quaddeln nach Reiben",
+        "art": "Foto",
+        "urheber": "R1carver",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Dermatographia.JPG",
+        "marken": [
+          {
+            "x": 0.55,
+            "y": 0.3,
+            "text": "Schrift als Quaddeln"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links blassrote, erhabene Schwellungen mit unregelmäßigem Rand, die zu Flächen zusammenfließen. Jede einzelne verschwindet innerhalb eines Tages.",
+      "Rechts wurde mit einem stumpfen Gegenstand ein Wort auf den Arm geschrieben. Nach Minuten erscheint es als Quaddel – so lösen Druck und Reiben bei manchen die Nesselsucht aus.",
+      "Schwellen Zunge oder Hals an oder bekommen Sie schlecht Luft: sofort 112."
+    ]
+  },
+  "kontaktekzem": {
+    "aufnahmen": [
+      {
+        "datei": "kontaktekzem-1.jpg",
+        "titel": "Allergie auf ein Pflaster",
+        "art": "Foto",
+        "urheber": "Maria Sieglinda von Nudeldorf",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Transtec_allergy_few_days_old.jpg",
+        "marken": [
+          {
+            "x": 0.45,
+            "y": 0.55,
+            "text": "Rötung genau unter dem Pflaster"
+          }
+        ]
+      },
+      {
+        "datei": "kontaktekzem-2.jpg",
+        "titel": "Handekzem vom Spülen",
+        "art": "Foto",
+        "urheber": "Hannah Clover",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Contact_dermatitis_from_dishwashing_2.jpg",
+        "marken": [
+          {
+            "x": 0.66,
+            "y": 0.4,
+            "text": "gerötet und schuppig"
+          },
+          {
+            "x": 0.18,
+            "y": 0.7,
+            "text": "Einriss"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links eine Allergie auf ein Schmerzpflaster: Die Haut ist genau dort rot, wo das Pflaster klebte – mit scharfer, eckiger Grenze.",
+      "Rechts ein Handekzem durch häufiges Spülen: Die Haut über den Fingern ist rot, rau und schuppt, an einer Stelle ist sie eingerissen.",
+      "Welcher Stoff eine Allergie auslöst, zeigt erst der Pflastertest beim Hautarzt."
+    ]
+  },
+  "weisser-hautkrebs": {
+    "aufnahmen": [
+      {
+        "datei": "weisser-hautkrebs-1.jpg",
+        "titel": "Vorstufe: aktinische Keratosen",
+        "art": "Foto",
+        "urheber": "Dr. Thomas Brinkmeier",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Aktinische_Keratosen_am_Handr%C3%BCcken,_sog._Feldkanzerisierung,_%C2%A9WIKIDERM.jpg",
+        "marken": [
+          {
+            "x": 0.45,
+            "y": 0.5,
+            "text": "raue, schuppige Stellen"
+          }
+        ]
+      },
+      {
+        "datei": "weisser-hautkrebs-2.jpg",
+        "titel": "Basalzellkrebs an der Nase",
+        "art": "Foto",
+        "urheber": "Dr. Thomas Brinkmeier",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Nodul%C3%A4res_Basalzellkarzinom,_WIKIDERM%C2%AE.jpg",
+        "marken": [
+          {
+            "x": 0.5,
+            "y": 0.48,
+            "text": "glasiges Knötchen mit Äderchen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links ein sonnengeschädigter Handrücken mit vielen rauen, rötlich-schuppigen Stellen – der Vorstufe. Man fühlt sie oft besser, als man sie sieht.",
+      "Rechts ein Basalzellkrebs: ein glasig glänzendes Knötchen mit feinen Äderchen an der Nase.",
+      "Zeigen Sie uns jede Stelle, die wächst, blutet oder nach vier Wochen nicht abheilt."
+    ]
+  },
+  "warzen": {
+    "aufnahmen": [
+      {
+        "datei": "warzen-1.jpg",
+        "titel": "Gewöhnliche Warze am Finger",
+        "art": "Foto",
+        "urheber": "Klaus D. Peter, Wiehl, Germany",
+        "lizenz": "CC BY 3.0 de, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Verruca.jpg",
+        "marken": [
+          {
+            "x": 0.46,
+            "y": 0.52,
+            "text": "raue, zerklüftete Oberfläche"
+          }
+        ]
+      },
+      {
+        "datei": "warzen-2.jpg",
+        "titel": "Dornwarze an der Fußsohle",
+        "art": "Foto",
+        "urheber": "Marionette",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Dornwarze.jpg",
+        "marken": [
+          {
+            "x": 0.49,
+            "y": 0.62,
+            "text": "Dornwarze mit Hornhautring"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links eine gewöhnliche Warze: hart, hautfarben, mit rauer, zerklüfteter Oberfläche.",
+      "Rechts eine Dornwarze am Fußballen. Das Körpergewicht drückt sie nach innen, ringsum bildet sich Hornhaut.",
+      "Bei Diabetes oder Durchblutungsstörungen Warzen am Fuß bitte nicht selbst behandeln."
+    ]
+  },
+  "lippenherpes": {
+    "aufnahmen": [
+      {
+        "datei": "lippenherpes-1.jpg",
+        "titel": "Nässende Bläschen an der Lippe",
+        "art": "Foto",
+        "urheber": "Jojo (polnische Wikipedia)",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Herpes_labialis_-_opryszczka_wargowa.jpg",
+        "marken": [
+          {
+            "x": 0.4,
+            "y": 0.44,
+            "text": "geplatzte, nässende Bläschen"
+          }
+        ]
+      },
+      {
+        "datei": "lippenherpes-2.jpg",
+        "titel": "Später: Kruste",
+        "art": "Foto",
+        "urheber": "Vanished user fijtji34toksdcknqrjn54yoimascj",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Cold_sore.jpg",
+        "marken": [
+          {
+            "x": 0.4,
+            "y": 0.48,
+            "text": "gelbliche Kruste"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links sind die Bläschen am Lippenrand geplatzt und nässen. In dieser Flüssigkeit steckt das Virus – jetzt ist es besonders ansteckend.",
+      "Rechts ist die Stelle verkrustet. Ansteckend bleibt sie, bis die Kruste abgefallen ist; danach heilt sie ohne Narbe.",
+      "Bläschen nahe am Auge oder bei einem Säugling: bitte sofort in die Praxis."
+    ]
+  },
+  "wunden": {
+    "nach": "schuerfwunde",
+    "aufnahmen": [
+      {
+        "datei": "wunden-1.jpg",
+        "titel": "Frische Schürfwunde am Ellenbogen",
+        "art": "Foto",
+        "urheber": "TomK32",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Sch%C3%BCrfwunde_Ellbogen.jpg",
+        "marken": [
+          {
+            "x": 0.62,
+            "y": 0.45,
+            "text": "oberste Hautschicht abgerieben"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Eine typische Schürfwunde: Die oberste Hautschicht ist abgerieben, es blutet nur punktförmig.",
+      "Spülen Sie sie gründlich unter Leitungswasser aus und decken Sie sie mit einem Wundpflaster ab.",
+      "Bleibt Schmutz in der Haut, ist die Fläche groß oder rötet sich die Wunde nach Tagen zunehmend, kommen Sie bitte."
+    ]
+  },
+  "scharlach": {
+    "aufnahmen": [
+      {
+        "datei": "scharlach-1.jpg",
+        "titel": "Zunge am Anfang",
+        "art": "Foto",
+        "urheber": "Whispyhistory",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Strep_throat_with_white_strawberry_tongue.jpg",
+        "marken": [
+          {
+            "x": 0.5,
+            "y": 0.4,
+            "text": "Weißer Belag"
+          },
+          {
+            "x": 0.28,
+            "y": 0.7,
+            "text": "Rote Pünktchen"
+          }
+        ]
+      },
+      {
+        "datei": "scharlach-2.jpg",
+        "titel": "Himbeerzunge",
+        "art": "Foto",
+        "urheber": "Martin Kronawitter",
+        "lizenz": "CC BY-SA 2.5, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Scharlach.JPG",
+        "marken": [
+          {
+            "x": 0.55,
+            "y": 0.36,
+            "text": "Rest des Belags"
+          },
+          {
+            "x": 0.5,
+            "y": 0.72,
+            "text": "Himbeerrote Zunge"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links die Zunge in den ersten Tagen: weiß belegt, mit roten Pünktchen darin. Rechts einige Tage später: Der Belag ist fast weg, die Zunge ist kräftig rot und rau wie eine Himbeere.",
+      "Zusammen mit Halsschmerzen, Fieber und dem feinen Ausschlag ist das typisch für Scharlach. Sicher wird es mit dem Schnelltest aus dem Rachen.",
+      "Eine rote Zunge allein beweist keinen Scharlach. Bei Fieber und Halsschmerzen mit Ausschlag kommen Sie bitte in die Praxis."
+    ]
+  },
+  "bindehautentzuendung": {
+    "aufnahmen": [
+      {
+        "datei": "bindehautentzuendung-1.jpg",
+        "titel": "Eitrige Bindehautentzündung",
+        "art": "Foto",
+        "urheber": "Tanalai at English Wikipedia",
+        "lizenz": "CC BY 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Swollen_eye_with_conjunctivitis.jpg",
+        "marken": [
+          {
+            "x": 0.27,
+            "y": 0.53,
+            "text": "Gerötetes Augenweiß"
+          },
+          {
+            "x": 0.6,
+            "y": 0.75,
+            "text": "Eitriges Sekret"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Das Weiße im Auge ist gerötet, das Auge tränt. Gelbliches Sekret verklebt die Wimpern – das spricht eher für Bakterien.",
+      "Bei Viren ist das Sekret meist wässrig, bei einer Allergie jucken beide Augen stark.",
+      "Starke Schmerzen, schlechteres Sehen oder Lichtscheu gehören nicht zur einfachen Bindehautentzündung. Dann bitte am selben Tag zum Arzt."
+    ]
+  },
+  "lungenentzuendung": {
+    "aufnahmen": [
+      {
+        "datei": "lungenentzuendung-1.jpg",
+        "titel": "Gesunde Lunge",
+        "art": "Röntgen",
+        "urheber": "Mikael Häggström",
+        "lizenz": "CC0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Normal_posteroanterior_(PA)_chest_radiograph_(X-ray).jpg",
+        "marken": [
+          {
+            "x": 0.22,
+            "y": 0.42,
+            "text": "Lunge: dunkel, voller Luft"
+          },
+          {
+            "x": 0.62,
+            "y": 0.66,
+            "text": "Herz"
+          }
+        ]
+      },
+      {
+        "datei": "lungenentzuendung-2.jpg",
+        "titel": "Lungenentzündung",
+        "art": "Röntgen",
+        "urheber": "Mikael Häggström",
+        "lizenz": "CC0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:X-ray_of_lobar_pneumonia.jpg",
+        "marken": [
+          {
+            "x": 0.22,
+            "y": 0.62,
+            "text": "Weißer Schatten: Entzündung"
+          },
+          {
+            "x": 0.7,
+            "y": 0.4,
+            "text": "Gesunde Seite"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Gesunde Lunge ist voller Luft und erscheint im Röntgenbild dunkel. Bei der Lungenentzündung füllen sich Lungenbläschen mit Entzündungsflüssigkeit – dieser Teil wird weiß (Pfeil).",
+      "Hier ist der rechte Mittellappen betroffen, neben dem Herzen. Im Röntgenbild liegt die rechte Körperseite links.",
+      "Der Schatten verschwindet langsamer, als es Ihnen besser geht – oft erst nach Wochen. Eine Kontrolle machen wir nur, wenn es nötig ist."
+    ]
+  },
+  "nasennebenhoehlen": {
+    "aufnahmen": [
+      {
+        "datei": "nasennebenhoehlen-1.jpg",
+        "titel": "Entzündete Kieferhöhle",
+        "art": "Röntgen",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten, Kontrast angepasst",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Sinusitis_maxillaris_Roe_001.jpg",
+        "marken": [
+          {
+            "x": 0.2,
+            "y": 0.62,
+            "text": "Kieferhöhle voll Sekret"
+          },
+          {
+            "x": 0.74,
+            "y": 0.6,
+            "text": "Gesunde Kieferhöhle"
+          },
+          {
+            "x": 0.22,
+            "y": 0.22,
+            "text": "Augenhöhle"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Eine gesunde Kieferhöhle ist mit Luft gefüllt und erscheint dunkel. Auf der entzündeten Seite ist sie grau: Hier staut sich Sekret.",
+      "Für eine gewöhnliche Nebenhöhlenentzündung braucht es kein Röntgen – Beschwerden und Untersuchung reichen.",
+      "Ein Bild machen wir nur, wenn die Beschwerden lange anhalten, immer wiederkommen oder Zweifel bestehen."
+    ]
+  },
+  "rheumatoide-arthritis": {
+    "aufnahmen": [
+      {
+        "datei": "rheumatoide-arthritis-1.jpg",
+        "titel": "Hand nach vielen Jahren Rheuma",
+        "art": "Foto",
+        "urheber": "James Heilman, MD",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Rheumatoid_Arthritis.JPG",
+        "marken": [
+          {
+            "x": 0.56,
+            "y": 0.27,
+            "text": "Verdickte Fingergrundgelenke"
+          },
+          {
+            "x": 0.16,
+            "y": 0.52,
+            "text": "Finger zur Seite verbogen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "So kann eine Hand aussehen, wenn die rheumatoide Arthritis lange nicht ausreichend behandelt wurde: Die Fingergrundgelenke sind verdickt, die Finger zur Kleinfinger-Seite verbogen.",
+      "Am Anfang sieht man meist nur geschwollene, warme Gelenke an beiden Händen und spürt die lange Morgensteifigkeit.",
+      "Mit früher und konsequenter Behandlung sind solche Verformungen heute selten geworden. Deshalb lohnt es sich, schnell zu beginnen."
+    ]
+  },
+  "diabetischer-fuss": {
+    "nach": "was",
+    "aufnahmen": [
+      {
+        "datei": "diabetischer-fuss-1.jpg",
+        "titel": "Wunde an der Fußsohle",
+        "art": "Foto",
+        "urheber": "Mark A. Dreyer, DPM, FACFAS",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Diabetic_Foot_Ulcer.jpg",
+        "marken": [
+          {
+            "x": 0.63,
+            "y": 0.55,
+            "text": "Tiefe Wunde"
+          },
+          {
+            "x": 0.84,
+            "y": 0.47,
+            "text": "Wall aus Hornhaut"
+          },
+          {
+            "x": 0.2,
+            "y": 0.2,
+            "text": "Zehen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Unter dem Ballen der großen Zehe ist eine tiefe Wunde entstanden, umgeben von einem dicken Wall aus Hornhaut. Hier drückt der Fuß beim Gehen am stärksten.",
+      "Weil das Gefühl fehlt, tut so eine Wunde oft kaum weh und wird lange übersehen.",
+      "Eine Blase, ein Riss oder ein dunkler Fleck unter der Hornhaut ist der Anfang. Zeigen Sie uns so eine Stelle bitte sofort – nicht erst beim nächsten Termin."
+    ]
+  },
+  "schwerhoerigkeit": {
+    "aufnahmen": [
+      {
+        "datei": "schwerhoerigkeit-1.jpg",
+        "titel": "Hörgerät für den Gehörgang",
+        "art": "Foto",
+        "urheber": "Jonas Bergsten",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Hearing_aid_20080620.jpg",
+        "marken": [
+          {
+            "x": 0.53,
+            "y": 0.5,
+            "text": "Hörgerät"
+          },
+          {
+            "x": 0.15,
+            "y": 0.45,
+            "text": "Ohrmuschel"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Moderne Hörgeräte sind klein. Manche sitzen ganz im Gehörgang, andere hinter dem Ohr mit einem dünnen Schlauch ins Ohr.",
+      "Welches Gerät passt, hängt von der Art der Schwerhörigkeit, den Fingern und Ihren Wünschen ab. Das klärt die Hörakustik mit Ihnen beim Probetragen.",
+      "Das Gerät hilft nur, wenn Sie es jeden Tag tragen."
+    ]
+  },
+  "cholesterin": {
+    "aufnahmen": [
+      {
+        "datei": "cholesterin-1.jpg",
+        "titel": "Gelbe Fettflecken am Lid (Xanthelasmen)",
+        "art": "Foto",
+        "urheber": "Klaus D. Peter, Wiehl, Germany",
+        "lizenz": "CC BY 3.0 DE, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Xanthelasma.jpg",
+        "marken": [
+          {
+            "x": 0.32,
+            "y": 0.53,
+            "text": "Xanthelasma"
+          },
+          {
+            "x": 0.62,
+            "y": 0.53,
+            "text": "Xanthelasma"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Am inneren Lidwinkel sitzen weiche, gelbliche Flecken. Das sind Fettablagerungen in der Haut.",
+      "Sie tun nicht weh und sind harmlos, können aber ein Hinweis auf erhöhtes Cholesterin sein. Dann lohnt sich ein Blutwert.",
+      "Die Ablagerungen in den Adern sieht man von außen nicht. Viele Menschen mit hohem Cholesterin haben keine solchen Flecken."
+    ]
+  },
+  "schilddruesenueberfunktion": {
+    "nach": "ursachen",
+    "aufnahmen": [
+      {
+        "datei": "schilddruesenueberfunktion-1.jpg",
+        "titel": "Augen beim Morbus Basedow",
+        "art": "Foto",
+        "urheber": "Jonathan Trobe, M.D. - University of Michigan Kellogg Eye Center",
+        "lizenz": "CC BY 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Proptosis_and_lid_retraction_from_Graves%27_Disease.jpg",
+        "marken": [
+          {
+            "x": 0.22,
+            "y": 0.42,
+            "text": "Weiß über der Iris sichtbar"
+          },
+          {
+            "x": 0.83,
+            "y": 0.62,
+            "text": "Auge tritt hervor"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Beide Augen treten hervor und die Oberlider sind nach oben gezogen. Dadurch sieht man oberhalb der Iris einen weißen Streifen – der Blick wirkt starr.",
+      "Das kommt nur beim Morbus Basedow vor, nicht bei heißen Knoten. Oft sind die Augen viel weniger betroffen als hier.",
+      "Brennen, Tränen, Doppelbilder oder schlechteres Sehen bitte gleich melden – dann sollte zusätzlich ein Augenarzt schauen."
+    ]
+  },
+  "reflux": {
+    "nach": "ursachen",
+    "aufnahmen": [
+      {
+        "datei": "reflux-1.jpg",
+        "titel": "Entzündete Speiseröhre bei langem Reflux",
+        "art": "Endoskopie",
+        "urheber": "Samir धर्म",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Peptic_stricture.png",
+        "marken": [
+          {
+            "x": 0.45,
+            "y": 0.42,
+            "text": "Engstelle"
+          },
+          {
+            "x": 0.82,
+            "y": 0.3,
+            "text": "rote, wunde Streifen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Der Blick durch das Endoskop in das untere Ende der Speiseröhre. Die Schleimhaut ist gerötet und hat rote, wunde Streifen.",
+      "Hier hat die Säure über lange Zeit eine Narbe gebildet. Die Speiseröhre ist eng geworden, das Essen rutscht schlechter.",
+      "Bei den meisten Menschen mit Sodbrennen sieht die Speiseröhre viel harmloser aus. Schluckbeschwerden sind aber immer ein Grund für eine Magenspiegelung."
+    ]
+  },
+  "gastritis": {
+    "aufnahmen": [
+      {
+        "datei": "gastritis-1.jpg",
+        "titel": "Gesunder Magen",
+        "art": "Endoskopie",
+        "urheber": "Ignis",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Stomach_endoscopy_1.jpg",
+        "marken": [
+          {
+            "x": 0.42,
+            "y": 0.3,
+            "text": "Magenausgang"
+          },
+          {
+            "x": 0.62,
+            "y": 0.72,
+            "text": "glatte, rosige Schleimhaut"
+          }
+        ]
+      },
+      {
+        "datei": "gastritis-2.jpg",
+        "titel": "Gastritis mit kleinen wunden Stellen",
+        "art": "Endoskopie",
+        "urheber": "Med_Chaos",
+        "lizenz": "Public Domain",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Gastric_erosion.jpg",
+        "marken": [
+          {
+            "x": 0.38,
+            "y": 0.47,
+            "text": "wunde Stelle"
+          },
+          {
+            "x": 0.6,
+            "y": 0.57,
+            "text": "wunde Stelle"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links eine gesunde Magenschleimhaut: glatt und gleichmäßig rosa.",
+      "Rechts ist die Schleimhaut entzündet. Man sieht gerötete Flecken mit kleinen wunden Stellen in der Mitte, sogenannte Erosionen.",
+      "Ob Helicobacter dahintersteckt, zeigt das Bild nicht – dafür braucht es eine Gewebeprobe oder einen Atem- oder Stuhltest."
+    ]
+  },
+  "gleithernie": {
+    "aufnahmen": [
+      {
+        "datei": "gleithernie-1.jpg",
+        "titel": "Gleithernie, aus dem Magen zurück gesehen",
+        "art": "Endoskopie",
+        "urheber": "melvil",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Sliding_hernia(esophagus).jpg",
+        "marken": [
+          {
+            "x": 0.5,
+            "y": 0.14,
+            "text": "Schlauch des Endoskops"
+          },
+          {
+            "x": 0.3,
+            "y": 0.55,
+            "text": "Mageneingang weit offen"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Das Endoskop ist im Magen umgebogen und schaut zurück auf den Mageneingang, durch den es gekommen ist.",
+      "Normal umschließt der Eingang den Schlauch eng. Hier ist er weit, und Magenschleimhaut wölbt sich nach oben durch die Lücke im Zwerchfell.",
+      "Wie viel Sodbrennen jemand hat, sieht man dem Bild nicht an. Viele Gleithernien machen gar keine Beschwerden."
+    ]
+  },
+  "harnwegsinfekt": {
+    "aufnahmen": [
+      {
+        "datei": "harnwegsinfekt-1.jpg",
+        "titel": "Urin-Teststreifen bei Blasenentzündung",
+        "art": "Foto",
+        "urheber": "Grook Da Oger",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Urine_trouble_-_BU_sang_nitrite_leucocyte_(cropped).jpg",
+        "marken": [
+          {
+            "x": 0.3,
+            "y": 0.6,
+            "text": "trüber Urin"
+          },
+          {
+            "x": 0.43,
+            "y": 0.35,
+            "text": "verfärbte Testfelder"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Der Teststreifen wird kurz in den Urin getaucht. Jedes Farbfeld prüft einen anderen Wert.",
+      "Bei einer Blasenentzündung färben sich meist die Felder für weiße Blutkörperchen, Blut und Nitrit – Nitrit bilden viele Bakterien. Der Urin ist oft trüb.",
+      "Ein unauffälliger Streifen schließt eine Entzündung nicht sicher aus. Entscheidend sind Ihre Beschwerden."
+    ]
+  },
+  "nierenschwaeche": {
+    "aufnahmen": [
+      {
+        "datei": "nierenschwaeche-1.jpg",
+        "titel": "Gesunde Niere",
+        "art": "Ultraschall",
+        "urheber": "Kristoffer Lindskov Hansen, Michael Bachmann Nielsen and Caroline Ewertsen",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Normal_adult_kidney.jpg",
+        "marken": [
+          {
+            "x": 0.52,
+            "y": 0.5,
+            "text": "Niere: groß, klar gegliedert"
+          }
+        ]
+      },
+      {
+        "datei": "nierenschwaeche-2.jpg",
+        "titel": "Geschrumpfte Niere bei weit fortgeschrittener Nierenschwäche",
+        "art": "Ultraschall",
+        "urheber": "Kristoffer Lindskov Hansen, Michael Bachmann Nielsen and Caroline Ewertsen",
+        "lizenz": "CC BY 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Ultrasonography_of_end-stage_chronic_kidney_disease.jpg",
+        "marken": [
+          {
+            "x": 0.6,
+            "y": 0.47,
+            "text": "kleine, helle Niere"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links eine gesunde Niere: Sie ist etwa so lang wie eine Hand, außen ein dunklerer Saum, innen ein heller Kern.",
+      "Rechts eine Niere nach vielen Jahren Nierenschwäche. Sie ist geschrumpft, gleichmäßig hell und kaum noch gegliedert.",
+      "So sieht nur eine weit fortgeschrittene Nierenschwäche aus. Am Anfang ist der Ultraschall meist unauffällig – dann helfen nur Blut- und Urinwerte."
+    ]
+  },
+  "polyneuropathie": {
+    "aufnahmen": [
+      {
+        "datei": "polyneuropathie-1.jpg",
+        "titel": "Gefühlstest am Fuß mit dem Monofilament",
+        "art": "Foto",
+        "urheber": "Enter",
+        "lizenz": "CC BY-SA 4.0",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Monofilament_bei_DFS.jpg",
+        "marken": [
+          {
+            "x": 0.6,
+            "y": 0.54,
+            "text": "Nylonfaden biegt sich"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Mit einem dünnen Nylonfaden drücken wir an mehreren Stellen auf die Fußsohle, bis er sich biegt. Sie sagen mit geschlossenen Augen, ob Sie die Berührung spüren.",
+      "Spüren Sie den Faden an einzelnen Stellen nicht, ist das Gefühl dort vermindert – ein Zeichen für geschädigte Nerven.",
+      "Dazu prüfen wir oft mit einer Stimmgabel, ob Sie das Vibrieren am Knöchel spüren. Beide Tests tun nicht weh."
     ]
   }
 }

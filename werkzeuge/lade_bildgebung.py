@@ -9,6 +9,8 @@ src/module/<modul>/bildgebung.json (der Lauf gibt sie zur Kontrolle mit aus).
     python -I werkzeuge/lade_bildgebung.py                         # Orthopädie, nur fehlende
     python -I werkzeuge/lade_bildgebung.py --modul aufklaerungen   # Aufklärungen
     python -I werkzeuge/lade_bildgebung.py --neu                   # alle neu bauen
+    python -I werkzeuge/lade_bildgebung.py --modul aufklaerungen --liste teil.json --neu
+                                       # nur die Einträge einer eigenen Liste (zum Ausprobieren)
 
 Zuschnitt: [links, oben, rechts, unten] als Anteil des Originalbildes (0 bis 1).
 Röntgen, MRT und Ultraschall werden in Graustufen gespeichert; "farbe": true behält die Farben
@@ -83,9 +85,10 @@ def baue(eintrag: dict) -> None:
     meta = ii.get("extmetadata", {})
     lizenz = ohne_html(meta.get("LicenseShortName", {}).get("value", "?"))
     urheber = ohne_html(meta.get("Artist", {}).get("value", "?"))
-    # Größte Standardbreite, die nicht über dem Original liegt; kleine Bilder (< 960 px) im Original.
-    if ii["width"] >= 960:
-        breite = max(b for b in BREITEN if b <= ii["width"])
+    # Größte Standardbreite unter der Originalbreite (gleich breit liefert Commons das gesperrte Original). Originale sperrt Commons für
+    # Skripte (429), deshalb auch kleine Bilder als Vorschau; nur unter 250 px das Original.
+    if ii["width"] >= BREITEN[0]:
+        breite = max(b for b in BREITEN if b < ii["width"]) if ii["width"] > BREITEN[0] else BREITEN[0]
         time.sleep(2)
         url = info(eintrag["datei"], breite)["thumburl"]
     else:
@@ -121,7 +124,8 @@ def main() -> int:
     modul = sys.argv[sys.argv.index("--modul") + 1] if "--modul" in sys.argv else "orthopaedie"
     ZIEL = WURZEL / "public" / "bilder" / modul
     ZIEL.mkdir(parents=True, exist_ok=True)
-    eintraege = json.loads(MODULE[modul].read_text(encoding="utf-8"))
+    liste = Path(sys.argv[sys.argv.index("--liste") + 1]) if "--liste" in sys.argv else MODULE[modul]
+    eintraege = json.loads(liste.read_text(encoding="utf-8"))
     for eintrag in eintraege:
         if not neu and (ZIEL / eintrag["ziel"]).exists():
             continue

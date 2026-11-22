@@ -7,6 +7,7 @@ export const BEWEGUNG: Krankheit[] = [
     zusatz: 'Gelenkverschleiß',
     gebiet: 'bewegung',
     suche: 'gelenkverschleiss gonarthrose coxarthrose knie huefte',
+    bilder: { behandlung: 'arthrose-behandlung', selbst: 'arthrose-selbst' },
     was: [
       'Die Knochenenden im Gelenk sind mit glattem Knorpel überzogen. Er federt ab und lässt das Gelenk gleiten.',
       'Bei Arthrose wird dieser Knorpel dünner und rauer. Am Ende reibt Knochen auf Knochen.',
@@ -38,6 +39,7 @@ export const BEWEGUNG: Krankheit[] = [
     zusatz: 'Knochenschwund',
     gebiet: 'bewegung',
     suche: 'knochenschwund knochendichte dxa wirbelbruch schenkelhalsbruch',
+    bilder: { ursachen: 'osteoporose-ursachen', behandlung: 'osteoporose-behandlung' },
     was: [
       'Knochen wird ein Leben lang auf- und abgebaut. Bei Osteoporose überwiegt der Abbau.',
       'Der Knochen verliert an Dichte, sein inneres Gerüst wird dünn und lückenhaft.',
@@ -71,6 +73,7 @@ export const BEWEGUNG: Krankheit[] = [
     zusatz: 'Kreuzschmerz, Hexenschuss',
     gebiet: 'bewegung',
     suche: 'kreuzschmerz lumbago hexenschuss ischias bandscheibe lws',
+    bilder: { ursachen: 'rueckenschmerzen-ursachen', behandlung: 'rueckenschmerzen-behandlung' },
     was: [
       'Fast jeder Mensch hat irgendwann Rückenschmerzen. Meist sitzen sie im unteren Rücken.',
       'In den allermeisten Fällen steckt keine gefährliche Ursache dahinter – auch wenn der Schmerz heftig ist.',
