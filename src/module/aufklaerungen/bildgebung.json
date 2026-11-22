@@ -2266,5 +2266,165 @@
       "Spüren Sie den Faden an einzelnen Stellen nicht, ist das Gefühl dort vermindert – ein Zeichen für geschädigte Nerven.",
       "Dazu prüfen wir oft mit einer Stimmgabel, ob Sie das Vibrieren am Knöchel spüren. Beide Tests tun nicht weh."
     ]
+  },
+  "magenspiegelung": {
+    "nach": "ablauf",
+    "aufnahmen": [
+      {
+        "datei": "magenspiegelung-1.jpg",
+        "titel": "Blick in den Magen",
+        "art": "Endoskopie",
+        "urheber": "Ignis",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Stomach_endoscopy_3.jpg",
+        "marken": [
+          {
+            "x": 0.17,
+            "y": 0.4,
+            "text": "Schlauch des Endoskops"
+          },
+          {
+            "x": 0.34,
+            "y": 0.88,
+            "text": "Mageneingang"
+          },
+          {
+            "x": 0.62,
+            "y": 0.22,
+            "text": "gesunde Magenschleimhaut"
+          }
+        ]
+      },
+      {
+        "datei": "magenspiegelung-2.jpg",
+        "titel": "Ein Gastroskop",
+        "art": "Foto",
+        "urheber": "Gilo1969",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Gastroscope.jpg",
+        "marken": [
+          {
+            "x": 0.23,
+            "y": 0.32,
+            "text": "Spitze mit Kamera"
+          },
+          {
+            "x": 0.9,
+            "y": 0.55,
+            "text": "biegsamer Schlauch"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links der Blick durch das Endoskop in einen gesunden Magen. Das Gerät ist umgebogen und schaut zurück auf den Mageneingang, durch den es gekommen ist.",
+      "Rechts ein Gastroskop. Mit dem Griff lenkt die Ärztin oder der Arzt die Spitze in jede Richtung.",
+      "Der Schlauch ist etwa so dick wie ein kleiner Finger und sehr biegsam."
+    ]
+  },
+  "darmspiegelung": {
+    "nach": "ablauf",
+    "aufnahmen": [
+      {
+        "datei": "darmspiegelung-1.jpg",
+        "titel": "Gesunder Dickdarm",
+        "art": "Endoskopie",
+        "urheber": "Joachim Guntau",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Kolon-transversum.jpg",
+        "marken": [
+          {
+            "x": 0.53,
+            "y": 0.47,
+            "text": "Blick in die Tiefe"
+          },
+          {
+            "x": 0.12,
+            "y": 0.7,
+            "text": "ringförmige Falten"
+          }
+        ]
+      },
+      {
+        "datei": "darmspiegelung-2.jpg",
+        "titel": "Ein Polyp wird entfernt",
+        "art": "Endoskopie",
+        "urheber": "Gilo1969",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Polypectomy.jpg",
+        "marken": [
+          {
+            "x": 0.2,
+            "y": 0.5,
+            "text": "Polyp"
+          },
+          {
+            "x": 0.84,
+            "y": 0.84,
+            "text": "Schlinge"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links ein gesunder Dickdarm: glatte, glänzende Schleimhaut mit ringförmigen Falten und feinen Blutgefäßen.",
+      "Rechts ein Polyp. Daneben hat sich die Schlinge um seinen Stiel gelegt und trägt ihn gleich ab.",
+      "So sieht es nur auf dem Bildschirm aus – mit Schlafspritze bekommen Sie davon nichts mit."
+    ]
+  },
+  "bronchoskopie": {
+    "nach": "ablauf",
+    "aufnahmen": [
+      {
+        "datei": "bronchoskopie-1.jpg",
+        "titel": "Ein Bronchoskop",
+        "art": "Foto",
+        "urheber": "Håkon Olav Leira",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Bronkoskop.jpg",
+        "marken": [
+          {
+            "x": 0.07,
+            "y": 0.6,
+            "text": "Griff zum Steuern"
+          },
+          {
+            "x": 0.95,
+            "y": 0.27,
+            "text": "biegsame Spitze"
+          }
+        ]
+      },
+      {
+        "datei": "bronchoskopie-2.jpg",
+        "titel": "Aufteilung der Luftröhre, aus dem CT berechnet",
+        "art": "CT",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Bronchialdivertikel_an_Carina_72W_-_CT_KM_axial_LF_und_Volumen_Rendering_Virtuelle_Broncho_-_001.jpg",
+        "marken": [
+          {
+            "x": 0.44,
+            "y": 0.3,
+            "text": "Aufteilung der Luftröhre"
+          },
+          {
+            "x": 0.12,
+            "y": 0.36,
+            "text": "linker Bronchus"
+          },
+          {
+            "x": 0.74,
+            "y": 0.62,
+            "text": "rechter Bronchus"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links ein Bronchoskop: ein dünner, biegsamer Schlauch, den man mit dem Griff in jede Richtung lenken kann.",
+      "Rechts der Blick die Luftröhre hinab, wo sie sich in den rechten und linken Bronchus teilt. Das Bild ist aus einem CT berechnet, sieht aber fast so aus wie bei der Spiegelung.",
+      "Der kleine Pfeil zeigt eine winzige, harmlose Ausstülpung – ein Zufallsbefund."
+    ]
   }
 }

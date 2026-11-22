@@ -1253,3 +1253,170 @@
     transform: scaleX(0.24);
   }
 }
+
+/* ---------- Spiegelungen: Magen, Darm, Lunge ---------- */
+/* Schlauch und Kamera (magenspiegelung, darmspiegelung, bronchoskopie) laufen über Wachsen und
+   Folge; hier nur Zange, Schlinge und Uhrzeiger. */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* magenspiegelung-probe: Zange kommt heraus, öffnet sich, schnappt zu und hebt die Probe ab. */
+  .aufkblatt__bild .magenspiegelung-probe-zange {
+    animation: magenspiegelung-probe-zange 6.4s cubic-bezier(0.65, 0, 0.35, 1) 0.6s both;
+  }
+  .aufkblatt__bild .magenspiegelung-probe-backe-links,
+  .aufkblatt__bild .magenspiegelung-probe-backe-rechts {
+    transform-box: fill-box;
+    animation: magenspiegelung-probe-backe-links 6.4s ease-in-out 0.6s both;
+  }
+  .aufkblatt__bild .magenspiegelung-probe-backe-links {
+    transform-origin: right top;
+  }
+  .aufkblatt__bild .magenspiegelung-probe-backe-rechts {
+    transform-origin: left top;
+    animation-name: magenspiegelung-probe-backe-rechts;
+  }
+  .aufkblatt__bild .magenspiegelung-probe-stueck,
+  .aufkblatt__bild .magenspiegelung-probe-stelle {
+    animation: magenspiegelung-probe-stueck 6.4s linear 0.6s both;
+  }
+
+  /* darmspiegelung-schlinge: Schlinge öffnet sich, legt sich um den Stiel, zieht zu, hebt ab. */
+  .aufkblatt__bild .darmspiegelung-schlinge-draht {
+    animation: darmspiegelung-schlinge-draht 8s cubic-bezier(0.65, 0, 0.35, 1) 0.6s both;
+  }
+  .aufkblatt__bild .darmspiegelung-schlinge-ring-form {
+    animation: darmspiegelung-schlinge-ring 8s ease-in-out 0.6s both;
+  }
+  .aufkblatt__bild .darmspiegelung-schlinge-polyp {
+    animation: darmspiegelung-schlinge-polyp 8s cubic-bezier(0.65, 0, 0.35, 1) 0.6s both;
+  }
+  .aufkblatt__bild .darmspiegelung-schlinge-stiel {
+    animation: darmspiegelung-schlinge-stiel 8s linear 0.6s both;
+  }
+  .aufkblatt__bild .darmspiegelung-schlinge-stelle {
+    animation: darmspiegelung-schlinge-stelle 8s linear 0.6s both;
+  }
+
+  /* spiegelung-danach: Die Uhr läuft knapp eine Runde bis zur Zeit, ab der man trinken darf. */
+  .aufkblatt__bild .spiegelung-danach-zeiger {
+    transform-box: fill-box;
+    transform-origin: left top;
+    animation: spiegelung-danach-zeiger 2.4s cubic-bezier(0.65, 0, 0.35, 1) 0.8s both;
+  }
+}
+
+@keyframes magenspiegelung-probe-zange {
+  0% {
+    transform: translateY(-300px);
+  }
+  25%,
+  40% {
+    transform: translateY(0);
+  }
+  52%,
+  60% {
+    transform: translateY(28px);
+  }
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes magenspiegelung-probe-backe-links {
+  0%,
+  28%,
+  58%,
+  100% {
+    transform: rotate(0);
+  }
+  40%,
+  52% {
+    transform: rotate(32deg);
+  }
+}
+@keyframes magenspiegelung-probe-backe-rechts {
+  0%,
+  28%,
+  58%,
+  100% {
+    transform: rotate(0);
+  }
+  40%,
+  52% {
+    transform: rotate(-32deg);
+  }
+}
+@keyframes magenspiegelung-probe-stueck {
+  0%,
+  57% {
+    opacity: 0;
+  }
+  61%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes darmspiegelung-schlinge-draht {
+  0% {
+    transform: translateY(-260px);
+  }
+  20% {
+    transform: translateY(-120px);
+  }
+  40%,
+  62% {
+    transform: translateY(120px);
+  }
+  85%,
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes darmspiegelung-schlinge-ring {
+  0%,
+  58%,
+  100% {
+    transform: scaleX(1);
+  }
+  15%,
+  45% {
+    transform: scaleX(3.6);
+  }
+}
+@keyframes darmspiegelung-schlinge-polyp {
+  0%,
+  62% {
+    transform: translateY(120px);
+  }
+  85%,
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes darmspiegelung-schlinge-stiel {
+  0%,
+  62% {
+    opacity: 1;
+  }
+  66%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes darmspiegelung-schlinge-stelle {
+  0%,
+  62% {
+    opacity: 0;
+  }
+  66%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spiegelung-danach-zeiger {
+  from {
+    transform: rotate(-300deg);
+  }
+}

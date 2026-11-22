@@ -13,6 +13,7 @@ import type { Karte, Seite } from './koerper';
 import { grundfarbe, wahlfarbe } from './Koerperkarte';
 import { rasterVon } from './raster';
 import { datei } from '../../../kern/pfad';
+import { haengeBlickbedienungAn } from '../../../kern/blickbedienung';
 
 export type Haltung = 'grund' | 'a' | 't';
 
@@ -270,7 +271,6 @@ export function Haut3D(props: Haut3DProps) {
         beobachter.observe(document.documentElement);
 
         // ---------- Bedienung ----------
-        let zieht: { x: number; y: number; start: { x: number; y: number } } | null = null;
         let gemeldet = 0;
         const melde = () => {
           if (gemeldet) return;
@@ -295,34 +295,14 @@ export function Haut3D(props: Haut3DProps) {
           const gebiet = p.karte.gebiete[nr];
           if (gebiet) p.beiKlick(gebiet.id);
         };
-        const runter = (e: PointerEvent) => {
-          if (!aktuell.current.beiBlick) return;
-          zieht = { x: e.clientX, y: e.clientY, start: { x: e.clientX, y: e.clientY } };
-          element.setPointerCapture(e.pointerId);
-        };
-        const bewegt = (e: PointerEvent) => {
-          if (!zieht) return;
-          stand.drehY += (e.clientX - zieht.x) * 0.009;
-          stand.neigX = THREE.MathUtils.clamp(stand.neigX + (e.clientY - zieht.y) * 0.007, NEIG_MIN, NEIG_MAX);
-          zieht.x = e.clientX;
-          zieht.y = e.clientY;
-          melde();
-        };
-        const hoch = (e: PointerEvent) => {
-          if (zieht && Math.hypot(e.clientX - zieht.start.x, e.clientY - zieht.start.y) < 5) klick(e);
-          zieht = null;
-        };
-        const rad = (e: WheelEvent) => {
-          if (!aktuell.current.beiBlick) return;
-          e.preventDefault();
-          stand.zoom = THREE.MathUtils.clamp(stand.zoom * Math.exp(-e.deltaY * 0.0012), HAUT_ZOOM_MIN, HAUT_ZOOM_MAX);
-          melde();
-        };
-        element.addEventListener('pointerdown', runter);
-        element.addEventListener('pointermove', bewegt);
-        element.addEventListener('pointerup', hoch);
-        element.addEventListener('pointercancel', hoch);
-        element.addEventListener('wheel', rad, { passive: false });
+        const bedienung = haengeBlickbedienungAn(element, {
+          stand,
+          darf: () => Boolean(aktuell.current.beiBlick),
+          neig: [NEIG_MIN, NEIG_MAX],
+          zoom: [HAUT_ZOOM_MIN, HAUT_ZOOM_MAX],
+          beiAenderung: melde,
+          beiTipp: klick,
+        });
 
         // ---------- Zeichnen ----------
         let rahmen = 0;
@@ -348,7 +328,7 @@ export function Haut3D(props: Haut3DProps) {
           }
           faerbe(p);
 
-          if (!zieht) {
+          if (!bedienung.zieht()) {
             const naehe = ruhig ? 1 : 1 - Math.exp(-dt * (p.beiBlick ? 9 : 4.5));
             let unterschied = (p.drehY - stand.drehY) % (2 * Math.PI);
             if (unterschied > Math.PI) unterschied -= 2 * Math.PI;
@@ -381,11 +361,7 @@ export function Haut3D(props: Haut3DProps) {
           cancelAnimationFrame(rahmen);
           cancelAnimationFrame(gemeldet);
           beobachter.disconnect();
-          element.removeEventListener('pointerdown', runter);
-          element.removeEventListener('pointermove', bewegt);
-          element.removeEventListener('pointerup', hoch);
-          element.removeEventListener('pointercancel', hoch);
-          element.removeEventListener('wheel', rad);
+          bedienung.loese();
           geometrie.dispose();
           stoff.dispose();
           renderer.dispose();

@@ -15,6 +15,7 @@ import { BESCHWERDEN } from './daten/beschwerden';
 import { BESCHWERDEN_WEITERE } from './daten/beschwerden-weitere';
 import { INFEKTE } from './daten/infekte';
 import { UNTERSUCHUNGEN } from './daten/untersuchungen';
+import { SPIEGELUNGEN } from './daten/spiegelungen';
 import { VERFUEGUNGEN } from './daten/verfuegungen';
 import { HAUT } from './daten/haut';
 import { AFTER } from './daten/after';
@@ -61,6 +62,7 @@ const gruppen: Krankheit[][] = [
   ARBEIT,
   KUR,
   UNTERSUCHUNGEN,
+  SPIEGELUNGEN,
   LABOR,
   VERFUEGUNGEN,
   VERSORGUNG,

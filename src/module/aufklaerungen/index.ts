@@ -3,7 +3,7 @@ import { definiereModul } from '../../kern/typen';
 import { Steuerung } from './Steuerung';
 import { Buehne } from './Buehne';
 import { Handzettel } from './Handzettel';
-import { GEBIETE, KRANKHEITEN } from './daten';
+import { GEBIETE, KRANKHEITEN, findeKrankheit, seitenVon } from './daten';
 import type { Ohr } from './manoever';
 
 export interface AufklaerungsZustand {
@@ -35,6 +35,13 @@ export default definiereModul<AufklaerungsZustand>({
     })),
     aktuell: (zustand) => zustand.thema,
     oeffne: (id) => ({ thema: id, seite: 0 }),
+    schritte: (id) => {
+      const krankheit = findeKrankheit(id);
+      return (krankheit ? seitenVon(krankheit) : []).map((s, i) => ({
+        titel: s.kurz,
+        setze: (alt) => ({ ...alt, seite: i }),
+      }));
+    },
     Handzettel,
   },
 });

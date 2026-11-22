@@ -23,11 +23,11 @@ const LEGENDE: { art: Art | 'sehne'; name: string }[] = [
   { art: 'raum', name: 'Hohlraum' },
 ];
 
-export function Buehne({ zustand, vorschau }: BuehneProps<AnatomieZustand>) {
+export function Buehne({ zustand, vorschau, aendern }: BuehneProps<AnatomieZustand>) {
   const karte = findeKarte(zustand.karte);
   if (karte) {
     return (
-      <KartenBuehne karte={karte} zustand={zustand} vorschau={vorschau} />
+      <KartenBuehne karte={karte} zustand={zustand} vorschau={vorschau} aendern={aendern} />
     );
   }
 
@@ -58,6 +58,7 @@ export function Buehne({ zustand, vorschau }: BuehneProps<AnatomieZustand>) {
           zoom={zustand.zoom}
           vorschau={vorschau}
           beschriftung={struktur?.name}
+          beiBlick={aendern}
         />
       </div>
 

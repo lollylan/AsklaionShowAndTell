@@ -14,10 +14,12 @@ interface Props {
   vorschau: boolean;
   /** Meldet die Texte, die in der gewählten Sprache noch fehlen (stehen auf Deutsch). */
   beiFehlend?: (texte: string[]) => void;
+  /** Tablet-Modus: Die Bühne darf den Zustand ihres Moduls selbst ändern (Modell drehen). */
+  beiAenderung?: (aenderung: object | ((alt: object) => object)) => void;
 }
 
 /** Der eigentliche Bühneninhalt – identisch für Patientenbildschirm und Vorschau. */
-export function BuehnenInhalt({ zustand, vorschau, beiFehlend }: Props) {
+export function BuehnenInhalt({ zustand, vorschau, beiFehlend, beiAenderung }: Props) {
   const modul = zustand.verdeckt ? undefined : findeModul(zustand.aktivesModul);
   const raum = useRef<HTMLDivElement>(null);
   const fehlend = useUebersetzung(raum, zustand.sprache ?? 'de');
@@ -32,7 +34,11 @@ export function BuehnenInhalt({ zustand, vorschau, beiFehlend }: Props) {
         <div key={modul?.id ?? 'ruhebild'} className="szene">
           {modul ? (
             <Fehlergrenze ersatz={<Ruhebild />}>
-              <modul.Buehne zustand={modulZustand(zustand, modul)} vorschau={vorschau} />
+              <modul.Buehne
+                zustand={modulZustand(zustand, modul)}
+                vorschau={vorschau}
+                aendern={beiAenderung}
+              />
             </Fehlergrenze>
           ) : (
             <Ruhebild />

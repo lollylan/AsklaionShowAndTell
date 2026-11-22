@@ -22,7 +22,7 @@ import { Aufnahmen } from '../../buehne/Aufnahmen';
 
 const verzoegert = (i: number, start = 140) => ({ animationDelay: `${start + i * 90}ms` });
 
-export function Buehne({ zustand, vorschau }: BuehneProps<OrthopaedieZustand>) {
+export function Buehne({ zustand, vorschau, aendern }: BuehneProps<OrthopaedieZustand>) {
   const bild = findeKrankheitsbild(zustand.thema);
   const uebung = findeUebung(zustand.uebung);
 
@@ -60,7 +60,14 @@ export function Buehne({ zustand, vorschau }: BuehneProps<OrthopaedieZustand>) {
           {art === 'ursachen' && (
             <Vergleich bild={bild} saetze={bild.ursachen} titel={seiten[nr].titel} />
           )}
-          {art === 'modell' && <ImModell bild={bild} blick={zustand.blick} vorschau={vorschau} />}
+          {art === 'modell' && (
+            <ImModell
+              bild={bild}
+              blick={zustand.blick}
+              vorschau={vorschau}
+              beiBlick={aendern && ((blick) => aendern({ blick }))}
+            />
+          )}
           {art === 'bild' && <ImBild bild={bild} />}
           {art === 'hilft' && <WasHilft bild={bild} />}
           {art === 'uebungen' &&
@@ -117,10 +124,12 @@ function ImModell({
   bild,
   blick,
   vorschau,
+  beiBlick,
 }: {
   bild: Krankheitsbild;
   blick: Blicklage | null;
   vorschau: boolean;
+  beiBlick?: (blick: Blicklage) => void;
 }) {
   const lage = startBlick(bild);
   const region = findeRegion(bild.modell.region);
@@ -141,6 +150,7 @@ function ImModell({
           zoom={b.zoom}
           vorschau={vorschau}
           beschriftung={struktur?.name}
+          beiBlick={beiBlick}
         />
       </div>
       <div>

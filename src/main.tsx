@@ -5,6 +5,8 @@ import '@fontsource/merriweather/700.css';
 import './stil/grund.css';
 import { starteSitzung } from './kern/sitzung';
 import { bestimmeRaum } from './kern/raum';
+import { bestimmeModus } from './kern/modus';
+import { TabletAnsicht } from './tablet/TabletAnsicht';
 import { aktuelleSeite } from './kern/pfad';
 import { MARKE } from './kern/marke';
 import { Info } from './info/Info';
@@ -17,6 +19,8 @@ import { Uebungsblatt } from './module/orthopaedie/Uebungsblatt';
 import { Lagerungsblatt } from './module/aufklaerungen/Lagerungsblatt';
 
 // Eine App, zwei Gesichter:  /  = Steuerung (Arzt),  /buehne = Patientenbildschirm.
+// Im Tablet-Modus (kern/modus.ts, im Gerät gemerkt) zeigt  /  stattdessen Auswahl und Bühne
+// auf einem einzigen Bildschirm.
 // Dazu /korrektur und /korrektur-medikamente: alle Texte zum Gegenlesen, ohne Sitzung,
 // und /info: Zweck, Quellen und Lizenzen. Alle Pfade gelten relativ zum Ort der App (kern/pfad.ts).
 const pfad = aktuelleSeite();
@@ -58,6 +62,13 @@ if (pfad === '/handzettel') {
   document.title = `${MARKE.app} – Korrektur`;
   wurzel.render(
     <StrictMode>{pfad === '/korrektur' ? <Korrektur /> : <MedikamentenKorrektur />}</StrictMode>,
+  );
+} else if (pfad === '' && bestimmeModus() === 'tablet') {
+  document.documentElement.dataset.ansicht = 'tablet';
+  wurzel.render(
+    <StrictMode>
+      <TabletAnsicht raum={bestimmeRaum()} />
+    </StrictMode>,
   );
 } else {
   const istBuehne = pfad === '/buehne';

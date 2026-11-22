@@ -60,6 +60,9 @@ const GRUPPEN: string[][] = [
   [A + 'nierensteine', A + 'ultraschall', M + 'metamizol', M + 'tamsulosin'],
   [A + 'prostatavergroesserung', M + 'tamsulosin', A + 'psa', K + 'maennlich', V + 'prostata'],
   [A + 'darmkrebsvorsorge', V + 'darmkrebs', K + 'bauchorgane'],
+  [A + 'darmspiegelung', A + 'darmkrebsvorsorge', V + 'darmkrebs', A + 'haemorrhoiden', K + 'bauchorgane'],
+  [A + 'magenspiegelung', A + 'gastritis', A + 'reflux', A + 'gleithernie', A + 'eisenmangel', K + 'bauchorgane'],
+  [A + 'bronchoskopie', A + 'chronischer-husten', A + 'lungenentzuendung', A + 'lungenfunktion', A + 'rauchstopp'],
 
   // Bewegung
   [A + 'arthrose', K + 'knie', K + 'huefte', M + 'ibuprofen', M + 'diclofenac'],

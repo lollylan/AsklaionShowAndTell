@@ -2,8 +2,8 @@ import { Globe } from 'lucide-react';
 import { definiereModul } from '../../kern/typen';
 import { Steuerung } from './Steuerung';
 import { Buehne } from './Buehne';
-import { LAENDER } from './daten';
-import type { Seite } from './Laenderseiten';
+import { LAENDER, findeLand } from './daten';
+import { SEITEN, seitenFuer, type Seite } from './Laenderseiten';
 import { Handzettel, verpacke } from './Handzettel';
 
 export interface ReiseZustand {
@@ -50,6 +50,13 @@ export default definiereModul<ReiseZustand>({
       thema: null,
       seite: 'impfungen',
     }),
+    schritte: (id) => {
+      const land = findeLand(id);
+      return (land ? seitenFuer(land) : []).map((seite) => ({
+        titel: SEITEN.find((s) => s.id === seite)?.name ?? seite,
+        setze: (alt) => ({ ...alt, thema: null, seite, malariakarte: 0 }),
+      }));
+    },
     Handzettel,
   },
 });

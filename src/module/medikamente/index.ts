@@ -3,7 +3,7 @@ import { definiereModul } from '../../kern/typen';
 import { Steuerung } from './Steuerung';
 import { Buehne } from './Buehne';
 import { Handzettel } from './Handzettel';
-import { MEDIKAMENTE } from './daten';
+import { MEDIKAMENTE, SEITEN } from './daten';
 
 export interface MedikamentenZustand {
   /** Medikament, das der Patient gerade sieht – oder null für die Startseite. */
@@ -32,6 +32,7 @@ export default definiereModul<MedikamentenZustand>({
     })),
     aktuell: (zustand) => zustand.thema,
     oeffne: (id) => ({ thema: id, seite: 0 }),
+    schritte: () => SEITEN.map((s, i) => ({ titel: s.kurz, setze: (alt) => ({ ...alt, seite: i }) })),
     Handzettel,
   },
 });

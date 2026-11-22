@@ -1,9 +1,10 @@
 import { Gauge } from 'lucide-react';
 import { definiereModul } from '../../kern/typen';
+import { Vorgabe } from './Vorgabe';
 import { Steuerung } from './Steuerung';
 import { Buehne } from './Buehne';
 import { Handzettel } from './Handzettel';
-import { MESSGROESSEN } from './daten';
+import { MESSGROESSEN, findeMessgroesse, ordneEin, werteText } from './daten';
 import { verpacke } from './paket';
 
 export interface WerteZustand {
@@ -36,5 +37,16 @@ export default definiereModul<WerteZustand>({
     aktuell: verpacke,
     oeffne: (id, alt) => ({ ...alt, groesse: id }),
     Handzettel,
+    Vorgabe,
+    vorgabeText: (id, zustand) => {
+      const groesse = findeMessgroesse(id);
+      if (!groesse) return null;
+      const lage = ordneEin(groesse, zustand.eingaben[id], zustand.ziel[id]);
+      const teile = [
+        lage.vollstaendig ? `${werteText(groesse, lage.werte)} ${groesse.einheit}` : null,
+        lage.ziel ? `Ziel ${lage.ziel.text}` : null,
+      ].filter(Boolean);
+      return teile.length > 0 ? teile.join(', ') : null;
+    },
   },
 });

@@ -5,13 +5,15 @@
 // leuchtet in Kupfer, die Knochen bleiben stehen, alles andere tritt als blasser Schatten zurück.
 //
 // Dieselbe Komponente läuft auf der Bühne (folgt dem Zustand, bewegt sich weich) und in der
-// Steuerung (dort mit `beiBlick`: Ziehen dreht, Mausrad zoomt).
+// Steuerung (dort mit `beiBlick`: Ziehen dreht, Mausrad oder zwei Finger zoomen). Im Tablet-Modus
+// ist auch das Modell auf der Bühne so bedienbar.
 
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import type { Art, Region } from './daten';
 import { datei } from '../../kern/pfad';
+import { haengeBlickbedienungAn } from '../../kern/blickbedienung';
 
 export interface BlickLage {
   drehY: number;
@@ -235,8 +237,7 @@ export default function Modell(props: ModellProps) {
         beobachter.observe(element);
         beobachter.observe(document.documentElement);
 
-        // ---------- Bedienung (nur in der Steuerung) ----------
-        let zieht: { x: number; y: number } | null = null;
+        // ---------- Bedienung (nur mit `beiBlick`) ----------
         let gemeldet = 0;
         const melde = () => {
           if (gemeldet) return;
@@ -245,40 +246,13 @@ export default function Modell(props: ModellProps) {
             aktuell.current.beiBlick?.({ ...stand });
           });
         };
-        const runter = (e: PointerEvent) => {
-          if (!aktuell.current.beiBlick) return;
-          zieht = { x: e.clientX, y: e.clientY };
-          element.setPointerCapture(e.pointerId);
-        };
-        const bewegt = (e: PointerEvent) => {
-          if (!zieht) return;
-          stand.drehY += (e.clientX - zieht.x) * 0.009;
-          stand.neigX = THREE.MathUtils.clamp(
-            stand.neigX + (e.clientY - zieht.y) * 0.007,
-            NEIG_MIN,
-            NEIG_MAX,
-          );
-          zieht = { x: e.clientX, y: e.clientY };
-          melde();
-        };
-        const hoch = () => {
-          zieht = null;
-        };
-        const rad = (e: WheelEvent) => {
-          if (!aktuell.current.beiBlick) return;
-          e.preventDefault();
-          stand.zoom = THREE.MathUtils.clamp(
-            stand.zoom * Math.exp(-e.deltaY * 0.0012),
-            ZOOM_MIN,
-            ZOOM_MAX,
-          );
-          melde();
-        };
-        element.addEventListener('pointerdown', runter);
-        element.addEventListener('pointermove', bewegt);
-        element.addEventListener('pointerup', hoch);
-        element.addEventListener('pointercancel', hoch);
-        element.addEventListener('wheel', rad, { passive: false });
+        const bedienung = haengeBlickbedienungAn(element, {
+          stand,
+          darf: () => Boolean(aktuell.current.beiBlick),
+          neig: [NEIG_MIN, NEIG_MAX],
+          zoom: [ZOOM_MIN, ZOOM_MAX],
+          beiAenderung: melde,
+        });
 
         // ---------- Zeichnen ----------
         let rahmen = 0;
@@ -297,7 +271,7 @@ export default function Modell(props: ModellProps) {
           const p = aktuell.current;
 
           // Blickrichtung: beim Ziehen sofort, sonst weich dem Zustand hinterher.
-          if (!zieht) {
+          if (!bedienung.zieht()) {
             const naehe = ruhig ? 1 : 1 - Math.exp(-dt * (p.beiBlick ? 9 : 4.5));
             let unterschied = (p.drehY - stand.drehY) % (2 * Math.PI);
             if (unterschied > Math.PI) unterschied -= 2 * Math.PI;
@@ -390,11 +364,7 @@ export default function Modell(props: ModellProps) {
           cancelAnimationFrame(rahmen);
           cancelAnimationFrame(gemeldet);
           beobachter.disconnect();
-          element.removeEventListener('pointerdown', runter);
-          element.removeEventListener('pointermove', bewegt);
-          element.removeEventListener('pointerup', hoch);
-          element.removeEventListener('pointercancel', hoch);
-          element.removeEventListener('wheel', rad);
+          bedienung.loese();
           for (const teil of teile) teil.stoff.dispose();
           renderer.dispose();
           renderer.domElement.remove();
@@ -411,7 +381,7 @@ export default function Modell(props: ModellProps) {
     };
   }, [regionId, vorschau]);
 
-  // Pfeiltasten drehen, Plus und Minus zoomen (nur in der Steuerung).
+  // Pfeiltasten drehen, Plus und Minus zoomen (nur, wenn bedienbar).
   const taste = (e: React.KeyboardEvent) => {
     const p = aktuell.current;
     if (!p.beiBlick) return;

@@ -782,3 +782,11 @@
   flex: none;
   margin-top: 1px;
 }
+
+/* Schalter zum Tablet-Modus: sieht aus wie der Link zu den Quellen, ist aber ein Knopf. */
+.leiste__modus {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: left;
+}

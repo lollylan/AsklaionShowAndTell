@@ -5,6 +5,7 @@ import { QUELLE_KARTEN } from './index';
 import { Haut3D } from './Haut3D';
 import { QUELLE_HRA } from '../quellen';
 import type { AnatomieZustand } from '../index';
+import type { BuehneProps } from '../../../kern/typen';
 
 const SEITE_TEXT: Record<Seite, string> = {
   beide: '',
@@ -16,9 +17,11 @@ interface Props {
   karte: Karte;
   zustand: AnatomieZustand;
   vorschau: boolean;
+  /** Tablet-Modus: Der 3D-Körper lässt sich auf der Bühne drehen, Antippen wählt ein Gebiet. */
+  aendern?: BuehneProps<AnatomieZustand>['aendern'];
 }
 
-export function KartenBuehne({ karte, zustand, vorschau }: Props) {
+export function KartenBuehne({ karte, zustand, vorschau, aendern }: Props) {
   const gewaehlt = zustand.gebiete ?? [];
   const seite: Seite = zustand.seite ?? 'beide';
   const alle = zustand.alle ?? true;
@@ -42,6 +45,18 @@ export function KartenBuehne({ karte, zustand, vorschau }: Props) {
             neigX={zustand.neigX}
             zoom={zustand.zoom}
             vorschau={vorschau}
+            beiBlick={aendern}
+            beiKlick={
+              aendern &&
+              ((id) =>
+                aendern((alt) => {
+                  const bisher = alt.gebiete ?? [];
+                  return {
+                    ...alt,
+                    gebiete: bisher.includes(id) ? bisher.filter((g) => g !== id) : [...bisher, id],
+                  };
+                }))
+            }
           />
         </div>
       ) : (

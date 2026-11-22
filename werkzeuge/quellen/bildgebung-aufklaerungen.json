@@ -873,5 +873,71 @@
     "ziel": "polyneuropathie-1.jpg",
     "datei": "Monofilament bei DFS.jpg",
     "farbe": true
+  },
+  {
+    "ziel": "magenspiegelung-1.jpg",
+    "datei": "Stomach endoscopy 3.jpg",
+    "zuschnitt": [
+      0.17,
+      0.02,
+      0.97,
+      0.85
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "magenspiegelung-2.jpg",
+    "datei": "Gastroscope.jpg",
+    "zuschnitt": [
+      0.0,
+      0.0,
+      1.0,
+      0.86
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "darmspiegelung-1.jpg",
+    "datei": "Kolon-transversum.jpg",
+    "zuschnitt": [
+      0.2,
+      0.14,
+      0.97,
+      0.74
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "darmspiegelung-2.jpg",
+    "datei": "Polypectomy.jpg",
+    "zuschnitt": [
+      0.015,
+      0.09,
+      0.665,
+      0.91
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "bronchoskopie-1.jpg",
+    "datei": "Bronkoskop.jpg",
+    "zuschnitt": [
+      0.0,
+      0.05,
+      1.0,
+      0.92
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "bronchoskopie-2.jpg",
+    "datei": "Bronchialdivertikel an Carina 72W - CT KM axial LF und Volumen Rendering Virtuelle Broncho - 001.jpg",
+    "zuschnitt": [
+      0.52,
+      0.0,
+      1.0,
+      0.8
+    ],
+    "farbe": true
   }
 ]

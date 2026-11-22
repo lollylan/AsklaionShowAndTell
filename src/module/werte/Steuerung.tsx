@@ -59,10 +59,62 @@ function Pult({
   zustand,
   aendern,
 }: SteuerungProps<WerteZustand> & { groesse: Messgroesse }) {
+  const lage = ordneEin(groesse, zustand.eingaben[groesse.id] ?? [], zustand.ziel[groesse.id] ?? null);
+
+  return (
+    <section className="wert__pult" aria-labelledby="wert-pult">
+      <p className="wert__laeuft" role="status">
+        <MonitorPlay size={18} strokeWidth={1.75} aria-hidden="true" />
+        <span id="wert-pult">
+          Der Patient sieht <strong>{groesse.name}</strong>
+          {lage.vollstaendig
+            ? ` mit ${werteText(groesse, lage.werte)} ${groesse.einheit}.`
+            : ' – noch ohne Wert.'}
+        </span>
+        <button type="button" className="knopf" onClick={() => aendern({ groesse: null })}>
+          Schließen
+        </button>
+      </p>
+
+      <Eingabe groesse={groesse} zustand={zustand} aendern={aendern} />
+
+      <div className="wert__spickzettel">
+        <h3>
+          {lage.urteil ? `Einordnung: ${lage.urteil.name}` : 'Bereiche'}
+          {lage.imZiel === true && ' · Ziel erreicht'}
+          {lage.imZiel === false && ' · Ziel noch nicht erreicht'}
+        </h3>
+        {groesse.teile.map((teil, i) => (
+          <p key={teil.id}>
+            {groesse.teile.length > 1 && <strong>{teil.name}: </strong>}
+            {bereicheVon(groesse, i, lage.ziel)
+              .map((b, nr, alle) =>
+                nr < alle.length - 1
+                  ? `${b.name} bis ${zeigeZahl(b.bis, Number.isInteger(b.bis) ? 0 : 1)}`
+                  : b.name,
+              )
+              .join(' · ')}
+          </p>
+        ))}
+        <ul>
+          {groesse.saetze.map((satz) => (
+            <li key={satz}>{satz}</li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+/** Wert und persönliches Ziel eintippen – in der Steuerung und vor dem Zeigen im Tablet-Modus. */
+export function Eingabe({
+  groesse,
+  zustand,
+  aendern,
+}: SteuerungProps<WerteZustand> & { groesse: Messgroesse }) {
   const feldId = useId();
   const eingaben = zustand.eingaben[groesse.id] ?? [];
   const zielId = zustand.ziel[groesse.id] ?? null;
-  const lage = ordneEin(groesse, eingaben, zielId);
 
   const setze = (nr: number, text: string) =>
     aendern((alt) => {
@@ -85,20 +137,7 @@ function Pult({
     }));
 
   return (
-    <section className="wert__pult" aria-labelledby="wert-pult">
-      <p className="wert__laeuft" role="status">
-        <MonitorPlay size={18} strokeWidth={1.75} aria-hidden="true" />
-        <span id="wert-pult">
-          Der Patient sieht <strong>{groesse.name}</strong>
-          {lage.vollstaendig
-            ? ` mit ${werteText(groesse, lage.werte)} ${groesse.einheit}.`
-            : ' – noch ohne Wert.'}
-        </span>
-        <button type="button" className="knopf" onClick={() => aendern({ groesse: null })}>
-          Schließen
-        </button>
-      </p>
-
+    <div>
       <div className="wert__eingabe">
         {groesse.teile.map((teil, i) => {
           const text = eingaben[i] ?? '';
@@ -157,32 +196,7 @@ function Pult({
           </div>
         </div>
       )}
-
-      <div className="wert__spickzettel">
-        <h3>
-          {lage.urteil ? `Einordnung: ${lage.urteil.name}` : 'Bereiche'}
-          {lage.imZiel === true && ' · Ziel erreicht'}
-          {lage.imZiel === false && ' · Ziel noch nicht erreicht'}
-        </h3>
-        {groesse.teile.map((teil, i) => (
-          <p key={teil.id}>
-            {groesse.teile.length > 1 && <strong>{teil.name}: </strong>}
-            {bereicheVon(groesse, i, lage.ziel)
-              .map((b, nr, alle) =>
-                nr < alle.length - 1
-                  ? `${b.name} bis ${zeigeZahl(b.bis, Number.isInteger(b.bis) ? 0 : 1)}`
-                  : b.name,
-              )
-              .join(' · ')}
-          </p>
-        ))}
-        <ul>
-          {groesse.saetze.map((satz) => (
-            <li key={satz}>{satz}</li>
-          ))}
-        </ul>
-      </div>
-    </section>
+    </div>
   );
 }
 

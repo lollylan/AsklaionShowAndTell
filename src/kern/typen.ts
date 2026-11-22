@@ -42,6 +42,19 @@ export interface BuehneProps<Z> {
    * Aufwendige Effekte (3D, Video) dürfen dann sparsamer rechnen.
    */
   vorschau: boolean;
+  /**
+   * Nur gesetzt, wenn die Bühne selbst bedient wird (Tablet-Modus, src/tablet): Dann darf
+   * die Bühne ihren Zustand ändern, etwa das 3D-Modell mit dem Finger drehen und zoomen.
+   */
+  aendern?: (aenderung: Partial<Z> | ((alt: Z) => Z)) => void;
+}
+
+/** Ein Bild, das man im Tablet-Modus zu einem Eintrag durchblättert. */
+export interface Schritt<Z> {
+  /** Kurzname für die Bildliste, z. B. „Behandlung“ oder der Name einer Struktur. */
+  titel: string;
+  /** Stellt dieses Bild ein; bekommt den Zustand, wie er gerade ist (Blickrichtung bleibt so). */
+  setze: (alt: Z) => Z;
 }
 
 /** Ein Eintrag, den die Suche über alle Module findet (Krankheit, Medikament, Region …). */
@@ -70,6 +83,18 @@ export interface Verzeichnis<Z> {
   aktuell: (zustand: Z) => string | null;
   /** Zustand, bei dem dieser Eintrag aufgeschlagen ist. */
   oeffne: (id: string, alt: Z) => Z;
+  /**
+   * Die Bilder eines Eintrags in der Reihenfolge, in der man sie im Tablet-Modus durchwischt.
+   * Fehlt die Funktion, hat der Eintrag genau ein Bild (das, was `oeffne` zeigt).
+   */
+  schritte?: (id: string) => Schritt<Z>[];
+  /**
+   * Eingaben, die der Tablet-Modus vor dem Zeigen abfragt (z. B. der Messwert des Patienten).
+   * Bekommt den Zustand mit aufgeschlagenem Eintrag; was hier geändert wird, gilt beim Zeigen.
+   */
+  Vorgabe?: ComponentType<SteuerungProps<Z> & { id: string }>;
+  /** Die Eingaben aus `Vorgabe` in einer Zeile, z. B. „148/92 mmHg, Ziel unter 140“ – oder null. */
+  vorgabeText?: (id: string, zustand: Z) => string | null;
   /**
    * Druckfassung eines Eintrags für den Handzettel (helles Papier, A4). Bekommt die id so,
    * wie `aktuell` sie geliefert hat. Ohne diese Komponente erscheint das Modul dort nicht.

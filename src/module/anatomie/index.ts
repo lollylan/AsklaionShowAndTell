@@ -94,5 +94,35 @@ export default definiereModul<AnatomieZustand>({
         zoom: region.startZoom ?? 1,
       };
     },
+    schritte: (id) => {
+      if (findeKarte(id)) {
+        return [
+          { titel: 'Vorn und hinten', setze: (alt) => ({ ...alt, darstellung: 'flach' }) },
+          {
+            titel: 'Am 3D-Körper',
+            setze: (alt) =>
+              alt.darstellung === 'raum'
+                ? alt
+                : { ...alt, darstellung: 'raum', drehY: 0, neigX: 0.04, zoom: 1 },
+          },
+        ];
+      }
+      const region = findeRegion(id);
+      if (!region) return [];
+      return [
+        { titel: 'Überblick', setze: (alt) => ({ ...alt, struktur: null }) },
+        ...region.strukturen.map((s) => ({
+          titel: s.name,
+          // Wie in der Steuerung: gleich in die Richtung drehen, aus der man die Struktur sieht.
+          setze: (alt: AnatomieZustand) => ({
+            ...alt,
+            struktur: s.id,
+            aus: alt.aus.filter((a) => a !== s.id),
+            drehY: BLICKE[s.blick].drehY,
+            neigX: BLICKE[s.blick].neigX,
+          }),
+        })),
+      ];
+    },
   },
 });

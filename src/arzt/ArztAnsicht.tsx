@@ -1,6 +1,6 @@
 import './arzt.css';
 import { useCallback, useEffect, useRef, useState, type PointerEvent } from 'react';
-import { Eye, EyeOff, Home, Info, Languages, MonitorUp, MousePointerClick, RotateCcw, TriangleAlert } from 'lucide-react';
+import { Eye, EyeOff, Home, Info, Languages, MonitorUp, MousePointerClick, RotateCcw, Tablet, TriangleAlert } from 'lucide-react';
 import { LEERE_SITZUNG, useSitzung, type Schnappschuss, type Sitzung } from '../kern/sitzung';
 import { alleModule, findeModul, modulZustand } from '../kern/register';
 import { Fehlergrenze } from '../kern/Fehlergrenze';
@@ -14,6 +14,7 @@ import { Suche } from './Suche';
 import { Verlauf, handzettelSpeicher } from './Verlauf';
 import { LOGO, MARKE, ZWECK } from '../kern/marke';
 import { IST_DEMO, seite } from '../kern/pfad';
+import { wechsleModus } from '../kern/modus';
 import { Sprachwahl } from '../sprachen/Sprachwahl';
 import { findeSprache, sprachSpeicher } from '../sprachen/sprachen';
 
@@ -130,6 +131,15 @@ export function ArztAnsicht({ sitzung }: { sitzung: Sitzung }) {
 
         <div className="leiste__fuss">
           <NeueSitzung beiBestaetigung={() => sitzung.aendere(() => ({ ...LEERE_SITZUNG }))} />
+          <button
+            type="button"
+            className="leiste__info leiste__modus"
+            title="Alles auf einem Bildschirm: Themen wählen, dann zeigen und durchwischen"
+            onClick={() => wechsleModus('tablet', seite('/'))}
+          >
+            <Tablet size={16} strokeWidth={1.75} aria-hidden="true" />
+            Zum Tablet-Modus
+          </button>
           {IST_DEMO && <p className="leiste__zweck">{ZWECK}</p>}
           <a className="leiste__info" href={seite('/info')} target="_blank" rel="noreferrer">
             <Info size={16} strokeWidth={1.75} aria-hidden="true" />
@@ -457,7 +467,7 @@ function Monitor({
         Das Fenster auf den Patientenmonitor ziehen und dort einmal anklicken – dann füllt es den
         ganzen Bildschirm.
         {IST_DEMO &&
-          ' In dieser Demo läuft der Abgleich ohne Server: Steuerung und Patientenfenster müssen im selben Browser auf demselben Rechner geöffnet sein. Ein Tablet oder zweiter Rechner als Patientenbildschirm geht nur in der installierten Fassung.'}
+          ' In dieser Demo läuft der Abgleich ohne Server: Steuerung und Patientenfenster müssen im selben Browser auf demselben Rechner geöffnet sein. Ein Tablet oder zweiter Rechner als Patientenbildschirm geht nur in der installierten Fassung; für ein einzelnes Gerät gibt es links unten den Tablet-Modus.'}
       </p>
     </aside>
   );

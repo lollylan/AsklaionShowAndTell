@@ -3,7 +3,7 @@ import { definiereModul } from '../../kern/typen';
 import { Steuerung } from './Steuerung';
 import { Buehne } from './Buehne';
 import { Handzettel } from './Handzettel';
-import { GEBIETE, KRANKHEITSBILDER, UEBUNGEN } from './daten';
+import { GEBIETE, KRANKHEITSBILDER, UEBUNGEN, findeKrankheitsbild, seitenVon } from './daten';
 
 export interface Blicklage {
   drehY: number;
@@ -58,6 +58,13 @@ export default definiereModul<OrthopaedieZustand>({
       id.startsWith(UEBUNG)
         ? { ...alt, thema: null, seite: 0, uebung: id.slice(UEBUNG.length), blick: null }
         : { ...alt, thema: id, seite: 0, uebung: null, blick: null },
+    schritte: (id) => {
+      const bild = findeKrankheitsbild(id);
+      return (bild ? seitenVon(bild) : []).map((s, i) => ({
+        titel: s.kurz,
+        setze: (alt) => ({ ...alt, seite: i, uebung: null }),
+      }));
+    },
     Handzettel,
   },
 });

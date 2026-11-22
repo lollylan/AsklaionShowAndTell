@@ -36,6 +36,11 @@ STIKO-Impfkalender und die Früherkennungsrichtlinien des G-BA vereinfacht wiede
    ziehen (oder daneben stellen).
 3. Links ein Modul wählen und etwas zeigen.
 
+**Nur ein Gerät (Tablet, Laptop)?** Links unten „Zum Tablet-Modus“: Themen antippen oder mehrere
+in einen Ablauf legen, dann zeigen und mit Wischen, Pfeiltasten oder den Knöpfen blättern.
+3D-Modelle lassen sich mit einem Finger drehen und mit zwei Fingern zoomen. Geräte ohne Maus
+starten gleich in diesem Modus; die Wahl merkt sich der Browser.
+
 Die Demo läuft ohne Server. Steuerung und Patientenfenster müssen deshalb im selben Browser auf
 demselben Rechner geöffnet sein. Gespeichert wird nichts außerhalb des Browsers. Bitte keine
 echten Patientendaten eingeben.
@@ -118,6 +123,7 @@ server/               Abgleich der Fenster (WebSocket) und Start der fertigen Ap
 src/kern/             Sitzungszustand, Modul-Schnittstelle, Modulregister, Pfade, Auftritt
 src/arzt/             Steuerung
 src/buehne/           Patientenbildschirm, Ruhebild, 1920 × 1080-Leinwand
+src/tablet/           Tablet-Modus: Auswahl mit Ablauf und Präsentation auf einem Bildschirm
 src/handzettel/       Handzettel zum Mitgeben (Druck und PDF)
 src/info/             Seite /info: Zweck, Quellen und Lizenzen
 src/module/           ein Ordner je Modul
