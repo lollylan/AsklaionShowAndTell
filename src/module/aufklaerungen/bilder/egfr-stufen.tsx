@@ -30,7 +30,7 @@ const VOLL = 96 * PRO_ML;
 /** Die Stufen der Nierenleistung (eGFR) als Balken: je kürzer, desto weniger filtert die Niere. */
 export default function EgfrStufen() {
   return (
-    <Zeichnung titel="Die sechs Stufen der Nierenleistung als Balken, von G1 mit 90 und mehr Millilitern pro Minute (normal) bis G5 unter 15 (Nierenversagen); je kürzer der Balken, desto weniger filtert die Niere.">
+    <Zeichnung spiegelbar titel="Die sechs Stufen der Nierenleistung als Balken, von G1 mit 90 und mehr Millilitern pro Minute (normal) bis G5 unter 15 (Nierenversagen); je kürzer der Balken, desto weniger filtert die Niere.">
       <Etikett x={360} y={60} anker="middle">
         Nierenleistung (eGFR) in ml/min
       </Etikett>

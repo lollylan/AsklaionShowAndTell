@@ -168,11 +168,13 @@
 }
 
 .werteskala__bereiche li:first-child .werteskala__balken {
-  border-radius: 22px 0 0 22px;
+  border-start-start-radius: 22px;
+  border-end-start-radius: 22px;
 }
 
 .werteskala__bereiche li:last-child .werteskala__balken {
-  border-radius: 0 22px 22px 0;
+  border-start-end-radius: 22px;
+  border-end-end-radius: 22px;
 }
 
 .werteskala__bereiche li[data-hier='true'] .werteskala__balken {
@@ -247,6 +249,36 @@
     left: 0;
     opacity: 0;
   }
+}
+
+/* Rechts-nach-links (Arabisch, Farsi): Die Skala läuft gespiegelt, niedrige Werte rechts,
+   hohe links – Bereiche, Grenzen, Marke und Ziel gemeinsam. Die Zahlen selbst bleiben,
+   wie sie geschrieben werden. Die Bereiche spiegelt schon die Listenregel in
+   src/sprachen/sprachwahl.css (ol mit direction: rtl); hier folgt der Rest. */
+[data-richtung='rtl'] .werteskala__bahn {
+  direction: rtl;
+}
+
+[data-richtung='rtl'] .werteskala__marke,
+[data-richtung='rtl'] .werteskala__ziel {
+  left: calc((1 - var(--lage)) * 100%);
+}
+
+[data-richtung='rtl'] .werteskala__marke {
+  animation-name: werte-fahrt-rtl;
+}
+
+@keyframes werte-fahrt-rtl {
+  from {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+[data-richtung='rtl'] .werteskala__grenze {
+  right: auto;
+  left: -3px;
+  translate: -50% 0;
 }
 
 .werteskala__zahl {

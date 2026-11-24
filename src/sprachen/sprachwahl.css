@@ -203,6 +203,21 @@
   unicode-bidi: plaintext;
 }
 
+/* Ausnahme: Waagerechte Skalen und Stufen (Zeichnung mit `spiegelbar`) laufen wie die Schrift
+   von rechts nach links – niedrige Werte rechts, hohe links. Die ganze Zeichnung wird an der
+   Mitte der 720 breiten Fläche gespiegelt, jede Beschriftung an ihrer eigenen Mitte zurück:
+   Sie steht dann an der gespiegelten Stelle und ist normal lesbar, Zahlen eingeschlossen.
+   Ebenso Zeichen mit der Klasse `zeichnung__aufrecht` (Häkchen). */
+[data-sprachraum][data-richtung='rtl'] .zeichnung__spiegelbar {
+  transform: translateX(720px) scaleX(-1);
+}
+
+[data-sprachraum][data-richtung='rtl'] .zeichnung__spiegelbar :is(text, .zeichnung__aufrecht) {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scaleX(-1);
+}
+
 /* CJK braucht etwas mehr Zeilenabstand und keinen engen Buchstabenabstand. */
 [data-sprachraum]:is(:lang(zh), :lang(ja), :lang(ko)) * {
   letter-spacing: 0;

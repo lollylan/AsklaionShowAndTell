@@ -33,7 +33,7 @@ const AUSREICHEND = 2;
 /** Vitamin-D-Spiegel (25-OH-D) als Treppe: jede Stufe ein Bereich, die mittlere ist das Ziel. */
 export default function VitaminDStufen() {
   return (
-    <Zeichnung titel="Vitamin D im Blut als Treppe mit fünf gleich breiten Stufen: unter 12 ng/ml (30 nmol/l) Mangel, 12 bis 20 knapp, 20 bis 50 ausreichend und das Ziel, über 50 kein zusätzlicher Vorteil, über 100 ng/ml (250 nmol/l) zu viel">
+    <Zeichnung spiegelbar titel="Vitamin D im Blut als Treppe mit fünf gleich breiten Stufen: unter 12 ng/ml (30 nmol/l) Mangel, 12 bis 20 knapp, 20 bis 50 ausreichend und das Ziel, über 50 kein zusätzlicher Vorteil, über 100 ng/ml (250 nmol/l) zu viel">
       <Etikett x={360} y={76} anker="middle">
         Vitamin D im Blut
       </Etikett>
@@ -73,6 +73,7 @@ export default function VitaminDStufen() {
 
       {/* Haken in der Zielstufe */}
       <path
+        className="zeichnung__aufrecht"
         d={`M${LINKS + AUSREICHEND * BREITE + 38} ${BODEN - 70} l20 20 l34 -42`}
         fill="none"
         stroke={F.creme}

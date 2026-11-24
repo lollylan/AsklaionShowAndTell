@@ -41,7 +41,22 @@ export const KONTUR = {
 type Punkt = [number, number];
 
 /** Rahmen jeder Zeichnung. titel = ein Satz, der das Bild für Vorleseprogramme beschreibt. */
-export function Zeichnung({ titel, children }: { titel: string; children: ReactNode }) {
+/**
+ * Rahmen jeder Zeichnung (720 × 720). `spiegelbar` für waagerechte Skalen und Stufen: In
+ * Rechts-nach-links-Sprachen (Arabisch, Farsi) wird die Zeichnung dann gespiegelt, damit sie
+ * wie die Schrift von rechts nach links läuft; die Beschriftungen bleiben lesbar
+ * (Regeln in src/sprachen/sprachwahl.css). Zeichen, die nicht spiegelverkehrt erscheinen
+ * dürfen (Häkchen), bekommen die Klasse `zeichnung__aufrecht`. Nicht für Körper, Organe oder Zeitverläufe.
+ */
+export function Zeichnung({
+  titel,
+  spiegelbar = false,
+  children,
+}: {
+  titel: string;
+  spiegelbar?: boolean;
+  children: ReactNode;
+}) {
   return (
     <svg className="zeichnung" viewBox="0 0 720 720" role="img" aria-label={titel}>
       <defs>
@@ -57,7 +72,7 @@ export function Zeichnung({ titel, children }: { titel: string; children: ReactN
           <path d="M1 1 L11 6 L1 11 Z" fill="context-stroke" />
         </marker>
       </defs>
-      {children}
+      {spiegelbar ? <g className="zeichnung__spiegelbar">{children}</g> : children}
     </svg>
   );
 }

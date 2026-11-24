@@ -41,7 +41,7 @@ function Blatt({ krankheit, seite, ohr }: { krankheit: Krankheit; seite: number;
   const seiten = seitenVon(krankheit);
   const nr = Math.min(Math.max(seite, 0), seiten.length - 1);
   const aktuell = seiten[nr];
-  const gebung = aktuell.art === 'bild' ? bildgebungVon(krankheit.id) : undefined;
+  const gebung = aktuell.art === 'bild' ? bildgebungVon(aktuell.gebung ?? krankheit.id) : undefined;
   const bildId = aktuell.bild ?? krankheit.id;
   const Bild = gebung ? undefined : findeZeichnung(bildId);
   const saetze = aktuell.saetze;
@@ -63,7 +63,7 @@ function Blatt({ krankheit, seite, ohr }: { krankheit: Krankheit; seite: number;
   return (
     <article className="aufkblatt" data-bild={Boolean(Bild || gebung)} data-art={aktuell.art}>
       {gebung && (
-        <div className="aufkblatt__aufnahmen" key="im-bild">
+        <div className="aufkblatt__aufnahmen" key={aktuell.id}>
           <Aufnahmen gebung={gebung} ordner="aufklaerungen" />
         </div>
       )}

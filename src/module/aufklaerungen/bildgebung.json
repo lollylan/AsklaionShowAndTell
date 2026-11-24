@@ -2426,5 +2426,77 @@
       "Rechts der Blick die Luftröhre hinab, wo sie sich in den rechten und linken Bronchus teilt. Das Bild ist aus einem CT berechnet, sieht aber fast so aus wie bei der Spiegelung.",
       "Der kleine Pfeil zeigt eine winzige, harmlose Ausstülpung – ein Zufallsbefund."
     ]
+  },
+  "wunden--verbrennung": {
+    "nach": "verbrennung",
+    "titel": "So sehen die Verbrennungsgrade aus",
+    "kurz": "Grade",
+    "aufnahmen": [
+      {
+        "datei": "verbrennung-1.jpg",
+        "titel": "Grad 1",
+        "art": "Foto",
+        "urheber": "Bejinhan",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:First-degree_burn.jpg",
+        "marken": [
+          {
+            "x": 0.44,
+            "y": 0.46,
+            "text": "nur gerötet"
+          }
+        ]
+      },
+      {
+        "datei": "verbrennung-2.jpg",
+        "titel": "Grad 2a",
+        "art": "Foto",
+        "urheber": "ErikHmn",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Brandwond-graad2.JPG",
+        "marken": [
+          {
+            "x": 0.47,
+            "y": 0.6,
+            "text": "Blase, Grund rot"
+          }
+        ]
+      },
+      {
+        "datei": "verbrennung-3.jpg",
+        "titel": "Grad 2b",
+        "art": "Foto",
+        "urheber": "Stonegaze",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Deep2nd_body.jpg",
+        "marken": [
+          {
+            "x": 0.4,
+            "y": 0.55,
+            "text": "blass mit roten Tüpfeln"
+          }
+        ]
+      },
+      {
+        "datei": "verbrennung-4.jpg",
+        "titel": "Grad 3",
+        "art": "Foto",
+        "urheber": "Craig0927",
+        "lizenz": "Public Domain, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:8-day-old-3rd-degree-burn.jpg",
+        "marken": [
+          {
+            "x": 0.5,
+            "y": 0.5,
+            "text": "weiß-gelb, lederartig"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Grad 1 ist nur gerötet, bei Grad 2a hebt sich eine Blase über rotem Grund ab.",
+      "Bei Grad 2b ist der Grund blass und fleckig, Grad 3 ist weiß bis gelblich und hart wie Leder.",
+      "Ob eine Verbrennung 2a oder 2b ist, zeigt sich oft erst nach einigen Tagen."
+    ]
   }
 }

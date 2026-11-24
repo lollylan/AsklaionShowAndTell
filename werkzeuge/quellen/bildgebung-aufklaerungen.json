@@ -939,5 +939,49 @@
       0.8
     ],
     "farbe": true
+  },
+  {
+    "ziel": "verbrennung-1.jpg",
+    "datei": "First-degree burn.jpg",
+    "zuschnitt": [
+      0.22,
+      0.08,
+      0.97,
+      0.83
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "verbrennung-2.jpg",
+    "datei": "Brandwond-graad2.JPG",
+    "zuschnitt": [
+      0.0,
+      0.0,
+      0.79,
+      1.0
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "verbrennung-3.jpg",
+    "datei": "Deep2nd body.jpg",
+    "zuschnitt": [
+      0.0,
+      0.08,
+      1.0,
+      0.92
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "verbrennung-4.jpg",
+    "datei": "8-day-old-3rd-degree-burn.jpg",
+    "zuschnitt": [
+      0.14,
+      0.2,
+      0.84,
+      0.9
+    ],
+    "farbe": true
   }
 ]

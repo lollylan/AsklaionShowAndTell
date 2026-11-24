@@ -147,7 +147,7 @@ export function Steuerung({ zustand, aendern }: SteuerungProps<AufklaerungsZusta
             )}
             {seiten[seite].art === 'bild' && (
               <p className="aufk__bildquellen">
-                {bildgebungVon(offen.id)?.aufnahmen.map((a) => (
+                {bildgebungVon(seiten[seite].gebung ?? offen.id)?.aufnahmen.map((a) => (
                   <span key={a.datei}>
                     {a.titel}:{' '}
                     <a href={a.quelle} target="_blank" rel="noreferrer">

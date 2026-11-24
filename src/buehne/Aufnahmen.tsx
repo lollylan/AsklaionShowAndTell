@@ -33,7 +33,10 @@ export interface Aufnahme {
 }
 
 export interface Bildgebung {
-  /** Ein oder zwei Aufnahmen (bei zweien: links gesund, rechts erkrankt). */
+  /**
+   * Ein oder zwei Aufnahmen (bei zweien: links gesund, rechts erkrankt); drei oder vier stehen
+   * als Raster mit zwei Spalten (z. B. Verbrennungsgrade).
+   */
   aufnahmen: Aufnahme[];
   /** Zwei bis drei Sätze: was man sieht und wofür man das Bild (nicht) braucht. */
   saetze: string[];
@@ -51,7 +54,12 @@ export function Aufnahmen({ gebung, ordner }: { gebung: Bildgebung; ordner: stri
     if (h > 0 && b / h > 2.2) setQuer(true);
   };
   return (
-    <div className="aufnahmen" data-zwei={zwei} data-quer={zwei && quer}>
+    <div
+      className="aufnahmen"
+      data-zwei={zwei}
+      data-viele={gebung.aufnahmen.length > 2}
+      data-quer={zwei && quer}
+    >
       {gebung.aufnahmen.map((a, i) => (
         <figure key={a.datei} className="aufnahme" style={verzoegert(i, 60)}>
           <figcaption data-krank={zwei && i === gebung.aufnahmen.length - 1}>

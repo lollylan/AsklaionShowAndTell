@@ -11,7 +11,7 @@ const UNTEN = 310;
 /** Langzeitzucker als Band: normal, Vorstufe, Diabetes; ein Pfeil zeigt den Weg zurück. */
 export default function Praediabetes() {
   return (
-    <Zeichnung titel="Band für den Langzeitzucker HbA1c mit drei Bereichen: normal unter 5,7 Prozent, Vorstufe von 5,7 bis 6,4 Prozent, Diabetes ab 6,5 Prozent; eine Markierung liegt in der Vorstufe, ein Pfeil führt zurück in den Normalbereich">
+    <Zeichnung spiegelbar titel="Band für den Langzeitzucker HbA1c mit drei Bereichen: normal unter 5,7 Prozent, Vorstufe von 5,7 bis 6,4 Prozent, Diabetes ab 6,5 Prozent; eine Markierung liegt in der Vorstufe, ein Pfeil führt zurück in den Normalbereich">
       <defs>
         <clipPath id="praediabetes-band">
           <rect x={x(5)} y={OBEN} width={x(7.5) - x(5)} height={UNTEN - OBEN} rx="24" />

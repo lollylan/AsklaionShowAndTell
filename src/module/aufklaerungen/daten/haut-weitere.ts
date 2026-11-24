@@ -192,9 +192,9 @@ export const HAUT_WEITERE: Krankheit[] = [
         bild: 'wunden-verbrennung',
         saetze: [
           'Halten Sie die Stelle sofort etwa zehn Minuten unter kühles, nicht eiskaltes Leitungswasser. Große Flächen und kleine Kinder nicht lange kühlen, sondern warm halten.',
-          'Grad 1 ist gerötet und schmerzt wie ein Sonnenbrand. Es heilt in einigen Tagen von selbst.',
-          'Bei Grad 2 entstehen Blasen. Stechen Sie sie nicht auf und decken Sie sie locker ab – kein Eis, keine Butter, kein Mehl.',
-          'Zum Arzt bei Blasen größer als Ihre Handfläche, an Gesicht, Händen, Füßen oder Genitalien, nach Strom oder Chemikalien und bei Kindern. Weiße, lederartige Haut, die kaum schmerzt, gehört ins Krankenhaus.',
+          'Grad 1 ist rot, Grad 2a bildet Blasen auf rotem Grund; beides heilt meist ohne Narbe. Blasen nicht aufstechen, locker abdecken – kein Eis, keine Butter, kein Mehl.',
+          'Bei Grad 2b ist der Grund blass, die Heilung dauert, oft mit Narbe. Grad 3 und 4 schmerzen kaum und gehören ins Krankenhaus.',
+          'Zum Arzt bei Grad 2b, bei Blasen größer als Ihre Handfläche, an Gesicht, Händen, Füßen oder Genitalien, nach Strom oder Chemikalien und bei Kindern.',
         ],
       },
       {

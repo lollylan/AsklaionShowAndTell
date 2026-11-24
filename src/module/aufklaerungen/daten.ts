@@ -33,6 +33,7 @@ import { SEELE_ALTER } from './daten/seele-alter';
 import { STOFFWECHSEL_WEITERE } from './daten/stoffwechsel-weitere';
 import { VERSORGUNG } from './daten/versorgung';
 import { LID_HAUT } from './daten/lid-haut';
+import { GESCHLECHTSKRANKHEITEN } from './daten/geschlechtskrankheiten';
 
 export { GEBIETE, SEITEN } from './daten/typen';
 export type { Blattseite, GebietId, Krankheit, SeiteId } from './daten/typen';
@@ -45,6 +46,7 @@ const gruppen: Krankheit[][] = [
   LUNGE,
   INFEKTE,
   INFEKTE_WEITERE,
+  GESCHLECHTSKRANKHEITEN,
   BEWEGUNG,
   RHEUMA,
   BAUCH,
@@ -116,10 +118,19 @@ export function hinweisTitel(krankheit: Krankheit): string {
 // Echte Bilder (Ultraschall, Röntgen, Fotos …) von Wikimedia Commons, geladen mit
 // werkzeuge/lade_bildgebung.py --modul aufklaerungen; Bilder unter public/bilder/aufklaerungen/.
 // `nach`: id der Seite, hinter der die Bildseite steht (Standard: hinter der ersten).
-const BILDGEBUNG = bildgebungRoh as unknown as Record<string, Bildgebung & { nach?: string }>;
+// Eine Krankheit kann mehrere Bildseiten haben: weitere Einträge heißen `<id>--<name>` und
+// bringen eigene `titel` und `kurz` mit (z. B. wunden--verbrennung hinter „Verbrennung“).
+type Bildeintrag = Bildgebung & { nach?: string; titel?: string; kurz?: string };
+const BILDGEBUNG = bildgebungRoh as unknown as Record<string, Bildeintrag>;
 
-export function bildgebungVon(id: string): (Bildgebung & { nach?: string }) | undefined {
-  return BILDGEBUNG[id];
+/** Bildeintrag zu einem Schlüssel (id der Krankheit oder `<id>--<name>`). */
+export function bildgebungVon(schluessel: string): Bildeintrag | undefined {
+  return BILDGEBUNG[schluessel];
+}
+
+/** Alle Bildeinträge einer Krankheit: zuerst der unter ihrer id, dann `<id>--…`. */
+export function bildgebungenVon(id: string): [string, Bildeintrag][] {
+  return Object.entries(BILDGEBUNG).filter(([k]) => k === id || k.startsWith(`${id}--`));
 }
 
 /**
@@ -127,16 +138,18 @@ export function bildgebungVon(id: string): (Bildgebung & { nach?: string }) | un
  * folgt auf die erste Seite (oder die Seite `nach`) „So sieht es im Bild aus“.
  */
 export function seitenVon(krankheit: Krankheit): Blattseite[] {
-  const seiten = textseitenVon(krankheit);
-  const gebung = bildgebungVon(krankheit.id);
-  if (!gebung) return seiten;
-  const bildseite: Blattseite = {
-    id: 'im-bild',
-    titel: 'So sieht es im Bild aus',
-    kurz: 'Im Bild',
-    saetze: gebung.saetze,
-    art: 'bild',
-  };
-  const stelle = Math.max(seiten.findIndex((s) => s.id === gebung.nach), 0) + 1;
-  return [...seiten.slice(0, stelle), bildseite, ...seiten.slice(stelle)];
+  let seiten = textseitenVon(krankheit);
+  for (const [schluessel, gebung] of bildgebungenVon(krankheit.id)) {
+    const bildseite: Blattseite = {
+      id: schluessel === krankheit.id ? 'im-bild' : `im-bild-${schluessel.split('--')[1]}`,
+      titel: gebung.titel ?? 'So sieht es im Bild aus',
+      kurz: gebung.kurz ?? 'Im Bild',
+      saetze: gebung.saetze,
+      art: 'bild',
+      gebung: schluessel,
+    };
+    const stelle = Math.max(seiten.findIndex((s) => s.id === gebung.nach), 0) + 1;
+    seiten = [...seiten.slice(0, stelle), bildseite, ...seiten.slice(stelle)];
+  }
+  return seiten;
 }

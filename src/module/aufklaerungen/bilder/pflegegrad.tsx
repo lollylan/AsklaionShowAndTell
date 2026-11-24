@@ -12,7 +12,7 @@ function stufe(i: number) {
 /** Fünf ansteigende Stufen für die Pflegegrade 1 bis 5. */
 export default function Pflegegrad() {
   return (
-    <Zeichnung titel="Fünf ansteigende Stufen, beschriftet mit den Pflegegraden 1 bis 5, von geringer bis schwerster Einschränkung der Selbstständigkeit. Ein Pfeil darüber zeigt: Je mehr Hilfe nötig ist, desto höher der Pflegegrad">
+    <Zeichnung spiegelbar titel="Fünf ansteigende Stufen, beschriftet mit den Pflegegraden 1 bis 5, von geringer bis schwerster Einschränkung der Selbstständigkeit. Ein Pfeil darüber zeigt: Je mehr Hilfe nötig ist, desto höher der Pflegegrad">
       {[0, 1, 2, 3, 4].map((i) => {
         const { x, hoehe } = stufe(i);
         return (

@@ -47,7 +47,7 @@ export function Korrektur() {
                     <h3>{s.titel}</h3>
                     {s.art === 'bild' && (
                       <div className="korrektur__aufnahmen">
-                        {bildgebungVon(k.id)?.aufnahmen.map((a) => (
+                        {bildgebungVon(s.gebung ?? k.id)?.aufnahmen.map((a) => (
                           <figure key={a.datei}>
                             <img src={datei(`/bilder/aufklaerungen/${a.datei}`)} alt="" />
                             <figcaption>

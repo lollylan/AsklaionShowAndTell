@@ -68,6 +68,7 @@ export function Haken({ x, y, groesse = 30, farbe = F.linie }: { x: number; y: n
   const g = groesse / 2;
   return (
     <path
+      className="zeichnung__aufrecht"
       d={`M${x - g} ${y} L${x - g * 0.3} ${y + g * 0.7} L${x + g} ${y - g * 0.7}`}
       fill="none"
       stroke={farbe}

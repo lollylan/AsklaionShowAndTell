@@ -60,6 +60,8 @@ export interface Blattseite {
   bild?: string;
   /** 'bild': Seite mit echten Bildern aus ../bildgebung.json statt Zeichnung. */
   art?: 'bild';
+  /** Bei art 'bild': Schlüssel in ../bildgebung.json (die id der Krankheit oder `<id>--<name>`). */
+  gebung?: string;
   /** id eines Befreiungsmanövers aus ../manoever: die Seite zeigt dessen Schritte als Karten. */
   manoever?: string;
 }

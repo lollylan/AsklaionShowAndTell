@@ -176,6 +176,15 @@ const GRUPPEN: string[][] = [
   [A + 'lippenherpes', A + 'guertelrose'],
   [A + 'wunden', I + 'tetanus', P + 'notfall', M + 'ibuprofen', M + 'paracetamol'],
 
+  // Geschlechtskrankheiten
+  [A + 'sti-test', A + 'chlamydien', A + 'tripper', A + 'syphilis', A + 'hiv', A + 'genitalherpes', A + 'feigwarzen', V + 'chlamydien'],
+  [A + 'chlamydien', A + 'sti-test', A + 'tripper', V + 'chlamydien', A + 'antibiotika', K + 'weiblich', K + 'maennlich'],
+  [A + 'tripper', A + 'sti-test', A + 'chlamydien', A + 'antibiotika', K + 'maennlich'],
+  [A + 'syphilis', A + 'sti-test', A + 'hiv', A + 'antibiotika'],
+  [A + 'hiv', A + 'sti-test', A + 'syphilis', I + 'hepatitis-b', V + 'hepatitis', P + 'notfall'],
+  [A + 'genitalherpes', A + 'sti-test', A + 'lippenherpes'],
+  [A + 'feigwarzen', A + 'sti-test', A + 'warzen', I + 'hpv', V + 'gebaermutterhals'],
+
   // Neu: Blase, Arbeit, Gesundheitswesen
   [A + 'erektionsstoerung', K + 'maennlich', A + 'khk', A + 'bluthochdruck', A + 'diabetes-typ-2', A + 'rauchstopp'],
   [A + 'harninkontinenz', A + 'inkontinenz', K + 'becken', K + 'weiblich', K + 'maennlich', A + 'prostatavergroesserung', A + 'harnwegsinfekt'],

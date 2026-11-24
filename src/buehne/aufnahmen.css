@@ -73,6 +73,29 @@
   max-height: 600px;
 }
 
+/* Drei oder vier Bilder: Raster mit zwei Spalten, Bilder entsprechend flacher. */
+.aufnahmen[data-viele='true'] {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, auto));
+  justify-content: center;
+  align-items: end;
+  gap: 30px 40px;
+}
+
+.aufnahmen[data-viele='true'] figcaption {
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.aufnahmen[data-viele='true'] .aufnahme__rahmen img {
+  max-height: 320px;
+}
+
+.aufnahmen[data-viele='true'] .aufnahme__quelle {
+  margin-top: 6px;
+  font-size: 15px;
+}
+
 /* Markierung: kupferner Ring an der Stelle, Beschriftung daneben. */
 .bildmarke {
   position: absolute;

@@ -8,7 +8,7 @@ const SKALA_H = 40;
 /** Ein Stück Haut: die Schmerzstelle liegt zwischen zwei Elektroden; darunter die richtige Stärke. */
 export default function TensAnwendung() {
   return (
-    <Zeichnung titel="Ein Stück Haut mit einer schmerzenden Stelle in der Mitte und je einer Elektrode links und rechts davon, mindestens drei Zentimeter Abstand; darunter eine Skala von kaum spürbar über kräftiges Kribbeln, das richtig ist, bis unangenehm">
+    <Zeichnung spiegelbar titel="Ein Stück Haut mit einer schmerzenden Stelle in der Mitte und je einer Elektrode links und rechts davon, mindestens drei Zentimeter Abstand; darunter eine Skala von kaum spürbar über kräftiges Kribbeln, das richtig ist, bis unangenehm">
       <Etikett x={360} y={58} anker="middle" farbe={F.kupferHell}>
         Schmerzstelle zwischen den Elektroden
       </Etikett>

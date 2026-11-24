@@ -9,7 +9,7 @@ const HOEHE = 50;
 /** INR-Skala von 1 bis 5 mit dem Zielbereich 2 bis 3 bei Marcumar. */
 export default function GerinnungshemmerInr() {
   return (
-    <Zeichnung titel="Skala des INR-Werts von 1 bis 5: ohne Gerinnungshemmer etwa 1, unter Marcumar meist Ziel 2 bis 3. Darunter droht ein Gerinnsel, darüber eine Blutung">
+    <Zeichnung spiegelbar titel="Skala des INR-Werts von 1 bis 5: ohne Gerinnungshemmer etwa 1, unter Marcumar meist Ziel 2 bis 3. Darunter droht ein Gerinnsel, darüber eine Blutung">
       <defs>
         <clipPath id="gerinnungshemmer-inr-balken">
           <rect x={x(1)} y={OBEN} width={x(5) - x(1)} height={HOEHE} rx={HOEHE / 2} />
