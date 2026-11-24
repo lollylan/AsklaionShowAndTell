@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 300" stroke-linejoin="round" stroke-linecap="round">
+  <!--
+    Sémont-Manöver für das RECHTE Ohr, von vorn gesehen (die rechte Körperseite der Person ist
+    links im Bild). Vier Felder à 400 × 300: sitzen mit Kopf nach links, auf die rechte Seite
+    fallen (Gesicht schräg nach oben), Schwung auf die linke Seite (Nase zur Matratze), aufsetzen.
+    Eigene Zeichnung für die App; Farben wie in werkzeuge/faerbe_manoever.py.
+  -->
+  <defs>
+    <!-- Bett von vorn: Matratze und Gestell -->
+    <g id="bett">
+      <rect x="30" y="176" width="340" height="28" rx="10" fill="#d3e8ed" stroke="#5f8792" stroke-width="3"/>
+      <rect x="44" y="204" width="312" height="58" fill="#a9cbd3" stroke="#5f8792" stroke-width="3"/>
+    </g>
+    <!-- Beine, die über die Bettkante hängen (Hüfte in der Mitte) -->
+    <g id="beine">
+      <rect x="166" y="168" width="68" height="32" rx="14" fill="#025669" stroke="#1d3a42" stroke-width="3"/>
+      <rect x="169" y="190" width="27" height="82" rx="11" fill="#025669" stroke="#1d3a42" stroke-width="3"/>
+      <rect x="204" y="190" width="27" height="82" rx="11" fill="#025669" stroke="#1d3a42" stroke-width="3"/>
+      <ellipse cx="181" cy="276" rx="17" ry="7" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+      <ellipse cx="219" cy="276" rx="17" ry="7" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+    </g>
+    <!-- Oberkörper aufrecht mit Armen, Hände auf der Matratze -->
+    <g id="sitzen">
+      <path d="M152 108 L136 172" stroke="#1d3a42" stroke-width="27" fill="none"/>
+      <path d="M152 108 L136 172" stroke="#03758f" stroke-width="21" fill="none"/>
+      <path d="M248 108 L264 172" stroke="#1d3a42" stroke-width="27" fill="none"/>
+      <path d="M248 108 L264 172" stroke="#03758f" stroke-width="21" fill="none"/>
+      <circle cx="134" cy="180" r="10" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+      <circle cx="266" cy="180" r="10" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+      <path d="M154 100 Q200 88 246 100 L238 182 L162 182 Z" fill="#03758f" stroke="#1d3a42" stroke-width="3"/>
+      <rect x="190" y="76" width="20" height="22" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+    </g>
+    <!-- Liegender Oberkörper auf der rechten Seite (Kopf links), Hüfte bei x 222 -->
+    <g id="liegen">
+      <path d="M96 138 Q90 176 104 176 L224 178 L226 142 Q162 128 96 138 Z" fill="#03758f" stroke="#1d3a42" stroke-width="3"/>
+      <path d="M112 142 L200 150" stroke="#1d3a42" stroke-width="25" fill="none"/>
+      <path d="M112 142 L200 150" stroke="#03758f" stroke-width="19" fill="none"/>
+      <circle cx="208" cy="152" r="10" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+      <rect x="76" y="146" width="24" height="20" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+    </g>
+  </defs>
+
+  <!-- 1  Sitzen, Kopf 45° nach links (im Bild nach rechts) -->
+  <g>
+    <use href="#bett"/>
+    <use href="#beine"/>
+    <use href="#sitzen"/>
+    <ellipse cx="203" cy="54" rx="24" ry="28" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+    <path d="M180 60 Q176 28 204 26 Q228 26 229 44 Q214 38 200 42 Q188 46 188 66 Z" fill="#3d5a63" stroke="#1d3a42" stroke-width="3"/>
+    <ellipse cx="183" cy="60" rx="5" ry="8" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+    <circle cx="210" cy="55" r="2.6" fill="#1d3a42"/>
+    <circle cx="222" cy="54" r="2.6" fill="#1d3a42"/>
+    <path d="M225 58 L232 67 L225 69" fill="none" stroke="#1d3a42" stroke-width="2.6"/>
+    <path d="M212 74 Q218 77 223 73" fill="none" stroke="#1d3a42" stroke-width="2.6"/>
+    <path d="M168 16 Q204 -2 240 18" fill="none" stroke="#d4713f" stroke-width="6"/>
+    <path d="M247 24 L229 22 L240 9 Z" fill="#d4713f"/>
+  </g>
+
+  <!-- 2  Auf die rechte Seite (im Bild links), Gesicht schräg nach oben -->
+  <g transform="translate(400 0)">
+    <use href="#bett"/>
+    <use href="#beine"/>
+    <use href="#liegen"/>
+    <ellipse cx="54" cy="152" rx="27" ry="23" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+    <path d="M30 166 Q22 140 40 128 Q36 148 50 174 Q38 174 30 166 Z" fill="#3d5a63" stroke="#1d3a42" stroke-width="3"/>
+    <circle cx="58" cy="140" r="2.6" fill="#1d3a42"/>
+    <circle cx="70" cy="146" r="2.6" fill="#1d3a42"/>
+    <path d="M60 131 Q65 118 72 129" fill="#ecd2c0" stroke="#1d3a42" stroke-width="2.6"/>
+    <path d="M76 156 Q80 150 79 145" fill="none" stroke="#1d3a42" stroke-width="2.6"/>
+    <path d="M220 60 Q140 26 92 92" fill="none" stroke="#d4713f" stroke-width="6"/>
+    <path d="M84 104 L86 84 L102 94 Z" fill="#d4713f"/>
+  </g>
+
+  <!-- 3  Schwung auf die linke Seite (im Bild rechts), Nase zur Matratze -->
+  <g transform="translate(800 0)">
+    <use href="#bett"/>
+    <use href="#beine"/>
+    <g transform="translate(400 0) scale(-1 1)">
+      <use href="#liegen"/>
+      <ellipse cx="54" cy="152" rx="27" ry="23" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+      <!-- Hinterkopf zum Betrachter: fast nur Haare, Gesicht zur Matratze -->
+      <path d="M28 156 Q26 128 52 128 Q80 130 81 154 Q74 160 62 160 Q44 162 28 156 Z" fill="#3d5a63" stroke="#1d3a42" stroke-width="3"/>
+      <path d="M50 174 L54 180 L60 174" fill="none" stroke="#1d3a42" stroke-width="2.6"/>
+    </g>
+    <path d="M80 112 Q190 -24 318 96" fill="none" stroke="#d4713f" stroke-width="6"/>
+    <path d="M326 108 L306 100 L322 86 Z" fill="#d4713f"/>
+  </g>
+
+  <!-- 4  Langsam aufsetzen, Kopf gerade -->
+  <g transform="translate(1200 0)">
+    <use href="#bett"/>
+    <use href="#beine"/>
+    <use href="#sitzen"/>
+    <ellipse cx="200" cy="54" rx="24" ry="28" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+    <path d="M176 52 Q176 26 200 26 Q224 26 224 52 Q214 38 200 38 Q186 38 176 52 Z" fill="#3d5a63" stroke="#1d3a42" stroke-width="3"/>
+    <ellipse cx="176" cy="58" rx="4" ry="7" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+    <ellipse cx="224" cy="58" rx="4" ry="7" fill="#ecd2c0" stroke="#1d3a42" stroke-width="3"/>
+    <circle cx="191" cy="58" r="2.6" fill="#1d3a42"/>
+    <circle cx="209" cy="58" r="2.6" fill="#1d3a42"/>
+    <path d="M200 61 L198 68 L202 68" fill="none" stroke="#1d3a42" stroke-width="2.6"/>
+    <path d="M193 74 Q200 78 207 74" fill="none" stroke="#1d3a42" stroke-width="2.6"/>
+    <path d="M300 150 L300 84" fill="none" stroke="#d4713f" stroke-width="6"/>
+    <path d="M289 90 L300 72 L311 90 Z" fill="#d4713f"/>
+  </g>
+</svg>

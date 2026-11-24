@@ -1,0 +1,1 @@
+const e={"Betroffen: rechtes Ohr":"症状のある耳：右耳","Betroffen: linkes Ohr":"症状のある耳：左耳"};export{e as default};

@@ -1,0 +1,100 @@
+Asklaion Show and Tell – Lizenz
+================================
+
+Dieses Repository enthält den Quelltext (Zweig main) und die fertig gebaute Demo (Zweig
+gh-pages). Für die Teile gelten unterschiedliche Lizenzen. Die MIT-Lizenz unten gilt NUR für den eigenen Anteil (Abschnitt 1); alles in
+Abschnitt 2 behält seine eigene Lizenz und wird durch diese Datei nicht umlizenziert.
+
+This repository contains the source code (branch main) and the built demo (branch gh-pages).
+The MIT License below applies ONLY to the author's own work (section 1). Everything listed in section 2 keeps its own licence.
+
+
+1. Eigener Anteil – MIT-Lizenz
+------------------------------
+
+Umfang: der Anwendungscode (im Quelltext unter src/, server/ und werkzeuge/ sowie die
+Konfiguration an der Wurzel; in der Demo in assets/ gebündelt), die eigenen Zeichnungen und Erklärtexte
+sowie die mit einem KI-Bildgenerator erzeugten Symbol- und Übungsbilder, soweit daran Rechte
+bestehen.
+
+MIT License
+
+Copyright (c) 2026 Dr. Florian Rasche
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Nicht von der MIT-Lizenz umfasst sind der Name „Asklaion“ und das Asklaion-Zeichen
+(asklaion.png). Sie dürfen nicht so verwendet werden, dass der Eindruck einer Herkunft vom
+oder einer Billigung durch den Urheber entsteht.
+
+
+2. Fremde Anteile – eigene Lizenzen
+-----------------------------------
+
+2.1 3D-Modelle (modelle/, im Quelltext public/modelle/ und werkzeuge/quellen/hra*/)
+
+Die Modelle beruhen auf Z-Anatomy (CC BY-SA 4.0) und dem Human Reference Atlas (CC BY 4.0).
+Die daraus abgeleiteten Modelle in diesem Repository stehen unter CC BY-SA 4.0:
+https://creativecommons.org/licenses/by-sa/4.0/
+Die unveränderten Ausgangsmodelle des Human Reference Atlas unter werkzeuge/quellen/ stehen
+unter CC BY 4.0.
+
+2.2 Fotos und Abbildungen (bilder/, im Quelltext public/bilder/)
+
+Bilder von Wikimedia Commons und aus anderen Quellen stehen unter der Lizenz, die beim
+jeweiligen Bild genannt ist – überwiegend CC BY-SA, CC BY, CC0 oder gemeinfrei. Urheber,
+Quelle, Lizenz und Bearbeitung jedes Bildes stehen in der App unter „Quellen, Hinweise,
+Impressum“ (/info). Wer ein Bild weiterverwendet, muss die Bedingungen der dort genannten
+Lizenz einhalten (insbesondere Namensnennung und, bei CC BY-SA, Weitergabe unter gleichen
+Bedingungen).
+
+2.3 Schrift
+
+Merriweather (über @fontsource/merriweather) – SIL Open Font License 1.1.
+
+2.4 Karten- und Länderdaten
+
+Ländergrenzen aus world-atlas (ISC), beruhend auf Natural Earth (gemeinfrei). Die Länderdaten
+(im Quelltext unter src/module/reiseimpfung/daten/ und werkzeuge/quellen/laender/) stammen aus
+Wikidata (CC0), von der Weltbank (CC BY 4.0), aus Wikipedia und Wikivoyage (CC BY-SA) und von
+Natural Earth; die genauen Angaben stehen in der App unter /info.
+
+2.5 Software-Bibliotheken (in der Demo in assets/ gebündelt, im Quelltext über package.json bezogen)
+
+  React, React DOM, Scheduler            MIT
+  three.js                               MIT
+  jsPDF                                  MIT
+  html2canvas                            MIT
+  html-to-image                          MIT
+  fflate                                 MIT
+  DOMPurify                              MPL-2.0 oder Apache-2.0
+  Lucide (lucide-react)                  ISC
+  d3-geo, d3-array, internmap            ISC
+  topojson-client                        ISC
+
+sowie deren Abhängigkeiten unter ihren jeweiligen Lizenzen. Die Urheberrechtsvermerke dieser
+Bibliotheken bleiben bestehen; die vollständigen Lizenztexte stehen in den jeweiligen
+Projekten.
+
+
+3. Hinweis zum Inhalt
+---------------------
+
+Die Demo dient der Information und Aufklärung. Sie gibt keine Diagnose- oder
+Therapieempfehlung und ersetzt nicht die ärztliche Indikationsstellung.
