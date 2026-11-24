@@ -108,8 +108,12 @@ export const INFEKTE: Krankheit[] = [
     name: 'Mittelohrentzündung',
     zusatz: 'Otitis media',
     gebiet: 'infekte',
-    bilder: { ursachen: 'mittelohrentzuendung-ohrtrompete', behandlung: 'mittelohrentzuendung-abwarten' },
-    suche: 'otitis ohrenschmerzen ohr kind trommelfell paukenerguss mittelohr',
+    bilder: {
+      ursachen: 'mittelohrentzuendung-ohrtrompete',
+      behandlung: 'mittelohrentzuendung-abwarten',
+      selbst: 'mittelohrentzuendung-nasenspray',
+    },
+    suche: 'otitis ohrenschmerzen ohr kind trommelfell paukenerguss mittelohr mometason nasenspray kortisonspray tubenventilation ohrtrompete',
     was: [
       'Bei einer Mittelohrentzündung ist der kleine Raum hinter dem Trommelfell entzündet. Kinder trifft es besonders häufig.',
       'Typisch sind plötzliche, oft heftige Ohrenschmerzen, Fieber und schlechteres Hören. Kleine Kinder greifen sich ans Ohr oder sind unruhig.',
@@ -126,10 +130,12 @@ export const INFEKTE: Krankheit[] = [
       'Am wichtigsten ist ein ausreichend dosiertes Schmerzmittel: Ibuprofen oder Paracetamol, bei Kindern nach Körpergewicht.',
       'Oft ist es sinnvoll, ein bis zwei Tage abzuwarten. Wird es dann nicht besser, kommt ein Antibiotikum dazu.',
       'Gleich ein Antibiotikum bekommen Säuglinge, Kinder unter zwei Jahren mit Entzündung beider Ohren und alle mit Ausfluss aus dem Ohr oder schwerem Verlauf.',
-      'Ohrentropfen und abschwellende Nasentropfen helfen bei der Mittelohrentzündung kaum.',
+      'Bei verstopfter Ohrtrompete verordnen wir oft ein Kortison-Nasenspray wie Mometason. Eigentlich ist es ein Heuschnupfenspray – hier setzen wir es gezielt ein, damit die Schleimhaut abschwillt und das Mittelohr wieder belüftet wird.',
+      'Ohrentropfen helfen bei der Mittelohrentzündung kaum.',
     ],
     selbst: [
       'Geben Sie das Schmerzmittel regelmäßig, vor allem auch zur Nacht.',
+      'Das Nasenspray: einmal täglich ein bis zwei Sprühstöße je Nasenloch, Kopf leicht nach vorn, Düse nach außen Richtung Ohr. Es wirkt erst nach einigen Tagen und wird meist zwei bis drei Wochen genommen.',
       'Wärme oder Kühlung am Ohr ist erlaubt, wenn es guttut. Bitte nichts ins Ohr stecken oder träufeln, ohne es mit uns zu besprechen.',
       'Rauchen Sie nicht in der Nähe von Kindern. Stillen und die empfohlenen Impfungen schützen kleine Kinder.',
       'Hört Ihr Kind nach einigen Wochen immer noch schlechter, lassen Sie das Ohr bitte nachkontrollieren.',

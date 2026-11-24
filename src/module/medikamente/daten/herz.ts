@@ -178,6 +178,42 @@ export const HERZ: Medikament[] = [
     warnung: 'Ohnmacht, Puls unter 45 oder zunehmende Atemnot: bitte am selben Tag ärztlich melden.',
   },
   {
+    id: 'propranolol',
+    name: 'Propranolol',
+    zusatz: 'Betablocker',
+    gebiet: 'herz',
+    handelsnamen: ['Dociton', 'Propra-ratiopharm', 'Obsidan', 'Propranolol AL'],
+    form: 'Tablette',
+    suche:
+      'betablocker beta blocker nicht selektiv migraene prophylaxe vorbeugung tremor zittern lampenfieber pruefungsangst herzrasen schilddruesenueberfunktion',
+    wofuer: [
+      'Propranolol schirmt Herz und Körper gegen Stresshormone ab. Das Herz schlägt ruhiger, Zittern und Herzklopfen werden schwächer.',
+      'Wir setzen es vor allem ein, um Migräneanfällen vorzubeugen, gegen Zittern der Hände (Tremor) und gegen Herzrasen, zum Beispiel bei einer Schilddrüsenüberfunktion.',
+      'Manchmal hilft es auch bei Lampenfieber, wenn Herzklopfen und Zittern im Vordergrund stehen.',
+    ],
+    merker: [
+      { symbol: 'mehrmals', titel: 'Zwei- bis dreimal täglich', text: 'als Retardtablette einmal täglich' },
+      { symbol: 'bedarf', titel: 'Bei Lampenfieber: eine Stunde vorher', text: 'vorher einmal zu Hause ausprobieren' },
+    ],
+    einnahme: [
+      'Wir beginnen niedrig und steigern langsam. Zur Migränevorbeugung zeigt sich die Wirkung erst nach vier bis acht Wochen.',
+      'Messen Sie zu Hause ab und zu Blutdruck und Puls.',
+      'Vergessen? Nicht doppelt nehmen, beim nächsten Mal normal weitermachen.',
+    ],
+    nebenwirkungen: [
+      { symbol: 'muede', name: 'Müdigkeit', text: 'Vor allem in den ersten Wochen. Bessert sich meist.' },
+      { symbol: 'kalt', name: 'Kalte Hände und Füße', text: 'Durch die geringere Durchblutung der Haut.' },
+      { symbol: 'puls', name: 'Langsamer Puls', text: 'Gewollt. Unter 50 Schlägen mit Schwindel bitte melden.' },
+      { symbol: 'bett', name: 'Schlafstörungen', text: 'Unruhiger Schlaf oder lebhafte Träume; selten gedrückte Stimmung.' },
+    ],
+    achtung: [
+      'Bei Asthma darf Propranolol nicht genommen werden: Es kann die Bronchien verengen, stärker als andere Betablocker.',
+      'Nie von heute auf morgen absetzen – das Herz kann dann rasen. Wir verringern die Dosis schrittweise.',
+      'Bei Diabetes: Herzklopfen und Zittern als Zeichen einer Unterzuckerung können fehlen. Sagen Sie uns, wenn Sie Verapamil oder Diltiazem nehmen.',
+    ],
+    warnung: 'Pfeifende Atmung oder Atemnot, Ohnmacht oder Puls unter 45: bitte sofort ärztlich melden, bei schwerer Atemnot 112.',
+  },
+  {
     id: 'hct',
     name: 'Hydrochlorothiazid',
     zusatz: 'Wassertablette (HCT)',

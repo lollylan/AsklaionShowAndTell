@@ -983,5 +983,27 @@
       0.9
     ],
     "farbe": true
+  },
+  {
+    "ziel": "karotisstenose-1.jpg",
+    "datei": "Internal carotid artery stenosis in ultrasound near occlusion.jpg",
+    "zuschnitt": [
+      0.2,
+      0.0,
+      0.69,
+      0.48
+    ],
+    "farbe": true
+  },
+  {
+    "ziel": "karotisstenose-2.jpg",
+    "datei": "Carotid Plaque.jpg",
+    "zuschnitt": [
+      0.0,
+      0.03,
+      1.0,
+      0.97
+    ],
+    "farbe": true
   }
 ]

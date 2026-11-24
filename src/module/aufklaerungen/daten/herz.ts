@@ -239,6 +239,40 @@ export const HERZ: Krankheit[] = [
       'Hängender Mundwinkel, Lähmung oder Taubheit an Arm oder Bein, Sprach- oder Sehstörung – auch wenn es wieder vergeht: sofort 112. Uhrzeit merken.',
   },
   {
+    id: 'karotisstenose',
+    bilder: { ursachen: 'karotisstenose-schlaganfall', behandlung: 'karotisstenose-behandlung', selbst: 'schlaganfall-fast' },
+    name: 'Verengung der Halsschlagader',
+    zusatz: 'Karotisstenose',
+    gebiet: 'herz',
+    suche: 'karotisstenose carotisstenose karotis carotis halsschlagader stenose plaque arteriosklerose tea endarteriektomie stent duplex amaurosis fugax tia',
+    was: [
+      'Die beiden Halsschlagadern bringen das Blut zum Gehirn. Bei einer Karotisstenose ist eine davon durch Ablagerungen verengt, meist dort, wo sie sich am Hals gabelt.',
+      'Die Verengung selbst merkt man meist nicht. Oft fällt sie zufällig im Ultraschall auf.',
+      'Gefährlich wird sie, wenn sich an der Ablagerung ein Gerinnsel bildet und ins Gehirn geschwemmt wird.',
+      'Warnzeichen sind kurze Lähmungen, Taubheit, Sprachstörungen oder ein plötzlicher Schleier vor einem Auge, die nach Minuten wieder vergehen.',
+    ],
+    ursachen: [
+      'Die Ablagerungen entstehen über Jahre durch Gefäßverkalkung – wie an den Herzkranzgefäßen oder den Beinschlagadern.',
+      'Das Risiko erhöhen Rauchen, Bluthochdruck, hohes Cholesterin, Diabetes, Bewegungsmangel und das Alter.',
+      'Löst sich ein Stück der Ablagerung oder ein Gerinnsel, verstopft es ein Gefäß im Gehirn: ein Schlaganfall oder eine TIA.',
+      'Hat die Engstelle schon Beschwerden gemacht, ist das Risiko für einen Schlaganfall in den folgenden Wochen besonders hoch.',
+    ],
+    behandlung: [
+      'Alle bekommen eine Grundbehandlung: ASS oder ein ähnliches Mittel gegen Gerinnsel, einen Cholesterinsenker und einen gut eingestellten Blutdruck.',
+      'Hat die Engstelle schon Beschwerden gemacht, wird sie meist rasch beseitigt, am besten innerhalb von zwei Wochen.',
+      'Dazu wird die Ablagerung in einer Operation am Hals ausgeschält. Manchmal setzt man stattdessen über einen Katheter einen Stent ein.',
+      'Ohne Beschwerden schützen die Medikamente meist gut. Eine Operation lohnt sich dann nur bei starker Verengung und geringem Operationsrisiko. Der Ultraschall wird regelmäßig kontrolliert.',
+    ],
+    selbst: [
+      'Hören Sie mit dem Rauchen auf – das ist der wichtigste Schritt.',
+      'Nehmen Sie ASS und Cholesterinsenker jeden Tag, auch wenn Sie nichts spüren.',
+      'Bewegen Sie sich regelmäßig, achten Sie auf Blutdruck und Blutzucker.',
+      'Kennen Sie die Zeichen eines Schlaganfalls und handeln Sie sofort – auch wenn sie wieder vergehen.',
+    ],
+    warnung:
+      'Plötzliche Lähmung oder Taubheit, hängender Mundwinkel, Sprachstörung oder Sehverlust auf einem Auge – auch wenn es nach Minuten vergeht: sofort 112.',
+  },
+  {
     id: 'krampfadern',
     bilder: { ursachen: 'krampfadern-stadien', selbst: 'krampfadern-wadenpumpe' },
     name: 'Krampfadern und Venenschwäche',

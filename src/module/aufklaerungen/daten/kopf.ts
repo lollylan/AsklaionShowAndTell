@@ -320,4 +320,85 @@ export const KOPF: Krankheit[] = [
     warnung:
       'Sofort 112 bei plötzlichem Schwindel mit Doppelbildern, Sprach- oder Schluckstörung, Lähmung, Taubheit, Gangunsicherheit oder heftigem Kopfschmerz. Bitte auch kommen, wenn der Schwindel ohne Kopfbewegung anhält oder Sie schlechter hören.',
   },
+  {
+    id: 'adhs',
+    name: 'ADHS bei Erwachsenen',
+    zusatz: 'Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung',
+    gebiet: 'kopf',
+    suche:
+      'adhs ads aufmerksamkeitsdefizit hyperaktivitaet hyperaktivitätsstörung konzentration unruhe impulsivitaet zappelphilipp methylphenidat ritalin medikinet lisdexamfetamin elvanse stimulanzien btm psychiater neurologe psychotherapeut diagnose',
+    seiten: [
+      {
+        id: 'was',
+        titel: 'Was ist ADHS?',
+        kurz: 'ADHS',
+        saetze: [
+          'ADHS ist eine Besonderheit in der Entwicklung des Gehirns. Sie beginnt in der Kindheit und bleibt bei vielen bis ins Erwachsenenalter.',
+          'Typisch sind drei Bereiche: Die Aufmerksamkeit schweift leicht ab, man ist innerlich unruhig und handelt oft, bevor man nachdenkt.',
+          'Bei Erwachsenen zeigt sich das eher als Vergesslichkeit, Chaos im Alltag, Aufschieben, Ungeduld und schnell wechselnde Stimmung.',
+          'Etwa zwei bis drei von hundert Erwachsenen sind betroffen. ADHS hat nichts mit Intelligenz oder fehlender Erziehung zu tun.',
+        ],
+      },
+      {
+        id: 'ursachen',
+        titel: 'Woher kommt das?',
+        kurz: 'Ursachen',
+        saetze: [
+          'ADHS wird zum großen Teil vererbt. Oft haben Eltern, Geschwister oder Kinder ähnliche Schwierigkeiten.',
+          'Im Gehirn arbeiten die Botenstoffe Dopamin und Noradrenalin anders. Sie steuern Aufmerksamkeit, Antrieb und Selbstkontrolle.',
+          'Häufig kommen Depression, Ängste, Schlafstörungen oder eine Sucht dazu – manchmal stecken diese hinter den Beschwerden statt ADHS.',
+          'Konzentrationsprobleme haben viele Ursachen. Nicht jede Zerstreutheit ist ADHS, deshalb ist eine sorgfältige Abklärung wichtig.',
+        ],
+      },
+      {
+        id: 'diagnose',
+        titel: 'Wer stellt die Diagnose?',
+        kurz: 'Diagnose',
+        bild: 'adhs-weg',
+        saetze: [
+          'Die Diagnose stellt eine Fachärztin oder ein Facharzt für Psychiatrie oder eine Psychotherapeutin oder ein Psychotherapeut.',
+          'Dazu gehören ausführliche Gespräche, Fragebögen und ein Blick in die Kindheit: Zeugnisse, Berichte, Angaben von Eltern oder Partnern. Einen Bluttest oder ein Röntgenbild für ADHS gibt es nicht.',
+          'Wir in der Hausarztpraxis prüfen vorher körperliche Ursachen wie Schilddrüse, Blutarmut oder Schlafapnoe und stellen die Überweisung aus.',
+          'Online-Selbsttests geben nur einen Hinweis, keine Diagnose. Die Wartezeiten sind oft lang – die Terminservicestelle 116117 hilft bei der Suche.',
+        ],
+      },
+      {
+        id: 'behandlung',
+        titel: 'Behandlung ohne Medikamente',
+        kurz: 'Behandlung',
+        saetze: [
+          'Am Anfang steht das Verstehen: Wer weiß, wie ADHS funktioniert, kann sich selbst besser einschätzen und entlasten.',
+          'Eine Verhaltenstherapie hilft, Strategien für Ordnung, Zeitplanung und den Umgang mit Gefühlen zu entwickeln.',
+          'Auch Coaching, Selbsthilfegruppen und die Einbeziehung von Partner oder Familie können viel bewirken.',
+          'Bei leichter ADHS reicht das oft. Bei stärkeren Beschwerden kommen Medikamente dazu.',
+        ],
+      },
+      {
+        id: 'medikamente',
+        titel: 'Medikamente: Ritalin und Elvanse',
+        kurz: 'Medikamente',
+        bild: 'adhs-wer',
+        saetze: [
+          'Die wirksamsten Mittel sind Methylphenidat (zum Beispiel Ritalin oder Medikinet) und Lisdexamfetamin (Elvanse). Sie wirken innerhalb von Stunden.',
+          'Sie fallen unter das Betäubungsmittelgesetz. Einstellen, Kontrolle und Verordnung übernimmt deshalb ausschließlich eine Fachärztin oder ein Facharzt für Psychiatrie oder Neurologie.',
+          'Unsere Praxis verordnet diese Medikamente nicht – weder zum Beginn noch als Folgerezept. Psychotherapeutinnen und Psychotherapeuten dürfen keine Medikamente verschreiben.',
+          'Häufige Nebenwirkungen sind weniger Appetit, schlechterer Schlaf, schnellerer Puls und höherer Blutdruck. Diese Werte werden regelmäßig kontrolliert.',
+        ],
+      },
+      {
+        id: 'selbst',
+        titel: 'Das können Sie selbst tun',
+        kurz: 'Selbst tun',
+        bild: 'adhs-selbst',
+        saetze: [
+          'Feste Abläufe, Listen, Kalender und Erinnerungen auf dem Handy nehmen dem Kopf Arbeit ab.',
+          'Regelmäßige Bewegung und genug Schlaf verbessern Konzentration und Stimmung spürbar.',
+          'Alkohol, Cannabis und andere Drogen sind keine Lösung: Sie verschlechtern ADHS auf Dauer.',
+          'Geben Sie Ihre Medikamente nie an andere weiter. Für Reisen ins Ausland brauchen Sie eine Bescheinigung Ihres Facharztes.',
+        ],
+      },
+    ],
+    warnung:
+      'Herzrasen, Brustschmerz, Ohnmacht oder starke Unruhe unter den Medikamenten: bitte rasch beim Facharzt oder bei uns melden. Bei düsteren Gedanken sofort Hilfe holen – Telefonseelsorge 0800 111 0 111, im Notfall 112.',
+  },
 ];

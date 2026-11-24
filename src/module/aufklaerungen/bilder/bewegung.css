@@ -1420,3 +1420,107 @@
     transform: rotate(-300deg);
   }
 }
+
+/* ---------- karotisstenose: Engstelle, Gerinnsel, Behandlung ---------- */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* karotisstenose: die Ablagerung wird dicker (das Blut fließt über <Fluss>). */
+  .aufkblatt__bild .karotisstenose-ablagerung {
+    animation: karotisstenose-ablagerung 3s cubic-bezier(0.65, 0, 0.35, 1) 0.8s both;
+  }
+
+  /* karotisstenose-schlaganfall: Gerinnsel löst sich, wandert hinauf, verstopft; der Bereich färbt sich. */
+  .aufkblatt__bild .karotisstenose-schlaganfall-gerinnsel-form {
+    animation: karotisstenose-schlaganfall-weg 7s ease-in-out 0.8s both;
+  }
+  .aufkblatt__bild .karotisstenose-schlaganfall-bereich {
+    animation: karotisstenose-schlaganfall-bereich 7s ease-out 0.8s both;
+  }
+
+  /* karotisstenose-behandlung: links wird die Ablagerung herausgehoben, rechts dehnt sich der Stent;
+     danach fließt in beiden Gefäßen Blut. */
+  .aufkblatt__bild .karotisstenose-behandlung-ausschaelen {
+    animation: karotisstenose-behandlung-ausschaelen 2.6s cubic-bezier(0.65, 0, 0.35, 1) 0.8s both;
+  }
+  .aufkblatt__bild .karotisstenose-behandlung-stent {
+    animation: karotisstenose-behandlung-stent 1.8s cubic-bezier(0.16, 1, 0.3, 1) 1.2s both;
+  }
+  .aufkblatt__bild .karotisstenose-behandlung-ablagerung {
+    animation: karotisstenose-behandlung-ablagerung 1.8s cubic-bezier(0.16, 1, 0.3, 1) 1.2s both;
+  }
+  .aufkblatt__bild .karotisstenose-behandlung-fluss {
+    animation: karotisstenose-behandlung-fluss 0.8s ease-out 4.4s both;
+  }
+}
+
+@keyframes karotisstenose-ablagerung {
+  from {
+    opacity: 0;
+  }
+}
+
+/* Weg von der Engstelle (unten am Hals) die innere Halsschlagader hinauf bis ins Hirngefäß. */
+@keyframes karotisstenose-schlaganfall-weg {
+  0% {
+    opacity: 0;
+    transform: translate(-29px, 198px) scale(0.3);
+  }
+  12%,
+  22% {
+    opacity: 1;
+    transform: translate(-29px, 198px) scale(1);
+  }
+  32% {
+    transform: translate(-20px, 159px);
+  }
+  42% {
+    transform: translate(-14px, 100px);
+  }
+  50% {
+    transform: translate(-18px, 68px);
+  }
+  58% {
+    transform: translate(-26px, 28px);
+  }
+  63% {
+    transform: translate(-15px, 15px);
+  }
+  68%,
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes karotisstenose-schlaganfall-bereich {
+  0%,
+  66% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+/* Die Ablagerung liegt erst in der Wand, wird angehoben und neben das Gefäß gelegt. */
+@keyframes karotisstenose-behandlung-ausschaelen {
+  0%,
+  20% {
+    transform: translate(-78px, -40px);
+  }
+}
+/* Der Stent ist zusammengefaltet schmal und entfaltet sich auf volle Breite. */
+@keyframes karotisstenose-behandlung-stent {
+  from {
+    stroke-width: 10px;
+  }
+}
+@keyframes karotisstenose-behandlung-ablagerung {
+  from {
+    opacity: 1;
+  }
+}
+@keyframes karotisstenose-behandlung-fluss {
+  from {
+    opacity: 0;
+  }
+}

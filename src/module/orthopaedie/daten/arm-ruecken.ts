@@ -566,6 +566,80 @@ export const ARM_RUECKEN: Krankheitsbild[] = [
       'Taubheit im Schritt oder am Gesäß, Probleme beim Wasserlassen oder Stuhlgang: sofort in die Notaufnahme. Bitte ebenfalls rasch kommen bei zunehmender Schwäche der Beine oder häufigen Stürzen.',
   },
   {
+    id: 'wirbelgleiten',
+    name: 'Wirbelgleiten',
+    zusatz: 'Spondylolisthese, Spondylolyse',
+    gebiet: 'ruecken',
+    suche:
+      'wirbelgleiten spondylolisthese spondylolisthesis spondylolyse gleitwirbel olisthese instabilitaet lendenwirbelsaeule l5 s1 l4 meyerding versteifung spondylodese rückenschmerzen',
+    was: [
+      'Ein Wirbel ist gegenüber dem darunterliegenden nach vorn verrutscht, meist der unterste Lendenwirbel über dem Kreuzbein oder der vierte über dem fünften.',
+      'Viele merken davon nichts; es fällt zufällig im Röntgen auf.',
+      'Wenn Beschwerden kommen, sind es meist Kreuzschmerzen, die bei Belastung, langem Stehen und im Hohlkreuz zunehmen.',
+      'Drückt der verschobene Wirbel auf Nerven, können Schmerzen, Kribbeln oder Schwäche in die Beine ziehen.',
+    ],
+    modell: {
+      region: 'lws',
+      struktur: 'lendenwirbel',
+      blick: 'seite',
+      fokus: ['lendenwirbel', 'kreuzbein'],
+      aus: ['becken', 'psoas', 'quadratus'],
+      zoom: 1,
+      saetze: [
+        'Die Lendenwirbel stehen normalerweise wie Bauklötze sauber übereinander.',
+        'Beim Wirbelgleiten rutscht meist der unterste Wirbel auf dem Kreuzbein ein Stück nach vorn – es entsteht eine Stufe.',
+        'Dahinter laufen im Wirbelkanal die Nerven zu den Beinen. Sie können an der Stufe eingeengt werden.',
+      ],
+    },
+    ursachen: [
+      'Bei jungen Menschen liegt meist eine Lücke im knöchernen Wirbelbogen zugrunde (Spondylolyse). Sie entsteht oft schon in der Jugend, häufiger bei Sportarten mit viel Hohlkreuz wie Turnen, Speerwurf oder Ballett.',
+      'Im Alter lockern sich Bandscheiben und kleine Wirbelgelenke durch Verschleiß, und der Wirbel kann ohne Bogenlücke nach vorn gleiten. Frauen sind häufiger betroffen.',
+      'Meist ist die Verschiebung gering und nimmt bei Erwachsenen kaum noch zu.',
+      'Wie stark es verschoben ist, sagt wenig über die Schmerzen. Entscheidend sind die Beschwerden.',
+    ],
+    verlauf:
+      'Die meisten kommen ohne Operation gut zurecht; mit gezieltem Training werden die Beschwerden oft deutlich besser.',
+    therapien: [
+      {
+        name: 'Rumpfstabilisierendes Training',
+        text: 'Physiotherapie und eigene Übungen für tiefe Bauch- und Rückenmuskeln stützen die Wirbelsäule wie ein inneres Korsett.',
+        evidenz: 'gut',
+      },
+      {
+        name: 'Aktiv bleiben',
+        text: 'Gehen, Radfahren und Schwimmen sind meist gut möglich; Bettruhe schadet eher.',
+        evidenz: 'gut',
+      },
+      {
+        name: 'Schmerzmittel für kurze Zeit',
+        text: 'Ibuprofen oder ähnliche Mittel in schlechten Phasen, damit Sie in Bewegung bleiben.',
+        evidenz: 'moeglich',
+      },
+      {
+        name: 'Stützmieder',
+        text: 'Kann in akuten Phasen kurz entlasten; dauerhaft getragen schwächt es die Muskeln.',
+        evidenz: 'unklar',
+      },
+      {
+        name: 'Spritzen an Nerven oder Gelenke',
+        text: 'Können bei ausstrahlenden Schmerzen vorübergehend lindern; der Nutzen ist wenig untersucht.',
+        evidenz: 'unklar',
+      },
+      {
+        name: 'Operation mit Versteifung',
+        text: 'Bei starken Schmerzen trotz monatelanger Behandlung, bei Nervenausfällen oder zunehmendem Gleiten wird der Abschnitt mit Schrauben stabilisiert, oft mit Erweiterung des Kanals.',
+        evidenz: 'moeglich',
+      },
+    ],
+    uebungen: ['becken-kippen', 'vierfuessler-diagonal', 'knie-zur-brust'],
+    alltag: [
+      'Meiden Sie starkes Hohlkreuz und Überstrecken nach hinten; heben Sie Lasten nah am Körper.',
+      'Übungen, die den Rücken nach hinten durchbiegen (z. B. Aufstützen in Bauchlage), sind beim Wirbelgleiten meist ungünstig.',
+    ],
+    warnung:
+      'Taubheit im Schritt oder am Gesäß, Probleme beim Wasserlassen oder Stuhlgang: sofort in die Notaufnahme. Bitte rasch kommen bei zunehmender Schwäche oder Taubheit in den Beinen.',
+  },
+  {
     id: 'hws-syndrom',
     name: 'Nackenschmerzen',
     zusatz: 'HWS-Syndrom',

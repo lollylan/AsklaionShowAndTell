@@ -97,5 +97,15 @@
       1.0
     ],
     "farbe": true
+  },
+  {
+    "ziel": "wirbelgleiten-1.jpg",
+    "datei": "Spondylolisthesis vera 57M - CR seitlich - 001.jpg",
+    "zuschnitt": [
+      0.1,
+      0.25,
+      0.95,
+      0.85
+    ]
   }
 ]

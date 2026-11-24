@@ -1,0 +1,94 @@
+/*
+ * Bewegte Vergleichszeichnungen der Orthopädie (Regeln wie in aufklaerungen/bilder/bewegung.css,
+ * siehe „Bewegung“ in aufklaerungen/bilder/bausteine.tsx).
+ *
+ * Alles hier wirkt nur auf dem Bildschirm, nur in der Bühne (.orthozwei__zeichnung, auch in der
+ * Bühnenvorschau der Steuerung) und nur ohne „Bewegung reduzieren“. Handzettel und Druck nutzen
+ * andere Klassen und zeigen das ruhende SVG. Ruhend zeigt jede Zeichnung ihren Endzustand:
+ * Keyframes beschreiben den Weg dorthin. Klassen und Keyframes einer Zeichnung tragen ihren
+ * Dateinamen als Präfix. Eingebunden über buehne.css.
+ */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* ---------- wirbelgleiten: L5 gleitet über dem Kreuzbein nach vorn, dann wird der Nerv eng ----------
+   * Die bewegten Gruppen liegen im SVG schon um -36 verschoben bzw. geschert; die Keyframes
+   * beginnen mit der Gegenbewegung, also in der gesunden Flucht, und enden bei „none“. */
+
+  .orthozwei__zeichnung .wirbelgleiten-gleiten {
+    animation: wirbelgleiten-gleiten 5s ease-in-out both;
+  }
+  .orthozwei__zeichnung .wirbelgleiten-scheibe {
+    transform-origin: 0 0;
+    animation: wirbelgleiten-scheibe 5s ease-in-out both;
+  }
+  .orthozwei__zeichnung .wirbelgleiten-nerv {
+    transform-origin: 0 0;
+    animation: wirbelgleiten-nerv 5s ease-in-out both;
+  }
+  .orthozwei__zeichnung .wirbelgleiten-grau {
+    animation: wirbelgleiten-grau 5s ease-in-out both;
+  }
+  .orthozwei__zeichnung .wirbelgleiten-eng {
+    animation: wirbelgleiten-eng 5s ease-in-out both;
+  }
+}
+
+/* translate(36px) hebt die Verschiebung translate(-36 0) im SVG auf. */
+@keyframes wirbelgleiten-gleiten {
+  0%,
+  12% {
+    transform: translate(36px, 0);
+  }
+  76%,
+  100% {
+    transform: none;
+  }
+}
+
+/* skewX(-43.452deg) hebt skewX(43.452) der Bandscheibe L5/S1 auf (tan = 36 / 38). */
+@keyframes wirbelgleiten-scheibe {
+  0%,
+  12% {
+    transform: skewX(-43.452deg);
+  }
+  76%,
+  100% {
+    transform: none;
+  }
+}
+
+/* skewX(-25.346deg) hebt skewX(25.346) des Nervenstücks auf (tan = 36 / 76). */
+@keyframes wirbelgleiten-nerv {
+  0%,
+  12% {
+    transform: skewX(-25.346deg);
+  }
+  76%,
+  100% {
+    transform: none;
+  }
+}
+
+/* Das gerade, graue Nervenstück trägt opacity="0" im SVG und ist nur während des Gleitens da. */
+@keyframes wirbelgleiten-grau {
+  0%,
+  76% {
+    opacity: 1;
+  }
+  90%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Danach färbt sich die Engstelle kupfern. */
+@keyframes wirbelgleiten-eng {
+  0%,
+  76% {
+    opacity: 0;
+  }
+  90%,
+  100% {
+    opacity: 1;
+  }
+}

@@ -59,6 +59,9 @@ writeFileSync(seite, html);
 const browser = [
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
   'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
+  '/opt/pw-browsers/chromium',
+  '/usr/bin/chromium',
+  '/usr/bin/google-chrome',
 ].find((p) => existsSync(p));
 if (!browser) {
   console.error('Weder Chrome noch Edge gefunden.');
@@ -67,6 +70,7 @@ if (!browser) {
 execFileSync(browser, [
   '--headless=new',
   '--disable-gpu',
+  ...(process.platform === 'linux' ? ['--no-sandbox'] : []),
   '--hide-scrollbars',
   `--user-data-dir=${path.join(ordner, 'profil')}`,
   `--window-size=${breite},760`,

@@ -2498,5 +2498,54 @@
       "Bei Grad 2b ist der Grund blass und fleckig, Grad 3 ist weiß bis gelblich und hart wie Leder.",
       "Ob eine Verbrennung 2a oder 2b ist, zeigt sich oft erst nach einigen Tagen."
     ]
+  },
+  "karotisstenose": {
+    "aufnahmen": [
+      {
+        "datei": "karotisstenose-1.jpg",
+        "titel": "Halsschlagader mit hochgradiger Engstelle",
+        "art": "Ultraschall (Farbdoppler)",
+        "urheber": "Mme Mim",
+        "lizenz": "CC BY-SA 3.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Internal_carotid_artery_stenosis_in_ultrasound_near_occlusion.jpg",
+        "marken": [
+          {
+            "x": 0.42,
+            "y": 0.44,
+            "text": "Engstelle: Blut schießt schnell hindurch"
+          },
+          {
+            "x": 0.74,
+            "y": 0.34,
+            "text": "Blutstrom farbig dargestellt"
+          }
+        ]
+      },
+      {
+        "datei": "karotisstenose-2.jpg",
+        "titel": "Ausgeschälte Ablagerung nach der Operation",
+        "art": "Foto",
+        "urheber": "Ed Uthman",
+        "lizenz": "CC BY 2.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Carotid_Plaque.jpg",
+        "marken": [
+          {
+            "x": 0.45,
+            "y": 0.45,
+            "text": "Ablagerung"
+          },
+          {
+            "x": 0.55,
+            "y": 0.12,
+            "text": "Gabelung der Halsschlagader"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Links der Ultraschall: Der Blutstrom ist farbig. An der Engstelle wird er schmal und bunt, weil das Blut dort sehr schnell fließt.",
+      "Mit diesem schmerzlosen Ultraschall messen wir, wie stark die Verengung ist, und kontrollieren sie im Verlauf.",
+      "Rechts eine bei der Operation ausgeschälte Ablagerung: Die bräunlich-krümelige Masse an der Gabelung engte das Gefäß ein."
+    ]
   }
 }

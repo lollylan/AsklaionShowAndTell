@@ -1,4 +1,5 @@
 /* Bühne des Moduls Orthopädie. Maße in px auf 1920 × 1080, dunkles Petrol kommt von der Bühne. */
+@import './bilder/bewegung.css';
 
 .orthobuehne {
   position: absolute;

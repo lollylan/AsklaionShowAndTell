@@ -308,5 +308,39 @@
       "Die Verdickung entsteht, weil sich die Sehne unter zu viel Last umbaut – eine echte Entzündung ist es meist nicht, und mit Training bildet sie sich oft zurück.",
       "Meist reicht es, die Sehne anzuschauen und abzutasten; Ultraschall braucht man nur, wenn ein Riss oder etwas anderes ausgeschlossen werden soll."
     ]
+  },
+  "wirbelgleiten": {
+    "aufnahmen": [
+      {
+        "datei": "wirbelgleiten-1.jpg",
+        "titel": "Untere Lendenwirbelsäule von der Seite",
+        "art": "Röntgen",
+        "urheber": "Hellerhoff",
+        "lizenz": "CC BY-SA 4.0, zugeschnitten",
+        "quelle": "https://commons.wikimedia.org/wiki/File:Spondylolisthesis_vera_57M_-_CR_seitlich_-_001.jpg",
+        "marken": [
+          {
+            "x": 0.32,
+            "y": 0.35,
+            "text": "Diese Wirbel stehen in einer Flucht"
+          },
+          {
+            "x": 0.31,
+            "y": 0.56,
+            "text": "L5 nach vorn gerutscht"
+          },
+          {
+            "x": 0.26,
+            "y": 0.84,
+            "text": "Stufe zum Kreuzbein"
+          }
+        ]
+      }
+    ],
+    "saetze": [
+      "Der Bauch ist links, der Rücken rechts. Die oberen Wirbel stehen sauber übereinander.",
+      "Der unterste Lendenwirbel ist auf dem Kreuzbein ein Stück nach vorn gerutscht – vorn sieht man die Stufe.",
+      "Ob die Verschiebung Beschwerden macht, zeigt das Bild nicht. Eine Aufnahme im Stehen oder beim Vor- und Zurückbeugen zeigt, ob sich der Wirbel bewegt."
+    ]
   }
 }
